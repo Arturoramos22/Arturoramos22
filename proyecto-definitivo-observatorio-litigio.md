@@ -12,15 +12,15 @@ Versión integrada del 27 de agosto de 2026. Este documento unifica la formulaci
 | Entidad formuladora y ejecutora | Corporación AR Consultores Jurídicos, entidad sin ánimo de lucro [verificar razón social definitiva y NIT de la entidad ejecutora] |
 | Sector y programas (Catálogo MGA) | 45 - Gobierno Territorial. Programas 4502 (principal) y 4501 |
 | Metas del Plan de Desarrollo | Metas 749, 750, 751, 753, 755, 757, 758, 760, 761, 763 y 764 de la Apuesta 3.2.2, y meta 608 de la Apuesta 2.13.1 |
-| Modalidad de contratación | Contrato de interés público, inciso 2 del artículo 355 de la Constitución y artículos 2 a 4 del Decreto 092 de 2017 (numeral 20). Alternativa: convenio de asociación con aporte del 30 % en dinero |
+| Modalidad de contratación | Convenio de asociación (artículo 96 de la Ley 489 de 1998 y artículo 5 del Decreto 092 de 2017), con celebración directa por aporte de la Corporación no inferior al 30 % del valor total, en dinero (numeral 20) |
 | Plazo de ejecución | Dos meses y medio: 15 de octubre a 31 de diciembre de 2026 |
-| Aporte de la Gobernación | $300.000.000, en dinero, que financian la totalidad del componente de litigio estratégico |
-| Aporte de la Corporación | $19.500.000 en dinero, destinados a gastos menores de facilitación, imprevistos y complemento de los costos de administración, más aporte en especie valorado en $12.000.000 (numeral 20) |
-| Valor total del contrato | $319.500.000 en dinero |
+| Aporte de la Gobernación | $200.000.000 (70,0 %), en dinero, que financian la totalidad del componente de litigio estratégico, las rutas de protección, los boletines, la incidencia, la red de defensores y la dirección |
+| Aporte de la Corporación | $85.714.286 (30,0 %), en dinero, que financian el sistema de información y la investigación del informe de dinámicas de violencia, la facilitación de la ejecución y los imprevistos (numeral 20) |
+| Valor total del convenio | $285.714.286, en dinero |
 | Cobertura | 40 municipios |
 | Productos principales | 1 sistema de información; 1 informe departamental de dinámicas de violencia; 10 boletines semanales digitales y 2 impresos; 80 personas con seguimiento jurídico; 5 a 8 casos emblemáticos con litigio ante la Comisión Interamericana; 1 red departamental de defensores instalada; 3 documentos de política pública |
 | Infraestructura física | N/A |
-| Contratación de servicios jurídicos especializados | La Corporación contrata los servicios jurídicos especializados y el litigio estratégico por $80.000.000, financiados con cargo al aporte de la Gobernación (numeral 14) |
+| Contratación de servicios jurídicos especializados | La Corporación contrata los servicios jurídicos especializados y el litigio estratégico por $78.500.000, financiados con cargo al aporte de la Gobernación (numeral 14) |
 
 CAPÍTULO I. IDENTIFICACIÓN
 ==========================
@@ -44,7 +44,7 @@ El litigio estratégico es el componente central del proyecto. Los demás compon
 
 El proyecto se inscribe en la Apuesta 3.2.2 «Garantizar la protección y el respeto a los derechos humanos y DIH», del Componente 3.2 Convivencia Ciudadana, dentro de la Línea Estratégica 3 «Seguridad y Paz», y de manera destacada en su programa «Por Amor a nuestra tierra, Somos Defensores». El Plan Plurianual de Inversiones asigna a esa apuesta $13.000 millones para el cuatrienio, de modo que el aporte solicitado equivale a cerca del 2,3 % de la apropiación prevista.
 
-El hallazgo relevante de la verificación es que el objeto del proyecto corresponde de manera directa a compromisos que el Plan de Desarrollo ya adquirió. Las metas 757 y 758 prevén boletines impresos y digitales «de resultados y análisis de la observación de los hechos victimizantes». Esa correspondencia acredita la primera condición del artículo 2 del Decreto 092 de 2017: el objeto pertenece a los programas del plan de desarrollo, en beneficio de la población defensora. Conviene precisar el encuadre para preservar la segunda condición del mismo artículo: los boletines y el informe son productos del observatorio de la sociedad civil, dirigidos a la población objetivo y al público, y no constituyen una contraprestación a favor del departamento, sin perjuicio de que este pueda reportar los resultados como gestión asociada a sus metas. La red departamental de defensores, por su parte, materializa directamente las metas 749 (instancias locales de derechos humanos en los 40 municipios), 760 (difusión de la ruta departamental), 761 (fortalecimiento de la Mesa Territorial de Garantías) y 764 (formación de líderes).
+El hallazgo relevante de la verificación es que el objeto del proyecto corresponde de manera directa a compromisos que el Plan de Desarrollo ya adquirió. Las metas 757 y 758 prevén boletines impresos y digitales «de resultados y análisis de la observación de los hechos victimizantes». Esa correspondencia acredita la exigencia del régimen del Decreto 092 de 2017 de que el objeto corresponda a los programas del plan de desarrollo, en beneficio de la población defensora. Conviene precisar el encuadre para preservar la ausencia de relación conmutativa que ese régimen también exige: los boletines y el informe son productos del observatorio de la sociedad civil, dirigidos a la población objetivo y al público, y no constituyen una contraprestación a favor del departamento, sin perjuicio de que este pueda reportar los resultados como gestión asociada a sus metas. La red departamental de defensores, por su parte, materializa directamente las metas 749 (instancias locales de derechos humanos en los 40 municipios), 760 (difusión de la ruta departamental), 761 (fortalecimiento de la Mesa Territorial de Garantías) y 764 (formación de líderes).
 
 | Meta | Iniciativa del Plan de Desarrollo | Indicador | Cant. cuatrienio | Aporte de esta fase |
 |---|---|---|---|---|
@@ -200,17 +200,17 @@ Para los casos con recursos internos agotados procede la petición ante la Comis
 | Casos con actuación jurídica radicada ante la UNP o el CERREM | 40 |
 | Casos con impulso procesal radicado ante la Fiscalía | 60 |
 | Casos emblemáticos documentados y con estudio de agotamiento de recursos | 5 a 8 |
-| Peticiones presentadas ante la Comisión Interamericana | 4 |
-| Solicitudes de medidas cautelares, individuales o colectivas, incluida al menos una colectiva | 4 |
+| Peticiones presentadas ante la Comisión Interamericana | 3 |
+| Solicitudes de medidas cautelares, individuales o colectivas, incluida al menos una colectiva | 3 |
 | Solicitud de audiencia temática ante la CIDH | 1 |
-| Comunicaciones a Procedimientos Especiales de la ONU | 3 |
+| Comunicaciones a Procedimientos Especiales de la ONU | 2 |
 
 Las metas de radicación son exigibles dentro del plazo; la decisión de la Comisión sobre peticiones y medidas cautelares excede el término del contrato y así debe quedar consignado en los indicadores: el producto verificable de la fase es la actuación radicada con expediente probatorio completo, y la continuidad de la representación queda garantizada conforme al numeral 14.6.
 
 14. Contratación de los servicios jurídicos especializados
 ----------------------------------------------------------
 
-La Corporación contratará la prestación de los servicios jurídicos especializados y el litigio estratégico del proyecto, por un valor de $80.000.000, financiado íntegramente con cargo al aporte de la Gobernación. Es la partida individual de mayor cuantía del proyecto y así se consigna de manera expresa desde la formulación, para que la Gobernación conozca la estructura de ejecución antes de suscribir y no después. Junto con la coordinación jurídica, los abogados de planta, el acompañamiento psicosocial y los gastos directos de litigio, el componente jurídico concentra $124.500.000, el 41,5 % del aporte departamental.
+La Corporación contratará la prestación de los servicios jurídicos especializados y el litigio estratégico del proyecto, por un valor de $78.500.000, financiado íntegramente con cargo al aporte de la Gobernación. Es la partida individual de mayor cuantía del proyecto y así se consigna de manera expresa desde la formulación, para que la Gobernación conozca la estructura de ejecución antes de suscribir y no después. Junto con la coordinación jurídica, los abogados de planta, el acompañamiento psicosocial y los gastos directos de litigio, el componente jurídico concentra $117.000.000, el 58,5 % del aporte departamental.
 
 14.1. Objeto del subcontrato
 
@@ -234,7 +234,7 @@ La subcontratación no sustituye la idoneidad de la Corporación: su experiencia
 
 14.3. Financiación del subcontrato
 
-El subcontrato se financia en su totalidad con recursos del aporte de la Gobernación. La decisión es deliberada y responde a la naturaleza del proyecto: el litigio estratégico es su componente central y su producto de mayor valor público, y corresponde al financiador público asumirlo, del mismo modo que asume el observatorio que le sirve de soporte probatorio. El aporte de la Corporación se destina a los gastos menores de facilitación de la ejecución (alquiler de equipos portátiles cifrados, salas seguras por horas, conectividad y papelería), a los imprevistos y al complemento de los costos de administración, además del aporte en especie de su equipo de investigación al informe de dinámicas de violencia (numeral 20). Esta estructura de financiación determina la modalidad de contratación recomendada, que se sustenta en el numeral 20.
+El subcontrato se financia en su totalidad con recursos del aporte de la Gobernación. La decisión es deliberada y responde a la naturaleza del proyecto: el litigio estratégico es su componente central y su producto de mayor valor público, y corresponde al financiador público asumirlo. El aporte de la Corporación, no inferior al 30 % del valor total y comprometido en dinero, financia el aparato completo de documentación (el sistema de información y la investigación del informe con su propio equipo), los gastos de facilitación de la ejecución (alquiler de equipos portátiles cifrados, salas seguras por horas, conectividad y papelería) y los imprevistos (numeral 20). Con esa distribución cada parte financia el frente que le es propio: el departamento, la exigencia jurídica de protección; la Corporación, la producción del conocimiento que la sustenta.
 
 14.4. Análisis jurídico del límite a la subcontratación
 
@@ -242,7 +242,7 @@ El Decreto 092 de 2017 no fija un porcentaje máximo de subcontratación. Lo que
 
 El objeto del contrato excede el litigio. De los siete productos, cinco (el sistema de información, la investigación, los boletines, los lineamientos técnicos y la red de defensores) se ejecutan íntegramente con equipo propio de la Corporación. En el componente jurídico, el subcontrato apoya el producto 4 y, solo en los casos que la coordinación jurídica le asigne, actuaciones especializadas del producto 5, cuyo seguimiento ordinario permanece en el equipo propio (numeral 14.1).
 
-La Corporación ejecuta directamente la mayoría del valor. El subcontrato representa el 25,0 % del valor total del contrato; el 75,0 % restante se ejecuta bajo la responsabilidad y ejecución directa de la Corporación, que destina $115.250.000 a su equipo propio.
+La Corporación ejecuta directamente la mayoría del valor. El subcontrato representa el 27,5 % del valor total del convenio; el 72,5 % restante se ejecuta bajo la responsabilidad y ejecución directa de la Corporación, que destina $115.250.000 a su equipo propio.
 
 La dirección y la responsabilidad no se delegan, y el pago público queda condicionado. La coordinación jurídica de la Corporación fija la estrategia, selecciona los casos, aprueba los escritos y supervisa los entregables; el subcontrato se paga contra entregables aprobados (numeral 14.6), de modo que el recurso público solo se desembolsa frente a actuaciones verificadas. La titularidad de los productos jurídicos permanece en cabeza de la Corporación y de las personas beneficiarias.
 
@@ -287,7 +287,7 @@ Protocolo de alerta y reacción rápida entre pares. Adaptación del modelo del 
 
 Guía de autoprotección. Adaptación al contexto de Norte de Santander de la guía de protección y autoprotección de la Corporación Jurídica Libertad y la Fundación Sumapaz, entregada en formato impreso y digital, con talleres cortos en los encuentros subregionales.
 
-Encuentros subregionales y audiencia de balance. Tres encuentros subregionales (Cúcuta, Ocaña y Pamplona, con participación remota o desplazada de los municipios del Catatumbo según las condiciones de seguridad) y una audiencia departamental de balance en diciembre, en la que la red recibe el informe del observatorio y el estado de las actuaciones jurídicas.
+Encuentros subregionales y audiencia de balance. Para no duplicar costos, los encuentros subregionales de la red se realizan en las cinco jornadas territoriales de documentación del producto 2, que cumplen doble función, y la audiencia departamental de balance se realiza en la audiencia pública de presentación de resultados del producto 6, en diciembre, en la que la red recibe el informe del observatorio y el estado de las actuaciones jurídicas. La red tiene un acto propio de instalación en Cúcuta.
 
 Articulación institucional. La red se articula, sin subordinarse ni duplicar, con la Mesa Territorial de Garantías (meta 761), el Comité Departamental de Derechos Humanos y DIH, el Subcomité de Prevención y Protección (meta 753) y el Programa Integral de Garantías para Mujeres Lideresas y Defensoras, en cuyo plan de acción 2024-2028 Norte de Santander está focalizado, lo que permite pedir concurrencia del Ministerio del Interior y de ONU Mujeres.
 
@@ -300,7 +300,7 @@ El diseño del proyecto adapta, con ajuste al contexto departamental, tres fuent
 
 | Referente | Qué se adapta en este proyecto |
 |---|---|
-| Encuestas oficiales de medición del riesgo (Brå-PTU, Suecia; Kuntaliitto, Finlandia) | La institucionalización de la evidencia como base de la política de protección: el observatorio, el índice departamental de riesgo y la serie anual repetible cumplen esa función; se prevé un módulo piloto de percepción de amenaza a liderazgos dentro del informe |
+| Encuestas oficiales de medición del riesgo (Brå-PTU, Suecia; Kuntaliitto, Finlandia) | La institucionalización de la evidencia como base de la política de protección: el observatorio, el índice departamental de riesgo y la serie anual repetible cumplen esa función; el módulo piloto de percepción de amenaza a liderazgos queda previsto como desarrollo de la Fase 2 (numeral 24) |
 | Natalia Project (Civil Rights Defenders, Suecia) | Protocolo de alerta y reacción rápida entre pares de la red de defensores; gestión de alianza con Civil Rights Defenders y ProtectDefenders.eu para los ciclos siguientes |
 | Agravantes penales nórdicos por delitos contra periodistas y defensores | Uso sistemático del artículo 188E del Código Penal en toda denuncia, con la Directiva 002 de 2017; el equivalente colombiano existe y se subutiliza |
 | Observatorio de Conflictividad Social y DDHH (Bogotá) y Observatorio Sumapaz/CJL (Antioquia) | Metodología del informe y de los boletines: categorías estandarizadas, desagregación municipal y por sector y género, tablero público y seguimiento a la respuesta institucional a las alertas tempranas |
@@ -321,8 +321,8 @@ Producto 1 - 4502016: Servicio de información implementado
 
 | N.º | Actividad | Costo | Fuente |
 |---|---|---|---|
-| 1.1 | Diseño del modelo de datos, tipologías de hechos victimizantes y protocolo de triangulación, deduplicación y escala de confiabilidad (ingeniería de datos y seguridad de la información) | $10.000.000 | Gobernación |
-| 1.2 | Implementación de la plataforma del observatorio: servidor cifrado, base de datos, georreferenciación municipal, visualización y respaldo | $10.000.000 | Gobernación |
+| 1.1 | Diseño del modelo de datos, tipologías de hechos victimizantes y protocolo de triangulación, deduplicación y escala de confiabilidad (ingeniería de datos y seguridad de la información) | $10.000.000 | Corporación |
+| 1.2 | Implementación de la plataforma del observatorio: servidor cifrado, base de datos, georreferenciación municipal, visualización y respaldo | $10.000.000 | Corporación |
 | 1.3 | Alquiler de equipos portátiles cifrados y herramientas de seguridad digital | $8.000.000 | Corporación |
 | | Subtotal Producto 1 | $28.000.000 | |
 
@@ -330,22 +330,21 @@ Producto 2 - 4502030: Documentos de investigación
 
 | N.º | Actividad | Costo | Fuente |
 |---|---|---|---|
-| 2.1 | Coordinación del observatorio, investigación documental y análisis de dinámicas de violencia | $13.750.000 | Gobernación |
-| 2.2 | Recolección territorial: dos enlaces subregionales en Catatumbo y Ocaña | $17.500.000 | Gobernación |
-| 2.3 | Cinco jornadas de documentación territorial en municipios priorizados | $9.000.000 | Gobernación |
-| 2.4 | Formulación, radicación y seguimiento de derechos de petición y solicitudes de información pública; gestión documental y notificaciones | $3.000.000 | Gobernación |
-| 2.5 | Conformación y formación de la red de corresponsales de los 40 municipios | $5.000.000 | Gobernación |
-| 2.6 | Salas seguras para entrevistas confidenciales, contratadas por horas de uso | $1.500.000 | Corporación |
-| 2.7 | Dedicación del equipo de investigación de la Corporación al informe de dinámicas de violencia (aporte en especie valorado; no computa en el valor en dinero del contrato) | $12.000.000 | Corporación (especie) |
-| | Subtotal Producto 2 (en dinero) | $49.750.000 | |
+| 2.1 | Coordinación del observatorio, investigación documental y análisis de dinámicas de violencia | $13.750.000 | Corporación |
+| 2.2 | Recolección territorial: dos enlaces subregionales en Catatumbo y Ocaña | $17.500.000 | Corporación |
+| 2.3 | Cinco jornadas de documentación territorial en municipios priorizados, que cumplen a la vez la función de encuentros subregionales de la red de defensores (numeral 15) | $9.000.000 | Corporación |
+| 2.4 | Formulación, radicación y seguimiento de derechos de petición y solicitudes de información pública; gestión documental y notificaciones | $3.000.000 | Corporación |
+| 2.5 | Conformación y formación de la red de corresponsales de los 40 municipios | $5.000.000 | Corporación |
+| 2.6 | Salas seguras para entrevistas confidenciales, contratadas por horas de uso | $1.250.000 | Corporación |
+| | Subtotal Producto 2 | $49.500.000 | |
 
 Producto 3 - 4502020: Servicio de información estadística en temas de Derechos Humanos
 
 | N.º | Actividad | Costo | Fuente |
 |---|---|---|---|
 | 3.1 | Analítica estadística, construcción de series e índices y elaboración de los boletines semanales | $10.500.000 | Gobernación |
-| 3.2 | Diseño, diagramación, publicación digital semanal e impresión del informe y de los dos boletines impresos | $7.500.000 | Gobernación |
-| | Subtotal Producto 3 | $18.000.000 | |
+| 3.2 | Diseño, diagramación, publicación digital semanal e impresión del informe y de los dos boletines impresos | $5.500.000 | Gobernación |
+| | Subtotal Producto 3 | $16.000.000 | |
 
 Producto 4 - 4502038: Servicio de promoción de la garantía de derechos (litigio estratégico)
 
@@ -353,9 +352,8 @@ Producto 4 - 4502038: Servicio de promoción de la garantía de derechos (litigi
 |---|---|---|---|
 | 4.1 | Coordinación jurídica, dirección de la estrategia de litigio y supervisión técnica del subcontrato de servicios jurídicos | $13.750.000 | Gobernación |
 | 4.2 | Documentación y sustanciación de casos: abogado o abogada de casos | $9.250.000 | Gobernación |
-| 4.3 | Contratación de servicios jurídicos especializados y litigio estratégico: representación especializada ante la UNP, el CERREM y la Fiscalía en los casos asignados por la coordinación jurídica; peticiones y solicitudes de medidas cautelares ante la CIDH; litigio penal complejo en casos emblemáticos (numeral 14) | $80.000.000 | Gobernación |
-| 4.4 | Gastos directos de litigio: autenticaciones, notificaciones internacionales, desplazamientos a diligencias y audiencias, peritajes puntuales | $6.000.000 | Gobernación |
-| | Subtotal Producto 4 | $109.000.000 | |
+| 4.3 | Contratación de servicios jurídicos especializados y litigio estratégico: representación especializada ante la UNP, el CERREM y la Fiscalía en los casos asignados por la coordinación jurídica; peticiones y solicitudes de medidas cautelares ante la CIDH; litigio penal complejo en casos emblemáticos (numeral 14; el valor incluye los gastos operativos del litigio) | $78.500.000 | Gobernación |
+| | Subtotal Producto 4 | $101.500.000 | |
 
 Producto 5 - 4501006: Servicio de protección individual en riesgo extraordinario y extremo
 
@@ -369,18 +367,17 @@ Producto 6 - 4502032: Documentos de lineamientos técnicos
 
 | N.º | Actividad | Costo | Fuente |
 |---|---|---|---|
-| 6.1 | Mesa técnica de validación con las fuentes y audiencia pública de presentación de resultados ante las instancias competentes | $3.500.000 | Gobernación |
+| 6.1 | Mesa técnica de validación con las fuentes y audiencia pública de presentación de resultados, que sirve además de audiencia departamental de balance de la red (numeral 15) | $3.500.000 | Gobernación |
 | | Subtotal Producto 6 | $3.500.000 | |
 
 Producto 7 - 4502038: Red departamental de defensores
 
 | N.º | Actividad | Costo | Fuente |
 |---|---|---|---|
-| 7.1 | Tres encuentros subregionales de la red (Cúcuta, Ocaña y Pamplona) | $10.500.000 | Gobernación |
-| 7.2 | Instalación pública de la red y audiencia departamental de balance | $5.000.000 | Gobernación |
-| 7.3 | Guía de autoprotección adaptada al departamento, impresa y digital | $3.000.000 | Gobernación |
-| 7.4 | Protocolo de alerta y reacción rápida: formación y canal seguro de comunicaciones | $2.000.000 | Gobernación |
-| | Subtotal Producto 7 | $20.500.000 | |
+| 7.1 | Instalación pública de la red departamental de defensores en Cúcuta | $3.000.000 | Gobernación |
+| 7.2 | Guía de autoprotección adaptada al departamento, impresa y digital | $3.000.000 | Gobernación |
+| 7.3 | Protocolo de alerta y reacción rápida: formación y canal seguro de comunicaciones | $2.000.000 | Gobernación |
+| | Subtotal Producto 7 | $8.000.000 | |
 
 Actividades transversales
 
@@ -395,38 +392,34 @@ Actividades transversales
 18. Presupuesto consolidado
 ---------------------------
 
-Aporte de la Gobernación: $300.000.000.
+Aporte de la Gobernación: $200.000.000, aplicado a los boletines, el componente jurídico, la incidencia, la red de defensores y la dirección del proyecto.
 
 | Ítem | Concepto | Valor |
 |---|---|---|
-| Producto 1 | 4502016 - Servicio de información implementado | $20.000.000 |
-| Producto 2 | 4502030 - Documentos de investigación | $48.250.000 |
-| Producto 3 | 4502020 - Servicio de información estadística en temas de Derechos Humanos | $18.000.000 |
-| Producto 4 | 4502038 - Litigio estratégico | $109.000.000 |
+| Producto 3 | 4502020 - Servicio de información estadística en temas de Derechos Humanos | $16.000.000 |
+| Producto 4 | 4502038 - Litigio estratégico | $101.500.000 |
 | Producto 5 | 4501006 - Servicio de protección individual en riesgo extraordinario y extremo | $15.500.000 |
 | Producto 6 | 4502032 - Documentos de lineamientos técnicos | $3.500.000 |
-| Producto 7 | 4502038 - Red departamental de defensores | $20.500.000 |
+| Producto 7 | 4502038 - Red departamental de defensores | $8.000.000 |
 | Transversal | Dirección, administración y auditoría | $28.000.000 |
-| | Subtotal de costos directos | $262.750.000 |
-| | Estampillas y retenciones departamentales (6,5 % sobre los desembolsos de la Gobernación) [verificar contra la Ordenanza 018 de 2025] | $19.500.000 |
-| | Garantías: pólizas de cumplimiento, calidad y pago de salarios | $4.000.000 |
-| | Costos indirectos de administración de la Corporación reconocidos por el contrato (4,6 %; el excedente lo asume la Corporación con su aporte) | $13.750.000 |
-| | TOTAL APORTE DE LA GOBERNACIÓN | $300.000.000 |
+| | Subtotal de costos directos | $172.500.000 |
+| | Estampillas y retenciones departamentales (6,5 % sobre los desembolsos de la Gobernación) [verificar contra la Ordenanza 018 de 2025] | $13.000.000 |
+| | Garantías: pólizas de cumplimiento, calidad y pago de salarios | $3.500.000 |
+| | Costos indirectos de administración de la Corporación reconocidos por el convenio | $11.000.000 |
+| | TOTAL APORTE DE LA GOBERNACIÓN | $200.000.000 |
 
-Aporte de la Corporación: $19.500.000 en dinero, más aporte en especie valorado en $12.000.000.
+Aporte de la Corporación: $85.714.286 en dinero, aplicado al sistema de información, a la investigación del informe y a la facilitación de la ejecución.
 
-| Concepto | Valor |
-|---|---|
-| Alquiler de equipos portátiles cifrados y herramientas de seguridad digital (actividad 1.3) | $8.000.000 |
-| Salas seguras para entrevistas confidenciales, por horas (actividad 2.6) | $1.500.000 |
-| Conectividad, telefonía segura y papelería (actividad T.4) | $2.500.000 |
-| Complemento de los costos indirectos de administración | $4.500.000 |
-| Imprevistos y contingencias del proyecto, asumidos por la Corporación | $3.000.000 |
-| Subtotal aporte en dinero | $19.500.000 |
-| Dedicación del equipo de investigación de la Corporación al informe de dinámicas de violencia (en especie, valorada; actividad 2.7) | $12.000.000 |
-| Total del aporte de la Corporación (dinero más especie) | $31.500.000 |
+| Ítem | Concepto | Valor |
+|---|---|---|
+| Producto 1 | 4502016 - Servicio de información implementado | $28.000.000 |
+| Producto 2 | 4502030 - Documentos de investigación | $49.500.000 |
+| Transversal | Facilitación: conectividad, telefonía segura y papelería | $2.500.000 |
+| | Complemento de los costos indirectos de administración | $2.500.000 |
+| | Imprevistos y contingencias, asumidos por la Corporación | $3.214.286 |
+| | TOTAL APORTE DE LA CORPORACIÓN | $85.714.286 |
 
-El peso del componente de litigio merece consignarse de manera expresa: los productos 4 y 5 suman $124.500.000, el 41,5 % del aporte departamental, y la partida individual de mayor cuantía del proyecto es la contratación de los servicios jurídicos especializados por $80.000.000, financiada íntegramente por la Gobernación. La contingencia del proyecto no se traslada al presupuesto departamental: la asume la Corporación con su aporte.
+El peso del componente de litigio merece consignarse de manera expresa: los productos 4 y 5 suman $117.000.000, el 58,5 % del aporte departamental, y la partida individual de mayor cuantía del proyecto es la contratación de los servicios jurídicos especializados por $78.500.000 (el 27,5 % del valor total), financiada íntegramente por la Gobernación. Los costos indirectos de administración reconocidos entre ambas fuentes suman $13.500.000, el 4,7 % del valor total; el excedente lo asume la Corporación. La contingencia del proyecto no se traslada al presupuesto departamental: la asume la Corporación con su aporte.
 
 19. Talento humano y escala de honorarios
 -----------------------------------------
@@ -460,7 +453,7 @@ Como referencias adicionales de contraste: la Gobernación de Norte de Santander
 | Administrador(a) - contador(a) del contrato | Profesional con posgrado, 5 o más años | $3.500.000 | $8.750.000 | Transversal |
 | Total - 11 personas, 10 perfiles | | | $115.250.000 | |
 
-El equipo propio y el subcontrato de servicios jurídicos concentran juntos cerca del 61 % del valor total. Es la estructura esperable en un proyecto cuyo producto es conocimiento y actuación jurídica, no obra ni dotación. Solo la dirección general y las dos coordinaciones se fijan por encima del percentil 75 de la muestra, por la responsabilidad que asumen; el perfil que más se aparta es la dirección general, fijada en $6.500.000, que se sustenta en que el máximo observado para perfiles de coordinación en la muestra supera los doce millones mensuales y en que el cargo asume la representación del contrato, la responsabilidad técnica del informe y la supervisión del subcontrato.
+El equipo propio y el subcontrato de servicios jurídicos concentran juntos el 67,8 % del valor total. Es la estructura esperable en un proyecto cuyo producto es conocimiento y actuación jurídica, no obra ni dotación. Solo la dirección general y las dos coordinaciones se fijan por encima del percentil 75 de la muestra, por la responsabilidad que asumen; el perfil que más se aparta es la dirección general, fijada en $6.500.000, que se sustenta en que el máximo observado para perfiles de coordinación en la muestra supera los doce millones mensuales y en que el cargo asume la representación del contrato, la responsabilidad técnica del informe y la supervisión del subcontrato.
 
 Los valores deben homologarse antes de radicar con la resolución de honorarios vigente de la Gobernación [verificar]. Contratar once personas en la primera semana solo es viable si el equipo está preseleccionado antes del acta de inicio; es una condición de ejecución, no una recomendación.
 
@@ -469,24 +462,38 @@ Los valores deben homologarse antes de radicar con la resolución de honorarios 
 
 | Fuente | Valor | % |
 |---|---|---|
-| Gobernación de Norte de Santander - recursos de inversión, en dinero | $300.000.000 | 93,9 % |
-| Corporación - recursos propios, en dinero, destinados a gastos menores de facilitación, imprevistos y complemento de los costos de administración | $19.500.000 | 6,1 % |
-| VALOR TOTAL DEL CONTRATO EN DINERO | $319.500.000 | 100 % |
-| Aporte adicional de la Corporación en especie (equipo de investigación dedicado al informe), valorado y declarado, que no computa en el valor en dinero | $12.000.000 | |
+| Gobernación de Norte de Santander - recursos de inversión, en dinero | $200.000.000 | 70,0 % |
+| Corporación - recursos propios o de cooperación internacional, en dinero | $85.714.286 | 30,0 % |
+| VALOR TOTAL DEL CONVENIO | $285.714.286 | 100 % |
 
-Modalidad recomendada: contrato de interés público del inciso 2 del artículo 355 de la Constitución, conforme a los artículos 1 a 4 del Decreto 092 de 2017. La decisión de que la Gobernación financie la totalidad del litigio estratégico y de que el aporte de la Corporación se limite a gastos menores de facilitación tiene una consecuencia contractual precisa: el convenio de asociación del artículo 96 de la Ley 489 de 1998 solo puede celebrarse de manera directa cuando la entidad sin ánimo de lucro compromete en dinero no menos del 30 % del valor total (artículo 5 del Decreto 092), umbral que esta estructura no alcanza ni pretende alcanzar. El contrato de interés público no exige ese piso. Exige, en cambio, la concurrencia de tres condiciones, todas satisfechas y que deben acreditarse en los estudios previos:
+Modalidad: convenio de asociación del artículo 96 de la Ley 489 de 1998, celebrado de manera directa conforme al artículo 5 del Decreto 092 de 2017, que lo permite cuando la entidad sin ánimo de lucro compromete recursos en dinero por una proporción no inferior al 30 % del valor total del convenio.
 
-Que el objeto corresponda directamente a programas y actividades de interés público previstos en el plan de desarrollo, orientados a promover los derechos de personas en situación de debilidad manifiesta o el derecho a la paz. El numeral 2 acredita la correspondencia con once metas de la Apuesta 3.2.2 del Plan de Desarrollo «Norte, Territorio de Paz».
+Una precisión aritmética que conviene dejar explícita: el 30 % se calcula sobre el valor total del convenio, no sobre el aporte de la Gobernación. Con $200.000.000 departamentales como el 70 %, el aporte de la Corporación es de $85.714.286 (200.000.000 multiplicado por 30 y dividido entre 70) y el valor total asciende a $285.714.286. Un aporte de $60.000.000 (el 30 % de 200 millones) representaría apenas el 23,1 % del valor total resultante y no habilitaría la celebración directa. Los aportes en especie no computan para el umbral, razón por la cual el aporte se pacta íntegramente en dinero, incluido el costo del equipo propio que la Corporación dedica al informe. Conforme a la doctrina de Colombia Compra Eficiente, esos recursos pueden ser propios o provenir de cooperación internacional.
 
-Que el contrato no comporte una relación conmutativa ni instrucciones precisas de la entidad al contratista. El informe, los boletines y las actuaciones jurídicas son bienes de interés general en favor de la población objetivo, no servicios prestados a la Gobernación; las cláusulas de autonomía técnica y editorial del numeral 9 materializan esta condición.
+Tres reglas gobiernan el aporte y deben quedar en los estudios previos y en el clausulado:
 
-Que no exista oferta en el mercado distinta de la de las entidades sin ánimo de lucro, o que la contratación con ellas optimice recursos en términos de eficiencia, eficacia, economía y manejo del riesgo. La optimización se acredita con el aporte en dinero y en especie de la Corporación, su naturaleza de corporación de abogados que abarata la estrategia de recolección jurídica (numeral 7), y la ausencia de oferta mercantil comparable para un objeto que combina observatorio de derechos humanos, litigio ante el Sistema Interamericano y red de defensores.
+La acreditación es previa. La Corporación debe acreditar los $85.714.286 al momento de radicar, mediante extractos, certificación de revisor fiscal o convenios de cooperación suscritos.
 
-La celebración directa exige además superar el filtro del artículo 4 del Decreto 092 de 2017: cuando en la etapa de planeación la entidad estatal identifique que el programa es ofrecido por más de una entidad sin ánimo de lucro de reconocida idoneidad, debe adelantar un proceso competitivo entre ellas. Los estudios previos deben descartar motivadamente esa pluralidad de oferentes: las organizaciones citadas como referentes metodológicos en el numeral 16 (Corporación Jurídica Libertad, Fundación Sumapaz, CINEP, Somos Defensores, FLIP) no ofrecen este programa en Norte de Santander ni tienen presencia operativa departamental para ejecutarlo en el plazo previsto; la verificación de que ninguna ESAL con asiento en el departamento ofrece un programa equivalente (observatorio, litigio ante el Sistema Interamericano y red departamental) debe documentarse en la planeación. Si el análisis identificara más de una oferente idónea, la ruta es el proceso competitivo del artículo 4, con el ajuste de cronograma que ello implica.
+El ajuste es proporcional. Si el aporte de la Corporación varía, el valor total del convenio debe recalcularse como el aporte dividido entre 0,30 y el aporte departamental ajustarse en proporción; de lo contrario se pierde la habilitación para contratar directamente y la ruta pasa a ser el proceso competitivo.
+
+La pluralidad se resuelve con selección objetiva. Si más de una entidad sin ánimo de lucro ofreciera comprometer el 30 % en dinero para este programa, la Gobernación debe seleccionar de forma objetiva y justificar los criterios de la escogencia.
+
+| Aplicación del aporte de la Corporación | Valor |
+|---|---|
+| Producto 1 - Sistema de información (modelo de datos, plataforma y alquiler de equipos cifrados) | $28.000.000 |
+| Producto 2 - Investigación del informe de dinámicas de violencia (coordinación del observatorio, enlaces territoriales, jornadas, peticiones, red de corresponsales y salas seguras) | $49.500.000 |
+| Facilitación de la ejecución: conectividad, telefonía segura y papelería | $2.500.000 |
+| Complemento de los costos indirectos de administración | $2.500.000 |
+| Imprevistos y contingencias del proyecto, asumidos por la Corporación | $3.214.286 |
+| Total del aporte en dinero de la Corporación | $85.714.286 |
+
+La consecuencia de esta aplicación merece subrayarse: la totalidad del componente de litigio estratégico, las rutas de protección, los boletines, la incidencia y la red de defensores se financia con el aporte de la Gobernación, y la totalidad del sistema de información y de la investigación del informe se financia y ejecuta con el aporte de la Corporación, que además asume la contingencia del proyecto. La contingencia no se traslada al presupuesto departamental.
+
+Sin relación conmutativa. También en el convenio de asociación el informe, los boletines y las actuaciones jurídicas se pactan como bienes de interés general en favor de la población objetivo, publicados y de acceso ciudadano, no como servicios prestados a la Gobernación; las cláusulas de autonomía técnica y editorial del numeral 9 lo materializan.
 
 La Corporación debe acreditar su reconocida idoneidad (artículo 3 del Decreto 092): correspondencia entre su objeto social y el programa, experiencia en el objeto, estructura y capacidad, estados financieros auditados y registro en el SECOP. Aplican las prohibiciones, inhabilidades e incompatibilidades del artículo 6 del Decreto 092 de 2017, que remite a la Constitución y a las Leyes 80 de 1993, 1150 de 2007 y 1474 de 2011; en lo no regulado, rigen las normas generales del sistema de compra pública (artículos 7 y 8 del mismo decreto).
 
-Alternativa. Si la Gobernación prefiere la figura del convenio de asociación con celebración directa, la Corporación tendría que comprometer en dinero no menos del 30 % del valor total (con $300.000.000 de aporte departamental como 70 %, un aporte propio de $128.571.429). Esa alternativa queda documentada, pero no es la recomendada: contradice la decisión de estructura financiera de este proyecto, que concentra el aporte público en el litigio y deja a la Corporación los gastos menores de facilitación.
+Vía subsidiaria. Si el aporte del 30 % no pudiera acreditarse al radicar, la alternativa documentada es el contrato de interés público del inciso 2 del artículo 355 de la Constitución (artículo 2 del Decreto 092), que no exige ese piso pero requiere acreditar sus tres condiciones y superar el filtro de pluralidad de oferentes del artículo 4 del mismo decreto, con el ajuste de cronograma que un proceso competitivo implicaría.
 
 21. Indicadores
 ---------------
@@ -499,8 +506,8 @@ Alternativa. Si la Gobernación prefiere la figura del convenio de asociación c
 | 3 - 4502020 | Boletines estadísticos impresos producidos | 450202000 | 0 | 2 |
 | 3 - 4502020 | Informes publicados | 450202001 | 0 | 1 |
 | 4 - 4502038 | Estrategias de promoción de la garantía de derechos implementadas | 450203800 | 0 | 1 |
-| 4 - 4502038 | Peticiones ante la Comisión Interamericana radicadas | Propio del proyecto | 0 | 4 |
-| 4 - 4502038 | Solicitudes de medidas cautelares ante la CIDH radicadas | Propio del proyecto | 0 | 4 |
+| 4 - 4502038 | Peticiones ante la Comisión Interamericana radicadas | Propio del proyecto | 0 | 3 |
+| 4 - 4502038 | Solicitudes de medidas cautelares ante la CIDH radicadas | Propio del proyecto | 0 | 3 |
 | 5 - 4501006 | Personas con solicitud de protección o denuncia penal con expediente de seguimiento y actuación jurídica radicada | 450100600 | 0 | 80 |
 | 6 - 4502032 | Documentos de lineamientos técnicos realizados | 450203200 | 0 | 3 |
 | 7 - 4502038 | Redes departamentales de defensores instaladas con acta y plan propio | Propio del proyecto | 0 | 1 |
@@ -512,7 +519,7 @@ Notas. La determinación del nivel de riesgo corresponde a la UNP; la meta del p
 | Entidades requeridas mediante derecho de petición o solicitud de información pública | 90 |
 | Municipios con información recolectada y validada | 40 |
 | Corresponsales municipales formados y activos | 40 |
-| Encuentros subregionales de la red realizados | 3 |
+| Jornadas territoriales con función de encuentro subregional de la red | 5 |
 | Registros de hechos victimizantes cargados y clasificados | Sin línea base; se reporta el resultado obtenido |
 | Porcentaje de ejecución financiera al 31 de diciembre de 2026 | 100 % |
 | Informes de supervisión presentados | 3 |
@@ -528,13 +535,13 @@ El hito que determina la viabilidad es el envío de los derechos de petición en
 | 2 | Segundo bloque de solicitudes a organizaciones sociales, universidades e iglesia, hasta completar las cerca de noventa entidades requeridas. Diseño del modelo de datos y de las tipologías. Convocatoria de la red de corresponsales y de los nodos subregionales de la red de defensores. Primer boletín semanal de monitoreo | Modelo de datos aprobado; primer boletín publicado |
 | 3 | Implementación de la plataforma. Monitoreo retrospectivo de prensa 2016-2026. Identificación del universo de casos jurídicos. Primer taller de corresponsales en Cúcuta. Adjudicación del subcontrato de servicios jurídicos | Plataforma operando; subcontrato adjudicado |
 | 4 | Llegada de las primeras respuestas. Carga y normalización. Jornadas territoriales 1 y 2. Apertura de los expedientes de seguimiento ante la UNP y la Fiscalía | Primeras respuestas cargadas |
-| 5 | Insistencias y recursos frente a respuestas incompletas o negadas. Jornadas 3 y 4. Segundo taller de corresponsales en Ocaña y primer encuentro subregional de la red. Radicación del primer bloque de acciones jurídicas | Acciones jurídicas radicadas |
+| 5 | Insistencias y recursos frente a respuestas incompletas o negadas. Jornadas 3 y 4, que cumplen también la función de encuentros subregionales de la red. Segundo taller de corresponsales en Ocaña. Radicación del primer bloque de acciones jurídicas | Acciones jurídicas radicadas |
 | 6 | Triangulación y deduplicación. Jornada 5. Selección definitiva de casos emblemáticos. Instalación pública de la red departamental de defensores en Cúcuta. Primer boletín estadístico impreso | Red instalada con acta; casos emblemáticos seleccionados |
-| 7 | Cierre de la base. Cálculo del índice de riesgo, del barómetro de impunidad y del mapa de brecha de protección. Preparación de las peticiones interamericanas. Segundo encuentro subregional de la red (Pamplona) | Instrumentos analíticos calculados |
+| 7 | Cierre de la base. Cálculo del índice de riesgo, del barómetro de impunidad y del mapa de brecha de protección. Preparación de las peticiones interamericanas | Instrumentos analíticos calculados |
 | 8 | Redacción del informe. Mesa técnica de validación con las fuentes. Radicación de las solicitudes de medidas cautelares ante la CIDH | Medidas cautelares radicadas |
-| 9 | Ajuste del informe con las observaciones de la mesa. Radicación de las peticiones ante la Comisión Interamericana. Elaboración de los tres documentos de lineamientos técnicos. Tercer encuentro subregional de la red | Peticiones CIDH radicadas; documentos de política elaborados |
-| 10 | Audiencia pública de presentación ante la Asamblea, el Consejo Departamental de Paz y la Mesa Territorial de Garantías. Entrega al Subcomité de Prevención y a la CIPRAT. Segundo boletín estadístico impreso | Informe presentado públicamente |
-| 11 (hasta 31 dic) | Publicación definitiva, entrega de agregados anonimizados, audiencia departamental de balance de la red, auditoría externa, informe final y proyecto de acta de liquidación | Informe final entregado; audiencia de balance realizada |
+| 9 | Ajuste del informe con las observaciones de la mesa. Radicación de las peticiones ante la Comisión Interamericana. Elaboración de los tres documentos de lineamientos técnicos | Peticiones CIDH radicadas; documentos de política elaborados |
+| 10 | Audiencia pública de presentación ante la Asamblea, el Consejo Departamental de Paz y la Mesa Territorial de Garantías. Entrega al Subcomité de Prevención y a la CIPRAT. Segundo boletín estadístico impreso. La audiencia sirve además de audiencia departamental de balance de la red | Informe presentado públicamente |
+| 11 (hasta 31 dic) | Publicación definitiva, entrega de agregados anonimizados, auditoría externa, informe final y proyecto de acta de liquidación | Informe final entregado |
 
 Los boletines semanales digitales se publican de manera continua desde la semana 2 hasta la semana 11 (10 números): los primeros como boletines de monitoreo sobre fuentes abiertas, corresponsales y actuaciones del proyecto, y desde la semana 6 con los agregados estadísticos validados del sistema de información.
 
@@ -549,7 +556,8 @@ Los boletines semanales digitales se publican de manera continua desde la semana
 | Riesgo de seguridad del equipo en las jornadas territoriales y en los encuentros de la red | Alta | Muy alto | Análisis previo de la zona; coordinación con personerías y Ministerio Público; prohibición de pernoctar en municipios de riesgo alto; convocatorias discretas y sedes seguras para los encuentros de la red; suspensión de la actividad cuando el análisis lo indique |
 | Filtración de la base de datos o identificación de fuentes | Media | Muy alto | Cifrado, control de acceso por perfiles, inscripción en el RNBD, cláusula de no entrega de datos crudos y anonimización de los agregados |
 | Instrumentalización política del informe o de la red | Media | Alto | Mesa técnica de validación con las fuentes; anexo metodológico completo; cláusula de autonomía técnica y editorial en el contrato; secretaría técnica de la red en la sociedad civil |
-| Observación de los organismos de control a la celebración directa (artículos 2 y 4 del Decreto 092) o a la estructura de subcontratación | Media | Alto | Estudios previos que acrediten las tres condiciones del artículo 2, descarten motivadamente la pluralidad de oferentes del artículo 4 y sustenten la idoneidad de la Corporación; consulta escrita previa a Colombia Compra Eficiente (numerales 14.4 y 28); en subsidio, proceso competitivo entre ESAL o convenio de asociación con aporte del 30 % |
+| La Corporación no acredita el 30 % en dinero antes de suscribir | Media | Alto | Certificación previa a la radicación (extractos, revisor fiscal o convenios de cooperación); regla de ajuste proporcional del numeral 20; en subsidio, proceso competitivo o contrato de interés público del artículo 2 con el análisis del artículo 4 del Decreto 092 |
+| Observación de los organismos de control a la estructura de subcontratación financiada con recursos públicos | Media | Alto | Análisis del numeral 14.4; consulta escrita previa a Colombia Compra Eficiente (numerales 14.4 y 28); pago del subcontrato contra entregables aprobados |
 | Baja ejecución y constitución de reservas presupuestales | Alta | Alto | Equipo preseleccionado antes del acta de inicio; plan de adquisiciones aprobado; anticipo del 40 %; hitos semanales verificables |
 | Retraso en el acta de inicio más allá del 15 de octubre | Media | Muy alto | Adelantar el trámite contractual desde agosto; si el inicio se corre más de dos semanas, debe reducirse el alcance del informe a las fuentes ya disponibles y diferirse la publicación de los boletines |
 | La decisión de la CIDH sobre peticiones y medidas cautelares excede el plazo del contrato | Alta | Medio | Las metas se definen como actuaciones radicadas con expediente completo, no como decisiones obtenidas; cláusula de continuidad de la representación (numeral 14.6) y estrategia de sostenibilidad (numeral 27) |
@@ -574,7 +582,7 @@ Instrumentos analíticos
 | Índice de subregistro | Brecha entre lo que registran las fuentes oficiales y lo que registran las organizaciones sociales y la prensa para el mismo hecho, municipio y período. Es el dato que mejor explica por qué las políticas de seguridad se diseñan sobre información incompleta | Fase 1 |
 | Serie histórica y análisis de patrones 2016-2026 | Correlación entre operaciones militares, reconfiguración de grupos armados, disputas territoriales, ciclos electorales y agresiones a liderazgos. Convierte el informe en un análisis de dinámicas y no en un conteo | Fase 1 |
 | Caracterización diferencial de la victimización | Desagregación por sexo, pertenencia étnica (con atención al pueblo Barí), edad, condición de migrante o refugiado, orientación sexual, condición de firmante del Acuerdo y tipo de liderazgo: comunal, campesino, sindical, estudiantil, periodístico y de oposición política | Fase 1 |
-| Módulo piloto de percepción de amenaza a liderazgos | Adaptación de las encuestas oficiales nórdicas de medición del riesgo a cargos y liderazgos (Brå-PTU de Suecia, Kuntaliitto de Finlandia), aplicada a los integrantes de la red y de las instancias locales de derechos humanos, como línea base repetible | Fase 1 |
+| Módulo piloto de percepción de amenaza a liderazgos | Adaptación de las encuestas oficiales nórdicas de medición del riesgo a cargos y liderazgos (Brå-PTU de Suecia, Kuntaliitto de Finlandia), aplicada a los integrantes de la red y de las instancias locales de derechos humanos, como línea base repetible | Fase 2 |
 
 Instrumentos jurídicos
 
@@ -617,13 +625,13 @@ El proyecto partió de una propuesta de Casa de los Derechos Humanos con sede f�
 
 | Decisión | Formulación anterior | Esta formulación | Efecto |
 |---|---|---|---|
-| Financiación del litigio estratégico | Subcontrato de $78.500.000 pagado íntegramente con el aporte de la Corporación | Subcontrato de $80.000.000 y componente jurídico completo ($124.500.000) financiados íntegramente por la Gobernación | El aporte público se concentra en el componente central del proyecto; la estructura exige cambiar la modalidad de contratación |
-| Aporte de la Corporación | $85.714.286 en dinero (30 % del valor total), aplicados al subcontrato y a imprevistos | $19.500.000 en dinero para gastos menores de facilitación, imprevistos y complemento de los costos de administración, más $12.000.000 en especie (equipo de investigación dedicado al informe) | La Corporación facilita la ejecución y aporta trabajo al informe; deja de cargar con la partida mayor |
-| Modalidad de contratación | Convenio de asociación con celebración directa por aporte del 30 % (artículo 5 del Decreto 092 de 2017) | Contrato de interés público (artículo 355 de la Constitución y artículo 2 del Decreto 092 de 2017), que no exige el piso del 30 % | Mantiene la celebración directa con la nueva estructura financiera; exige acreditar las tres condiciones del artículo 2 en los estudios previos |
-| Valor y aporte departamental | $285.714.286 totales; $200.000.000 de la Gobernación | $319.500.000 en dinero; $300.000.000 de la Gobernación | Requiere ajustar el CDP y la disponibilidad de la vigencia 2026 |
-| Boletines | 4 boletines (2 impresos y 2 digitales) | 10 boletines semanales digitales y 2 impresos | Recupera la periodicidad semanal del diseño original del proyecto de protección; reporta más unidades a las metas 757 y 758 |
-| Metas e indicadores de litigio | 3 peticiones ante la CIDH, 3 solicitudes de medidas cautelares y 2 comunicaciones a Procedimientos Especiales de la ONU; indicadores 450203801 (rutas de atención, meta 1) y 450100600 con el nombre del catálogo | 4 peticiones, 4 solicitudes de medidas cautelares (al menos una colectiva) y 3 comunicaciones a la ONU; se suprime el indicador de rutas de atención (la ruta pertenece al programa departamental existente, meta 760) y el indicador del Producto 5 se verifica con expedientes y actuaciones radicadas | Eleva el nivel del componente central y formula todas las metas como actuaciones radicadas, no como decisiones de terceros |
-| Red de defensores | Red de corresponsales municipales como instrumento del observatorio | Red departamental de defensores como componente propio (Producto 7), que integra la red de corresponsales, con protocolo de alerta entre pares, guía de autoprotección, instalación pública y audiencia de balance | Materializa las metas 749, 760, 761 y 764; crea el activo de sostenibilidad y la destinataria de las medidas cautelares colectivas |
+| Financiación del litigio estratégico | Subcontrato de $78.500.000 pagado íntegramente con el aporte de la Corporación | El mismo subcontrato de $78.500.000 y el componente jurídico completo ($117.000.000) financiados íntegramente por la Gobernación | El aporte público se concentra en el componente central del proyecto |
+| Aporte de la Corporación | $85.714.286 en dinero (30 % del valor total), aplicados al subcontrato de litigio y a imprevistos | $85.714.286 en dinero (30 % del valor total), aplicados al sistema de información, a la investigación del informe, a la facilitación y a los imprevistos | Se conservan el monto y el porcentaje que habilitan la celebración directa; cambia su aplicación: la Corporación financia y ejecuta la producción del informe y deja de cargar con el litigio |
+| Modalidad de contratación | Convenio de asociación con celebración directa por aporte del 30 % (artículo 5 del Decreto 092 de 2017) | Se mantiene la misma modalidad y el mismo aporte del 30 %; solo cambia su aplicación (del litigio al observatorio) | La celebración directa no se altera; el contrato de interés público del artículo 2 queda documentado únicamente como vía subsidiaria |
+| Valor y aporte departamental | $285.714.286 totales; $200.000.000 de la Gobernación | Sin cambio: $285.714.286 totales; $200.000.000 de la Gobernación y $85.714.286 de la Corporación | El CDP y la disponibilidad de la vigencia 2026 se mantienen en los valores ya previstos |
+| Boletines | 4 boletines (2 impresos y 2 digitales) | 10 boletines semanales digitales y 2 impresos, con el mismo presupuesto del producto (el costo es principalmente el trabajo del analista, ya financiado) | Recupera la periodicidad semanal del diseño original del proyecto de protección; reporta más unidades a las metas 757 y 758 |
+| Metas e indicadores de litigio | 3 peticiones ante la CIDH, 3 solicitudes de medidas cautelares y 2 comunicaciones a Procedimientos Especiales de la ONU; indicadores 450203801 (rutas de atención, meta 1) y 450100600 con el nombre del catálogo | Se mantienen 3 peticiones, 3 solicitudes de medidas cautelares (ahora con al menos una colectiva exigida) y 2 comunicaciones a la ONU, financiadas con el aporte público; se suprime el indicador de rutas de atención (la ruta pertenece al programa departamental existente, meta 760) y el indicador del Producto 5 se verifica con expedientes y actuaciones radicadas | El nivel se eleva por la vía de la financiación pública y del compromiso expreso de llegar a la CIDH; las metas se formulan como actuaciones radicadas |
+| Red de defensores | Red de corresponsales municipales como instrumento del observatorio | Red departamental de defensores como componente propio (Producto 7), que integra la red de corresponsales, con protocolo de alerta entre pares, guía de autoprotección e instalación pública; sus encuentros subregionales se realizan en las jornadas territoriales y su audiencia de balance en la audiencia pública, para no duplicar costos | Materializa las metas 749, 760, 761 y 764 sin ampliar el presupuesto; crea el activo de sostenibilidad y la destinataria de las medidas cautelares colectivas |
 | Referentes | Sin capítulo de referentes | Capítulo de referentes aplicados: estándares nórdicos, Bogotá, Medellín y Antioquia (numeral 16) | Sustenta el diseño en experiencias verificables y abre puertas de cooperación |
 | Sede física | Suprimida en la formulación anterior | Se mantiene suprimida; salas seguras por horas y equipos en alquiler, financiados por la Corporación | Concentra el gasto público en investigación y litigio, no en instalaciones |
 
@@ -639,11 +647,11 @@ Al 31 de diciembre de 2026 quedan instalados un sistema de información con su m
 
 | N.º | Verificación | Criticidad |
 |---|---|---|
-| 1 | Concepto de la oficina jurídica de la Gobernación sobre la modalidad del contrato de interés público (artículo 2 del Decreto 092 de 2017) para esta estructura financiera, y consulta escrita a la ANCP - Colombia Compra Eficiente sobre la modalidad y la estructura de subcontratación, anexada a los estudios previos | Viabilidad |
+| 1 | Acreditar en dinero los $85.714.286 del aporte de la Corporación al momento de radicar (extractos, certificación de revisor fiscal o convenios de cooperación suscritos); si el aporte varía, aplicar la regla de ajuste proporcional del numeral 20 | Viabilidad |
 | 2 | Confirmar con Planeación el estado de avance de las metas 749 a 764 a 2026 y la dependencia responsable, para precisar cuánto puede reportar el proyecto | Viabilidad |
 | 3 | Establecer si existe proyecto viabilizado en el banco de proyectos al cual asociar el contrato, o el tiempo de registro en MGA Web | Viabilidad |
-| 4 | Confirmar rubro, fuente y expedición del CDP por $300.000.000 dentro de la vigencia 2026 | Viabilidad |
-| 5 | Certificar el aporte de la Corporación: $19.500.000 en dinero (extractos o certificación de revisor fiscal) y la valoración del aporte en especie | Viabilidad |
+| 4 | Confirmar rubro, fuente y expedición del CDP por $200.000.000 dentro de la vigencia 2026 | Viabilidad |
+| 5 | Elevar consulta escrita a la ANCP - Colombia Compra Eficiente sobre la admisibilidad de la estructura de subcontratación del numeral 14, financiada con recursos públicos, y anexar la respuesta a los estudios previos | Alta |
 | 6 | Validar los códigos de producto e indicador contra la versión vigente del Catálogo de Productos MGA | Alta |
 | 7 | Verificar en la Ordenanza 018 de 2025 el porcentaje exacto de estampillas | Alta |
 | 8 | Homologar honorarios con la resolución vigente de la Gobernación y con SECOP II | Alta |
@@ -658,4 +666,4 @@ Al 31 de diciembre de 2026 quedan instalados un sistema de información con su m
 Cierre
 ------
 
-El proyecto que resulta de esta integración concentra el aporte público donde está su valor: el litigio estratégico. La Gobernación financia la totalidad del componente jurídico, incluida la firma especializada que llevará los casos emblemáticos ante la Comisión Interamericana de Derechos Humanos, y la Corporación facilita la ejecución con gastos menores y aporta su equipo de investigación al informe. El observatorio produce la evidencia que ninguna entidad puede producir sobre sí misma; los boletines semanales la mantienen viva durante la ejecución; y la red departamental de defensores garantiza que, al terminar la fase, quede instalada una capacidad colectiva de documentación, alerta y exigencia que no depende de un inmueble ni de un solo actor. El componente jurídico asegura que la documentación no se agote en el diagnóstico: cada caso documentado se traduce en una actuación ante la autoridad competente y, en los casos emblemáticos, ante el Sistema Interamericano.
+El proyecto que resulta de esta integración concentra el aporte público donde está su valor: el litigio estratégico. La Gobernación financia la totalidad del componente jurídico, incluida la firma especializada que llevará los casos emblemáticos ante la Comisión Interamericana de Derechos Humanos, y la Corporación, con su aporte en dinero del 30 % del valor total, financia y ejecuta el sistema de información y la investigación del informe, facilita la ejecución y asume los imprevistos. El observatorio produce la evidencia que ninguna entidad puede producir sobre sí misma; los boletines semanales la mantienen viva durante la ejecución; y la red departamental de defensores garantiza que, al terminar la fase, quede instalada una capacidad colectiva de documentación, alerta y exigencia que no depende de un inmueble ni de un solo actor. El componente jurídico asegura que la documentación no se agote en el diagnóstico: cada caso documentado se traduce en una actuación ante la autoridad competente y, en los casos emblemáticos, ante el Sistema Interamericano.
