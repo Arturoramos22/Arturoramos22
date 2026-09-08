@@ -115,7 +115,8 @@ P("JUEZ PROMISCUO MUNICIPAL DE RAGONVALIA (NORTE DE SANTANDER)", bold=True, alig
 P("Para ante el superior funcional", align="left", space_after=0)
 P("E. S. D.", align="left", space_after=12)
 
-tbl = doc.add_table(rows=5, cols=2); tbl.alignment = WD_TABLE_ALIGNMENT.LEFT
+tbl = doc.add_table(rows=5, cols=2); tbl.alignment = WD_TABLE_ALIGNMENT.LEFT; tbl.autofit = False
+tbl.columns[0].width = Cm(3.6); tbl.columns[1].width = Cm(12.4)
 rows = [("REFERENCIA:", "IMPUGNACIÓN del fallo de tutela de primera instancia del 2 de septiembre de 2026"),
         ("RADICADO:", "54-599-40-89-001-2026-00107-00"),
         ("ACCIONANTE:", "FREDDY ENRIQUE CARRILLO RINCÓN"),
@@ -123,7 +124,7 @@ rows = [("REFERENCIA:", "IMPUGNACIÓN del fallo de tutela de primera instancia d
         ("VINCULADAS:", "Secretaría de Planeación e Infraestructura de Ragonvalia y otras")]
 for i, (a, b) in enumerate(rows):
     ca, cb = tbl.rows[i].cells
-    ca.width = Cm(3.5); cb.width = Cm(12.5)
+    ca.width = Cm(3.6); cb.width = Cm(12.4)
     ca.paragraphs[0].add_run(a).bold = True
     cb.paragraphs[0].add_run(b)
     for c in (ca, cb):
@@ -343,13 +344,12 @@ for t in ["Video del predio y del camino del 19 de agosto de 2026 (archivo VID-2
 
 # ------------------------------------------------------------------ VI. NOTIFICACIONES
 H("VI. NOTIFICACIONES")
-RUNS(["Recibiré notificaciones en el correo electrónico carrillojaimesfreddy@gmail.com, en el teléfono 313 335 5383 y en la finca \"El Pino\", vereda "
-      "Sombrerito, municipio de Ragonvalia."])
-P("", space_after=18)
-P("Atentamente,", align="left", space_after=36)
-P("______________________________", align="left", space_after=0)
-P("FREDDY ENRIQUE CARRILLO RINCÓN", bold=True, align="left", space_after=0)
-P("C.C. No. 13.453.598 de Cúcuta", align="left", space_after=0)
+pnot = RUNS(["Recibiré notificaciones en el correo electrónico carrillojaimesfreddy@gmail.com, en el teléfono 313 335 5383 y en la finca \"El Pino\", vereda "
+      "Sombrerito, municipio de Ragonvalia."]); pnot.paragraph_format.keep_with_next = True
+pa = P("Atentamente,", align="left", space_after=36); pa.paragraph_format.space_before = Pt(18); pa.paragraph_format.keep_with_next = True
+pl = P("______________________________", align="left", space_after=0); pl.paragraph_format.keep_with_next = True
+pn = P("FREDDY ENRIQUE CARRILLO RINCÓN", bold=True, align="left", space_after=0); pn.paragraph_format.keep_with_next = True
+pc = P("C.C. No. 13.453.598 de Cúcuta", align="left", space_after=0); pc.paragraph_format.keep_with_next = True
 P("Accionante", align="left")
 
 build_footnotes_part(doc)
