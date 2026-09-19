@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contratación Estatal y Control Ciudadano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#132A4C;
+    --ink-soft:#4B5A73;
+    --paper:#EDF0F2;
+    --panel:#FFFFFF;
+    --accent:#C9791D;
+    --accent-2:#2F7B6B;
+    --border: rgba(19,42,76,0.14);
+    --shadow: 0 18px 40px -24px rgba(19,42,76,0.35);
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#E8EBEF;
+      --ink-soft:#AEB8C8;
+      --paper:#0B1526;
+      --panel:#121F36;
+      --accent:#E3A24E;
+      --accent-2:#59B39F;
+      --border: rgba(232,235,239,0.14);
+      --shadow: 0 18px 40px -24px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#E8EBEF;
+    --ink-soft:#AEB8C8;
+    --paper:#0B1526;
+    --panel:#121F36;
+    --accent:#E3A24E;
+    --accent-2:#59B39F;
+    --border: rgba(232,235,239,0.14);
+    --shadow: 0 18px 40px -24px rgba(0,0,0,0.6);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    line-height:1.55;
+    padding-inline:20px;
+    padding-block:36px;
+  }
+  main{max-width:760px; margin-inline:auto; display:flex; flex-direction:column; gap:52px;}
+  h1,h2,h3{font-family:'Fraunces', Georgia, serif; text-wrap:balance; margin:0;}
+  .mono{font-family:'IBM Plex Mono', ui-monospace, monospace;}
+  a{color:var(--accent-2);}
+  img{max-width:100%;}
+  [hidden]{display:none!important;}
+
+  .stamp-row{
+    display:flex; flex-wrap:wrap; align-items:center; gap:12px 18px;
+    padding-bottom:18px; border-bottom:1px solid var(--border);
+  }
+  .stamp{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--accent); font-weight:500;
+  }
+  .stamp-row .sep{color:var(--border);}
+  .radicado{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-soft);}
+  .badge{
+    margin-left:auto; font-family:'IBM Plex Mono', monospace; font-size:11.5px;
+    letter-spacing:.06em; text-transform:uppercase; color:var(--accent-2);
+    border:1px solid var(--accent-2); border-radius:999px; padding:5px 12px;
+  }
+
+  .hero h1{font-size:clamp(30px, 5vw, 44px); font-weight:600; line-height:1.1; margin-bottom:16px;}
+  .hero .lede{font-size:17.5px; color:var(--ink-soft); max-width:58ch; margin-bottom:26px;}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px;}
+  .btn{
+    font-family:'IBM Plex Sans', sans-serif; font-size:15px; font-weight:600;
+    padding:13px 22px; border-radius:10px; border:1px solid transparent;
+    cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn:focus-visible{outline:2px solid var(--accent-2); outline-offset:2px;}
+  .btn-primary{background:var(--ink); color:var(--paper);}
+  .btn-primary:hover{opacity:.92;}
+  .btn-ghost{background:transparent; border-color:var(--border); color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--ink-soft);}
+
+  section{display:flex; flex-direction:column; gap:18px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--ink-soft);
+  }
+  section h2{font-size:26px; font-weight:600;}
+
+  .audience{
+    list-style:none; margin:0; padding:0; display:grid; gap:12px;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  }
+  .audience li{
+    background:var(--panel); border:1px solid var(--border); border-radius:12px;
+    padding:16px 18px; font-size:14.5px; color:var(--ink-soft);
+  }
+  .audience li strong{color:var(--ink); display:block; font-size:15px; margin-bottom:4px; font-weight:600;}
+
+  .modules{display:grid; gap:14px;}
+  .module{
+    display:grid; grid-template-columns:auto 1fr; gap:16px;
+    background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px 20px;
+    box-shadow:var(--shadow);
+  }
+  .module .num{
+    font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--accent);
+    border-right:1px solid var(--border); padding-right:16px; align-self:start;
+  }
+  .module h3{font-size:16.5px; font-weight:600; margin-bottom:4px;}
+  .module p{margin:0; font-size:14px; color:var(--ink-soft);}
+
+  .context p{font-size:15px; color:var(--ink-soft); max-width:65ch;}
+  .context .law{color:var(--ink); font-weight:500;}
+
+  .facts{
+    display:grid; gap:0; grid-template-columns:repeat(auto-fit, minmax(160px,1fr));
+    background:var(--panel); border:1px solid var(--border); border-radius:14px;
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  .fact{padding:18px 20px; border-bottom:1px solid var(--border);}
+  .fact:nth-last-child(-n+2){border-bottom:none;}
+  .fact .label{font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px;}
+  .fact .value{font-size:15px; font-weight:500;}
+  .fact .value.accent{color:var(--accent-2);}
+
+  form{
+    display:grid; gap:16px; background:var(--panel); border:1px solid var(--border);
+    border-radius:16px; padding:26px; box-shadow:var(--shadow);
+  }
+  .field-row{display:grid; gap:16px; grid-template-columns:1fr 1fr;}
+  .field{display:flex; flex-direction:column; gap:6px;}
+  .field label{font-size:13px; font-weight:600; color:var(--ink-soft);}
+  .field input, .field select, .field textarea{
+    font-family:'IBM Plex Sans', sans-serif; font-size:15px; padding:11px 12px;
+    border-radius:9px; border:1px solid var(--border); background:var(--paper); color:var(--ink);
+  }
+  .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible{
+    outline:2px solid var(--accent-2); outline-offset:1px;
+  }
+  .field textarea{resize:vertical; min-height:84px; font-family:inherit;}
+  .hint{font-size:12.5px; color:var(--ink-soft);}
+  .status{font-size:13.5px; padding:12px 14px; border-radius:9px; background:var(--paper); border:1px dashed var(--border); color:var(--ink-soft);}
+
+  .share{
+    display:grid; gap:12px; background:var(--panel); border:1px solid var(--border);
+    border-radius:16px; padding:22px; box-shadow:var(--shadow);
+  }
+  .share textarea{
+    width:100%; min-height:120px; font-family:'IBM Plex Sans', sans-serif; font-size:14px;
+    padding:14px; border-radius:10px; border:1px solid var(--border); background:var(--paper); color:var(--ink-soft);
+  }
+  .share-actions{display:flex; flex-wrap:wrap; gap:10px;}
+
+  footer{
+    border-top:1px solid var(--border); padding-top:20px; font-size:13px; color:var(--ink-soft);
+    display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:space-between;
+  }
+
+  @media (max-width:520px){
+    .field-row{grid-template-columns:1fr;}
+    .badge{margin-left:0;}
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="stamp-row">
+    <span class="stamp">Convocatoria abierta</span>
+    <span class="sep">·</span>
+    <span class="radicado">Ref. CE-2026-01</span>
+    <span class="badge">Cupos limitados</span>
+  </div>
+
+  <section class="hero">
+    <h1>Contratación estatal y mecanismos de control ciudadano</h1>
+    <p class="lede">Curso gratuito para jóvenes que quieren entender cómo el Estado contrata, dónde consultarlo y qué herramientas legales existen para vigilarlo y denunciar irregularidades.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#formulario">Inscribirme</a>
+      <button class="btn btn-ghost" type="button" id="btn-copy-link">Copiar enlace de la invitación</button>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Dirigido a</span>
+    <h2>Jóvenes que quieren pasar de espectadores a veedores</h2>
+    <ul class="audience">
+      <li><strong>Estudiantes</strong>de derecho, ciencia política, administración pública y afines.</li>
+      <li><strong>Líderes juveniles y comunales</strong>de juntas de acción comunal, colectivos y organizaciones sociales.</li>
+      <li><strong>Servidores públicos jóvenes</strong>que quieren reforzar su criterio en procesos de contratación.</li>
+      <li><strong>Cualquier joven de 16 a 28 años</strong>interesado en participación y control social, sin experiencia previa requerida.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="eyebrow">Contenido</span>
+    <h2>Qué vas a aprender</h2>
+    <div class="modules">
+      <div class="module">
+        <span class="num">01</span>
+        <div><h3>Fundamentos de la contratación estatal</h3><p>Principios y marco general: Ley 80 de 1993, Ley 1150 de 2007 y Decreto 1082 de 2015.</p></div>
+      </div>
+      <div class="module">
+        <span class="num">02</span>
+        <div><h3>El SECOP como herramienta de transparencia</h3><p>Cómo consultar procesos, contratos y proveedores en el SECOP I y SECOP II.</p></div>
+      </div>
+      <div class="module">
+        <span class="num">03</span>
+        <div><h3>Modalidades de selección</h3><p>Licitación pública, selección abreviada, concurso de méritos, contratación directa y mínima cuantía.</p></div>
+      </div>
+      <div class="module">
+        <span class="num">04</span>
+        <div><h3>Mecanismos de control ciudadano</h3><p>Veedurías ciudadanas (Ley 850 de 2003), derecho de petición, acción de tutela y acción popular.</p></div>
+      </div>
+      <div class="module">
+        <span class="num">05</span>
+        <div><h3>Cómo y dónde denunciar irregularidades</h3><p>Rutas ante la Procuraduría, la Contraloría, la Personería y los canales de denuncia ciudadana.</p></div>
+      </div>
+      <div class="module">
+        <span class="num">06</span>
+        <div><h3>Taller práctico</h3><p>Análisis en vivo de un proceso real publicado en el SECOP, en grupos pequeños.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="context">
+    <span class="eyebrow">Por qué importa</span>
+    <h2>Vigilar la contratación pública es un derecho, no un favor</h2>
+    <p>La Constitución y la ley reconocen el control social como un mecanismo legítimo de participación: <span class="law">la Ley 850 de 2003</span> regula las veedurías ciudadanas y <span class="law">la Ley 1757 de 2015</span> promueve la participación democrática. Este curso entrega las herramientas prácticas para ejercer ese derecho sobre los recursos públicos que se ejecutan en cada municipio.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Detalles</span>
+    <div class="facts">
+      <div class="fact"><div class="label">Costo</div><div class="value accent">Gratuito</div></div>
+      <div class="fact"><div class="label">Modalidad</div><div class="value">Virtual, en vivo</div></div>
+      <div class="fact"><div class="label">Duración</div><div class="value">4 sesiones de 2 horas</div></div>
+      <div class="fact"><div class="label">Certificación</div><div class="value">Certificado de asistencia</div></div>
+      <div class="fact"><div class="label">Inicio</div><div class="value">Por confirmar — se avisa por correo a inscritos</div></div>
+      <div class="fact"><div class="label">Inscripciones</div><div class="value">Abiertas hasta agotar cupos</div></div>
+    </div>
+  </section>
+
+  <section id="formulario">
+    <span class="eyebrow">Inscripción</span>
+    <h2>Reserva tu cupo</h2>
+    <p class="hint">Al enviar, se abrirá tu correo con los datos listos para enviar a <strong>abogadosramosmejia@gmail.com</strong>. Si no se abre automáticamente, escríbenos directo a ese correo con la misma información.</p>
+    <form id="form-inscripcion">
+      <div class="field-row">
+        <div class="field">
+          <label for="f-nombre">Nombre completo *</label>
+          <input id="f-nombre" name="nombre" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="f-edad">Edad</label>
+          <input id="f-edad" name="edad" type="number" min="14" max="99" inputmode="numeric">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-correo">Correo electrónico *</label>
+          <input id="f-correo" name="correo" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-telefono">Teléfono / WhatsApp</label>
+          <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-ciudad">Ciudad</label>
+          <input id="f-ciudad" name="ciudad" type="text" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="f-rol">Perfil</label>
+          <select id="f-rol" name="rol">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Líder juvenil o comunal">Líder juvenil o comunal</option>
+            <option value="Servidor público">Servidor público</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-motivo">¿Por qué te interesa el curso?</label>
+        <textarea id="f-motivo" name="motivo" placeholder="Cuéntanos brevemente tu interés o el contexto desde el que participas."></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" style="justify-self:start;">Enviar inscripción por correo</button>
+      <p class="status" id="form-status" hidden></p>
+    </form>
+  </section>
+
+  <section class="share">
+    <span class="eyebrow">Compartir</span>
+    <h2 style="font-size:20px;">Invita a alguien más</h2>
+    <textarea id="share-text" readonly>Curso gratuito de Contratación Estatal y Mecanismos de Control Ciudadano, para jóvenes.
+
+Aprende a leer el SECOP, entender cómo contrata el Estado y qué hacer ante una irregularidad.
+
+Gratis · Virtual · Cupos limitados
+Inscripciones: abogadosramosmejia@gmail.com</textarea>
+    <div class="share-actions">
+      <button class="btn btn-ghost" type="button" id="btn-copy-text">Copiar texto de invitación</button>
+      <a class="btn btn-ghost" href="mailto:abogadosramosmejia@gmail.com?subject=Inscripci%C3%B3n%20Curso%20Contrataci%C3%B3n%20Estatal">Escribir directamente por correo</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>Iniciativa ciudadana de formación jurídica.</span>
+    <span>Contacto: <a href="mailto:abogadosramosmejia@gmail.com">abogadosramosmejia@gmail.com</a></span>
+  </footer>
+
+</main>
+
+<script>
+(function(){
+  function copyText(text, btn, okLabel){
+    var original = btn.textContent;
+    function done(){ btn.textContent = okLabel; setTimeout(function(){ btn.textContent = original; }, 1800); }
+    try{
+      navigator.clipboard.writeText(text).then(done).catch(function(){ fallbackCopy(text, done); });
+    }catch(e){
+      fallbackCopy(text, done);
+    }
+  }
+  function fallbackCopy(text, done){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      done();
+    }catch(e){ /* clipboard unavailable in this context; user can select manually */ }
+  }
+
+  var linkBtn = document.getElementById('btn-copy-link');
+  linkBtn.addEventListener('click', function(){
+    copyText(window.location.href, linkBtn, 'Enlace copiado');
+  });
+
+  var textBtn = document.getElementById('btn-copy-text');
+  var shareArea = document.getElementById('share-text');
+  textBtn.addEventListener('click', function(){
+    copyText(shareArea.value, textBtn, 'Texto copiado');
+  });
+
+  var form = document.getElementById('form-inscripcion');
+  var status = document.getElementById('form-status');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var data = new FormData(form);
+    var lines = [
+      'Nombre completo: ' + (data.get('nombre') || ''),
+      'Edad: ' + (data.get('edad') || ''),
+      'Correo electrónico: ' + (data.get('correo') || ''),
+      'Teléfono / WhatsApp: ' + (data.get('telefono') || ''),
+      'Ciudad: ' + (data.get('ciudad') || ''),
+      'Perfil: ' + (data.get('rol') || ''),
+      'Motivo de interés: ' + (data.get('motivo') || '')
+    ];
+    var subject = 'Inscripción Curso Contratación Estatal - ' + (data.get('nombre') || '');
+    var body = 'Inscripción al curso de Contratación Estatal y Mecanismos de Control Ciudadano:\n\n' + lines.join('\n');
+    var mailto = 'mailto:abogadosramosmejia@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    window.location.href = mailto;
+    status.hidden = false;
+    status.textContent = 'Se abrió tu correo con la inscripción lista para enviar. Si no ves la ventana, escribe directamente a abogadosramosmejia@gmail.com con tus datos.';
+  });
+})();
+</script>
+</body>
+</html>
