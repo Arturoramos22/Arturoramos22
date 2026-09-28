@@ -4,7 +4,8 @@ Carpeta lista para usar. Fuentes exclusivamente de la Universidad Externado de C
 
 | Archivo | Qué es | Cuándo usarlo |
 |---|---|---|
-| `DIAPOSITIVAS.pptx` | 24 diapositivas para proyectar en la sesión, con notas del orador en cada una (guion, tiempos, plan B por video y respuestas de la evaluación) | Durante la conferencia |
+| `DIAPOSITIVAS.pptx` | 25 diapositivas para proyectar en la sesión, con notas del orador en cada una (guion, tiempos, plan B por video y respuestas de la evaluación). La diapositiva 7 reúne los enlaces clicables de los cuatro videos y sus planes B; cada diapositiva de video tiene su botón «Abrir el video» | Durante la conferencia |
+| `ENLACES_VIDEOS.md` | Los enlaces de los videos, sus planes B y los canales institucionales, en texto plano | Para descargar los fragmentos antes de la sesión |
 | `PROGRAMA.docx` / `PROGRAMA.md` | Programa completo: tesis, objetivos, lecturas previas, agenda minuto a minuto, guion del facilitador por bloque, ejercicio y dos talleres con instrucciones, banco de 20 preguntas con respuesta modelo, logística y rutas de profundización | Para preparar la sesión y para el paquete que se envía a los asistentes |
 | `FUENTES.docx` / `FUENTES.md` | Catálogo de 155 fuentes (videos, artículos, lecturas, casos, cursos) con URL, autores, año y estado de verificación | Para descargar los materiales y armar el paquete digital |
 
