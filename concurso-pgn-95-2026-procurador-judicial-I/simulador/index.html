@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simulador Procurador Judicial I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: expediente a dos columnas (caso a la izquierda, enunciado y opciones a la derecha), una columna en móvil. */
+:root{
+  --bg:#f3f6f4; --surface:#ffffff; --surface-2:#e9efec; --fg:#17211e; --muted:#5d6d68; --line:#d3dcd8;
+  --accent:#0f6b5b; --accent-ink:#ffffff; --accent-soft:#dcefe9;
+  --amber:#a86a12; --amber-soft:#f7ead6; --ok:#2f7d4a; --ok-soft:#dff1e4; --bad:#b3261e; --bad-soft:#f9e0de;
+  --font-ui:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-text:"Literata",Georgia,"Times New Roman",serif;
+  --radius:10px; --shadow:0 1px 2px rgba(23,33,30,.06),0 6px 20px rgba(23,33,30,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1513; --surface:#171f1c; --surface-2:#1f2a26; --fg:#e6ecea; --muted:#9aaba5; --line:#2a3733;
+    --accent:#4fb8a4; --accent-ink:#0b1512; --accent-soft:#183b34;
+    --amber:#e0a63b; --amber-soft:#3a2d14; --ok:#7bc67e; --ok-soft:#1c3323; --bad:#f28b82; --bad-soft:#3d1c1a;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1513; --surface:#171f1c; --surface-2:#1f2a26; --fg:#e6ecea; --muted:#9aaba5; --line:#2a3733;
+  --accent:#4fb8a4; --accent-ink:#0b1512; --accent-soft:#183b34;
+  --amber:#e0a63b; --amber-soft:#3a2d14; --ok:#7bc67e; --ok-soft:#1c3323; --bad:#f28b82; --bad-soft:#3d1c1a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:16px;line-height:1.5}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--accent)}
+[hidden]{display:none!important}
+h1,h2,h3{font-family:var(--font-text);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:1.6rem;font-weight:600}
+h2{font-size:1.25rem;font-weight:600}
+h3{font-size:1.05rem;font-weight:600}
+.eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:16px 40px}
+/* Top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-family:var(--font-text);font-weight:600;font-size:1.05rem}
+.brand span{font-size:.78rem;color:var(--muted)}
+.topbar .grow{flex:1 1 auto}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:var(--surface-2);font-size:.8rem;font-weight:600;color:var(--fg);white-space:nowrap}
+.chip.timer{font-size:1rem;min-width:7.5ch;justify-content:center}
+.chip.timer.warn{background:var(--amber-soft);color:var(--amber)}
+.chip.timer.danger{background:var(--bad-soft);color:var(--bad)}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}
+.chip.bad{background:var(--bad-soft);color:var(--bad)}
+.chip.amber{background:var(--amber-soft);color:var(--amber)}
+.chip.accent{background:var(--accent-soft);color:var(--accent)}
+/* Buttons */
+.btn{appearance:none;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 14px;cursor:pointer;font-weight:600;transition:background .15s,border-color .15s}
+.btn:hover{border-color:var(--accent)}
+.btn:focus-visible,.opt:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.05)}
+.btn.ghost{background:transparent}
+.btn.small{padding:5px 10px;font-size:.85rem}
+.btn.danger{border-color:var(--bad);color:var(--bad)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+/* Cards & grid */
+.grid{display:grid;gap:16px}
+.grid.modes{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.card.raised{box-shadow:var(--shadow)}
+.card h2{margin-bottom:6px}
+.card p{margin:.4rem 0;color:var(--muted)}
+.card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.field{display:flex;flex-direction:column;gap:4px;font-size:.9rem}
+.field label{color:var(--muted);font-weight:600;font-size:.8rem}
+.field input,.field select{padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.field-row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px 12px;font-size:.9rem}
+.checks label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.checks input{margin-top:5px}
+.note{font-size:.85rem;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:14px 0}
+details.info summary{cursor:pointer;font-weight:600}
+details.info{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 18px}
+details.info ul{margin:.5rem 0 .2rem 1.1rem;padding:0}
+details.info li{margin:.25rem 0}
+/* Exam layout */
+.exam{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;align-items:start}
+@media (max-width:860px){.exam{grid-template-columns:1fr}}
+.caso{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;min-width:0}
+.caso .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.caso-text{font-family:var(--font-text);font-size:1.08rem;line-height:1.65;max-width:62ch}
+.pregunta{min-width:0;display:flex;flex-direction:column;gap:12px}
+.enunciado{font-family:var(--font-text);font-size:1.12rem;font-weight:600;line-height:1.45;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;text-align:left;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);cursor:pointer;transition:border-color .15s,background .15s;line-height:1.45}
+.opt:hover{border-color:var(--accent)}
+.opt .letter{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--surface-2);font-size:.9rem}
+.opt.selected{border-color:var(--accent);background:var(--accent-soft)}
+.opt.selected .letter{background:var(--accent);color:var(--accent-ink)}
+.opt.correct{border-color:var(--ok);background:var(--ok-soft)}
+.opt.correct .letter{background:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .letter{background:var(--bad);color:#fff}
+.opt.partial{border-color:var(--amber);background:var(--amber-soft)}
+.opt.partial .letter{background:var(--amber);color:#fff}
+.opt:disabled{cursor:default}
+.feedback{border-left:4px solid var(--accent);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;font-size:.95rem}
+.feedback .fuente{color:var(--muted);font-size:.85rem;margin-top:6px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-top:6px}
+.nav .left,.nav .right{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.progress{height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin:6px 0 14px}
+.progress > div{height:100%;background:var(--accent);width:0}
+/* Question map */
+.qmap{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.qmap button{width:32px;height:32px;border-radius:6px;border:1px solid var(--line);background:var(--surface);font-size:.75rem;font-weight:600;cursor:pointer;padding:0}
+.qmap button.done{background:var(--accent-soft);border-color:var(--accent)}
+.qmap button.mark{box-shadow:inset 0 -3px 0 var(--amber)}
+.qmap button.cur{outline:2px solid var(--accent);outline-offset:1px}
+.qmap button.right{background:var(--ok-soft);border-color:var(--ok)}
+.qmap button.wrongq{background:var(--bad-soft);border-color:var(--bad)}
+/* Results */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.tile .v{font-size:2rem;font-weight:700;line-height:1.1;font-family:var(--font-text)}
+.tile .l{font-size:.8rem;color:var(--muted);margin-top:4px}
+.bars{display:grid;gap:8px}
+.bar-row{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2fr) 70px;gap:10px;align-items:center;font-size:.9rem}
+@media (max-width:560px){.bar-row{grid-template-columns:1fr;gap:4px}.bar-row .val{text-align:left}}
+.bar-track{position:relative;height:14px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.bar-fill{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:0 4px 4px 0}
+.bar-thr{position:absolute;top:-2px;bottom:-2px;left:65%;width:2px;background:var(--fg);opacity:.55}
+.bar-row .val{text-align:right;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.table-wrap{overflow-x:auto}
+.review-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.review-item .caso-text{font-size:1rem}
+.review-item .opt{cursor:default;padding:8px 12px}
+.review-item summary{cursor:pointer;font-weight:600}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.tabs .btn.active{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:.9rem;box-shadow:var(--shadow);z-index:20}
+.stat-list{display:grid;gap:6px;font-size:.9rem}
+.kbd{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;background:var(--surface-2);padding:1px 6px;border-radius:4px}
+.confirm{border:1px solid var(--amber);background:var(--amber-soft);border-radius:var(--radius);padding:12px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><strong>Simulador Procurador Judicial I</strong><span>Convocatoria 95-2026 · PGN · modelo de juicio situacional (U. de Antioquia)</span></div>
+    <div class="grow"></div>
+    <span id="modeChip" class="chip" hidden></span>
+    <span id="progChip" class="chip num" hidden></span>
+    <span id="timerChip" class="chip timer num" hidden>00:00:00</span>
+    <button id="btnHome" class="btn small ghost" type="button" hidden>Inicio</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- INICIO -->
+  <section id="home">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-bottom:14px">
+      <div>
+        <div class="eyebrow">Concurso abierto de méritos · Resolución 076 de 2026 y modificatorias</div>
+        <h1>Prepárese como se evalúa: casos, norma aplicable y decisión</h1>
+        <p class="note" style="max-width:70ch">Banco de <span id="homeCount" class="num">0</span> ítems construidos con la lógica de las pruebas de juicio situacional de la Universidad de Antioquia: un caso del ejercicio del cargo, un enunciado y opciones que se diferencian por matices normativos. Prueba de conocimientos (70 %, eliminatoria, mínimo 65/100) y prueba comportamental (20 %, clasificatoria).</p>
+      </div>
+    </div>
+
+    <div class="grid modes">
+      <div class="card raised">
+        <div class="eyebrow">Modo 1</div>
+        <h2>Simulacro completo</h2>
+        <p>Conocimientos y comportamental con la distribución ponderada por eje y cronómetro continuo, como el día de la prueba. Sin retroalimentación hasta el final.</p>
+        <div class="field-row">
+          <div class="field"><label for="simC">Ítems de conocimientos</label>
+            <select id="simC"><option value="100">100 (estándar)</option><option value="60">60 (corto)</option><option value="144">144 (banco completo)</option></select></div>
+          <div class="field"><label for="simB">Ítems comportamentales</label>
+            <select id="simB"><option value="20">20</option><option value="10">10</option><option value="30">30 (todos)</option></select></div>
+          <div class="field"><label for="simT">Tiempo (minutos)</label>
+            <input id="simT" type="number" min="10" max="600" value="240" style="width:110px"></div>
+        </div>
+        <div class="actions"><button class="btn primary" type="button" data-start="simulacro">Iniciar simulacro</button></div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Modo 2</div>
+        <h2>Práctica por eje</h2>
+        <p>Elija los ejes, la cantidad de ítems y si desea ver la explicación después de cada respuesta.</p>
+        <div id="ejeChecks" class="checks"></div>
+        <div class="field-row" style="margin-top:10px">
+          <div class="field"><label for="pracN">Cantidad</label>
+            <select id="pracN"><option value="10">10</option><option value="20" selected>20</option><option value="40">40</option><option value="all">Todos los seleccionados</option></select></div>
+          <div class="field"><label for="pracFb">Retroalimentación</label>
+            <select id="pracFb"><option value="1">Inmediata (estudio)</option><option value="0">Al final (evaluación)</option></select></div>
+          <div class="field"><label for="pracT">Tiempo (min, 0 = libre)</label>
+            <input id="pracT" type="number" min="0" max="600" value="0" style="width:110px"></div>
+        </div>
+        <div class="actions"><button class="btn primary" type="button" data-start="practica">Iniciar práctica</button></div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Modo 3</div>
+        <h2>Repaso de errores</h2>
+        <p>Vuelve a presentar los ítems que ha fallado en intentos anteriores (guardados en este navegador). Ideal para cerrar brechas antes del siguiente simulacro.</p>
+        <p class="note"><span id="errCount" class="num">0</span> ítems pendientes de dominar.</p>
+        <div class="actions">
+          <button class="btn primary" type="button" data-start="errores" id="btnErrores">Repasar errores</button>
+          <button class="btn small ghost" type="button" id="btnClearErr">Limpiar lista</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Modo 4</div>
+        <h2>Banco de estudio</h2>
+        <p>Recorra todos los ítems por eje con la respuesta, la explicación y la fuente visibles. Úselo como fichas de repaso activo después de leer la norma.</p>
+        <div class="actions"><button class="btn" type="button" id="btnStudy">Abrir banco</button></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+      <div class="card">
+        <h2>Su historial</h2>
+        <div id="histSummary" class="stat-list" style="margin-top:8px"></div>
+        <div id="histBars" class="bars" style="margin-top:12px"></div>
+        <div class="actions"><button class="btn small ghost" type="button" id="btnClearHist">Borrar historial</button></div>
+      </div>
+      <details class="info">
+        <summary>Cómo está construido este simulador (léalo una vez)</summary>
+        <ul>
+          <li><strong>Formato.</strong> Ítems de selección múltiple con única respuesta y cuatro opciones (Resolución 076 de 2026). Cada ítem parte de una situación del ejercicio del cargo, como en las pruebas de juicio situacional de la U. de Antioquia. El orden de las opciones se baraja en cada intento.</li>
+          <li><strong>Distribución del simulacro de 100 ítems.</strong> Constitucional 10 · Ministerio Público y PGN 12 · Disciplinario 14 · Penal 14 · Contencioso y conciliación 14 · Civil, familia y tierras 10 · Laboral 6 · Probatorio y argumentación 8 · DDHH 6 · Función pública, transparencia e IA 6.</li>
+          <li><strong>Calificación.</strong> Conocimientos: aciertos sobre 100, eliminatoria con mínimo 65. Comportamental: opciones graduadas (alto = 2, medio = 1, bajo = 0) convertidas a escala de 100. Ponderación final 70/20/10; el 10 % de antecedentes lo estima usted.</li>
+          <li><strong>Tiempo.</strong> El estándar de 240 minutos para 120 ítems equivale a dos minutos por ítem, en línea con las pruebas de la operadora (140 a 180 ítems en cinco horas).</li>
+          <li><strong>Atajos.</strong> <span class="kbd">A</span>–<span class="kbd">D</span> o <span class="kbd">1</span>–<span class="kbd">4</span> responden; <span class="kbd">←</span> <span class="kbd">→</span> navegan; <span class="kbd">M</span> marca para revisar.</li>
+          <li><strong>Advertencia.</strong> El banco es material de preparación elaborado a partir de la normativa y la jurisprudencia vigentes a septiembre de 2026; no reproduce ítems oficiales. Verifique siempre la norma citada y los ejes temáticos oficiales que publique la Procuraduría y la Universidad de Antioquia.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- EXAMEN -->
+  <section id="exam" hidden>
+    <div class="progress"><div id="progBar"></div></div>
+    <div class="exam">
+      <article class="caso">
+        <div class="meta" id="qMeta"></div>
+        <div class="eyebrow" style="margin-bottom:6px">Situación</div>
+        <div class="caso-text" id="qCaso"></div>
+        <div class="qmap" id="qmap"></div>
+      </article>
+      <div class="pregunta">
+        <div class="enunciado" id="qEnun"></div>
+        <div class="opts" id="qOpts"></div>
+        <div class="feedback" id="qFeed" hidden></div>
+        <div class="nav">
+          <div class="left">
+            <button class="btn" type="button" id="btnPrev">← Anterior</button>
+            <button class="btn" type="button" id="btnNext">Siguiente →</button>
+            <button class="btn ghost" type="button" id="btnMark">Marcar para revisar</button>
+          </div>
+          <div class="right">
+            <button class="btn danger" type="button" id="btnFinish">Finalizar prueba</button>
+          </div>
+        </div>
+        <div class="confirm" id="confirmBox" hidden>
+          <span id="confirmText">¿Finalizar ahora?</span>
+          <span style="display:flex;gap:8px"><button class="btn small" type="button" id="btnCancelFinish">Seguir respondiendo</button><button class="btn small primary" type="button" id="btnConfirmFinish">Sí, finalizar y calificar</button></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section id="results" hidden>
+    <div class="eyebrow">Resultado del intento</div>
+    <h1 id="resTitle">Calificación</h1>
+    <p class="note" id="resSub"></p>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:16px">
+      <div class="card">
+        <h2>Desempeño por eje temático</h2>
+        <p class="note">Porcentaje de aciertos por eje. La marca vertical señala el 65 % que exige la prueba.</p>
+        <div class="bars" id="resBars"></div>
+        <details style="margin-top:10px"><summary class="note">Ver como tabla</summary><div class="table-wrap"><table id="resTable"></table></div></details>
+      </div>
+      <div class="card">
+        <h2>Ponderación del concurso</h2>
+        <p class="note">Estime su análisis de antecedentes (0 a 100) para proyectar el puntaje total: 70 % conocimientos + 20 % comportamental + 10 % antecedentes.</p>
+        <div class="field-row" style="margin-top:8px">
+          <div class="field"><label for="antInput">Antecedentes estimados</label><input id="antInput" type="number" min="0" max="100" value="0" style="width:120px"></div>
+          <div class="tile" style="flex:1 1 160px"><div class="v num" id="totalPond">0.0</div><div class="l">Puntaje total proyectado</div></div>
+        </div>
+        <div class="divider"></div>
+        <h3>Por nivel cognitivo</h3>
+        <div class="bars" id="resNiveles" style="margin-top:8px"></div>
+        <div class="actions" style="margin-top:14px">
+          <button class="btn" type="button" id="btnCopy">Copiar resumen</button>
+          <button class="btn primary" type="button" id="btnAgain">Volver al inicio</button>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <h2>Revisión ítem por ítem</h2>
+    <div class="tabs">
+      <button class="btn small active" type="button" data-filter="all">Todos</button>
+      <button class="btn small" type="button" data-filter="wrong">Errados y parciales</button>
+      <button class="btn small" type="button" data-filter="marked">Marcados</button>
+      <button class="btn small" type="button" data-filter="blank">Sin responder</button>
+    </div>
+    <div id="reviewList" class="grid"></div>
+  </section>
+
+  <!-- BANCO DE ESTUDIO -->
+  <section id="study" hidden>
+    <div class="eyebrow">Modo 4</div>
+    <h1>Banco de estudio</h1>
+    <p class="note">Seleccione un eje. Cada ficha muestra la situación, la respuesta correcta y la explicación con su fuente. Para comportamentales se indica el nivel de cada opción.</p>
+    <div class="tabs" id="studyTabs"></div>
+    <div id="studyList" class="grid"></div>
+  </section>
+</main>
+
+<script src="banco/e01-constitucional.js"></script>
+<script src="banco/e02-ministerio-publico.js"></script>
+<script src="banco/e03-disciplinario.js"></script>
+<script src="banco/e04-penal.js"></script>
+<script src="banco/e05-contencioso.js"></script>
+<script src="banco/e06-civil-familia-tierras.js"></script>
+<script src="banco/e07-laboral.js"></script>
+<script src="banco/e08-probatorio-argumentacion.js"></script>
+<script src="banco/e09-ddhh.js"></script>
+<script src="banco/e10-funcion-publica.js"></script>
+<script src="banco/comportamentales.js"></script>
+<script>
+(function(){
+'use strict';
+const EJES = {
+  E1:{n:'Constitución y acciones constitucionales', peso:10},
+  E2:{n:'Ministerio Público y PGN', peso:12},
+  E3:{n:'Derecho disciplinario', peso:14},
+  E4:{n:'Intervención penal', peso:14},
+  E5:{n:'Contencioso administrativo y conciliación', peso:14},
+  E6:{n:'Civil, familia, infancia y tierras', peso:10},
+  E7:{n:'Laboral y seguridad social', peso:6},
+  E8:{n:'Probatorio y argumentación', peso:8},
+  E9:{n:'Derechos humanos y enfoques diferenciales', peso:6},
+  E10:{n:'Función pública, transparencia e IA', peso:6},
+  COMP:{n:'Competencias comportamentales', peso:0}
+};
+const LETTERS = ['A','B','C','D'];
+const BANCO = (window.BANCO||[]).slice();
+const byId = Object.fromEntries(BANCO.map(i=>[i.id,i]));
+const $ = s => document.querySelector(s);
+const el = (tag, attrs={}, ...kids) => { const e=document.createElement(tag); for(const [k,v] of Object.entries(attrs)){ if(k==='class') e.className=v; else if(k==='html') e.innerHTML=v; else if(k.startsWith('on')) e.addEventListener(k.slice(2),v); else if(v!==false&&v!=null) e.setAttribute(k,v);} for(const k of kids){ if(k==null) continue; e.append(k.nodeType?k:document.createTextNode(String(k))); } return e; };
+
+/* ---------- almacenamiento local (tolerante a fallos) ---------- */
+const store = {
+  get(k,d){ try{ const v=localStorage.getItem('pgn95.'+k); return v?JSON.parse(v):d; }catch(e){ return d; } },
+  set(k,v){ try{ localStorage.setItem('pgn95.'+k, JSON.stringify(v)); }catch(e){} }
+};
+
+/* ---------- utilidades ---------- */
+function shuffle(a){ const r=a.slice(); for(let i=r.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [r[i],r[j]]=[r[j],r[i]]; } return r; }
+function sample(arr,n){ return shuffle(arr).slice(0,Math.min(n,arr.length)); }
+function fmtTime(s){ s=Math.max(0,Math.floor(s)); const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60; return [h,m,x].map(v=>String(v).padStart(2,'0')).join(':'); }
+function pct(a,b){ return b? Math.round(a/b*1000)/10 : 0; }
+function toast(msg){ const t=el('div',{class:'toast'},msg); document.body.append(t); setTimeout(()=>t.remove(),2200); }
+
+/* ---------- estado ---------- */
+let S = null;       // intento en curso
+let timerId = null;
+
+function buildItem(src){
+  // baraja opciones y guarda el mapeo
+  const idx = shuffle(src.opciones.map((_,i)=>i));
+  return { id:src.id, order:idx, answer:null, marked:false };
+}
+function optText(src,i){ const o=src.opciones[i]; return typeof o==='string'?o:o.t; }
+function optVal(src,i){ if(src.tipo==='C') return i===src.correcta?2:0; return src.opciones[i].v; }
+
+function composeSimulacro(nC,nB){
+  const items=[];
+  const total = Object.values(EJES).reduce((s,e)=>s+e.peso,0);
+  const ejes = Object.keys(EJES).filter(k=>k!=='COMP');
+  let assigned=0; const quotas={};
+  ejes.forEach(k=>{ quotas[k]=Math.floor(EJES[k].peso/total*nC); assigned+=quotas[k]; });
+  // reparte el resto por mayor residuo
+  let rest=nC-assigned; const residues=ejes.map(k=>({k,r:EJES[k].peso/total*nC-quotas[k]})).sort((a,b)=>b.r-a.r);
+  for(const x of residues){ if(rest<=0) break; quotas[x.k]++; rest--; }
+  for(const k of ejes){ const pool=BANCO.filter(i=>i.eje===k&&i.tipo==='C'); items.push(...sample(pool,quotas[k])); }
+  // si algún eje no alcanzó su cuota, completa con otros ítems de conocimientos
+  if(items.length<nC){ const used=new Set(items.map(i=>i.id)); const extra=sample(BANCO.filter(i=>i.tipo==='C'&&!used.has(i.id)), nC-items.length); items.push(...extra); }
+  const conoc = shuffle(items);
+  const comp = sample(BANCO.filter(i=>i.tipo==='B'), nB);
+  return conoc.concat(comp);
+}
+
+function start(mode){
+  let list=[], minutes=0, feedback=false, label='';
+  if(mode==='simulacro'){
+    const nC=+$('#simC').value, nB=+$('#simB').value; minutes=Math.max(10,+$('#simT').value||240);
+    list=composeSimulacro(nC,nB); label='Simulacro';
+  } else if(mode==='practica'){
+    const sel=[...document.querySelectorAll('#ejeChecks input:checked')].map(i=>i.value);
+    if(!sel.length){ toast('Seleccione al menos un eje.'); return; }
+    let pool=BANCO.filter(i=>sel.includes(i.eje)); const n=$('#pracN').value;
+    list = n==='all'? shuffle(pool) : sample(pool,+n);
+    feedback = $('#pracFb').value==='1'; minutes=+$('#pracT').value||0; label='Práctica';
+  } else if(mode==='errores'){
+    const ids=store.get('errores',[]); list=shuffle(ids.map(id=>byId[id]).filter(Boolean));
+    if(!list.length){ toast('No hay errores registrados todavía.'); return; }
+    feedback=true; label='Repaso de errores';
+  }
+  if(!list.length){ toast('No hay ítems disponibles para esa configuración.'); return; }
+  S = { mode, label, items:list.map(buildItem), cur:0, feedback, started:Date.now(), seconds: minutes*60, remaining: minutes*60, finished:false, antecedentes:0 };
+  show('exam'); render(); startTimer();
+}
+
+function startTimer(){
+  clearInterval(timerId);
+  const chip=$('#timerChip');
+  if(!S.seconds){ chip.hidden=true; return; }
+  chip.hidden=false; tick();
+  timerId=setInterval(tick,1000);
+  function tick(){
+    S.remaining = S.seconds - Math.floor((Date.now()-S.started)/1000);
+    chip.textContent=fmtTime(S.remaining);
+    chip.classList.toggle('warn', S.remaining<=600 && S.remaining>120);
+    chip.classList.toggle('danger', S.remaining<=120);
+    if(S.remaining<=0){ clearInterval(timerId); toast('Tiempo agotado: la prueba se califica automáticamente.'); finish(); }
+  }
+}
+
+function show(id){
+  for(const s of ['home','exam','results','study']) $('#'+s).hidden = s!==id;
+  $('#btnHome').hidden = id==='home';
+  $('#modeChip').hidden = id!=='exam' && id!=='results';
+  $('#progChip').hidden = id!=='exam';
+  if(id!=='exam'){ $('#timerChip').hidden=true; }
+  if(id==='home') renderHome();
+  window.scrollTo({top:0});
+}
+
+/* ---------- render de la pregunta ---------- */
+function render(){
+  const it=S.items[S.cur], src=byId[it.id];
+  $('#modeChip').textContent=S.label;
+  $('#progChip').textContent=`${S.cur+1} / ${S.items.length}`;
+  $('#progBar').style.width = (S.items.filter(i=>i.answer!=null).length/S.items.length*100)+'%';
+  const meta=$('#qMeta'); meta.innerHTML='';
+  meta.append(el('span',{class:'chip accent'}, src.tipo==='B'?'Comportamental':EJES[src.eje].n));
+  meta.append(el('span',{class:'chip'}, src.tipo==='B'? src.competencia : src.tema));
+  if(src.tipo==='C') meta.append(el('span',{class:'chip'}, 'Nivel: '+src.nivel));
+  $('#qCaso').textContent=src.caso;
+  $('#qEnun').textContent=src.enunciado;
+  const opts=$('#qOpts'); opts.innerHTML='';
+  const answered = it.answer!=null;
+  it.order.forEach((origIdx,pos)=>{
+    const b=el('button',{type:'button',class:'opt', onclick:()=>choose(pos)}, el('span',{class:'letter'},LETTERS[pos]), el('span',{},optText(src,origIdx)));
+    if(answered && S.feedback){
+      b.disabled=true; const v=optVal(src,origIdx);
+      if(pos===it.answer){ b.classList.add(v===2?'correct':v===1?'partial':'wrong'); }
+      else if(v===2) b.classList.add('correct');
+    } else if(pos===it.answer) b.classList.add('selected');
+    opts.append(b);
+  });
+  const feed=$('#qFeed');
+  if(answered && S.feedback){
+    feed.hidden=false; feed.innerHTML='';
+    const v=optVal(src,it.order[it.answer]);
+    const head = src.tipo==='C' ? (v===2?'Correcto.':'Incorrecto.') : (v===2?'Conducta esperada (nivel alto).':v===1?'Conducta parcialmente adecuada (nivel medio).':'Conducta inadecuada (nivel bajo).');
+    feed.append(el('div',{}, el('strong',{},head+' '), src.explicacion));
+    if(src.fuente) feed.append(el('div',{class:'fuente'},'Fuente: '+src.fuente));
+  } else feed.hidden=true;
+  $('#btnPrev').disabled = S.cur===0;
+  $('#btnNext').textContent = S.cur===S.items.length-1 ? 'Ir al final' : 'Siguiente →';
+  $('#btnMark').textContent = it.marked?'Quitar marca':'Marcar para revisar';
+  $('#confirmBox').hidden=true;
+  renderMap();
+}
+function renderMap(){
+  const m=$('#qmap'); m.innerHTML='';
+  S.items.forEach((it,i)=>{
+    const b=el('button',{type:'button',title:'Ítem '+(i+1),onclick:()=>{S.cur=i;render();}}, i+1);
+    if(it.answer!=null) b.classList.add('done'); if(it.marked) b.classList.add('mark'); if(i===S.cur) b.classList.add('cur');
+    m.append(b);
+  });
+}
+function choose(pos){
+  const it=S.items[S.cur];
+  if(it.answer!=null && S.feedback) return;
+  it.answer = (it.answer===pos && !S.feedback) ? null : pos;
+  render();
+}
+function next(){ if(S.cur<S.items.length-1){ S.cur++; render(); } else { $('#confirmBox').hidden=false; updateConfirm(); } }
+function prev(){ if(S.cur>0){ S.cur--; render(); } }
+function updateConfirm(){ const blank=S.items.filter(i=>i.answer==null).length; $('#confirmText').textContent = blank? `Hay ${blank} ítem(s) sin responder. ¿Finalizar y calificar?` : '¿Finalizar y calificar la prueba?'; }
+
+/* ---------- calificación ---------- */
+function score(){
+  const res={ porEje:{}, porNivel:{}, C:{ok:0,n:0}, B:{pts:0,n:0}, wrongIds:[], items:[] };
+  S.items.forEach((it,i)=>{
+    const src=byId[it.id]; const orig = it.answer==null? null : it.order[it.answer]; const v = orig==null? -1 : optVal(src,orig);
+    const key = src.tipo==='B'?'COMP':src.eje;
+    res.porEje[key]=res.porEje[key]||{ok:0,n:0,pts:0};
+    res.porEje[key].n++;
+    if(src.tipo==='C'){ res.C.n++; if(v===2){res.C.ok++;res.porEje[key].ok++;} else res.wrongIds.push(src.id);
+      res.porNivel[src.nivel]=res.porNivel[src.nivel]||{ok:0,n:0}; res.porNivel[src.nivel].n++; if(v===2) res.porNivel[src.nivel].ok++; }
+    else { res.B.n++; const p=Math.max(0,v); res.B.pts+=p; res.porEje[key].pts+=p; if(v<2) res.wrongIds.push(src.id); }
+    res.items.push({i,src,it,orig,v});
+  });
+  res.scoreC = res.C.n? Math.round(res.C.ok/res.C.n*10000)/100 : null;
+  res.scoreB = res.B.n? Math.round(res.B.pts/(2*res.B.n)*10000)/100 : null;
+  return res;
+}
+function finish(){
+  clearInterval(timerId); S.finished=true;
+  const r=score(); S.result=r;
+  // historial y errores
+  const hist=store.get('historial',[]);
+  hist.push({ fecha:new Date().toISOString(), modo:S.label, nC:r.C.n, nB:r.B.n, scoreC:r.scoreC, scoreB:r.scoreB, porEje:Object.fromEntries(Object.entries(r.porEje).map(([k,v])=>[k,{ok:v.ok,n:v.n,pts:v.pts}])) , duracion: Math.floor((Date.now()-S.started)/1000)});
+  store.set('historial',hist.slice(-60));
+  const err=new Set(store.get('errores',[]));
+  r.items.forEach(x=>{ if(x.v===2) err.delete(x.src.id); else if(x.orig!=null || S.mode!=='errores') err.add(x.src.id); });
+  store.set('errores',[...err]);
+  renderResults(r); show('results');
+}
+function renderResults(r){
+  $('#modeChip').textContent=S.label;
+  const aprob = r.scoreC!=null ? r.scoreC>=65 : null;
+  $('#resTitle').textContent = r.scoreC==null ? 'Resultado de la prueba comportamental' : (aprob? 'Supera el mínimo aprobatorio' : 'No alcanza el mínimo aprobatorio');
+  const dur=Math.floor((Date.now()-S.started)/1000);
+  $('#resSub').textContent = `${S.label} · ${r.C.n} ítems de conocimientos y ${r.B.n} comportamentales · tiempo empleado ${fmtTime(dur)} · ${new Date().toLocaleString('es-CO')}`;
+  const tiles=$('#tiles'); tiles.innerHTML='';
+  if(r.scoreC!=null){
+    tiles.append(tile(r.scoreC.toFixed(1),'Conocimientos (mínimo 65, peso 70 %)', aprob?'ok':'bad', aprob?'✓ Aprobada (eliminatoria)':'✗ Eliminatoria no superada'));
+    tiles.append(tile(`${r.C.ok} / ${r.C.n}`,'Aciertos en conocimientos'));
+  }
+  if(r.scoreB!=null) tiles.append(tile(r.scoreB.toFixed(1),'Comportamental (clasificatoria, peso 20 %)','amber','Sin mínimo aprobatorio'));
+  const blank=r.items.filter(x=>x.orig==null).length; tiles.append(tile(String(blank),'Ítems sin responder'));
+  // barras por eje
+  const bars=$('#resBars'); bars.innerHTML='';
+  const tbl=$('#resTable'); tbl.innerHTML='<thead><tr><th>Eje</th><th>Aciertos</th><th>Total</th><th>%</th></tr></thead>';
+  const tb=el('tbody');
+  Object.keys(EJES).forEach(k=>{ const e=r.porEje[k]; if(!e) return; const p = k==='COMP'? pct(e.pts,2*e.n) : pct(e.ok,e.n);
+    bars.append(barRow(EJES[k].n,p, k!=='COMP'));
+    tb.append(el('tr',{}, el('td',{},EJES[k].n), el('td',{class:'num'}, k==='COMP'? e.pts+' pts':e.ok), el('td',{class:'num'}, k==='COMP'? (2*e.n)+' pts':e.n), el('td',{class:'num'},p+' %')));
+  });
+  tbl.append(tb);
+  const niv=$('#resNiveles'); niv.innerHTML='';
+  ['comprensión','aplicación','análisis'].forEach(n=>{ const x=r.porNivel[n]; if(x) niv.append(barRow(n.charAt(0).toUpperCase()+n.slice(1)+` (${x.ok}/${x.n})`, pct(x.ok,x.n), true)); });
+  $('#antInput').value = S.antecedentes||0; updateTotal();
+  renderReview('all');
+  document.querySelectorAll('.tabs [data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter==='all'));
+}
+function tile(v,l,cls,extra){ const t=el('div',{class:'tile'}, el('div',{class:'v num'},v), el('div',{class:'l'},l)); if(extra) t.append(el('div',{style:'margin-top:8px'}, el('span',{class:'chip '+(cls||'')},extra))); return t; }
+function barRow(label,p,thr){ const row=el('div',{class:'bar-row'}, el('div',{},label), el('div',{class:'bar-track'}, el('div',{class:'bar-fill',style:'width:'+p+'%'}), thr? el('div',{class:'bar-thr',title:'65 %'}):null), el('div',{class:'val num'},p+' %')); return row; }
+function updateTotal(){ const r=S&&S.result; if(!r) return; const a=Math.min(100,Math.max(0,+$('#antInput').value||0)); S.antecedentes=a; const c=r.scoreC||0, b=r.scoreB||0; const total=0.7*c+0.2*b+0.1*a; $('#totalPond').textContent=total.toFixed(1); }
+
+function renderReview(filter){
+  const r=S.result; const list=$('#reviewList'); list.innerHTML='';
+  const rows=r.items.filter(x=>{ if(filter==='wrong') return x.v<2 && x.orig!=null; if(filter==='marked') return x.it.marked; if(filter==='blank') return x.orig==null; return true; });
+  if(!rows.length){ list.append(el('p',{class:'note'},'No hay ítems en esta categoría.')); return; }
+  rows.forEach(x=>list.append(reviewCard(x.src, x.it, x.orig, x.i)));
+}
+function reviewCard(src,it,orig,i){
+  const card=el('div',{class:'review-item'});
+  const head=el('div',{style:'display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px'});
+  if(i!=null) head.append(el('strong',{},'Ítem '+(i+1)));
+  head.append(el('span',{class:'chip accent'}, src.tipo==='B'?'Comportamental · '+src.competencia : EJES[src.eje].n+' · '+src.tema));
+  if(orig!=null){ const v=optVal(src,orig); head.append(el('span',{class:'chip '+(v===2?'ok':v===1?'amber':'bad')}, v===2?'Correcto':v===1?'Parcial':'Incorrecto')); }
+  else if(it) head.append(el('span',{class:'chip'},'Sin responder'));
+  if(it&&it.marked) head.append(el('span',{class:'chip amber'},'Marcado'));
+  card.append(head, el('div',{class:'caso-text',style:'margin-bottom:8px'},src.caso), el('div',{style:'font-weight:600;margin-bottom:8px'},src.enunciado));
+  const opts=el('div',{class:'opts'});
+  const order = it? it.order : src.opciones.map((_,k)=>k);
+  order.forEach((oi,pos)=>{ const v=optVal(src,oi); const b=el('div',{class:'opt'}, el('span',{class:'letter'},LETTERS[pos]), el('span',{},optText(src,oi)));
+    if(v===2) b.classList.add('correct'); else if(src.tipo==='B'&&v===1) b.classList.add('partial'); if(orig===oi && v<2) b.classList.add(v===1?'partial':'wrong'); opts.append(b); });
+  card.append(opts, el('div',{class:'feedback',style:'margin-top:10px'}, el('div',{},src.explicacion), src.fuente? el('div',{class:'fuente'},'Fuente: '+src.fuente):null));
+  return card;
+}
+
+/* ---------- inicio e historial ---------- */
+function renderHome(){
+  $('#homeCount').textContent=BANCO.length;
+  const ch=$('#ejeChecks'); if(!ch.children.length){ Object.keys(EJES).forEach(k=>{ const n=BANCO.filter(i=>i.eje===k).length; ch.append(el('label',{}, el('input',{type:'checkbox',value:k,checked:k!=='COMP'}), el('span',{},`${EJES[k].n} (${n})`))); }); }
+  const err=store.get('errores',[]); $('#errCount').textContent=err.length; $('#btnErrores').disabled=!err.length;
+  const hist=store.get('historial',[]); const sum=$('#histSummary'); sum.innerHTML='';
+  if(!hist.length){ sum.append(el('div',{class:'note'},'Aún no hay intentos guardados. Su progreso se conserva en este navegador.')); $('#histBars').innerHTML=''; return; }
+  const last=hist[hist.length-1]; const conC=hist.filter(h=>h.scoreC!=null);
+  const best=conC.length? Math.max(...conC.map(h=>h.scoreC)):null; const avg=conC.length? conC.reduce((s,h)=>s+h.scoreC,0)/conC.length:null;
+  sum.append(el('div',{},`Intentos: ${hist.length} · Último: ${last.modo} (${new Date(last.fecha).toLocaleDateString('es-CO')})` + (last.scoreC!=null? ` · conocimientos ${last.scoreC.toFixed(1)}`:'')));
+  if(avg!=null) sum.append(el('div',{},`Promedio en conocimientos: ${avg.toFixed(1)} · Mejor: ${best.toFixed(1)} · Umbral: 65`));
+  const agg={}; hist.forEach(h=>{ for(const [k,v] of Object.entries(h.porEje||{})){ agg[k]=agg[k]||{ok:0,n:0,pts:0}; agg[k].ok+=v.ok||0; agg[k].n+=v.n||0; agg[k].pts+=v.pts||0; } });
+  const bars=$('#histBars'); bars.innerHTML=''; bars.append(el('div',{class:'eyebrow'},'Acumulado por eje (todos los intentos)'));
+  Object.keys(EJES).forEach(k=>{ const e=agg[k]; if(!e||!e.n) return; const p=k==='COMP'?pct(e.pts,2*e.n):pct(e.ok,e.n); bars.append(barRow(EJES[k].n+` (${e.n})`,p,k!=='COMP')); });
+}
+
+/* ---------- banco de estudio ---------- */
+function renderStudy(eje){
+  const tabs=$('#studyTabs'); tabs.innerHTML='';
+  Object.keys(EJES).forEach(k=>tabs.append(el('button',{type:'button',class:'btn small'+(k===eje?' active':''),onclick:()=>renderStudy(k)}, EJES[k].n)));
+  const list=$('#studyList'); list.innerHTML='';
+  BANCO.filter(i=>i.eje===eje).forEach((src,idx)=>{ const d=el('details',{class:'review-item'}, el('summary',{}, `${idx+1}. ${src.tipo==='B'?src.competencia:src.tema}`)); d.append(reviewCard(src,null,null,null)); list.append(d); });
+}
+
+/* ---------- eventos ---------- */
+document.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',()=>start(b.dataset.start)));
+$('#btnStudy').addEventListener('click',()=>{ show('study'); renderStudy('E1'); });
+$('#btnHome').addEventListener('click',()=>{ if(S&&!S.finished){ if(!$('#confirmBox').hidden||confirmLeave()){ clearInterval(timerId); S=null; show('home'); } } else { S=null; show('home'); } });
+function confirmLeave(){ // sin diálogos nativos: usa la caja de confirmación
+  const box=$('#confirmBox'); box.hidden=false; $('#confirmText').textContent='Hay una prueba en curso. Use "Finalizar" para calificarla o "Seguir respondiendo".'; window.scrollTo({top:0}); return false; }
+$('#btnPrev').addEventListener('click',prev); $('#btnNext').addEventListener('click',next);
+$('#btnMark').addEventListener('click',()=>{ S.items[S.cur].marked=!S.items[S.cur].marked; render(); });
+$('#btnFinish').addEventListener('click',()=>{ $('#confirmBox').hidden=false; updateConfirm(); });
+$('#btnCancelFinish').addEventListener('click',()=>{ $('#confirmBox').hidden=true; });
+$('#btnConfirmFinish').addEventListener('click',finish);
+$('#btnAgain').addEventListener('click',()=>{ S=null; show('home'); });
+$('#antInput').addEventListener('input',updateTotal);
+$('#btnClearErr').addEventListener('click',()=>{ store.set('errores',[]); renderHome(); toast('Lista de errores limpiada.'); });
+$('#btnClearHist').addEventListener('click',()=>{ store.set('historial',[]); renderHome(); toast('Historial borrado.'); });
+document.querySelectorAll('.tabs [data-filter]').forEach(b=>b.addEventListener('click',()=>{ document.querySelectorAll('.tabs [data-filter]').forEach(x=>x.classList.toggle('active',x===b)); renderReview(b.dataset.filter); }));
+$('#btnCopy').addEventListener('click',()=>{
+  const r=S.result; const lines=[`Simulador Procurador Judicial I – ${S.label} – ${new Date().toLocaleString('es-CO')}`];
+  if(r.scoreC!=null) lines.push(`Conocimientos: ${r.scoreC.toFixed(1)}/100 (${r.C.ok}/${r.C.n}) – ${r.scoreC>=65?'aprobada':'no aprobada'}`);
+  if(r.scoreB!=null) lines.push(`Comportamental: ${r.scoreB.toFixed(1)}/100`);
+  lines.push(`Total proyectado (70/20/10 con antecedentes ${S.antecedentes||0}): ${$('#totalPond').textContent}`);
+  Object.keys(EJES).forEach(k=>{ const e=r.porEje[k]; if(e) lines.push(`- ${EJES[k].n}: ${k==='COMP'?pct(e.pts,2*e.n):pct(e.ok,e.n)} %`); });
+  const txt=lines.join('\n');
+  const done=()=>toast('Resumen copiado.');
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done).catch(()=>fallback()); } else fallback();
+  function fallback(){ const ta=el('textarea',{style:'position:fixed;left:-9999px'},txt); document.body.append(ta); ta.select(); try{ document.execCommand('copy'); done(); }catch(e){ toast('No se pudo copiar; seleccione el texto manualmente.'); } ta.remove(); }
+});
+document.addEventListener('keydown',e=>{
+  if(!S||S.finished||$('#exam').hidden||e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
+  const k=e.key.toLowerCase();
+  if(['a','b','c','d'].includes(k)) choose(LETTERS.indexOf(k.toUpperCase()));
+  else if(['1','2','3','4'].includes(k)) choose(+k-1);
+  else if(e.key==='ArrowRight'||e.key==='Enter') next();
+  else if(e.key==='ArrowLeft') prev();
+  else if(k==='m'){ S.items[S.cur].marked=!S.items[S.cur].marked; render(); }
+});
+
+/* ---------- arranque (con soporte de recarga en caliente del visor) ---------- */
+function boot(data){
+  if(data&&data.S){ S=data.S; if(S.finished){ show('results'); renderResults(S.result); } else { show('exam'); render(); startTimer(); } }
+  else show('home');
+}
+try{ if(window.claude&&window.claude.hot){ window.claude.hot.snapshot(()=>({S})); } }catch(e){}
+if(window.claude&&window.claude.hot&&window.claude.hot.ready){ window.claude.hot.ready(boot); } else { boot((window.claude&&window.claude.hot&&window.claude.hot.data)||{}); }
+})();
+</script>
+</body>
+</html>

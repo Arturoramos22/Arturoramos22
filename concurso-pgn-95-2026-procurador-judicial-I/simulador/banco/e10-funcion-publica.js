@@ -1,0 +1,147 @@
+/* Eje 10 – Función pública, transparencia, anticorrupción, contratación, control interno, datos personales e inteligencia artificial */
+window.BANCO = window.BANCO || [];
+window.BANCO.push(
+{ id:'E10-01', eje:'E10', tipo:'C', tema:'Información reservada en investigaciones disciplinarias', nivel:'aplicación',
+  caso:'Un periodista solicita a una Procuraduría Provincial copia íntegra del expediente de una investigación disciplinaria en curso contra un alcalde, en la que aún no se ha proferido pliego de cargos.',
+  enunciado:'Conforme a la Ley 1712 de 2014, la respuesta correcta es que',
+  opciones:[
+   'la información debe entregarse íntegramente, porque rige el principio de máxima publicidad.',
+   'la información puede reservarse, porque la ley permite denegar el acceso cuando ello cause daño a la prevención, investigación y persecución de delitos y faltas disciplinarias, mientras no se haga efectiva la medida de aseguramiento o se formule pliego de cargos; la negativa debe ser motivada, por escrito y la carga de la prueba corresponde a la autoridad.',
+   'la reserva de los expedientes disciplinarios es absoluta y permanente.',
+   'el acceso solo puede negarse por orden judicial.'],
+  correcta:1,
+  explicacion:'La Ley 1712 de 2014 consagra el principio de máxima publicidad y define como excepciones la información clasificada (art. 18: intimidad, vida, salud, seguridad, secretos comerciales) y la información reservada (art. 19), entre la que se encuentra la relativa a la prevención, investigación y persecución de los delitos y las faltas disciplinarias, mientras que no se haga efectiva la medida de aseguramiento o se formule pliego de cargos, según el caso. La reserva no puede exceder de quince años, la negativa debe ser motivada y escrita, y la carga de probar el daño recae en la autoridad (art. 28); el peticionario puede acudir al recurso de insistencia (Ley 1437, art. 26).',
+  fuente:'Ley 1712 de 2014, arts. 2, 3, 18, 19, 21, 22 y 28; Ley 1437 de 2011, arts. 24 a 27; Ley 1952 de 2019 (reserva de la actuación disciplinaria).' },
+
+{ id:'E10-02', eje:'E10', tipo:'C', tema:'Tratamiento de datos personales por autoridades', nivel:'aplicación',
+  caso:'Para una investigación disciplinaria, la Procuraduría requiere a una EPS la historia clínica de un servidor. La EPS exige autorización previa del titular por tratarse de datos sensibles.',
+  enunciado:'Conforme a la Ley 1581 de 2012, la posición correcta es que',
+  opciones:[
+   'la EPS tiene razón: los datos sensibles nunca pueden entregarse sin autorización del titular.',
+   'no se requiere autorización del titular cuando la información es requerida por una entidad pública o administrativa en ejercicio de sus funciones legales o por orden judicial; la Procuraduría queda sujeta a los principios de finalidad, necesidad, seguridad y confidencialidad respecto de esos datos.',
+   'la Procuraduría debe obtener autorización de la Superintendencia de Industria y Comercio.',
+   'la historia clínica solo puede ser entregada al juez penal.'],
+  correcta:1,
+  explicacion:'El artículo 10 de la Ley 1581 de 2012 exceptúa de la autorización del titular la información requerida por una entidad pública o administrativa en ejercicio de sus funciones legales o por orden judicial, entre otros casos. La Corte Constitucional (C-748 de 2011) precisó que la entidad receptora queda obligada a observar los principios del tratamiento (finalidad, libertad, veracidad, transparencia, acceso, seguridad y confidencialidad) y a usar la información solo para el fin que justificó el requerimiento. La historia clínica es un dato sensible sujeto a reserva (Ley 23 de 1981, art. 34), oponible a terceros pero no a la autoridad competente.',
+  fuente:'Ley 1581 de 2012, arts. 4, 5, 6 y 10; Decreto 1377 de 2013; Corte Constitucional, C-748 de 2011; Ley 23 de 1981, art. 34.' },
+
+{ id:'E10-03', eje:'E10', tipo:'C', tema:'Prohibiciones a exservidores públicos', nivel:'aplicación',
+  caso:'Un exjefe de la oficina de contratación de una entidad, retirado hace ocho meses, se presenta como apoderado de una empresa para gestionar ante esa misma entidad la liquidación de un contrato que él supervisó.',
+  enunciado:'El Procurador Judicial I debe advertir que la conducta',
+  opciones:[
+   'es lícita, porque las prohibiciones cesan con el retiro del servicio.',
+   'está prohibida: los exservidores no pueden gestionar, dentro de los dos años siguientes a su retiro, intereses privados ante la entidad en la que prestaron sus servicios respecto de asuntos concretos de los cuales conocieron en ejercicio de sus funciones, ni contratar con ella durante ese lapso (Ley 1474 de 2011 y Código General Disciplinario).',
+   'está prohibida solo si el exservidor cobra honorarios.',
+   'es lícita porque la liquidación del contrato es un trámite administrativo menor.'],
+  correcta:1,
+  explicacion:'El Estatuto Anticorrupción (Ley 1474 de 2011, arts. 3 y 4) amplió las prohibiciones a exservidores: no pueden prestar servicios de asistencia, representación o asesoría en asuntos relacionados con las funciones propias del cargo durante los dos años siguientes al retiro, ni gestionar intereses privados ante la entidad respecto de asuntos concretos de los que conocieron, ni celebrar contratos con ella durante dos años (Ley 80 de 1993, art. 8 lit. f, modificado). El Código General Disciplinario mantiene la prohibición como conducta sancionable aunque el destinatario ya no sea servidor.',
+  fuente:'Ley 1474 de 2011, arts. 3 y 4; Ley 80 de 1993, art. 8 lit. f; Ley 1952 de 2019, arts. 25 (destinatarios) y 39 (prohibiciones) aprox.' },
+
+{ id:'E10-04', eje:'E10', tipo:'C', tema:'Impedimentos y conflictos de intereses en actuaciones administrativas', nivel:'aplicación',
+  caso:'El funcionario encargado de resolver un recurso de apelación advierte que el recurrente es su acreedor por un préstamo personal vigente.',
+  enunciado:'Conforme a los artículos 11 y 12 de la Ley 1437 de 2011, el funcionario debe',
+  opciones:[
+   'resolver el recurso, porque la relación crediticia no está prevista como causal.',
+   'declararse impedido dentro de los tres días siguientes a su conocimiento, mediante escrito motivado dirigido al superior o a la cabeza de la entidad, quien decidirá y, de aceptar el impedimento, designará quien deba continuar el trámite.',
+   'resolver el recurso previa consulta al recurrente.',
+   'remitir la actuación a la Procuraduría para que resuelva el recurso.'],
+  correcta:1,
+  explicacion:'El artículo 11 de la Ley 1437 de 2011 enumera las causales de impedimento y recusación en las actuaciones administrativas, entre ellas tener interés particular y directo, el parentesco con los interesados en los grados señalados, ser acreedor o deudor de alguno de los interesados, y haber sido apoderado o consejero. El artículo 12 fija el trámite: el servidor debe declararse impedido dentro de los tres días siguientes a su conocimiento, por escrito motivado dirigido al superior o, si no lo tiene, a la cabeza de la entidad, quien decide en el término de diez días; la recusación puede formularla cualquier persona. Actuar pese al impedimento es falta gravísima.',
+  fuente:'Ley 1437 de 2011, arts. 11 y 12; Ley 1952 de 2019 (faltas relacionadas con impedimentos y conflictos de intereses); Ley 2013 de 2019.' },
+
+{ id:'E10-05', eje:'E10', tipo:'C', tema:'Modalidades de selección de contratistas', nivel:'comprensión',
+  caso:'Una entidad requiere contratar a un abogado para que la represente en un proceso judicial y planea hacerlo por contratación directa. Un veedor alega que debía abrirse licitación pública.',
+  enunciado:'El Procurador Judicial I debe señalar que',
+  opciones:[
+   'toda contratación estatal exige licitación pública, salvo la mínima cuantía.',
+   'la contratación directa procede, entre otras causales, para la prestación de servicios profesionales y de apoyo a la gestión, así como para trabajos que solo puedan encomendarse a determinadas personas, previa justificación de la idoneidad y experiencia del contratista.',
+   'los servicios jurídicos solo pueden contratarse mediante concurso de méritos.',
+   'la entidad debía usar la selección abreviada por subasta inversa.'],
+  correcta:1,
+  explicacion:'La Ley 1150 de 2007 (art. 2) establece las modalidades de selección: licitación pública (regla general), selección abreviada, concurso de méritos (consultoría e interventoría), contratación directa y mínima cuantía (Ley 1474 de 2011, art. 94). Entre las causales de contratación directa está la de servicios profesionales y de apoyo a la gestión o para la ejecución de trabajos artísticos que solo puedan encomendarse a determinadas personas naturales (art. 2 num. 4 lit. h), que exige acto de justificación (con excepciones) y verificación de idoneidad y experiencia (Decreto 1082 de 2015). El Ministerio Público ejerce vigilancia preventiva sobre la contratación.',
+  fuente:'Ley 80 de 1993; Ley 1150 de 2007, art. 2; Ley 1474 de 2011, art. 94; Decreto 1082 de 2015, art. 2.2.1.2.1.4.9.' },
+
+{ id:'E10-06', eje:'E10', tipo:'C', tema:'Control interno y control interno disciplinario', nivel:'comprensión',
+  caso:'El jefe de la oficina de control interno de una entidad decide abrir indagación disciplinaria contra un servidor porque en una auditoría detectó irregularidades.',
+  enunciado:'El Procurador Judicial I debe advertir que',
+  opciones:[
+   'la oficina de control interno es competente para adelantar procesos disciplinarios en primera instancia.',
+   'las oficinas de control interno no ejercen función disciplinaria: su rol es de evaluación independiente, seguimiento, evaluación del riesgo y relación con entes externos de control; los hallazgos deben trasladarse a la oficina de control interno disciplinario o a la Procuraduría.',
+   'el jefe de control interno puede sancionar directamente con multa.',
+   'la indagación solo puede abrirla el representante legal de la entidad.'],
+  correcta:1,
+  explicacion:'La Ley 87 de 1993 y el Decreto 648 de 2017 (art. 2.2.21.5.3) definen los roles de las oficinas de control interno: liderazgo estratégico, enfoque hacia la prevención, evaluación de la gestión del riesgo, evaluación y seguimiento, y relación con entes externos de control. La Ley 1474 de 2011 (arts. 8 y 9) reforzó su independencia (el jefe de control interno del orden nacional es designado por el Presidente por períodos de cuatro años). La función disciplinaria interna corresponde a las oficinas de control interno disciplinario (Ley 1952 de 2019, art. 93 aprox.), con separación de instrucción y juzgamiento, sin perjuicio del poder preferente de la Procuraduría.',
+  fuente:'Ley 87 de 1993; Decreto 648 de 2017; Ley 1474 de 2011, arts. 8 y 9; Ley 1952 de 2019 (control disciplinario interno); Decreto 1499 de 2017 (MIPG).' },
+
+{ id:'E10-07', eje:'E10', tipo:'C', tema:'Uso de inteligencia artificial generativa en la función pública', nivel:'análisis',
+  caso:'Un Procurador Judicial I redacta un concepto de fondo con ayuda de una herramienta de inteligencia artificial generativa, copia el texto sin verificar las sentencias citadas y carga el expediente completo, con datos sensibles de las partes, en la plataforma abierta.',
+  enunciado:'A la luz de la sentencia T-323 de 2024 de la Corte Constitucional y del régimen de protección de datos, la conducta',
+  opciones:[
+   'es correcta, porque la Corte avaló sin condiciones el uso de inteligencia artificial en la administración de justicia.',
+   'desconoce los criterios fijados por la Corte: el uso de estas herramientas es admisible como apoyo, pero exige transparencia sobre su uso, verificación humana de las fuentes y del razonamiento (control humano), responsabilidad personal del funcionario y respeto a la privacidad y a la protección de datos, lo que prohíbe cargar información sensible en plataformas sin garantías.',
+   'está prohibida porque ninguna autoridad puede usar inteligencia artificial en Colombia.',
+   'es correcta siempre que el concepto sea revisado después por el juez.'],
+  correcta:1,
+  explicacion:'En la sentencia T-323 de 2024 la Corte Constitucional examinó el uso de una herramienta de inteligencia artificial generativa por un juez de tutela y concluyó que su empleo no está prohibido, pero debe sujetarse a criterios de transparencia (informar su uso), responsabilidad y control humano (la decisión y su motivación son del funcionario, quien debe verificar las fuentes), privacidad y protección de datos, no sustitución del razonamiento judicial y prevención de sesgos; ordenó al Consejo Superior de la Judicatura expedir lineamientos, que este adoptó en 2024. La Ley 1581 de 2012 y la reserva de las actuaciones prohíben cargar datos sensibles en plataformas sin garantías. Citar jurisprudencia inexistente puede configurar, además, falta disciplinaria.',
+  fuente:'Corte Constitucional, T-323 de 2024; Consejo Superior de la Judicatura, lineamientos sobre uso de IA (2024); Ley 1581 de 2012; CONPES 4144 de 2025 (política nacional de IA).' },
+
+{ id:'E10-08', eje:'E10', tipo:'C', tema:'Nepotismo y prohibición de designar parientes', nivel:'aplicación',
+  caso:'Un gobernador designa como gerente de un hospital departamental al esposo de su hermana.',
+  enunciado:'Frente al artículo 126 de la Constitución, la designación',
+  opciones:[
+   'es válida, porque el cuñado no es pariente por consanguinidad.',
+   'está prohibida, porque los servidores públicos no pueden nombrar, postular ni contratar con personas con las cuales tengan parentesco hasta el cuarto grado de consanguinidad, segundo de afinidad o primero civil, ni con su cónyuge o compañero permanente; el cuñado es pariente en segundo grado de afinidad.',
+   'es válida siempre que el designado cumpla los requisitos del cargo.',
+   'solo está prohibida si el hospital es del orden nacional.'],
+  correcta:1,
+  explicacion:'El artículo 126 de la Constitución (modificado por el Acto Legislativo 02 de 2015) prohíbe a los servidores públicos nombrar, postular o contratar con personas con las cuales tengan parentesco hasta el cuarto grado de consanguinidad, segundo de afinidad, primero civil, o con quien estén ligados por matrimonio o unión permanente; también prohíbe designar a quienes intervinieron en su postulación o designación. El cuñado (cónyuge de la hermana) es pariente en segundo grado de afinidad. La violación configura falta disciplinaria gravísima y vicia el acto de nombramiento.',
+  fuente:'CP art. 126 (AL 02 de 2015); Ley 1952 de 2019 (faltas relacionadas con inhabilidades e incompatibilidades); Ley 1437 de 2011, art. 137.' },
+
+{ id:'E10-09', eje:'E10', tipo:'C', tema:'Inhabilidad permanente para contratar por delitos contra la administración pública', nivel:'comprensión',
+  caso:'Una sociedad cuyo representante legal fue condenado por cohecho pretende participar en una licitación de una entidad estatal.',
+  enunciado:'El Procurador Judicial I debe advertir que',
+  opciones:[
+   'no existe inhabilidad porque la condena recae en la persona natural y no en la sociedad.',
+   'las personas naturales declaradas responsables judicialmente por delitos contra la administración pública o por delitos de corrupción quedan inhabilitadas de manera permanente para contratar con el Estado, y la inhabilidad se extiende a las sociedades en las que sean socios, representantes legales o miembros de junta, con las excepciones legales.',
+   'la inhabilidad dura cinco años desde la ejecutoria de la sentencia.',
+   'la inhabilidad solo aplica a contratos de obra pública.'],
+  correcta:1,
+  explicacion:'El literal j del artículo 8 de la Ley 80 de 1993, modificado por la Ley 1474 de 2011 y la Ley 2014 de 2019, inhabilita para contratar a las personas naturales declaradas responsables judicialmente por delitos contra la administración pública, contra el patrimonio del Estado o delitos relacionados con corrupción, y extiende la inhabilidad a las sociedades de las que sean socios, representantes legales o miembros de junta directiva (salvo sociedades anónimas abiertas). La Ley 2014 de 2019 dispuso que la inhabilidad es permanente, en desarrollo del artículo 122 de la Constitución.',
+  fuente:'Ley 80 de 1993, art. 8 lit. j (Ley 1474 de 2011, art. 1; Ley 2014 de 2019); CP art. 122; Ley 2195 de 2022.' },
+
+{ id:'E10-10', eje:'E10', tipo:'C', tema:'Deberes del servidor público y denuncia de irregularidades', nivel:'aplicación',
+  caso:'Un profesional de una entidad detecta que su jefe inmediato está exigiendo dinero a contratistas para tramitar pagos. Teme represalias y decide guardar silencio.',
+  enunciado:'Desde el régimen de deberes del Código General Disciplinario, el silencio del profesional',
+  opciones:[
+   'es una opción legítima amparada en el derecho a no autoincriminarse.',
+   'incumple el deber de denunciar los delitos, contravenciones y faltas de que tenga conocimiento, salvo las excepciones legales, y de poner en conocimiento de la autoridad competente los hechos que puedan perjudicar a la administración; la ley prevé además mecanismos de protección al denunciante.',
+   'solo sería reprochable si el profesional recibiera parte del dinero.',
+   'es irrelevante porque el deber de denuncia recae exclusivamente en el jefe de control interno.'],
+  correcta:1,
+  explicacion:'El Código General Disciplinario (art. 38) impone a todo servidor público el deber de denunciar los delitos, contravenciones y faltas disciplinarias de los cuales tuviere conocimiento, salvo las excepciones de ley, y de poner en conocimiento del superior los hechos que puedan perjudicar el funcionamiento de la administración. El Código de Procedimiento Penal (Ley 906, art. 67) reitera el deber de denunciar. El ordenamiento prevé medidas de protección para denunciantes de actos de corrupción (Ley 1474 de 2011; Ley 2195 de 2022) y la Procuraduría promueve canales de denuncia.',
+  fuente:'Ley 1952 de 2019, art. 38 (deberes); Ley 906 de 2004, art. 67; Ley 1474 de 2011; Ley 2195 de 2022.' },
+
+{ id:'E10-11', eje:'E10', tipo:'C', tema:'Transparencia activa', nivel:'comprensión',
+  caso:'Un ciudadano se queja ante el Procurador Judicial I porque una alcaldía no publica en su sitio web los contratos celebrados ni su presupuesto, y exige que se pidan por derecho de petición.',
+  enunciado:'Conforme a la Ley 1712 de 2014, la posición correcta es que',
+  opciones:[
+   'la entidad solo está obligada a entregar información cuando se le solicite (transparencia pasiva).',
+   'la entidad tiene el deber de transparencia activa: debe publicar de manera proactiva, en su sitio web y en los sistemas oficiales (SECOP), la información mínima obligatoria, que incluye la contratación, el presupuesto, la estructura, los servicios y los trámites, entre otros; su incumplimiento puede constituir falta disciplinaria.',
+   'la publicación de contratos está prohibida por la reserva contractual.',
+   'la obligación de publicar solo aplica a entidades del orden nacional.'],
+  correcta:1,
+  explicacion:'La Ley 1712 de 2014 (arts. 9 a 11) impone a los sujetos obligados el deber de publicar de manera proactiva la información mínima obligatoria sobre su estructura, presupuesto, contratación (incluida la publicación en el SECOP), servicios, trámites, normativa y datos abiertos, entre otros, conforme a los estándares de la Resolución MinTIC 1519 de 2020. Esta transparencia activa se distingue de la pasiva (respuesta a solicitudes). La Procuraduría vigila su cumplimiento y su omisión puede constituir falta disciplinaria (Ley 1712, art. 29).',
+  fuente:'Ley 1712 de 2014, arts. 3, 9 a 11 y 29; Decreto 1081 de 2015; Resolución MinTIC 1519 de 2020; Ley 1150 de 2007, art. 3 (SECOP).' },
+
+{ id:'E10-12', eje:'E10', tipo:'C', tema:'Modelo Integrado de Planeación y Gestión y control interno', nivel:'comprensión',
+  caso:'El comité institucional de coordinación de control interno de una entidad pregunta al Procurador Judicial I, invitado a una sesión preventiva, cómo se articula el control interno con el modelo de gestión de la entidad.',
+  enunciado:'La respuesta acorde con el ordenamiento es que',
+  opciones:[
+   'el control interno es un sistema independiente y ajeno al modelo de gestión de la entidad.',
+   'el Sistema de Control Interno es una de las dimensiones del Modelo Integrado de Planeación y Gestión (MIPG), se estructura bajo el MECI con cinco componentes (ambiente de control, evaluación del riesgo, actividades de control, información y comunicación, y monitoreo) y opera con el esquema de líneas de defensa, en el que la oficina de control interno es la tercera línea.',
+   'el MIPG sustituyó al control interno, que dejó de ser obligatorio.',
+   'el control interno lo ejerce exclusivamente la Contraloría General de la República.'],
+  correcta:1,
+  explicacion:'El Decreto 1499 de 2017 actualizó el Modelo Integrado de Planeación y Gestión (MIPG), que articula las políticas de gestión y desempeño en siete dimensiones, una de las cuales es el control interno. El Modelo Estándar de Control Interno (MECI), actualizado en el MIPG, se estructura en cinco componentes (ambiente de control, evaluación del riesgo, actividades de control, información y comunicación, y actividades de monitoreo) y en el esquema de líneas de defensa (línea estratégica, primera, segunda y tercera línea, esta última a cargo de la oficina de control interno). La Ley 87 de 1993 sigue siendo el marco legal del control interno, distinto del control fiscal externo de las contralorías.',
+  fuente:'Ley 87 de 1993; Decreto 1499 de 2017 (MIPG); Decreto 648 de 2017; Manual Operativo del MIPG (DAFP).' }
+);

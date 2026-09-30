@@ -1,0 +1,147 @@
+/* Eje 8 – Derecho probatorio y argumentación jurídica (precedente, interpretación, proporcionalidad) */
+window.BANCO = window.BANCO || [];
+window.BANCO.push(
+{ id:'E8-01', eje:'E8', tipo:'C', tema:'Carga dinámica de la prueba', nivel:'aplicación',
+  caso:'En un proceso de reparación directa por falla médica, el demandante carece de acceso a los protocolos internos del hospital que demostrarían el incumplimiento del estándar de atención. El Procurador Judicial I interviene.',
+  enunciado:'Con fundamento en el artículo 167 del Código General del Proceso, el Procurador puede solicitar al juez que',
+  opciones:[
+   'invierta la carga de la prueba en la sentencia, sin aviso previo, por la dificultad probatoria del demandante.',
+   'distribuya la carga de la prueba, de oficio o a petición de parte, exigiendo probar el hecho a la parte que se encuentre en mejor posición para hacerlo, decisión que debe adoptarse antes de fallar y con oportunidad para que la parte cumpla la carga.',
+   'presuma la culpa del hospital, como en materia ambiental.',
+   'excluya del debate los protocolos por tratarse de documentos reservados.'],
+  correcta:1,
+  explicacion:'El artículo 167 del Código General del Proceso mantiene la regla general (incumbe a las partes probar el supuesto de hecho de las normas que consagran el efecto jurídico que persiguen) y permite al juez, de oficio o a petición de parte, distribuir la carga al decretar las pruebas, durante su práctica o en cualquier momento del proceso antes de fallar, exigiendo probar a la parte que se encuentre en una situación más favorable (cercanía al material probatorio, tenencia del objeto de prueba, circunstancias técnicas especiales, entre otras), siempre concediendo la oportunidad de aportar la prueba. Esta norma se aplica en lo contencioso administrativo por remisión del artículo 211 de la Ley 1437 de 2011.',
+  fuente:'CGP art. 167; Ley 1437 de 2011, arts. 211 y 306; Consejo de Estado, Sección Tercera, jurisprudencia sobre responsabilidad médica.' },
+
+{ id:'E8-02', eje:'E8', tipo:'C', tema:'Prueba de oficio: proceso civil vs. proceso penal', nivel:'análisis',
+  caso:'Un juez penal de conocimiento, al advertir un vacío probatorio, decreta de oficio el testimonio de un perito. En paralelo, un juez civil rehúsa decretar pruebas de oficio alegando que “ello rompe la igualdad de las partes”.',
+  enunciado:'El Procurador Judicial I debe señalar que',
+  opciones:[
+   'ambos jueces actuaron correctamente.',
+   'ambos actuaron de forma equivocada: en el proceso penal acusatorio el juez no puede decretar pruebas de oficio (art. 361 de la Ley 906 de 2004), mientras que en el proceso civil el juez tiene el deber de decretar las pruebas de oficio que considere útiles para la verificación de los hechos (art. 169 del CGP).',
+   'el juez penal actuó bien y el juez civil también, porque el decreto oficioso siempre es facultativo.',
+   'la prueba de oficio está prohibida en todos los procesos por el artículo 29 de la Constitución.'],
+  correcta:1,
+  explicacion:'La Ley 906 de 2004 (art. 361) prohíbe al juez decretar pruebas de oficio en el juicio, en desarrollo del principio acusatorio y de la imparcialidad; la Corte Constitucional (C-396 de 2007) declaró exequible la prohibición. Por el contrario, el Código General del Proceso (arts. 169 y 170) impone al juez el deber de decretar pruebas de oficio cuando sean útiles para la verificación de los hechos relacionados con las alegaciones de las partes, y la Ley 1437 de 2011 (art. 213) lo reitera para lo contencioso administrativo. En materia disciplinaria también rige la búsqueda de la verdad material con facultades oficiosas.',
+  fuente:'Ley 906 de 2004, art. 361; Corte Constitucional, C-396 de 2007; CGP arts. 169 y 170; Ley 1437 de 2011, art. 213.' },
+
+{ id:'E8-03', eje:'E8', tipo:'C', tema:'Confesión de representantes de entidades públicas', nivel:'aplicación',
+  caso:'En un proceso contra un municipio, el demandante pide interrogatorio de parte al alcalde para que confiese que la entidad conocía el riesgo de la vía.',
+  enunciado:'El Procurador Judicial I debe recordar que',
+  opciones:[
+   'la confesión del alcalde tiene pleno valor y puede ser ficta si no comparece.',
+   'no vale la confesión de los representantes de las entidades públicas, cualquiera que sea el orden al que pertenezcan; sin embargo, puede pedirse que el representante rinda informe escrito bajo juramento sobre los hechos debatidos que a ella conciernan.',
+   'la confesión solo es válida si la autoriza el concejo municipal.',
+   'el alcalde puede ser obligado a confesar mediante medidas de apremio.'],
+  correcta:1,
+  explicacion:'El artículo 195 del Código General del Proceso dispone que no valdrá la confesión de los representantes de las entidades públicas cualquiera que sea el orden al que pertenezcan o el régimen jurídico al que estén sometidas, pero permite que se solicite que el representante rinda informe escrito bajo juramento sobre los hechos debatidos que a ella conciernan, determinados en la solicitud, con un término de al menos veinte días; la renuencia se comunica al Ministerio Público. La regla protege el patrimonio público frente a admisiones de hechos por un funcionario.',
+  fuente:'CGP art. 195; Ley 1437 de 2011, art. 217 (informe de las entidades públicas).' },
+
+{ id:'E8-04', eje:'E8', tipo:'C', tema:'Valor probatorio de las copias', nivel:'comprensión',
+  caso:'La parte demandada pide que se desestime un contrato aportado en copia simple, alegando que solo la copia auténtica tiene valor probatorio.',
+  enunciado:'El Procurador Judicial I debe señalar que, conforme al Código General del Proceso,',
+  opciones:[
+   'las copias simples carecen de valor probatorio salvo que se autentiquen ante notario.',
+   'las copias tienen el mismo valor probatorio del original, salvo cuando por disposición legal sea necesaria la presentación del original o de copia auténtica, y los documentos se presumen auténticos mientras no sean tachados de falsos o desconocidos.',
+   'solo los documentos públicos gozan de presunción de autenticidad.',
+   'la copia simple solo sirve como indicio.'],
+  correcta:1,
+  explicacion:'El artículo 246 del Código General del Proceso establece que las copias tendrán el mismo valor probatorio del original, salvo cuando por disposición legal sea necesaria la presentación del original o de una determinada copia; el artículo 244 presume auténticos los documentos públicos y privados emanados de las partes o de terceros mientras no hayan sido tachados de falsos o desconocidos. El Consejo de Estado (Sección Tercera, sentencia de unificación del 28 de agosto de 2013) ya había reconocido el valor de las copias simples no controvertidas.',
+  fuente:'CGP arts. 244, 246, 269 a 272; Consejo de Estado, Sección Tercera, sentencia de unificación del 28 de agosto de 2013, rad. 25022.' },
+
+{ id:'E8-05', eje:'E8', tipo:'C', tema:'Contradicción del dictamen pericial', nivel:'aplicación',
+  caso:'La parte demandante aportó con la demanda un dictamen pericial. La demandada solicitó la comparecencia del perito a la audiencia; el perito no asistió sin justificación.',
+  enunciado:'Conforme al Código General del Proceso, la consecuencia es que',
+  opciones:[
+   'el dictamen conserva pleno valor porque fue aportado oportunamente.',
+   'el dictamen no tendrá valor, pues la parte contra la cual se aduce tiene derecho a la contradicción mediante la comparecencia del perito a la audiencia; si el perito citado no asiste, el dictamen carece de valor.',
+   'el juez debe designar un nuevo perito de oficio y repetir la prueba.',
+   'la inasistencia del perito solo genera una multa.'],
+  correcta:1,
+  explicacion:'El Código General del Proceso adoptó el sistema de dictamen aportado por las partes (art. 227), con contradicción mediante solicitud de comparecencia del perito a la audiencia para ser interrogado (art. 228). El mismo artículo 228 dispone que si el perito citado no asiste a la audiencia, el dictamen no tendrá valor. La regla busca garantizar la inmediación y el derecho de contradicción de la prueba técnica. En lo contencioso administrativo rigen las reglas de los artículos 218 a 222 de la Ley 1437 de 2011 y, en lo no previsto, el CGP.',
+  fuente:'CGP arts. 226 a 228; Ley 1437 de 2011, arts. 218 a 222.' },
+
+{ id:'E8-06', eje:'E8', tipo:'C', tema:'Testigo sospechoso', nivel:'comprensión',
+  caso:'La única testigo de un hecho es la hermana de la demandante. La parte contraria pide excluir el testimonio por parentesco.',
+  enunciado:'El Procurador Judicial I debe advertir que',
+  opciones:[
+   'el testimonio debe excluirse, porque los parientes son inhábiles para declarar.',
+   'el parentesco no inhabilita al testigo; el juez debe apreciar el testimonio de acuerdo con las circunstancias de cada caso, con mayor rigor, porque puede tratarse de un testigo sospechoso.',
+   'el testimonio tiene valor pleno y no admite cuestionamiento.',
+   'el testigo sospechoso solo puede declarar bajo juramento reforzado.'],
+  correcta:1,
+  explicacion:'El artículo 211 del Código General del Proceso dispone que cualquiera de las partes puede tachar el testimonio de las personas que se encuentren en circunstancias que afecten su credibilidad o imparcialidad (parentesco, dependencia, sentimientos, interés), y que el juez apreciará el testimonio de acuerdo con las circunstancias de cada caso. Las inhabilidades absolutas y relativas para testimoniar son distintas (arts. 209 y 210). La sospecha conduce a una valoración más rigurosa, no a la exclusión.',
+  fuente:'CGP arts. 208 a 211.' },
+
+{ id:'E8-07', eje:'E8', tipo:'C', tema:'Autenticidad de elementos materiales probatorios en el proceso penal', nivel:'aplicación',
+  caso:'Un video de una cámara de seguridad fue recolectado por un particular y entregado a la Policía Judicial sin formato de cadena de custodia inicial. La Fiscalía pretende incorporarlo al juicio.',
+  enunciado:'El Procurador Judicial I debe considerar que',
+  opciones:[
+   'el video es inadmisible porque no tiene cadena de custodia desde su origen.',
+   'la cadena de custodia es el medio ordinario para demostrar la autenticidad, pero la autenticidad de un elemento puede acreditarse por otros medios, como el testimonio de quien lo obtuvo o de quien reconoce su contenido; la ausencia de cadena afecta el mérito, no la admisibilidad.',
+   'el video debe excluirse por violación del artículo 29 de la Constitución.',
+   'solo los elementos recolectados por la Fiscalía pueden ser autenticados.'],
+  correcta:1,
+  explicacion:'El artículo 277 de la Ley 906 de 2004 dispone que los elementos materiales probatorios y evidencia física son auténticos cuando han sido detectados, fijados, recogidos y embalados técnicamente y sometidos a las reglas de cadena de custodia, y que la demostración de la autenticidad de los elementos que no hayan sido sometidos a cadena de custodia estará a cargo de la parte que los presente, por otros medios (art. 277 inc. 2, en armonía con los arts. 254 y 426 sobre autenticación de documentos). La jurisprudencia de la Sala Penal reitera que los defectos de cadena de custodia afectan el valor probatorio y no la admisibilidad.',
+  fuente:'Ley 906 de 2004, arts. 254 a 266, 277 y 426; CSJ SP, jurisprudencia sobre autenticidad y cadena de custodia.' },
+
+{ id:'E8-08', eje:'E8', tipo:'C', tema:'Fuerza vinculante del precedente y carga argumentativa', nivel:'análisis',
+  caso:'Un juez administrativo se aparta de una sentencia de unificación del Consejo de Estado sobre reconocimiento de una prestación, limitándose a afirmar que “no comparte la tesis” de la corporación.',
+  enunciado:'El Procurador Judicial I, al apelar o rendir concepto, debe sostener que',
+  opciones:[
+   'el juez actuó válidamente, pues la independencia judicial le permite apartarse del precedente sin justificación.',
+   'el juez podía apartarse del precedente, pero solo cumpliendo la carga argumentativa de transparencia (reconocer el precedente) y suficiencia (exponer razones serias y suficientes que justifiquen la separación); la mera discrepancia configura desconocimiento del precedente.',
+   'el precedente del Consejo de Estado solo obliga a las autoridades administrativas, no a los jueces.',
+   'el juez debía consultar previamente al Consejo de Estado antes de fallar.'],
+  correcta:1,
+  explicacion:'La Corte Constitucional (C-836 de 2001, C-634 de 2011, C-816 de 2011, SU-354 de 2017) ha sostenido que el precedente vertical de los órganos de cierre vincula a los jueces, quienes pueden apartarse solo con una carga argumentativa reforzada: transparencia (identificar el precedente) y suficiencia (razones que demuestren que la nueva interpretación desarrolla mejor los principios constitucionales o que los hechos difieren). La Ley 1437 de 2011 (arts. 10, 102, 269 a 271) reforzó el valor de las sentencias de unificación del Consejo de Estado. El desconocimiento injustificado del precedente es causal específica de tutela contra providencias judiciales.',
+  fuente:'Corte Constitucional, C-836 de 2001, C-634 de 2011, C-816 de 2011 y SU-354 de 2017; Ley 1437 de 2011, arts. 10 y 270; Ley 270 de 1996, art. 48.' },
+
+{ id:'E8-09', eje:'E8', tipo:'C', tema:'Solución de antinomias normativas', nivel:'aplicación',
+  caso:'Una ley general posterior fija un término de caducidad de dos años para “todas las acciones contra el Estado”, mientras una ley especial anterior fija un término de treinta días para la nulidad electoral.',
+  enunciado:'Aplicando los criterios de la Ley 57 de 1887 y la Ley 153 de 1887, el Procurador Judicial I debe concluir que',
+  opciones:[
+   'prevalece la ley posterior, porque la ley posterior siempre deroga a la anterior.',
+   'prevalece la disposición especial anterior, porque la norma relativa a un asunto especial prefiere a la que tenga carácter general, salvo que el legislador manifieste expresamente la voluntad de derogarla.',
+   'ambas normas se inaplican y el juez fija un término razonable.',
+   'prevalece la norma que resulte más favorable al Estado.'],
+  correcta:1,
+  explicacion:'El artículo 5 de la Ley 57 de 1887 fija reglas para incompatibilidades entre normas: la disposición relativa a un asunto especial prefiere a la que tenga carácter general, y cuando las disposiciones tengan una misma especialidad o generalidad y se hallen en un mismo código, prefiere la de artículo posterior. La Ley 153 de 1887 (arts. 2 y 3) regula la derogación por ley posterior, que puede ser expresa o tácita solo en cuanto exista contradicción entre normas de la misma naturaleza. La regla lex specialis prevalece sobre lex posterior generalis salvo derogatoria expresa.',
+  fuente:'Ley 57 de 1887, art. 5; Ley 153 de 1887, arts. 1 a 3 y 5; Código Civil, arts. 25 a 32 (interpretación).' },
+
+{ id:'E8-10', eje:'E8', tipo:'C', tema:'Juicio de proporcionalidad', nivel:'aplicación',
+  caso:'Al dosificar una sanción disciplinaria, el operador escoge la sanción más severa disponible aunque existía una menos gravosa igualmente idónea para proteger el servicio.',
+  enunciado:'El subprincipio del juicio de proporcionalidad que resulta vulnerado es el de',
+  opciones:[
+   'idoneidad, porque la medida no es adecuada para el fin.',
+   'necesidad, porque existía una medida menos lesiva e igualmente idónea para alcanzar el fin perseguido.',
+   'legalidad, porque la sanción no estaba prevista en la ley.',
+   'proporcionalidad en sentido estricto, porque la medida no persigue un fin legítimo.'],
+  correcta:1,
+  explicacion:'El juicio de proporcionalidad, adoptado por la Corte Constitucional (C-022 de 1996, C-093 de 2001, C-673 de 2001), examina: la legitimidad del fin, la idoneidad de la medida (adecuación para alcanzarlo), la necesidad (inexistencia de una medida menos lesiva igualmente idónea) y la proporcionalidad en sentido estricto (balance entre beneficios y costos para otros principios). El Código General Disciplinario exige que la sanción corresponda a la gravedad de la falta y sea proporcional (criterios de graduación), lo que remite a este esquema.',
+  fuente:'Corte Constitucional, C-022 de 1996, C-093 de 2001 y C-673 de 2001; Ley 1952 de 2019, arts. 18 (proporcionalidad y razonabilidad de la sanción) y 50.' },
+
+{ id:'E8-11', eje:'E8', tipo:'C', tema:'Efectos de las sentencias de la Corte Constitucional', nivel:'comprensión',
+  caso:'Un funcionario sostiene que una sentencia de tutela de la Corte Constitucional que protegió a un ciudadano en situación idéntica a la de otros diez peticionarios no le es aplicable a estos porque “las sentencias de tutela solo valen para el caso concreto”.',
+  enunciado:'El Procurador Judicial I debe precisar que',
+  opciones:[
+   'las sentencias de tutela tienen efectos erga omnes como las de constitucionalidad.',
+   'las sentencias de tutela tienen, por regla general, efectos inter partes, pero su ratio decidendi constituye precedente que vincula a las autoridades administrativas y judiciales en casos análogos, y la Corte puede extender excepcionalmente los efectos (inter comunis o inter pares).',
+   'las sentencias de tutela no constituyen precedente en ningún caso.',
+   'solo las sentencias de unificación (SU) tienen algún valor vinculante.'],
+  correcta:1,
+  explicacion:'Las sentencias de control abstracto tienen efectos erga omnes y cosa juzgada constitucional (art. 243 CP; Decreto 2067 de 1991). Las de tutela tienen efectos inter partes (Decreto 2591 de 1991, art. 36), pero la Corte ha reconocido efectos inter comunis e inter pares en situaciones excepcionales y, sobre todo, ha sostenido que la ratio decidendi de sus fallos constituye precedente vinculante para todas las autoridades (C-634 de 2011; SU-611 de 2017; art. 10 Ley 1437). La Ley 1437 impone a las autoridades aplicar uniformemente la jurisprudencia constitucional.',
+  fuente:'CP art. 243; Decreto 2591 de 1991, art. 36; Decreto 2067 de 1991, art. 21; Corte Constitucional, C-634 de 2011 y SU-611 de 2017; Ley 1437 de 2011, art. 10.' },
+
+{ id:'E8-12', eje:'E8', tipo:'C', tema:'Estándares de prueba en distintos procesos', nivel:'análisis',
+  caso:'Un operador disciplinario absuelve porque “no se alcanzó el conocimiento más allá de toda duda razonable”, aplicando el estándar penal. La Procuraduría, como sujeto procesal, apela.',
+  enunciado:'El Procurador Judicial I debe sostener que',
+  opciones:[
+   'el estándar penal aplica idénticamente a todos los procesos sancionatorios.',
+   'el Código General Disciplinario exige, para sancionar, prueba que conduzca a la certeza sobre la existencia de la falta y la responsabilidad del disciplinado, resolviendo la duda razonable en favor de este; el estándar y las categorías disciplinarias son propios y no se identifican mecánicamente con los del proceso penal.',
+   'en materia disciplinaria basta la probabilidad de responsabilidad.',
+   'el operador debía aplicar la carga dinámica de la prueba contra el disciplinado.'],
+  correcta:1,
+  explicacion:'El derecho disciplinario, aunque comparte con el penal principios del derecho sancionador (legalidad, culpabilidad, presunción de inocencia, favorabilidad, in dubio pro disciplinado), tiene autonomía dogmática (C-948 de 2002). El Código General Disciplinario exige para el fallo sancionatorio prueba que conduzca a la certeza sobre la existencia de la falta y de la responsabilidad, y ordena resolver en favor del disciplinado toda duda razonable que no pueda eliminarse. Ese es el estándar propio, sin importar la fórmula penal del artículo 381 de la Ley 906 de 2004.',
+  fuente:'Ley 1952 de 2019, arts. 14 (presunción de inocencia), 148 y ss. (pruebas) y 227 aprox. (prueba para sancionar); Corte Constitucional, C-948 de 2002.' }
+);
