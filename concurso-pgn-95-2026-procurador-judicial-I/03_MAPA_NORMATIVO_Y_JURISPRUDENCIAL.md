@@ -1,6 +1,8 @@
 # Mapa normativo y jurisprudencial
 ## Procurador Judicial I (3PJ-EG) · Convocatoria 95-2026 · Procuraduría General de la Nación
 
+**Autor:** Carlos Arturo Ramos Mejía, Magíster en Derecho Constitucional. Material de preparación para la Convocatoria 95-2026 (Procurador Judicial I, PGN).
+
 Uso: cada eje tiene un **núcleo** (dominio obligatorio: debe poder aplicar la norma a un caso sin consultarla), un **complemento** (lectura comprensiva) y **jurisprudencia clave**. La columna “Alerta” señala lo que debe verificarse antes de la prueba (mayo de 2027) por posibles reformas o decisiones posteriores a septiembre de 2026.
 
 Convenciones: CP = Constitución Política; CPACA = Ley 1437 de 2011; CGP = Ley 1564 de 2012; CGD = Código General Disciplinario (Ley 1952 de 2019 reformada por la Ley 2094 de 2021); CPP = Ley 906 de 2004.

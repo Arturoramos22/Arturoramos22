@@ -1,6 +1,8 @@
 # ADN de las pruebas de la Universidad de Antioquia
 ## Cómo evalúa la operadora del concurso PGN 2026 y cómo entrenarse para ese formato
 
+**Autor:** Carlos Arturo Ramos Mejía, Magíster en Derecho Constitucional. Material de preparación para la Convocatoria 95-2026 (Procurador Judicial I, PGN).
+
 > **Precisión inicial.** En la Convocatoria 95-2026 (Procurador Judicial I, código 3PJ-EG) la entidad encargada de la verificación de requisitos, el diseño y la aplicación de las pruebas es la **Universidad de Antioquia (UdeA)**, no la Universidad Nacional. Así lo informó la Procuraduría al abrir inscripciones (7 al 18 de septiembre de 2026) y así consta en la *Guía de Orientación al Aspirante para el proceso de inscripción* publicada el 1 de septiembre de 2026 por la PGN y la UdeA. Toda la preparación debe orientarse al estilo de la UdeA.
 
 ---

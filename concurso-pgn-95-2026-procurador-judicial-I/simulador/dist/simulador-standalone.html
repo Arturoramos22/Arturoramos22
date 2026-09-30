@@ -42,6 +42,9 @@ h1,h2,h3{font-family:var(--font-text);text-wrap:balance;margin:0;line-height:1.2
 h1{font-size:1.6rem;font-weight:600}
 h2{font-size:1.25rem;font-weight:600}
 h3{font-size:1.05rem;font-weight:600}
+.byline{font-family:var(--font-text);font-style:italic;color:var(--muted);margin:6px 0 10px}
+.byline strong{font-style:normal;color:var(--fg);font-weight:600}
+.pagefoot{max-width:1180px;margin:0 auto;padding:18px 16px 32px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between}
 .eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .num{font-variant-numeric:tabular-nums}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:16px 40px}
@@ -158,7 +161,7 @@ th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu
 <body>
 <header class="topbar">
   <div class="topbar-in">
-    <div class="brand"><strong>Simulador Procurador Judicial I</strong><span>Convocatoria 95-2026 · PGN · modelo de juicio situacional (U. de Antioquia)</span></div>
+    <div class="brand"><strong>Simulador Procurador Judicial I</strong><span>Creado por Carlos Arturo Ramos Mejía, Magíster en Derecho Constitucional · Convocatoria 95-2026 PGN</span></div>
     <div class="grow"></div>
     <span id="modeChip" class="chip" hidden></span>
     <span id="progChip" class="chip num" hidden></span>
@@ -174,6 +177,7 @@ th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu
       <div>
         <div class="eyebrow">Concurso abierto de méritos · Resolución 076 de 2026 y modificatorias</div>
         <h1>Prepárese como se evalúa: casos, norma aplicable y decisión</h1>
+        <p class="byline">Simulador creado por <strong>Carlos Arturo Ramos Mejía</strong>, Magíster en Derecho Constitucional.</p>
         <p class="note" style="max-width:70ch">Banco de <span id="homeCount" class="num">0</span> ítems construidos con la lógica de las pruebas de juicio situacional de la Universidad de Antioquia: un caso del ejercicio del cargo, un enunciado y opciones que se diferencian por matices normativos. Prueba de conocimientos (70 %, eliminatoria, mínimo 65/100) y prueba comportamental (20 %, clasificatoria).</p>
       </div>
     </div>
@@ -289,6 +293,7 @@ th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu
     <div class="eyebrow">Resultado del intento</div>
     <h1 id="resTitle">Calificación</h1>
     <p class="note" id="resSub"></p>
+    <p class="byline">Simulador creado por <strong>Carlos Arturo Ramos Mejía</strong>, Magíster en Derecho Constitucional.</p>
     <div class="tiles" id="tiles"></div>
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:16px">
       <div class="card">
@@ -333,6 +338,7 @@ th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu
     <div id="studyList" class="grid"></div>
   </section>
 </main>
+<footer class="pagefoot"><span>Simulador creado por <strong>Carlos Arturo Ramos Mejía</strong>, Magíster en Derecho Constitucional.</span><span>Concurso PGN 2026 · Convocatoria 95-2026 · Procurador Judicial I (3PJ-EG)</span></footer>
 
 <script>
 /* Eje 1 – Constitución Política, acciones constitucionales y estructura del Estado
@@ -2691,7 +2697,7 @@ $('#btnClearErr').addEventListener('click',()=>{ store.set('errores',[]); render
 $('#btnClearHist').addEventListener('click',()=>{ store.set('historial',[]); renderHome(); toast('Historial borrado.'); });
 document.querySelectorAll('.tabs [data-filter]').forEach(b=>b.addEventListener('click',()=>{ document.querySelectorAll('.tabs [data-filter]').forEach(x=>x.classList.toggle('active',x===b)); renderReview(b.dataset.filter); }));
 $('#btnCopy').addEventListener('click',()=>{
-  const r=S.result; const lines=[`Simulador Procurador Judicial I – ${S.label} – ${new Date().toLocaleString('es-CO')}`];
+  const r=S.result; const lines=[`Simulador Procurador Judicial I – creado por Carlos Arturo Ramos Mejía, Magíster en Derecho Constitucional – ${S.label} – ${new Date().toLocaleString('es-CO')}`];
   if(r.scoreC!=null) lines.push(`Conocimientos: ${r.scoreC.toFixed(1)}/100 (${r.C.ok}/${r.C.n}) – ${r.scoreC>=65?'aprobada':'no aprobada'}`);
   if(r.scoreB!=null) lines.push(`Comportamental: ${r.scoreB.toFixed(1)}/100`);
   lines.push(`Total proyectado (70/20/10 con antecedentes ${S.antecedentes||0}): ${$('#totalPond').textContent}`);

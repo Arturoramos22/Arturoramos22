@@ -1,5 +1,7 @@
 # Preparación · Concurso PGN 2026 · Procurador Judicial I (Convocatoria 95-2026)
 
+**Autor:** Carlos Arturo Ramos Mejía, Magíster en Derecho Constitucional. Material de preparación para la Convocatoria 95-2026 (Procurador Judicial I, PGN).
+
 Paquete de estudio de alto nivel para la prueba de conocimientos y la prueba comportamental del concurso abierto de méritos de la Procuraduría General de la Nación (Resolución 076 de 2026 y modificatorias, versión 4 del formato de convocatoria), diseñado para el formato de **juicio situacional** de la **Universidad de Antioquia**, operadora de las pruebas.
 
 ## Contenido

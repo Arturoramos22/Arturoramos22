@@ -1,6 +1,8 @@
 # Programa de estudio · Procurador Judicial I (3PJ-EG)
 ## Concurso abierto de méritos “Mérito, construyendo excelencia” · Convocatoria No. 95-2026 · Resolución 076 de 2026 (modificada por las Resoluciones 108, 133, 212 y 243 de 2026) · Versión 4 del formato de convocatoria
 
+**Autor:** Carlos Arturo Ramos Mejía, Magíster en Derecho Constitucional. Material de preparación para la Convocatoria 95-2026 (Procurador Judicial I, PGN).
+
 **Objetivo:** obtener el puntaje más alto posible en la prueba de conocimientos (70 %, eliminatoria, mínimo 65/100) y en la prueba de competencias comportamentales (20 %), y asegurar el máximo del análisis de antecedentes (10 %), con un plan de 32 semanas (octubre de 2026 a mayo de 2027) diseñado para el formato de juicio situacional de la Universidad de Antioquia.
 
 > **Estado de la información (30 de septiembre de 2026).** Los datos del concurso provienen de la Resolución 076 de 2026 y sus modificatorias, del formato de convocatoria 95-2026 y de comunicaciones oficiales de la PGN reproducidas por medios y portales especializados. Los documentos oficiales en `procuraduria.gov.co` y `meritoconstruyendoexcelencia.com.co` no pudieron descargarse desde el entorno de trabajo por restricciones de red; por eso cada dato marcado con **(verificar)** debe contrastarse con el texto oficial. Las cifras del análisis de antecedentes y del cronograma son especialmente sensibles a cambios.
