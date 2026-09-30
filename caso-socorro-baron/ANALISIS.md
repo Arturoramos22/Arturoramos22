@@ -51,3 +51,7 @@ La red del entorno bloqueó la lectura directa de secretariasenado.gov.co, funci
 - `GUIA_OPERATIVA_LETRA_Y_PENDIENTES.docx`
 
 Las evidencias (letra, libreta, Remitly, WhatsApp, consulta SNR) y la liquidación original están en la carpeta de Google Drive del caso, no en este repositorio público.
+
+## 7. Carpeta de Google Drive
+
+Los cuatro escritos están también como Google Docs editables en la carpeta "CASO SOCORRO BARÓN – Ejecutivo vs. María del Pilar Barón (Cúcuta)" del Drive del titular de la sesión, con un índice del caso. Tres revisores independientes (formal, sustantivo y de citas) revisaron los borradores; sus hallazgos están incorporados.
