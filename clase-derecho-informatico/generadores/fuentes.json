@@ -1,0 +1,191 @@
+{
+ "lectura": {
+  "titulo": "Derecho Informático (Serie Materiales Docentes n.º 31)",
+  "autores": "Lorena Donoso Abarca y Carlos Reusser Monsálvez (Universidad de Chile; doctores en Derecho, Universidad de Salamanca)",
+  "autores_cortos": "Donoso y Reusser",
+  "tipo": "Texto doctrinal especializado",
+  "revista": "Academia Judicial de Chile, Santiago (PDF en línea desde marzo de 2022)",
+  "anio": "2021",
+  "url": "https://academiajudicial.cl/wp-content/uploads/2022/03/Derecho-informatico.pdf",
+  "url_pagina": "https://academiajudicial.cl/recursos/materiales-docentes/derecho-informatico/",
+  "acceso": "Acceso abierto institucional. Se asigna la lección introductoria: de la informática jurídica a la IA aplicada al derecho; ¿derecho informático o derecho digital?; características y principios regulatorios.",
+  "referencia_apa": "Donoso Abarca, L. y Reusser Monsálvez, C. (2021). Derecho Informático (Serie Materiales Docentes n.º 31). Academia Judicial de Chile. https://academiajudicial.cl/wp-content/uploads/2022/03/Derecho-informatico.pdf",
+  "resumen_corto": "Texto doctrinal que parte de la informática jurídica para llegar al derecho informático, discute la denominación (informático o digital), fija sus características y principios regulatorios (neutralidad tecnológica, mínima intervención) y despliega los campos: documento y firma electrónica, datos personales.",
+  "aportes": [
+   "Distingue informática jurídica (herramienta) y derecho informático (objeto de regulación), la primera distinción de la sesión.",
+   "Discute la denominación de la disciplina y sus características; permite debatir la autonomía.",
+   "Formula principios regulatorios (neutralidad tecnológica, mínima intervención) que se reconocen en la Ley 527 de 1999.",
+   "Despliega campos (documento y firma electrónica, datos personales) transferibles al caso colombiano para el contraste en clase."
+  ],
+  "pregunta_ficha": "¿Es el Derecho Informático una rama autónoma o un método transversal? Responda con los criterios del texto y con un ejemplo colombiano.",
+  "citas": [],
+  "ideas_centrales": [
+   "La informática entró al derecho primero como herramienta del jurista (informática jurídica) y después como objeto que exige regulación (derecho informático).",
+   "La denominación cambia (derecho informático, digital, de las TIC); lo que permanece es el objeto: la información digital y los sistemas que la procesan.",
+   "La regulación debe ser tecnológicamente neutral y de mínima intervención para no quedar obsoleta ni frenar la innovación.",
+   "El documento electrónico, la firma electrónica y los datos personales son los campos donde la disciplina muestra sus principios en acción."
+  ],
+  "complemento": {
+   "texto": "Flórez Rojas, M. L. (coord.) (2022). Derecho de las tecnologías y las tecnologías para el derecho. GECTI, Ediciones Uniandes. Leer la Presentación (pp. xi-xiv) y la sección «El papel de la academia» (pp. 44-53). DOI 10.15425/2017.571.",
+   "url": "https://ediciones.uniandes.edu.co/library/publication/derecho-de-las-tecnologias-y-las-tecnologias-para-el-derecho"
+  },
+  "alternativa_2025": {
+   "texto": "Llanes Robaina, J., Santana Santana, L., Páez Paredes, M. y Perera Cala, F. D. (2025). La formación en Derecho Informático: necesidad en la carrera de Derecho. Mendive. Revista de Educación, 23(4), e4260. Universidad de Pinar del Río.",
+   "url": "https://mendive.upr.edu.cu/index.php/MendiveUPR/article/view/4260"
+  }
+ },
+ "video": {
+  "titulo": "How privacy can save your life (Cómo la privacidad puede salvarte la vida) · TEDxPorto",
+  "url": "https://www.youtube.com/watch?v=xSPRouBvgFE",
+  "canal": "TEDx Talks (YouTube)",
+  "fecha": "2025 (charla de marzo de 2025, publicada en octubre de 2025)",
+  "duracion": "13:50 (por confirmar en YouTube)",
+  "experto": "Carissa Véliz",
+  "credenciales": "Profesora del Institute for Ethics in AI y de la Facultad de Filosofía de la Universidad de Oxford; autora de Privacy Is Power (2020) y editora del Oxford Handbook of Digital Ethics",
+  "tema": "Privacidad y protección de datos personales como condición de la libertad y de la democracia frente a la vigilancia estatal y corporativa potenciada por la IA",
+  "resumen_corto": "Véliz muestra con casos concretos que un dato que hoy parece inocuo (la religión en un registro civil, el genoma, la ubicación) puede convertirse en instrumento de daño cuando cambia quien tiene el poder; defiende la minimización de datos, la privacidad como bien colectivo y límites al modelo de negocio basado en datos personales. En inglés, con subtítulos en español.",
+  "consigna": "Anote: un dato personal que usted entrega a diario sin pensarlo; el principio de la Ley 1581 de 2012 que protegería ese dato; y una afirmación de la charla con la que no esté de acuerdo.",
+  "preguntas": [
+   "¿Por qué dice Véliz que la privacidad es poder y que es un bien colectivo? Relacione la idea con el habeas data (art. 15 C.P.) y con los principios de finalidad, necesidad y libertad de la Ley 1581 de 2012.",
+   "El ejemplo del registro civil muestra el riesgo de las bases de datos estatales. ¿Qué garantías exige hoy el Derecho Informático colombiano a la identidad digital, la biometría y la carpeta ciudadana?",
+   "¿Cómo multiplica la inteligencia artificial la vigilancia que describe la charla? Conecte con la Circular Externa 002 de 2024 de la SIC y con la T-323 de 2024."
+  ],
+  "alternativas": [
+   {
+    "titulo": "Desafíos del derecho en la era de la Inteligencia Artificial",
+    "url": "https://www.youtube.com/watch?v=IvcNLzlJUHA",
+    "nota": "Facultad de Derecho, Universidad de los Andes, 6 feb 2026; sesión larga: proyectar un fragmento de máximo 15 min"
+   },
+   {
+    "titulo": "Espresso Digital, cap. 2: la decisión de la Corte Constitucional sobre IA (magistrado Juan Carlos Cortés González, ponente de la T-323/2024)",
+    "url": "https://youtu.be/c4UEAZcz4Qc",
+    "nota": "Consejo Superior de la Judicatura, 2024; anterior a 2025 y más de 15 min: solo como fragmento de respaldo"
+   }
+  ]
+ },
+ "sentencia": {
+  "id": "Sentencia T-323 de 2024",
+  "mp": "Juan Carlos Cortés González",
+  "fecha": "2 de agosto de 2024",
+  "sala": "Sala Segunda de Revisión (magistrada Diana Fajardo Rivera; magistrados Vladimir Fernández Andrade y Juan Carlos Cortés González)",
+  "expediente": "T-9.301.656",
+  "url": "https://www.corteconstitucional.gov.co/relatoria/2024/T-323-24.htm",
+  "hechos": "Una madre, en representación de su hijo con trastorno del espectro autista, presentó acción de tutela contra su EPS para que lo exonerara de copagos y cuotas moderadoras, cubriera el transporte a terapias y controles y garantizara el tratamiento integral. El 7 de diciembre de 2022 un juzgado municipal de Cartagena concedió el amparo; la EPS impugnó. El 30 de enero de 2023 el Juzgado Primero Laboral del Circuito de Cartagena confirmó la decisión y, para ampliar los argumentos de la decisión ya adoptada, transcribió en la sentencia las preguntas que formuló a ChatGPT 3.5 y las respuestas obtenidas. La Corte Constitucional seleccionó el caso para revisión y decretó pruebas con intervenciones de universidades y autoridades.",
+  "hechos_corto": "Una madre, en nombre de su hijo con trastorno del espectro autista, pide por tutela a su EPS exoneración de copagos y cuotas moderadoras, transporte y tratamiento integral.\n\nPrimera instancia (7 dic. 2022): un juzgado municipal de Cartagena concede el amparo. La EPS impugna.\n\nSegunda instancia (30 ene. 2023): el Juzgado Primero Laboral del Circuito de Cartagena confirma y, para ampliar los argumentos de la decisión ya adoptada, transcribe las preguntas hechas a ChatGPT 3.5 y sus respuestas.\n\nLa Corte selecciona el caso y practica pruebas (universidades, autoridades, expertos).",
+  "problema": "(1) ¿Se vulneró el derecho al debido proceso en la decisión de segunda instancia por el uso de ChatGPT 3.5, en cuanto genera dudas sobre si quien decidió fue un juez de la República o una IA y sobre si la decisión fue debidamente motivada o fue producto de respuestas o alucinaciones de la IA? (2) ¿Vulneró la EPS los derechos a la salud, a la vida digna y a la seguridad social del niño al no exonerarlo de copagos y cuotas moderadoras, negar el transporte y no autorizar el tratamiento integral?",
+  "problema_corto": "1. ¿Se vulneró el debido proceso en la sentencia de segunda instancia porque el juez usó ChatGPT 3.5? Quedan dos dudas: si quien decidió fue un juez de la República o una IA, y si la decisión fue debidamente motivada o fue producto de respuestas o alucinaciones de la IA.\n\n2. ¿Vulneró la EPS los derechos a la salud, a la vida digna y a la seguridad social del niño al no exonerarlo de copagos, negar el transporte y no autorizar el tratamiento integral?",
+  "decision": "Confirmó parcialmente la sentencia de segunda instancia: mantuvo el amparo y lo extendió al transporte para valoraciones, controles y ayudas diagnósticas. Concluyó que el uso de ChatGPT no comportó una usurpación de la función de administrar justicia ni violó el debido proceso, porque el juez ya había fundamentado y adoptado la decisión; encontró, sin embargo, que no se cumplieron a cabalidad la transparencia (exposición parcial del uso) ni la responsabilidad (datos de la IA no del todo precisos). Ordenó al Consejo Superior de la Judicatura divulgar una guía o lineamiento sobre IA generativa en la Rama Judicial y, mediante la Escuela Judicial Rodrigo Lara Bonilla, difundir la sentencia y capacitar; exhortó a los jueces a evaluar el uso adecuado de estas herramientas; dio órdenes a la EPS.",
+  "decision_corto": "Confirma parcialmente la segunda instancia: mantiene el amparo del niño y lo amplía al transporte para valoraciones y controles.\n\nEl uso de ChatGPT no comportó una usurpación de la función judicial ni violó el debido proceso: el juez ya había decidido. Pero no se cumplieron a cabalidad la transparencia ni la responsabilidad.\n\nOrdena al Consejo Superior de la Judicatura expedir lineamientos sobre IA generativa y a la Escuela Judicial capacitar; exhorta a los jueces.",
+  "ratio": "El juez natural tiene que ser un ser humano: la IA no puede sustituirlo en las labores que exigen razonamiento lógico y humano (interpretar los hechos, valorar las pruebas, motivar y adoptar la decisión); una decisión adoptada por la IA sin valoración del juez sería inválida y violaría el debido proceso. Es admisible un uso razonable y ponderado de la IA, con enfoque de protección de derechos, bajo las cargas de transparencia, responsabilidad y protección de datos personales y con el requisito esencial de no sustituir la racionalidad humana.",
+  "ratio_corto": "El juez natural es un ser humano. La IA no puede sustituirlo en lo que exige razonamiento lógico y humano: interpretar hechos, valorar pruebas, motivar y decidir.\n\nUna decisión adoptada por la IA sin valoración del juez sería inválida y violaría el debido proceso.\n\nSu uso es admisible si es razonable y ponderado, con transparencia, responsabilidad, protección de datos y sin sustituir la racionalidad humana.",
+  "regla": "Un funcionario judicial puede usar IA generativa como apoyo (gestión administrativa y documental, corrección y resumen de textos) siempre que (i) no le delegue la interpretación de los hechos, la valoración de las pruebas, la motivación ni la decisión; (ii) evidencie con claridad y precisión el uso, su alcance y su ubicación en la providencia; (iii) verifique con rigor las fuentes y los datos y proteja la reserva de la información del proceso; y (iv) responda por el resultado. Criterios para la Rama Judicial: transparencia, responsabilidad, privacidad, no sustitución de la racionalidad humana, seriedad y verificación, prevención de riesgos, igualdad y equidad, control humano, regulación ética, adecuación a buenas prácticas y estándares colectivos, seguimiento continuo y adaptación, e idoneidad.",
+  "regla_corto": "Un juez puede apoyarse en IA generativa si:\n(i) no delega interpretar hechos, valorar pruebas, motivar ni decidir;\n(ii) evidencia con claridad el uso, su alcance y su ubicación;\n(iii) verifica fuentes y datos y protege la reserva del proceso;\n(iv) responde por el resultado.\n\nCriterios: transparencia, responsabilidad, privacidad, no sustitución, verificación, prevención de riesgos, igualdad, control humano, ética, buenas prácticas, seguimiento, idoneidad.",
+  "precedente": "Primer pronunciamiento de una alta corte colombiana que fija condiciones para el uso de IA generativa en la decisión judicial. Vincula a los funcionarios y empleados de la Rama Judicial; su desarrollo institucional son el ABC de la sentencia (Circular PCSJC24-37 de 2024) y los lineamientos de uso de IA de la Rama Judicial (diciembre de 2024). Para el abogado litigante opera como estándar de diligencia: la Corte Suprema (STC17832-2025) dejó sin efectos una decisión apoyada en citas jurisprudenciales inexistentes.",
+  "precedente_corto": "primer precedente de una alta corte colombiana sobre IA generativa en la decisión judicial. Vincula a la Rama Judicial (ABC y lineamientos de 2024) y opera como estándar de diligencia para el litigante (STC17832-2025, Corte Suprema).",
+  "utilidad": "Permite practicar la distinción entre ratio y reglas prospectivas (la Corte no anuló, pero reguló), conectar los principios de la disciplina con un caso concreto y discutir la responsabilidad profesional del abogado que usa IA. Los estudiantes reconocen el caso por la prensa.",
+  "conclusion_corta": "fijó las condiciones del uso de IA generativa en la decisión judicial: apoyo sí, sustitución del juez no, con transparencia, verificación y responsabilidad.",
+  "pregunta_contraste": "¿La regla de la T-323 de 2024 habría evitado lo ocurrido en la STC17832-2025 (providencia con citas inexistentes)? ¿Qué le falta a esa regla para el abogado litigante?",
+  "citas": [
+   {
+    "cita": "el uso de ChatGPT en el caso sometido a estudio no comportó una usurpación de la función de administración de justicia",
+    "ubicacion": "fragmento indexado del texto oficial; cotejar numeral"
+   },
+   {
+    "cita": "la IA no puede ser usada para sustituir el razonamiento lógico y humano que es competencia de cada juez",
+    "ubicacion": "fragmento indexado del texto oficial; cotejar numeral"
+   },
+   {
+    "cita": "Transparencia: evidenciar con claridad y precisión el uso, alcances y ubicación de los resultados obtenidos con herramientas de IA",
+    "ubicacion": "criterios para la Rama Judicial; cotejar redacción"
+   }
+  ],
+  "linea": [
+   {
+    "sentencia": "T-414/92",
+    "aporte": "Primer habeas data: libertad informática y caducidad del dato negativo (M.P. Ciro Angarita Barón)."
+   },
+   {
+    "sentencia": "SU-082/95",
+    "aporte": "Unifica el núcleo del habeas data y la caducidad del dato financiero."
+   },
+   {
+    "sentencia": "C-748/11",
+    "aporte": "Control previo de la Ley 1581 de 2012: principios del tratamiento de datos."
+   },
+   {
+    "sentencia": "T-277/15",
+    "aporte": "Derecho al olvido digital frente a medios de comunicación en internet."
+   },
+   {
+    "sentencia": "T-323/24",
+    "aporte": "Hito: condiciones del uso de IA generativa por los jueces."
+   },
+   {
+    "sentencia": "STC17832-2025",
+    "aporte": "Corte Suprema: sin efectos una decisión fundada en citas inexistentes generadas con IA."
+   }
+  ]
+ },
+ "casos": [
+  {
+   "titulo": "El auto redactado por la máquina",
+   "texto": "Un juez municipal pide a una IA generativa que redacte el auto que decreta pruebas y lo firma sin cambios ni mención de la herramienta.\n\n¿Qué criterios de la T-323 de 2024 se afectan? ¿Qué debió hacer? ¿Es nulo el auto?",
+   "clave": "Se afectan no sustitución (si no valoró), transparencia, verificación y responsabilidad. Debió revisar, dejar constancia del uso y verificar normas. No es nulo si el juez lo examinó y lo hizo suyo; sí lo sería si la decisión fue de la máquina sin valoración."
+  },
+  {
+   "titulo": "La tutela con la cita inexistente",
+   "texto": "Un estudiante de consultorio jurídico redacta una tutela con una IA que cita una sentencia que no existe; el juez lo advierte.\n\nConsecuencias éticas (Ley 1123 de 2007), procesales y para el usuario. Redacte un protocolo de verificación de tres pasos.",
+   "clave": "Lealtad y probidad (Ley 1123/2007); pérdida de credibilidad y eventual temeridad; daño al usuario. Protocolo: abrir cada cita en la relatoría oficial, cotejar el extracto con el texto, dejar constancia interna de la herramienta y la verificación."
+  },
+  {
+   "titulo": "La EPS que decide sola",
+   "texto": "Una EPS usa un sistema automatizado que niega autorizaciones de servicios sin revisión humana.\n\n¿Qué derechos están en juego (salud, habeas data, debido proceso)? ¿Qué exigiría usted como apoderado y con qué fundamento?",
+   "clave": "Salud, habeas data (datos sensibles, Ley 1581/2012), debido proceso administrativo y explicación. Exigir revisión humana, motivación, información sobre el tratamiento (art. 8 Ley 1581) y tutela si hay barrera; apoyo en control humano y transparencia (T-323/2024; Circular SIC 002/2024)."
+  }
+ ],
+ "quiz": [
+  "Explique en una frase la diferencia entre Derecho Informático e informática jurídica.",
+  "¿Qué principio permite que un correo electrónico valga como escrito y en qué artículos de la Ley 527 de 1999 se apoya?",
+  "¿Por qué la Ley 1581 de 2012 es estatutaria y qué sentencia la revisó?",
+  "Nombre dos criterios de la T-323 de 2024 para el uso de IA en la justicia y explique uno.",
+  "¿Qué decidió la Corte Suprema en la STC17832-2025 y por qué?"
+ ],
+ "referencias": [
+  {
+   "texto": "Donoso Abarca, L. y Reusser Monsálvez, C. (2021). Derecho Informático (Serie Materiales Docentes n.º 31). Academia Judicial de Chile.",
+   "url": "https://academiajudicial.cl/wp-content/uploads/2022/03/Derecho-informatico.pdf"
+  },
+  {
+   "texto": "Flórez Rojas, M. L. (coord.) (2022). Derecho de las tecnologías y las tecnologías para el derecho. GECTI, Ediciones Uniandes. DOI 10.15425/2017.571.",
+   "url": "https://ediciones.uniandes.edu.co/library/publication/derecho-de-las-tecnologias-y-las-tecnologias-para-el-derecho"
+  },
+  {
+   "texto": "Corte Constitucional. Sentencia T-323 de 2024 (M.P. Juan Carlos Cortés González). Relatoría.",
+   "url": "https://www.corteconstitucional.gov.co/relatoria/2024/T-323-24.htm"
+  },
+  {
+   "texto": "Corte Constitucional. Sentencia T-414 de 1992 (M.P. Ciro Angarita Barón). Relatoría.",
+   "url": "https://www.corteconstitucional.gov.co/relatoria/1992/T-414-92.htm"
+  },
+  {
+   "texto": "Consejo Superior de la Judicatura (2024). ABC de la Sentencia T-323 de 2024 (Circular PCSJC24-37).",
+   "url": "https://escuelajudicial.ramajudicial.gov.co/sites/default/files/ABC_SentenciaIA_T323De2024.pdf"
+  },
+  {
+   "texto": "Corte Suprema de Justicia, Sala de Casación Civil. STC17832-2025.",
+   "url": "https://cortesuprema.gov.co"
+  },
+  {
+   "texto": "Normas: Constitución Política (arts. 15, 20, 61, 74); Ley 527/1999; Ley 1266/2008; Ley 1273/2009; Ley 1581/2012; Decreto 1377/2013; Ley 2213/2022; Circular Externa 002/2024 SIC; CONPES 4144/2025.",
+   "url": "https://www.secretariasenado.gov.co"
+  },
+  {
+   "texto": "Téllez Valdés, J. Derecho informático (UNAM, 1991; ediciones posteriores McGraw-Hill). Lessig, L. (1999). Code and other laws of cyberspace.",
+   "url": ""
+  },
+  {
+   "texto": "Catálogo completo con estado de verificación: FUENTES.md / FUENTES.docx en la carpeta de Drive «Derecho y tecnologia clase de derecho informatico».",
+   "url": ""
+  }
+ ]
+}
