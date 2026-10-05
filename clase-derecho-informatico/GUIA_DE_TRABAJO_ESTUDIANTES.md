@@ -21,7 +21,15 @@
 
 ### 2.1 Qué es el Derecho Informático
 
-Conjunto de principios, normas e instituciones que regulan las relaciones jurídicas en las que la información digital, los sistemas informáticos y las redes son objeto o instrumento de la conducta. Julio Téllez Valdés lo definió como el conjunto de leyes, normas y principios aplicables a los hechos y actos derivados de la informática. Cambia el nombre según la época (Derecho de las nuevas tecnologías, Derecho de las TIC, Derecho digital, Ciberderecho); permanece el objeto.
+**Punto de partida: una regla de tres.** Para entender el Derecho Informático hay que distinguir primero tres nociones: (1) Informática y Derecho, la relación general entre las dos disciplinas; (2) informática jurídica, la informática al servicio del derecho (el jurista usa la máquina), en tres modalidades: documental (relatorías, bases de datos jurídicas), de gestión (expediente electrónico, despachos) y decisional (sistemas de apoyo a la decisión, IA generativa); (3) Derecho Informático, el derecho que regula la informática (la máquina y la información son objeto de la norma). La T-323 de 2024 está en el cruce: una herramienta de informática jurídica decisional (ChatGPT) que se vuelve objeto del Derecho Informático.
+
+| Noción | Dirección | Ejemplo |
+|---|---|---|
+| Informática y Derecho | La relación general entre las dos disciplinas (el género) | El campo de esta asignatura |
+| Informática jurídica | La informática al servicio del derecho | Relatoría de la Corte; expediente electrónico; ChatGPT como apoyo del juez |
+| Derecho Informático | El derecho que regula la informática | Ley 1581 de 2012; Ley 527 de 1999; T-323 de 2024 |
+
+**Definición.** Conjunto de principios, normas e instituciones que regulan las relaciones jurídicas en las que la información digital, los sistemas informáticos y las redes son objeto o instrumento de la conducta. Julio Téllez Valdés lo definió como el conjunto de leyes, normas y principios aplicables a los hechos y actos derivados de la informática. Cambia el nombre según la época (Derecho de las nuevas tecnologías, Derecho de las TIC, Derecho digital, Ciberderecho); permanece el objeto.
 
 | Noción | Qué estudia | Ejemplo |
 |---|---|---|

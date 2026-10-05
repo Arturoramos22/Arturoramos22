@@ -142,8 +142,49 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Leer los seis verbos (2 min). Señalar que los objetivos 5 y 6 se evalúan en el taller y en el quiz.");
 
-  // ---------- 4. Qué es
+  // ---------- 4. Regla de tres: Informática y Derecho
   pres.addSection({ title: "Fundamentos" });
+  s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Fundamentos" });
+  s.addText("Punto de partida: una regla de tres", { placeholder: "title" });
+  card(s, 3.0, 1.5, 7.33, 0.95, H.dk2);
+  s.addText([
+    { text: "Informática y Derecho", options: { bold: true, fontSize: 18, breakLine: true } },
+    { text: "La relación general entre las dos disciplinas (iuscibernética: Frosini y Losano, 1968). Tiene dos direcciones.", options: { fontSize: 13, color: C.accent6 } }
+  ], { x: 3.2, y: 1.55, w: 6.93, h: 0.85, fontSize: 15, color: C.background1, align: "center", isTextBox: true, margin: 0, valign: "middle" });
+  // conector en árbol
+  s.addShape(pres.ShapeType.line, { x: W / 2, y: 2.45, w: 0, h: 0.3, line: { color: H.accent5, width: 1.5 } });
+  s.addShape(pres.ShapeType.line, { x: 3.55, y: 2.75, w: 9.78 - 3.55, h: 0, line: { color: H.accent5, width: 1.5 } });
+  s.addShape(pres.ShapeType.line, { x: 3.55, y: 2.75, w: 0, h: 0.25, line: { color: H.accent5, width: 1.5 } });
+  s.addShape(pres.ShapeType.line, { x: 9.78, y: 2.75, w: 0, h: 0.25, line: { color: H.accent5, width: 1.5 } });
+  // izquierda: informática jurídica
+  card(s, M, 3.0, 5.9, 3.45, H.lt2);
+  await iconCircle(s, M + 0.25, 3.25, 0.8, "FaLaptopCode", H.accent1, H.lt1);
+  s.addText([
+    { text: "Informática jurídica", options: { bold: true, fontSize: 18, color: C.text2, breakLine: true } },
+    { text: "La informática al servicio del derecho: el jurista usa la máquina.", options: { fontSize: 13, color: C.accent5 } }
+  ], { x: M + 1.2, y: 3.2, w: 4.5, h: 1.0, fontSize: 15, isTextBox: true, margin: 0, valign: "middle" });
+  s.addText([
+    { text: "Documental: ", options: { bold: true } }, { text: "relatorías, SUIN-Juriscol, bases de datos jurídicas.", options: { breakLine: true } },
+    { text: "De gestión: ", options: { bold: true } }, { text: "expediente electrónico, reparto, despachos (Ley 2213 de 2022).", options: { breakLine: true } },
+    { text: "Decisional: ", options: { bold: true } }, { text: "sistemas de apoyo a la decisión, IA generativa." }
+  ], { x: M + 0.25, y: 4.35, w: 5.4, h: 2.0, fontSize: 13.5, color: C.text1, paraSpaceAfter: 6, isTextBox: true, margin: 0, valign: "top" });
+  // derecha: derecho informático
+  card(s, M + 6.23, 3.0, 5.9, 3.45, H.dk2);
+  await iconCircle(s, M + 6.48, 3.25, 0.8, "FaBalanceScale", H.accent2, H.dk1);
+  s.addText([
+    { text: "Derecho Informático", options: { bold: true, fontSize: 18, breakLine: true } },
+    { text: "El derecho que regula la informática: la máquina y la información son objeto de la norma.", options: { fontSize: 13, color: C.accent6 } }
+  ], { x: M + 7.43, y: 3.2, w: 4.5, h: 1.0, fontSize: 15, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
+  s.addText([
+    { text: "Datos: ", options: { bold: true } }, { text: "Ley 1581 de 2012.", options: { breakLine: true } },
+    { text: "Actos electrónicos: ", options: { bold: true } }, { text: "Ley 527 de 1999.", options: { breakLine: true } },
+    { text: "Conductas lesivas: ", options: { bold: true } }, { text: "Ley 1273 de 2009.", options: { breakLine: true } },
+    { text: "IA en la decisión: ", options: { bold: true } }, { text: "T-323 de 2024." }
+  ], { x: M + 6.48, y: 4.35, w: 5.4, h: 2.0, fontSize: 13.5, color: C.background1, paraSpaceAfter: 6, isTextBox: true, margin: 0, valign: "top" });
+  s.addText("La T-323 de 2024 está en el cruce: una herramienta de informática jurídica decisional (ChatGPT) que pasa a ser objeto del Derecho Informático.", { x: M, y: 6.47, w: W - 2 * M, h: 0.5, fontSize: 12.5, italic: true, color: C.accent1, isTextBox: true, margin: 0 });
+  notes(s, "Regla de tres (4 min). Antes de definir la disciplina, fijar las tres nociones: la relación general (Informática y Derecho), la informática al servicio del derecho (informática jurídica: documental, de gestión, decisional) y el derecho que regula la informática (Derecho Informático). Preguntar: ¿en cuál de las tres cae el juez que consulta ChatGPT? En las dos últimas: usa informática jurídica decisional y queda sometido al Derecho Informático.");
+
+  // ---------- 5. Qué es
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Fundamentos" });
   s.addText("Qué es el Derecho Informático", { placeholder: "title" });
   card(s, M, 1.55, 7.3, 2.3, H.lt2);
@@ -167,7 +208,7 @@ async function iconData(Icon, hex) {
   s.addText("La inteligencia artificial atraviesa los tres grupos.", { x: 8.5, y: 6.15, w: 4.2, h: 0.55, fontSize: 13, italic: true, color: C.accent1, isTextBox: true, margin: 0 });
   notes(s, "Definición (5 min). Subrayar la diferencia entre 'objeto' (lo regulado) e 'instrumento' (el medio). Preguntar: ¿un contrato firmado por correo electrónico es Derecho Informático? Sí, en cuanto a validez y prueba del mensaje de datos; el fondo sigue siendo derecho civil o comercial.");
 
-  // ---------- 5. Qué no es (3 columnas)
+  // ---------- 6. Qué no es (3 columnas)
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Fundamentos" });
   s.addText("Tres nociones que se confunden", { placeholder: "title" });
   const cols = [
@@ -185,7 +226,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Distinciones (4 min). La IA generativa cae en las tres casillas según el ángulo: como herramienta del juez es informática jurídica; como objeto regulado por la T-323 de 2024 es Derecho Informático.");
 
-  // ---------- 6. Autonomía 2x2
+  // ---------- 7. Autonomía 2x2
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Fundamentos" });
   s.addText("¿Es una rama autónoma? Cuatro criterios", { placeholder: "title" });
   const crit = [
@@ -205,7 +246,7 @@ async function iconData(Icon, hex) {
   s.addText("Posición de la clase: disciplina con objeto, principios e instituciones propios, pero transversal: atraviesa el derecho civil, penal, constitucional, administrativo, laboral y procesal.", { x: M, y: 6.5, w: W - 2 * M, h: 0.45, fontSize: 13, italic: true, color: C.accent1, isTextBox: true, margin: 0 });
   notes(s, "Autonomía (5 min). Pedir que un estudiante argumente a favor y otro en contra. Cerrar con la posición intermedia.");
 
-  // ---------- 7. Ejercicio relámpago
+  // ---------- 8. Ejercicio relámpago
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Fundamentos" });
   s.addText("Ejercicio relámpago", { placeholder: "title" });
   s.addText("Derecho Informático (DI), informática jurídica (IJ) o Derecho de las telecomunicaciones (DT). Una puede caer en dos casillas.", { x: M, y: 1.45, w: W - 2 * M, h: 0.6, fontSize: 14, color: C.accent6, isTextBox: true, margin: 0, valign: "top" });
@@ -225,7 +266,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Ejercicio (4 min). Respuestas: 1 IJ. 2 DI (datos personales, Ley 1581). 3 DT. 4 DI (prueba electrónica, Ley 527 y art. 247 CGP). 5 IJ como herramienta y DI como problema regulado (T-323 de 2024, deberes del abogado).");
 
-  // ---------- 8. Evolución: cuatro etapas
+  // ---------- 9. Evolución: cuatro etapas
   pres.addSection({ title: "Evolución, objeto y fuentes" });
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Evolución: cuatro etapas", { placeholder: "title" });
@@ -246,7 +287,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Evolución (6 min). Hilo: cada etapa responde a una pregunta nueva. 1: quién controla la información. 2: qué vale lo electrónico. 3: qué conductas son delito y cómo se relaciona el ciudadano con el Estado. 4: quién responde por la decisión asistida por una máquina.");
 
-  // ---------- 9. Hitos colombianos
+  // ---------- 10. Hitos colombianos
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Hitos colombianos, 1991-2026", { placeholder: "title" });
   const hitos = [
@@ -266,7 +307,7 @@ async function iconData(Icon, hex) {
   s.addTable(rows, { x: M, y: 1.55, w: W - 2 * M, colW: [1.8, W - 2 * M - 1.8], rowH: 0.62, fontSize: 13, fontFace: THEME.bodyFontFace, border: { type: "solid", color: H.lt1, pt: 2 }, margin: 0.08 });
   notes(s, "Hitos (4 min). No leer todo: señalar que la línea va de la información (1991-2012) a la decisión (2024-2026). Las normas se consultan en el texto oficial; la guía de trabajo trae los enlaces.");
 
-  // ---------- 10. Objeto
+  // ---------- 11. Objeto
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Objeto: tres grupos de relaciones", { placeholder: "title" });
   const obj = [
@@ -284,9 +325,9 @@ async function iconData(Icon, hex) {
   }
   card(s, M, 6.0, W - 2 * M, 0.75, H.accent1);
   s.addText("La inteligencia artificial atraviesa los tres: trata datos, produce documentos y decisiones, y abre nuevas formas de daño.", { x: M + 0.3, y: 6.0, w: W - 2 * M - 0.6, h: 0.75, fontSize: 15, bold: true, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
-  notes(s, "Objeto (3 min). Conectar con la diapositiva 4: aquí se desarrolla cada grupo con su norma de cabecera.");
+  notes(s, "Objeto (3 min). Conectar con la diapositiva 5: aquí se desarrolla cada grupo con su norma de cabecera.");
 
-  // ---------- 11. Fuentes (pirámide)
+  // ---------- 12. Fuentes (pirámide)
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Fuentes del Derecho Informático en Colombia", { placeholder: "title" });
   const niveles = [
@@ -307,7 +348,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Fuentes (5 min). Insistir en dos ideas: las leyes de datos son estatutarias porque regulan un derecho fundamental (por eso la C-748 de 2011 fue control previo); y el último nivel, el código, no es fuente formal pero condiciona de hecho lo que se puede hacer.");
 
-  // ---------- 12. Lectura asignada
+  // ---------- 13. Lectura asignada
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Lectura asignada: qué agrega el autor", { placeholder: "title" });
   card(s, M, 1.55, 5.4, 5.1, H.lt2);
@@ -329,7 +370,7 @@ async function iconData(Icon, hex) {
   s.addText([{ text: "Pregunta de la ficha: ", options: { bold: true } }, { text: CT.lectura.pregunta }], { x: 6.6, y: 5.75, w: 5.9, h: 0.85, fontSize: 13.5, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
   notes(s, "Lectura (5 min). Pedir a dos estudiantes que lean la tesis que anotaron en su ficha. Contrastar: ¿coincide con la definición y la posición sobre autonomía vistas en clase?");
 
-  // ---------- 13. Principios
+  // ---------- 14. Principios
   pres.addSection({ title: "Principios y campos" });
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Principios y campos" });
   s.addText("Siete principios estructurales", { placeholder: "title" });
@@ -350,7 +391,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Principios (7 min). Los tres primeros vienen de la Ley 527; el cuarto y el quinto del régimen de datos; los dos últimos los formuló la Corte en 2024 para la IA y ya aparecen en la regulación de la SIC.");
 
-  // ---------- 14. Problemas contemporáneos
+  // ---------- 15. Problemas contemporáneos
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Principios y campos" });
   s.addText("Problemas contemporáneos, 2024-2026", { placeholder: "title" });
   const prob = [
@@ -371,7 +412,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Problemas (4 min). Preguntar cuál de los seis han visto en la práctica o en noticias de este año. El video y el taller profundizan el primero.");
 
-  // ---------- 15. Mapa de campos
+  // ---------- 16. Mapa de campos
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Principios y campos" });
   s.addText("Mapa de campos y norma de cabecera", { placeholder: "title" });
   const campos = [
@@ -388,7 +429,7 @@ async function iconData(Icon, hex) {
   s.addTable([head, ...body], { x: M, y: 1.5, w: W - 2 * M, colW: [2.7, 3.3, 3.4, 2.73], rowH: [0.45, 0.62, 0.62, 0.62, 0.62, 0.62, 0.62, 0.62], fontSize: 11.5, fontFace: THEME.bodyFontFace, border: { type: "solid", color: H.accent6, pt: 0.5 }, margin: 0.06 });
   notes(s, "Mapa (5 min). Actividad: cada grupo recibe un campo y escribe en una frase la pregunta que responde, sin mirar la tabla. Luego se compara.");
 
-  // ---------- 16. Video
+  // ---------- 17. Video
   pres.addSection({ title: "Video y sentencia hito" });
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Video y sentencia hito" });
   s.addText("Video de apoyo", { placeholder: "title" });
@@ -409,7 +450,7 @@ async function iconData(Icon, hex) {
   s.addText("Descargue el video antes de la clase; no navegue en vivo. Plan B en la guía de trabajo.", { x: M, y: 6.35, w: W - 2 * M, h: 0.4, fontSize: 12.5, italic: true, color: C.accent6, isTextBox: true, margin: 0 });
   notes(s, "Video (12 min: proyección y discusión). Abrir el enlace con el botón. Después de verlo, dos minutos por pregunta.");
 
-  // ---------- 17. Sentencia: ficha y hechos
+  // ---------- 18. Sentencia: ficha y hechos
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Video y sentencia hito" });
   s.addText("Sentencia hito: " + CT.sentencia.id, { placeholder: "title" });
   card(s, M, 1.55, 4.3, 5.1, H.dk2);
@@ -430,7 +471,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Sentencia, parte 1 (3 min). Verificar la providencia directamente en la relatoría de la Corte Constitucional antes de clase; la guía trae el enlace.");
 
-  // ---------- 18. Problemas jurídicos y decisión
+  // ---------- 19. Problemas jurídicos y decisión
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Video y sentencia hito" });
   s.addText("Problemas jurídicos y decisión", { placeholder: "title" });
   s.addText("Problemas jurídicos", { x: M, y: 1.5, w: 6.0, h: 0.5, fontSize: 18, bold: true, color: C.text2, isTextBox: true, margin: 0 });
@@ -445,7 +486,7 @@ async function iconData(Icon, hex) {
   s.addText(bul(CT.sentencia.decisionCorta, { gap: 8 }), { x: 7.25, y: 2.25, w: 5.25, h: 4.2, fontSize: 14, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
   notes(s, "Sentencia, parte 2 (3 min). Subrayar la paradoja: no hubo violación del debido proceso, pero la Corte fijó reglas y dio órdenes. Preguntar qué tipo de precedente es ese (regla prospectiva para la Rama).");
 
-  // ---------- 19. Ratio, regla, precedente
+  // ---------- 20. Ratio, regla, precedente
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Video y sentencia hito" });
   s.addText("Ratio decidendi, regla y precedente", { placeholder: "title" });
   card(s, M, 1.5, 6.0, 1.75, H.dk2);
@@ -464,7 +505,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Sentencia, parte 3 (3 min). Distinguir ratio (lo necesario para decidir el caso) de las reglas prospectivas. Los criterios se leen tal como los enumera la Corte; la guía trae la lista completa con la fuente.");
 
-  // ---------- 20. Taller: contraste con STC17832-2025
+  // ---------- 21. Taller: contraste con STC17832-2025
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Video y sentencia hito" });
   s.addText("Taller: la regla puesta a prueba", { placeholder: "title" });
   card(s, M, 1.5, 6.0, 2.9, H.lt2);
@@ -479,7 +520,7 @@ async function iconData(Icon, hex) {
   s.addText("Después del taller, volvemos a la pregunta inicial: ¿cambió su respuesta?", { x: M, y: 6.4, w: W - 2 * M, h: 0.4, fontSize: 13, italic: true, color: C.accent1, isTextBox: true, margin: 0 });
   notes(s, "Taller (23 min): 13 de trabajo en grupo y 10 de puesta en común. Un grupo expone la matriz; los demás completan o corrigen. Cerrar con la pregunta de la diapositiva 2 y comparar el conteo.");
 
-  // ---------- 21. Aplicación
+  // ---------- 22. Aplicación
   pres.addSection({ title: "Aplicación y cierre" });
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Aplicación y cierre" });
   s.addText("Aplicación: tres minicasos", { placeholder: "title" });
@@ -498,7 +539,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Aplicación (10 min). Cada grupo resuelve un caso en 6 minutos y lo expone en 1. Claves en la guía del docente.");
 
-  // ---------- 22. Conclusiones
+  // ---------- 23. Conclusiones
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Aplicación y cierre" });
   s.addText("Cinco ideas para llevarse", { placeholder: "title" });
   const conc = [
@@ -515,7 +556,7 @@ async function iconData(Icon, hex) {
   }
   notes(s, "Conclusiones (2 min). Volver a la pregunta de la diapositiva 2: ¿cambió su respuesta?");
 
-  // ---------- 23. Evaluación y cierre
+  // ---------- 24. Evaluación y cierre
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Aplicación y cierre" });
   s.addText("Evaluación y cierre", { placeholder: "title" });
   card(s, M, 1.55, 6.0, 5.1, H.lt2);
@@ -534,7 +575,7 @@ async function iconData(Icon, hex) {
   s.addText([{ text: "Ponderación sugerida", options: { bold: true, color: C.text2, breakLine: true } }, { text: "Ficha de lectura 30 % · Matriz de la sentencia 40 % · Aplicación y quiz 30 %", options: { color: C.text1, breakLine: true } }, { text: "Próxima sesión: protección de datos personales y habeas data.", options: { color: C.accent5, fontSize: 13 } }], { x: 7.25, y: 4.25, w: 5.2, h: 2.3, fontSize: 14, isTextBox: true, margin: 0, valign: "top" });
   notes(s, "Cierre (5 min). Quiz escrito o en voz alta. Recoger los tickets de salida; sirven para abrir la siguiente clase.");
 
-  // ---------- 24. Referencias
+  // ---------- 25. Referencias
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Aplicación y cierre" });
   s.addText("Referencias", { placeholder: "title" });
   const refs = [

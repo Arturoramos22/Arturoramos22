@@ -11,13 +11,13 @@
 
 ## 1. Tesis e hilo conductor
 
-El Derecho Informático no es "el derecho de los computadores": es la rama que estudia las relaciones jurídicas en las que la información digital y los sistemas que la procesan son el objeto o el medio de la conducta. Nació como una respuesta a tres preguntas que siguen abiertas: quién controla la información sobre las personas (datos y habeas data), qué valor jurídico tiene lo que ocurre en un entorno electrónico (mensajes de datos, contratos, prueba) y qué conductas digitales merecen reproche penal (delitos informáticos). En 2024 la Corte Constitucional agregó una cuarta pregunta, hoy central: qué puede hacer una máquina dentro de una decisión que afecta derechos. La clase recorre esas cuatro preguntas con un texto doctrinal, una sentencia hito y un video reciente, y cierra con un ejercicio de aplicación.
+El Derecho Informático no es "el derecho de los computadores": es la rama que estudia las relaciones jurídicas en las que la información digital y los sistemas que la procesan son el objeto o el medio de la conducta. Nació como una respuesta a tres preguntas que siguen abiertas: quién controla la información sobre las personas (datos y habeas data), qué valor jurídico tiene lo que ocurre en un entorno electrónico (mensajes de datos, contratos, prueba) y qué conductas digitales merecen reproche penal (delitos informáticos). En 2024 la Corte Constitucional agregó una cuarta pregunta, hoy central: qué puede hacer una máquina dentro de una decisión que afecta derechos. La clase recorre esas cuatro preguntas con un texto doctrinal, una sentencia hito y un video reciente, y cierra con un ejercicio de aplicación. El punto de partida es una regla de tres: la relación general entre Informática y Derecho se desdobla en informática jurídica (la informática al servicio del derecho) y Derecho Informático (el derecho que regula la informática); sin la primera distinción no se entiende la segunda.
 
 ## 2. Objetivos de aprendizaje
 
 Al terminar la sesión el estudiante podrá:
 
-1. **Definir** el Derecho Informático, distinguirlo de la informática jurídica y del Derecho de las telecomunicaciones, y explicar la discusión sobre su autonomía (criterios normativo, docente, científico e institucional).
+1. **Definir** el Derecho Informático a partir de la regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), distinguirlo de la informática jurídica y del Derecho de las telecomunicaciones, y explicar la discusión sobre su autonomía (criterios normativo, docente, científico e institucional).
 2. **Reconstruir** su evolución en cuatro etapas (cibernética y primeras leyes de datos, comercio electrónico, ciberdelincuencia y gobierno digital, inteligencia artificial) y ubicar en ellas los hitos colombianos.
 3. **Identificar** el objeto, las fuentes y los principios estructurales de la disciplina (equivalencia funcional, neutralidad tecnológica, autodeterminación informativa, responsabilidad demostrada, supervisión humana).
 4. **Mapear** sus principales campos con su norma de cabecera en Colombia: datos personales, comercio electrónico y contratación, prueba electrónica, delitos informáticos, propiedad intelectual digital, gobierno y justicia digital, inteligencia artificial.
@@ -70,7 +70,7 @@ Al terminar la sesión el estudiante podrá:
 
 ## 5. Video de apoyo
 
-**Video seleccionado.** *Espresso Digital, capítulo 2: La decisión de la Corte Constitucional sobre IA y su uso en la administración de justicia*, pódcast del Consejo Superior de la Judicatura (Rama Judicial de Colombia), en YouTube y Spotify: https://youtu.be/c4UEAZcz4Qc. Participan el magistrado Juan Carlos Cortés González, ponente de la T-323 de 2024, la magistrada Diana Alexandra Remolina Botía (entonces presidenta del Consejo Superior de la Judicatura) y Ulises Canosa, presidente del Instituto Colombiano de Derecho Procesal. Publicado el 9 de septiembre de 2024 según la Rama Judicial. En sala se proyecta un **fragmento de máximo 15 minutos** (marcar inicio y fin al preparar la clase).
+**Video seleccionado.** *Espresso Digital, capítulo 2: La decisión de la Corte Constitucional sobre IA y su uso en la administración de justicia*, pódcast del Consejo Superior de la Judicatura (Rama Judicial de Colombia), en YouTube y Spotify: https://youtu.be/c4UEAZcz4Qc · Participan el magistrado Juan Carlos Cortés González, ponente de la T-323 de 2024, la magistrada Diana Alexandra Remolina Botía (entonces presidenta del Consejo Superior de la Judicatura) y Ulises Canosa, presidente del Instituto Colombiano de Derecho Procesal. Publicado el 9 de septiembre de 2024 según la Rama Judicial. En sala se proyecta un **fragmento de máximo 15 minutos** (marcar inicio y fin al preparar la clase).
 
 **Por qué este video.** Es la explicación de la sentencia hito por su propio ponente, en un formato institucional pensado para funcionarios judiciales; conecta directamente con el taller. Su límite es la fecha (2024) y que el episodio completo supera los 15 minutos, por lo que se usa como fragmento.
 
@@ -82,7 +82,21 @@ Al terminar la sesión el estudiante podrá:
 
 ## 6. Desarrollo teórico
 
-### 6.1 Qué es el Derecho Informático (y qué no es)
+### 6.1 Punto de partida: Informática y Derecho, una regla de tres
+
+Para entender el Derecho Informático hay que entender primero la relación general entre la informática y el derecho, que tiene dos direcciones. La doctrina clásica (Frosini y Losano en los años sesenta; después Pérez Luño y Téllez Valdés) ordena el campo en tres nociones:
+
+| Noción | Qué es | Dirección | Ejemplos |
+|---|---|---|---|
+| Informática y Derecho (iuscibernética) | La relación general entre las dos disciplinas: el género | En ambos sentidos | El campo de estudio de esta asignatura |
+| Informática jurídica | La informática al servicio del derecho: el jurista usa la máquina | De la informática hacia el derecho | Relatorías y bases de datos jurídicas (documental); expediente electrónico y gestión de despachos (de gestión); sistemas de apoyo a la decisión e IA generativa (decisional) |
+| Derecho Informático | El derecho que regula la informática: la máquina y la información son objeto de la norma | Del derecho hacia la informática | Ley 527 de 1999; Ley 1581 de 2012; Ley 1273 de 2009; T-323 de 2024 |
+
+**Las tres modalidades de la informática jurídica** (clasificación de Téllez Valdés): (i) documental: almacenamiento y recuperación de legislación, jurisprudencia y doctrina (relatorías de las altas cortes, SUIN-Juriscol, bases comerciales); (ii) de gestión y control: automatización de trámites y despachos (expediente electrónico, reparto, notificaciones; la justicia digital de la Ley 2213 de 2022); (iii) decisional o metadocumental: sistemas que apoyan, simulan o anticipan la decisión jurídica (sistemas expertos, analítica de jurisprudencia, IA generativa).
+
+**La regla de tres de la clase.** Informática y Derecho es la relación; informática jurídica es la técnica al servicio del jurista; Derecho Informático es la norma sobre la técnica. La sentencia hito está exactamente en el cruce: una herramienta de informática jurídica decisional (ChatGPT usado por el juez de Cartagena) se convierte en objeto del Derecho Informático (los doce criterios de la T-323 de 2024). Por eso la clase estudia primero la distinción y después la disciplina.
+
+### 6.2 Qué es el Derecho Informático (y qué no es)
 
 **Definición de trabajo.** Conjunto de principios, normas e instituciones que regulan las relaciones jurídicas en las que la información digital, los sistemas informáticos y las redes son objeto o instrumento de la conducta. La definición clásica de Julio Téllez Valdés lo describe como el conjunto de leyes, normas y principios aplicables a los hechos y actos derivados de la informática.
 
@@ -98,7 +112,7 @@ Los nombres cambian según la época y el país (Derecho de la informática, Der
 
 **El debate de la autonomía.** Para que una rama sea autónoma se exigen cuatro campos: normativo (legislación propia), docente (cátedra propia), científico (doctrina e investigación) e institucional (autoridades y órganos propios). En Colombia los cuatro existen: leyes estatutarias y ordinarias específicas; cátedras y posgrados (el Externado tiene un Departamento de Derecho Informático desde hace tres décadas, Uniandes el GECTI desde 2001); doctrina y revistas; y autoridades como la Delegatura para la Protección de Datos Personales de la SIC, la CRC y el MinTIC. La posición más sólida hoy es intermedia: es una disciplina con objeto, principios e instituciones propios, pero transversal, porque atraviesa el derecho civil, penal, constitucional, administrativo, laboral y procesal.
 
-### 6.2 Evolución: cuatro etapas
+### 6.3 Evolución: cuatro etapas
 
 **Etapa 1 (1948-1990): cibernética y primeras leyes de datos.** Norbert Wiener publica *Cibernética* (1948). Mario Losano acuña *iuscibernética* (1968) y Vittorio Frosini publica *Cibernética, derecho y sociedad* (1968). La preocupación es el poder informativo del Estado: el estado alemán de Hesse aprueba la primera ley de protección de datos (1970), siguen Suecia (1973), Estados Unidos con la Privacy Act (1974) y Francia (1978). El Consejo de Europa adopta el Convenio 108 (1981), primer tratado sobre datos personales. En Colombia, la Constitución de 1991 constitucionaliza el **habeas data** (art. 15) y la Corte lo desarrolla desde la Sentencia T-414 de 1992 (caso de un dato financiero caduco).
 
@@ -108,7 +122,7 @@ Los nombres cambian según la época y el país (Derecho de la informática, Der
 
 **Etapa 4 (2017-2026): inteligencia artificial y justicia digital.** Colombia adopta el CONPES 3975 de 2019 (transformación digital e IA) y el CONPES 4144 de 2025 (política nacional de IA); la Ley 2213 de 2022 hace permanente la justicia digital; la SIC expide la Circular Externa 002 de 2024 sobre tratamiento de datos en sistemas de IA. La Corte Constitucional dicta la **Sentencia T-323 de 2024** sobre el uso de IA generativa por los jueces; la Corte Suprema de Justicia, en la STC17832-2025, deja sin efectos una decisión apoyada en jurisprudencia inexistente generada por IA, y en el Auto AC739-2026 vuelve sobre el problema. La Unión Europea aprueba el Reglamento de Inteligencia Artificial (2024). La pregunta ya no es solo quién controla la información, sino quién responde por la decisión que una máquina ayuda a tomar.
 
-### 6.3 Objeto, fuentes y principios
+### 6.4 Objeto, fuentes y principios
 
 **Objeto.** Tres grupos de relaciones: (i) la información sobre las personas (datos personales, habeas data, identidad digital); (ii) los actos y hechos jurídicos realizados por medios electrónicos (contratos, firmas, documentos, prueba, trámites ante el Estado); (iii) las conductas lesivas contra sistemas e información (delitos informáticos, ciberseguridad). La IA atraviesa los tres.
 
@@ -134,7 +148,7 @@ Los nombres cambian según la época y el país (Derecho de la informática, Der
 6. **Supervisión humana y no sustitución del juicio** (T-323 de 2024): la herramienta apoya, no decide; el funcionario responde.
 7. **Transparencia y explicabilidad** (T-323 de 2024; Circular Externa 002 de 2024 de la SIC): se informa que se usó la herramienta, cómo y para qué.
 
-### 6.4 Problemas contemporáneos (2024-2026)
+### 6.5 Problemas contemporáneos (2024-2026)
 
 - **IA generativa en la justicia y en la práctica jurídica**: alucinaciones (citas inexistentes), confidencialidad de los datos del expediente, trazabilidad de la decisión.
 - **Biometría y datos sensibles**: reconocimiento facial, autenticación por huella, prueba de necesidad y proporcionalidad.
@@ -144,7 +158,7 @@ Los nombres cambian según la época y el país (Derecho de la informática, Der
 - **Jurisdicción y territorialidad**: proveedores en el exterior, transferencia y transmisión internacional de datos.
 - **Brecha digital y debido proceso**: justicia digital permanente (Ley 2213 de 2022) y acceso efectivo.
 
-### 6.5 Mapa de campos
+### 6.6 Mapa de campos
 
 | Campo | Pregunta que responde | Norma de cabecera | Caso o referencia |
 |---|---|---|---|
@@ -161,14 +175,14 @@ Los nombres cambian según la época y el país (Derecho de la informática, Der
 | Minuto | Bloque | Qué ocurre | Material |
 |---|---|---|---|
 | 0-8 | Apertura | Pregunta detonante: "¿Un juez puede preguntarle a ChatGPT?" Se recogen tres respuestas rápidas y se anuncian los objetivos. | Diapositivas 1-3 |
-| 8-25 | Fundamentos | Definición, distinciones, autonomía. Ejercicio relámpago: clasificar cinco situaciones en Derecho Informático, informática jurídica o telecomunicaciones. | Diapositivas 4-7 |
-| 25-45 | Evolución, objeto y fuentes | Las cuatro etapas y la pirámide de fuentes. Se contrasta con la lectura asignada: ¿qué agrega o discute el autor? | Diapositivas 8-12; lectura |
-| 45-60 | Principios y campos | Siete principios y mapa de siete campos. Cada grupo recibe un campo y formula en una frase la pregunta que responde. | Diapositivas 13-15 |
+| 8-25 | Fundamentos | Regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), definición, distinciones, autonomía. Ejercicio relámpago: clasificar cinco situaciones en Derecho Informático, informática jurídica o telecomunicaciones. | Diapositivas 4-8 |
+| 25-45 | Evolución, objeto y fuentes | Las cuatro etapas y la pirámide de fuentes. Se contrasta con la lectura asignada: ¿qué agrega o discute el autor? | Diapositivas 9-13; lectura |
+| 45-60 | Principios y campos | Siete principios y mapa de siete campos. Cada grupo recibe un campo y formula en una frase la pregunta que responde. | Diapositivas 14-16 |
 | 60-70 | Pausa | | |
-| 70-82 | Video de apoyo | Proyección y tres preguntas de discusión. | Diapositiva 16; video |
-| 82-105 | Taller: sentencia hito | Grupos de 4 completan la matriz de análisis de la T-323 de 2024 y la contrastan con la STC17832-2025. Puesta en común. | Diapositivas 17-19; guía de trabajo |
-| 105-115 | Aplicación | Tres minicasos; cada grupo resuelve uno con la regla de la sentencia. | Diapositiva 20; guía |
-| 115-120 | Cierre y evaluación | Quiz de cinco preguntas y ticket de salida: "una regla que me llevo, una duda que me queda". | Diapositivas 21-22 |
+| 70-82 | Video de apoyo | Proyección y tres preguntas de discusión. | Diapositiva 17; video |
+| 82-105 | Taller: sentencia hito | Grupos de 4 completan la matriz de análisis de la T-323 de 2024 y la contrastan con la STC17832-2025. Puesta en común. | Diapositivas 18-20; guía de trabajo |
+| 105-115 | Aplicación | Tres minicasos; cada grupo resuelve uno con la regla de la sentencia. | Diapositiva 21; guía |
+| 115-120 | Cierre y evaluación | Quiz de cinco preguntas y ticket de salida: "una regla que me llevo, una duda que me queda". | Diapositivas 22-23 |
 
 **Si la clase se parte en dos sesiones de 60 minutos:** sesión A, bloques de apertura a principios y campos (minutos 0-60); sesión B, video, taller de la sentencia, aplicación y cierre (minutos 70-120), con la lectura y la ficha de la sentencia como tarea intermedia.
 
@@ -190,7 +204,7 @@ Quiz de cinco preguntas (en la guía) y ticket de salida.
 
 ### 8.5 Claves para el docente
 
-**Ejercicio relámpago (diapositiva 7).** 1: informática jurídica. 2: Derecho Informático (datos personales, Ley 1581 de 2012). 3: Derecho de las telecomunicaciones. 4: Derecho Informático (prueba electrónica, Ley 527 y art. 247 CGP). 5: informática jurídica como herramienta y Derecho Informático como problema regulado (T-323 de 2024; deberes del abogado).
+**Ejercicio relámpago (diapositiva 8).** 1: informática jurídica. 2: Derecho Informático (datos personales, Ley 1581 de 2012). 3: Derecho de las telecomunicaciones. 4: Derecho Informático (prueba electrónica, Ley 527 y art. 247 CGP). 5: informática jurídica como herramienta y Derecho Informático como problema regulado (T-323 de 2024; deberes del abogado).
 
 **Pregunta de contraste del taller.** La regla de la T-323 se dirige a la Rama Judicial y exige verificación y transparencia; el Tribunal de Sincelejo la incumplió (citas no verificadas, sin evidenciar el uso). Lo que falta para el litigante: un deber expreso de verificación y de revelación del uso de IA en los escritos, que hoy se deriva de la lealtad procesal (CGP, art. 78) y del régimen disciplinario del abogado (Ley 1123 de 2007), no de la sentencia.
 
