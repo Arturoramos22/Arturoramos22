@@ -1,6 +1,6 @@
 # Clase integral: Derecho Informático (Tecnología y Derecho, UFPS)
 
-Carpeta lista para dictar la sesión de 120 minutos. Fecha de corte de las fuentes: 5 de octubre de 2026. Copia en Google Drive: carpeta «Derecho y tecnologia clase de derecho informatico».
+Carpeta lista para dictar la sesión de 120 minutos. Fecha de corte de las fuentes: 5 de octubre de 2026. Copia en Google Drive: carpeta [«Derecho y tecnologia clase de derecho informatico»](https://drive.google.com/drive/folders/1od26pSaaeWdhDqm_vaadekk8mSUvDbng) (ver la sección final).
 
 | Archivo | Qué es | Cuándo usarlo |
 |---|---|---|
@@ -21,3 +21,14 @@ Carpeta lista para dictar la sesión de 120 minutos. Fecha de corte de las fuent
 ## Nota sobre la verificación
 
 El entorno en que se preparó la clase permitía búsquedas web pero bloqueaba la apertura de casi todos los sitios jurídicos y académicos colombianos y de YouTube. Por eso `FUENTES.md` marca cada fuente como «Abierta», «Confirmada por búsqueda» o «No verificada», y la lista de chequeo pide abrir la sentencia, la lectura y el video antes de la sesión.
+
+## Copia en Google Drive
+
+La carpeta [«Derecho y tecnologia clase de derecho informatico»](https://drive.google.com/drive/folders/1od26pSaaeWdhDqm_vaadekk8mSUvDbng) contiene los textos como Google Docs editables:
+
+- [PROGRAMA DE LA CLASE (docente)](https://docs.google.com/document/d/1o-RETP7gXJUcuwFFlWVGgach3OQBWNhVsXeDvhb-TdA/edit)
+- [GUÍA DE TRABAJO DEL ESTUDIANTE](https://docs.google.com/document/d/1nE8WOX8s09swQnkZOJ_mrKogdPDiHujGVCzEtPllDow/edit)
+- [FUENTES Y ESTADO DE VERIFICACIÓN](https://docs.google.com/document/d/1eZ_PFdtp6XdMtvibBRyrr2fHWOEiBuyw3vk4f0gzTyA/edit)
+- [LEEME - Índice de la carpeta y enlaces](https://docs.google.com/document/d/1Qujp1RxIZgM7WnrOROwPjYOwAq6QDSVQI-7Bimu8YDs/edit)
+
+Las diapositivas (`DIAPOSITIVAS.pptx`) y las versiones en Word no pudieron subirse a Drive desde el entorno de preparación; se descargan de esta carpeta del repositorio y se arrastran a la carpeta de Drive.
