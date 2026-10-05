@@ -4,7 +4,7 @@ Carpeta lista para dictar la sesión de 120 minutos. Fecha de corte de las fuent
 
 | Archivo | Qué es | Cuándo usarlo |
 |---|---|---|
-| `DIAPOSITIVAS.pptx` | 25 diapositivas en blanco y negro, firmadas en cada lámina como «Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS», con notas del orador (tiempos, claves del ejercicio relámpago, guion por bloque) | En sala |
+| `DIAPOSITIVAS.pptx` | 24 diapositivas en blanco y negro, firmadas en cada lámina como «Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS», con notas del orador (tiempos, claves del ejercicio relámpago, guion por bloque) | En sala |
 | `GUIA_DE_TRABAJO_ESTUDIANTES.docx` (y `.md`) | Guía del estudiante: instrucciones, síntesis conceptual, lectura asignada con guía de lectura, ficha de la sentencia, matriz de análisis, preguntas orientadoras, tres minicasos, quiz, ticket de salida y rúbrica | Se envía una semana antes |
 | `PROGRAMA_CLASE.md` / `.docx` | Programa del docente: tesis, objetivos, desarrollo teórico que abre con la regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), lectura, sentencia hito (hechos, problema, decisión, ratio, regla, precedente, utilidad), video, agenda minuto a minuto, actividades, claves de los casos, evaluación, referencias y nota de verificación | Para preparar la sesión |
 | `FUENTES.md` / `.docx` | Catálogo de fuentes con estado de verificación de cada una | Para abrir y descargar los materiales antes de la clase |
@@ -26,9 +26,9 @@ El entorno en que se preparó la clase permitía búsquedas web pero bloqueaba l
 
 La carpeta [«Derecho y tecnologia clase de derecho informatico»](https://drive.google.com/drive/folders/1od26pSaaeWdhDqm_vaadekk8mSUvDbng) contiene los textos como Google Docs editables:
 
-- [PROGRAMA DE LA CLASE (docente)](https://docs.google.com/document/d/1PHOi-YCcmRluJI6Ii0mwunviyuPJE-iFdhgvARw_fKk/edit)
+- [PROGRAMA DE LA CLASE (docente)](https://docs.google.com/document/d/1i5gy4kNOLn_WT0_aLGcnHHwNtD5MnkaVaOROVFdfOPw/edit)
 - [GUÍA DE TRABAJO DEL ESTUDIANTE](https://docs.google.com/document/d/1eFEGcUYy851dS8OVFlBx8dZP0i6kuWqgESF68-vuqxg/edit)
 - [FUENTES Y ESTADO DE VERIFICACIÓN](https://docs.google.com/document/d/1eZ_PFdtp6XdMtvibBRyrr2fHWOEiBuyw3vk4f0gzTyA/edit)
-- [LEEME - Índice de la carpeta y enlaces](https://docs.google.com/document/d/1e5jfZWsvMSYZedFQked2zU1aebfNUFgDa9KmxYP_IMI/edit)
+- [LEEME - Índice de la carpeta y enlaces](https://docs.google.com/document/d/1qMtSGetbNUKBTTLznxkHFh9LpApYMle5JPXxAc1gOrQ/edit)
 
 Las diapositivas (`DIAPOSITIVAS.pptx`) y las versiones en Word no pudieron subirse a Drive desde el entorno de preparación; se descargan de esta carpeta del repositorio y se arrastran a la carpeta de Drive.

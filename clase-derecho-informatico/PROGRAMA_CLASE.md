@@ -15,7 +15,7 @@ El Derecho Informático no es "el derecho de los computadores": es la rama que e
 
 ## 2. Objetivos de aprendizaje
 
-Al terminar la sesión el estudiante podrá:
+Al terminar la sesión el estudiante podrá (los objetivos se enuncian oralmente en la apertura; por regla del docente no se proyectan en una diapositiva):
 
 1. **Definir** el Derecho Informático a partir de la regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), distinguirlo de la informática jurídica y del Derecho de las telecomunicaciones, y explicar la discusión sobre su autonomía (criterios normativo, docente, científico e institucional).
 2. **Reconstruir** su evolución en cuatro etapas (cibernética y primeras leyes de datos, comercio electrónico, ciberdelincuencia y gobierno digital, inteligencia artificial) y ubicar en ellas los hitos colombianos.
@@ -174,15 +174,15 @@ Los nombres cambian según la época y el país (Derecho de la informática, Der
 
 | Minuto | Bloque | Qué ocurre | Material |
 |---|---|---|---|
-| 0-8 | Apertura | Pregunta detonante: "¿Un juez puede preguntarle a ChatGPT?" Se recogen tres respuestas rápidas y se anuncian los objetivos. | Diapositivas 1-3 |
-| 8-25 | Fundamentos | Regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), definición, distinciones, autonomía. Ejercicio relámpago: clasificar cinco situaciones en Derecho Informático, informática jurídica o telecomunicaciones. | Diapositivas 4-8 |
-| 25-45 | Evolución, objeto y fuentes | Las cuatro etapas y la pirámide de fuentes. Se contrasta con la lectura asignada: ¿qué agrega o discute el autor? | Diapositivas 9-13; lectura |
-| 45-60 | Principios y campos | Siete principios y mapa de siete campos. Cada grupo recibe un campo y formula en una frase la pregunta que responde. | Diapositivas 14-16 |
+| 0-8 | Apertura | Pregunta detonante: "¿Un juez puede preguntarle a ChatGPT?" Se recogen tres respuestas rápidas y se anuncia la estructura de la sesión. | Diapositivas 1-2 |
+| 8-25 | Fundamentos | Regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), definición, distinciones, autonomía. Ejercicio relámpago: clasificar cinco situaciones en Derecho Informático, informática jurídica o telecomunicaciones. | Diapositivas 3-7 |
+| 25-45 | Evolución, objeto y fuentes | Las cuatro etapas y la pirámide de fuentes. Se contrasta con la lectura asignada: ¿qué agrega o discute el autor? | Diapositivas 8-12; lectura |
+| 45-60 | Principios y campos | Siete principios y mapa de siete campos. Cada grupo recibe un campo y formula en una frase la pregunta que responde. | Diapositivas 13-15 |
 | 60-70 | Pausa | | |
-| 70-82 | Video de apoyo | Proyección y tres preguntas de discusión. | Diapositiva 17; video |
-| 82-105 | Taller: sentencia hito | Grupos de 4 completan la matriz de análisis de la T-323 de 2024 y la contrastan con la STC17832-2025. Puesta en común. | Diapositivas 18-20; guía de trabajo |
-| 105-115 | Aplicación | Tres minicasos; cada grupo resuelve uno con la regla de la sentencia. | Diapositiva 21; guía |
-| 115-120 | Cierre y evaluación | Quiz de cinco preguntas y ticket de salida: "una regla que me llevo, una duda que me queda". | Diapositivas 22-23 |
+| 70-82 | Video de apoyo | Proyección y tres preguntas de discusión. | Diapositiva 16; video |
+| 82-105 | Taller: sentencia hito | Grupos de 4 completan la matriz de análisis de la T-323 de 2024 y la contrastan con la STC17832-2025. Puesta en común. | Diapositivas 17-19; guía de trabajo |
+| 105-115 | Aplicación | Tres minicasos; cada grupo resuelve uno con la regla de la sentencia. | Diapositiva 20; guía |
+| 115-120 | Cierre y evaluación | Quiz de cinco preguntas y ticket de salida: "una regla que me llevo, una duda que me queda". | Diapositivas 21-22 |
 
 **Si la clase se parte en dos sesiones de 60 minutos:** sesión A, bloques de apertura a principios y campos (minutos 0-60); sesión B, video, taller de la sentencia, aplicación y cierre (minutos 70-120), con la lectura y la ficha de la sentencia como tarea intermedia.
 
@@ -204,7 +204,7 @@ Quiz de cinco preguntas (en la guía) y ticket de salida.
 
 ### 8.5 Claves para el docente
 
-**Ejercicio relámpago (diapositiva 8).** 1: informática jurídica. 2: Derecho Informático (datos personales, Ley 1581 de 2012). 3: Derecho de las telecomunicaciones. 4: Derecho Informático (prueba electrónica, Ley 527 y art. 247 CGP). 5: informática jurídica como herramienta y Derecho Informático como problema regulado (T-323 de 2024; deberes del abogado).
+**Ejercicio relámpago (diapositiva 7).** 1: informática jurídica. 2: Derecho Informático (datos personales, Ley 1581 de 2012). 3: Derecho de las telecomunicaciones. 4: Derecho Informático (prueba electrónica, Ley 527 y art. 247 CGP). 5: informática jurídica como herramienta y Derecho Informático como problema regulado (T-323 de 2024; deberes del abogado).
 
 **Pregunta de contraste del taller.** La regla de la T-323 se dirige a la Rama Judicial y exige verificación y transparencia; el Tribunal de Sincelejo la incumplió (citas no verificadas, sin evidenciar el uso). Lo que falta para el litigante: un deber expreso de verificación y de revelación del uso de IA en los escritos, que hoy se deriva de la lealtad procesal (CGP, art. 78) y del régimen disciplinario del abogado (Ley 1123 de 2007), no de la sentencia.
 
