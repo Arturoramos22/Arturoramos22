@@ -4,7 +4,7 @@ Carpeta lista para dictar la sesión de 120 minutos. Fecha de corte de las fuent
 
 | Archivo | Qué es | Cuándo usarlo |
 |---|---|---|
-| `DIAPOSITIVAS.pptx` | 24 diapositivas en blanco y negro, firmadas en cada lámina como «Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS», con notas del orador (tiempos, claves del ejercicio relámpago, guion por bloque) | En sala |
+| `DIAPOSITIVAS.pptx` | 24 diapositivas en blanco y negro, sin iconos ni símbolos decorativos (solo texto, líneas y tablas), firmadas en cada lámina como «Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS», con notas del orador (tiempos, claves del ejercicio relámpago, guion por bloque) | En sala |
 | `GUIA_DE_TRABAJO_ESTUDIANTES.docx` (y `.md`) | Guía del estudiante: instrucciones, síntesis conceptual, lectura asignada con guía de lectura, ficha de la sentencia, matriz de análisis, preguntas orientadoras, tres minicasos, quiz, ticket de salida y rúbrica | Se envía una semana antes |
 | `PROGRAMA_CLASE.md` / `.docx` | Programa del docente: tesis, objetivos, desarrollo teórico que abre con la regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), lectura, sentencia hito (hechos, problema, decisión, ratio, regla, precedente, utilidad), video, agenda minuto a minuto, actividades, claves de los casos, evaluación, referencias y nota de verificación | Para preparar la sesión |
 | `SOLUCIONARIO.md` / `.docx` | Solucionario del docente: respuesta completa y justificada de cada actividad (pregunta detonante, ejercicio relámpago, mapa de campos, ficha de lectura, video, matriz de la sentencia, contraste, preguntas orientadoras, minicasos, quiz y ticket). Reservado al docente; también está como sección 12 del programa | Para calificar y conducir las actividades |

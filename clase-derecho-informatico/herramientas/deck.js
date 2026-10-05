@@ -1,9 +1,4 @@
 const pptxgen = require("pptxgenjs");
-const React = require("react");
-const { renderToStaticMarkup } = require("react-dom/server");
-const sharp = require("sharp");
-const path = require("path");
-const FA = require("react-icons/fa");
 const { applyTheme } = require(process.env.PPTX_SKILL + "/scripts/apply_theme.js");
 const CT = require("./content.js");
 
@@ -24,12 +19,6 @@ const H = THEME.colors;
 // Luminancia relativa de un color hex y color de texto que contrasta con él (negro sobre claro, blanco sobre oscuro).
 const lum = hex => { const n = parseInt(hex, 16); return (0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255; };
 const on = hex => (lum(hex) > 0.5 ? H.dk1 : H.lt1);
-
-async function iconData(Icon, hex) {
-  const svg = renderToStaticMarkup(React.createElement(Icon, { size: 256, color: "#" + hex }));
-  const buf = await sharp(Buffer.from(svg)).resize(256, 256).png().toBuffer();
-  return "image/png;base64," + buf.toString("base64");
-}
 
 (async () => {
   const pres = new pptxgen();
@@ -74,20 +63,9 @@ async function iconData(Icon, hex) {
     ]
   });
 
-  // icon cache
-  const icons = {};
-  async function ic(name, hex) {
-    const k = name + hex;
-    if (!icons[k]) icons[k] = await iconData(FA[name], hex);
-    return icons[k];
-  }
-  async function iconCircle(slide, x, y, d, name, fill, iconHex) {
-    slide.addShape(pres.ShapeType.ellipse, { x, y, w: d, h: d, fill: { color: fill }, line: { color: fill, width: 0 } });
-    slide.addImage({ data: await ic(name, iconHex), x: x + d * 0.25, y: y + d * 0.25, w: d * 0.5, h: d * 0.5 });
-  }
-  function badge(slide, x, y, n, fill) {
-    slide.addShape(pres.ShapeType.ellipse, { x, y, w: 0.42, h: 0.42, fill: { color: fill }, line: { color: fill, width: 0 } });
-    slide.addText(String(n), { x, y, w: 0.42, h: 0.42, fontSize: 14, bold: true, color: on(fill), align: "center", valign: "middle", isTextBox: true, margin: 0 });
+  // Regla del docente: sin iconos, emojis ni símbolos decorativos. Los numeradores son texto simple.
+  function badge(slide, x, y, n, color) {
+    slide.addText(String(n) + ".", { x, y, w: 0.42, h: 0.42, fontSize: 15, bold: true, color, align: "left", valign: "middle", isTextBox: true, margin: 0 });
   }
   function card(slide, x, y, w, h, fill, line) {
     slide.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius: 0.08, fill: { color: fill }, line: { color: line || fill, width: line ? 0.75 : 0 } });
@@ -104,23 +82,21 @@ async function iconData(Icon, hex) {
     { text: "Asignatura Tecnología y Derecho · Programa de Derecho · Universidad Francisco de Paula Santander", options: { fontSize: 15, breakLine: true } },
     { text: FIRMA + " · 2026", options: { fontSize: 15 } }
   ], { placeholder: "body" });
-  await iconCircle(s, M, 0.9, 1.1, "FaBalanceScale", H.accent1, H.lt1);
   s.addText("Sesión integral · 120 minutos · lectura, sentencia hito y video", { x: M, y: 6.4, w: 10, h: 0.4, fontSize: 13, color: C.accent6, isTextBox: true, margin: 0 });
   notes(s, "Bienvenida (3 min). Anunciar la estructura: 50 minutos de fundamentos, pausa, video, taller de sentencia, aplicación y cierre. Enunciar oralmente los objetivos de aprendizaje (sección 2 del programa; no se proyectan). Recordar que la guía de trabajo se entregó una semana antes.");
 
   // ---------- 2. Pregunta detonante
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Apertura" });
   s.addText("¿Un juez puede preguntarle a ChatGPT?", { placeholder: "title" });
-  await iconCircle(s, M, 1.9, 1.3, "FaRobot", H.accent2, H.dk1);
-  s.addText("En enero de 2023 un juez de Cartagena resolvió una tutela de salud de un niño con autismo y transcribió en la sentencia las preguntas que le hizo a ChatGPT y las respuestas que recibió. La Corte Constitucional revisó el caso en 2024.", { x: 2.3, y: 1.8, w: 10.3, h: 1.6, fontSize: 18, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
+  s.addText("En enero de 2023 un juez de Cartagena resolvió una tutela de salud de un niño con autismo y transcribió en la sentencia las preguntas que le hizo a ChatGPT y las respuestas que recibió. La Corte Constitucional revisó el caso en 2024.", { x: M, y: 1.7, w: W - 2 * M, h: 1.6, fontSize: 18, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
   const opts = [["A", "Sí, es una herramienta más, como un buscador."], ["B", "Sí, pero debe decirlo y verificar lo que la máquina responde."], ["C", "No, porque la decisión judicial no admite intermediarios automáticos."]];
   for (let i = 0; i < 3; i++) {
     const y = 3.8 + i * 0.95;
-    card(s, 2.3, y, 10.3, 0.78, H.dk2);
-    s.addText(opts[i][0], { x: 2.5, y: y + 0.14, w: 0.5, h: 0.5, fontSize: 20, bold: true, color: C.accent2, isTextBox: true, margin: 0, valign: "middle" });
-    s.addText(opts[i][1], { x: 3.1, y: y + 0.1, w: 9.3, h: 0.58, fontSize: 16, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
+    card(s, M, y, W - 2 * M, 0.78, H.dk2);
+    s.addText(opts[i][0], { x: M + 0.25, y: y + 0.14, w: 0.5, h: 0.5, fontSize: 20, bold: true, color: C.accent2, isTextBox: true, margin: 0, valign: "middle" });
+    s.addText(opts[i][1], { x: M + 0.85, y: y + 0.1, w: W - 2 * M - 1.1, h: 0.58, fontSize: 16, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
   }
-  s.addText("Vote a mano alzada. Volveremos a esta pregunta al final de la clase.", { x: 2.3, y: 6.55, w: 10, h: 0.35, fontSize: 13, italic: true, color: C.accent6, isTextBox: true, margin: 0 });
+  s.addText("Vote a mano alzada. Volveremos a esta pregunta al final de la clase.", { x: M, y: 6.55, w: 10, h: 0.35, fontSize: 13, italic: true, color: C.accent6, isTextBox: true, margin: 0 });
   notes(s, "Pregunta detonante (5 min). Recoger tres respuestas rápidas, una por opción si es posible. No resolver todavía: la respuesta la da la Sentencia T-323 de 2024 en el taller. Anotar en el tablero el conteo para compararlo al cierre.");
 
   // ---------- 3. Regla de tres: Informática y Derecho
@@ -139,11 +115,10 @@ async function iconData(Icon, hex) {
   s.addShape(pres.ShapeType.line, { x: 9.78, y: 2.75, w: 0, h: 0.25, line: { color: H.accent5, width: 1.5 } });
   // izquierda: informática jurídica
   card(s, M, 3.0, 5.9, 3.45, H.lt2);
-  await iconCircle(s, M + 0.25, 3.25, 0.8, "FaLaptopCode", H.accent1, H.lt1);
   s.addText([
     { text: "Informática jurídica", options: { bold: true, fontSize: 18, color: C.text2, breakLine: true } },
     { text: "La informática al servicio del derecho: el jurista usa la máquina.", options: { fontSize: 13, color: C.accent5 } }
-  ], { x: M + 1.2, y: 3.2, w: 4.5, h: 1.0, fontSize: 15, isTextBox: true, margin: 0, valign: "middle" });
+  ], { x: M + 0.25, y: 3.2, w: 5.4, h: 1.0, fontSize: 15, isTextBox: true, margin: 0, valign: "middle" });
   s.addText([
     { text: "Documental: ", options: { bold: true } }, { text: "relatorías, SUIN-Juriscol, bases de datos jurídicas.", options: { breakLine: true } },
     { text: "De gestión: ", options: { bold: true } }, { text: "expediente electrónico, reparto, despachos (Ley 2213 de 2022).", options: { breakLine: true } },
@@ -151,11 +126,10 @@ async function iconData(Icon, hex) {
   ], { x: M + 0.25, y: 4.35, w: 5.4, h: 2.0, fontSize: 13.5, color: C.text1, paraSpaceAfter: 6, isTextBox: true, margin: 0, valign: "top" });
   // derecha: derecho informático
   card(s, M + 6.23, 3.0, 5.9, 3.45, H.dk2);
-  await iconCircle(s, M + 6.48, 3.25, 0.8, "FaBalanceScale", H.accent2, H.dk1);
   s.addText([
     { text: "Derecho Informático", options: { bold: true, fontSize: 18, breakLine: true } },
     { text: "El derecho que regula la informática: la máquina y la información son objeto de la norma.", options: { fontSize: 13, color: C.accent6 } }
-  ], { x: M + 7.43, y: 3.2, w: 4.5, h: 1.0, fontSize: 15, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
+  ], { x: M + 6.48, y: 3.2, w: 5.4, h: 1.0, fontSize: 15, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
   s.addText([
     { text: "Datos: ", options: { bold: true } }, { text: "Ley 1581 de 2012.", options: { breakLine: true } },
     { text: "Actos electrónicos: ", options: { bold: true } }, { text: "Ley 527 de 1999.", options: { breakLine: true } },
@@ -180,11 +154,11 @@ async function iconData(Icon, hex) {
     { text: "Otros nombres según la época y el país: Derecho de la informática, Derecho de las nuevas tecnologías, Derecho de las TIC, Derecho digital, Ciberderecho. Cambia el nombre; permanece el objeto.", options: { color: C.accent5, fontSize: 13 } }
   ], { x: M + 0.3, y: 4.25, w: 6.7, h: 2.25, fontSize: 15, isTextBox: true, margin: 0, valign: "top" });
   // right: three circles
-  const trio = [["FaDatabase", "Información", "datos, identidad, habeas data"], ["FaFileContract", "Actos electrónicos", "contratos, firmas, prueba, trámites"], ["FaUserSecret", "Conductas lesivas", "delitos informáticos, ciberseguridad"]];
+  const trio = [["Información", "datos, identidad, habeas data"], ["Actos electrónicos", "contratos, firmas, prueba, trámites"], ["Conductas lesivas", "delitos informáticos, ciberseguridad"]];
   for (let i = 0; i < 3; i++) {
     const y = 1.55 + i * 1.75;
-    await iconCircle(s, 8.5, y, 1.0, trio[i][0], H.accent2, H.dk1);
-    s.addText([{ text: trio[i][1], options: { bold: true, color: C.text2, breakLine: true } }, { text: trio[i][2], options: { color: C.accent5, fontSize: 13 } }], { x: 9.7, y: y + 0.05, w: 3.0, h: 0.95, fontSize: 15, isTextBox: true, margin: 0, valign: "middle" });
+    s.addShape(pres.ShapeType.line, { x: 8.5, y, w: 4.2, h: 0, line: { color: H.accent6, width: 1 } });
+    s.addText([{ text: trio[i][0], options: { bold: true, color: C.text2, breakLine: true } }, { text: trio[i][1], options: { color: C.accent5, fontSize: 13 } }], { x: 8.5, y: y + 0.15, w: 4.2, h: 1.1, fontSize: 15, isTextBox: true, margin: 0, valign: "top" });
   }
   s.addText("La inteligencia artificial atraviesa los tres grupos.", { x: 8.5, y: 6.15, w: 4.2, h: 0.55, fontSize: 13, italic: true, color: C.accent1, isTextBox: true, margin: 0 });
   notes(s, "Definición (5 min). Subrayar la diferencia entre 'objeto' (lo regulado) e 'instrumento' (el medio). Preguntar: ¿un contrato firmado por correo electrónico es Derecho Informático? Sí, en cuanto a validez y prueba del mensaje de datos; el fondo sigue siendo derecho civil o comercial.");
@@ -193,17 +167,16 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Fundamentos" });
   s.addText("Tres nociones que se confunden", { placeholder: "title" });
   const cols = [
-    ["FaBalanceScale", "Derecho Informático", "La informática como OBJETO de regulación", "Ley 1581 de 2012 sobre datos personales; Ley 1273 de 2009 sobre delitos informáticos", H.accent1],
-    ["FaSearch", "Informática jurídica", "La informática como HERRAMIENTA del jurista: gestión, documentación, apoyo a la decisión", "Un sistema de gestión de expedientes; un buscador de jurisprudencia; una IA que resume un proceso", H.accent3],
-    ["FaNetworkWired", "Derecho de las telecomunicaciones", "La INFRAESTRUCTURA y los servicios de transmisión", "Ley 1341 de 2009; Comisión de Regulación de Comunicaciones; espectro y redes", H.accent5]
+    ["Derecho Informático", "La informática como OBJETO de regulación", "Ley 1581 de 2012 sobre datos personales; Ley 1273 de 2009 sobre delitos informáticos", H.accent1],
+    ["Informática jurídica", "La informática como HERRAMIENTA del jurista: gestión, documentación, apoyo a la decisión", "Un sistema de gestión de expedientes; un buscador de jurisprudencia; una IA que resume un proceso", H.accent3],
+    ["Derecho de las telecomunicaciones", "La INFRAESTRUCTURA y los servicios de transmisión", "Ley 1341 de 2009; Comisión de Regulación de Comunicaciones; espectro y redes", H.accent5]
   ];
   for (let i = 0; i < 3; i++) {
     const x = M + i * 4.1;
     card(s, x, 1.6, 3.85, 4.9, H.lt2);
-    await iconCircle(s, x + 0.3, 1.9, 0.9, cols[i][0], cols[i][4], H.lt1);
-    s.addText(cols[i][1], { x: x + 0.3, y: 2.95, w: 3.3, h: 0.8, fontSize: 18, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "top" });
-    s.addText(cols[i][2], { x: x + 0.3, y: 3.8, w: 3.3, h: 0.9, fontSize: 14, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
-    s.addText([{ text: "Ejemplo: ", options: { bold: true } }, { text: cols[i][3] }], { x: x + 0.3, y: 4.75, w: 3.3, h: 1.6, fontSize: 13, color: C.accent5, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(cols[i][0], { x: x + 0.3, y: 1.85, w: 3.3, h: 0.9, fontSize: 18, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(cols[i][1], { x: x + 0.3, y: 2.85, w: 3.3, h: 1.1, fontSize: 14, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
+    s.addText([{ text: "Ejemplo: ", options: { bold: true } }, { text: cols[i][2] }], { x: x + 0.3, y: 4.05, w: 3.3, h: 2.3, fontSize: 13, color: C.accent5, isTextBox: true, margin: 0, valign: "top" });
   }
   notes(s, "Distinciones (4 min). La IA generativa cae en las tres casillas según el ángulo: como herramienta del juez es informática jurídica; como objeto regulado por la T-323 de 2024 es Derecho Informático.");
 
@@ -211,18 +184,17 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Fundamentos" });
   s.addText("¿Es una rama autónoma? Cuatro criterios", { placeholder: "title" });
   const crit = [
-    ["FaBook", "Campo normativo", "Legislación propia", "Leyes 527 de 1999, 1266 de 2008, 1273 de 2009, 1581 de 2012, 2213 de 2022"],
-    ["FaChalkboardTeacher", "Campo docente", "Cátedra y posgrados propios", "Departamento de Derecho Informático del Externado (30 años en 2026); GECTI de Uniandes (creado el 5 de octubre de 2001); esta asignatura"],
-    ["FaLightbulb", "Campo científico", "Doctrina e investigación", "Revistas y observatorios; doctrina colombiana e iberoamericana; relatorías sobre IA y justicia 2024-2026"],
-    ["FaUniversity", "Campo institucional", "Autoridades propias", "Delegatura de Protección de Datos de la SIC; CRC; MinTIC; Consejo Superior de la Judicatura (justicia digital)"]
+    ["Campo normativo", "Legislación propia", "Leyes 527 de 1999, 1266 de 2008, 1273 de 2009, 1581 de 2012, 2213 de 2022"],
+    ["Campo docente", "Cátedra y posgrados propios", "Departamento de Derecho Informático del Externado (30 años en 2026); GECTI de Uniandes (creado el 5 de octubre de 2001); esta asignatura"],
+    ["Campo científico", "Doctrina e investigación", "Revistas y observatorios; doctrina colombiana e iberoamericana; relatorías sobre IA y justicia 2024-2026"],
+    ["Campo institucional", "Autoridades propias", "Delegatura de Protección de Datos de la SIC; CRC; MinTIC; Consejo Superior de la Judicatura (justicia digital)"]
   ];
   for (let i = 0; i < 4; i++) {
     const col = i % 2, row = Math.floor(i / 2);
     const x = M + col * 6.15, y = 1.55 + row * 2.45;
     card(s, x, y, 5.95, 2.25, H.lt2);
-    await iconCircle(s, x + 0.25, y + 0.25, 0.75, crit[i][0], H.accent1, H.lt1);
-    s.addText([{ text: crit[i][1], options: { bold: true, color: C.text2, breakLine: true } }, { text: crit[i][2], options: { color: C.accent5, fontSize: 13 } }], { x: x + 1.15, y: y + 0.2, w: 4.6, h: 0.85, fontSize: 17, isTextBox: true, margin: 0, valign: "top" });
-    s.addText(crit[i][3], { x: x + 0.25, y: y + 1.15, w: 5.5, h: 1.0, fontSize: 13, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
+    s.addText([{ text: crit[i][0], options: { bold: true, color: C.text2, breakLine: true } }, { text: crit[i][1], options: { color: C.accent5, fontSize: 13 } }], { x: x + 0.25, y: y + 0.2, w: 5.5, h: 0.85, fontSize: 17, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(crit[i][2], { x: x + 0.25, y: y + 1.15, w: 5.5, h: 1.0, fontSize: 13, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
   }
   s.addText("Posición de la clase: disciplina con objeto, principios e instituciones propios, pero transversal: atraviesa el derecho civil, penal, constitucional, administrativo, laboral y procesal.", { x: M, y: 6.5, w: W - 2 * M, h: 0.45, fontSize: 13, italic: true, color: C.accent1, isTextBox: true, margin: 0 });
   notes(s, "Autonomía (5 min). Pedir que un estudiante argumente a favor y otro en contra. Cerrar con la posición intermedia.");
@@ -260,7 +232,6 @@ async function iconData(Icon, hex) {
   s.addShape(pres.ShapeType.line, { x: M + 0.5, y: 2.35, w: W - 2 * M - 1.0, h: 0, line: { color: H.accent6, width: 2 } });
   for (let i = 0; i < 4; i++) {
     const x = M + i * 3.05;
-    s.addShape(pres.ShapeType.ellipse, { x: x + 1.2, y: 2.15, w: 0.4, h: 0.4, fill: { color: etapas[i][3] }, line: { color: H.lt1, width: 2 } });
     s.addText(etapas[i][0], { x, y: 1.55, w: 2.85, h: 0.5, fontSize: 18, bold: true, color: C.text2, align: "center", isTextBox: true, margin: 0 });
     card(s, x, 2.8, 2.85, 3.9, H.lt2);
     s.addText(etapas[i][1], { x: x + 0.2, y: 2.95, w: 2.45, h: 1.0, fontSize: 15, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "top" });
@@ -292,20 +263,19 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Objeto: tres grupos de relaciones", { placeholder: "title" });
   const obj = [
-    ["FaDatabase", "La información sobre las personas", "Datos personales, habeas data, identidad digital, imagen y voz.", "Art. 15 C.P.; Leyes 1266 de 2008 y 1581 de 2012"],
-    ["FaFileContract", "Los actos y hechos por medios electrónicos", "Contratos, firmas, documentos, prueba, trámites y notificaciones.", "Ley 527 de 1999; CGP art. 247; Ley 2213 de 2022"],
-    ["FaShieldAlt", "Las conductas lesivas contra sistemas e información", "Acceso abusivo, interceptación, daño, hurto por medios informáticos, suplantación.", "Ley 1273 de 2009; Convenio de Budapest"]
+    ["La información sobre las personas", "Datos personales, habeas data, identidad digital, imagen y voz.", "Art. 15 C.P.; Leyes 1266 de 2008 y 1581 de 2012"],
+    ["Los actos y hechos por medios electrónicos", "Contratos, firmas, documentos, prueba, trámites y notificaciones.", "Ley 527 de 1999; CGP art. 247; Ley 2213 de 2022"],
+    ["Las conductas lesivas contra sistemas e información", "Acceso abusivo, interceptación, daño, hurto por medios informáticos, suplantación.", "Ley 1273 de 2009; Convenio de Budapest"]
   ];
   for (let i = 0; i < 3; i++) {
     const x = M + i * 4.1;
-    card(s, x, 1.65, 3.85, 4.1, H.dk2);
-    await iconCircle(s, x + 1.4, 1.9, 1.05, obj[i][0], H.accent2, H.dk1);
-    s.addText(obj[i][1], { x: x + 0.25, y: 3.1, w: 3.35, h: 0.8, fontSize: 16, bold: true, color: C.background1, align: "center", isTextBox: true, margin: 0, valign: "top" });
-    s.addText(obj[i][2], { x: x + 0.25, y: 3.95, w: 3.35, h: 1.0, fontSize: 13.5, color: C.accent6, align: "center", isTextBox: true, margin: 0, valign: "top" });
-    s.addText(obj[i][3], { x: x + 0.25, y: 5.0, w: 3.35, h: 0.65, fontSize: 12.5, color: C.accent2, align: "center", isTextBox: true, margin: 0, valign: "top" });
+    card(s, x, 1.65, 3.85, 3.5, H.dk2);
+    s.addText(obj[i][0], { x: x + 0.25, y: 1.85, w: 3.35, h: 0.9, fontSize: 16, bold: true, color: C.background1, align: "center", isTextBox: true, margin: 0, valign: "top" });
+    s.addText(obj[i][1], { x: x + 0.25, y: 2.85, w: 3.35, h: 1.2, fontSize: 13.5, color: C.accent6, align: "center", isTextBox: true, margin: 0, valign: "top" });
+    s.addText(obj[i][2], { x: x + 0.25, y: 4.15, w: 3.35, h: 0.85, fontSize: 12.5, color: C.accent2, align: "center", isTextBox: true, margin: 0, valign: "top" });
   }
-  card(s, M, 6.0, W - 2 * M, 0.75, H.accent1);
-  s.addText("La inteligencia artificial atraviesa los tres: trata datos, produce documentos y decisiones, y abre nuevas formas de daño.", { x: M + 0.3, y: 6.0, w: W - 2 * M - 0.6, h: 0.75, fontSize: 15, bold: true, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
+  card(s, M, 5.5, W - 2 * M, 0.75, H.accent1);
+  s.addText("La inteligencia artificial atraviesa los tres: trata datos, produce documentos y decisiones, y abre nuevas formas de daño.", { x: M + 0.3, y: 5.5, w: W - 2 * M - 0.6, h: 0.75, fontSize: 15, bold: true, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
   notes(s, "Objeto (3 min). Conectar con la diapositiva 4: aquí se desarrolla cada grupo con su norma de cabecera.");
 
   // ---------- 11. Fuentes (pirámide)
@@ -333,18 +303,17 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Evolución, objeto y fuentes" });
   s.addText("Lectura asignada: qué agrega el autor", { placeholder: "title" });
   card(s, M, 1.55, 5.4, 5.1, H.lt2);
-  await iconCircle(s, M + 0.25, 1.8, 0.8, "FaBook", H.accent1, H.lt1);
   s.addText([
     { text: CT.lectura.titulo, options: { bold: true, color: C.text2, breakLine: true } },
     { text: CT.lectura.autor, options: { color: C.text1, breakLine: true } },
     { text: CT.lectura.fuente, options: { color: C.accent5, fontSize: 12.5, breakLine: true } },
     { text: CT.lectura.url, options: { color: C.accent1, fontSize: 10.5, hyperlink: { url: CT.lectura.url }, breakLine: true } },
     { text: CT.lectura.urlComplemento, options: { color: C.accent1, fontSize: 10.5, hyperlink: { url: CT.lectura.urlComplemento } } }
-  ], { x: M + 0.25, y: 2.75, w: 4.9, h: 3.8, fontSize: 12.5, isTextBox: true, margin: 0, valign: "top" });
+  ], { x: M + 0.25, y: 1.8, w: 4.9, h: 4.7, fontSize: 12.5, isTextBox: true, margin: 0, valign: "top" });
   s.addText("Tres ideas para contrastar con la clase", { x: 6.4, y: 1.55, w: 6.3, h: 0.5, fontSize: 18, bold: true, color: C.text2, isTextBox: true, margin: 0 });
   for (let i = 0; i < 3; i++) {
     const y = 2.2 + i * 1.15;
-    badge(s, 6.4, y + 0.05, i + 1, H.accent2);
+    badge(s, 6.4, y - 0.05, i + 1, H.dk2);
     s.addText(CT.lectura.ideas[i], { x: 7.0, y, w: 5.7, h: 1.05, fontSize: 14, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
   }
   card(s, 6.4, 5.7, 6.3, 0.95, H.dk2);
@@ -356,19 +325,19 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Principios y campos" });
   s.addText("Siete principios estructurales", { placeholder: "title" });
   const prin = [
-    ["FaFileContract", "Equivalencia funcional", "El mensaje de datos cumple la función del escrito, la firma y el original (Ley 527 de 1999, arts. 6 a 8)."],
-    ["FaMicrochip", "Neutralidad tecnológica", "La norma no privilegia una tecnología concreta para no quedar obsoleta."],
-    ["FaCheckCircle", "No discriminación del mensaje de datos", "No se le niega efecto jurídico ni fuerza probatoria por ser electrónico (Ley 527, arts. 5 y 10)."],
-    ["FaFingerprint", "Autodeterminación informativa", "La persona decide sobre sus datos; principios del art. 4 de la Ley 1581 de 2012."],
-    ["FaClipboardCheck", "Responsabilidad demostrada", "Quien trata datos prueba que cumple (Decreto 1377 de 2013, arts. 26 y 27; Decreto 1074 de 2015)."],
-    ["FaUsers", "Supervisión humana y no sustitución", "La herramienta apoya, no decide; el funcionario responde (T-323 de 2024)."],
-    ["FaEye", "Transparencia y explicabilidad", "Se informa que se usó la herramienta, cómo y para qué (T-323 de 2024; Circular 002 de 2024 SIC)."]
+    ["Equivalencia funcional", "El mensaje de datos cumple la función del escrito, la firma y el original (Ley 527 de 1999, arts. 6 a 8)."],
+    ["Neutralidad tecnológica", "La norma no privilegia una tecnología concreta para no quedar obsoleta."],
+    ["No discriminación del mensaje de datos", "No se le niega efecto jurídico ni fuerza probatoria por ser electrónico (Ley 527, arts. 5 y 10)."],
+    ["Autodeterminación informativa", "La persona decide sobre sus datos; principios del art. 4 de la Ley 1581 de 2012."],
+    ["Responsabilidad demostrada", "Quien trata datos prueba que cumple (Decreto 1377 de 2013, arts. 26 y 27; Decreto 1074 de 2015)."],
+    ["Supervisión humana y no sustitución", "La herramienta apoya, no decide; el funcionario responde (T-323 de 2024)."],
+    ["Transparencia y explicabilidad", "Se informa que se usó la herramienta, cómo y para qué (T-323 de 2024; Circular 002 de 2024 SIC)."]
   ];
   for (let i = 0; i < 7; i++) {
     const col = i < 4 ? 0 : 1, row = i < 4 ? i : i - 4;
     const x = M + col * 6.2, y = 1.55 + row * 1.3;
-    await iconCircle(s, x, y, 0.7, prin[i][0], H.accent1, H.lt1);
-    s.addText([{ text: prin[i][1], options: { bold: true, color: C.text2, breakLine: true } }, { text: prin[i][2], options: { color: C.text1, fontSize: 12.5 } }], { x: x + 0.9, y: y - 0.05, w: 5.1, h: 1.2, fontSize: 14.5, isTextBox: true, margin: 0, valign: "top" });
+    badge(s, x, y - 0.08, i + 1, H.dk2);
+    s.addText([{ text: prin[i][0], options: { bold: true, color: C.text2, breakLine: true } }, { text: prin[i][1], options: { color: C.text1, fontSize: 12.5 } }], { x: x + 0.55, y: y - 0.05, w: 5.45, h: 1.2, fontSize: 14.5, isTextBox: true, margin: 0, valign: "top" });
   }
   notes(s, "Principios (7 min). Los tres primeros vienen de la Ley 527; el cuarto y el quinto del régimen de datos; los dos últimos los formuló la Corte en 2024 para la IA y ya aparecen en la regulación de la SIC.");
 
@@ -376,20 +345,19 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Principios y campos" });
   s.addText("Problemas contemporáneos, 2024-2026", { placeholder: "title" });
   const prob = [
-    ["FaRobot", "IA generativa en la justicia y en la práctica", "Citas inexistentes, confidencialidad del expediente, trazabilidad de la decisión."],
-    ["FaFingerprint", "Biometría y datos sensibles", "Reconocimiento facial y huella: prueba de necesidad y proporcionalidad."],
-    ["FaMask", "Deepfakes y clonación de voz", "Identidad, honra, prueba y fraude."],
-    ["FaUserSecret", "Fraude digital y ciberdelincuencia", "Phishing, suplantación y acceso abusivo frente a tipos penales de 2009."],
-    ["FaSitemap", "Decisiones automatizadas", "Crédito, salud, empleo y Estado: perfilamiento, sesgos y derecho a una explicación."],
-    ["FaGlobe", "Jurisdicción, territorio y brecha digital", "Proveedores en el exterior, transferencia internacional de datos, acceso efectivo a la justicia digital."]
+    ["IA generativa en la justicia y en la práctica", "Citas inexistentes, confidencialidad del expediente, trazabilidad de la decisión."],
+    ["Biometría y datos sensibles", "Reconocimiento facial y huella: prueba de necesidad y proporcionalidad."],
+    ["Deepfakes y clonación de voz", "Identidad, honra, prueba y fraude."],
+    ["Fraude digital y ciberdelincuencia", "Phishing, suplantación y acceso abusivo frente a tipos penales de 2009."],
+    ["Decisiones automatizadas", "Crédito, salud, empleo y Estado: perfilamiento, sesgos y derecho a una explicación."],
+    ["Jurisdicción, territorio y brecha digital", "Proveedores en el exterior, transferencia internacional de datos, acceso efectivo a la justicia digital."]
   ];
   for (let i = 0; i < 6; i++) {
     const col = i % 3, row = Math.floor(i / 3);
     const x = M + col * 4.1, y = 1.6 + row * 2.6;
     card(s, x, y, 3.85, 2.4, H.dk2);
-    await iconCircle(s, x + 0.25, y + 0.25, 0.7, prob[i][0], H.accent2, H.dk1);
-    s.addText(prob[i][1], { x: x + 1.1, y: y + 0.2, w: 2.6, h: 0.85, fontSize: 14.5, bold: true, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
-    s.addText(prob[i][2], { x: x + 0.25, y: y + 1.15, w: 3.35, h: 1.15, fontSize: 13, color: C.accent6, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(prob[i][0], { x: x + 0.25, y: y + 0.2, w: 3.35, h: 0.85, fontSize: 14.5, bold: true, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(prob[i][1], { x: x + 0.25, y: y + 1.15, w: 3.35, h: 1.15, fontSize: 13, color: C.accent6, isTextBox: true, margin: 0, valign: "top" });
   }
   notes(s, "Problemas (4 min). Preguntar cuál de los seis han visto en la práctica o en noticias de este año. El video y el taller profundizan el primero.");
 
@@ -415,17 +383,16 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Video y sentencia hito" });
   s.addText("Video de apoyo", { placeholder: "title" });
   card(s, M, 1.55, 6.0, 4.6, H.dk2);
-  await iconCircle(s, M + 0.3, 1.85, 0.9, "FaVideo", H.accent2, H.dk1);
   s.addText([
     { text: CT.video.titulo, options: { bold: true, color: C.background1, fontSize: 17, breakLine: true } },
     { text: CT.video.experto, options: { color: C.accent6, breakLine: true } },
     { text: CT.video.canal + " · " + CT.video.fecha + " · " + CT.video.duracion, options: { color: C.accent6, fontSize: 12.5, breakLine: true } },
     { text: CT.video.url, options: { color: C.accent2, fontSize: 11.5, hyperlink: { url: CT.video.url } } }
-  ], { x: M + 0.3, y: 2.95, w: 5.4, h: 3.1, fontSize: 14, isTextBox: true, margin: 0, valign: "top" });
+  ], { x: M + 0.3, y: 1.8, w: 5.4, h: 4.2, fontSize: 14, isTextBox: true, margin: 0, valign: "top" });
   s.addText("Preguntas para la discusión", { x: 7.0, y: 1.55, w: 5.7, h: 0.5, fontSize: 18, bold: true, color: C.background1, isTextBox: true, margin: 0 });
   for (let i = 0; i < 3; i++) {
     const y = 2.25 + i * 1.3;
-    badge(s, 7.0, y + 0.05, i + 1, H.accent2);
+    badge(s, 7.0, y - 0.05, i + 1, H.accent2);
     s.addText(CT.video.preguntas[i], { x: 7.6, y, w: 5.1, h: 1.2, fontSize: 14, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
   }
   s.addText("Descargue el video antes de la clase; no navegue en vivo. Plan B en la guía de trabajo.", { x: M, y: 6.35, w: W - 2 * M, h: 0.4, fontSize: 12.5, italic: true, color: C.accent6, isTextBox: true, margin: 0 });
@@ -435,7 +402,6 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Video y sentencia hito" });
   s.addText("Sentencia hito: " + CT.sentencia.id, { placeholder: "title" });
   card(s, M, 1.55, 4.3, 5.1, H.dk2);
-  await iconCircle(s, M + 0.3, 1.85, 0.9, "FaGavel", H.accent2, H.dk1);
   s.addText([
     { text: CT.sentencia.corte, options: { bold: true, breakLine: true } },
     { text: CT.sentencia.mp, options: { breakLine: true } },
@@ -443,11 +409,11 @@ async function iconData(Icon, hex) {
     { text: CT.sentencia.expediente, options: { breakLine: true } },
     { text: " ", options: { breakLine: true, fontSize: 8 } },
     { text: "Tema: uso de inteligencia artificial generativa (ChatGPT) por un juez al resolver una tutela.", options: { color: C.accent6, fontSize: 13 } }
-  ], { x: M + 0.3, y: 2.95, w: 3.7, h: 3.6, fontSize: 14.5, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
+  ], { x: M + 0.3, y: 1.8, w: 3.7, h: 4.7, fontSize: 14.5, color: C.background1, isTextBox: true, margin: 0, valign: "top" });
   s.addText("Hechos relevantes", { x: 5.3, y: 1.55, w: 7.4, h: 0.5, fontSize: 18, bold: true, color: C.text2, isTextBox: true, margin: 0 });
   for (let i = 0; i < CT.sentencia.hechos.length; i++) {
     const y = 2.2 + i * 1.1;
-    badge(s, 5.3, y + 0.05, i + 1, H.accent1);
+    badge(s, 5.3, y - 0.05, i + 1, H.accent1);
     s.addText(CT.sentencia.hechos[i], { x: 5.9, y, w: 6.8, h: 1.05, fontSize: 13.5, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
   }
   notes(s, "Sentencia, parte 1 (3 min). Verificar la providencia directamente en la relatoría de la Corte Constitucional antes de clase; la guía trae el enlace.");
@@ -459,7 +425,7 @@ async function iconData(Icon, hex) {
   for (let i = 0; i < CT.sentencia.problemas.length; i++) {
     const y = 2.1 + i * 1.75;
     card(s, M, y, 6.0, 1.55, H.lt2);
-    badge(s, M + 0.2, y + 0.2, i + 1, H.accent4);
+    badge(s, M + 0.2, y + 0.1, i + 1, H.accent4);
     s.addText(CT.sentencia.problemas[i], { x: M + 0.8, y: y + 0.15, w: 5.0, h: 1.3, fontSize: 13.5, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
   }
   s.addText("Decisión", { x: 7.0, y: 1.5, w: 5.7, h: 0.5, fontSize: 18, bold: true, color: C.text2, isTextBox: true, margin: 0 });
@@ -506,17 +472,16 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Aplicación y cierre" });
   s.addText("Aplicación: tres minicasos", { placeholder: "title" });
   const casos = [
-    ["FaGavel", "El auto redactado por la máquina", "Un juez municipal pide a una IA generativa que redacte el auto que decreta pruebas y lo firma sin cambios ni mención de la herramienta.", "¿Qué criterios de la T-323 se afectan? ¿Qué debió hacer?"],
-    ["FaPen", "La tutela con la cita inexistente", "Un estudiante de consultorio jurídico redacta una tutela con una IA que cita una sentencia que no existe; el juez lo advierte.", "Consecuencias éticas, disciplinarias y procesales. ¿Qué protocolo de verificación aplicaría?"],
-    ["FaSitemap", "La EPS que decide sola", "Una EPS usa un sistema automatizado que niega autorizaciones de servicios sin revisión humana.", "¿Qué derechos están en juego? ¿Qué exigiría usted como apoderado?"]
+    ["El auto redactado por la máquina", "Un juez municipal pide a una IA generativa que redacte el auto que decreta pruebas y lo firma sin cambios ni mención de la herramienta.", "¿Qué criterios de la T-323 se afectan? ¿Qué debió hacer?"],
+    ["La tutela con la cita inexistente", "Un estudiante de consultorio jurídico redacta una tutela con una IA que cita una sentencia que no existe; el juez lo advierte.", "Consecuencias éticas, disciplinarias y procesales. ¿Qué protocolo de verificación aplicaría?"],
+    ["La EPS que decide sola", "Una EPS usa un sistema automatizado que niega autorizaciones de servicios sin revisión humana.", "¿Qué derechos están en juego? ¿Qué exigiría usted como apoderado?"]
   ];
   for (let i = 0; i < 3; i++) {
     const x = M + i * 4.1;
     card(s, x, 1.55, 3.85, 5.1, H.lt2);
-    await iconCircle(s, x + 0.25, 1.8, 0.8, casos[i][0], H.accent2, H.dk1);
-    s.addText(casos[i][1], { x: x + 1.2, y: 1.8, w: 2.5, h: 0.8, fontSize: 15, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "middle" });
-    s.addText(casos[i][2], { x: x + 0.25, y: 2.85, w: 3.35, h: 1.9, fontSize: 13.5, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
-    s.addText(casos[i][3], { x: x + 0.25, y: 4.85, w: 3.35, h: 1.6, fontSize: 13, bold: true, color: C.accent1, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(casos[i][0], { x: x + 0.25, y: 1.75, w: 3.35, h: 0.9, fontSize: 16, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(casos[i][1], { x: x + 0.25, y: 2.85, w: 3.35, h: 1.9, fontSize: 13.5, color: C.text1, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(casos[i][2], { x: x + 0.25, y: 4.85, w: 3.35, h: 1.6, fontSize: 13, bold: true, color: C.accent1, isTextBox: true, margin: 0, valign: "top" });
   }
   notes(s, "Aplicación (10 min). Cada grupo resuelve un caso en 6 minutos y lo expone en 1. Claves en la guía del docente.");
 
@@ -532,8 +497,8 @@ async function iconData(Icon, hex) {
   ];
   for (let i = 0; i < 5; i++) {
     const y = 1.6 + i * 1.0;
-    badge(s, M, y + 0.15, i + 1, H.accent2);
-    s.addText(conc[i], { x: M + 0.7, y, w: W - 2 * M - 0.7, h: 0.9, fontSize: 16, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
+    badge(s, M, y + 0.24, i + 1, H.accent2);
+    s.addText(conc[i], { x: M + 0.55, y, w: W - 2 * M - 0.7, h: 0.9, fontSize: 16, color: C.background1, isTextBox: true, margin: 0, valign: "middle" });
   }
   notes(s, "Conclusiones (2 min). Volver a la pregunta de la diapositiva 2: ¿cambió su respuesta?");
 
@@ -541,8 +506,7 @@ async function iconData(Icon, hex) {
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Aplicación y cierre" });
   s.addText("Evaluación y cierre", { placeholder: "title" });
   card(s, M, 1.55, 6.0, 5.1, H.lt2);
-  await iconCircle(s, M + 0.3, 1.85, 0.8, "FaClipboardCheck", H.accent1, H.lt1);
-  s.addText("Quiz de cinco preguntas (5 min)", { x: M + 1.3, y: 1.9, w: 4.5, h: 0.7, fontSize: 17, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "middle" });
+  s.addText("Quiz de cinco preguntas (5 min)", { x: M + 0.3, y: 1.8, w: 5.4, h: 0.7, fontSize: 17, bold: true, color: C.text2, isTextBox: true, margin: 0, valign: "middle" });
   s.addText(bul([
     "Diferencia entre Derecho Informático e informática jurídica.",
     "Qué principio permite que un correo electrónico valga como escrito.",
