@@ -4,7 +4,7 @@ Universidad Francisco de Paula Santander · Programa de Derecho · Docente: Carl
 
 | Archivo | Qué es | Cuándo usarlo |
 |---|---|---|
-| `DIAPOSITIVAS_Derecho_Informatico.pptx` | 33 diapositivas con notas del orador en cada una (guion, tiempos, claves del ejercicio y de los casos). Incluye enlaces clicables a la lectura, el video y la sentencia | Durante la sesión |
+| `DIAPOSITIVAS_Derecho_Informatico.pptx` | 29 diapositivas con notas del orador en cada una (guion, tiempos, claves del ejercicio y de los casos). Incluye enlaces clicables a la lectura, el video y la sentencia | Durante la sesión |
 | `GUIA_DE_TRABAJO_ESTUDIANTES_Derecho_Informatico.docx` | Documento Word para los estudiantes: instrucciones, síntesis conceptual, lectura asignada con guía de lectura, sentencia hito con matriz de análisis, video con preguntas, preguntas orientadoras, tres casos de aplicación, quiz, ticket de salida y criterios de evaluación | Se entrega una semana antes |
 | `PROGRAMA_DOCENTE.md` / `.docx` | Programa del docente: tesis, objetivos, lectura, análisis completo de la sentencia hito, video, desarrollo teórico, agenda minuto a minuto, actividades con claves de respuesta, evaluación, banco de preguntas | Para preparar la sesión |
 | `FUENTES.md` / `.docx` | Catálogo de fuentes con URL y estado de verificación de cada una | Para abrir y descargar los materiales antes de la clase |
