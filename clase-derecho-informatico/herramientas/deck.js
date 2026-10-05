@@ -10,16 +10,20 @@ const CT = require("./content.js");
 const OUT = process.argv[2] || "DIAPOSITIVAS.pptx";
 
 const THEME = {
-  name: "Derecho Informatico UFPS",
+  name: "Derecho Informatico UFPS BN",
   headFontFace: "Cambria",
   bodyFontFace: "Calibri",
   colors: {
-    dk1: "1B1F2E", lt1: "FFFFFF", dk2: "1F3A5F", lt2: "EEF3F8",
-    accent1: "0E7C86", accent2: "D9931D", accent3: "5B7DB1", accent4: "B5413F", accent5: "4A6670", accent6: "9BA7B4",
-    hlink: "0E7C86", folHlink: "5B7DB1"
+    // Paleta en blanco y negro (escala de grises), regla del docente para todas las diapositivas.
+    dk1: "000000", lt1: "FFFFFF", dk2: "333333", lt2: "EDEDED",
+    accent1: "404040", accent2: "A6A6A6", accent3: "737373", accent4: "4D4D4D", accent5: "595959", accent6: "BFBFBF",
+    hlink: "404040", folHlink: "666666"
   }
 };
 const H = THEME.colors;
+// Luminancia relativa de un color hex y color de texto que contrasta con él (negro sobre claro, blanco sobre oscuro).
+const lum = hex => { const n = parseInt(hex, 16); return (0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255; };
+const on = hex => (lum(hex) > 0.5 ? H.dk1 : H.lt1);
 
 async function iconData(Icon, hex) {
   const svg = renderToStaticMarkup(React.createElement(Icon, { size: 256, color: "#" + hex }));
@@ -31,14 +35,15 @@ async function iconData(Icon, hex) {
   const pres = new pptxgen();
   pres.layout = "LAYOUT_WIDE"; // 13.33 x 7.5
   pres.theme = { headFontFace: THEME.headFontFace, bodyFontFace: THEME.bodyFontFace };
-  pres.author = "Carlos Arturo Ramos Mejía";
+  pres.author = "Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS";
   pres.title = "Derecho Informático: clase integral (Tecnología y Derecho, UFPS)";
   const C = pres.SchemeColor;
   const W = 13.33, M = 0.6;
 
-  const FOOT = "Tecnología y Derecho · Derecho Informático · UFPS";
+  const FIRMA = "Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS";
+  const FOOT = FIRMA + " · Tecnología y Derecho · Derecho Informático";
   const footerObjs = (dark) => ([
-    { text: { text: FOOT, options: { x: M, y: 7.0, w: 8, h: 0.3, fontSize: 10, color: dark ? C.accent6 : C.accent5, isTextBox: true, margin: 0 } } }
+    { text: { text: FOOT, options: { x: M, y: 7.0, w: 10.8, h: 0.3, fontSize: 10, color: dark ? C.accent6 : C.accent5, isTextBox: true, margin: 0 } } }
   ]);
 
   pres.defineSlideMaster({
@@ -64,7 +69,8 @@ async function iconData(Icon, hex) {
     background: { color: H.dk1 },
     objects: [
       { placeholder: { options: { name: "title", type: "title", x: M, y: 2.3, w: W - 2 * M, h: 1.5, fontSize: 46, bold: true, color: C.background1, margin: 0, valign: "bottom" }, text: "" } },
-      { placeholder: { options: { name: "body", type: "body", x: M, y: 3.9, w: W - 2 * M, h: 1.6, fontSize: 20, color: C.accent6, margin: 0, valign: "top" }, text: "" } }
+      { placeholder: { options: { name: "body", type: "body", x: M, y: 3.9, w: W - 2 * M, h: 1.6, fontSize: 20, color: C.accent6, margin: 0, valign: "top" }, text: "" } },
+      ...footerObjs(true)
     ]
   });
 
@@ -81,7 +87,7 @@ async function iconData(Icon, hex) {
   }
   function badge(slide, x, y, n, fill) {
     slide.addShape(pres.ShapeType.ellipse, { x, y, w: 0.42, h: 0.42, fill: { color: fill }, line: { color: fill, width: 0 } });
-    slide.addText(String(n), { x, y, w: 0.42, h: 0.42, fontSize: 14, bold: true, color: C.background1, align: "center", valign: "middle", isTextBox: true, margin: 0 });
+    slide.addText(String(n), { x, y, w: 0.42, h: 0.42, fontSize: 14, bold: true, color: on(fill), align: "center", valign: "middle", isTextBox: true, margin: 0 });
   }
   function card(slide, x, y, w, h, fill, line) {
     slide.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius: 0.08, fill: { color: fill }, line: { color: line || fill, width: line ? 0.75 : 0 } });
@@ -96,7 +102,7 @@ async function iconData(Icon, hex) {
   s.addText([
     { text: "Fundamentos, evolución, objeto, fuentes y campos", options: { breakLine: true } },
     { text: "Asignatura Tecnología y Derecho · Programa de Derecho · Universidad Francisco de Paula Santander", options: { fontSize: 15, breakLine: true } },
-    { text: "Docente: Carlos Arturo Ramos Mejía · 2026", options: { fontSize: 15 } }
+    { text: FIRMA + " · 2026", options: { fontSize: 15 } }
   ], { placeholder: "body" });
   await iconCircle(s, M, 0.9, 1.1, "FaBalanceScale", H.accent1, H.lt1);
   s.addText("Sesión integral · 120 minutos · lectura, sentencia hito y video", { x: M, y: 6.4, w: 10, h: 0.4, fontSize: 13, color: C.accent6, isTextBox: true, margin: 0 });
@@ -297,7 +303,7 @@ async function iconData(Icon, hex) {
     const w = topW + (baseW - topW) * (i / (niveles.length - 1));
     const x = M + (W - 2 * M - w) / 2, y = startY + i * (hgt + 0.06);
     s.addShape(pres.ShapeType.rect, { x, y, w, h: hgt, fill: { color: niveles[i][2] }, line: { color: H.lt1, width: 1 } });
-    s.addText([{ text: niveles[i][0] + "  ", options: { bold: true } }, { text: niveles[i][1], options: { fontSize: 11.5 } }], { x: x + 0.15, y, w: w - 0.3, h: hgt, fontSize: 14, color: C.background1, align: "center", valign: "middle", isTextBox: true, margin: 0 });
+    s.addText([{ text: niveles[i][0] + "  ", options: { bold: true } }, { text: niveles[i][1], options: { fontSize: 11.5 } }], { x: x + 0.15, y, w: w - 0.3, h: hgt, fontSize: 14, color: on(niveles[i][2]), align: "center", valign: "middle", isTextBox: true, margin: 0 });
   }
   notes(s, "Fuentes (5 min). Insistir en dos ideas: las leyes de datos son estatutarias porque regulan un derecho fundamental (por eso la C-748 de 2011 fue control previo); y el último nivel, el código, no es fuente formal pero condiciona de hecho lo que se puede hacer.");
 
