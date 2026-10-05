@@ -7,6 +7,7 @@ Carpeta lista para dictar la sesión de 120 minutos. Fecha de corte de las fuent
 | `DIAPOSITIVAS.pptx` | 24 diapositivas en blanco y negro, firmadas en cada lámina como «Mg. Carlos Arturo Ramos Mejía - Prof. Cátedra UFPS», con notas del orador (tiempos, claves del ejercicio relámpago, guion por bloque) | En sala |
 | `GUIA_DE_TRABAJO_ESTUDIANTES.docx` (y `.md`) | Guía del estudiante: instrucciones, síntesis conceptual, lectura asignada con guía de lectura, ficha de la sentencia, matriz de análisis, preguntas orientadoras, tres minicasos, quiz, ticket de salida y rúbrica | Se envía una semana antes |
 | `PROGRAMA_CLASE.md` / `.docx` | Programa del docente: tesis, objetivos, desarrollo teórico que abre con la regla de tres (Informática y Derecho, informática jurídica, Derecho Informático), lectura, sentencia hito (hechos, problema, decisión, ratio, regla, precedente, utilidad), video, agenda minuto a minuto, actividades, claves de los casos, evaluación, referencias y nota de verificación | Para preparar la sesión |
+| `SOLUCIONARIO.md` / `.docx` | Solucionario del docente: respuesta completa y justificada de cada actividad (pregunta detonante, ejercicio relámpago, mapa de campos, ficha de lectura, video, matriz de la sentencia, contraste, preguntas orientadoras, minicasos, quiz y ticket). Reservado al docente; también está como sección 12 del programa | Para calificar y conducir las actividades |
 | `FUENTES.md` / `.docx` | Catálogo de fuentes con estado de verificación de cada una | Para abrir y descargar los materiales antes de la clase |
 | `herramientas/` | Scripts que generan las diapositivas y los documentos (`node deck.js`, `node guia.js`, `node md2docx.js`); el contenido variable está en `content.js` y la paleta en escala de grises y la firma están al inicio de `deck.js` | Para regenerar los archivos tras un cambio |
 
@@ -26,9 +27,10 @@ El entorno en que se preparó la clase permitía búsquedas web pero bloqueaba l
 
 La carpeta [«Derecho y tecnologia clase de derecho informatico»](https://drive.google.com/drive/folders/1od26pSaaeWdhDqm_vaadekk8mSUvDbng) contiene los textos como Google Docs editables:
 
-- [PROGRAMA DE LA CLASE (docente)](https://docs.google.com/document/d/1i5gy4kNOLn_WT0_aLGcnHHwNtD5MnkaVaOROVFdfOPw/edit)
+- [PROGRAMA DE LA CLASE (docente)](https://docs.google.com/document/d/1XKrSt6sBduewb4tcK4VrowKp1yCiTLayAR5LbmHodkU/edit)
 - [GUÍA DE TRABAJO DEL ESTUDIANTE](https://docs.google.com/document/d/1eFEGcUYy851dS8OVFlBx8dZP0i6kuWqgESF68-vuqxg/edit)
+- [SOLUCIONARIO DEL DOCENTE](https://docs.google.com/document/d/1wRhm7OXGHeKaGDi4122wWOL7nOKZYaywRWXlgNqgvZA/edit)
 - [FUENTES Y ESTADO DE VERIFICACIÓN](https://docs.google.com/document/d/1eZ_PFdtp6XdMtvibBRyrr2fHWOEiBuyw3vk4f0gzTyA/edit)
-- [LEEME - Índice de la carpeta y enlaces](https://docs.google.com/document/d/1qMtSGetbNUKBTTLznxkHFh9LpApYMle5JPXxAc1gOrQ/edit)
+- [LEEME - Índice de la carpeta y enlaces](https://docs.google.com/document/d/1dzmUzVLU5d9goPX4OSk_zS-cQ4FHMP7M40RkZ4rQN0c/edit)
 
 Las diapositivas (`DIAPOSITIVAS.pptx`) y las versiones en Word no pudieron subirse a Drive desde el entorno de preparación; se descargan de esta carpeta del repositorio y se arrastran a la carpeta de Drive.
