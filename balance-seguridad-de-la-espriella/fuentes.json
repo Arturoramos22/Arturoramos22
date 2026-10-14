@@ -1,52 +1,875 @@
 [
- {"id":"01","bloque":"Santa Marta","medio":"Presidencia de la República","fecha":"22 sep 2026","titular":"Presidente De La Espriella ordena militarizar Santa Marta ante la amenaza de paro armado de las Autodefensas Conquistadoras de la Sierra Nevada","url":"https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-ordena-militarizar-Santa-Marta-ante-la-amenaza-260922.aspx","prueba":"El propio Gobierno reconoce la amenaza de paro armado y militariza la ciudad."},
- {"id":"02","bloque":"Santa Marta","medio":"El Colombiano","fecha":"23 sep 2026","titular":"Arde la Costa: Abelardo, con pistola al cinto, enfrenta crisis de seguridad en Santa Marta","url":"https://www.elcolombiano.com/colombia/abelardo-pistola-enfrenta-crisis-seguridad-en-santa-marta-IE41458415","prueba":"La imagen de la pistola al cinto y la pregunta de si el plan de choque de 90 días alcanza."},
- {"id":"03","bloque":"Santa Marta","medio":"La Silla Vacía","fecha":"22 sep 2026","titular":"Con arma en cinto, Abelardo anuncia medidas de seguridad para Santa Marta","url":"https://www.lasillavacia.com/en-vivo/con-arma-en-cinto-abelardo-anuncia-medidas-de-seguridad-para-santa-marta/","prueba":"Promesa textual: “Vamos a blindar Santa Marta. Bandido que no se someta, será dado de baja como en derecho corresponde”."},
- {"id":"04","bloque":"Santa Marta","medio":"Infobae","fecha":"23 sep 2026","titular":"Abelardo de la Espriella recorrió Santa Marta con un arma en la cintura y Gustavo Petro aprovechó para lanzar crítica: “Como en épocas pasadas”","url":"https://www.infobae.com/colombia/2026/09/23/abelardo-de-la-espriella-recorrio-santa-marta-con-un-arma-en-la-cintura-y-gustavo-petro-aprovecho-para-lanzar-critica-como-en-epocas-pasadas/","prueba":"El recorrido armado y la polémica."},
- {"id":"05","bloque":"Santa Marta","medio":"Cambio","fecha":"sep 2026","titular":"El paro que silenció a Santa Marta: primera prueba de fuego para Abelardo De la Espriella","url":"https://cambiocolombia.com/pais/articulo/2026/9/el-paro-que-silencio-a-santa-marta-cronica-de-la-primera-prueba-de-fuego-para-abelardo-de-la-espriella","prueba":"Crónica: la ciudad paralizada pese a la presencia presidencial."},
- {"id":"06","bloque":"Santa Marta","medio":"La Silla Vacía","fecha":"sep 2026","titular":"Paro armado en Santa Marta: la prueba de fuego del “milagro” de la seguridad de Abelardo","url":"https://www.lasillavacia.com/silla-nacional/paro-armado-en-santa-marta-la-prueba-de-fuego-del-milagro-de-la-seguridad-de-abelardo/","prueba":"El paro persistió pese al despliegue militar y mostró la fortaleza de la gobernanza de las ACSN."},
- {"id":"07","bloque":"Santa Marta","medio":"El Espectador","fecha":"sep 2026","titular":"El paro armado en Santa Marta: “Existe una especie de Estado en obra negra”","url":"https://www.elespectador.com/judicial/el-paro-armado-en-santa-marta-existe-una-especie-de-estado-en-obra-negra/","prueba":"Diagnóstico de la debilidad estatal en la ciudad."},
- {"id":"08","bloque":"Santa Marta","medio":"Cambio","fecha":"sep 2026","titular":"Paro armado en Santa Marta terminó: gobernadora confirmó regreso a la normalidad","url":"https://cambiocolombia.com/pais/articulo/2026/9/termina-el-paro-armado-en-santa-marta-tras-cuatro-dias-de-tension-la-ciudad-hoy-esta-con-total-normalidad","prueba":"Cuatro días de paro armado con el presidente y el Ejército en la ciudad."},
- {"id":"09","bloque":"Santa Marta","medio":"Q'hubo / Colprensa","fecha":"sep 2026","titular":"Las autodefensas de la Sierra Nevada confirmaron fin del paro armado","url":"https://qhubomedellin.com/actualidad/local/autodefensas-conquistadoras-sierra-nevada-decretaron-fin-al-paro-armado-AJ41485713","prueba":"El paro terminó cuando las ACSN lo decidieron por comunicado, no por una derrota militar."},
- {"id":"10","bloque":"Santa Marta","medio":"Radio Hoy","fecha":"26 sep 2026","titular":"“Proteger, contener y atacar”: De la Espriella anunció bloque de seguridad para Santa Marta","url":"https://www.radiohoy.com/2026/09/26/proteger-contener-y-atacar-de-la-espriella-anuncio-bloque-de-seguridad-para-santa-marta/820554/","prueba":"Segundo anuncio de blindaje para Santa Marta, 16 días antes de la fuga masiva."},
- {"id":"11","bloque":"Santa Marta","medio":"Semana","fecha":"12 oct 2026","titular":"Abelardo De La Espriella llama a calificar servicios al comandante de Policía de Santa Marta por fuga de 41 presos: “No acepto”","url":"https://www.semana.com/politica/articulo/abelardo-de-la-espriella-llama-a-calificar-servicios-al-comandante-de-policia-de-santa-marta-por-fuga-de-presos-no-acepto/202616/","prueba":"Fuga de 41 detenidos en la ciudad que el presidente prometió blindar."},
- {"id":"12","bloque":"Santa Marta","medio":"El Heraldo","fecha":"12 oct 2026","titular":"Alias Mongolo, señalado cabecilla de las ACSN, y ‘El Guajiro’, entre los fugados en Santa Marta: De la Espriella pide priorizar estas recapturas","url":"https://www.elheraldo.co/colombia/2026/10/12/alias-mongolo-senalado-cabecilla-de-las-acsn-y-el-guajiro-entre-los-fugados-en-santa-marta-de-la-espriella-prioriza-su-recaptura/","prueba":"Entre los fugados hay un cabecilla de las mismas autodefensas del paro armado."},
- {"id":"13","bloque":"Santa Marta","medio":"Diario La Libertad","fecha":"13 oct 2026","titular":"Alias ‘Mongolo’, señalado integrante de Los Pachencas, entre los 41 fugados del centro transitorio de Santa Marta","url":"https://diariolalibertad.com/2026/10/13/alias-mongolo-senalado-integrante-de-los-pachencas-entre-los-41-fugados-del-centro-transitorio-de-santa-marta/","prueba":"Mongolo fue capturado el 4 de octubre en Guachaca y se fugó ocho días después."},
- {"id":"14","bloque":"Santa Marta","medio":"El Espectador (editorial)","fecha":"13 oct 2026","titular":"Una fuga pone el dedo en la llaga en Santa Marta","url":"https://www.elespectador.com/opinion/editorial/una-fuga-pone-el-dedo-en-la-llaga-en-santa-marta/","prueba":"“Un claro revés para las promesas del nuevo Gobierno en torno a la seguridad”."},
- {"id":"15","bloque":"Santa Marta","medio":"El Espectador (editorial)","fecha":"sep 2026","titular":"Falta mucho para un regreso a la normalidad en Santa Marta","url":"https://www.elespectador.com/opinion/editorial/falta-mucho-para-un-regreso-a-la-normalidad-en-santa-marta/","prueba":"La normalidad anunciada no llegó."},
- {"id":"16","bloque":"Santa Marta","medio":"Infobae","fecha":"13 oct 2026","titular":"Petro arremetió contra el Gobierno de Abelardo de la Espriella tras la fuga de 41 presos en Santa Marta: “¿Samarios y samarias, quien va perdiendo?”","url":"https://www.infobae.com/colombia/2026/10/13/petro-arremetio-contra-el-gobierno-de-abelardo-de-la-espriella-tras-la-fuga-de-41-presos-en-santa-marta-samarios-y-samarias-quien-va-perdiendo/","prueba":"Reacción política y pedido de “más acción, menos show”."},
- {"id":"17","bloque":"Fugas","medio":"Infobae","fecha":"15 sep 2026","titular":"Fuga masiva de una estación de Policía en Antioquia: con una segueta se escaparon diez detenidos","url":"https://www.infobae.com/colombia/2026/09/15/fuga-masiva-de-una-estacion-de-policia-en-antioquia-con-una-segueta-se-escaparon-diez-detenidos/","prueba":"Caucasia, 14 de septiembre: diez fugados."},
- {"id":"18","bloque":"Fugas","medio":"Infobae","fecha":"6 oct 2026","titular":"Cuatro detenidos se fugaron de una estación de Policía en Cali: esto es lo que se conoce","url":"https://www.infobae.com/colombia/2026/10/06/cuatro-detenidos-se-fugaron-de-una-estacion-de-policia-en-cali-esto-es-lo-que-se-conoce/","prueba":"Cali, 5 de octubre: cuatro fugados tras intimidar a un policía."},
- {"id":"19","bloque":"Promesas","medio":"Infobae","fecha":"9 abr 2026","titular":"Abelardo de la Espriella promete mano dura: este es el plan para recuperar la seguridad de Colombia en 90 días","url":"https://www.infobae.com/colombia/2026/04/09/abelardo-de-la-espriella-promete-mano-dura-este-es-el-plan-para-recuperar-la-seguridad-de-colombia-en-90-dias/","prueba":"La promesa de campaña: seguridad recuperada en 90 días."},
- {"id":"20","bloque":"Promesas","medio":"La Silla Vacía (Milagrómetro)","fecha":"2026","titular":"Milagrómetro: Estas son las promesas de Abelardo","url":"https://www.lasillavacia.com/silla-nacional/milagrometro-estas-son-las-promesas-de-abelardo/","prueba":"Prometió 10 objetivos de alto valor en 90 días; a fines de septiembre el conteo iba en 2 de 10."},
- {"id":"21","bloque":"Bombardeos","medio":"El Tiempo","fecha":"ago 2026","titular":"Un menor de edad murió en el primer bombardeo del gobierno de De La Espriella contra el Eln en Catatumbo","url":"https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/un-menor-de-edad-murio-en-el-primer-bombardeo-del-gobierno-de-de-la-espriella-contra-el-eln-en-catatumbo-3582392","prueba":"Primer bombardeo (10 de agosto): un menor de 16 años muerto; se supo casi 20 días después."},
- {"id":"22","bloque":"Bombardeos","medio":"El Espectador","fecha":"ago 2026","titular":"Un menor de edad murió durante el primer bombardeo de De la Espriella en Catatumbo","url":"https://www.elespectador.com/judicial/un-menor-de-edad-murio-durante-el-primer-bombardeo-de-de-la-espriella-en-catatumbo/","prueba":"El Ejecutivo presentó la operación como un éxito aunque hubo civiles heridos."},
- {"id":"23","bloque":"Bombardeos","medio":"Semana","fecha":"ago 2026","titular":"Defensoría del Pueblo verifica “posibles afectaciones a la población civil” tras bombardeo en Norte de Santander","url":"https://www.semana.com/nacion/articulo/denuncian-que-primer-bombardeo-ordenado-por-gobierno-de-la-espriella-habria-afectado-poblacion-civil-en-el-catatumbo/202641/","prueba":"Afectaciones a civiles en el primer bombardeo."},
- {"id":"24","bloque":"Bombardeos","medio":"Infobae","fecha":"31 ago 2026","titular":"Bombardeo en Guaviare: 3 menores murieron tras la ofensiva militar ordenada por Abelardo de la Espriella","url":"https://www.infobae.com/colombia/2026/08/31/bombardeo-en-guaviare-3-menores-habrian-muerto-tras-la-ofensiva-militar-ordenada-por-abelardo-de-la-espriella/","prueba":"El Retorno, Guaviare, 27 de agosto: tres menores de 15 y 16 años."},
- {"id":"25","bloque":"Bombardeos","medio":"El Espectador","fecha":"ago 2026","titular":"Confirman que tres menores de edad murieron durante bombardeo ordenado por De la Espriella","url":"https://www.elespectador.com/judicial/confirman-que-tres-menores-de-edad-murieron-durante-bombardeo-ordenado-por-de-la-espriella/","prueba":"Confirmación de Medicina Legal."},
- {"id":"26","bloque":"Bombardeos","medio":"El Colombiano","fecha":"sep 2026","titular":"De la Espriella defiende el caminar exhibiendo cadáveres: “Entre más deje de gustarle eso a la izquierda, más lo voy a hacer”","url":"https://www.elcolombiano.com/colombia/de-la-espriella-defiende-caminar-sobre-cadaveres-MB42075696","prueba":"El video entre cadáveres de la Operación Azarías (Miraflores, Guaviare) como pieza de propaganda."},
- {"id":"27","bloque":"Bombardeos","medio":"teleSUR","fecha":"sep 2026","titular":"De la Espriella exhibe cadáveres tras operativo militar en Colombia y desata críticas","url":"https://www.telesurtv.net/espriella-exhibe-cadaveres-operativo-criticas/","prueba":"Críticas de la Defensoría y de organizaciones por el uso de los cuerpos como mensaje político."},
- {"id":"28","bloque":"Bombardeos","medio":"Semana","fecha":"sep 2026","titular":"Juez le ordenó al Gobierno de Abelardo De La Espriella suspender bombardeos en lugares donde exista información de presencia de menores","url":"https://www.semana.com/nacion/articulo/juez-le-ordeno-al-gobierno-de-abelardo-de-la-espriella-suspender-bombardeos-en-lugares-donde-exista-informacion-de-presencia-de-menores/202645/","prueba":"Medida cautelar del Juzgado 34 de Familia de Bogotá (3 de septiembre)."},
- {"id":"29","bloque":"Bombardeos","medio":"El Espectador","fecha":"10 sep 2026","titular":"Confirman orden a De la Espriella de suspender bombardeos en zonas donde pueda haber menores","url":"https://www.elespectador.com/judicial/confirman-orden-a-de-la-espriella-de-suspender-bombardeos-en-zonas-donde-pueda-haber-menores/","prueba":"La jueza rechazó la impugnación del presidente, sus ministros y la cúpula."},
- {"id":"30","bloque":"Bombardeos","medio":"Infobae","fecha":"16 sep 2026","titular":"Pacto Histórico quiere sacar al ministro de Defensa Jorge Enrique Mora: lo someterán a moción de censura por bombardeo en el que murieron tres menores","url":"https://www.infobae.com/colombia/2026/09/16/pacto-historico-quiere-sacar-al-ministro-de-defensa-jorge-enrique-mora-lo-someteran-a-mocion-de-censura-por-bombardeo-en-el-que-murieron-tres-menores/","prueba":"El ministro al tablero por los menores muertos."},
- {"id":"31","bloque":"Bombardeos","medio":"El Tiempo","fecha":"23 sep 2026","titular":"Senado hunde moción de censura contra el ministro de Defensa, Jorge Eduardo Mora, por la muerte de tres menores en un bombardeo en Guaviare","url":"https://www.eltiempo.com/politica/congreso/senado-hunde-mocion-de-censura-contra-el-ministro-de-defensa-jorge-eduardo-mora-por-la-muerte-de-tres-menores-en-un-bombardeo-en-guaviare-3588319","prueba":"65 votos contra 17: el Congreso blindó al ministro."},
- {"id":"32","bloque":"Bombardeos","medio":"Infobae","fecha":"1 oct 2026","titular":"Juez levantó la suspensión de bombardeos por parte del gobierno de Abelardo de la Espriella, pero ordenó reforzar la protección de menores","url":"https://www.infobae.com/colombia/2026/10/01/juez-levanto-la-suspension-de-bombardeos-por-parte-del-gobierno-de-abelardo-de-la-espriella-pero-ordeno-reforzar-la-proteccion-de-menores/","prueba":"Se levanta la medida con la condición de un estándar reforzado de precaución. Diez días después muere otra menor."},
- {"id":"33","bloque":"Bombardeos","medio":"El País (Cali)","fecha":"oct 2026","titular":"Defensora del Pueblo vuelve a llamar la atención del Gobierno por muerte de menores en operativos militares","url":"https://www.elpais.com.co/colombia/defensora-del-pueblo-vuelve-a-llamar-la-atencion-del-gobierno-por-muerte-de-menores-en-operativos-militares-1328.html","prueba":"La Defensoría pide evaluar si los bombardeos son la mejor opción."},
- {"id":"34","bloque":"Catatumbo","medio":"El Tiempo","fecha":"11 oct 2026","titular":"Atención: Fuerza Pública lanzó el cuarto bombardeo del gobierno de De La Espriella; fue contra el Frente 33 en Catatumbo","url":"https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/atencion-fuerza-publica-lanzo-el-cuarto-bombardeo-del-gobierno-de-de-la-espriella-fue-contra-el-frente-33-en-catatumbo-3592859","prueba":"Cuarto bombardeo en dos meses, entre Tibú y El Tarra."},
- {"id":"35","bloque":"Catatumbo","medio":"El Tiempo","fecha":"11 oct 2026","titular":"Presidente De La Espriella se pronuncia tras bombardeo contra las disidencias en el Catatumbo: ‘Con los narcoterroristas no hay tregua’","url":"https://www.eltiempo.com/politica/gobierno/presidente-de-la-espriella-se-pronuncia-tras-bombardeo-contra-las-disidencias-en-el-catatumbo-con-los-narcoterroristas-no-hay-tregua-3592910","prueba":"Anuncio por X y video: “Anoche, mientras muchos colombianos descansaban, impartí directamente la orden”."},
- {"id":"36","bloque":"Catatumbo","medio":"La Silla Vacía","fecha":"13 oct 2026","titular":"Bombardeo aprobado en video por Abelardo: 4 muertos, incluyendo una menor","url":"https://www.lasillavacia.com/en-vivo/bombardeo-aprobado-en-video-por-abelardo-4-muertos-incluyendo-una-menor/","prueba":"El presidente se grabó dando la orden por radioteléfono a las 10 p. m. del 10 de octubre."},
- {"id":"37","bloque":"Catatumbo","medio":"La Silla Vacía","fecha":"13 oct 2026","titular":"Menor murió en el cuarto bombardeo del gobierno en El Catatumbo","url":"https://www.lasillavacia.com/en-vivo/menor-murio-en-el-cuarto-bombardeo-del-gobierno-en-el-catatumbo/","prueba":"Mora: la menor “se encontraba en función continua de combate”."},
- {"id":"38","bloque":"Catatumbo","medio":"El Heraldo","fecha":"13 oct 2026","titular":"Gobierno confirma que una adolescente de 16 años murió en bombardeo en el Catatumbo","url":"https://www.elheraldo.co/colombia/2026/10/13/gobierno-confirma-que-una-adolescente-de-16-anos-murio-en-bombardeo-en-el-catatumbo/","prueba":"La confirmación la dio el ministro Mora, no el presidente que anunció el bombardeo."},
- {"id":"39","bloque":"Catatumbo","medio":"Infobae","fecha":"13 oct 2026","titular":"Una menor de 16 años murió durante el bombardeo contra las disidencias de ‘Calarcá’ en el Catatumbo: esto fue lo que dijo el ministro de Defensa","url":"https://www.infobae.com/colombia/2026/10/13/una-menor-de-16-anos-murio-durante-el-bombardeo-contra-las-disidencias-de-calarca-en-el-catatumbo-esto-fue-lo-que-dijo-el-ministro-de-defensa/","prueba":"Versión del Ministerio de Defensa."},
- {"id":"40","bloque":"Catatumbo","medio":"Semana","fecha":"13 oct 2026","titular":"MinDefensa entregó detalles del bombardeo contra disidencias de las Farc en Catatumbo: hay una menor de edad entre los muertos","url":"https://www.semana.com/nacion/articulo/mindefensa-entrego-detalles-del-bombardeo-contra-disidencias-de-las-farc-en-catatumbo-hay-una-menor-de-edad-entre-los-muertos/202636/","prueba":"Incluso Semana registra a la menor entre los muertos."},
- {"id":"41","bloque":"Catatumbo","medio":"Radio Hoy","fecha":"13 oct 2026","titular":"Van siete menores muertos en cuatro bombardeos ordenados por De La Espriella","url":"https://www.radiohoy.com/2026/10/13/van-siete-menores-muertos-en-cuatro-bombardeos-ordenados-por-de-la-espriella/824753/","prueba":"El acumulado: siete menores en cuatro bombardeos en poco más de dos meses."},
- {"id":"42","bloque":"Cúcuta","medio":"El Tiempo","fecha":"jul 2026","titular":"Con ultimátum a ilegales del Catatumbo, arrancaron los empalmes regionales de Abelardo de la Espriella en Cúcuta","url":"https://www.eltiempo.com/politica/abelardo-de-la-espriella/asi-va-el-encuentro-del-empalme-regional-que-adelanta-el-equipo-de-abelardo-de-la-espriella-en-cucuta-3569930","prueba":"El ultimátum del empalme: la promesa de orden en el Catatumbo."},
- {"id":"43","bloque":"Cúcuta","medio":"Infobae","fecha":"8 oct 2026","titular":"Víctimas del Catatumbo esperan reunirse con el presidente De la Espriella durante su visita a Cúcuta: “Plantear soluciones concretas”","url":"https://www.infobae.com/colombia/2026/10/08/victimas-del-catatumbo-esperan-reunirse-con-el-presidente-de-la-espriella-durante-su-visita-a-cucuta-plantear-soluciones-concretas/","prueba":"Las víctimas prepararon reclamos para la visita anunciada."},
- {"id":"44","bloque":"Cúcuta","medio":"La Opinión (Cúcuta)","fecha":"9 oct 2026","titular":"Indicadores de Jeremías: el presidente De la Espriella anuncia nueva visita a Cúcuta","url":"https://laopinion.co/politica/indicadores-de-jeremias-el-presidente-de-la-espriella-anuncia-nueva-visita-cucuta","prueba":"La visita fue anunciada por redes sociales."},
- {"id":"45","bloque":"Cúcuta","medio":"Área Cúcuta","fecha":"13 oct 2026","titular":"Desdén del Gobierno en Cúcuta: De la Espriella cancela visita","url":"https://www.areacucuta.com/presidente-abelardo-de-la-espriella-cancelo-su-visita-a-cucuta-programada-para-hoy-13-de-octubre/","prueba":"Canceló la visita del 13 de octubre; tampoco fueron los ministros ni el director de Planeación."},
- {"id":"46","bloque":"Cúcuta","medio":"Alerta","fecha":"13 oct 2026","titular":"Presidente Abelardo de la Espriella suspende su agenda de este martes en Cúcuta","url":"https://www.alerta.com.co/quejodromo/presidente-abelardo-de-la-espriellla-suspende-visita-cucuta-252781","prueba":"Confirmación de la cancelación por “cambios de última hora en la agenda”."},
- {"id":"47","bloque":"Cifras","medio":"Semana","fecha":"12 oct 2026","titular":"Abelardo De La Espriella presentó balance de seguridad en su Gobierno: “Se acabó la era en la que el Estado retrocedía”","url":"https://www.semana.com/nacion/articulo/abelardo-de-la-espriella-presento-balance-de-seguridad-en-su-gobierno-se-acabo-la-era-en-la-que-el-estado-retrocedia/202603/","prueba":"El discurso del balance, el mismo día de la fuga de 41 presos."},
- {"id":"48","bloque":"Cifras","medio":"El Colombiano","fecha":"13 oct 2026","titular":"De la Espriella presume resultados en seguridad, pero cifras ponen en duda el alcance de su balance","url":"https://www.elcolombiano.com/inicio/balance-seguridad-gobierno-de-la-espriella-cifras-incautaciones-capturas-HF42210520","prueba":"129.526 kg incautados el 9 de octubre y 200.982 kg tres días después; MinDefensa: la cocaína incautada ene-ago bajó 1 % frente a 2025."},
- {"id":"49","bloque":"Cifras","medio":"Análisis Urbano","fecha":"oct 2026","titular":"De la Espriella destaca sus cifras de seguridad que muestran más continuidad que mejora","url":"https://analisisurbano.org/cifras-seguridad-de-la-espriella-incautaciones-capturas-colombia/","prueba":"Incautaciones de 2026: las más bajas de los últimos cinco años en periodos equivalentes."},
- {"id":"50","bloque":"Cifras","medio":"Diario El Mundo (El Salvador)","fecha":"sep 2026","titular":"De la Espriella apuesta por la mano dura y el efectismo mediático como política de seguridad","url":"https://diario.elmundo.sv/el-mundo/de-la-espriella-apuesta-por-la-mano-dura-y-el-efectismo-mediatico-como-politica-de-seguridad","prueba":"Lectura internacional: balances diarios en X y efectismo."}
+ {
+  "id": "01",
+  "bloque": "Santa Marta",
+  "medio": "Presidencia de la República",
+  "fecha": "22 sep 2026",
+  "titular": "Presidente De La Espriella ordena militarizar Santa Marta ante la amenaza de paro armado de las Autodefensas Conquistadoras de la Sierra Nevada",
+  "url": "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-ordena-militarizar-Santa-Marta-ante-la-amenaza-260922.aspx",
+  "prueba": "El propio Gobierno reconoce la amenaza de paro armado y militariza la ciudad."
+ },
+ {
+  "id": "02",
+  "bloque": "Santa Marta",
+  "medio": "El Colombiano",
+  "fecha": "23 sep 2026",
+  "titular": "Arde la Costa: Abelardo, con pistola al cinto, enfrenta crisis de seguridad en Santa Marta",
+  "url": "https://www.elcolombiano.com/colombia/abelardo-pistola-enfrenta-crisis-seguridad-en-santa-marta-IE41458415",
+  "prueba": "La imagen de la pistola al cinto y la pregunta de si el plan de choque de 90 días alcanza."
+ },
+ {
+  "id": "03",
+  "bloque": "Santa Marta",
+  "medio": "La Silla Vacía",
+  "fecha": "22 sep 2026",
+  "titular": "Con arma en cinto, Abelardo anuncia medidas de seguridad para Santa Marta",
+  "url": "https://www.lasillavacia.com/en-vivo/con-arma-en-cinto-abelardo-anuncia-medidas-de-seguridad-para-santa-marta/",
+  "prueba": "Promesa textual: “Vamos a blindar Santa Marta. Bandido que no se someta, será dado de baja como en derecho corresponde”."
+ },
+ {
+  "id": "04",
+  "bloque": "Santa Marta",
+  "medio": "Infobae",
+  "fecha": "23 sep 2026",
+  "titular": "Abelardo de la Espriella recorrió Santa Marta con un arma en la cintura y Gustavo Petro aprovechó para lanzar crítica: “Como en épocas pasadas”",
+  "url": "https://www.infobae.com/colombia/2026/09/23/abelardo-de-la-espriella-recorrio-santa-marta-con-un-arma-en-la-cintura-y-gustavo-petro-aprovecho-para-lanzar-critica-como-en-epocas-pasadas/",
+  "prueba": "El recorrido armado y la polémica."
+ },
+ {
+  "id": "05",
+  "bloque": "Santa Marta",
+  "medio": "Cambio",
+  "fecha": "sep 2026",
+  "titular": "El paro que silenció a Santa Marta: primera prueba de fuego para Abelardo De la Espriella",
+  "url": "https://cambiocolombia.com/pais/articulo/2026/9/el-paro-que-silencio-a-santa-marta-cronica-de-la-primera-prueba-de-fuego-para-abelardo-de-la-espriella",
+  "prueba": "Crónica: la ciudad paralizada pese a la presencia presidencial."
+ },
+ {
+  "id": "06",
+  "bloque": "Santa Marta",
+  "medio": "La Silla Vacía",
+  "fecha": "sep 2026",
+  "titular": "Paro armado en Santa Marta: la prueba de fuego del “milagro” de la seguridad de Abelardo",
+  "url": "https://www.lasillavacia.com/silla-nacional/paro-armado-en-santa-marta-la-prueba-de-fuego-del-milagro-de-la-seguridad-de-abelardo/",
+  "prueba": "El paro persistió pese al despliegue militar y mostró la fortaleza de la gobernanza de las ACSN."
+ },
+ {
+  "id": "07",
+  "bloque": "Santa Marta",
+  "medio": "El Espectador",
+  "fecha": "sep 2026",
+  "titular": "El paro armado en Santa Marta: “Existe una especie de Estado en obra negra”",
+  "url": "https://www.elespectador.com/judicial/el-paro-armado-en-santa-marta-existe-una-especie-de-estado-en-obra-negra/",
+  "prueba": "Diagnóstico de la debilidad estatal en la ciudad."
+ },
+ {
+  "id": "08",
+  "bloque": "Santa Marta",
+  "medio": "Cambio",
+  "fecha": "sep 2026",
+  "titular": "Paro armado en Santa Marta terminó: gobernadora confirmó regreso a la normalidad",
+  "url": "https://cambiocolombia.com/pais/articulo/2026/9/termina-el-paro-armado-en-santa-marta-tras-cuatro-dias-de-tension-la-ciudad-hoy-esta-con-total-normalidad",
+  "prueba": "Cuatro días de paro armado con el presidente y el Ejército en la ciudad."
+ },
+ {
+  "id": "09",
+  "bloque": "Santa Marta",
+  "medio": "Q'hubo / Colprensa",
+  "fecha": "sep 2026",
+  "titular": "Las autodefensas de la Sierra Nevada confirmaron fin del paro armado",
+  "url": "https://qhubomedellin.com/actualidad/local/autodefensas-conquistadoras-sierra-nevada-decretaron-fin-al-paro-armado-AJ41485713",
+  "prueba": "El paro terminó cuando las ACSN lo decidieron por comunicado, no por una derrota militar."
+ },
+ {
+  "id": "10",
+  "bloque": "Santa Marta",
+  "medio": "Radio Hoy",
+  "fecha": "26 sep 2026",
+  "titular": "“Proteger, contener y atacar”: De la Espriella anunció bloque de seguridad para Santa Marta",
+  "url": "https://www.radiohoy.com/2026/09/26/proteger-contener-y-atacar-de-la-espriella-anuncio-bloque-de-seguridad-para-santa-marta/820554/",
+  "prueba": "Segundo anuncio de blindaje para Santa Marta, 16 días antes de la fuga masiva."
+ },
+ {
+  "id": "11",
+  "bloque": "Santa Marta",
+  "medio": "Semana",
+  "fecha": "12 oct 2026",
+  "titular": "Abelardo De La Espriella llama a calificar servicios al comandante de Policía de Santa Marta por fuga de 41 presos: “No acepto”",
+  "url": "https://www.semana.com/politica/articulo/abelardo-de-la-espriella-llama-a-calificar-servicios-al-comandante-de-policia-de-santa-marta-por-fuga-de-presos-no-acepto/202616/",
+  "prueba": "Fuga de 41 detenidos en la ciudad que el presidente prometió blindar."
+ },
+ {
+  "id": "12",
+  "bloque": "Santa Marta",
+  "medio": "El Heraldo",
+  "fecha": "12 oct 2026",
+  "titular": "Alias Mongolo, señalado cabecilla de las ACSN, y ‘El Guajiro’, entre los fugados en Santa Marta: De la Espriella pide priorizar estas recapturas",
+  "url": "https://www.elheraldo.co/colombia/2026/10/12/alias-mongolo-senalado-cabecilla-de-las-acsn-y-el-guajiro-entre-los-fugados-en-santa-marta-de-la-espriella-prioriza-su-recaptura/",
+  "prueba": "Entre los fugados hay un cabecilla de las mismas autodefensas del paro armado."
+ },
+ {
+  "id": "13",
+  "bloque": "Santa Marta",
+  "medio": "Diario La Libertad",
+  "fecha": "13 oct 2026",
+  "titular": "Alias ‘Mongolo’, señalado integrante de Los Pachencas, entre los 41 fugados del centro transitorio de Santa Marta",
+  "url": "https://diariolalibertad.com/2026/10/13/alias-mongolo-senalado-integrante-de-los-pachencas-entre-los-41-fugados-del-centro-transitorio-de-santa-marta/",
+  "prueba": "Mongolo fue capturado el 4 de octubre en Guachaca y se fugó ocho días después."
+ },
+ {
+  "id": "14",
+  "bloque": "Santa Marta",
+  "medio": "El Espectador (editorial)",
+  "fecha": "13 oct 2026",
+  "titular": "Una fuga pone el dedo en la llaga en Santa Marta",
+  "url": "https://www.elespectador.com/opinion/editorial/una-fuga-pone-el-dedo-en-la-llaga-en-santa-marta/",
+  "prueba": "“Un claro revés para las promesas del nuevo Gobierno en torno a la seguridad”."
+ },
+ {
+  "id": "15",
+  "bloque": "Santa Marta",
+  "medio": "El Espectador (editorial)",
+  "fecha": "sep 2026",
+  "titular": "Falta mucho para un regreso a la normalidad en Santa Marta",
+  "url": "https://www.elespectador.com/opinion/editorial/falta-mucho-para-un-regreso-a-la-normalidad-en-santa-marta/",
+  "prueba": "La normalidad anunciada no llegó."
+ },
+ {
+  "id": "16",
+  "bloque": "Santa Marta",
+  "medio": "Infobae",
+  "fecha": "13 oct 2026",
+  "titular": "Petro arremetió contra el Gobierno de Abelardo de la Espriella tras la fuga de 41 presos en Santa Marta: “¿Samarios y samarias, quien va perdiendo?”",
+  "url": "https://www.infobae.com/colombia/2026/10/13/petro-arremetio-contra-el-gobierno-de-abelardo-de-la-espriella-tras-la-fuga-de-41-presos-en-santa-marta-samarios-y-samarias-quien-va-perdiendo/",
+  "prueba": "Reacción política y pedido de “más acción, menos show”."
+ },
+ {
+  "id": "17",
+  "bloque": "Fugas",
+  "medio": "Infobae",
+  "fecha": "15 sep 2026",
+  "titular": "Fuga masiva de una estación de Policía en Antioquia: con una segueta se escaparon diez detenidos",
+  "url": "https://www.infobae.com/colombia/2026/09/15/fuga-masiva-de-una-estacion-de-policia-en-antioquia-con-una-segueta-se-escaparon-diez-detenidos/",
+  "prueba": "Caucasia, 14 de septiembre: diez fugados."
+ },
+ {
+  "id": "18",
+  "bloque": "Fugas",
+  "medio": "Infobae",
+  "fecha": "6 oct 2026",
+  "titular": "Cuatro detenidos se fugaron de una estación de Policía en Cali: esto es lo que se conoce",
+  "url": "https://www.infobae.com/colombia/2026/10/06/cuatro-detenidos-se-fugaron-de-una-estacion-de-policia-en-cali-esto-es-lo-que-se-conoce/",
+  "prueba": "Cali, 5 de octubre: cuatro fugados tras intimidar a un policía."
+ },
+ {
+  "id": "19",
+  "bloque": "Promesas",
+  "medio": "Infobae",
+  "fecha": "9 abr 2026",
+  "titular": "Abelardo de la Espriella promete mano dura: este es el plan para recuperar la seguridad de Colombia en 90 días",
+  "url": "https://www.infobae.com/colombia/2026/04/09/abelardo-de-la-espriella-promete-mano-dura-este-es-el-plan-para-recuperar-la-seguridad-de-colombia-en-90-dias/",
+  "prueba": "La promesa de campaña: seguridad recuperada en 90 días."
+ },
+ {
+  "id": "20",
+  "bloque": "Promesas",
+  "medio": "La Silla Vacía (Milagrómetro)",
+  "fecha": "2026",
+  "titular": "Milagrómetro: Estas son las promesas de Abelardo",
+  "url": "https://www.lasillavacia.com/silla-nacional/milagrometro-estas-son-las-promesas-de-abelardo/",
+  "prueba": "Prometió 10 objetivos de alto valor en 90 días; a fines de septiembre el conteo iba en 2 de 10."
+ },
+ {
+  "id": "21",
+  "bloque": "Bombardeos",
+  "medio": "El Tiempo",
+  "fecha": "ago 2026",
+  "titular": "Un menor de edad murió en el primer bombardeo del gobierno de De La Espriella contra el Eln en Catatumbo",
+  "url": "https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/un-menor-de-edad-murio-en-el-primer-bombardeo-del-gobierno-de-de-la-espriella-contra-el-eln-en-catatumbo-3582392",
+  "prueba": "Primer bombardeo (10 de agosto): un menor de 16 años muerto; se supo casi 20 días después."
+ },
+ {
+  "id": "22",
+  "bloque": "Bombardeos",
+  "medio": "El Espectador",
+  "fecha": "ago 2026",
+  "titular": "Un menor de edad murió durante el primer bombardeo de De la Espriella en Catatumbo",
+  "url": "https://www.elespectador.com/judicial/un-menor-de-edad-murio-durante-el-primer-bombardeo-de-de-la-espriella-en-catatumbo/",
+  "prueba": "El Ejecutivo presentó la operación como un éxito aunque hubo civiles heridos."
+ },
+ {
+  "id": "23",
+  "bloque": "Bombardeos",
+  "medio": "Semana",
+  "fecha": "ago 2026",
+  "titular": "Defensoría del Pueblo verifica “posibles afectaciones a la población civil” tras bombardeo en Norte de Santander",
+  "url": "https://www.semana.com/nacion/articulo/denuncian-que-primer-bombardeo-ordenado-por-gobierno-de-la-espriella-habria-afectado-poblacion-civil-en-el-catatumbo/202641/",
+  "prueba": "Afectaciones a civiles en el primer bombardeo."
+ },
+ {
+  "id": "24",
+  "bloque": "Bombardeos",
+  "medio": "Infobae",
+  "fecha": "31 ago 2026",
+  "titular": "Bombardeo en Guaviare: 3 menores murieron tras la ofensiva militar ordenada por Abelardo de la Espriella",
+  "url": "https://www.infobae.com/colombia/2026/08/31/bombardeo-en-guaviare-3-menores-habrian-muerto-tras-la-ofensiva-militar-ordenada-por-abelardo-de-la-espriella/",
+  "prueba": "El Retorno, Guaviare, 27 de agosto: tres menores de 15 y 16 años."
+ },
+ {
+  "id": "25",
+  "bloque": "Bombardeos",
+  "medio": "El Espectador",
+  "fecha": "ago 2026",
+  "titular": "Confirman que tres menores de edad murieron durante bombardeo ordenado por De la Espriella",
+  "url": "https://www.elespectador.com/judicial/confirman-que-tres-menores-de-edad-murieron-durante-bombardeo-ordenado-por-de-la-espriella/",
+  "prueba": "Confirmación de Medicina Legal."
+ },
+ {
+  "id": "26",
+  "bloque": "Bombardeos",
+  "medio": "El Colombiano",
+  "fecha": "sep 2026",
+  "titular": "De la Espriella defiende el caminar exhibiendo cadáveres: “Entre más deje de gustarle eso a la izquierda, más lo voy a hacer”",
+  "url": "https://www.elcolombiano.com/colombia/de-la-espriella-defiende-caminar-sobre-cadaveres-MB42075696",
+  "prueba": "El video entre cadáveres de la Operación Azarías (Miraflores, Guaviare) como pieza de propaganda."
+ },
+ {
+  "id": "27",
+  "bloque": "Bombardeos",
+  "medio": "teleSUR",
+  "fecha": "sep 2026",
+  "titular": "De la Espriella exhibe cadáveres tras operativo militar en Colombia y desata críticas",
+  "url": "https://www.telesurtv.net/espriella-exhibe-cadaveres-operativo-criticas/",
+  "prueba": "Críticas de la Defensoría y de organizaciones por el uso de los cuerpos como mensaje político."
+ },
+ {
+  "id": "28",
+  "bloque": "Bombardeos",
+  "medio": "Semana",
+  "fecha": "sep 2026",
+  "titular": "Juez le ordenó al Gobierno de Abelardo De La Espriella suspender bombardeos en lugares donde exista información de presencia de menores",
+  "url": "https://www.semana.com/nacion/articulo/juez-le-ordeno-al-gobierno-de-abelardo-de-la-espriella-suspender-bombardeos-en-lugares-donde-exista-informacion-de-presencia-de-menores/202645/",
+  "prueba": "Medida cautelar del Juzgado 34 de Familia de Bogotá (3 de septiembre)."
+ },
+ {
+  "id": "29",
+  "bloque": "Bombardeos",
+  "medio": "El Espectador",
+  "fecha": "10 sep 2026",
+  "titular": "Confirman orden a De la Espriella de suspender bombardeos en zonas donde pueda haber menores",
+  "url": "https://www.elespectador.com/judicial/confirman-orden-a-de-la-espriella-de-suspender-bombardeos-en-zonas-donde-pueda-haber-menores/",
+  "prueba": "La jueza rechazó la impugnación del presidente, sus ministros y la cúpula."
+ },
+ {
+  "id": "30",
+  "bloque": "Bombardeos",
+  "medio": "Infobae",
+  "fecha": "16 sep 2026",
+  "titular": "Pacto Histórico quiere sacar al ministro de Defensa Jorge Enrique Mora: lo someterán a moción de censura por bombardeo en el que murieron tres menores",
+  "url": "https://www.infobae.com/colombia/2026/09/16/pacto-historico-quiere-sacar-al-ministro-de-defensa-jorge-enrique-mora-lo-someteran-a-mocion-de-censura-por-bombardeo-en-el-que-murieron-tres-menores/",
+  "prueba": "El ministro al tablero por los menores muertos."
+ },
+ {
+  "id": "31",
+  "bloque": "Bombardeos",
+  "medio": "El Tiempo",
+  "fecha": "23 sep 2026",
+  "titular": "Senado hunde moción de censura contra el ministro de Defensa, Jorge Eduardo Mora, por la muerte de tres menores en un bombardeo en Guaviare",
+  "url": "https://www.eltiempo.com/politica/congreso/senado-hunde-mocion-de-censura-contra-el-ministro-de-defensa-jorge-eduardo-mora-por-la-muerte-de-tres-menores-en-un-bombardeo-en-guaviare-3588319",
+  "prueba": "65 votos contra 17: el Congreso blindó al ministro."
+ },
+ {
+  "id": "32",
+  "bloque": "Bombardeos",
+  "medio": "Infobae",
+  "fecha": "1 oct 2026",
+  "titular": "Juez levantó la suspensión de bombardeos por parte del gobierno de Abelardo de la Espriella, pero ordenó reforzar la protección de menores",
+  "url": "https://www.infobae.com/colombia/2026/10/01/juez-levanto-la-suspension-de-bombardeos-por-parte-del-gobierno-de-abelardo-de-la-espriella-pero-ordeno-reforzar-la-proteccion-de-menores/",
+  "prueba": "Se levanta la medida con la condición de un estándar reforzado de precaución. Diez días después muere otra menor."
+ },
+ {
+  "id": "33",
+  "bloque": "Bombardeos",
+  "medio": "El País (Cali)",
+  "fecha": "oct 2026",
+  "titular": "Defensora del Pueblo vuelve a llamar la atención del Gobierno por muerte de menores en operativos militares",
+  "url": "https://www.elpais.com.co/colombia/defensora-del-pueblo-vuelve-a-llamar-la-atencion-del-gobierno-por-muerte-de-menores-en-operativos-militares-1328.html",
+  "prueba": "La Defensoría pide evaluar si los bombardeos son la mejor opción."
+ },
+ {
+  "id": "34",
+  "bloque": "Catatumbo",
+  "medio": "El Tiempo",
+  "fecha": "11 oct 2026",
+  "titular": "Atención: Fuerza Pública lanzó el cuarto bombardeo del gobierno de De La Espriella; fue contra el Frente 33 en Catatumbo",
+  "url": "https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/atencion-fuerza-publica-lanzo-el-cuarto-bombardeo-del-gobierno-de-de-la-espriella-fue-contra-el-frente-33-en-catatumbo-3592859",
+  "prueba": "Cuarto bombardeo en dos meses, entre Tibú y El Tarra."
+ },
+ {
+  "id": "35",
+  "bloque": "Catatumbo",
+  "medio": "El Tiempo",
+  "fecha": "11 oct 2026",
+  "titular": "Presidente De La Espriella se pronuncia tras bombardeo contra las disidencias en el Catatumbo: ‘Con los narcoterroristas no hay tregua’",
+  "url": "https://www.eltiempo.com/politica/gobierno/presidente-de-la-espriella-se-pronuncia-tras-bombardeo-contra-las-disidencias-en-el-catatumbo-con-los-narcoterroristas-no-hay-tregua-3592910",
+  "prueba": "Anuncio por X y video: “Anoche, mientras muchos colombianos descansaban, impartí directamente la orden”."
+ },
+ {
+  "id": "36",
+  "bloque": "Catatumbo",
+  "medio": "La Silla Vacía",
+  "fecha": "13 oct 2026",
+  "titular": "Bombardeo aprobado en video por Abelardo: 4 muertos, incluyendo una menor",
+  "url": "https://www.lasillavacia.com/en-vivo/bombardeo-aprobado-en-video-por-abelardo-4-muertos-incluyendo-una-menor/",
+  "prueba": "El presidente se grabó dando la orden por radioteléfono a las 10 p. m. del 10 de octubre."
+ },
+ {
+  "id": "37",
+  "bloque": "Catatumbo",
+  "medio": "La Silla Vacía",
+  "fecha": "13 oct 2026",
+  "titular": "Menor murió en el cuarto bombardeo del gobierno en El Catatumbo",
+  "url": "https://www.lasillavacia.com/en-vivo/menor-murio-en-el-cuarto-bombardeo-del-gobierno-en-el-catatumbo/",
+  "prueba": "Mora: la menor “se encontraba en función continua de combate”."
+ },
+ {
+  "id": "38",
+  "bloque": "Catatumbo",
+  "medio": "El Heraldo",
+  "fecha": "13 oct 2026",
+  "titular": "Gobierno confirma que una adolescente de 16 años murió en bombardeo en el Catatumbo",
+  "url": "https://www.elheraldo.co/colombia/2026/10/13/gobierno-confirma-que-una-adolescente-de-16-anos-murio-en-bombardeo-en-el-catatumbo/",
+  "prueba": "La confirmación la dio el ministro Mora, no el presidente que anunció el bombardeo."
+ },
+ {
+  "id": "39",
+  "bloque": "Catatumbo",
+  "medio": "Infobae",
+  "fecha": "13 oct 2026",
+  "titular": "Una menor de 16 años murió durante el bombardeo contra las disidencias de ‘Calarcá’ en el Catatumbo: esto fue lo que dijo el ministro de Defensa",
+  "url": "https://www.infobae.com/colombia/2026/10/13/una-menor-de-16-anos-murio-durante-el-bombardeo-contra-las-disidencias-de-calarca-en-el-catatumbo-esto-fue-lo-que-dijo-el-ministro-de-defensa/",
+  "prueba": "Versión del Ministerio de Defensa."
+ },
+ {
+  "id": "40",
+  "bloque": "Catatumbo",
+  "medio": "Semana",
+  "fecha": "13 oct 2026",
+  "titular": "MinDefensa entregó detalles del bombardeo contra disidencias de las Farc en Catatumbo: hay una menor de edad entre los muertos",
+  "url": "https://www.semana.com/nacion/articulo/mindefensa-entrego-detalles-del-bombardeo-contra-disidencias-de-las-farc-en-catatumbo-hay-una-menor-de-edad-entre-los-muertos/202636/",
+  "prueba": "Incluso Semana registra a la menor entre los muertos."
+ },
+ {
+  "id": "41",
+  "bloque": "Catatumbo",
+  "medio": "Radio Hoy",
+  "fecha": "13 oct 2026",
+  "titular": "Van siete menores muertos en cuatro bombardeos ordenados por De La Espriella",
+  "url": "https://www.radiohoy.com/2026/10/13/van-siete-menores-muertos-en-cuatro-bombardeos-ordenados-por-de-la-espriella/824753/",
+  "prueba": "El acumulado: siete menores en cuatro bombardeos en poco más de dos meses."
+ },
+ {
+  "id": "42",
+  "bloque": "Cúcuta",
+  "medio": "El Tiempo",
+  "fecha": "jul 2026",
+  "titular": "Con ultimátum a ilegales del Catatumbo, arrancaron los empalmes regionales de Abelardo de la Espriella en Cúcuta",
+  "url": "https://www.eltiempo.com/politica/abelardo-de-la-espriella/asi-va-el-encuentro-del-empalme-regional-que-adelanta-el-equipo-de-abelardo-de-la-espriella-en-cucuta-3569930",
+  "prueba": "El ultimátum del empalme: la promesa de orden en el Catatumbo."
+ },
+ {
+  "id": "43",
+  "bloque": "Cúcuta",
+  "medio": "Infobae",
+  "fecha": "8 oct 2026",
+  "titular": "Víctimas del Catatumbo esperan reunirse con el presidente De la Espriella durante su visita a Cúcuta: “Plantear soluciones concretas”",
+  "url": "https://www.infobae.com/colombia/2026/10/08/victimas-del-catatumbo-esperan-reunirse-con-el-presidente-de-la-espriella-durante-su-visita-a-cucuta-plantear-soluciones-concretas/",
+  "prueba": "Las víctimas prepararon reclamos para la visita anunciada."
+ },
+ {
+  "id": "44",
+  "bloque": "Cúcuta",
+  "medio": "La Opinión (Cúcuta)",
+  "fecha": "9 oct 2026",
+  "titular": "Indicadores de Jeremías: el presidente De la Espriella anuncia nueva visita a Cúcuta",
+  "url": "https://laopinion.co/politica/indicadores-de-jeremias-el-presidente-de-la-espriella-anuncia-nueva-visita-cucuta",
+  "prueba": "La visita fue anunciada por redes sociales."
+ },
+ {
+  "id": "45",
+  "bloque": "Cúcuta",
+  "medio": "Área Cúcuta",
+  "fecha": "13 oct 2026",
+  "titular": "Desdén del Gobierno en Cúcuta: De la Espriella cancela visita",
+  "url": "https://www.areacucuta.com/presidente-abelardo-de-la-espriella-cancelo-su-visita-a-cucuta-programada-para-hoy-13-de-octubre/",
+  "prueba": "Canceló la visita del 13 de octubre; tampoco fueron los ministros ni el director de Planeación."
+ },
+ {
+  "id": "46",
+  "bloque": "Cúcuta",
+  "medio": "Alerta",
+  "fecha": "13 oct 2026",
+  "titular": "Presidente Abelardo de la Espriella suspende su agenda de este martes en Cúcuta",
+  "url": "https://www.alerta.com.co/quejodromo/presidente-abelardo-de-la-espriellla-suspende-visita-cucuta-252781",
+  "prueba": "Confirmación de la cancelación por “cambios de última hora en la agenda”."
+ },
+ {
+  "id": "47",
+  "bloque": "Cifras",
+  "medio": "Semana",
+  "fecha": "12 oct 2026",
+  "titular": "Abelardo De La Espriella presentó balance de seguridad en su Gobierno: “Se acabó la era en la que el Estado retrocedía”",
+  "url": "https://www.semana.com/nacion/articulo/abelardo-de-la-espriella-presento-balance-de-seguridad-en-su-gobierno-se-acabo-la-era-en-la-que-el-estado-retrocedia/202603/",
+  "prueba": "El discurso del balance, el mismo día de la fuga de 41 presos."
+ },
+ {
+  "id": "48",
+  "bloque": "Cifras",
+  "medio": "El Colombiano",
+  "fecha": "13 oct 2026",
+  "titular": "De la Espriella presume resultados en seguridad, pero cifras ponen en duda el alcance de su balance",
+  "url": "https://www.elcolombiano.com/inicio/balance-seguridad-gobierno-de-la-espriella-cifras-incautaciones-capturas-HF42210520",
+  "prueba": "129.526 kg incautados el 9 de octubre y 200.982 kg tres días después; MinDefensa: la cocaína incautada ene-ago bajó 1 % frente a 2025."
+ },
+ {
+  "id": "49",
+  "bloque": "Cifras",
+  "medio": "Análisis Urbano",
+  "fecha": "oct 2026",
+  "titular": "De la Espriella destaca sus cifras de seguridad que muestran más continuidad que mejora",
+  "url": "https://analisisurbano.org/cifras-seguridad-de-la-espriella-incautaciones-capturas-colombia/",
+  "prueba": "Incautaciones de 2026: las más bajas de los últimos cinco años en periodos equivalentes."
+ },
+ {
+  "id": "50",
+  "bloque": "Cifras",
+  "medio": "Diario El Mundo (El Salvador)",
+  "fecha": "sep 2026",
+  "titular": "De la Espriella apuesta por la mano dura y el efectismo mediático como política de seguridad",
+  "url": "https://diario.elmundo.sv/el-mundo/de-la-espriella-apuesta-por-la-mano-dura-y-el-efectismo-mediatico-como-politica-de-seguridad",
+  "prueba": "Lectura internacional: balances diarios en X y efectismo."
+ },
+ {
+  "id": "51",
+  "bloque": "Primer día",
+  "medio": "Yahoo Noticias / AFP",
+  "fecha": "8 ago 2026",
+  "titular": "Atentados sacuden a Colombia en el primer día de gobierno",
+  "url": "https://es-us.noticias.yahoo.com/atentados-sacuden-colombia-d%C3%ADa-gobierno-215028350.html",
+  "prueba": "8 de agosto: drones contra la subestación de San Roque (Cesar), muere el subintendente Argemiro Rodelo; explosivo en peaje de la Panamericana (Cauca)."
+ },
+ {
+  "id": "52",
+  "bloque": "Primer día",
+  "medio": "El Español",
+  "fecha": "9 ago 2026",
+  "titular": "El primer día de mandato de De la Espriella: un muerto, ataques con drones a estaciones de policía y explosivos en peajes",
+  "url": "https://www.elespanol.com/mundo/america/20260809/primer-dia-mandato-espriella-muerto-ataques-drones-estaciones-policia-explosivos-peajes/1003744347818_0.html",
+  "prueba": "Lectura internacional del arranque del gobierno."
+ },
+ {
+  "id": "53",
+  "bloque": "Primer día",
+  "medio": "Infobae",
+  "fecha": "7 ago 2026",
+  "titular": "Ataques con drones y alertas por cilindros en las vías: así estuvo el orden público durante la posesión de Abelardo de la Espriella",
+  "url": "https://www.infobae.com/colombia/2026/08/07/en-vivo-asi-esta-la-situacion-de-orden-publico-en-medio-de-la-posesion-presidencial-de-abelardo-de-la-espriella-se-han-reportado-hallazgos-de-explosivos/",
+  "prueba": "Hostilidades desde el día de la posesión."
+ },
+ {
+  "id": "54",
+  "bloque": "Drones",
+  "medio": "Infobae",
+  "fecha": "10 oct 2026",
+  "titular": "Ataques con drones explosivos marcan récord en Colombia: van 176 en 2026 y dejan nueve uniformados muertos",
+  "url": "https://www.infobae.com/colombia/2026/10/10/ataques-con-drones-explosivos-marcan-record-en-colombia-van-176-en-2026-y-dejan-nueve-uniformados-muertos/",
+  "prueba": "Récord histórico de ataques con drones (1 ene–1 oct): 176, en 14 departamentos."
+ },
+ {
+  "id": "55",
+  "bloque": "Huila",
+  "medio": "Infobae",
+  "fecha": "3 oct 2026",
+  "titular": "Un soldado murió y otro resultó herido en Neiva, Huila, tras un ataque con drones explosivos de las disidencias de 'Iván Mordisco'",
+  "url": "https://www.infobae.com/colombia/2026/10/03/un-soldado-murio-y-otro-resulto-herido-en-neiva-huila-tras-un-ataque-con-drones-explosivos-de-las-disidencias-de-ivan-mordisco/",
+  "prueba": "Soldado Samuel Pinzón Barliza Ipuana, vereda Aipecito, 2 de octubre."
+ },
+ {
+  "id": "56",
+  "bloque": "Huila",
+  "medio": "La Nación (Neiva)",
+  "fecha": "oct 2026",
+  "titular": "Seguridad, a prueba: Huila sufrió sexto ataque con drones en la era de la ‘Patria Milagro’",
+  "url": "https://www.lanacion.com.co/seguridad-a-prueba-huila-sufrio-sexto-ataque-con-drones-en-la-era-de-la-patria-milagro/",
+  "prueba": "Seis ataques con drones en Huila desde que empezó el gobierno; el último contra la estación de Aipe."
+ },
+ {
+  "id": "57",
+  "bloque": "Huila",
+  "medio": "Semana",
+  "fecha": "oct 2026",
+  "titular": "Presidente De La Espriella ordena dar con los responsables del ataque con drones en Huila",
+  "url": "https://www.semana.com/nacion/articulo/presidente-de-la-espriella-ordena-dar-con-los-responsables-del-ataque-con-drones-en-huila/202658/",
+  "prueba": "La respuesta: una orden por redes."
+ },
+ {
+  "id": "58",
+  "bloque": "Cauca",
+  "medio": "Infobae",
+  "fecha": "10 oct 2026",
+  "titular": "Un policía muerto y siete heridos dejó un ataque armado contra patrulla de la Sijín en la vía Panamericana",
+  "url": "https://www.infobae.com/colombia/2026/10/10/un-policia-muerto-y-siete-heridos-dejo-un-ataque-armado-contra-patrulla-de-la-sijin-en-la-via-panamericana/",
+  "prueba": "9 de octubre, sector Mi Bohío entre Popayán y Timbío: explosivo y ráfagas de fusil."
+ },
+ {
+  "id": "59",
+  "bloque": "Cauca",
+  "medio": "El Tiempo",
+  "fecha": "11 oct 2026",
+  "titular": "Ataque con drones del Eln en Cauca dejó muerto a un soldado profesional",
+  "url": "https://www.eltiempo.com/amp/justicia/conflicto-y-narcotrafico/ataque-con-drones-del-eln-en-cauca-dejo-muerto-a-un-soldado-profesional-3592916",
+  "prueba": "Noche del 10 de octubre, la misma noche del bombardeo grabado en video."
+ },
+ {
+  "id": "60",
+  "bloque": "Cauca",
+  "medio": "El Colombiano",
+  "fecha": "12 oct 2026",
+  "titular": "Ataque con carro bomba en Cauca dejó tres civiles heridos y la vía Panamericana cerrada; esto se sabe",
+  "url": "https://www.elcolombiano.com/colombia/atentado-cauca-carro-bomba-via-panamericana-deja-tres-heridos-BA42175343",
+  "prueba": "Carro bomba destruye el peaje de El Bordo, 12 de octubre."
+ },
+ {
+  "id": "61",
+  "bloque": "Cauca",
+  "medio": "El Universal",
+  "fecha": "12 oct 2026",
+  "titular": "De la Espriella rechazó atentado con carro bomba en Cauca: “Los perseguiremos”",
+  "url": "https://www.eluniversal.com.co/colombia/2026/10/12/de-la-espriella-rechazo-atentado-con-carro-bomba-en-cauca-los-perseguiremos/",
+  "prueba": "Otra vez la respuesta es un mensaje."
+ },
+ {
+  "id": "62",
+  "bloque": "Cauca",
+  "medio": "Cambio",
+  "fecha": "oct 2026",
+  "titular": "Explosivos, vehículos acondicionados para ataques y un policía muerto: la violenta semana que vivió el Cauca",
+  "url": "https://cambiocolombia.com/conflicto-armado-en-colombia/articulo/2026/10/explosivos-vehiculos-acondicionados-para-ataques-y-un-policia-muerto-la-violenta-semana-que-vivio-el-cauca",
+  "prueba": "Balance de una semana en el Cauca."
+ },
+ {
+  "id": "63",
+  "bloque": "Cauca",
+  "medio": "El Tiempo",
+  "fecha": "oct 2026",
+  "titular": "Rescatan a menor de 16 años tras 20 días secuestrado en el Cauca: exigían $ 15.000 millones por su libertad",
+  "url": "https://www.eltiempo.com/colombia/cali/rescatan-a-menor-de-16-anos-tras-20-dias-secuestrado-en-el-cauca-exigian-15-000-millones-por-su-libertad-3592102",
+  "prueba": "Secuestro extorsivo de un menor durante 20 días (desde el 3 de octubre)."
+ },
+ {
+  "id": "64",
+  "bloque": "Valle",
+  "medio": "Semana",
+  "fecha": "13 oct 2026",
+  "titular": "Disidencias atacan con drones y explosivos subestación de la Policía en Potrerito, Valle del Cauca",
+  "url": "https://www.semana.com/nacion/cali/articulo/disidencias-atacan-con-drones-y-explosivos-subestacion-de-la-policia-en-potrerito-valle-del-cauca/202605/",
+  "prueba": "Jamundí, 13 de octubre."
+ },
+ {
+  "id": "65",
+  "bloque": "Valle",
+  "medio": "Infobae",
+  "fecha": "26 sep 2026",
+  "titular": "Atacan con explosivos a patrulla en Jamundí: uno detonó y otro fue destruido de forma controlada",
+  "url": "https://www.infobae.com/colombia/2026/09/26/atacan-con-explosivos-a-patrulla-en-jamundi-uno-detono-y-otro-fue-destruido-de-forma-controlada/",
+  "prueba": "Jamundí, 26 de septiembre."
+ },
+ {
+  "id": "66",
+  "bloque": "Valle",
+  "medio": "Cambio",
+  "fecha": "oct 2026",
+  "titular": "Ciudadano mexicano fue secuestrado en Cali y rescatado por el Gaula Militar",
+  "url": "https://cambiocolombia.com/pais/articulo/2026/10/los-cinco-dias-de-secuestro-que-vivio-un-ciudadano-mexicano-en-cali",
+  "prueba": "Secuestro de cinco días a un extranjero recién llegado al aeropuerto de Cali."
+ },
+ {
+  "id": "67",
+  "bloque": "Cúcuta",
+  "medio": "Infobae",
+  "fecha": "1 sep 2026",
+  "titular": "Atentado en Los Patios, Cúcuta: carro bomba explotó contra estación de Policía y dejó varios heridos",
+  "url": "https://www.infobae.com/colombia/2026/09/01/atentado-en-los-patios-cucuta-carro-bomba-exploto-contra-estacion-de-policia-y-dejo-varios-heridos/",
+  "prueba": "31 de agosto: un muerto y 11 heridos; atribuido al ELN."
+ },
+ {
+  "id": "68",
+  "bloque": "Cúcuta",
+  "medio": "Infobae",
+  "fecha": "2 sep 2026",
+  "titular": "Alcalde de Cúcuta atribuyó el atentado en Los Patios a represalias de grupos armados tras ofensiva militar: “Es una respuesta natural”",
+  "url": "https://www.infobae.com/colombia/2026/09/02/alcalde-de-cucuta-atribuyo-el-atentado-en-los-patios-a-represalias-de-grupos-armados-tras-ofensiva-militar-es-una-respuesta-natural/",
+  "prueba": "El propio alcalde lee el atentado como retaliación a la ofensiva."
+ },
+ {
+  "id": "69",
+  "bloque": "Cúcuta",
+  "medio": "Infobae",
+  "fecha": "17 sep 2026",
+  "titular": "De la Espriella endureció su postura frente al ELN por el secuestro de tres policías en Norte de Santander: “No habrá canje”",
+  "url": "https://www.infobae.com/colombia/2026/09/17/de-la-espriella-endurecio-su-postura-frente-al-eln-por-el-secuestro-de-tres-policias-en-norte-de-santander-no-habra-canje/",
+  "prueba": "Un mayor y dos patrulleros de la Dijín y una civil, secuestrados desde el 17 de agosto en la vía Cúcuta–Ocaña."
+ },
+ {
+  "id": "70",
+  "bloque": "Cúcuta",
+  "medio": "Asuntos Legales",
+  "fecha": "sep 2026",
+  "titular": "ELN entrega prueba de supervivencia de policías secuestrados en Norte de Santander",
+  "url": "https://www.asuntoslegales.com.co/actualidad/eln-entrega-prueba-de-supervivencia-de-policias-secuestrados-en-norte-de-santander-4483999",
+  "prueba": "Un mes después siguen secuestrados."
+ },
+ {
+  "id": "71",
+  "bloque": "Catatumbo",
+  "medio": "Vanguardia",
+  "fecha": "12 oct 2026",
+  "titular": "Tres militares heridos tras bombardeo contra las disidencias de las Farc en el Catatumbo",
+  "url": "https://www.vanguardia.com/colombia/2026/10/12/tres-militares-heridos-tras-bombardeo-contra-las-disidencias-de-las-farc-en-el-catatumbo/",
+  "prueba": "Campo minado en la fase terrestre del cuarto bombardeo; un soldado grave."
+ },
+ {
+  "id": "72",
+  "bloque": "Catatumbo",
+  "medio": "Infobae",
+  "fecha": "14 oct 2026",
+  "titular": "Murió soldado herido en bombardeo contra el frente 33 de las disidencias de las Farc en el Catatumbo",
+  "url": "https://www.infobae.com/colombia/2026/10/14/murio-soldado-herido-en-bombardeo-contra-el-frente-33-de-las-disidencias-de-las-farc-en-el-catatumbo/",
+  "prueba": "VERIFICAR al abrir: titular visto en resultados de búsqueda, texto no consultado."
+ },
+ {
+  "id": "73",
+  "bloque": "Barranquilla",
+  "medio": "Las2orillas",
+  "fecha": "ago 2026",
+  "titular": "La ola de masacres en Barranquilla que obligó a De la Espriella a hacer de urgencia un consejo de seguridad",
+  "url": "https://www.las2orillas.co/la-ola-de-masacres-en-barranquilla-que-obligo-a-de-la-espriella-a-hacer-de-urgencia-un-consejo-de-seguridad/",
+  "prueba": "23 de agosto: consejo extraordinario tras masacre en Las Nieves con dos menores muertos."
+ },
+ {
+  "id": "74",
+  "bloque": "Barranquilla",
+  "medio": "El Heraldo",
+  "fecha": "28 sep 2026",
+  "titular": "“En Barranquilla redujimos los homicidios en 64%”: De la Espriella presenta cifras de seguridad nacional",
+  "url": "https://www.elheraldo.co/colombia/2026/09/28/en-barranquilla-reducimos-los-homicidios-en-64-de-la-espriella-presenta-cifras-de-seguridad-nacional/",
+  "prueba": "La cifra que después desmintió AFP."
+ },
+ {
+  "id": "75",
+  "bloque": "Barranquilla",
+  "medio": "AFP Factual (vía Mala Espina)",
+  "fecha": "5 oct 2026",
+  "titular": "Reducción de homicidios en Barranquilla presentada por De la Espriella no coincide con datos oficiales",
+  "url": "https://www.malaespinacheck.cl/mundo/2026/10/05/reduccion-de-homicidios-en-barranquilla-presentada-por-de-la-espriella-no-coincide-con-datos-oficiales/",
+  "prueba": "Agosto 2026 vs agosto 2025: de 42 a 57 homicidios, +36 %. El 64 % compara cinco semanas con las cinco anteriores."
+ },
+ {
+  "id": "76",
+  "bloque": "Barranquilla",
+  "medio": "La Silla Vacía (Detector)",
+  "fecha": "oct 2026",
+  "titular": "Caída en delitos que destacó Abelardo es real, pero omite contexto",
+  "url": "https://www.lasillavacia.com/detector-de-mentiras/caida-en-delitos-que-destaco-abelardo-es-real-pero-omite-contexto/",
+  "prueba": "Verificación de la alocución del 27 de septiembre."
+ },
+ {
+  "id": "77",
+  "bloque": "Barranquilla",
+  "medio": "El Tiempo",
+  "fecha": "oct 2026",
+  "titular": "Barranquilla vive sus semanas menos violentas de 2026: qué hay detrás de la caída de los homicidios y por qué la calma todavía es frágil",
+  "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-vive-sus-semanas-menos-violentas-de-2026-que-hay-detras-de-la-caida-de-los-homicidios-y-por-que-la-calma-todavia-es-fragil-3589692",
+  "prueba": "Hasta El Tiempo advierte que la calma es frágil."
+ },
+ {
+  "id": "78",
+  "bloque": "Barranquilla",
+  "medio": "El Espectador",
+  "fecha": "11 oct 2026",
+  "titular": "Gobierno denuncia atentado a funcionarios del Inpec en Barranquilla y amenazas al presidente",
+  "url": "https://www.elespectador.com/judicial/gobierno-denuncia-atentado-a-funcionarios-del-inpec-en-barraquilla-y-amenazas-al-presidente/",
+  "prueba": "10 de octubre: dos dragoneantes baleados al salir de la cárcel El Bosque; cinco días antes, atentado contra la fachada de la Modelo."
+ },
+ {
+  "id": "79",
+  "bloque": "Barranquilla",
+  "medio": "El Tiempo",
+  "fecha": "11 oct 2026",
+  "titular": "‘Quien se mete con los funcionarios del Gobierno, se mete con el Tigre’: De la Espriella tras atentado contra dos guardianes del Inpec en Barranquilla",
+  "url": "https://eltiempo.com/colombia/barranquilla/quien-se-mete-con-los-funcionarios-del-gobierno-se-mete-con-el-tigre-de-la-espriella-tras-atentado-contra-dos-guardianes-del-inpec-en-barranquilla-3592939",
+  "prueba": "La respuesta, de nuevo, es una frase."
+ },
+ {
+  "id": "80",
+  "bloque": "Masacres",
+  "medio": "Semana",
+  "fecha": "2026",
+  "titular": "Masacres en Colombia siguen en aumento: 2026 ya superó el registro de todo el año pasado",
+  "url": "https://www.semana.com/nacion/articulo/masacres-en-colombia-siguen-en-aumento-2026-ya-supero-el-registro-de-todo-el-ano-pasado/202617/",
+  "prueba": "En 2025 Indepaz contó 78 masacres; 2026 ya las superó."
+ },
+ {
+  "id": "81",
+  "bloque": "Masacres",
+  "medio": "Análisis Urbano",
+  "fecha": "oct 2026",
+  "titular": "Colombia registra 97 masacres en 2026: 17 desde la posesión del presidente Abelardo De La Espriella",
+  "url": "https://analisisurbano.org/colombia-registra-97-masacres-en-2026-17-desde-la-posesion-del-presidente-abelardo-de-la-espriella/",
+  "prueba": "17 masacres en dos meses de gobierno."
+ },
+ {
+  "id": "82",
+  "bloque": "Masacres",
+  "medio": "Infobae",
+  "fecha": "13 oct 2026",
+  "titular": "Confirman la masacre número 98 en Colombia en 2026: tres personas fueron víctimas de un ataque armado en Caquetá",
+  "url": "https://www.infobae.com/colombia/2026/10/13/confirman-la-masacre-numero-98-en-colombia-en-2026-tres-personas-fueron-victimas-de-un-ataque-armado-en-caqueta/",
+  "prueba": "El Paujil, 12 de octubre, el día de la alocución del balance."
+ },
+ {
+  "id": "83",
+  "bloque": "Masacres",
+  "medio": "Infobae",
+  "fecha": "6 oct 2026",
+  "titular": "Tres personas fueron asesinadas en Segovia, Antioquia: las encontraron con las manos amarradas e impactos de bala",
+  "url": "https://www.infobae.com/colombia/2026/10/06/tres-personas-fueron-asesinadas-en-segovia-antioquia-tenian-las-manos-amarradas-e-impactos-de-bala/",
+  "prueba": "Masacre 97, con signos de tortura; una víctima de 17 años."
+ },
+ {
+  "id": "84",
+  "bloque": "Masacres",
+  "medio": "El Colombiano",
+  "fecha": "6 oct 2026",
+  "titular": "Se agudiza el orden público en Segovia, Antioquia: reportan el hallazgo de tres cuerpos sin vida, ya son 5 en 24 horas",
+  "url": "https://www.elcolombiano.com/antioquia/segovia-antioquia-cinco-cuerpos-asesinados-en-24-horas-HL41974605",
+  "prueba": "Cinco muertos en 24 horas en el nordeste antioqueño."
+ },
+ {
+  "id": "85",
+  "bloque": "Líderes",
+  "medio": "Infobae",
+  "fecha": "27 sep 2026",
+  "titular": "Más de 110 líderes sociales han sido asesinados durante 2026 en Colombia, según alertó la Defensoría del Pueblo",
+  "url": "https://www.infobae.com/colombia/2026/09/27/mas-de-110-lideres-sociales-han-sido-asesinados-durante-2026-en-colombia-segun-alerto-la-defensoria-del-pueblo/",
+  "prueba": "Cifra de la Defensoría."
+ },
+ {
+  "id": "86",
+  "bloque": "Líderes",
+  "medio": "Análisis Urbano",
+  "fecha": "sep 2026",
+  "titular": "Van 116 líderes sociales asesinados en Colombia durante 2026; 27 desde el inicio del Gobierno de La Espriella",
+  "url": "https://analisisurbano.org/van-116-lideres-sociales-asesinados-en-colombia-durante-2026-27-desde-el-inicio-del-gobierno-de-la-espriella/",
+  "prueba": "27 líderes asesinados en los primeros 50 días de gobierno."
+ },
+ {
+  "id": "87",
+  "bloque": "Líderes",
+  "medio": "Hoy Diario del Magdalena",
+  "fecha": "13 oct 2026",
+  "titular": "Asesinan en Cauca a la lideresa Luz Deisy Peñafiel, víctima social 125 este año",
+  "url": "https://www.hoydiariodelmagdalena.com.co/archivos/1311029/asesinan-en-cauca-a-la-lideresa-luz-deisy-penafiel-victima-social-125-este-ano",
+  "prueba": "Santa Rosa, Cauca, 12 de octubre: sicarios en moto en su casa."
+ },
+ {
+  "id": "88",
+  "bloque": "Líderes",
+  "medio": "El Espectador",
+  "fecha": "oct 2026",
+  "titular": "Defensoría pide investigar muerte de líder afrodescendiente en operativo de fuerza pública",
+  "url": "https://www.elespectador.com/judicial/defensoria-pide-investigar-muerte-de-lider-afrodescendiente-en-operativo-de-fuerza-publica/",
+  "prueba": "Keiner Banguera, El Charco (Nariño), 2 de octubre: el Gobierno lo presentó como disidente; su comunidad dice que era líder del Consejo Comunitario Río Tapaje."
+ },
+ {
+  "id": "89",
+  "bloque": "Fuerza Pública",
+  "medio": "Cambio",
+  "fecha": "8 oct 2026",
+  "titular": "Fuerza Pública bajo la lupa: cuatro muertes en procedimientos militares y policiales que siguen sin esclarecerse",
+  "url": "https://cambiocolombia.com/pais/articulo/2026/10/primero-se-debe-preguntar-antes-que-disparar-indepaz-analiza-cuatro-muertes-que-ponen-bajo-la-lupa-a-la-fuerza-publica",
+  "prueba": "Donovan Balanta (Bogotá, taser, 20 sep), Ricardo Andrés Rodríguez de 18 años (Santa Marta, operativo contra los Pachenca), Keiner Banguera (Nariño) y Luis Alfredo Echeverry (Cauca)."
+ },
+ {
+  "id": "90",
+  "bloque": "Chocó",
+  "medio": "Infobae",
+  "fecha": "26 ago 2026",
+  "titular": "Chocó bajo doble emergencia: combates de ELN y Clan del Golfo dejan más de 1.300 afectados",
+  "url": "https://www.infobae.com/colombia/2026/08/26/choco-bajo-doble-emergencia-combates-de-eln-y-clan-del-golfo-dejan-mas-de-1300-afectados/",
+  "prueba": "Sipí y Nóvita: 405 familias evacuadas; ataque con dron el 23 de agosto."
+ },
+ {
+  "id": "91",
+  "bloque": "Chocó",
+  "medio": "Cambio",
+  "fecha": "ago 2026",
+  "titular": "Defensoría alerta por enfrentamientos entre ELN y Clan del Golfo en Chocó",
+  "url": "https://cambiocolombia.com/conflicto-armado-en-colombia/articulo/2026/8/alerta-de-la-defensoria-del-pueblo-por-enfrentamientos-armados-en-la-subregion-del-san-juan-en-choco",
+  "prueba": "La Defensoría pide al Gobierno activar rutas humanitarias."
+ },
+ {
+  "id": "92",
+  "bloque": "Bogotá",
+  "medio": "Publimetro",
+  "fecha": "11 oct 2026",
+  "titular": "¿Quién ordenó asesinar al vigilante de una discoteca en Bogotá? Revelan escalofriante mensaje que dejaron los sicarios",
+  "url": "https://www.publimetro.co/bogota/2026/10/11/quien-ordeno-asesinar-al-vigilante-de-una-discoteca-en-bogota-revelan-escalofriante-mensaje-que-dejaron-los-sicarios/",
+  "prueba": "Engativá, 8 de octubre: vigilante de 59 años asesinado con panfleto de 'Los Satanás'."
+ },
+ {
+  "id": "93",
+  "bloque": "Bogotá",
+  "medio": "Minuto60",
+  "fecha": "oct 2026",
+  "titular": "La denuncia por extorsión a una discoteca en Engativá que terminó con la muerte de un vigilante",
+  "url": "https://www.minuto60.com/bogota/engativa-denuncia-extorsion-que-termino-tragedia/16853",
+  "prueba": "El dueño dice que denunció al Gaula durante diez meses sin protección."
+ },
+ {
+  "id": "94",
+  "bloque": "Bogotá",
+  "medio": "Cambio",
+  "fecha": "oct 2026",
+  "titular": "Militarización de Bogotá: lo que está en juego con el cabildo abierto",
+  "url": "https://cambiocolombia.com/pais/articulo/2026/10/el-ejercito-en-las-calles-lo-que-busca-el-concejal-uscategui-con-el-cabildo-abierto-sobre-militarizacion-de-bogota",
+  "prueba": "El debate en la capital ya es si sacar al Ejército a la calle."
+ },
+ {
+  "id": "95",
+  "bloque": "La Guajira",
+  "medio": "Vanguardia",
+  "fecha": "24 sep 2026",
+  "titular": "ACSN extiende el paro armado en Magdalena y La Guajira hasta el viernes 25 de septiembre",
+  "url": "https://www.vanguardia.com/colombia/2026/09/24/acsn-extiende-el-paro-armado-en-magdalena-y-la-guajira-hasta-el-viernes-25-de-septiembre/",
+  "prueba": "El paro no fue solo Santa Marta: también La Guajira."
+ },
+ {
+  "id": "96",
+  "bloque": "La Guajira",
+  "medio": "Río Noticias",
+  "fecha": "sep 2026",
+  "titular": "Atacan con explosivos el tren de Cerrejón durante paro armado en La Guajira",
+  "url": "https://rionoticias.co/atacan-con-explosivos-el-tren-de-cerrejon-durante-paro-armado-en-la-guajira/",
+  "prueba": "22 de septiembre, Uribia: explosivos contra el tren del Cerrejón."
+ },
+ {
+  "id": "97",
+  "bloque": "La Guajira",
+  "medio": "Infobae",
+  "fecha": "24 sep 2026",
+  "titular": "Autodefensas Conquistadores de la Sierra Nevada anunciaron el fin del paro armado y así reaccionó el gobierno de Abelardo de la Espriella: “La presión militar empieza a dar resultados”",
+  "url": "https://www.infobae.com/colombia/2026/09/24/autodefensas-conquistadores-de-la-sierra-nevada-anunciaron-el-fin-del-paro-armado-y-asi-reacciono-el-gobierno-de-abelardo-de-la-espriella-la-presion-militar-empieza-a-dar-resultados/",
+  "prueba": "El Gobierno se atribuye un fin de paro que decretaron las propias ACSN."
+ }
 ]
