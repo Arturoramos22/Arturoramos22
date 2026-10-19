@@ -23,15 +23,25 @@ Corte: 19 de octubre de 2026. Fuentes: Gobierno (resoluciones, Mindefensa, Fisca
 
 | Indicador | 2025 | 2026 (a la fecha) | Fuente |
 |---|---|---|---|
-| Personas desplazadas | **101.587** (≈27 % de la población de la subregión) | **2.447** en 13 desplazamientos masivos (corte 2 jun), sobre todo en Tibú y El Tarra | Defensoría del Pueblo |
-| Inscritas en el RUV por la crisis | **105.203** (16 ene–7 dic 2025) | — | Defensoría con datos del RUV (Unidad para las Víctimas) |
+| Personas desplazadas | **101.587** (≈27 % de la población de la subregión) | **2.447**, solo en 13 desplazamientos masivos (corte 2 jun); no cuenta los individuales | Defensoría del Pueblo |
 | Desplazados acumulados (estimación ONU) | — | ≈ **100.000**, la mitad de la población de la región | ONU Noticias (may 2026) |
-| Confinados | 3.772 en el RUV (subregistro); solo en Tibú, 28.848 en la primera semana | — | Defensoría |
-| Homicidios | **163** durante la crisis (al menos 10 líderes, 6 firmantes de paz y 10 menores) | Sin consolidado oficial | Defensoría |
-| Secuestros (2025) | 121 liberados por mediación humanitaria; 59 seguían en cautiverio | — | Defensoría |
-| Ataques con drones | 275 en 2025 (394 entre abr 2024 y dic 2025) | 18 ataques y 39 víctimas (corte 1 ago) | Defensoría (2025) / Corporeddeh, ONG regional (2026) |
+| Muertos | **163** homicidios (consolidado de todo Norte de Santander). Gobernación (PMU): **166** muertos al 13 ene 2026, 19 de ellos de la fuerza pública | Sin cifra oficial consolidada | Defensoría / PMU vía FIP |
+| Secuestros (2025) | 180 secuestrados: 121 liberados por mediación humanitaria y 59 seguían en cautiverio | — | Defensoría |
+| Drones: ataques | Sin cifra del Catatumbo. *Los 275 ataques de 2025 son de todo el país* (394 entre abr 2024 y dic 2025) | **42** en Norte de Santander (ene-oct, FIP); 18 en el Catatumbo (al 1 ago, Corporeddeh) | Defensoría / FIP / Corporeddeh |
+| Drones: víctimas | 9 muertos en el Catatumbo (5 civiles, 4 uniformados). Corporeddeh: 55 víctimas | **69** víctimas al 8 sep: 23 civiles y 46 de la fuerza pública | Defensoría / Corporeddeh (ONG regional) |
 | Reclutamiento de menores | 1.173 niños, niñas y adolescentes reclutados en el país entre 2024 y jul 2026 | | Defensoría (vía prensa) |
 | Alerta internacional | — | Masacre de 6 personas en Ábrego (19 may), atribuida al ELN; “grave deterioro” de la seguridad | Misión ONU, MAPP-OEA, Conferencia Episcopal |
+
+## 2b. Víctimas: registro oficial y subregistro
+
+| Fuente | Cifra | Corte | Tipo |
+|---|---|---|---|
+| Unidad para las Víctimas (RUV) | **109.028** personas incluidas: 102.857 desplazadas, 8.222 amenazadas, 6.405 confinadas (una persona puede tener varios hechos) | pub. 7 ene 2026 | Oficial |
+| Defensoría con datos del RUV | 105.203 incluidas: 101.587 desplazadas, 7.777 amenazadas, 3.772 confinadas | 7 dic 2025 | Oficial |
+| Gobernación (PMU) | ≈92.000 desplazados | 13 ene 2026 | Oficial departamental |
+| **Subregistro: confinamiento** | El RUV registra 3.772 a 6.405 confinados en toda la crisis, pero **solo en Tibú hubo 28.848 en la primera semana**. La propia Defensoría habla de “subregistro crítico” | 2025 | Oficial (Defensoría) |
+| **Subregistro: 2026** | Los 2.447 desplazados de la Defensoría son solo los de eventos masivos. Los individuales y gota a gota no están en esa cifra | 2 jun 2026 | Oficial (Defensoría) |
+| Asociación Nacional de Víctimas | Más de **140.000** desplazados en 21 meses | oct 2026 | No oficial; sin metodología pública |
 
 ## 3. Datos para cada pregunta
 
@@ -61,6 +71,20 @@ Corte: 19 de octubre de 2026. Fuentes: Gobierno (resoluciones, Mindefensa, Fisca
 | Minas | Las delegaciones informaron que la instalación se retrasó porque hubo que ampliar el desminado | El Nuevo Siglo (jul 2025) |
 | Entrada a cuentagotas | Avendaño propuso entrar por grupos, con 40 a 50 al comienzo, y avanzar solo si se cumplían otras fases (jurídica, retorno de comunidades, sustitución de cultivos) | El Espectador (may 2025) |
 | Riesgo judicial de los cabecillas | Jhon Mechas tiene circular roja de Interpol desde 2021. En una primera fase quedaban fuera de las ZUT los que tuvieran extradición vigente. *No hay confirmación oficial de que esa exclusión se aplicara al 33* | Infobae (may 2026), El Heraldo (2021) |
+
+## 6. Verificación de los datos sobre drones que le pasaron
+
+| Dato recibido | Qué dicen las fuentes | Veredicto |
+|---|---|---|
+| 24 ataques en 2025 | No hay cifra pública de ataques en el Catatumbo en 2025. La Defensoría da 275 en todo el país y, para el Catatumbo, solo muertos: 9 (5 civiles, 4 uniformados). Corporeddeh: 55 víctimas en 2025 | **No confirmado.** Pedir la fuente |
+| 39 ataques en 2026 | FIP: 42 en todo Norte de Santander (ene-oct). Corporeddeh: 18 en el Catatumbo al 1 ago. **Ojo:** “39” es el número de *víctimas* (no de ataques) del informe de Corporeddeh de agosto | **Posible, no confirmado.** Puede ser una confusión entre ataques y víctimas |
+| Civiles: 2 muertos | Corporeddeh: 2 civiles muertos en 2026 (al 1 ago). Los casos: El Tarra (2 jun) y un niño de 13 años en La Gabarra, Tibú (jun) | **Coincide** (2026) |
+| Civiles: 29 heridos | Corporeddeh: 13 heridos al 1 ago; 23 víctimas civiles al 8 sep (unos 21 heridos si se restan los 2 muertos) | **No confirmado.** La última cifra verificable es menor (~21) |
+| Fuerza pública: 11 muertos | Corporeddeh: 5 al 1 ago. Después: El Carmen, 13 ago (1); Ábrego, 15 ago (1); Ocaña, 4 sep (2 o 3, según la fuente). Total: 9 a 10 | **Cercano** (9-10 documentados). No hay consolidado oficial |
+| Fuerza pública: 38 heridos | Corporeddeh: 19 al 1 ago. Después: El Carmen (4), base La Esmeralda en Convención (2), Ábrego (5), Ocaña (4), 3 policías en Guamalito = **37** | **Coincide** casi exacto |
+| Ataques recientes en Sardinata, Tibú y El Tarra | 17 oct: drones en La Galicia y Palermo (Tibú) y combates en Corinto (Sardinata), con desplazamiento en caravana. Sin balance de víctimas. De El Tarra no encontré reporte de octubre | **Tibú y Sardinata: sí.** El Tarra: sin confirmar |
+
+**No mezclar:** el soldado que murió tras el bombardeo del 10 de octubre cayó en un **campo minado**, no fue víctima de un dron. Las cifras de Corporeddeh excluyen a los integrantes de los grupos armados y solo cuentan casos verificados. Para 2026 no hay un consolidado oficial del Ministerio de Defensa ni de la Defensoría.
 
 ## Cuidado con estos datos
 
@@ -107,3 +131,15 @@ Corte: 19 de octubre de 2026. Fuentes: Gobierno (resoluciones, Mindefensa, Fisca
 - El Tiempo, fin del diálogo con Comuneros del Sur: https://www.eltiempo.com/amp/politica/proceso-de-paz/sigue-el-desmonte-de-la-paz-total-gobierno-acabo-los-dialogos-con-comuneros-del-sur-y-las-bandas-de-medellin-3583525
 - Pares, Comuneros del Sur: https://www.pares.com.co/comuneros-del-sur-entre-la-desmovilizacion-posible-y-los-limites-de-la-paz-negociada-en-narino/
 - El Heraldo, circular roja contra Jhon Mechas: https://www.elheraldo.co/colombia/2021/08/01/interpol-emite-circular-roja-contra-jhon-mechas-838527/
+- Radio Nacional, cifras del RUV de la Unidad para las Víctimas (ene 2026): https://www.radionacional.co/noticias-colombia/inversion-en-el-catatumbo-2025
+- FIP, 12 meses de guerra en el Catatumbo (cifras del PMU): https://ideaspaz.org/publicaciones/noticias/2026-01/los-12-meses-de-guerra-en-el-catatumbo
+- La FM, 124 víctimas de drones entre 2025 y 2026 (Corporeddeh): https://www.lafm.com.co/orden-publico/catatumbo-drones-grupos-armados-fuerza-publica-410767
+- Canal TRO, 75 víctimas de drones (Corporeddeh, jun 2026): https://canaltro.com/drones-explosivos-catatumbo/
+- Vanguardia, FIP: 42 ataques en Norte de Santander (oct 2026): https://www.vanguardia.com/colombia/2026/10/10/drones-explosivos-en-el-catatumbo-asi-han-evolucionado-los-ataques-del-eln-y-disidencias-de-las-farc/
+- El Universal, 69 víctimas (23 civiles, 46 de la fuerza pública): https://www.eluniversal.com.co/colombia/2026/10/11/drones-explosivos-en-el-catatumbo-asi-han-evolucionado-los-ataques-del-eln-y-las-disidencias/
+- El Tiempo, La Gabarra: un niño muerto y 7 heridos por drones (jun 2026): https://www.eltiempo.com/amp/justicia/conflicto-y-narcotrafico/un-menor-murio-y-siete-personas-resultaron-heridas-en-catatumbo-tras-el-estallido-de-drones-con-explosivos-3565462
+- El Tiempo, El Carmen: un suboficial muerto y 4 heridos (ago 2026): https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/nuevo-ataque-con-drones-contra-tropas-en-el-carmen-catatumbo-deja-un-suboficial-asesinado-y-cuatro-soldados-heridos-3578397
+- El Tiempo, base La Esmeralda: 2 soldados heridos (ago 2026): https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/atencion-ataque-con-drones-dejo-dos-soldados-heridos-en-base-militar-del-catatumbo-que-se-sabe-3578085
+- El Tiempo, Ábrego: un soldado muerto y 5 heridos (ago 2026): https://www.eltiempo.com/amp/justicia/conflicto-y-narcotrafico/el-ejercito-nacional-confirmo-la-muerte-de-un-soldado-tras-ataque-con-drones-en-abrego-norte-de-santander-otros-cinco-militares-resultaron-heridos-3578720
+- El Colombiano, Ocaña: 3 militares muertos y 4 heridos (sep 2026): https://www.elcolombiano.com/colombia/ataque-drones-ocana-norte-de-santander-tres-militares-muertos-FL40697561
+- Vanguardia, Guamalito: 3 policías heridos (sep 2026): https://www.vanguardia.com/colombia/2026/09/05/otro-ataque-con-drones-en-norte-de-santander-deja-tres-heridos/
