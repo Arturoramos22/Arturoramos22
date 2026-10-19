@@ -41,6 +41,27 @@ Corte: 19 de octubre de 2026. Fuentes: Gobierno (resoluciones, Mindefensa, Fisca
 | **2. ¿Qué pasa con la ZUT de Tibú y lo pactado?** | La ZUT **nunca se instaló**: no había nadie concentrado. Su prórroga (Res. 474) vencía hacia julio de 2026. Al cerrar la mesa (Res. 343) se cae su base: las órdenes de captura suspendidas para quienes fueran a la zona ya se reactivaron. Precedente: el Gobierno cerró la ZUT de Putumayo incluso con un grupo ya desarmado y por encima de un juez. El presidente dijo que los que quieran salir de la criminalidad tendrán “los mecanismos de la ley para someterse a la justicia”: sometimiento individual, no negociación | No encontré una resolución que derogue expresamente la ZUT de Tibú. Pídala a la Consejería Comisionada de Paz. Tampoco hay información pública sobre los proyectos comunitarios pactados en la mesa (sustitución, inversión) |
 | **3. ¿Los cabecillas que negociaban son ahora objetivos militares?** | Sí, en los hechos. Perdieron el reconocimiento de voceros (resoluciones del 28 de agosto) y la Fiscalía reactivó sus órdenes de captura: Calarcá, Andrey Avendaño, Jhon Mechas (Javier Alfonso Velosa) y Richard (Farby Edisson Parra). El Gobierno llama a Andrey, Mechas y Richard “objetivos de alto valor”, y el bombardeo del 10 de octubre buscaba a Andrey, que salió ileso según inteligencia citada por Semana. Recompensa de hasta $3.000 millones por Andrey. Semana reporta movimientos de Mechas y Andrey hacia Venezuela | La recompensa por Jhon Mechas no está confirmada. El paso a Venezuela es un dato de inteligencia publicado por Semana, sin confirmación oficial |
 
+## 4. Zonas de Ubicación Temporal (ZUT): cómo están hoy
+
+| Zona | Grupo | Quiénes debían entrar | Situación a octubre de 2026 | Fuente |
+|---|---|---|---|---|
+| Tibú (Norte de Santander) | Frente 33 (EMBF, Calarcá) | “Combatientes y armas del Frente 33” (Petro). Para empezar, 40 a 50, según Andrey Avendaño. No hay cifra total oficial ni lista pública de mandos | **Nunca funcionó.** No hay ningún reporte de que alguien haya entrado. La prórroga vencía hacia julio de 2026 y la mesa se cerró en agosto | Res. 161 y 474 / El Espectador |
+| Valle del Guamuez (Putumayo) | CNEB (Walter Mendoza) | 99 integrantes | **La única que funcionó:** los 99 entraron y dejaron las armas el 18 de junio. El Gobierno ordenó cerrarla (Res. 389), pero un juez de Puerto Asís suspendió el cierre 6 meses (9 oct). **Sigue abierta** | El Tiempo / El Espectador |
+| Mallama (Nariño) | Comuneros del Sur | 400 de unos 2.000 integrantes | **Nunca se instaló.** Diálogos terminados (ago-sep). Se firmó la extradición de su jefe, alias HH (26 ago) | El Tiempo / Pares |
+| Tierralta (Córdoba) y 2 en Chocó | Clan del Golfo | 400, sin extraditables. La Fiscalía no suspendió 29 órdenes de captura | **Nunca funcionó.** El ingreso del 25 de junio se suspendió y en septiembre se retiró a los delegados del Gobierno (Res. 390) | Infobae / El Tiempo |
+| Nariño (2.ª zona) | CNEB | Sin cifra pública | No encontré que haya llegado a funcionar | El Espectador |
+
+## 5. ¿Por qué los comandantes del Frente 33 nunca llegaron a Tibú?
+
+| Razón | Dato | Fuente |
+|---|---|---|
+| El jefe máximo no quería zonas | Calarcá rechazó las ZUT. Otros bloques dijeron que nunca se pactaron en la mesa. Solo Andrey Avendaño, el mando político del 33, aceptó. Calarcá llevaba casi un año sin ir a la mesa | El Espectador (may 2025), Infobae (jun 2026) |
+| No iban a desarmarse | Avendaño: la zona no implica desmovilización, “las armas son del pueblo” y “lo que no está en juego es el término entrega de armas” | Infobae, El Espectador (may 2025) |
+| La guerra con el ELN | Combates casi diarios en Tibú; el ELN conocería la ubicación de la zona (Crisis Group). Concentrarse era quedar expuestos. Y no había cese al fuego (Mindefensa, mar 2026) | El Espectador |
+| Minas | Las delegaciones informaron que la instalación se retrasó porque hubo que ampliar el desminado | El Nuevo Siglo (jul 2025) |
+| Entrada a cuentagotas | Avendaño propuso entrar por grupos, con 40 a 50 al comienzo, y avanzar solo si se cumplían otras fases (jurídica, retorno de comunidades, sustitución de cultivos) | El Espectador (may 2025) |
+| Riesgo judicial de los cabecillas | Jhon Mechas tiene circular roja de Interpol desde 2021. En una primera fase quedaban fuera de las ZUT los que tuvieran extradición vigente. *No hay confirmación oficial de que esa exclusión se aplicara al 33* | Infobae (may 2026), El Heraldo (2021) |
+
 ## Cuidado con estos datos
 
 - El ministro de Defensa aparece como **Jorge Enrique Mora** y como Jorge Eduardo Mora según el medio. Es el general (r) Jorge Mora.
@@ -74,3 +95,15 @@ Corte: 19 de octubre de 2026. Fuentes: Gobierno (resoluciones, Mindefensa, Fisca
 - La FM, la Defensora cuestiona los bombardeos: https://www.lafm.com.co/orden-publico/iris-marin-cuestiona-la-muerte-de-menores-en-bombardeos-y-pide-dialogo-en-las-protestas-413857
 - Infobae, combates del 17-18 de octubre: https://www.infobae.com/colombia/2026/10/18/combates-entre-el-eln-y-disidencias-de-las-farc-en-el-catatumbo-provocan-desplazamientos-y-ataques-con-drones/
 - Vanguardia, drones en 2026 (Corporeddeh): https://www.vanguardia.com/colombia/2026/08/01/catatumbo-vive-una-nueva-amenaza-18-ataques-con-drones-explosivos-dejan-39-victimas-en-2026/
+- El Espectador, Avendaño y los detalles de la ZUT de Tibú: https://www.elespectador.com/colombia-20/paz-y-memoria/gobierno-y-frente-33-andrey-avendano-entrega-detalles-sobre-la-zona-de-ubicacion-en-tibu/
+- Infobae, Avendaño: “las armas son del pueblo”: https://www.infobae.com/colombia/2025/05/07/andrey-avendano-cabecilla-de-las-disidencias-de-las-farc-afirma-que-zona-de-ubicacion-en-tibu-no-implica-desmovilizacion-las-armas-son-del-pueblo/
+- El Espectador, las dudas sobre la zona (Calarcá la rechaza, Crisis Group): https://www.elespectador.com/colombia-20/paz-y-memoria/petro-y-frente-33-disidencia-calarca-las-dudas-frente-a-la-zona-de-ubicacion-en-catatumbo/
+- El Nuevo Siglo, retraso por el desminado: https://www.elnuevosiglo.com.co/nacion/por-desminado-no-se-ha-instalado-zona-de-ubicacion-temporal-en-tibu
+- El Espectador, las cinco ZUT autorizadas (may 2026): https://www.elespectador.com/colombia-20/paz-y-memoria/petro-autoriza-ingreso-a-cinco-zonas-de-ubicacion-temporal-donde-quedaran-y-que-grupos-armados-entran/
+- Infobae, ZUT y cabecillas con extradición (may 2026): https://www.infobae.com/colombia/2026/05/18/disidencias-de-alias-calarca-y-otros-grupos-armados-tambien-tendrian-zonas-de-ubicacion-temporal-otorgadas-por-el-gobierno-petro-donde-estarian/
+- El Espectador, ingreso de 99 en Putumayo: https://www.elespectador.com/colombia-20/paz-y-memoria/zona-de-ubicacion-temporal-en-putumayo-arranca-con-dejacion-de-armas-de-integrantes-de-la-disidencia-de-walter-mendoza/
+- El Espectador, el juez mantiene la ZUT de Putumayo (9 oct 2026): https://www.elespectador.com/judicial/juez-ordena-mantener-suspension-del-cierre-de-zut-para-disidencias-de-mendoza-en-putumayo/
+- Infobae, se suspende la ZUT de Tierralta (jun 2026): https://www.infobae.com/colombia/2026/06/25/gobierno-suspendio-implementacion-de-zona-de-ubicacion-temporal-para-el-clan-del-golfo-en-tierralta-cordoba-estos-son-los-motivos/
+- El Tiempo, fin del diálogo con Comuneros del Sur: https://www.eltiempo.com/amp/politica/proceso-de-paz/sigue-el-desmonte-de-la-paz-total-gobierno-acabo-los-dialogos-con-comuneros-del-sur-y-las-bandas-de-medellin-3583525
+- Pares, Comuneros del Sur: https://www.pares.com.co/comuneros-del-sur-entre-la-desmovilizacion-posible-y-los-limites-de-la-paz-negociada-en-narino/
+- El Heraldo, circular roja contra Jhon Mechas: https://www.elheraldo.co/colombia/2021/08/01/interpol-emite-circular-roja-contra-jhon-mechas-838527/
