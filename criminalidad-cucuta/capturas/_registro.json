@@ -1,0 +1,56 @@
+{
+  "D01": {
+    "archivo": "D01-datosgov-ficha-homicidio-mindefensa.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "capturado": "2026-11-01T18:47:51.756Z",
+    "que_muestra": "Ficha del conjunto de datos HOMICIDIO: datos suministrados por el Ministerio de Defensa Nacional, fecha de actualización."
+  },
+  "D02": {
+    "archivo": "D02-datosgov-homicidios-cucuta-2003-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60homicidios%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-01T18:48:05.343Z",
+    "que_muestra": "Homicidios en Cúcuta por año, 2003 a septiembre de 2026 (Policía Nacional / MinDefensa)."
+  },
+  "D03": {
+    "archivo": "D03-datosgov-homicidios-cucuta-ene-sep-2019-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60homicidios_ene_sep%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20date_extract_m(%60fecha_hecho%60)%20%3C%3D%209%20AND%20%60fecha_hecho%60%20%3E%3D%20'2019-01-01'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-01T18:48:18.632Z",
+    "que_muestra": "Homicidios en Cúcuta entre enero y septiembre de cada año, 2019-2026: compara 2026 con años anteriores en el mismo periodo."
+  },
+  "D04": {
+    "archivo": "D04-datosgov-sicariato-cucuta-2003-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20%60municipio%60%2C%20%60_modalidad_presunta%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60homicidios%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60_modalidad_presunta%60%20%3D%20'SICARIATO'%20GROUP%20BY%20%60municipio%60%2C%20%60_modalidad_presunta%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-01T18:48:32.271Z",
+    "que_muestra": "Homicidios por sicariato en Cúcuta por año."
+  },
+  "D05": {
+    "archivo": "D05-datosgov-homicidios-cucuta-2025-por-modalidad.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20%60municipio%60%2C%20%60_modalidad_presunta%60%2C%20sum(%60cantidad%60)%20AS%20%60homicidios_2025%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60fecha_hecho%60%20BETWEEN%20'2025-01-01'%20AND%20'2025-12-31T23%3A59%3A59'%20GROUP%20BY%20%60municipio%60%2C%20%60_modalidad_presunta%60%20ORDER%20BY%20%60homicidios_2025%60%20DESC/page/filter",
+    "capturado": "2026-11-01T18:48:47.547Z",
+    "que_muestra": "Homicidios en Cúcuta en 2025 por modalidad: 275 de 344 fueron sicariato."
+  },
+  "D06": {
+    "archivo": "D06-datosgov-extorsion-cucuta-2003-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSIÓN/q2ib-t9am/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60extorsiones%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-01T18:49:00.781Z",
+    "que_muestra": "Denuncias de extorsión en Cúcuta por año: de 8 en 2008 a 327 en 2023."
+  },
+  "D07": {
+    "archivo": "D07-datosgov-terrorismo-cucuta-2003-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60terrorismo%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-01T18:49:14.122Z",
+    "que_muestra": "Casos de terrorismo en Cúcuta por año: 42 en 2025, el máximo de la serie."
+  },
+  "D08": {
+    "archivo": "D08-datosgov-masacres-cucuta-2022-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/MASACRES/u8eq-92tb/explore/query/SELECT%20%60municipio%60%2C%20%60fecha_hecho%60%2C%20%60casos%60%2C%20%60victimas%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20ORDER%20BY%20%60fecha_hecho%60%20ASC/page/filter",
+    "capturado": "2026-11-01T18:49:27.362Z",
+    "que_muestra": "Masacres registradas en Cúcuta desde 2022 (inicio de la serie): cinco en 2026, con 17 víctimas."
+  },
+  "D09": {
+    "archivo": "D09-datosgov-homicidios-area-metropolitana-2025.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20%60municipio%60%2C%20sum(%60cantidad%60)%20AS%20%60homicidios_2025%60%20WHERE%20%60cod_muni%60%20IN%20('54001'%2C%20'54874'%2C%20'54405'%2C%20'54261'%2C%20'54673'%2C%20'54553')%20AND%20%60fecha_hecho%60%20BETWEEN%20'2025-01-01'%20AND%20'2025-12-31T23%3A59%3A59'%20GROUP%20BY%20%60municipio%60%20ORDER%20BY%20%60homicidios_2025%60%20DESC/page/filter",
+    "capturado": "2026-11-01T18:49:40.712Z",
+    "que_muestra": "Homicidios de 2025 en Cúcuta y su área metropolitana."
+  }
+}

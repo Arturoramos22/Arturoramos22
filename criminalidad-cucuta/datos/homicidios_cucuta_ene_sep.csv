@@ -1,0 +1,26 @@
+# fuente: https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=date_extract_y%28fecha_hecho%29+as+anio%2C+sum%28cantidad%29+as+homicidios_ene_sep&%24where=cod_muni%3D%2754001%27+AND+date_extract_m%28fecha_hecho%29+%3C%3D+9&%24group=anio&%24order=anio
+anio,homicidios_ene_sep
+2003,581
+2004,310
+2005,306
+2006,290
+2007,345
+2008,264
+2009,226
+2010,206
+2011,207
+2012,272
+2013,219
+2014,155
+2015,110
+2016,190
+2017,173
+2018,151
+2019,149
+2020,195
+2021,176
+2022,183
+2023,204
+2024,213
+2025,246
+2026,212

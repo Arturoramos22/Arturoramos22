@@ -1,0 +1,26 @@
+# fuente: https://www.datos.gov.co/resource/q2ib-t9am.json?%24select=date_extract_y%28fecha_hecho%29+as+anio%2C+sum%28cantidad%29+as+extorsiones&%24where=cod_muni%3D%2754001%27&%24group=anio&%24order=anio
+anio,extorsiones
+2003,50
+2004,44
+2005,29
+2006,45
+2007,15
+2008,8
+2009,20
+2010,10
+2011,43
+2012,55
+2013,73
+2014,86
+2015,98
+2016,149
+2017,146
+2018,139
+2019,184
+2020,148
+2021,157
+2022,190
+2023,327
+2024,296
+2025,273
+2026,183

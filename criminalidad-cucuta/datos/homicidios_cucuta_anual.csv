@@ -1,0 +1,26 @@
+# fuente: https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=date_extract_y%28fecha_hecho%29+as+anio%2C+sum%28cantidad%29+as+homicidios&%24where=cod_muni%3D%2754001%27&%24group=anio&%24order=anio
+anio,homicidios
+2003,722
+2004,405
+2005,429
+2006,405
+2007,444
+2008,343
+2009,313
+2010,267
+2011,294
+2012,343
+2013,260
+2014,182
+2015,176
+2016,257
+2017,246
+2018,192
+2019,199
+2020,257
+2021,255
+2022,245
+2023,288
+2024,291
+2025,344
+2026,212

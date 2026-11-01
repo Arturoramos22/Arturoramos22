@@ -1,0 +1,18 @@
+# fuente: https://www.datos.gov.co/resource/yi5j-5fe9.json?%24select=date_extract_y%28fecha_hecho%29+as+anio%2C+sum%28cantidad%29+as+terrorismo&%24where=cod_muni%3D%2754001%27&%24group=anio&%24order=anio
+anio,terrorismo
+2003,7
+2004,1
+2005,4
+2006,1
+2014,2
+2016,11
+2017,2
+2018,5
+2019,6
+2020,5
+2021,24
+2022,13
+2023,7
+2024,6
+2025,42
+2026,14

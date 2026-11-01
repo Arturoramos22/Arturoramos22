@@ -1,0 +1,82 @@
+[
+  {
+    "id": "D01",
+    "archivo": "D01-datosgov-ficha-homicidio-mindefensa.png",
+    "tipo": "web",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "alto": 1000,
+    "que_muestra": "Ficha del conjunto de datos HOMICIDIO: datos suministrados por el Ministerio de Defensa Nacional, fecha de actualización."
+  },
+  {
+    "id": "D02",
+    "archivo": "D02-datosgov-homicidios-cucuta-2003-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `homicidios` WHERE `cod_muni` = '54001' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
+    "alto": 1700,
+    "que_muestra": "Homicidios en Cúcuta por año, 2003 a septiembre de 2026 (Policía Nacional / MinDefensa)."
+  },
+  {
+    "id": "D03",
+    "archivo": "D03-datosgov-homicidios-cucuta-ene-sep-2019-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `homicidios_ene_sep` WHERE `cod_muni` = '54001' AND date_extract_m(`fecha_hecho`) <= 9 AND `fecha_hecho` >= '2019-01-01' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
+    "alto": 1000,
+    "que_muestra": "Homicidios en Cúcuta entre enero y septiembre de cada año, 2019-2026: compara 2026 con años anteriores en el mismo periodo."
+  },
+  {
+    "id": "D04",
+    "archivo": "D04-datosgov-sicariato-cucuta-2003-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, `_modalidad_presunta`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `homicidios` WHERE `cod_muni` = '54001' AND `_modalidad_presunta` = 'SICARIATO' GROUP BY `municipio`, `_modalidad_presunta`, `anio` ORDER BY `anio` ASC",
+    "alto": 1700,
+    "que_muestra": "Homicidios por sicariato en Cúcuta por año."
+  },
+  {
+    "id": "D05",
+    "archivo": "D05-datosgov-homicidios-cucuta-2025-por-modalidad.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, `_modalidad_presunta`, sum(`cantidad`) AS `homicidios_2025` WHERE `cod_muni` = '54001' AND `fecha_hecho` BETWEEN '2025-01-01' AND '2025-12-31T23:59:59' GROUP BY `municipio`, `_modalidad_presunta` ORDER BY `homicidios_2025` DESC",
+    "alto": 1000,
+    "que_muestra": "Homicidios en Cúcuta en 2025 por modalidad: 275 de 344 fueron sicariato."
+  },
+  {
+    "id": "D06",
+    "archivo": "D06-datosgov-extorsion-cucuta-2003-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/EXTORSIÓN/q2ib-t9am",
+    "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `extorsiones` WHERE `cod_muni` = '54001' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
+    "alto": 1700,
+    "que_muestra": "Denuncias de extorsión en Cúcuta por año: de 8 en 2008 a 327 en 2023."
+  },
+  {
+    "id": "D07",
+    "archivo": "D07-datosgov-terrorismo-cucuta-2003-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9",
+    "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `terrorismo` WHERE `cod_muni` = '54001' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
+    "alto": 1300,
+    "que_muestra": "Casos de terrorismo en Cúcuta por año: 42 en 2025, el máximo de la serie."
+  },
+  {
+    "id": "D08",
+    "archivo": "D08-datosgov-masacres-cucuta-2022-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/MASACRES/u8eq-92tb",
+    "soql": "SELECT `municipio`, `fecha_hecho`, `casos`, `victimas` WHERE `cod_muni` = '54001' ORDER BY `fecha_hecho` ASC",
+    "alto": 1200,
+    "que_muestra": "Masacres registradas en Cúcuta desde 2022 (inicio de la serie): cinco en 2026, con 17 víctimas."
+  },
+  {
+    "id": "D09",
+    "archivo": "D09-datosgov-homicidios-area-metropolitana-2025.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, sum(`cantidad`) AS `homicidios_2025` WHERE `cod_muni` IN ('54001', '54874', '54405', '54261', '54673', '54553') AND `fecha_hecho` BETWEEN '2025-01-01' AND '2025-12-31T23:59:59' GROUP BY `municipio` ORDER BY `homicidios_2025` DESC",
+    "alto": 900,
+    "que_muestra": "Homicidios de 2025 en Cúcuta y su área metropolitana."
+  }
+]
