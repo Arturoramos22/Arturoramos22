@@ -78,5 +78,942 @@
     "soql": "SELECT `municipio`, sum(`cantidad`) AS `homicidios_2025` WHERE `cod_muni` IN ('54001', '54874', '54405', '54261', '54673', '54553') AND `fecha_hecho` BETWEEN '2025-01-01' AND '2025-12-31T23:59:59' GROUP BY `municipio` ORDER BY `homicidios_2025` DESC",
     "alto": 900,
     "que_muestra": "Homicidios de 2025 en Cúcuta y su área metropolitana."
+  },
+  {
+    "id": "O01",
+    "archivo": "O01-defensoria-AT027-24-p6-tabla-grupos-armados.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 6,
+    "que_muestra": "Defensoría, Alerta Temprana 027-24 (19 dic 2024), tabla 1.2: grupos armados fuente de amenaza en Cúcuta (ELN, disidencias, EGC, EPL, 16 bandas locales y 4 transnacionales)."
+  },
+  {
+    "id": "O02",
+    "archivo": "O02-defensoria-AT027-24-p10-20-grupos-todas-las-comunas.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 10,
+    "que_muestra": "AT 027-24: 'En todas las comunas de la ciudad tiene presencia por lo menos un actor armado... se identifican 20 grupos armados de crimen organizado, 4 de ellos de carácter trasnacional'."
+  },
+  {
+    "id": "O03",
+    "archivo": "O03-defensoria-AT027-24-p12-ciudad-dividida-por-zonas.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 12,
+    "que_muestra": "AT 027-24: estructuras que 'tienen a San José de Cúcuta dividida por zonas'."
+  },
+  {
+    "id": "O04",
+    "archivo": "O04-defensoria-AT027-24-p17-75-sicariato.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 17,
+    "que_muestra": "AT 027-24: el 75 % de los homicidios de 2024 (corte sep) fueron por sicariato."
+  },
+  {
+    "id": "O05",
+    "archivo": "O05-defensoria-AT027-24-p23-granadas-extorsion.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 23,
+    "que_muestra": "AT 027-24: desde 2023, granadas de fragmentación para presionar el cobro de extorsiones."
+  },
+  {
+    "id": "O06",
+    "archivo": "O06-defensoria-AT035-20-p5-eln-60-por-ciento.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/035-20.pdf",
+    "pagina": 5,
+    "que_muestra": "Defensoría, AT 035-20 (5 ago 2020): el ELN con presencia en 'más del 60% del territorio del municipio de Cúcuta'."
+  },
+  {
+    "id": "O07",
+    "archivo": "O07-defensoria-AT035-20-p17-rastrojos-agc.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/035-20.pdf",
+    "pagina": 17,
+    "que_muestra": "AT 035-20: guerra AGC–Rastrojos 2015-2018 y predominio de Los Rastrojos en la frontera."
+  },
+  {
+    "id": "O08",
+    "archivo": "O08-tribunal-justicia-paz-laverde-2010-p80-cucuta-2002.png",
+    "tipo": "pdf",
+    "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/Jurisprudencia/Radicado_2006_80281_2010.pdf",
+    "pagina": 80,
+    "que_muestra": "Tribunal Superior de Bogotá, Justicia y Paz, sentencia contra 'El Iguano' (2 dic 2010), p. 80: Cúcuta, 'la ciudad con mas alto índice de homicidios en el País durante el año 2002'."
+  },
+  {
+    "id": "O09",
+    "archivo": "O09-tribunal-justicia-paz-laverde-2010-p90-horno-crematorio.png",
+    "tipo": "pdf",
+    "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/Jurisprudencia/Radicado_2006_80281_2010.pdf",
+    "pagina": 90,
+    "que_muestra": "Sentencia Laverde (2010), p. 90: desaparición de cadáveres en horno crematorio por el Frente Fronteras."
+  },
+  {
+    "id": "O10",
+    "archivo": "O10-corte-suprema-35637-2012-p10-cucuta-2002.png",
+    "tipo": "pdf",
+    "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/Jurisprudencia/Sentencia_35637_2012.pdf",
+    "pagina": 10,
+    "que_muestra": "Corte Suprema de Justicia, rad. 35637 (6 jun 2012), p. 10: el Frente Fronteras convirtió a Cúcuta en la ciudad con más alto índice de homicidios del país en 2002."
+  },
+  {
+    "id": "O11",
+    "archivo": "O11-corte-suprema-35637-2012-p16-colaboradores.png",
+    "tipo": "pdf",
+    "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/Jurisprudencia/Sentencia_35637_2012.pdf",
+    "pagina": 16,
+    "que_muestra": "Corte Suprema (2012), p. 16: autoridades que colaboraron con el Frente Fronteras (Fiscalía seccional, DAS Cúcuta...)."
+  },
+  {
+    "id": "O12",
+    "archivo": "O12-corte-suprema-35637-2012-p17-exalcalde.png",
+    "tipo": "pdf",
+    "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/Jurisprudencia/Sentencia_35637_2012.pdf",
+    "pagina": 17,
+    "que_muestra": "Corte Suprema (2012), p. 17: continúa la lista, incluido el exalcalde Ramiro Suárez Corzo; aclara que unos están condenados y otros investigados."
+  },
+  {
+    "id": "O13",
+    "archivo": "O13-comision-verdad-frontera-p134-incursion-1999.png",
+    "tipo": "pdf",
+    "url": "https://www.comisiondelaverdad.co/sites/default/files/2022-07/7.%20FRONTERA%20VERSION%20FINAL.pdf",
+    "pagina": 134,
+    "que_muestra": "Comisión de la Verdad, 'Frontera nororiental' (2022): los paramilitares incursionaron en Cúcuta en 1999 con el Frente Fronteras."
+  },
+  {
+    "id": "O14",
+    "archivo": "O14-comision-verdad-frontera-p137-masacres-hornos.png",
+    "tipo": "pdf",
+    "url": "https://www.comisiondelaverdad.co/sites/default/files/2022-07/7.%20FRONTERA%20VERSION%20FINAL.pdf",
+    "pagina": 137,
+    "que_muestra": "Comisión de la Verdad: 52 masacres con 253 víctimas de las AUC en el área metropolitana; cerca de 500 cuerpos incinerados (2001-2003)."
+  },
+  {
+    "id": "O15",
+    "archivo": "O15-comision-verdad-frontera-p187-1610-asesinados.png",
+    "tipo": "pdf",
+    "url": "https://www.comisiondelaverdad.co/sites/default/files/2022-07/7.%20FRONTERA%20VERSION%20FINAL.pdf",
+    "pagina": 187,
+    "que_muestra": "Comisión de la Verdad: 1.610 asesinados en el área metropolitana entre 2005 y 2007; llegada de Rastrojos y Urabeños."
+  },
+  {
+    "id": "O16",
+    "archivo": "O16-cnmh-catatumbo-tomo1-p500-2002.png",
+    "tipo": "pdf",
+    "url": "https://centrodememoriahistorica.gov.co/wp-content/uploads/2023/11/CATATUMBO_TOMO-I_web.pdf",
+    "pagina": 500,
+    "que_muestra": "CNMH, Catatumbo Tomo I (2023): 2002, el año con más homicidios en Cúcuta desde la llegada de los paramilitares."
+  },
+  {
+    "id": "O17",
+    "archivo": "O17-decreto-0062-2025-p5-conmocion-interior.png",
+    "tipo": "pdf",
+    "url": "https://sidn.ramajudicial.gov.co/SIDN/NORMATIVA/TEXTOS_COMPLETOS/5_DECRETOS/DECRETOS%202025/Decreto%200062%20de%202025.pdf",
+    "pagina": 5,
+    "que_muestra": "Decreto 0062 de 2025: conmoción interior en el Catatumbo y el área metropolitana de Cúcuta."
+  },
+  {
+    "id": "O18",
+    "archivo": "O18-policia-mecuc-rendicion-cuentas-2025-p10-444-homicidios.png",
+    "tipo": "pdf",
+    "url": "https://www.policia.gov.co/sites/default/files/2026-03/informe_previo_rendicion_de_cuentas_vigencia_2025_editado.pdf",
+    "pagina": 10,
+    "que_muestra": "Policía Metropolitana de Cúcuta, rendición de cuentas 2025: 444 homicidios en el área metropolitana (+14 %)."
+  },
+  {
+    "id": "O19",
+    "archivo": "O19-defensoria-informe-catatumbo-p37-cucuta-despensa.png",
+    "tipo": "pdf",
+    "url": "https://www.defensoria.gov.co/documents/20123/3620015/Informe_Catatubo+low.pdf",
+    "pagina": 37,
+    "que_muestra": "Defensoría, informe 'Catatumbo' (2026): 'Cúcuta, la ciudad despensa para los grupos armados del Catatumbo'."
+  },
+  {
+    "id": "O20",
+    "archivo": "O20-defensoria-informe-catatumbo-p38-despensa.png",
+    "tipo": "pdf",
+    "url": "https://www.defensoria.gov.co/documents/20123/3620015/Informe_Catatubo+low.pdf",
+    "pagina": 38,
+    "que_muestra": "Defensoría, informe 'Catatumbo': las estructuras armadas han hecho de Cúcuta 'una despensa de activos y economías'."
+  },
+  {
+    "id": "O21",
+    "archivo": "O21-defensoria-AT013-25-p69-amenazas-alcalde.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/013-25.pdf",
+    "pagina": 69,
+    "que_muestra": "Defensoría, AT electoral 013-25 (7 oct 2025): AK-47 y Tren de Aragua amenazaron al alcalde y a funcionarios."
+  },
+  {
+    "id": "R01",
+    "archivo": "R01-ccspjp-ranking-2010-p3-primera-edicion-50.png",
+    "tipo": "pdf",
+    "url": "https://elsalvadorinfo.net/wp-content/uploads/2023/08/2010-Bulletin-Ranking-the-50-most-violent-cities-in-the-world.pdf",
+    "pagina": 3,
+    "que_muestra": "CCSPJP (ONG mexicana), boletín 2010 (réplica): primera edición con 50 ciudades."
+  },
+  {
+    "id": "R02",
+    "archivo": "R02-ccspjp-ranking-2010-p4-cucuta-28.png",
+    "tipo": "pdf",
+    "url": "https://elsalvadorinfo.net/wp-content/uploads/2023/08/2010-Bulletin-Ranking-the-50-most-violent-cities-in-the-world.pdf",
+    "pagina": 4,
+    "que_muestra": "CCSPJP 2010 (versión corregida 2023, réplica): Cúcuta puesto 28, tasa 52,90."
+  },
+  {
+    "id": "R03",
+    "archivo": "R03-ccspjp-ranking-2011-p5-cucuta-23.png",
+    "tipo": "pdf",
+    "url": "https://elsalvadorinfo.net/wp-content/uploads/2023/08/2011-Bulletin-Ranking-the-50-most-violent-cities-in-the-world.pdf",
+    "pagina": 5,
+    "que_muestra": "CCSPJP 2011 (réplica): Cúcuta puesto 23, tasa 56,08."
+  },
+  {
+    "id": "R04",
+    "archivo": "R04-ccspjp-ranking-2012-p4-cucuta-22.png",
+    "tipo": "pdf",
+    "url": "https://elsalvadorinfo.net/wp-content/uploads/2023/08/2012-Bulletin-Ranking-the-50-most-violent-cities-in-the-world.pdf",
+    "pagina": 4,
+    "que_muestra": "CCSPJP 2012 (réplica): Cúcuta puesto 22, tasa 54,29, su mejor puesto."
+  },
+  {
+    "id": "R05",
+    "archivo": "R05-ccspjp-ranking-2024-p4-cucuta-39.png",
+    "tipo": "pdf",
+    "url": "https://elsalvadorinfo.net/wp-content/uploads/2026/03/2024-Most-Dangeous-Cities-in-the-World.pdf",
+    "pagina": 4,
+    "que_muestra": "CCSPJP 2024 (réplica): Cúcuta (AM) puesto 39, tasa 36,00."
+  },
+  {
+    "id": "W01",
+    "archivo": "W01-policia-2017-14-bandas-desarticuladas.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/policia-nacional-en-2017-ha-desarticulado-en-cucuta-14-bandas-delincuenciales",
+    "alto": 2300,
+    "completa": false,
+    "que_muestra": "Policía Nacional (23 ago 2017): 14 bandas desarticuladas en Cúcuta en 2017."
+  },
+  {
+    "id": "W02",
+    "archivo": "W02-policia-2021-tren-de-aragua-la-parada.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/propinamos-duro-golpe-banda-delincuencial-tren-aragua",
+    "alto": 2300,
+    "completa": false,
+    "que_muestra": "Policía (8 jul 2021): capturas del Tren de Aragua en La Parada; homicidio y desmembramiento en trocha."
+  },
+  {
+    "id": "W03",
+    "archivo": "W03-policia-2023-gdco-tren-de-aragua-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/index.php/noticia/operacion-contra-gdco-tren-aragua-en-cucuta",
+    "alto": 2300,
+    "completa": false,
+    "que_muestra": "Policía (24 abr 2023): operación contra el GDCO Tren de Aragua en Cúcuta."
+  },
+  {
+    "id": "W04",
+    "archivo": "W04-policia-2025-gdco-familia-p-porras.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/seguimos-golpeando-las-finanzas-criminales-del-gdco-familia-p",
+    "alto": 2300,
+    "completa": false,
+    "que_muestra": "Policía (28 feb 2025): GDCO 'La Familia P', liderado por alias Porras."
+  },
+  {
+    "id": "W05",
+    "archivo": "W05-policia-2025-ak47-41-capturados.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/policia-nacional-impacta-al-grupo-delincuencial-ak-47-con-captura-cuatro-sus-integrantes-en",
+    "alto": 2300,
+    "completa": false,
+    "que_muestra": "Policía (8 ago 2025): AK-47, 41 integrantes capturados en el año."
+  },
+  {
+    "id": "W06",
+    "archivo": "W06-policia-2026-familia-p-los-turcos.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/afectacion-estructural-los-grupos-delincuenciales-organizados-familia-p-los-turcos",
+    "alto": 2300,
+    "completa": false,
+    "que_muestra": "Policía (2 oct 2026): golpe a los GDO 'Familia P' y 'Los Turcos', 20 capturas."
+  },
+  {
+    "id": "W07",
+    "archivo": "W07-presidencia-2026-10-29-militarizacion-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.presidencia.gov.co/prensa/Paginas/Declaracion-del-Presidente-Abelardo-De-La-Espriella-sobre-medidas-de-orden-publico-para-Cucuta-261029.aspx",
+    "alto": 1100,
+    "completa": false,
+    "que_muestra": "Presidencia (29 oct 2026): 'la militarización inmediata de Cúcuta'.",
+    "manual": true,
+    "nota": "El sitio bloquea navegadores automatizados (captcha o firewall). Abrir el enlace en el navegador y capturar."
+  },
+  {
+    "id": "W08",
+    "archivo": "W08-presidencia-2026-09-01-consejo-seguridad-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.presidencia.gov.co/prensa/Paginas/Aqui-nadie-se-acobarda-Presidente-De-La-Espriella-ordena-ofensiva-total-contra-el-narcoterrorismo-en-Norte-260801.aspx",
+    "alto": 1100,
+    "completa": false,
+    "que_muestra": "Presidencia (1 sep 2026): consejo de seguridad en Cúcuta tras el carro bomba de Los Patios.",
+    "manual": true,
+    "nota": "El sitio bloquea navegadores automatizados (captcha o firewall). Abrir el enlace en el navegador y capturar."
+  },
+  {
+    "id": "W09",
+    "archivo": "W09-cgfm-2026-08-01-carro-bomba-cenabastos.png",
+    "tipo": "web",
+    "url": "https://www.cgfm.mil.co/es/multimedia/noticias/fuerzas-militares-intensifican-la-ofensiva-en-cucuta-tras-ataque-del-eln-con",
+    "alto": 1800,
+    "completa": false,
+    "que_muestra": "Comando General FF.MM. (1 ago 2026): carro bomba del ELN en Cenabastos y refuerzo de tropas."
+  },
+  {
+    "id": "W10",
+    "archivo": "W10-defensoria-2024-12-31-boletin-alerta-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.defensoria.gov.co/-/defensoria-del-pueblo-emite-alerta-temprana-para-cucuta",
+    "alto": 1100,
+    "completa": false,
+    "que_muestra": "Defensoría (31 dic 2024): boletín de la AT 027-24 para Cúcuta.",
+    "manual": true,
+    "nota": "El sitio bloquea navegadores automatizados (captcha o firewall). Abrir el enlace en el navegador y capturar."
+  },
+  {
+    "id": "W11",
+    "archivo": "W11-defensoria-micrositio-catatumbo.png",
+    "tipo": "web",
+    "url": "https://www.defensoria.gov.co/catatumbo",
+    "alto": 1100,
+    "completa": false,
+    "que_muestra": "Defensoría: micrositio de la crisis del Catatumbo (desplazados y víctimas 2025).",
+    "manual": true,
+    "nota": "El sitio bloquea navegadores automatizados (captcha o firewall). Abrir el enlace en el navegador y capturar."
+  },
+  {
+    "id": "W12",
+    "archivo": "W12-ejercito-2026-09-carro-bomba-frustrado.png",
+    "tipo": "web",
+    "url": "https://www.ejercito.mil.co/presidente-de-la-espriella-aseguro-que-el-ejercito-neutralizo-potencial-accion-terrorista-en-cucuta",
+    "alto": 1800,
+    "completa": false,
+    "que_muestra": "Ejército: carro con explosivos hallado en Agua Clara tras el ataque de Los Patios."
+  },
+  {
+    "id": "D10",
+    "archivo": "D10-datosgov-homicidios-cucuta-mensual-2025-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, date_trunc_ym(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `homicidios` WHERE `cod_muni` = '54001' AND `fecha_hecho` >= '2025-01-01' GROUP BY `municipio`, `mes` ORDER BY `mes` ASC",
+    "alto": 1650,
+    "que_muestra": "Homicidios mensuales en Cúcuta, enero 2025 a septiembre 2026: la conmoción interior (24 ene-23 abr 2025) y los refuerzos de 2026 en el mismo cuadro."
+  },
+  {
+    "id": "D11",
+    "archivo": "D11-datosgov-terrorismo-cucuta-mensual-2024-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9",
+    "soql": "SELECT `municipio`, date_trunc_ym(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `terrorismo` WHERE `cod_muni` = '54001' AND `fecha_hecho` >= '2024-01-01' GROUP BY `municipio`, `mes` ORDER BY `mes` ASC",
+    "alto": 1650,
+    "que_muestra": "Hechos de terrorismo por mes en Cúcuta, 2024-2026: 12 entre febrero y abril de 2025, en plena conmoción interior."
+  },
+  {
+    "id": "D12",
+    "archivo": "D12-datosgov-homicidios-atacados-por-gao-cucuta.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9",
+    "soql": "SELECT `municipio`, `_modalidad_presunta`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `homicidios` WHERE `cod_muni` = '54001' AND `_modalidad_presunta` = 'ATACADOS POR GAO O GAO-R' GROUP BY `municipio`, `_modalidad_presunta`, `anio` ORDER BY `anio` ASC",
+    "alto": 900,
+    "que_muestra": "Homicidios de personas 'atacadas por GAO' (grupos armados organizados) en Cúcuta por año: 38 entre enero y septiembre de 2026."
+  },
+  {
+    "id": "W13",
+    "archivo": "W13-corte-constitucional-C148-25-pie-de-fuerza-no-suficiente.png",
+    "tipo": "web",
+    "url": "https://www.corteconstitucional.gov.co/relatoria/2025/C-148-25.htm",
+    "alto": 1100,
+    "buscar": "no fueron suficientes para frenar los ataques",
+    "que_muestra": "Corte Constitucional, C-148/25: el aumento del pie de fuerza y otras medidas ordinarias 'no fueron suficientes para frenar los ataques'.",
+    "manual": true,
+    "nota": "La Corte bloquea navegadores automatizados. Abrir en el navegador, buscar (Ctrl+F) el texto indicado en \"buscar\" y capturar."
+  },
+  {
+    "id": "W14",
+    "archivo": "W14-corte-constitucional-C148-25-pie-de-fuerza-7788-10083.png",
+    "tipo": "web",
+    "url": "https://www.corteconstitucional.gov.co/relatoria/2025/C-148-25.htm",
+    "alto": 1100,
+    "buscar": "7.788",
+    "que_muestra": "Corte Constitucional, C-148/25: según el CGFM, el pie de fuerza en el Catatumbo pasó de 7.788 (2022) a 10.083 (2025).",
+    "manual": true,
+    "nota": "La Corte bloquea navegadores automatizados. Abrir en el navegador, buscar (Ctrl+F) el texto indicado en \"buscar\" y capturar."
+  },
+  {
+    "id": "O22",
+    "archivo": "O22-tribunal-justicia-paz-laverde-2010-p3-llegada-5-mayo-1999.png",
+    "tipo": "pdf",
+    "url": "https://www.unidadvictimas.gov.co/wp-content/uploads/Documentos/Jurisprudencia/Radicado_2006_80281_2010.pdf",
+    "pagina": 3,
+    "que_muestra": "Sentencia Laverde (2010), p. 3: 'El 5 de mayo de ese año -1999- llegó como comandante del naciente frente Fronteras'."
+  },
+  {
+    "id": "O23",
+    "archivo": "O23-cnmh-catatumbo-tomo2-p501-cierre-frontera-2015.png",
+    "tipo": "pdf",
+    "url": "https://centrodememoriahistorica.gov.co/wp-content/uploads/2023/11/CATATUMBO_TOMO-II_web.pdf",
+    "pagina": 501,
+    "que_muestra": "CNMH, Catatumbo Tomo II: tras el cierre fronterizo del 19 de agosto de 2015 las economías criminales se volvieron más atractivas y el ELN se expandió."
+  },
+  {
+    "id": "O24",
+    "archivo": "O24-defensoria-AT027-24-p14-control-desde-carceles.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 14,
+    "que_muestra": "AT 027-24, p. 14: personas privadas de la libertad siguen controlando las redes criminales de Cúcuta desde la cárcel."
+  },
+  {
+    "id": "O25",
+    "archivo": "O25-defensoria-AT035-20-p6-frente-33-carro-bomba.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/035-20.pdf",
+    "pagina": 6,
+    "que_muestra": "AT 035-20, p. 6: el reducto del Frente 33 y el carro bomba de 2019 en el anillo vial."
+  },
+  {
+    "id": "W15",
+    "archivo": "W15-cgfm-2020-plan-seguridad-fronteriza-esparta.png",
+    "tipo": "web",
+    "url": "https://www.cgfm.mil.co/en/multimedia/noticias/minister-defense-announces-cucuta-border-security-plan-norte-de-santander",
+    "alto": 1800,
+    "que_muestra": "CGFM (20 feb 2020): plan de seguridad fronteriza para el área metropolitana de Cúcuta, campaña 'Esparta', 12 pelotones y 360 soldados."
+  },
+  {
+    "id": "W16",
+    "archivo": "W16-cgfm-2024-batallon-policia-militar-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.cgfm.mil.co/en/node/49334",
+    "alto": 1800,
+    "que_muestra": "CGFM (2024): Batallón de Policía Militar para Cúcuta."
+  },
+  {
+    "id": "E01",
+    "archivo": "E01-nature-blair-weintraub-2023-cali.png",
+    "tipo": "web",
+    "url": "https://www.nature.com/articles/s41562-023-01600-1",
+    "alto": 1400,
+    "que_muestra": "Blair y Weintraub (2023), Nature Human Behaviour: experimento aleatorizado de patrullas militares en Cali."
+  },
+  {
+    "id": "E02",
+    "archivo": "E02-ajps-blair-mendoza-weintraub-2025-mano-dura.png",
+    "tipo": "web",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/ajps.12977",
+    "alto": 1400,
+    "que_muestra": "Blair, Mendoza-Mora y Weintraub (2025), AJPS: 'Mano dura' en Cali, apoyo ciudadano pese a efectos nulos o adversos.",
+    "manual": true,
+    "nota": "Wiley bloquea navegadores automatizados. Abrir en el navegador."
+  },
+  {
+    "id": "E03",
+    "archivo": "E03-pop-flores-macias-zarkin-2021.png",
+    "tipo": "web",
+    "url": "https://www.cambridge.org/core/journals/perspectives-on-politics/article/militarization-of-law-enforcement-evidence-from-latin-america/03EE3B407BA25D8D2762A7ED3871060E",
+    "alto": 1400,
+    "que_muestra": "Flores-Macías y Zarkin (2021), Perspectives on Politics: militarización de la seguridad en América Latina."
+  },
+  {
+    "id": "E04",
+    "archivo": "E04-pnas-mummolo-2018.png",
+    "tipo": "web",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.1805161115",
+    "alto": 1400,
+    "que_muestra": "Mummolo (2018), PNAS: la militarización policial no reduce el crimen ni mejora la seguridad de los agentes.",
+    "manual": true,
+    "nota": "PNAS bloquea navegadores automatizados. Abrir en el navegador."
+  },
+  {
+    "id": "E05",
+    "archivo": "E05-jhe-lindo-padilla-romo-2018-kingpin.png",
+    "tipo": "web",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29547748/",
+    "alto": 1400,
+    "que_muestra": "Lindo y Padilla-Romo (2018), Journal of Health Economics: capturas de capos y homicidios en México. (Europe PMC)",
+    "manual": true,
+    "nota": "PubMed y Europe PMC bloquean navegadores automatizados. Abrir en el navegador."
+  },
+  {
+    "id": "E06",
+    "archivo": "E06-jcr-calderon-et-al-2015-beheading.png",
+    "tipo": "web",
+    "url": "https://journals.sagepub.com/doi/10.1177/0022002715587053",
+    "alto": 1400,
+    "que_muestra": "Calderón, Robles, Díaz-Cayeros y Magaloni (2015), JCR: descabezar organizaciones criminales y violencia en México. (ficha en RePEc/EconPapers; el sitio de la revista bloquea navegadores automatizados)",
+    "url_revista": "https://journals.sagepub.com/doi/10.1177/0022002715587053",
+    "manual": true,
+    "nota": "Sage y EconPapers bloquean navegadores automatizados. Abrir en el navegador."
+  },
+  {
+    "id": "E07",
+    "archivo": "E07-aer-dell-2015.png",
+    "tipo": "web",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20121637",
+    "alto": 1400,
+    "que_muestra": "Dell (2015), American Economic Review: ofensivas y violencia en México."
+  },
+  {
+    "id": "E08",
+    "archivo": "E08-sciencedaily-espinosa-rubin-2015.png",
+    "tipo": "web",
+    "url": "https://www.sciencedaily.com/releases/2015/04/150402121309.htm",
+    "alto": 1400,
+    "que_muestra": "Espinosa y Rubin (2015), The American Statistician (resumen de la ASA): intervenciones militares en México y homicidios."
+  },
+  {
+    "id": "E09",
+    "archivo": "E09-cesec-intervencion-federal-rio-2018.png",
+    "tipo": "web",
+    "url": "https://cesecseguranca.com.br/textodownload/intervencao-federal-um-modelo-para-nao-copiar/",
+    "alto": 1400,
+    "que_muestra": "CESeC (2019): la intervención federal militar en Río (2018), 'un modelo para no copiar'."
+  },
+  {
+    "id": "E10",
+    "archivo": "E10-mexico-evalua-2024-guardia-nacional.png",
+    "tipo": "web",
+    "url": "https://mexicoevalua.org/presencia-de-la-guardia-nacional-no-reduce-la-violencia/",
+    "alto": 1400,
+    "que_muestra": "México Evalúa (2024): la presencia de la Guardia Nacional no reduce la violencia."
+  },
+  {
+    "id": "E11",
+    "archivo": "E11-tesoro-eeuu-2021-tregua-pandillas-el-salvador.png",
+    "tipo": "web",
+    "url": "https://home.treasury.gov/news/press-releases/jy0519",
+    "alto": 1400,
+    "que_muestra": "Tesoro de EE. UU. (2021): tregua secreta del gobierno de Bukele con las pandillas."
+  },
+  {
+    "id": "E12",
+    "archivo": "E12-banco-mundial-homicidios-el-salvador.png",
+    "tipo": "web",
+    "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=SV",
+    "alto": 1100,
+    "que_muestra": "Banco Mundial/UNODC: tasa de homicidio de El Salvador (107,6 en 2015; 17,3 en 2021; 7,9 en 2022)."
+  },
+  {
+    "id": "E13",
+    "archivo": "E13-journal-of-democracy-2024-modelo-bukele.png",
+    "tipo": "web",
+    "url": "https://www.journalofdemocracy.org/articles/the-bukele-model-will-it-spread/",
+    "alto": 1400,
+    "que_muestra": "Meléndez-Sánchez y Vergara (2024), Journal of Democracy: 'The Bukele Model: Will It Spread?'."
+  },
+  {
+    "id": "E14",
+    "archivo": "E14-nhb-gunderson-2021-1033.png",
+    "tipo": "web",
+    "url": "https://www.nature.com/articles/s41562-020-00995-5",
+    "alto": 1400,
+    "que_muestra": "Gunderson et al. (2021), Nature Human Behaviour: no hay evidencia de que el equipo militar del programa 1033 reduzca el crimen."
+  },
+  {
+    "id": "O26",
+    "archivo": "O26-defensoria-IS026-2026-p5-constante-recomposicion.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/informes/302.pdf",
+    "pagina": 5,
+    "que_muestra": "Defensoría, Informe de Seguimiento 026-2026 (8 ago 2026) a la AT 027-24: pese a capturas, 'constante recomposición' de las estructuras."
+  },
+  {
+    "id": "O27",
+    "archivo": "O27-defensoria-IS026-2026-p8-frente-33-nuevo-actor.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/informes/302.pdf",
+    "pagina": 8,
+    "que_muestra": "IS 026-2026: el Frente 33 se consolida como nuevo actor armado en Cúcuta."
+  },
+  {
+    "id": "O28",
+    "archivo": "O28-defensoria-IS026-2026-p58-enfasis-disuasivo-fuerza-publica.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/informes/302.pdf",
+    "pagina": 58,
+    "que_muestra": "IS 026-2026, p. 58: 'La respuesta estatal tuvo mayor énfasis en los ejes de atención del componente disuasivo de la Fuerza Pública'."
+  },
+  {
+    "id": "O29",
+    "archivo": "O29-defensoria-IS026-2026-p59-riesgo-persiste-agravarse.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/informes/302.pdf",
+    "pagina": 59,
+    "que_muestra": "IS 026-2026, p. 59: la situación de riesgo 'persiste y la tendencia es a agravarse'."
+  },
+  {
+    "id": "P01",
+    "archivo": "P01-eltiempo-1999-06-21-primera-incursion-auc-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.eltiempo.com/archivo/documento/MAM-940809",
+    "alto": 1500,
+    "que_muestra": "El Tiempo (21 jun 1999): primera incursión de las autodefensas en Cúcuta (barrio Niña Ceci); la Policía advierte 'un gran periodo de violencia'.",
+    "fuente_tipo": "prensa",
+    "cerrar": [
+      "button.tp-close",
+      "button:has-text(\"ENTIENDO\")",
+      "a:has-text(\"ENTIENDO\")",
+      "text=ENTIENDO"
+    ]
+  },
+  {
+    "id": "P02",
+    "archivo": "P02-eltiempo-2003-01-20-cucuta-segunda-mas-violenta.png",
+    "tipo": "web",
+    "url": "https://www.eltiempo.com/archivo/documento/MAM-968184",
+    "alto": 1500,
+    "que_muestra": "El Tiempo (20 ene 2003), con Medicina Legal: 1.248 crímenes en 2002; Cúcuta, segunda ciudad más violenta del país después de Medellín.",
+    "fuente_tipo": "prensa",
+    "cerrar": [
+      "button.tp-close",
+      "button:has-text(\"ENTIENDO\")",
+      "a:has-text(\"ENTIENDO\")",
+      "text=ENTIENDO"
+    ]
+  },
+  {
+    "id": "P03",
+    "archivo": "P03-semana-2026-10-29-ordeno-militarizar-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.semana.com/politica/articulo/atencion-abelardo-de-la-espriella-ordeno-militarizar-cucuta/202607/",
+    "alto": 1500,
+    "que_muestra": "Semana (29 oct 2026): 'He ordenado la militarización inmediata de Cúcuta'.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P04",
+    "archivo": "P04-infobae-2026-10-30-500-soldados-patrullan-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.infobae.com/colombia/2026/10/30/al-menos-500-soldados-de-elite-patrullan-cucuta-tras-la-orden-presidencial-de-militarizar-la-ciudad-fronteriza/",
+    "alto": 1500,
+    "que_muestra": "Infobae (30 oct 2026): unos 500 soldados de élite patrullan Cúcuta; contexto del asesinato de Miguel Castellanos y el explosivo en El Escobal.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P05",
+    "archivo": "P05-laopinion-2026-324-soldados-150-policias.png",
+    "tipo": "web",
+    "url": "https://laopinion.co/cucuta/324-soldados-y-150-policias-refuerzan-la-seguridad-en-cucuta-tras-orden-de-militarizacion",
+    "alto": 1500,
+    "que_muestra": "La Opinión (oct 2026): 324 soldados y 150 policías; el alcalde da 'respaldo total' a la militarización.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P06",
+    "archivo": "P06-prensa-latina-2025-02-20-alcalde-3000-policias-1200-soldados.png",
+    "tipo": "web",
+    "url": "https://www.prensa-latina.cu/2025/02/20/decretan-toque-de-queda-por-escalada-violenta-en-cucuta-colombia/",
+    "alto": 1500,
+    "que_muestra": "Prensa Latina (20 feb 2025), en plena conmoción: el alcalde dice 'Tenemos más de tres mil policías, más de mil 200 soldados y al batallón de Policía Militar'.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P07",
+    "archivo": "P07-semana-2026-10-31-cucuta-bajo-asedio-9-grupos.png",
+    "tipo": "web",
+    "url": "https://www.semana.com/nacion/cucuta/articulo/cucuta-bajo-el-asedio-de-los-criminales-asi-se-vive-en-una-de-las-ciudades-mas-peligrosas-de-colombia/202648/",
+    "alto": 1500,
+    "que_muestra": "Semana (31 oct 2026): nueve organizaciones criminales con nombre y el puesto 28 en el ranking mundial.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P08",
+    "archivo": "P08-publimetro-2026-04-24-porras-178-homicidios.png",
+    "tipo": "web",
+    "url": "https://www.publimetro.co/noticias/2026/04/24/el-rastro-de-sangre-de-alias-porras-fiscalia-le-atribuye-178-homicidios-en-cucuta/",
+    "alto": 1500,
+    "que_muestra": "Publimetro (24 abr 2026): la Fiscalía imputa a alias Porras ataques que dejaron 178 muertos en las comunas 6, 7 y 8 (2015-2024).",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P09",
+    "archivo": "P09-elpais-2023-10-01-37-bandas.png",
+    "tipo": "web",
+    "url": "https://www.elpais.com.co/colombia/sicariatos-y-hurtos-autoridades-confirmaron-un-fin-de-semana-violento-en-cucuta-0132.html",
+    "alto": 1500,
+    "que_muestra": "El País (1 oct 2023): según la Policía Metropolitana, en Cúcuta operan 37 bandas criminales.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P10",
+    "archivo": "P10-voa-2024-07-25-estructuras-17-activas.png",
+    "tipo": "web",
+    "url": "https://www.vozdeamerica.com/a/bandas-criminales-no-dan-tregua-en-cucuta-la-ciudad-fronteriza-entre-venezuela-y-colombia/7709038.html",
+    "alto": 1500,
+    "que_muestra": "VOA (jul 2024): la Policía identificó 25 estructuras; 17 seguían activas.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P11",
+    "archivo": "P11-pares-2026-08-26-bandas.png",
+    "tipo": "web",
+    "url": "https://www.pares.com.co/entre-la-frontera-y-el-conflicto-los-retos-de-seguridad-en-cucuta/",
+    "alto": 1500,
+    "que_muestra": "Pares (ago 2026): unas 26 bandas en Cúcuta y su área metropolitana; fragmentación del control territorial.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P12",
+    "archivo": "P12-infobae-2026-09-01-carro-bomba-los-patios.png",
+    "tipo": "web",
+    "url": "https://www.infobae.com/colombia/2026/09/01/ministerio-de-defensa-anuncio-ofensiva-en-norte-de-santander-tras-atentado-con-carro-bomba-contra-estacion-de-policia-de-los-patios/",
+    "alto": 1500,
+    "que_muestra": "Infobae (1 sep 2026): carro bomba contra la estación de Los Patios, un muerto y 11 heridos (MinDefensa).",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P13",
+    "archivo": "P13-elespectador-2026-08-secuestro-dijin.png",
+    "tipo": "web",
+    "url": "https://www.elespectador.com/judicial/autoridades-adelantan-busqueda-de-tres-policias-de-la-dijin-secuestrados-en-la-via-cucuta-ocana/",
+    "alto": 1500,
+    "que_muestra": "El Espectador (ago 2026): el ELN secuestra a un mayor y dos patrulleros de la Dijín en la vía Cúcuta-Ocaña.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P14",
+    "archivo": "P14-radionacional-2021-06-15-carro-bomba-brigada-30.png",
+    "tipo": "web",
+    "url": "https://www.radionacional.co/actualidad/explosion-cucuta-batallon-brigada-30-ejercito-nacional",
+    "alto": 1500,
+    "que_muestra": "Radio Nacional (15 jun 2021): carro bomba dentro de la Brigada 30, 36 heridos.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P15",
+    "archivo": "P15-laopinion-2026-onu-limites-militarizacion.png",
+    "tipo": "web",
+    "url": "https://laopinion.co/cucuta/onu-llama-garantizar-los-derechos-humanos-durante-la-militarizacion-de-cucuta",
+    "alto": 1500,
+    "que_muestra": "La Opinión (oct 2026): la ONU pide límites y control civil a la militarización de Cúcuta.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P16",
+    "archivo": "P16-laopinion-2026-11-01-mas-militares-mas-seguridad.png",
+    "tipo": "web",
+    "url": "https://laopinion.co/colombia/mas-militares-significan-mas-seguridad-esto-se-enfrentan-cucuta-y-bogota",
+    "alto": 1500,
+    "que_muestra": "La Opinión / Colprensa (1 nov 2026): expertos advierten que Cúcuta no prueba que 'más militares = más seguridad'.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P17",
+    "archivo": "P17-eltiempo-2026-06-09-radiografia-violencia-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/la-radiografia-de-la-violencia-en-cucuta-una-ciudad-dividida-por-bandas-y-grupos-armados-3563081",
+    "alto": 1500,
+    "que_muestra": "El Tiempo (9 jun 2026): radiografía de la violencia en Cúcuta, ciudad dividida por bandas.",
+    "fuente_tipo": "prensa",
+    "cerrar": [
+      "button.tp-close",
+      "button:has-text(\"ENTIENDO\")",
+      "a:has-text(\"ENTIENDO\")",
+      "text=ENTIENDO"
+    ]
+  },
+  {
+    "id": "P18",
+    "archivo": "P18-laopinion-2025-02-22-ranking-2024-puesto-39.png",
+    "tipo": "web",
+    "url": "https://laopinion.co/cucuta/cucuta-esta-otra-vez-en-la-lista-de-las-ciudades-mas-violentas-del-mundo",
+    "alto": 1500,
+    "que_muestra": "La Opinión (22 feb 2025): Cúcuta otra vez en la lista de las ciudades más violentas del mundo (puesto 39 en 2024).",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P19",
+    "archivo": "P19-unotv-2026-02-11-ranking-2025.png",
+    "tipo": "web",
+    "url": "https://www.unotv.com/nacional/ranking-2025-coloca-a-17-ciudades-de-mexico-entre-las-mas-violentas-del-mundo/",
+    "alto": 1500,
+    "que_muestra": "Uno TV (11 feb 2026): ranking 2025 del CCSPJP (Cúcuta puesto 28).",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P20",
+    "archivo": "P20-insightcrime-2024-02-26-violencia-cucuta-bandas-venezolanas.png",
+    "tipo": "web",
+    "url": "https://insightcrime.org/es/noticias/violencia-cucuta-colombia-aumenta-mientras-bandas-venezolanas-fortalecen/",
+    "alto": 1500,
+    "que_muestra": "InSight Crime (26 feb 2024): la violencia en Cúcuta aumenta mientras se fortalecen bandas venezolanas.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P21",
+    "archivo": "P21-vanguardia-2025-12-07-dos-policias-muertos.png",
+    "tipo": "web",
+    "url": "https://www.vanguardia.com/colombia/2025/12/07/doble-atentado-en-cucuta-ataque-con-explosivos-dejo-dos-policias-muertos-y-dos-heridos/",
+    "alto": 1500,
+    "que_muestra": "Vanguardia (7 dic 2025): explosivos en el anillo vial matan a dos policías; la Policía lo llama 'retaliación' del ELN.",
+    "fuente_tipo": "prensa"
+  },
+  {
+    "id": "P22",
+    "archivo": "P22-eltiempo-2026-10-31-23-bandas.png",
+    "tipo": "web",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/en-cucuta-hay-23-bandas-que-se-disputan-a-muerte-las-economias-ilegales-incluidos-grupos-transnacionales-del-crimen-3597547",
+    "alto": 1500,
+    "que_muestra": "El Tiempo (31 oct 2026): 'más de 23 bandas o grupos armados' (según un politólogo).",
+    "fuente_tipo": "prensa",
+    "cerrar": [
+      "button.tp-close",
+      "button:has-text(\"ENTIENDO\")",
+      "a:has-text(\"ENTIENDO\")",
+      "text=ENTIENDO"
+    ]
+  },
+  {
+    "id": "I01",
+    "archivo": "I01-pnud-idh-2013-2014-resumen-p27-mano-dura-fracasado.png",
+    "tipo": "pdf",
+    "url": "https://files.acquia.undp.org/public/migration/pa/undp_pa_idh__seguridad_ciudadana.pdf",
+    "pagina": 27,
+    "que_muestra": "PNUD, Informe Regional de Desarrollo Humano 2013-2014 (resumen): 'Las políticas de mano dura adoptadas en la región han fracasado en su objetivo de disminuir los niveles de violencia y delito'."
+  },
+  {
+    "id": "I02",
+    "archivo": "I02-pnud-idh-2013-2014-p135-militares-circulo-vicioso.png",
+    "tipo": "pdf",
+    "url": "https://files.acquia.undp.org/public/migration/ec/UNDP-EC-IDH-2014.pdf",
+    "pagina": 135,
+    "que_muestra": "PNUD (2013), cap. 6: usar militares en seguridad ciudadana genera un 'círculo vicioso' que pospone la reforma policial."
+  },
+  {
+    "id": "I03",
+    "archivo": "I03-unodc-gsh-2023-lac-p4-intervenciones-militarizadas.png",
+    "tipo": "pdf",
+    "url": "https://www.unodc.org/documents/data-and-analysis/gsh/2023/GSH_2023_LAC_web.pdf",
+    "pagina": 4,
+    "que_muestra": "UNODC, Global Study on Homicide 2023 (América Latina): la violencia letal también se ha atribuido a 'militarized crime control interventions'."
+  },
+  {
+    "id": "I04",
+    "archivo": "I04-unodc-gsh-2023-lac-p3-respuestas-sobre-securitizadas.png",
+    "tipo": "pdf",
+    "url": "https://www.unodc.org/documents/data-and-analysis/gsh/2023/GSH_2023_LAC_web.pdf",
+    "pagina": 3,
+    "que_muestra": "UNODC (2023): advertencia del Secretario General sobre respuestas 'over-securitized'."
+  },
+  {
+    "id": "I05",
+    "archivo": "I05-corte-idh-alvarado-espinoza-2018-resumen-scjn-p2.png",
+    "tipo": "pdf",
+    "url": "https://scjn.gob.mx/derechos-humanos/sites/default/files/resumenes-sentencias-coidh/2022-03/Serie%20370%20Caso%20Alvarado%20Espinoza%20y%20otros%20vs%20M%C3%A9xico.pdf",
+    "pagina": 2,
+    "que_muestra": "Corte IDH, Alvarado Espinoza y otros vs. México (2018), resumen oficial: la participación militar en seguridad debe ser 'extraordinaria', 'subordinada y complementaria', 'regulada' y 'fiscalizada'."
+  },
+  {
+    "id": "D13",
+    "archivo": "D13-dane-2002-cuadro4-cucuta-total-defunciones-p3.png",
+    "tipo": "xls",
+    "url": "https://www.dane.gov.co/files/investigaciones/poblacion/defunciones/2002_def/Cuadros4_2002/C4_Nte-Stander2002.xls",
+    "pagina": 3,
+    "que_muestra": "DANE, Estadísticas Vitales 2002, Cuadro 4 (Norte de Santander): encabezado de 54001 CUCUTA, 3.934 defunciones de residentes.",
+    "nota": "El DANE publica el cuadro en Excel (.xls). La captura es la conversión a PDF del archivo oficial con LibreOffice, sin tocar valores; las páginas 3 y 4 del PDF resultante corresponden al bloque de Cúcuta."
+  },
+  {
+    "id": "D14",
+    "archivo": "D14-dane-2002-cuadro4-cucuta-homicidios-1043-p4.png",
+    "tipo": "xls",
+    "url": "https://www.dane.gov.co/files/investigaciones/poblacion/defunciones/2002_def/Cuadros4_2002/C4_Nte-Stander2002.xls",
+    "pagina": 4,
+    "que_muestra": "DANE 2002, Cuadro 4, Cúcuta: '512 AGRESIONES (HOMICIDIOS)': 1.043 (968 hombres, 75 mujeres).",
+    "nota": "El DANE publica el cuadro en Excel (.xls). La captura es la conversión a PDF del archivo oficial con LibreOffice, sin tocar valores; las páginas 3 y 4 del PDF resultante corresponden al bloque de Cúcuta."
+  },
+  {
+    "id": "W17",
+    "archivo": "W17-policia-2025-06-06-tren-de-aragua-la-parada.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/resultado-operacional-contra-gdco-tren-aragua-0",
+    "alto": 2300,
+    "que_muestra": "Policía (6 jun 2025): GAULA de la MECUC captura a dos presuntos integrantes del GDCO Tren de Aragua por extorsión en La Parada."
+  },
+  {
+    "id": "E15",
+    "archivo": "E15-insightcrime-2025-balance-homicidios-ecuador-el-salvador.png",
+    "tipo": "web",
+    "url": "https://insightcrime.org/news/insight-crime-2025-homicide-round-up/",
+    "alto": 1400,
+    "buscar": "Ecuador",
+    "que_muestra": "InSight Crime (11 mar 2026), balance de homicidios 2025: Ecuador récord (50,9); El Salvador 1,3 con advertencias metodológicas."
+  },
+  {
+    "id": "E16",
+    "archivo": "E16-nij-cinco-cosas-sobre-disuasion.png",
+    "tipo": "web",
+    "url": "https://nij.ojp.gov/topics/articles/five-things-about-deterrence",
+    "alto": 1400,
+    "que_muestra": "Instituto Nacional de Justicia de EE. UU. (NIJ), con base en Nagin: la certeza de ser capturado disuade más que la severidad del castigo."
+  },
+  {
+    "id": "E17",
+    "archivo": "E17-cpp-braga-turchan-weisburd-2026-disuasion-focalizada.png",
+    "tipo": "web",
+    "url": "https://doi.org/10.1111/1745-9133.70012",
+    "alto": 1400,
+    "manual": true,
+    "nota": "Wiley bloquea navegadores automatizados. Abrir en el navegador.",
+    "que_muestra": "Braga, Turchan y Weisburd (2026), Criminology & Public Policy: la disuasión focalizada reduce el delito 23 % (50 evaluaciones)."
+  },
+  {
+    "id": "W18",
+    "archivo": "W18-alcaldia-cucuta-2025-despliegue-militar-24-7.png",
+    "tipo": "web",
+    "url": "https://cucuta.gov.co/despliegue-militar-24-7-en-cucuta-alcaldia-refuerza-las-estrategias-de-seguridad/",
+    "alto": 1400,
+    "manual": true,
+    "nota": "cucuta.gov.co no es accesible desde el entorno de trabajo. Abrir en el navegador.",
+    "que_muestra": "Alcaldía de Cúcuta (oct 2025): 'despliegue militar 24/7' del Ejército en las comunas."
+  },
+  {
+    "id": "W19",
+    "archivo": "W19-alcaldia-cucuta-2026-reduccion-homicidios-patrullajes.png",
+    "tipo": "web",
+    "url": "https://cucuta.gov.co/cucuta-la-primera-ciudad-capital-en-colombia-con-mayor-reduccion-de-homicidios/",
+    "alto": 1400,
+    "manual": true,
+    "nota": "cucuta.gov.co no es accesible desde el entorno de trabajo. Abrir en el navegador.",
+    "que_muestra": "Alcaldía de Cúcuta (mar 2026): atribuye a los patrullajes conjuntos Policía-Ejército una baja de homicidios del 28 % en enero-febrero de 2026 (contraevidencia que hay que conocer)."
+  },
+  {
+    "id": "W20",
+    "archivo": "W20-alcaldia-cucuta-2024-estructuras-golpeadas.png",
+    "tipo": "web",
+    "url": "https://cucuta.gov.co/mas-de-13-estructuras-criminales-han-sido-golpeadas-con-la-estrategia-cucuta-territorio-seguro-en-sus-primeros-10-meses-de-implementacion/",
+    "alto": 1400,
+    "manual": true,
+    "nota": "cucuta.gov.co no es accesible desde el entorno de trabajo. Abrir en el navegador.",
+    "que_muestra": "Alcaldía de Cúcuta (6 nov 2024): 'Más de 13 estructuras criminales han sido golpeadas' (lista de 17 entradas)."
+  },
+  {
+    "id": "W21",
+    "archivo": "W21-fiscalia-2026-04-imputacion-alias-porras.png",
+    "tipo": "web",
+    "url": "https://www.fiscalia.gov.co/colombia/noticias/",
+    "alto": 1400,
+    "manual": true,
+    "nota": "fiscalia.gov.co no responde desde el entorno de trabajo. Buscar en la sala de prensa de la Fiscalía el boletín de abril de 2026 sobre alias Porras (Evert Carreño Corredor).",
+    "que_muestra": "Fiscalía (abr 2026): imputación a alias Porras por ataques con 178 muertos (2015-2024) en las comunas 6, 7 y 8."
+  },
+  {
+    "id": "W22",
+    "archivo": "W22-defensoria-registro-alertas-AT027-seguimiento.png",
+    "tipo": "web",
+    "url": "https://alertastempranas.defensoria.gov.co/Informe?filtroIdAlerta=91925",
+    "alto": 1200,
+    "que_muestra": "Registro oficial de alertas tempranas de la Defensoría: AT 027-24 e informe de seguimiento 302 (8 ago 2026), 'Cumplimiento bajo' y 'Tiende a agravarse'."
   }
 ]
