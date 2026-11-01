@@ -2,6 +2,7 @@
 
 Hilo de 7 trinos con capturas reales de fuentes sólidas, sin edición (solo recortadas), y el expediente que lo respalda.
 
+- `Hilo_CENS_trinos_y_capturas.docx`: Word con los 7 trinos, sus 28 capturas, el ALT y la fuente de cada imagen (regenerable con `scripts/hacer_docx.js`).
 - `hilo.md`: los 7 trinos listos para publicar. Por cada trino van las 4 imágenes en orden, el texto alternativo (ALT) para pegar en X, lo que prueba cada imagen y su URL. Al final, una respuesta fijada opcional y lo que hay que revisar antes de publicar.
 - `capturas/trino1` … `capturas/trino7`: las 28 imágenes (`trinoN_1.png` a `trinoN_4.png`) con su `manifiesto.json` (URL, página y texto que se recortó). `capturas/extra/` guarda capturas alternativas útiles para réplicas, por ejemplo la carta de CENS a la CREG en La Opinión.
 - `fuentes.md` / `fuentes.json`: índice de fuentes por imagen, fuentes complementarias y huellas SHA-256 de los PDF.
