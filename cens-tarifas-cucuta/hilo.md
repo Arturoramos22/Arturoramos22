@@ -73,9 +73,9 @@ CENS ganó $123.146 millones en 2025 (utilidad neta, 8,5% de sus ingresos): 4,8%
 
 ## 3/7
 
-En su propio estado de valor distribuido 2025, CENS anota en la línea "Dueño" (la utilidad del año) 23.146 millones y en "Comunidad y medio ambiente", .760 millones (0,4%); ha dicho que parte de lo social va en otras líneas. CENS es 99,8% pública: 91,52% es del Grupo EPM, de Medellín; en su última composición detallada (2020), IFINORTE tenía 7,8% y Cúcuta, 0,4%. Dividendos: 8.771 millones decretados en 2025 y 3.885 millones más por pagar en el primer trimestre de 2026. Mi opinión: frente a lo que reporta para la comunidad, son ganancias excesivas y merecen un debate público en Cúcuta.
+En su propio estado de valor distribuido 2025, CENS anota en la línea "Dueño" (la utilidad del año) $123.146 millones y en "Comunidad y medio ambiente", $2.760 millones (0,4%); ha dicho que parte de lo social va en otras líneas. CENS es 99,8% pública: 91,52% es del Grupo EPM, de Medellín; en su última composición detallada (2020), IFINORTE tenía 7,8% y Cúcuta, 0,4%. Dividendos: $58.771 millones decretados en 2025 y $73.885 millones más por pagar en el primer trimestre de 2026. Mi opinión: frente a lo que reporta para la comunidad, son ganancias excesivas y merecen un debate público en Cúcuta.
 
-<sub>591 caracteres</sub>
+<sub>599 caracteres</sub>
 
 **Imágenes, en este orden:**
 
