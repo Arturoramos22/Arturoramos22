@@ -11,7 +11,8 @@ const items = JSON.parse(fs.readFileSync(manifestPath, 'utf8')).filter(i => i.ti
 fs.mkdirSync(outDir, { recursive: true });
 
 (async () => {
-  const browser = await chromium.launch({ proxy: process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PROXY } : undefined });
+  // PROXY_BYPASS: hosts que solo sirven HTTP plano (el proxy de la sesión solo acepta HTTPS), p. ej. www.secretariasenado.gov.co
+  const browser = await chromium.launch({ proxy: process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PROXY, bypass: process.env.PROXY_BYPASS || undefined } : undefined });
   const results = [];
   for (const it of items) {
     const ctx = await browser.newContext({ viewport: { width: it.ancho || 1280, height: 900 }, locale: 'es-CO', deviceScaleFactor: 2 });

@@ -54,5 +54,24 @@
    0,
    612
   ]
+ },
+ {
+  "id": "t6_d",
+  "tipo": "web",
+  "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+  "titular": "LEY 142 DE 1994",
+  "buscar": [
+   "ARTÍCULO 146. LA MEDICIÓN DEL CONSUMO, Y EL PRECIO EN EL CONTRATO",
+   "La falta de medición del consumo, por acción u omisión de la empresa, le hará perder el derecho a recibir el precio"
+  ],
+  "recortes": [
+   [
+    0,
+    8328,
+    624,
+    8738
+   ]
+  ],
+  "nota": "Secretaría General del Senado, Ley 142 de 1994 (parte 3), art. 146. Página solo HTTP: capturada con PROXY_BYPASS=www.secretariasenado.gov.co"
  }
 ]
