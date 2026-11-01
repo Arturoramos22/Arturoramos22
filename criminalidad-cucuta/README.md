@@ -34,6 +34,11 @@
 
 ## Archivos
 
+- `Hilo-Criminalidad-Cucuta.docx`: el hilo en Word. Cada trino trae el texto listo para copiar, su número de caracteres y las capturas en el orden en que se adjuntan, con su fuente. Al final van las réplicas, los pendientes y el índice de fuentes.
+- `analizar_hilo.py`, `organizar_entrega.py` y `generar_word.js` regeneran la entrega desde `hilo.md`:
+  1. `python3 analizar_hilo.py hilo.md hilo.json`
+  2. `python3 organizar_entrega.py hilo.json salida/` arma las carpetas Trino-01 a Trino-37 y el .zip.
+  3. `node generar_word.js hilo.json meta.json salida.docx` genera el Word. `meta.json` lista las copias livianas en JPEG de las capturas que van incrustadas en el documento.
 - `hilo.md`: el borrador del hilo, con las capturas de cada trino, datos para las réplicas y lo que falta confirmar. Lo revisó un verificador independiente, cifra por cifra, contra la base oficial y los documentos.
 - `fuentes.md` y `fuentes.json`: índice de todas las fuentes. Para cada una: qué prueba, enlace exacto, archivo de la captura y estado (capturada o manual).
 - `capturas/`: las capturas reales, sin edición, con estos prefijos:
