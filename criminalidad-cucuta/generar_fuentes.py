@@ -56,7 +56,7 @@ lineas = [
     "# Índice de fuentes",
     "",
     f"{len(salida)} fuentes: {sum(s['estado'] == 'capturada' for s in salida)} con captura real tomada, "
-    f"{sum(s['estado'] == 'manual' for s in salida)} para capturar a mano (el sitio bloquea navegadores automáticos) "
+    f"{sum(s['estado'] == 'manual' for s in salida)} para capturar a mano (el sitio bloquea navegadores automáticos o pide registro) "
     f"y {sum(s['estado'] == 'pendiente' for s in salida)} pendientes.",
     "",
     "Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de la captura. "

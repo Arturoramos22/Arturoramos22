@@ -666,7 +666,9 @@
       "button:has-text(\"ENTIENDO\")",
       "a:has-text(\"ENTIENDO\")",
       "text=ENTIENDO"
-    ]
+    ],
+    "manual": true,
+    "nota": "El Tiempo muestra un muro de registro sobre el archivo. Capturar desde una cuenta registrada."
   },
   {
     "id": "P02",
@@ -681,7 +683,9 @@
       "button:has-text(\"ENTIENDO\")",
       "a:has-text(\"ENTIENDO\")",
       "text=ENTIENDO"
-    ]
+    ],
+    "manual": true,
+    "nota": "El Tiempo muestra un muro de registro sobre el archivo. Capturar desde una cuenta registrada."
   },
   {
     "id": "P03",
@@ -822,7 +826,9 @@
       "button:has-text(\"ENTIENDO\")",
       "a:has-text(\"ENTIENDO\")",
       "text=ENTIENDO"
-    ]
+    ],
+    "manual": true,
+    "nota": "Nota exclusiva para suscriptores de El Tiempo. Capturar desde una cuenta suscrita."
   },
   {
     "id": "P18",
@@ -840,7 +846,9 @@
     "url": "https://www.unotv.com/nacional/ranking-2025-coloca-a-17-ciudades-de-mexico-entre-las-mas-violentas-del-mundo/",
     "alto": 1500,
     "que_muestra": "Uno TV (11 feb 2026): ranking 2025 del CCSPJP (Cúcuta puesto 28).",
-    "fuente_tipo": "prensa"
+    "fuente_tipo": "prensa",
+    "manual": true,
+    "nota": "La lista con Cúcuta queda bajo un video que no carga en navegadores automáticos. Abrir y bajar hasta el puesto 28."
   },
   {
     "id": "P20",
@@ -873,7 +881,9 @@
       "button:has-text(\"ENTIENDO\")",
       "a:has-text(\"ENTIENDO\")",
       "text=ENTIENDO"
-    ]
+    ],
+    "manual": true,
+    "nota": "Nota exclusiva para suscriptores de El Tiempo. Capturar desde una cuenta suscrita."
   },
   {
     "id": "I01",
@@ -1014,6 +1024,8 @@
     "tipo": "web",
     "url": "https://alertastempranas.defensoria.gov.co/Informe?filtroIdAlerta=91925",
     "alto": 1200,
-    "que_muestra": "Registro oficial de alertas tempranas de la Defensoría: AT 027-24 e informe de seguimiento 302 (8 ago 2026), 'Cumplimiento bajo' y 'Tiende a agravarse'."
+    "que_muestra": "Registro oficial de alertas tempranas de la Defensoría: AT 027-24 e informe de seguimiento 302 (8 ago 2026), 'Cumplimiento bajo' y 'Tiende a agravarse'.",
+    "manual": true,
+    "nota": "El registro de alertas de la Defensoría no carga en navegadores automáticos. Abrir en el navegador."
   }
 ]

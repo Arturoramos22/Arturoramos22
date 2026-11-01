@@ -429,52 +429,173 @@
     "capturado": "2026-11-01T20:44:50.425Z",
     "que_muestra": "IS 026-2026, p. 59: la situación de riesgo 'persiste y la tendencia es a agravarse'."
   },
-  "P01": {
-    "archivo": "P01-eltiempo-1999-06-21-primera-incursion-auc-cucuta.png",
-    "url": "https://www.eltiempo.com/archivo/documento/MAM-940809",
-    "capturado": "2026-11-01T20:46:15.351Z",
-    "que_muestra": "El Tiempo (21 jun 1999): primera incursión de las autodefensas en Cúcuta (barrio Niña Ceci); la Policía advierte 'un gran periodo de violencia'."
-  },
-  "P02": {
-    "archivo": "P02-eltiempo-2003-01-20-cucuta-segunda-mas-violenta.png",
-    "url": "https://www.eltiempo.com/archivo/documento/MAM-968184",
-    "capturado": "2026-11-01T20:48:01.772Z",
-    "que_muestra": "El Tiempo (20 ene 2003), con Medicina Legal: 1.248 crímenes en 2002; Cúcuta, segunda ciudad más violenta del país después de Medellín."
-  },
   "P03": {
     "archivo": "P03-semana-2026-10-29-ordeno-militarizar-cucuta.png",
     "url": "https://www.semana.com/politica/articulo/atencion-abelardo-de-la-espriella-ordeno-militarizar-cucuta/202607/",
-    "capturado": "2026-11-01T20:48:23.266Z",
+    "capturado": "2026-11-01T20:56:06.864Z",
     "que_muestra": "Semana (29 oct 2026): 'He ordenado la militarización inmediata de Cúcuta'."
   },
   "P04": {
     "archivo": "P04-infobae-2026-10-30-500-soldados-patrullan-cucuta.png",
     "url": "https://www.infobae.com/colombia/2026/10/30/al-menos-500-soldados-de-elite-patrullan-cucuta-tras-la-orden-presidencial-de-militarizar-la-ciudad-fronteriza/",
-    "capturado": "2026-11-01T20:49:07.265Z",
+    "capturado": "2026-11-01T20:56:26.759Z",
     "que_muestra": "Infobae (30 oct 2026): unos 500 soldados de élite patrullan Cúcuta; contexto del asesinato de Miguel Castellanos y el explosivo en El Escobal."
   },
   "P05": {
     "archivo": "P05-laopinion-2026-324-soldados-150-policias.png",
     "url": "https://laopinion.co/cucuta/324-soldados-y-150-policias-refuerzan-la-seguridad-en-cucuta-tras-orden-de-militarizacion",
-    "capturado": "2026-11-01T20:50:53.193Z",
+    "capturado": "2026-11-01T20:56:55.631Z",
     "que_muestra": "La Opinión (oct 2026): 324 soldados y 150 policías; el alcalde da 'respaldo total' a la militarización."
   },
   "P06": {
     "archivo": "P06-prensa-latina-2025-02-20-alcalde-3000-policias-1200-soldados.png",
     "url": "https://www.prensa-latina.cu/2025/02/20/decretan-toque-de-queda-por-escalada-violenta-en-cucuta-colombia/",
-    "capturado": "2026-11-01T20:51:16.241Z",
+    "capturado": "2026-11-01T20:57:15.815Z",
     "que_muestra": "Prensa Latina (20 feb 2025), en plena conmoción: el alcalde dice 'Tenemos más de tres mil policías, más de mil 200 soldados y al batallón de Policía Militar'."
   },
   "P07": {
     "archivo": "P07-semana-2026-10-31-cucuta-bajo-asedio-9-grupos.png",
     "url": "https://www.semana.com/nacion/cucuta/articulo/cucuta-bajo-el-asedio-de-los-criminales-asi-se-vive-en-una-de-las-ciudades-mas-peligrosas-de-colombia/202648/",
-    "capturado": "2026-11-01T20:51:37.635Z",
+    "capturado": "2026-11-01T20:57:35.236Z",
     "que_muestra": "Semana (31 oct 2026): nueve organizaciones criminales con nombre y el puesto 28 en el ranking mundial."
   },
   "P08": {
     "archivo": "P08-publimetro-2026-04-24-porras-178-homicidios.png",
     "url": "https://www.publimetro.co/noticias/2026/04/24/el-rastro-de-sangre-de-alias-porras-fiscalia-le-atribuye-178-homicidios-en-cucuta/",
-    "capturado": "2026-11-01T20:53:24.280Z",
+    "capturado": "2026-11-01T20:58:22.239Z",
     "que_muestra": "Publimetro (24 abr 2026): la Fiscalía imputa a alias Porras ataques que dejaron 178 muertos en las comunas 6, 7 y 8 (2015-2024)."
+  },
+  "P09": {
+    "archivo": "P09-elpais-2023-10-01-37-bandas.png",
+    "url": "https://www.elpais.com.co/colombia/sicariatos-y-hurtos-autoridades-confirmaron-un-fin-de-semana-violento-en-cucuta-0132.html",
+    "capturado": "2026-11-01T20:58:46.552Z",
+    "que_muestra": "El País (1 oct 2023): según la Policía Metropolitana, en Cúcuta operan 37 bandas criminales."
+  },
+  "P10": {
+    "archivo": "P10-voa-2024-07-25-estructuras-17-activas.png",
+    "url": "https://www.vozdeamerica.com/a/bandas-criminales-no-dan-tregua-en-cucuta-la-ciudad-fronteriza-entre-venezuela-y-colombia/7709038.html",
+    "capturado": "2026-11-01T20:59:06.228Z",
+    "que_muestra": "VOA (jul 2024): la Policía identificó 25 estructuras; 17 seguían activas."
+  },
+  "P11": {
+    "archivo": "P11-pares-2026-08-26-bandas.png",
+    "url": "https://www.pares.com.co/entre-la-frontera-y-el-conflicto-los-retos-de-seguridad-en-cucuta/",
+    "capturado": "2026-11-01T20:59:26.483Z",
+    "que_muestra": "Pares (ago 2026): unas 26 bandas en Cúcuta y su área metropolitana; fragmentación del control territorial."
+  },
+  "P12": {
+    "archivo": "P12-infobae-2026-09-01-carro-bomba-los-patios.png",
+    "url": "https://www.infobae.com/colombia/2026/09/01/ministerio-de-defensa-anuncio-ofensiva-en-norte-de-santander-tras-atentado-con-carro-bomba-contra-estacion-de-policia-de-los-patios/",
+    "capturado": "2026-11-01T20:59:46.584Z",
+    "que_muestra": "Infobae (1 sep 2026): carro bomba contra la estación de Los Patios, un muerto y 11 heridos (MinDefensa)."
+  },
+  "P13": {
+    "archivo": "P13-elespectador-2026-08-secuestro-dijin.png",
+    "url": "https://www.elespectador.com/judicial/autoridades-adelantan-busqueda-de-tres-policias-de-la-dijin-secuestrados-en-la-via-cucuta-ocana/",
+    "capturado": "2026-11-01T21:00:23.037Z",
+    "que_muestra": "El Espectador (ago 2026): el ELN secuestra a un mayor y dos patrulleros de la Dijín en la vía Cúcuta-Ocaña."
+  },
+  "P14": {
+    "archivo": "P14-radionacional-2021-06-15-carro-bomba-brigada-30.png",
+    "url": "https://www.radionacional.co/actualidad/explosion-cucuta-batallon-brigada-30-ejercito-nacional",
+    "capturado": "2026-11-01T21:00:43.501Z",
+    "que_muestra": "Radio Nacional (15 jun 2021): carro bomba dentro de la Brigada 30, 36 heridos."
+  },
+  "P15": {
+    "archivo": "P15-laopinion-2026-onu-limites-militarizacion.png",
+    "url": "https://laopinion.co/cucuta/onu-llama-garantizar-los-derechos-humanos-durante-la-militarizacion-de-cucuta",
+    "capturado": "2026-11-01T21:01:07.295Z",
+    "que_muestra": "La Opinión (oct 2026): la ONU pide límites y control civil a la militarización de Cúcuta."
+  },
+  "P16": {
+    "archivo": "P16-laopinion-2026-11-01-mas-militares-mas-seguridad.png",
+    "url": "https://laopinion.co/colombia/mas-militares-significan-mas-seguridad-esto-se-enfrentan-cucuta-y-bogota",
+    "capturado": "2026-11-01T21:01:31.423Z",
+    "que_muestra": "La Opinión / Colprensa (1 nov 2026): expertos advierten que Cúcuta no prueba que 'más militares = más seguridad'."
+  },
+  "P18": {
+    "archivo": "P18-laopinion-2025-02-22-ranking-2024-puesto-39.png",
+    "url": "https://laopinion.co/cucuta/cucuta-esta-otra-vez-en-la-lista-de-las-ciudades-mas-violentas-del-mundo",
+    "capturado": "2026-11-01T21:02:36.890Z",
+    "que_muestra": "La Opinión (22 feb 2025): Cúcuta otra vez en la lista de las ciudades más violentas del mundo (puesto 39 en 2024)."
+  },
+  "P20": {
+    "archivo": "P20-insightcrime-2024-02-26-violencia-cucuta-bandas-venezolanas.png",
+    "url": "https://insightcrime.org/es/noticias/violencia-cucuta-colombia-aumenta-mientras-bandas-venezolanas-fortalecen/",
+    "capturado": "2026-11-01T21:03:53.308Z",
+    "que_muestra": "InSight Crime (26 feb 2024): la violencia en Cúcuta aumenta mientras se fortalecen bandas venezolanas."
+  },
+  "P21": {
+    "archivo": "P21-vanguardia-2025-12-07-dos-policias-muertos.png",
+    "url": "https://www.vanguardia.com/colombia/2025/12/07/doble-atentado-en-cucuta-ataque-con-explosivos-dejo-dos-policias-muertos-y-dos-heridos/",
+    "capturado": "2026-11-01T21:04:56.486Z",
+    "que_muestra": "Vanguardia (7 dic 2025): explosivos en el anillo vial matan a dos policías; la Policía lo llama 'retaliación' del ELN."
+  },
+  "I01": {
+    "archivo": "I01-pnud-idh-2013-2014-resumen-p27-mano-dura-fracasado.png",
+    "url": "https://files.acquia.undp.org/public/migration/pa/undp_pa_idh__seguridad_ciudadana.pdf",
+    "pagina_pdf": 27,
+    "capturado": "2026-11-01T21:05:43.694Z",
+    "que_muestra": "PNUD, Informe Regional de Desarrollo Humano 2013-2014 (resumen): 'Las políticas de mano dura adoptadas en la región han fracasado en su objetivo de disminuir los niveles de violencia y delito'."
+  },
+  "I02": {
+    "archivo": "I02-pnud-idh-2013-2014-p135-militares-circulo-vicioso.png",
+    "url": "https://files.acquia.undp.org/public/migration/ec/UNDP-EC-IDH-2014.pdf",
+    "pagina_pdf": 135,
+    "capturado": "2026-11-01T21:05:44.985Z",
+    "que_muestra": "PNUD (2013), cap. 6: usar militares en seguridad ciudadana genera un 'círculo vicioso' que pospone la reforma policial."
+  },
+  "I03": {
+    "archivo": "I03-unodc-gsh-2023-lac-p4-intervenciones-militarizadas.png",
+    "url": "https://www.unodc.org/documents/data-and-analysis/gsh/2023/GSH_2023_LAC_web.pdf",
+    "pagina_pdf": 4,
+    "capturado": "2026-11-01T21:05:50.040Z",
+    "que_muestra": "UNODC, Global Study on Homicide 2023 (América Latina): la violencia letal también se ha atribuido a 'militarized crime control interventions'."
+  },
+  "I04": {
+    "archivo": "I04-unodc-gsh-2023-lac-p3-respuestas-sobre-securitizadas.png",
+    "url": "https://www.unodc.org/documents/data-and-analysis/gsh/2023/GSH_2023_LAC_web.pdf",
+    "pagina_pdf": 3,
+    "capturado": "2026-11-01T21:05:50.385Z",
+    "que_muestra": "UNODC (2023): advertencia del Secretario General sobre respuestas 'over-securitized'."
+  },
+  "I05": {
+    "archivo": "I05-corte-idh-alvarado-espinoza-2018-resumen-scjn-p2.png",
+    "url": "https://scjn.gob.mx/derechos-humanos/sites/default/files/resumenes-sentencias-coidh/2022-03/Serie%20370%20Caso%20Alvarado%20Espinoza%20y%20otros%20vs%20M%C3%A9xico.pdf",
+    "pagina_pdf": 2,
+    "capturado": "2026-11-01T21:05:51.826Z",
+    "que_muestra": "Corte IDH, Alvarado Espinoza y otros vs. México (2018), resumen oficial: la participación militar en seguridad debe ser 'extraordinaria', 'subordinada y complementaria', 'regulada' y 'fiscalizada'."
+  },
+  "D13": {
+    "archivo": "D13-dane-2002-cuadro4-cucuta-total-defunciones-p3.png",
+    "url": "https://www.dane.gov.co/files/investigaciones/poblacion/defunciones/2002_def/Cuadros4_2002/C4_Nte-Stander2002.xls",
+    "pagina_pdf": 3,
+    "capturado": "2026-11-01T21:05:54.271Z",
+    "que_muestra": "DANE, Estadísticas Vitales 2002, Cuadro 4 (Norte de Santander): encabezado de 54001 CUCUTA, 3.934 defunciones de residentes."
+  },
+  "D14": {
+    "archivo": "D14-dane-2002-cuadro4-cucuta-homicidios-1043-p4.png",
+    "url": "https://www.dane.gov.co/files/investigaciones/poblacion/defunciones/2002_def/Cuadros4_2002/C4_Nte-Stander2002.xls",
+    "pagina_pdf": 4,
+    "capturado": "2026-11-01T21:05:54.585Z",
+    "que_muestra": "DANE 2002, Cuadro 4, Cúcuta: '512 AGRESIONES (HOMICIDIOS)': 1.043 (968 hombres, 75 mujeres)."
+  },
+  "W17": {
+    "archivo": "W17-policia-2025-06-06-tren-de-aragua-la-parada.png",
+    "url": "https://www.policia.gov.co/noticia/resultado-operacional-contra-gdco-tren-aragua-0",
+    "capturado": "2026-11-01T21:06:14.950Z",
+    "que_muestra": "Policía (6 jun 2025): GAULA de la MECUC captura a dos presuntos integrantes del GDCO Tren de Aragua por extorsión en La Parada."
+  },
+  "E15": {
+    "archivo": "E15-insightcrime-2025-balance-homicidios-ecuador-el-salvador.png",
+    "url": "https://insightcrime.org/news/insight-crime-2025-homicide-round-up/",
+    "capturado": "2026-11-01T21:06:35.916Z",
+    "que_muestra": "InSight Crime (11 mar 2026), balance de homicidios 2025: Ecuador récord (50,9); El Salvador 1,3 con advertencias metodológicas."
+  },
+  "E16": {
+    "archivo": "E16-nij-cinco-cosas-sobre-disuasion.png",
+    "url": "https://nij.ojp.gov/topics/articles/five-things-about-deterrence",
+    "capturado": "2026-11-01T21:06:53.805Z",
+    "que_muestra": "Instituto Nacional de Justicia de EE. UU. (NIJ), con base en Nagin: la certeza de ser capturado disuade más que la severidad del castigo."
   }
 }

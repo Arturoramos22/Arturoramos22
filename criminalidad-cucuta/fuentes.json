@@ -63,7 +63,7 @@
   "id": "D06",
   "categoria": "Datos oficiales (MinDefensa/Policía en datos.gov.co; DANE)",
   "que_muestra": "Denuncias de extorsión en Cúcuta por año: de 8 en 2008 a 327 en 2023.",
-  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSIÓN/q2ib-t9am/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y%28%60fecha_hecho%60%29%20AS%20%60anio%60%2C%20sum%28%60cantidad%60%29%20AS%20%60extorsiones%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSI%C3%93N/q2ib-t9am/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y%28%60fecha_hecho%60%29%20AS%20%60anio%60%2C%20sum%28%60cantidad%60%29%20AS%20%60extorsiones%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
   "captura": "capturas/D06-datosgov-extorsion-cucuta-2003-2026.png",
@@ -918,10 +918,10 @@
   "url": "https://www.eltiempo.com/archivo/documento/MAM-940809",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": "capturas/P01-eltiempo-1999-06-21-primera-incursion-auc-cucuta.png",
-  "estado": "capturada",
-  "capturado": "2026-11-01T20:46:15.351Z",
-  "nota": null
+  "captura": null,
+  "estado": "manual",
+  "capturado": null,
+  "nota": "El Tiempo muestra un muro de registro sobre el archivo. Capturar desde una cuenta registrada."
  },
  {
   "id": "P02",
@@ -930,10 +930,10 @@
   "url": "https://www.eltiempo.com/archivo/documento/MAM-968184",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": "capturas/P02-eltiempo-2003-01-20-cucuta-segunda-mas-violenta.png",
-  "estado": "capturada",
-  "capturado": "2026-11-01T20:48:01.772Z",
-  "nota": null
+  "captura": null,
+  "estado": "manual",
+  "capturado": null,
+  "nota": "El Tiempo muestra un muro de registro sobre el archivo. Capturar desde una cuenta registrada."
  },
  {
   "id": "P03",
@@ -944,7 +944,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/P03-semana-2026-10-29-ordeno-militarizar-cucuta.png",
   "estado": "capturada",
-  "capturado": "2026-11-01T20:48:23.266Z",
+  "capturado": "2026-11-01T20:56:06.864Z",
   "nota": null
  },
  {
@@ -956,7 +956,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/P04-infobae-2026-10-30-500-soldados-patrullan-cucuta.png",
   "estado": "capturada",
-  "capturado": "2026-11-01T20:49:07.265Z",
+  "capturado": "2026-11-01T20:56:26.759Z",
   "nota": null
  },
  {
@@ -968,7 +968,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/P05-laopinion-2026-324-soldados-150-policias.png",
   "estado": "capturada",
-  "capturado": "2026-11-01T20:50:53.193Z",
+  "capturado": "2026-11-01T20:56:55.631Z",
   "nota": null
  },
  {
@@ -980,7 +980,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/P06-prensa-latina-2025-02-20-alcalde-3000-policias-1200-soldados.png",
   "estado": "capturada",
-  "capturado": "2026-11-01T20:51:16.241Z",
+  "capturado": "2026-11-01T20:57:15.815Z",
   "nota": null
  },
  {
@@ -992,7 +992,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/P07-semana-2026-10-31-cucuta-bajo-asedio-9-grupos.png",
   "estado": "capturada",
-  "capturado": "2026-11-01T20:51:37.635Z",
+  "capturado": "2026-11-01T20:57:35.236Z",
   "nota": null
  },
  {
@@ -1004,7 +1004,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/P08-publimetro-2026-04-24-porras-178-homicidios.png",
   "estado": "capturada",
-  "capturado": "2026-11-01T20:53:24.280Z",
+  "capturado": "2026-11-01T20:58:22.239Z",
   "nota": null
  },
  {
@@ -1014,9 +1014,9 @@
   "url": "https://www.elpais.com.co/colombia/sicariatos-y-hurtos-autoridades-confirmaron-un-fin-de-semana-violento-en-cucuta-0132.html",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P09-elpais-2023-10-01-37-bandas.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T20:58:46.552Z",
   "nota": null
  },
  {
@@ -1026,9 +1026,9 @@
   "url": "https://www.vozdeamerica.com/a/bandas-criminales-no-dan-tregua-en-cucuta-la-ciudad-fronteriza-entre-venezuela-y-colombia/7709038.html",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P10-voa-2024-07-25-estructuras-17-activas.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T20:59:06.228Z",
   "nota": null
  },
  {
@@ -1038,9 +1038,9 @@
   "url": "https://www.pares.com.co/entre-la-frontera-y-el-conflicto-los-retos-de-seguridad-en-cucuta/",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P11-pares-2026-08-26-bandas.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T20:59:26.483Z",
   "nota": null
  },
  {
@@ -1050,9 +1050,9 @@
   "url": "https://www.infobae.com/colombia/2026/09/01/ministerio-de-defensa-anuncio-ofensiva-en-norte-de-santander-tras-atentado-con-carro-bomba-contra-estacion-de-policia-de-los-patios/",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P12-infobae-2026-09-01-carro-bomba-los-patios.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T20:59:46.584Z",
   "nota": null
  },
  {
@@ -1062,9 +1062,9 @@
   "url": "https://www.elespectador.com/judicial/autoridades-adelantan-busqueda-de-tres-policias-de-la-dijin-secuestrados-en-la-via-cucuta-ocana/",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P13-elespectador-2026-08-secuestro-dijin.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:00:23.037Z",
   "nota": null
  },
  {
@@ -1074,9 +1074,9 @@
   "url": "https://www.radionacional.co/actualidad/explosion-cucuta-batallon-brigada-30-ejercito-nacional",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P14-radionacional-2021-06-15-carro-bomba-brigada-30.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:00:43.501Z",
   "nota": null
  },
  {
@@ -1086,9 +1086,9 @@
   "url": "https://laopinion.co/cucuta/onu-llama-garantizar-los-derechos-humanos-durante-la-militarizacion-de-cucuta",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P15-laopinion-2026-onu-limites-militarizacion.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:01:07.295Z",
   "nota": null
  },
  {
@@ -1098,9 +1098,9 @@
   "url": "https://laopinion.co/colombia/mas-militares-significan-mas-seguridad-esto-se-enfrentan-cucuta-y-bogota",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P16-laopinion-2026-11-01-mas-militares-mas-seguridad.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:01:31.423Z",
   "nota": null
  },
  {
@@ -1111,9 +1111,9 @@
   "pagina_pdf": null,
   "buscar_en_pagina": null,
   "captura": null,
-  "estado": "pendiente",
+  "estado": "manual",
   "capturado": null,
-  "nota": null
+  "nota": "Nota exclusiva para suscriptores de El Tiempo. Capturar desde una cuenta suscrita."
  },
  {
   "id": "P18",
@@ -1122,9 +1122,9 @@
   "url": "https://laopinion.co/cucuta/cucuta-esta-otra-vez-en-la-lista-de-las-ciudades-mas-violentas-del-mundo",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P18-laopinion-2025-02-22-ranking-2024-puesto-39.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:02:36.890Z",
   "nota": null
  },
  {
@@ -1135,9 +1135,9 @@
   "pagina_pdf": null,
   "buscar_en_pagina": null,
   "captura": null,
-  "estado": "pendiente",
+  "estado": "manual",
   "capturado": null,
-  "nota": null
+  "nota": "La lista con Cúcuta queda bajo un video que no carga en navegadores automáticos. Abrir y bajar hasta el puesto 28."
  },
  {
   "id": "P20",
@@ -1146,9 +1146,9 @@
   "url": "https://insightcrime.org/es/noticias/violencia-cucuta-colombia-aumenta-mientras-bandas-venezolanas-fortalecen/",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P20-insightcrime-2024-02-26-violencia-cucuta-bandas-venezolanas.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:03:53.308Z",
   "nota": null
  },
  {
@@ -1158,9 +1158,9 @@
   "url": "https://www.vanguardia.com/colombia/2025/12/07/doble-atentado-en-cucuta-ataque-con-explosivos-dejo-dos-policias-muertos-y-dos-heridos/",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/P21-vanguardia-2025-12-07-dos-policias-muertos.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:04:56.486Z",
   "nota": null
  },
  {
@@ -1171,9 +1171,9 @@
   "pagina_pdf": null,
   "buscar_en_pagina": null,
   "captura": null,
-  "estado": "pendiente",
+  "estado": "manual",
   "capturado": null,
-  "nota": null
+  "nota": "Nota exclusiva para suscriptores de El Tiempo. Capturar desde una cuenta suscrita."
  },
  {
   "id": "I01",
@@ -1182,9 +1182,9 @@
   "url": "https://files.acquia.undp.org/public/migration/pa/undp_pa_idh__seguridad_ciudadana.pdf",
   "pagina_pdf": 27,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/I01-pnud-idh-2013-2014-resumen-p27-mano-dura-fracasado.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:05:43.694Z",
   "nota": null
  },
  {
@@ -1194,9 +1194,9 @@
   "url": "https://files.acquia.undp.org/public/migration/ec/UNDP-EC-IDH-2014.pdf",
   "pagina_pdf": 135,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/I02-pnud-idh-2013-2014-p135-militares-circulo-vicioso.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:05:44.985Z",
   "nota": null
  },
  {
@@ -1206,9 +1206,9 @@
   "url": "https://www.unodc.org/documents/data-and-analysis/gsh/2023/GSH_2023_LAC_web.pdf",
   "pagina_pdf": 4,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/I03-unodc-gsh-2023-lac-p4-intervenciones-militarizadas.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:05:50.040Z",
   "nota": null
  },
  {
@@ -1218,9 +1218,9 @@
   "url": "https://www.unodc.org/documents/data-and-analysis/gsh/2023/GSH_2023_LAC_web.pdf",
   "pagina_pdf": 3,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/I04-unodc-gsh-2023-lac-p3-respuestas-sobre-securitizadas.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:05:50.385Z",
   "nota": null
  },
  {
@@ -1230,9 +1230,9 @@
   "url": "https://scjn.gob.mx/derechos-humanos/sites/default/files/resumenes-sentencias-coidh/2022-03/Serie%20370%20Caso%20Alvarado%20Espinoza%20y%20otros%20vs%20M%C3%A9xico.pdf",
   "pagina_pdf": 2,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/I05-corte-idh-alvarado-espinoza-2018-resumen-scjn-p2.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:05:51.826Z",
   "nota": null
  },
  {
@@ -1244,7 +1244,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/D13-dane-2002-cuadro4-cucuta-total-defunciones-p3.png",
   "estado": "capturada",
-  "capturado": null,
+  "capturado": "2026-11-01T21:05:54.271Z",
   "nota": "El DANE publica el cuadro en Excel (.xls). La captura es la conversión a PDF del archivo oficial con LibreOffice, sin tocar valores; las páginas 3 y 4 del PDF resultante corresponden al bloque de Cúcuta."
  },
  {
@@ -1256,7 +1256,7 @@
   "buscar_en_pagina": null,
   "captura": "capturas/D14-dane-2002-cuadro4-cucuta-homicidios-1043-p4.png",
   "estado": "capturada",
-  "capturado": null,
+  "capturado": "2026-11-01T21:05:54.585Z",
   "nota": "El DANE publica el cuadro en Excel (.xls). La captura es la conversión a PDF del archivo oficial con LibreOffice, sin tocar valores; las páginas 3 y 4 del PDF resultante corresponden al bloque de Cúcuta."
  },
  {
@@ -1266,9 +1266,9 @@
   "url": "https://www.policia.gov.co/noticia/resultado-operacional-contra-gdco-tren-aragua-0",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/W17-policia-2025-06-06-tren-de-aragua-la-parada.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:06:14.950Z",
   "nota": null
  },
  {
@@ -1278,9 +1278,9 @@
   "url": "https://insightcrime.org/news/insight-crime-2025-homicide-round-up/",
   "pagina_pdf": null,
   "buscar_en_pagina": "Ecuador",
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/E15-insightcrime-2025-balance-homicidios-ecuador-el-salvador.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:06:35.916Z",
   "nota": null
  },
  {
@@ -1290,9 +1290,9 @@
   "url": "https://nij.ojp.gov/topics/articles/five-things-about-deterrence",
   "pagina_pdf": null,
   "buscar_en_pagina": null,
-  "captura": null,
-  "estado": "pendiente",
-  "capturado": null,
+  "captura": "capturas/E16-nij-cinco-cosas-sobre-disuasion.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:06:53.805Z",
   "nota": null
  },
  {
@@ -1363,8 +1363,8 @@
   "pagina_pdf": null,
   "buscar_en_pagina": null,
   "captura": null,
-  "estado": "pendiente",
+  "estado": "manual",
   "capturado": null,
-  "nota": null
+  "nota": "El registro de alertas de la Defensoría no carga en navegadores automáticos. Abrir en el navegador."
  }
 ]
