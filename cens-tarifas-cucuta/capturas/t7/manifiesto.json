@@ -1,0 +1,72 @@
+[
+ {
+  "id": "t7_a",
+  "tipo": "web",
+  "url": "https://www.xm.com.co/consumo/historicos-de-demanda",
+  "titular": "Históricos de demanda",
+  "buscar": [
+   "la punta dos (18:00 a 21:00), siendo este último punto el de mayor consumo de potencia eléctrica en el país"
+  ],
+  "recortes": [
+   [
+    0,
+    0,
+    1280,
+    1195
+   ]
+  ]
+ },
+ {
+  "id": "t7_b",
+  "tipo": "web",
+  "url": "https://www.eltiempo.com/economia/sectores/crece-la-alerta-colombia-enfrenta-riesgo-alto-de-desabastecimiento-electrico-y-piden-ahorro-urgente-de-energia-agua-y-gas-3585721",
+  "titular": "Crece la alerta: Colombia enfrenta 'riesgo alto' de desabastecimiento eléctrico y piden ahorro urgente de energía, agua y gas",
+  "fecha": "13.09.2026 12:15",
+  "buscar": [],
+  "recortes": [
+   [
+    0,
+    360,
+    1280,
+    1522
+   ]
+  ]
+ },
+ {
+  "id": "t7_c",
+  "tipo": "web",
+  "url": "https://www.eltiempo.com/economia/sectores/crece-la-alerta-colombia-enfrenta-riesgo-alto-de-desabastecimiento-electrico-y-piden-ahorro-urgente-de-energia-agua-y-gas-3585721",
+  "con_titular": false,
+  "buscar": [
+   "Demanda disparada en horas pico",
+   "Para frenar esta tendencia, XM instó al Gobierno Nacional",
+   "gestionar eficientemente el consumo durante la hora pico, entre las 6:00 de la tarde y las 10:00 de la noche"
+  ],
+  "recortes": [
+   [
+    110,
+    5188,
+    790,
+    5648
+   ]
+  ]
+ },
+ {
+  "id": "t7_d",
+  "tipo": "web",
+  "url": "https://www.semana.com/nacion/cucuta/articulo/asi-sera-el-gran-apagon-en-cucuta-contra-cens-este-martes-8-de-noviembre/202210/",
+  "titular": "Así será el gran apagón en Cúcuta contra CENS este martes 8 de noviembre",
+  "fecha": "8 de noviembre de 2022",
+  "buscar": [
+   "este martes 8 de noviembre se llevará a cabo una jornada denominada #Apagóncucuteño contra la electrificadora Centrales Eléctricas de Norte de Santander (CENS), Grupo EPM"
+  ],
+  "recortes": [
+   [
+    0,
+    0,
+    1280,
+    1551
+   ]
+  ]
+ }
+]

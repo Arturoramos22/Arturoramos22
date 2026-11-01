@@ -1,0 +1,81 @@
+[
+ {
+  "id": "t3_a",
+  "tipo": "pdf",
+  "fuente": "CENS (Grupo EPM) - Informe de Sostenibilidad 2025, versión completa, p. 15 'Nuestros negocios'",
+  "url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t3/informe2025.pdf",
+  "pagina": 15,
+  "dpi": 120,
+  "buscar": [
+   "Compramos energía mediante contratos y",
+   "usuarios del mercado regulado."
+  ],
+  "franja": [
+   0,
+   985
+  ],
+  "x": [
+   0,
+   1920
+  ]
+ },
+ {
+  "id": "t3_b",
+  "tipo": "pdf",
+  "fuente": "CENS - Notas a los Estados Financieros, segundo trimestre 2026, p. 4 (Nota 13)",
+  "url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t3/notas2t2026.pdf",
+  "pagina": 4,
+  "dpi": 200,
+  "buscar": [
+   "Nota 13. Costos Prestación de Servicios",
+   "Compra en contratos: Aumentó 32,429, explicada por un mayor volumen contratado",
+   "Compra en bolsa: Disminuyó",
+   "que compensa con un mayor costo de $4,846."
+  ],
+  "margen_arriba": 14,
+  "margen_abajo": 12,
+  "x": [
+   86,
+   542
+  ]
+ },
+ {
+  "id": "t3_c",
+  "tipo": "web",
+  "fuente": "La Opinión (Cúcuta), 31 de octubre de 2026",
+  "url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+  "titular": "CENS solicita a la CREG ajustar metas de consumo de energía y excluir al sector no residencial de cobros adicionales",
+  "fecha": "Sábado, 31 de Octubre de 2026",
+  "buscar": [
+   "el incremento del consumo de energía responde a necesidades prioritarias",
+   "un uso ineficiente de la energía por parte de las familias y empresas"
+  ],
+  "recortes": [
+   [
+    0,
+    270,
+    1280,
+    2190
+   ]
+  ]
+ },
+ {
+  "id": "t3_d",
+  "tipo": "pdf",
+  "fuente": "CENS - Publicación de tarifas de energía, octubre 2026 (Fecha Publicacion 18 de Octubre 2026), p. 4",
+  "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t3/tarifas202610.pdf",
+  "pagina": 4,
+  "dpi": 250,
+  "franja": [
+   102.5,
+   309
+  ],
+  "x": [
+   54,
+   558
+  ]
+ }
+]
