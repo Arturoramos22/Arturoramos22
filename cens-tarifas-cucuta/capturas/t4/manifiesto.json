@@ -1,0 +1,85 @@
+[
+ {
+  "id": "t4_a",
+  "tipo": "pdf",
+  "fuente": "CREG - Resolución 215 de 2021 (15 dic. 2021), hoja 4/4, art. 1 que modifica el art. 2 de la Res. CREG 016 de 2018",
+  "url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/b8273859c250da83052587b2005f783a/$FILE/Creg215-2021.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t4/creg215.pdf",
+  "pagina": 4,
+  "dpi": 200,
+  "buscar": [
+   "será de 12,09% a partir del año 2022"
+  ],
+  "franja": [
+   40,
+   240
+  ],
+  "x": [
+   60,
+   600
+  ]
+ },
+ {
+  "id": "t4_b",
+  "tipo": "pdf",
+  "fuente": "Ministerio de Minas y Energía - Revisión ex post: marco regulatorio que define e implementa las Áreas de Distribución (nov. 2023), p. 114 del PDF (109 impresa), 'Estudio de Celsia'",
+  "url": "https://www.minenergia.gov.co/documents/11070/Expost_ADD_2023_compressed.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t4/expost.pdf",
+  "pagina": 114,
+  "dpi": 200,
+  "buscar": [
+   "En la ADD Centro, los OR excedentarios son EPP, EPM y CENS",
+   "Los OR deficitarios son CHEC, EDEQ y ESSA"
+  ],
+  "franja": [
+   305,
+   742
+  ],
+  "x": [
+   62,
+   556
+  ]
+ },
+ {
+  "id": "t4_c",
+  "tipo": "pdf",
+  "fuente": "Superservicios - Boletín tarifario de energía, II trimestre de 2025, p. 57 del PDF (Página 56 de 115)",
+  "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t4/boletin_sspd_IIT2025.pdf",
+  "pagina": 57,
+  "dpi": 200,
+  "buscar": [
+   "320,03",
+   "CENS (292,72"
+  ],
+  "franja": [
+   5,
+   776
+  ],
+  "x": [
+   55,
+   560
+  ]
+ },
+ {
+  "id": "t4_d",
+  "tipo": "pdf",
+  "fuente": "CREG - Circular 095 de 2022 (12 oct. 2022), p. 4, Tabla 4: Operadores de Red (Distribuidores) que NO se acogieron",
+  "url": "https://gestornormativo.creg.gov.co/Publicac.nsf/52188526a7290f8505256eee0072eba7/9d94ddc5ae8a7306052588d90052e4da/$FILE/Circular095-2022.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t4/circ095.pdf",
+  "pagina": 4,
+  "dpi": 200,
+  "buscar": [
+   "Tabla 4: Operadores de Red",
+   "Centrales Eléctricas del Norte de Santander"
+  ],
+  "franja": [
+   12,
+   452
+  ],
+  "x": [
+   6,
+   558
+  ]
+ }
+]
