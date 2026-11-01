@@ -21,42 +21,36 @@
  {
   "id": "trino6_2",
   "tipo": "pdf",
-  "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20vigente%20desde%20el%2002_10_2023.pdf",
   "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t6/ccu_2023.pdf",
   "pagina": 41,
-  "buscar": [
-   "Tabla 1. Porcentajes de variación permitidos",
-   "considerado con DESVIACIÓN SIGNIFICATIVA"
-  ],
   "franja": [
    0,
-   500
+   792
   ],
   "x": [
    0,
    612
   ],
-  "id_original": "t6_b"
+  "dpi": 170,
+  "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20vigente%20desde%20el%2002_10_2023.pdf",
+  "id_original": "r_ccu2023_p41"
  },
  {
   "id": "trino6_3",
   "tipo": "pdf",
-  "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
   "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t6/ccu_2024.pdf",
   "pagina": 41,
-  "buscar": [
-   "3. Por acción u omisión de CENS en la medición",
-   "CENS perderá el derecho a recibir el precio en los siguientes eventos"
-  ],
   "franja": [
    0,
-   585
+   792
   ],
   "x": [
    0,
    612
   ],
-  "id_original": "t6_c"
+  "dpi": 170,
+  "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+  "id_original": "r_ccu2024_p41"
  },
  {
   "id": "trino6_4",

@@ -1,0 +1,599 @@
+{
+ "summary": "Reabrí todas las fuentes del frente «reglas-facturacion»: los 3 contratos de CENS (CCU 2020 v5.0, 2023 v6.0 y 2024 v7.0), las 3 listas de servicios adicionales (dic-2024, jul-2025 y may-2026), la Ley 142 (Senado, con las notas de jurisprudencia en JS), el Código Civil, el Decreto-Ley 19/2012, las resoluciones CREG 108/1997, 105 007/2024, 156/2011, 038/2014, 101 120/2026 y 225/1997, el Documento CREG 905 025 y el proyecto 705 011/2025, la Circular CREG 302/2026, los conceptos SSPD 235, 263 y 433 de 2025 y 082 de 2026, el diagnóstico SSPD 2021, el informe de inspección de CENS de 2022, la columna de Asuntos Legales y la nota de La Opinión.\n\nResultado: de 50 hallazgos, 42 quedan confirmados con su cita textual, página y cifra. Ocho van corregidos:\n- 04: la CREG sí fija una regla para el precio de la reconexión (Res. 225/1997).\n- 08: la comparación con EPM pide contexto.\n- 09: la cita del art. 150 tenía una coma mal transcrita.\n- 19: la lista de precios muestra un precio, no prueba un cobro.\n- 27: el «no existe procedimiento» se limita a la omisión del prestador.\n- 32: la definición de horas hábiles del CCU está en el capítulo de atención de PQR.\n- 33: falta el condicionamiento de la sentencia C-558/01.\n- El ítem de company_defense trae dos errores: la cita de la CREG es «conocer como la empresa...» y la C-186 está en las pp. 12-13.\nNo refuté ninguno. Todas las cuentas cuadran.\n\nHallazgos nuevos importantes:\n(1) La cl. 32A num. 3 del CCU (p. 41) permite cobrar por promedio cuando CENS no toma la lectura «por acción u omisión de CENS». Eso choca con el art. 146 de la ley, con la CREG 108 art. 30 y con la cl. 32 del mismo contrato (p. 40). La cláusula ya estaba en el CCU de 2020 (cl. 38).\n(2) La CREG 225/1997 art. 5 lit. b exige que el CCU exprese «de manera objetiva cómo cuantificar» el costo de la reconexión y la reinstalación. El art. 8 obliga a publicar en enero. El CCU de CENS no trae fórmula y dice que esos servicios están sujetos a «liberta tarifaria».\n(3) El propio CCU (cl. 54A par. 1) promete actualizar los costos «aplicando las variaciones en los índices de precios». Aun así, varios servicios casi se duplicaron: sellado o deselle +102%, revisión por cambio de tarifa +98%, reinstalación +95%, instalación de medidor +91%.\n(4) Sentencia C-558/01: quien discute precisamente el promedio de 5 períodos puede reclamar y recurrir sin pagarlo.\n(5) El Consejo de Estado (30-jul-2008, exp. 26520) anuló el art. 54 de la CREG 108 por demanda de una liga de usuarios de Barranquilla.\n(6) La CREG 156/2011 art. 49 hace al comercializador responsable de los perjuicios por suspensión indebida o por demora en la reconexión.\n(7) Matices justos: en 2021 la reconexión residencial urbana de CENS estaba en la mediana nacional (puesto 16 de 27). La reinstalación de $256.700 aplica tras el corte (3 facturas impagas); la reconexión típica cuesta $65.800.\n\nPara recortar las páginas nuevas, las renderizé en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-reglas-facturacion/capturas/ (CCU2024 pp. 32, 41, 61 y 68; D905 pp. 17-19; Diag2021 p. 64; Insp2022 p. 30; listas 2024 p. 2, 2025 pp. 1-2 y 2026 p. 2). Mis scripts de verificación están en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts-verif-rf/.",
+ "verified": [
+  {
+   "id": "reglas-facturacion-01",
+   "verdict": "confirmado",
+   "claim_final": "El contrato de condiciones uniformes vigente de CENS es el CCU_201_ACL_001, versión 7.0, del 25/07/2024 (115 páginas; PDF creado el 25/07/2024). La sede electrónica lo lista como «Contrato de prestación de servicios con condiciones uniformes desde el 25/07/2024» y también enlaza las versiones del 02/10/2023 (v6.0) y del 24/11/2020 (v5.0).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "CÓDIGO: CCU_201_ACL_001 FECHA ÚLTIMA ACTUALIZACIÓN: 2024-07-25 VERSIÓN: 7.0",
+   "source_page": "3",
+   "second_source_url": "https://sedeelectronica.cens.com.co/atencion-y-servicios-a-la-ciudadania/tramites-y-servicios/contrato-de-condiciones-uniformes-ccu"
+  },
+  {
+   "id": "reglas-facturacion-02",
+   "verdict": "confirmado",
+   "claim_final": "La Superservicios inspeccionó a CENS (programa 2022) como prestador de transmisión, distribución y comercialización. La CREG 156/2011, art. 49, hace al comercializador único responsable de suspender y reconectar. El CCU, cl. 53 par. 2 (p. 63), lo recoge: «CENS será el único responsable por la reinstalación, suspensión y corte del servicio».",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "quote": "Actividad del SPD objeto de la vigilancia o inspección: Transmisión, distribución y Comercialización",
+   "source_page": "1 (de 162)",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0156_2011.htm",
+   "notes": "Ojo: el texto del PDF corta la línea después de «Transmisión,»; al recortar la captura hay que incluir dos líneas."
+  },
+  {
+   "id": "reglas-facturacion-03",
+   "verdict": "confirmado",
+   "claim_final": "La CREG 156/2011, art. 49, dice que el comercializador es el único responsable de las decisiones de suspensión y reconexión. El mismo artículo (num. 3, lit. d) lo hace responsable de los perjuicios por suspensión indebida o por demora en pedir la reconexión, y (lit. a) remite las maniobras de reconexión al plazo del art. 42 del Decreto 19/2012.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0156_2011.htm",
+   "quote": "El comercializador será el único responsable por las decisiones de suspensión y reconexión del servicio a los Usuarios que atiende, en cumplimiento del contrato del servicio público domiciliario de energía eléctrica.",
+   "source_page": "Art. 49, inciso 1"
+  },
+  {
+   "id": "reglas-facturacion-04",
+   "verdict": "corregido",
+   "claim_final": "La CREG no fija el valor de la reconexión, pero sí la regla para fijarlo. La CREG 108/1997, art. 57 par. 1, deja a la empresa fijar los valores en el CCU. La CREG 225/1997, art. 5 lit. b, exige que el CCU especifique los costos de la reconexión y la reinstalación y exprese «de manera objetiva cómo cuantificarlos» (mano de obra y transporte). La libertad tarifaria del art. 3 de esa resolución cubre el medidor, la acometida y la obra de conexión, no la reconexión. El CCU de CENS (cl. 54A, p. 64) solo dice que esas actividades están «sujetas a los regímenes de liberta tarifaria» y describe el cargo de forma genérica, sin fórmula. Confirmado además: la «reconexión» incluye la suspensión, y la «reinstalación» incluye el corte.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "2. Reconexión del servicio (incluye suspensión y reconexión). [...] Las actividades y servicios prestados por CENS estarán sujetos a los regímenes de liberta tarifaria definidos en la ley y la regulación vigente.",
+   "source_page": "64",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0225_1997.htm",
+   "notes": "CREG 225/1997 (15-dic-1997), art. 5 lit. b: «Los contratos de condiciones uniformes especificarán cuales son los costos que representan esas actividades y expresarán, de manera objetiva cómo cuantificarlos, teniendo en cuenta el costo de la mano de obra y del transporte en que incurren.»"
+  },
+  {
+   "id": "reglas-facturacion-05",
+   "verdict": "confirmado",
+   "claim_final": "Lista de Servicios Adicionales de CENS publicada el 19/05/2026: reconexión en medidor (código 320) $65.800; en poste, drástica o en caja subterránea (321) $123.500; en media tensión (4372) $296.800; reinstalación (43) $256.700. Los valores son sin IVA. Su última actualización es el 19/05/2026, según el acta del grupo primario 014 del 13/05/2026, firmada por William Mondragón Villamizar, jefe del Área de Gestión Comercial.",
+   "source_url": "https://www.cens.com.co/Portals/cens/tramites-y-servicos/portafolio-de-servicios/LSA%20Servicios-adicionales/LSA%2019%20de%20mayo%202026.pdf?ver=YjKsRbyn-fTdIFvEAkltxQ%3d%3d",
+   "quote": "320 RECONEXIÓN EN MEDIDOR DEL SERVICIO DE ENERGÍA A USUARIOS RESIDENCIAL, COMERCIAL E INDUSTRIAL URBANO Y RURAL $ 65,800 UNIDAD",
+   "source_page": "12 (320 y 4372); 1 (321 al final de la p. 1, y 43); 19 (Nota A); 20 (fecha y acta)",
+   "figures_final": "320=$65.800; 321=$123.500; 4372=$296.800; 43=$256.700",
+   "notes": "P. 19: la lista se actualiza por delegación del gerente al jefe del Área de Gestión Comercial (Decisión Empresarial 7200-021-2020). Nota B: los valores son los de la zona urbana de Cúcuta, Los Patios y Villa del Rosario; las zonas rurales y otras regiones tienen recargo."
+  },
+  {
+   "id": "reglas-facturacion-06",
+   "verdict": "confirmado",
+   "claim_final": "Reinstalación (código 43): $131.500 (02-12-2024), $201.100 (08-07-2025) y $256.700 (19-05-2026), +95,2%. Reconexión en medidor (320): $56.415, $60.060 y $65.800, +16,6%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tramites-y-servicios/LISTADOS%20DE%20SERVICIOS%20ADICIONALES/LSA-2024-12-02.pdf?ver=NXffiuFuGrdTg8qlDZIfzQ%3d%3d",
+   "quote": "43 REINSTALACION DEL SERVICIO DE ENERGIA $131,500 UNIDAD",
+   "source_page": "1 (43); 9 (320: $56,415)",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/tramites-y-servicos/portafolio-de-servicios/LSA%20Servicios-adicionales/LSA-08-07-2025.pdf?ver=S2LxPeQgksHGgotwqU3O6A%3d%3d",
+   "figures_final": "43: 131.500→201.100 (+52,9%)→256.700 (+27,6%); total +95,2%. 320: 56.415→60.060→65.800, +16,6%.",
+   "notes": "Para la tabla T1: el código 321 cambió de alcance. En dic-2024 era «RECONEXION EN POSTE»; desde jul-2025 es «EN POSTE, DRASTICA EN MEDIDOR O EN CAJA SUBTERRANEA». Su +18,5% no compara servicios idénticos."
+  },
+  {
+   "id": "reglas-facturacion-07",
+   "verdict": "confirmado",
+   "claim_final": "La Ley 142, art. 96, permite cobrar la reconexión y la reinstalación «para la recuperación de los costos en que incurran». El propio CCU (cl. 54A par. 1) dice que CENS actualizará esos costos «aplicando las variaciones en los índices de precios». Un alza del 95% en 17 meses exige soporte de costos.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr002.html",
+   "quote": "Quienes presten servicios públicos domiciliarios podrán cobrar un cargo por concepto de reconexión y reinstalación, para la recuperación de los costos en que incurran.",
+   "source_page": "Art. 96",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0225_1997.htm",
+   "notes": "Texto del Senado actualizado al 15-oct-2026. En el mismo artículo, «capitalizados los intereses» figura como aparte declarado INEXEQUIBLE."
+  },
+  {
+   "id": "reglas-facturacion-08",
+   "verdict": "corregido",
+   "claim_final": "En 2021 (Superservicios, Tabla 24) CENS cobraba $40.475 por la reconexión residencial urbana y EPM $17.400, más $11.500 de suspensión (Tabla 25). En el segmento residencial, CENS cobraba 2,3 veces la reconexión de EPM y un 40% más que suspensión y reconexión de EPM juntas. Matiz imprescindible: en comercial e industrial EPM cobraba más ($87.700, frente a $40.475 de CENS). Y entre las 27 empresas con tarifa residencial urbana, CENS ocupaba el puesto 16, cerca de la mediana ($40.100) y por debajo del promedio ($42.492). La anomalía es que EPM era barata, no que CENS fuera cara.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Diagn%C3%B3stico%20de%20Medici%C3%B3n%20Energ%C3%ADa%20en%20el%20SIN%20-%202021.pdf",
+   "quote": "CENS $40.475 $40.475 $73.232 $40.475 [...] EPM $87.700 $87.700 $17.400 $17.400",
+   "source_page": "63 (Tabla 24); 64 (Tabla 25: EPM residencial urbano $11.500)",
+   "figures_final": "Columnas: comercial, industrial, residencial rural, residencial urbano. Mediana residencial urbana (27 empresas): $40.100; promedio: $42.492.",
+   "notes": "Usar esta comparación sin el contexto de la mediana sería cherry-picking."
+  },
+  {
+   "id": "reglas-facturacion-09",
+   "verdict": "corregido",
+   "claim_final": "La Ley 142, art. 150, prohíbe cobrar, pasados 5 meses desde la entrega de la factura, lo que no se facturó por error, omisión o investigación de desviaciones. La única excepción es el dolo comprobado del usuario. La Corte Constitucional declaró exequible un aparte del artículo (C-060-05).",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "Al cabo de cinco meses de haber entregado las facturas, las empresas no podrán cobrar bienes o servicios que no facturaron por error, omisión, o investigación de desviaciones significativas frente a consumos anteriores. Se exceptúan los casos en que se compruebe dolo del suscriptor o usuario.",
+   "source_page": "Art. 150",
+   "notes": "La cita original decía «omisión , o», con un espacio de más. El texto exacto es «omisión, o»."
+  },
+  {
+   "id": "reglas-facturacion-10",
+   "verdict": "confirmado",
+   "claim_final": "La cl. 20 num. 9 del CCU (p. 31) añade al art. 150 excepciones distintas del dolo: «alteraciones en la acometida, red interna, en sus instrumentos asociados» y los casos en que «se impida por cualquier medio tomar la lectura». En cambio, la cl. 27 (p. 39) y la cl. 32A num. 3 lit. a (p. 41) reproducen fielmente el art. 150.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "se exceptúan los casos en que se compruebe alteraciones en la acometida, red interna, en sus instrumentos asociados o cuando se impida por cualquier medio tomar la lectura o cuando se compruebe dolo del SUSCRIPTOR o USUARIO, en concordancia con lo contemplado en el artículo 150 de la ley 142 de 1994.",
+   "source_page": "31",
+   "notes": "Es un contraste textual. Que la cláusula sea abusiva lo decide un juez o la Superservicios."
+  },
+  {
+   "id": "reglas-facturacion-11",
+   "verdict": "confirmado",
+   "claim_final": "CCU cl. 32 (p. 40): «La falta de medición del consumo por acción u omisión de CENS le hará perder el derecho a recibir el precio». La CREG 108, art. 30 par. 1, pone en la empresa la carga de probar que hizo las diligencias para medir. Pero la cl. 32A num. 3 del mismo CCU (p. 41) contradice la cl. 32: ver el hallazgo nuevo NF-01.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "La falta de medición del consumo por acción u omisión de CENS le hará perder el derecho a recibir el precio.",
+   "source_page": "40",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0108_1997.htm"
+  },
+  {
+   "id": "reglas-facturacion-12",
+   "verdict": "confirmado",
+   "claim_final": "Según el Concepto SSPD 433/2025 (18-nov-2025), sin culpa de las partes solo se puede facturar por promedio durante un período de facturación. Si la falta de medición es imputable al prestador, este pierde el derecho al precio.",
+   "source_url": "https://normas.cra.gov.co/gestor/docs/concepto_superservicios_0000433_2025.htm",
+   "quote": "Para este caso, solo se puede facturar por promedio durante un periodo de facturación (un mes si la facturación es mensual, dos meses si es bimestral).",
+   "source_page": "Sección B, Facturación",
+   "notes": "Lo firma Luis Felipe Salamanca Cachay, jefe (e) de la Oficina Asesora Jurídica. El concepto trata de acueducto (radicado 20255293892472) y no es vinculante. Misma fuente: «la falta de medición del consumo, por acción u omisión del prestador, le hará perder el derecho a recibir el precio»."
+  },
+  {
+   "id": "reglas-facturacion-13",
+   "verdict": "confirmado",
+   "claim_final": "La Ley 142, art. 149, obliga a investigar las desviaciones significativas al preparar la factura. Mientras tanto, se factura con base en períodos anteriores, en usuarios similares o en aforo, y después se abona o carga la diferencia.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "Al preparar las facturas, es obligación de las empresas investigar las desviaciones significativas frente a consumos anteriores.",
+   "source_page": "Art. 149"
+  },
+  {
+   "id": "reglas-facturacion-14",
+   "verdict": "confirmado",
+   "claim_final": "El CCU adopta la regla transitoria de la CREG 105 007/2024: el límite superior es el promedio más tres desviaciones estándar. Mientras investiga, CENS factura el consumo promedio (cl. 32D). La tabla 1 (p. 46) da los promedios mensuales por estrato: E1 149 kWh, E2 177 y E3 206.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "Límite superior: El límite superior para el periodo de facturación de análisis del SUSCRIPTOR o USUARIO corresponderá al consumo promedio histórico para desviación significativa del periodo de facturación más tres (3) desviaciones estándar.",
+   "source_page": "44 (también p. 112, en el anexo); 46 (cl. 32D y tabla 1)"
+  },
+  {
+   "id": "reglas-facturacion-15",
+   "verdict": "confirmado",
+   "claim_final": "La CREG 105 007/2024 (30-ene-2024; Diario Oficial 52.692 del 8-mar-2024; aplicación desde el 24-jul-2024) es transitoria. El Consejo de Estado suspendió el 5-abr-2021 (ponente Oswaldo Giraldo López) el aparte de la CREG 108 que dejaba a las empresas fijar los porcentajes de desviación. La demandó la Procuraduría por medio de los procuradores 47 y 75 judiciales administrativos de Valledupar. La súplica de la CREG se resolvió el 24-mar-2023, confirmando la medida (ponente Nubia Margoth Peña Garzón).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_105-7_2024.htm",
+   "quote": "Mediante providencia del 5 de abril de 2021, el Consejo de Estado (Sala de lo Contencioso Administrativo, Sección Primera, Sala Unitaria, Consejero Ponente Dr. Oswaldo Giraldo López) decidió decretar la suspensión provisional “de los efectos del aparte” contenido en el parágrafo 1 del artículo 37 de la Resolución CREG 108 de 1997",
+   "source_page": "Considerandos",
+   "notes": "El número de expediente 11001-03-24-000-2020-00058 NO aparece en la resolución; no lo verifiqué. El art. 3 de la resolución remite a «prórrogas en Notas de Vigencia»."
+  },
+  {
+   "id": "reglas-facturacion-16",
+   "verdict": "confirmado",
+   "claim_final": "Según la CREG 108, art. 37 par. 2 (modificado), la empresa puede saltarse la visita si una analítica de datos justifica la desviación, pero debe informarlo con la factura, y si el usuario la pide, la visita es obligatoria. El CCU (cl. 32C num. 2, p. 45) permite justificar con «modelos estadísticos predictivos» y obliga a informar esa justificación «para que este pueda ejercer su derecho a la defensa en caso de considerar necesaria la visita». Si la visita no se puede hacer por causa del usuario, y siempre que exista prueba documental, CENS concluye que el consumo fue real (p. 46).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "CENS podrá justificar la variación de consumos mediante la implementación de modelos estadísticos predictivos, como series de tiempo, árboles de clasificación, medias móviles y regresiones lineales, basados en la información de consumos históricos de cada SUSCRIPTOR O USUARIO.",
+   "source_page": "45; 46",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0108_1997.htm",
+   "notes": "Para ser justos, hay que mencionar la condición «siempre y cuando de esta exista prueba documental»."
+  },
+  {
+   "id": "reglas-facturacion-17",
+   "verdict": "confirmado",
+   "claim_final": "Según la CREG 108, art. 38 (modificado), el usuario paga la factura mientras dura la investigación, y el ajuste llega en el período siguiente. En los comentarios recogidos por la CREG, ENERTOTAL admite que hoy ese ajuste no reconoce el valor del dinero en el tiempo, ni para el usuario ni para la empresa.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0108_1997.htm",
+   "quote": "Mientras se realiza la investigación por desviaciones significativas el usuario deberá pagar su factura y una vez la empresa determine la causa de la desviación ajustará los valores cobrados en el siguiente periodo de facturación",
+   "source_page": "Art. 38",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Documento_CREG_905_025_2025.pdf",
+   "notes": "Comentario 42 de ENERTOTAL en el D-905 025, pp. 52-53 del PDF: «el valor es ajustado al usuario sin que esto implique el reconocimiento del dinero en el tiempo ni para el usuario ni para la empresa». ENERTOTAL pide que, si se reconocen intereses, se apliquen en ambos sentidos."
+  },
+  {
+   "id": "reglas-facturacion-18",
+   "verdict": "confirmado",
+   "claim_final": "La Superservicios cita el num. 2.7 del Concepto Unificado 02 de 2009 (actualizado en marzo de 2021): la revisión hecha para investigar una desviación significativa no se puede cobrar al usuario, y la de mantenimiento o control de pérdidas ya está remunerada en la tarifa. Conclusión de la propia Superservicios: solo se puede cobrar la revisión por anomalía del medidor o la que el usuario pide voluntariamente, y en ambos casos debe estar prevista en el CCU.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Diagn%C3%B3stico%20de%20Medici%C3%B3n%20Energ%C3%ADa%20en%20el%20SIN%20-%202021.pdf",
+   "quote": "lo cual implica que las empresas están obligadas a visitar los domicilios de los usuarios con el fin de determinar la causa que los originó y por lo tanto el costo de esa revisión no puede ser trasladado a los usuarios.",
+   "source_page": "8",
+   "notes": "El CCU, cl. 22B num. 4 (p. 37), pone a cargo del usuario el «Costo de las revisiones cuando las solicite». El enlace al CU 02 en normograma.info devolvió error 500."
+  },
+  {
+   "id": "reglas-facturacion-19",
+   "verdict": "corregido",
+   "claim_final": "La lista de precios de CENS de dic-2024 incluía el código 55 «REVISION POR ALTO CONSUMO» por $103.700. En jul-2025 el mismo código pasó a llamarse «AFORO Y PRUEBA DEL MEDIDOR DE ENERGÍA» ($109.100) y en may-2026 cuesta $114.700. Que el precio figure en la lista no prueba que se haya cobrado en investigaciones del art. 149. El CCU no menciona «alto consumo» y permite cobrar las revisiones que pide el usuario (cl. 22B), así que CENS puede responder que el código 55 era para revisiones solicitadas.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tramites-y-servicios/LISTADOS%20DE%20SERVICIOS%20ADICIONALES/LSA-2024-12-02.pdf?ver=NXffiuFuGrdTg8qlDZIfzQ%3d%3d",
+   "quote": "55 REVISION POR ALTO CONSUMO $103,700 UNIDAD",
+   "source_page": "1",
+   "figures_final": "$103.700 → $109.100 → $114.700 (+10,6%)",
+   "notes": "Cambiar «cobraba» por «incluía en su lista de precios». Para afirmar el cobro hacen falta facturas."
+  },
+  {
+   "id": "reglas-facturacion-20",
+   "verdict": "confirmado",
+   "claim_final": "CREG 038/2014, art. 31 lit. b (verificación extraordinaria de fronteras sin reporte al ASIC): el costo lo asume quien la solicita, pero si se encuentra incumplimiento del Código de Medida, fraude o intervención indebida, lo asume el representante de la frontera, que puede repetir contra el responsable.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0038_2014.htm",
+   "quote": "Los costos de la verificación serán asumidos por quien la solicitó. Cuando se encuentre incumplimiento del Código, fraudes o intervenciones indebidas al sistema de medición, dicho costo debe ser asumido por el RF, quien podrá replicar contra el responsable de la conducta.",
+   "source_page": "Art. 31, lit. b",
+   "notes": "Aplicarlo a los medidores residenciales supone que son «fronteras sin reporte al ASIC». Si el usuario es el responsable del fraude, el comercializador puede repetir contra él."
+  },
+  {
+   "id": "reglas-facturacion-21",
+   "verdict": "confirmado",
+   "claim_final": "CREG 038/2014, art. 22: el representante de la frontera tiene 7 días hábiles para responder la solicitud escrita del historial de lecturas.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0038_2014.htm",
+   "quote": "El representante dispone de siete (7) días hábiles para dar respuesta a la solicitud escrita de los registros históricos de las lecturas.",
+   "source_page": "Art. 22 (Acceso al sistema de medición)"
+  },
+  {
+   "id": "reglas-facturacion-22",
+   "verdict": "confirmado",
+   "claim_final": "CCU cl. 70 (p. 90): CENS incluye directamente en la factura los valores de energía a recuperar, y el usuario reclama después. Las pruebas, la causal y la fórmula llegan con la factura «con fines informativos». El mismo texto ya estaba en el CCU v6.0 (p. 86).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "CENS incluirá en la facturación los valores de energía a recuperar. Contra este acto de facturación procederá la reclamación en los términos del artículo 154 de la Ley 142 de 1994. Con fines informativos CENS adjuntará a la factura en la que cobre estos valores a recuperar, una comunicación en la que detalle las pruebas que dan lugar a dicho cobro, la causal y fórmula aplicadas para determinar el consumo no facturado.",
+   "source_page": "90",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20vigente%20desde%20el%2002_10_2023.pdf",
+   "notes": "Matiz justo: la cláusula dice que el cobro va «previo análisis de la conexidad y valoración del material probatorio recaudado». Es un análisis interno, sin participación del usuario."
+  },
+  {
+   "id": "reglas-facturacion-23",
+   "verdict": "confirmado",
+   "claim_final": "El CCU v5.0 (DIN_201_ACL_013, 24/11/2020) traía una etapa administrativa previa al cobro: apertura de investigación con pruebas, valores y fórmula; 5 días hábiles para descargos; y un acto administrativo motivado. La palabra «descargos» no aparece en las versiones de 2023 ni de 2024.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20ANTES%20DEL%2002_10_2023.pdf",
+   "quote": "2. Derecho de Defensa. Recibida esta comunicación, dentro de los cinco (5) días hábiles siguientes el SUSCRIPTOR o USUARIO podrá presentar descargos para controvertir lo expuesto en la apertura de investigación [...] 3. Acto decisorio. Previo análisis de los hechos, descargos y las pruebas obrantes en el expediente, LA EMPRESA emitirá un Acto Administrativo motivado, en el cual se señalará sí resulta procedente o no el cobro de la energía dejada de facturar.",
+   "source_page": "60",
+   "notes": "Según la cl. 70A del CCU 2024, las revisiones hechas antes del 02/10/2023 siguen el procedimiento anterior."
+  },
+  {
+   "id": "reglas-facturacion-24",
+   "verdict": "confirmado",
+   "claim_final": "El CCU 2020 exigía causalidad con la actuación del usuario y usaba 5 meses (150 días) por defecto cuando no se podía establecer el tiempo de permanencia de la irregularidad. Las fórmulas del CCU 2024 usan el «tiempo de permanencia» sin ese valor por defecto, y con dolo se recuperan todos los meses demostrables. Matiz: el CCU 2024 reproduce el límite general del art. 150 en la cl. 27 (p. 39) y en la cl. 32A (p. 41). Y en la p. 77, para medidores no incluidos en el sistema sin fecha de instalación, divide el consumo «como máximo en 5 periodos», pero solo para aplicar subsidios.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20ANTES%20DEL%2002_10_2023.pdf",
+   "quote": "Para este cobro se tendrá en cuenta la existencia de una causalidad entre la irregularidad encontrada y la actuación del usuario que se beneficia o aprovecha de la incorrecta medición de sus consumos",
+   "source_page": "CCU 2020: p. 50 (causalidad y «cinco (5) meses»; también p. 45); p. 52 (TP de 150 días). CCU 2024: pp. 75-81 (TP) y p. 90 (dolo)",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d"
+  },
+  {
+   "id": "reglas-facturacion-25",
+   "verdict": "confirmado",
+   "claim_final": "La cl. 66.3 del CCU 2024 (p. 82) regula la recuperación de consumos por anomalías ocurridas «sin acción u omisión de las partes» durante «un periodo o más», y no repite allí el tope de 5 meses del art. 150, aunque el contrato lo enuncia en sus cláusulas generales (pp. 39 y 41).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "Cuando se detecte situaciones que impidan el correcto registro del consumo que no constituyen incumplimiento del Contrato, CENS utilizará la siguiente metodología técnica para determinar el consumo no facturado durante un periodo o más",
+   "source_page": "82 (también cl. 65, p. 74)"
+  },
+  {
+   "id": "reglas-facturacion-26",
+   "verdict": "confirmado",
+   "claim_final": "Tiempo para conseguir asistencia en la visita: 15 minutos en el CCU 2024; hasta 14 minutos, a solicitud del usuario, en el CCU 2020; una hora como máximo en el proyecto CREG 705 011. El CCU 2024 permite abrir el medidor en otro laboratorio acreditado que elija el usuario (p. 89).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "para lo cual contará con un tiempo de quince (15) minutos. Si no ejerce este derecho, se procederá de manera inmediata a la revisión.",
+   "source_page": "88; CCU 2020 p. 57; proyecto 705 011, hoja 79",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025.pdf"
+  },
+  {
+   "id": "reglas-facturacion-27",
+   "verdict": "corregido",
+   "claim_final": "El Concepto SSPD 263/2025 (19-jun-2025, firmado por Jhonn Vicente Cuadros Cuadros, jefe de la Oficina Asesora Jurídica) cita el num. 7.2 del CU SSPD-OJ-2016-34 (actualizado el 25-jun-2019): la defensa debe garantizarse también durante la actuación previa a la factura de recuperación. Precisión: la frase «no existe [...] un procedimiento» se refiere solo a la recuperación de consumos por omisión del prestador. No vale para todas las recuperaciones.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/concepto_superservicios_0000263_2025.htm",
+   "quote": "los prestadores deben garantizar a los usuarios el derecho de contradicción y de defensa no solo a partir de la expedición del acto de facturación del consumo a recuperar, sino durante la actuación desplegada precedentemente y que le llevó a concluir la procedencia de dichos cobros",
+   "source_page": "Consideraciones",
+   "notes": "Texto exacto de la conclusión: «No existe en el régimen de servicios públicos domiciliarios, ni en la regulación, un procedimiento determinado y previamente establecido para la recuperación de consumos por omisión del prestador.» Radicado 20255291958872. El concepto no es vinculante."
+  },
+  {
+   "id": "reglas-facturacion-28",
+   "verdict": "confirmado",
+   "claim_final": "Concepto SSPD 433/2025, citando el CU 2016-34: los 5 meses del art. 150 incluyen la investigación y la expedición del acto de cobro.",
+   "source_url": "https://normas.cra.gov.co/gestor/docs/concepto_superservicios_0000433_2025.htm",
+   "quote": "los cinco meses involucrarán cualquier procedimiento que el prestador haya establecido en orden a determinar las causas de la desviación y de la eventual existencia de consumos a recuperar, así como la expedición del acto que procede para materializar dicho cobro",
+   "source_page": "Sección de cobros inoportunos"
+  },
+  {
+   "id": "reglas-facturacion-29",
+   "verdict": "confirmado",
+   "claim_final": "Las empresas no pueden imponer sanciones pecuniarias a los usuarios (SU-1010/2008, citada en el Concepto SSPD 235/2025). Antes, el Consejo de Estado ya había anulado el art. 54 de la CREG 108 («Sanciones pecuniarias») en sentencia del 30-jul-2008 (ver NF-06).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/concepto_superservicios_0000235_2025.htm",
+   "quote": "en el régimen de los servicios públicos domiciliarios no existe ninguna disposición que permita a los prestadores imponer sanciones pecuniarias a los usuarios que realicen conexiones fraudulentas",
+   "source_page": "Consideraciones",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/11001-03-26-000-2004-00003-00(26520).htm",
+   "notes": "Concepto 235 del 4-jun-2025, radicado 20251301719311, firmado por Jhonn Vicente Cuadros Cuadros. La frase «no se trata de una sanción al usuario» (company_defense) está en el 235, no en el 263."
+  },
+  {
+   "id": "reglas-facturacion-30",
+   "verdict": "confirmado",
+   "claim_final": "CREG 108, art. 57 par. 3: cuando la suspensión o el corte se deben al no pago, la única sanción monetaria es el interés de mora. Sin embargo, el CCU (cl. 53, p. 63) exige para reconectar pagar «los perjuicios definidos en este contrato» y los «costos, honorarios que genere el cobro prejudicial o judicial».",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0108_1997.htm",
+   "quote": "Cuando la causal de suspensión o corte del servicio sea el no pago, la única sanción monetaria aplicable al suscriptor o usuario, es el cobro de intereses de mora de acuerdo con lo previsto por el artículo 96 de la ley 142 de 1994.",
+   "source_page": "Art. 57, par. 3"
+  },
+  {
+   "id": "reglas-facturacion-31",
+   "verdict": "confirmado",
+   "claim_final": "La cl. 29 del CCU aplica a los usuarios residenciales la tasa del art. 1617 del Código Civil: 6% anual, sin intereses sobre intereses («Los intereses atrasados no producen interés»). El CCU dice además que CENS «podrá aplicar intereses de mora [...] o condonar los mismos».",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "Para los SUSCRIPTORES o USUARIOS residenciales la tasa de interés moratorio aplicable es la prevista en el Artículo 1617 del Código Civil",
+   "source_page": "40",
+   "second_source_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_civil_pr049.html",
+   "figures_final": "6% anual (0,5% mensual simple)"
+  },
+  {
+   "id": "reglas-facturacion-32",
+   "verdict": "corregido",
+   "claim_final": "El Decreto-Ley 19/2012, art. 42 (Diario Oficial 48.308 del 10-ene-2012), ordena reconectar «dentro de las 24 horas siguientes». La CREG 156, art. 49 num. 3 lit. a, remite las maniobras de reconexión a ese mismo plazo. El CCU (cl. 53 par. 1, p. 63) dice «veinticuatro (24) horas hábiles». La definición de horario no hábil del CCU (p. 68: sábados, domingos, festivos y de 6:00 pm a 6:00 am) está en el capítulo de horarios de atención de PQR, no en la cláusula de reconexión. Así que aplicarla a la reconexión (tabla T4) es una interpretación, aunque razonable. Por otro lado, el CCU p. 32 num. 14 obliga a CENS a reconectar «en el término establecido en la normatividad vigente», y si no lo hace «se incurrirá en una falla en la prestación del servicio».",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0019_2012.html",
+   "quote": "Resuelta favorablemente una solicitud de reconexión de un servicio público a un usuario, o desaparecida la causa que dio origen a la suspensión del servicio, la reconexión deberá producirse dentro de las 24 horas siguientes.",
+   "source_page": "Art. 42",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "notes": "Los cálculos de la tabla T4 son correctos: 96 h, 120 h y 48 h."
+  },
+  {
+   "id": "reglas-facturacion-33",
+   "verdict": "corregido",
+   "claim_final": "La Ley 142, art. 155, prohíbe exigir el pago de la factura «como requisito para atender un recurso». La Superservicios (Concepto 433/2025) lo extiende al reclamo. Para recurrir hay que acreditar el pago de lo no discutido o del promedio de 5 períodos. Pero la Corte Constitucional (C-558-01, 5-may-2001) condicionó ese inciso «en el entendido de que las sumas en discusión no correspondan precisamente al promedio del consumo de los últimos cinco períodos». Por eso, quien alega no deber ese promedio puede reclamar y recurrir sin pagarlo antes. El CCU (cl. 62A num. 2, p. 72; p. 34 num. 19) recoge la regla general sin ese condicionamiento.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "Ninguna empresa de servicios públicos podrá exigir la cancelación de la factura como requisito para atender un recurso relacionado con ésta.",
+   "source_page": "Art. 155 (nota de jurisprudencia: Table53 en js/ley_0142_1994_pr003.js)",
+   "second_source_url": "https://normas.cra.gov.co/gestor/docs/concepto_superservicios_0000433_2025.htm",
+   "notes": "Nota del Senado, C-558-01: «cuando el suscriptor o usuario alega no deber dicho promedio puede reclamar y recurrir sin pagar previamente»."
+  },
+  {
+   "id": "reglas-facturacion-34",
+   "verdict": "confirmado",
+   "claim_final": "Mientras tramita una petición, reclamo o recurso, CENS no puede suspender, terminar ni cortar por los hechos reclamados (cl. 63). Si hay reclamación, la suspensión por no pago solo procede por lo no reclamado (cl. 48 num. 4).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "CENS, mientras tramita una petición, reclamo o recurso, se abstendrá de suspender, terminar o cortar el servicio por los motivos y hechos que se encuentren en reclamación, hasta tanto cobre firmeza administrativa la decisión sobre los recursos procedentes que se hubieren interpuesto",
+   "source_page": "73; 58"
+  },
+  {
+   "id": "reglas-facturacion-35",
+   "verdict": "confirmado",
+   "claim_final": "Hay 15 días hábiles para responder; si no, opera el silencio positivo, que el prestador debe reconocer en 72 horas. Si no lo hace, el usuario acude a la Superservicios (Concepto SSPD-OJ-2026-082, firmado por María Camila Lozano Martínez, jefe (e) de la Oficina Asesora Jurídica).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/2026-04/Concepto-082-de-2026.pdf",
+   "quote": "la cual debe ser atendida por el prestador dentro de las 72 horas siguientes al vencimiento, reconociendo al usuario los efectos de dicho acto. Ante la negativa del prestador en reconocer dichos efectos en el término concedido por la norma, el peticionario deberá acudir a esta Superintendencia para solicitar la imposición de las sanciones.",
+   "source_page": "29 (de 50); firma en p. 50",
+   "second_source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "notes": "El PDF está detrás de Incapsula (curl recibe HTML); lo obtuve con WebFetch. Base legal: art. 158, subrogado por el art. 123 del Decreto 2150 de 1995 (C-451-99). El CCU lo recoge en la p. 71."
+  },
+  {
+   "id": "reglas-facturacion-36",
+   "verdict": "confirmado",
+   "claim_final": "No proceden reclamaciones contra facturas con más de 5 meses de expedidas, y la reposición se presenta dentro de 5 días (art. 154; inciso declarado exequible en la C-513-19). Los recursos no requieren abogado (CCU p. 72).",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "El recurso de reposición contra los actos que resuelvan las reclamaciones por facturación debe interponerse dentro de los cinco (5) días siguientes a la fecha de conocimiento de la decisión. En ningún caso, proceden reclamaciones contra facturas que tuviesen más de cinco (5) meses de haber sido expedidas por las empresas de servicios públicos.",
+   "source_page": "Art. 154; CCU pp. 71-72"
+  },
+  {
+   "id": "reglas-facturacion-37",
+   "verdict": "confirmado",
+   "claim_final": "Ley 142, art. 148: no se cobran servicios no prestados ni conceptos ajenos al CCU. La CREG 225/1997, art. 5 lit. b, lo repite para la reconexión y la reinstalación.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "No se cobrarán servicios no prestados, tarifas, ni conceptos diferentes a los previstos en las condiciones uniformes de los contratos",
+   "source_page": "Art. 148"
+  },
+  {
+   "id": "reglas-facturacion-38",
+   "verdict": "confirmado",
+   "claim_final": "Con datos del SUI, la CREG contó 12.206,3 mil reclamaciones en 2024-2025: 11.255.643 de energía eléctrica, 934.411 de gas natural y 16.218 de GLP. Top 5: medición 3.028 mil (37,75%), interrupciones 2.092 mil (26,08%), cobros por promedio 1.339 mil (16,69%), variaciones 859 mil (10,71%) y rompimiento de solidaridad 703 mil (8,77%). Norte de Santander: 0,7 millones.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Documento_CREG_905_025_2025.pdf",
+   "quote": "se evidencia que para el servicio de Energía Eléctrica y los principales temas abordados por los usuarios son: (i) inconformidad con la medición del consumo, (ii) las interrupciones en la prestación del servicio; (iii) los cobros por promedios",
+   "source_page": "16 (Ilustración 1 y texto); la cita sigue en la p. 17 («promedios; (iv)...»)",
+   "figures_final": "Total 12.206,3 mil; energía 11.255.643 (92,2%); top 5 según la imagen",
+   "notes": "El tablero no tiene ningún filtro activo de servicio, así que el top 5 y la barra departamental mezclan energía, gas y GLP. La cita cruza de página: hacen falta dos recortes."
+  },
+  {
+   "id": "reglas-facturacion-39",
+   "verdict": "confirmado",
+   "claim_final": "En su resumen del análisis de impacto normativo, la CREG enumera entre las causas los «Trámites engorrosos para las reclamaciones de los usuarios que resultan más costosos que los valores que se reclaman». Entre las consecuencias pone el abuso de posición dominante, los cortes y suspensiones arbitrarias, los cobros inesperados y los «Contratos extensos y difíciles de entender».",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Documento_CREG_905_025_2025.pdf",
+   "quote": "Trámites engorrosos para las reclamaciones de los usuarios que resultan más costosos que los valores que se reclaman.",
+   "source_page": "18 (causas); 19 (consecuencias)",
+   "notes": "Matiz: la CREG define el problema central como «Desconocimiento del usuario de su rol» (p. 18), y entre las causas incluye «Veedurías ciudadanas desinformadas». Es un diagnóstico nacional."
+  },
+  {
+   "id": "reglas-facturacion-40",
+   "verdict": "confirmado",
+   "claim_final": "La CREG reconoce que hay «falta de claridad» sobre cuándo se pueden recuperar consumos (D-905 025, num. 7.2.3.8).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Documento_CREG_905_025_2025.pdf",
+   "quote": "Considerando la falta de claridad en relación con los casos en donde los prestadores pueden recuperar consumos realizados por los usuarios y que no han sido cobrados, se propone incluir aspectos que puntualicen sobre cuando proceden, como determinar los consumos, con que tarifas deben liquidarse y como deben cobrarse al usuario.",
+   "source_page": "122",
+   "notes": "El documento está fechado el 26 de diciembre de 2025 (portada) y corresponde a la sesión 1430."
+  },
+  {
+   "id": "reglas-facturacion-41",
+   "verdict": "confirmado",
+   "claim_final": "El proyecto CREG 705 011/2025 propone, antes de facturar una recuperación, una carta de hallazgos con 5 días hábiles para descargos (art. 98.2, hoja 81), y que en la visita rija la presunción de inocencia (hoja 80). No está vigente: el segundo entregable (705 013/2026) tuvo consulta hasta el 25-jul-2026 (Circular 302).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025.pdf",
+   "quote": "El prestador elaborará y notificará al usuario una carta de hallazgos, la cual deberá contener: • Las presuntas irregularidades detectadas. • La descripción clara de los hechos verificados y probados. • El material probatorio que la empresa pretende hacer valer dentro de la actuación administrativa. Al usuario se le otorgará un plazo de cinco (5) días hábiles para: • Presentar descargos. • Aportar pruebas. • Solicitar la práctica de pruebas adicionales.",
+   "source_page": "Hoja 81/141 (coincide con la p. 81 del PDF); hojas 78 y 80",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/circular_creg_0302_2026.htm",
+   "notes": "Matiz: el mismo art. 98 (hoja 78) permite al prestador, en casos de fraude o manipulación, determinar el error «sin tener que comunicar la visita de inspección al usuario»."
+  },
+  {
+   "id": "reglas-facturacion-42",
+   "verdict": "confirmado",
+   "claim_final": "En sus consideraciones, el proyecto CREG 705 011 menciona las dificultades y demoras de los usuarios con las reclamaciones y la falta de procedimientos unificados para defenderse.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025/Proyecto_Resoluci%C3%B3n_CREG_705_011_2025.pdf",
+   "quote": "las dificultades y demoras a las que se enfrentan con las reclamaciones, la falta de procedimientos unificados para que los usuarios puedan ejercer su derecho a la defensa, el desconocimiento de las normas que los protegen",
+   "source_page": "Hoja 8/141"
+  },
+  {
+   "id": "reglas-facturacion-43",
+   "verdict": "confirmado",
+   "claim_final": "CREG 101 120/2026 (30-jul-2026; Diario Oficial 53.575; según el Gestor Normativo «Rige a partir del 1 de septiembre de 2026»):\n- Art. 20 i): no pagar el cobro adicional no permite suspender el servicio.\n- Art. 20 v): los pagos parciales se imputan primero al servicio.\n- Art. 20 vi): los reclamos siguen la Ley 142.\n- Art. 9: los ciclos con consumo estimado quedan neutralizados.\n- Art. 6: la meta nunca es inferior a la subsistencia.\n- Art. 10: factor de 1,30 para los estratos 1 a 3; no hay cobro mientras el consumo no supere el 110% de la meta.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "quote": "i) El no pago del cobro adicional no dará lugar a la suspensión del servicio público domiciliario de energía eléctrica.",
+   "source_page": "Arts. 6, 9, 10 y 20",
+   "notes": "Matiz: según el art. 20 ii)-iv), el cobro sigue siendo exigible y cobrable por las vías ordinarias. La resolución fue modificada por la 101 126/2026, y la Circular 326 (13-ago-2026) suspendió su aplicación en el ámbito territorial del art. 3 de la 101 126."
+  },
+  {
+   "id": "reglas-facturacion-44",
+   "verdict": "confirmado",
+   "claim_final": "En 2021, el nivel de consumo estimado de CENS estuvo por encima del promedio nacional (2,7%) pero por debajo del tercer cuartil (4,0%).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Diagn%C3%B3stico%20de%20Medici%C3%B3n%20Energ%C3%ADa%20en%20el%20SIN%20-%202021.pdf",
+   "quote": "EPM, CELSIA y CENS estuvieron por encima del promedio, pero debajo del tercer cuartil",
+   "source_page": "25 (cifras en la p. 24 y en la Gráfica 4)"
+  },
+  {
+   "id": "reglas-facturacion-45",
+   "verdict": "confirmado",
+   "claim_final": "En 2022 CENS recuperó 18,58 GWh mediante procesos administrativos de recuperación de energía, con revisiones rutinarias a clientes regulados en medida directa.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "quote": "En el año 2022 se han realizado procesos administrativos de recuperación de energía resultando en una recuperación de 18,58 GWh.",
+   "source_page": "120"
+  },
+  {
+   "id": "reglas-facturacion-46",
+   "verdict": "confirmado",
+   "claim_final": "Hemberth Suárez Lozano, abogado de OGE Energy, firma de asesoría del sector, cuestionó con ironía que el usuario pueda verificar por sí mismo la regla estadística de la CREG 105 007/2024. Su crítica central es la carga operativa que la regla impone a las empresas.",
+   "source_url": "https://www.asuntoslegales.com.co/analisis/hemberth-suarez-lozano-2596363/desviacion-significativa-y-los-pasos-previos-a-la-investigacion-3831692",
+   "quote": "Seguro que le quedará fácil a cualquier usuario realizar su propia verificación ¿Cierto?",
+   "source_page": "Web, último párrafo",
+   "notes": "Lo verifiqué en el HTML bruto (curl), no solo con WebFetch. Columna de opinión del 02-abr-2024. Firma: «Abogado en OGE ENERGY»."
+  },
+  {
+   "id": "reglas-facturacion-47",
+   "verdict": "confirmado",
+   "claim_final": "CENS reportó a la Superservicios 3,44 reclamos atribuibles a facturación por cada 10.000 usuarios en 2021 (meta: 5) y 2,69 en 2022 (meta: 4). También reportó facturación en sitio para 75.799 usuarios en 2022 y canales de WhatsApp y correo para enviar la foto del medidor.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "quote": "Indicador 2022: se obtuvo 2,69 de la meta de 4 reclamos atribuibles a facturación por cada 10000 usuarios",
+   "source_page": "30 (2021 en la p. 29)",
+   "notes": "La misma página dice: «Cuando CENS no pueda tomar la lectura en terreno del medidor instalado en el inmueble, se procede a facturar por consumo promedio». Ver NF-01."
+  },
+  {
+   "id": "reglas-facturacion-48",
+   "verdict": "confirmado",
+   "claim_final": "La Opinión (31-oct-2026) informa que el gerente de CENS, José Miguel González Campo, pidió a la CREG tres cosas: ajustar las metas de consumo por factores regionales, excluir del cobro adicional a los usuarios no residenciales y excluir a quienes recibieron una meta por mediana. Según el diario, más de 3.095 usuarios comerciales e industriales recibieron recargos superiores a $200.000 en octubre.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "la coyuntura actual de nuestro territorio requiere una mirada diferencial",
+   "source_page": "Web",
+   "notes": "Es fuente secundaria; conviene pedir la carta original a CENS."
+  },
+  {
+   "id": "reglas-facturacion-49",
+   "verdict": "confirmado",
+   "claim_final": "Ley 142, art. 146: el usuario tiene derecho a que se mida su consumo con los instrumentos disponibles y a que el consumo sea el elemento principal del precio. Si la falta de medición es por acción u omisión de la empresa, esta pierde el derecho al precio. El art. 9.1 recoge el derecho a la medición de los consumos reales.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "La empresa y el suscriptor o usuario tienen derecho a que los consumos se midan; a que se empleen para ello los instrumentos de medida que la técnica haya hecho disponibles; y a que el consumo sea el elemento principal del precio que se cobre al suscriptor o usuario.",
+   "source_page": "Art. 146",
+   "second_source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994.html"
+  },
+  {
+   "id": "reglas-facturacion-50",
+   "verdict": "confirmado",
+   "claim_final": "Ley 142, art. 157: las personerías municipales deben asesorar a los usuarios que quieran presentar recursos, cuando lo pidan personalmente. Que la asesoría sea gratuita no lo dice el texto de forma expresa.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "Las personerías municipales deberán asesorar a los suscriptores o usuarios que deseen presentar recursos, cuando lo soliciten personalmente.",
+   "source_page": "Art. 157"
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "NF-01",
+   "claim": "El CCU de CENS se contradice sobre el cobro por promedio cuando la culpa es de la propia empresa. La cl. 32 (p. 40) repite la ley: la falta de medición por acción u omisión de CENS le hace perder el derecho al precio. Pero la cl. 32A num. 3 (p. 41), titulada «Por acción u omisión de CENS en la medición», dice que cuando CENS no obtenga la lectura «el consumo se determinará con base en el consumo promedio». Y solo enumera dos casos en que CENS pierde el derecho al precio: los cobros inoportunos y el medidor no instalado después de 6 meses. Eso choca con el art. 146 de la Ley 142, con la CREG 108 art. 30 y con la Superservicios (Concepto 433/2025). En su informe a la Superservicios, la propia CENS dice: «Cuando CENS no pueda tomar la lectura en terreno [...] se procede a facturar por consumo promedio». La cláusula ya estaba en el CCU 2020 (cl. 38, pp. 25-26) y en el de 2023 (p. 39).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "3. Por acción u omisión de CENS en la medición: En los casos en los que CENS en un periodo de facturación no obtenga la lectura del medidor, el consumo se determinará con base en el consumo promedio del mismo SUSCRIPTOR o USUARIO, o con base en consumos promedios de SUSCRIPTORES o USUARIOS que estén en circunstancias similares o con base en aforos individuales.",
+   "source_page": "41 (contrastar con la cl. 32, p. 40)",
+   "source_title": "CCU CENS v7.0, cl. 32A num. 3",
+   "source_outlet": "CENS",
+   "source_date": "2024-07-25",
+   "who": "CENS",
+   "notes": "Contrastes:\n- Ley 142, art. 146: «La falta de medición del consumo, por acción u omisión de la empresa, le hará perder el derecho a recibir el precio».\n- CREG 108, art. 30: mismo texto.\n- Concepto SSPD 433/2025: «la falta de medición del consumo, por acción u omisión del prestador, le hará perder el derecho a recibir el precio».\n- Informe de inspección SSPD 2022, p. 30: «se procede a facturar por consumo promedio».\nCaptura en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-reglas-facturacion/capturas/CCU2024_p41-041.png. Es un contraste textual; la ilegalidad la declara un juez o la Superservicios."
+  },
+  {
+   "id": "NF-02",
+   "claim": "La regulación de la CREG exige que el CCU explique de forma objetiva cómo se calcula el cobro de la reconexión y la reinstalación, y que los cargos se publiquen cada enero. El CCU de CENS no trae fórmula: la cl. 54A solo dice que el cargo remunera costos «directos (mano de obra, transporte, equipos y materiales) y costos indirectos» y que esos servicios están «sujetos a los regímenes de liberta tarifaria». Además, las listas verificadas se publicaron en diciembre de 2024, julio de 2025 y mayo de 2026.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0225_1997.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "b) Reconexión y Reinstalación del Servicio. Los prestadores del servicio podrán cobrar cargos por reconexión y reinstalación del servicio, cuando incurran en costos por realizar esas actividades. Los contratos de condiciones uniformes especificarán cuales son los costos que representan esas actividades y expresarán, de manera objetiva cómo cuantificarlos, teniendo en cuenta el costo de la mano de obra y del transporte en que incurren.",
+   "source_page": "Art. 5 lit. b; art. 8 («Los cargos a que se refiere esta Resolución deberán ser publicados por el Prestador del Servicio en el mes de enero de cada año»); art. 3 (la libertad tarifaria cubre el medidor, la acometida y la obra de conexión)",
+   "source_title": "Resolución CREG 225 de 1997 (15-dic-1997; Diario Oficial 43.216)",
+   "source_outlet": "CREG – Gestor Normativo",
+   "source_date": "1997-12-15",
+   "who": "CREG",
+   "notes": "El propio CCU dice en la p. 64 que se rige por la CREG 225 de 1997. CENS podría responder que tiene el soporte en un estudio de costos interno o en el acta del grupo primario; hay que pedirlo por derecho de petición."
+  },
+  {
+   "id": "NF-03",
+   "claim": "El CCU de CENS promete actualizar los costos de estos servicios según la variación de los índices de precios. En 17 meses (dic-2024 a may-2026), varios servicios casi se duplicaron:\n- Sellado o deselle de medidor: $77.200 a $156.000 (+102,1%).\n- Revisión por cambio de tarifa o clase de servicio: $81.800 a $162.000 (+98,0%).\n- Reinstalación: $131.500 a $256.700 (+95,2%).\n- Instalación de medidor: $114.600 a $218.600 (+90,8%).\n- Revisión para entrega de inmueble: $70.900 a $127.400 (+79,7%).\nPara comparar, la prensa informa, con datos del DANE, una inflación del 5,10% en 2025.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "Parágrafo 1: CENS actualizará los costos de prestación del servicio, aplicando las variaciones en los índices de precios que las fórmulas contienen, con sujeción a las normas sobre subsidios y contribuciones, dichos valores se publicarán en el área de prestación del servicio donde opera CENS y serán comunicados a SSPD y a la CREG, en cumplimiento de la regulación vigente.",
+   "source_page": "CCU p. 64. Listas: dic-2024 pp. 1-2; may-2026 pp. 1-2",
+   "source_title": "CCU CENS v7.0, cl. 54A par. 1; listas de servicios adicionales del 02-12-2024 y del 19-05-2026",
+   "source_outlet": "CENS",
+   "source_date": "2024-07-25 / 2026-05-19",
+   "who": "CENS",
+   "figures": "Código 67: 77.200→156.000; 57: 81.800→162.000; 43: 131.500→256.700; 10: 114.600→218.600; 65: 70.900→127.400",
+   "period": "dic-2024 a may-2026",
+   "notes": "Lista 2024: https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tramites-y-servicios/LISTADOS%20DE%20SERVICIOS%20ADICIONALES/LSA-2024-12-02.pdf?ver=NXffiuFuGrdTg8qlDZIfzQ%3d%3d\nLista 2026: https://www.cens.com.co/Portals/cens/tramites-y-servicos/portafolio-de-servicios/LSA%20Servicios-adicionales/LSA%2019%20de%20mayo%202026.pdf?ver=YjKsRbyn-fTdIFvEAkltxQ%3d%3d\nLa inflación de 5,10% viene de prensa (Portafolio, Bloomberg Línea, Valora Analitik); para la captura hay que usar el boletín del DANE. Según el mismo CCU, los valores se comunican a la Superservicios y a la CREG, así que esas entidades deberían tener los reportes."
+  },
+  {
+   "id": "NF-04",
+   "claim": "La Corte Constitucional condicionó la regla de pagar el promedio de 5 períodos para recurrir (Ley 142, art. 155, inc. 2; sentencia C-558-01). Si lo que el usuario discute es precisamente ese promedio, puede reclamar y recurrir sin pagarlo antes. El CCU de CENS (cl. 62A num. 2, p. 72) no recoge ese condicionamiento.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "source_type": "primario-judicial",
+   "confidence": "alta",
+   "quote": "La exequibilidad de este precepto se declara en el entendido de que las sumas en discusión no correspondan precisamente al promedio del consumo de los últimos cinco períodos.",
+   "source_page": "Art. 155, nota «Jurisprudencia Vigencia», que se carga desde http://www.secretariasenado.gov.co/senado/basedoc/js/ley_0142_1994_pr003.js (función insRow53)",
+   "source_title": "Ley 142 de 1994, art. 155: nota sobre la sentencia C-558-01 (5-may-2001; ponente Jaime Araújo Rentería)",
+   "source_outlet": "Secretaría General del Senado",
+   "source_date": "2001-05-05",
+   "who": "Corte Constitucional",
+   "notes": "De la parte motiva: «cuando el suscriptor o usuario alega no deber dicho promedio puede reclamar y recurrir sin pagar previamente». Para la captura hay que hacer clic en «Jurisprudencia Vigencia» bajo el art. 155 en la página del Senado."
+  },
+  {
+   "id": "NF-05",
+   "claim": "Una liga de usuarios ganó: el Consejo de Estado anuló en 2008 el artículo de la CREG 108 que permitía a las empresas imponer sanciones pecuniarias a los usuarios. La demanda la presentó la Corporación Liga de Usuarios de Servicios Públicos Domiciliarios en Barranquilla. Según el fallo, la ley solo da a las empresas competencia para suspender, terminar el contrato y cortar.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/11001-03-26-000-2004-00003-00(26520).htm",
+   "source_type": "primario-judicial",
+   "confidence": "alta",
+   "quote": "PRIMERO.- Declárase la nulidad del artículo 54 de la Resolución No. 108 de 1997, parágrafos uno y dos inclusive, expedida por la Comisión de Regulación de Energía Eléctrica y Gas CREG",
+   "source_page": "Parte resolutiva",
+   "source_title": "Consejo de Estado, Sección Tercera, sentencia del 30-jul-2008, rad. 11001-03-26-000-2004-00003-00(26520), ponente Ramiro Saavedra Becerra",
+   "source_outlet": "CREG – Gestor Normativo",
+   "source_date": "2008-07-30",
+   "who": "Consejo de Estado; demandante: Corporación Liga de Usuarios de Servicios Públicos Domiciliarios en Barranquilla",
+   "notes": "Motivación: «la ley sólo les otorgó competencia para suspender o dar por terminado el contrato, y para cortar los servicios a los suscriptores o usuarios, en los eventos específicamente contemplados por la misma ley». Cubre un vacío del frente: qué fallo anuló el art. 54."
+  },
+  {
+   "id": "NF-06",
+   "claim": "La regulación hace responsable al comercializador de los perjuicios por suspender indebidamente o por demorar la solicitud de reconexión. Además, obliga a reconectar dentro del plazo del Decreto 19 de 2012 (24 horas). El CCU de CENS (p. 32, num. 14) reconoce que reconectar fuera del plazo legal es «falla en la prestación del servicio». Según la cl. 56 (p. 65), eso da derecho a una indemnización que no puede ser menor al consumo de un día por cada día de falla.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0156_2011.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "d) El comercializador será responsable de los perjuicios que se lleguen a causar como resultado de la suspensión indebida o la demora en la solicitud de reconexión del servicio.",
+   "source_page": "Art. 49, num. 3, lit. d (lit. a: «Las maniobras de reconexión deberán ser programadas y realizadas en el plazo señalado en el artículo 42 del Decreto 19 de 2012»)",
+   "source_title": "Resolución CREG 156 de 2011",
+   "source_outlet": "CREG – Gestor Normativo",
+   "source_date": "2011",
+   "who": "CREG",
+   "notes": "CCU p. 32: «14. Reconectar el servicio en el término establecido en la normatividad vigente, contado a partir de la eliminación de la causa que dio origen a la suspensión, de lo contrario se incurrirá en una falla en la prestación del servicio.» CCU p. 65, cl. 56 num. 2 lit. b: indemnización que «en ningún caso se tasarán en menos del valor del consumo de un día [...] por cada día en que el servicio haya fallado totalmente». El literal a) fue modificado por la CREG 43 de 2012."
+  },
+  {
+   "id": "NF-07",
+   "claim": "El cobro de $256.700 (reinstalación) aplica después del corte, no de la simple suspensión. Según el CCU de CENS, la suspensión llega con 2 facturas sin pagar y se levanta con la reconexión ($65.800). El corte, que termina el contrato, procede, entre otras causales, por no pagar 3 facturas consecutivas o por reincidir en dos años, y exige la reinstalación ($256.700, +95% desde dic-2024). Una familia que se atrasa en 3 facturas queda expuesta al cobro que casi se duplicó.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "9. Incumplimiento en el pago de tres facturas del servicio de energía consecutivas. 10.Por reincidencia del SUSCRIPTOR o USUARIO en los dos últimos dos (2) años, en cualquiera de las causales de suspensión del servicio definidas en el presente documento.",
+   "source_page": "61 (cl. 51, corte); 58 (cl. 48 num. 4, suspensión por 2 períodos); 64 (cl. 54A: «Reinstalación del servicio (incluye corte y reinstalación)»)",
+   "source_title": "CCU CENS v7.0, cl. 48, 51 y 54A",
+   "source_outlet": "CENS",
+   "source_date": "2024-07-25",
+   "who": "CENS",
+   "notes": "Base legal del corte por 3 facturas: CREG 108, art. 56 (presunción por atraso en tres facturas). La Nota A de la lista dice que el IVA se aplica «para los materiales y aquellos servicios que aplique»; no verifiqué si grava la reinstalación residencial."
+  },
+  {
+   "id": "NF-08",
+   "claim": "Contexto justo sobre la comparación con EPM. En 2021, la reconexión residencial urbana de CENS ($40.475) ocupaba el puesto 16 entre 27 empresas, cerca de la mediana nacional ($40.100) y por debajo del promedio ($42.492). EPM ($17.400) estaba entre las cuatro más baratas. En los segmentos comercial e industrial, EPM cobraba $87.700, más del doble que CENS ($40.475).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Diagn%C3%B3stico%20de%20Medici%C3%B3n%20Energ%C3%ADa%20en%20el%20SIN%20-%202021.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "quote": "Tabla 24. Precios de reconexión del servicio de energía eléctrica – 2021",
+   "source_page": "63",
+   "source_title": "Diagnóstico sobre el estado de la medición de energía eléctrica en el SIN, 2021 (Tabla 24)",
+   "source_outlet": "Superservicios – DTGE",
+   "source_date": "2022",
+   "who": "Superservicios",
+   "figures": "Residencial urbano: mediana $40.100, promedio $42.492; CENS en el puesto 16 de 27; mínimo CEDENAR $5.322; máximo VATIA $98.872",
+   "period": "2021",
+   "notes": "Cálculo propio con los 27 valores de la columna «residencial urbano» de la Tabla 24."
+  }
+ ],
+ "cautions": [
+  "Reinstalación frente a reconexión: el +95% corresponde a la reinstalación, que se cobra tras el corte (3 facturas impagas o reincidencia). La reconexión típica por suspensión subió +16,6%, hasta $65.800. Si el hilo sugiere que cualquier reconexión cuesta $256.700, CENS lo desmiente fácilmente.",
+  "Comparación con EPM: en 2021 CENS estaba en la mediana nacional de la reconexión residencial urbana, y en comercial e industrial EPM cobraba más del doble que CENS. Presentar «CENS cobra 2,3 veces lo de EPM» sin ese contexto es cherry-picking.",
+  "Código 55, «Revisión por alto consumo»: que el precio esté en la lista no prueba que se haya cobrado en investigaciones del art. 149. El CCU (cl. 22B) permite cobrar las revisiones que pide el usuario, y la Superservicios acepta ese cobro. Decir «incluía en su lista», no «cobraba», salvo que haya facturas.",
+  "Cláusulas del CCU que chocan con la ley (20.9, 32A num. 3, 66.3, 70): hay que presentarlas como contraste textual con la norma, no como «ilegales» o «abusivas». Eso lo declara un juez o la Superservicios. CENS citará que su propio CCU reproduce el art. 150 en la cl. 27 (p. 39) y en la cl. 32A (p. 41).",
+  "Datos de la CREG (D-905 025, Ilustración 1): son nacionales. El top 5 y la barra departamental no tienen filtro de servicio y mezclan energía, gas natural y GLP. Los 0,7 millones de Norte de Santander no son solo de CENS. No calcular tasas por usuario ni compararlos con el 2,69 por 10.000 que CENS reportó en 2022, que es otra métrica (reclamos «atribuibles»). La cita del texto cruza de la p. 16 a la 17.",
+  "La CREG atribuye el problema central a la propia gente: «Desconocimiento del usuario de su rol» (D-905, p. 18). Entre las causas también pone «Veedurías ciudadanas desinformadas inclinadas a la crítica de la regulación». Si se usa la lista de consecuencias (abuso de posición dominante, cortes arbitrarios), hay que ser honestos con ese encuadre: es un diagnóstico nacional, no un señalamiento a CENS.",
+  "El proyecto CREG 705 011/2025 no está vigente. El segundo entregable (705 013/2026) estuvo en consulta hasta el 25-jul-2026, y en el Gestor Normativo (actualizado al 28-oct-2026) no hay resolución definitiva. El proyecto tampoco es del todo favorable al usuario: el art. 98 deja al prestador, en casos de fraude o manipulación, actuar «sin tener que comunicar la visita de inspección al usuario».",
+  "Los conceptos de la Superservicios (235, 263 y 433 de 2025; 082 de 2026; CU 02/2009) no son vinculantes. El 433/2025 resolvió una consulta sobre acueducto. Presentarlos como doctrina de la Superservicios, no como ley.",
+  "Horas hábiles: la definición de horario no hábil del CCU (p. 68) está en el capítulo de atención de PQR. Aplicarla a la reconexión (tabla T4) es una interpretación. El hecho firme es que el CCU dice «24 horas hábiles» y el Decreto 19/2012 dice «24 horas siguientes». Además, el CCU p. 32 num. 14 remite al «término establecido en la normatividad vigente».",
+  "Art. 155: la ley habla de «recurso». La extensión a «para reclamar no hay que pagar» viene del Concepto SSPD 433/2025. La sentencia C-558-01 añade que, si se discute el propio promedio, tampoco hay que pagarlo para recurrir.",
+  "Correcciones al bloque company_defense: (a) la cita de la CREG 105 007 es «conocer como la empresa que le presta el servicio va a hacer un seguimiento de sus consumos», no «conozca como la empresa...»; (b) la sentencia C-186-22 está en las pp. 12-13 del diagnóstico de la Superservicios de 2021, no en la p. 9; (c) la frase «no se trata de una sanción al usuario» es del Concepto 235/2025.",
+  "Expertos: Hemberth Suárez Lozano es abogado de OGE Energy, firma del lado empresarial. Su crítica es sobre todo la carga operativa para las empresas y la complejidad para el usuario. No presentarlo como vocero de los usuarios. Su cita la verifiqué en el HTML original.",
+  "La cartilla «ABC de la facturación y reclamación 2026» de la Superservicios sigue sin verificar: pesa más de 10 MB y el sitio está detrás de Incapsula. El Concepto SSPD 491/2018, según el cual los gastos de cobranza corren por cuenta del prestador salvo pacto expreso, solo lo vi citado en Ámbito Jurídico (que respondió 403). No usarlo hasta tener el texto primario. Sería la base para cuestionar la cl. 53 num. 2 del CCU (honorarios de cobro como condición para reconectar).",
+  "Antes de publicar, confirmar en el sitio de CENS que la lista del 19/05/2026 sigue siendo la última; no encontré una posterior. Los valores son sin IVA y corresponden a la zona urbana de Cúcuta, Los Patios y Villa del Rosario; la zona rural y otras regiones tienen recargo.",
+  "La inflación de 5,10% en 2025 la tomé de prensa que cita al DANE (Portafolio, Bloomberg Línea, Valora Analitik). Para una captura «de fuente sólida» hay que usar el boletín técnico del DANE.",
+  "El Concepto SSPD 082/2026 está detrás de Incapsula: curl recibe HTML y WebFetch sí descarga el PDF. La URL funciona en un navegador normal.",
+  "El expediente del Consejo de Estado sobre los porcentajes de desviación (11001-03-24-000-2020-00058) no aparece en la CREG 105 007; no está verificado. Las fechas de los autos (5-abr-2021 y 24-mar-2023) sí lo están.",
+  "CREG 101 120/2026: no pagar el cobro adicional no permite cortar el servicio, pero la deuda sigue siendo exigible y cobrable (art. 20 ii-iv). La Circular 326 suspendió el programa en ciertos municipios. No decir «no hay que pagarlo».",
+  "«CENS no es solo distribuidor»: el argumento de este frente es que CENS redacta el contrato, fija los precios de los servicios conexos, decide cortes y reconexiones, factura por promedio y cobra recuperaciones. Que CENS compre energía en bolsa y por contratos (componente G) es materia de otros frentes; no mezclarlo con estas reglas.",
+  "La tabla T5 (banda de 3σ) es hipotética. El método real de la CREG normaliza el consumo a 30 días y usa los períodos definidos en la 105 007. Hay que rotularla como ejemplo ilustrativo, no como dato de CENS."
+ ]
+}

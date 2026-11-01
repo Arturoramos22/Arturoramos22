@@ -1,0 +1,574 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL DEL FRENTE CONTEXTO POLÍTICO E HISTORIA (corte: 31-oct-2026). Reabrí las 40 afirmaciones y los 4 casos de recibos. Volví a descargar las fuentes primarias: las 10 publicaciones de tarifas de CENS de 2026, incluidas las imágenes de componentes de ene, sep y oct; las de feb y mar de 2025; el Código de Gobierno Corporativo de 2020; el Informe de Sostenibilidad CENS 2020; las notas EEFF 2025 y 2T-2026; el Informe EPM 2009; la Ordenanza 0009 de 2022; las Res. CREG 101 120 y 101 126; los boletines tarifarios de la Superservicios 1T y 2T-2025; los informes EPM 2T-2026 y 4T-2025 y el informe de gestión de la Gobernación 4T-2025. La prensa la reabrí con WebFetch.\n\nRESULTADO: 32 confirmadas, 6 corregidas, 0 refutadas y 2 confirmadas con matices fuertes. Las cifras de tarifas de CENS de 2026 cuadran al decimal: CU, estratos, componentes G/T/DtUN/Cv/PR/R y COT. También cuadra que sep-oct 2026 son los CU más altos desde feb-2025: mar-2025 fue $1.010,1153, por debajo de $1.019,03. La propiedad (91,52%; Ifinorte 7,789%; Cúcuta 0,3974%), los dividendos ($58.771 millones decretados en 2025), la historia de 2009 y los textos de la CREG están confirmados.\n\nCORRECCIONES IMPORTANTES:\n(1) El dato de la Superservicios de que 'CENS tuvo el G más alto en el 2T-2025' no se sostiene como está. El boletín 2T-2025 reproduce idéntica la Tabla 17 del Grupo 2 del boletín 1T-2025: mismos valores para todas las empresas y mismo promedio de 364,12. Solo cambia la etiqueta de las columnas. Los valores 402,89 y 417,77 corresponden a 4T-2024 y 1T-2025 y coinciden con el promedio de las publicaciones mensuales de CENS (4T-2024 = 402,89 exacto). Lo correcto: en el 1T-2025 CENS reportó el G más alto de su grupo, el trimestre del pico de feb-2025. La explicación de 'contratos renegociados o bolsa' es una hipótesis genérica del boletín. Además, el boletín 2T marca anomalías en el reporte de CENS: Pc=0, Qc=0% y mayo sin datos.\n(2) Los $450.000 millones de subsidios eléctricos NO se han trasladado. Es una solicitud al Congreso con mensaje de urgencia, pendiente de aprobación. Hacienda la describe como recursos 'no comprometidos', dice que no afecta los subsidios de los estratos 1-3 y afirma que a noviembre habrá girado $4,2 billones en subsidios.\n(3) Lo de '$785 a $741-738' en 2022 es de Semana, no de La Opinión. Es incoherente con la rebaja de $17-20 y no se materializó: los CU publicados fueron 785,8, 776,81, 768,90 y 774,82.\n(4) El estrato 1 no está protegido 'por el tope de subsidio'. Lo protege la regla de que la tarifa subsidiada crece con el IPC, y el porcentaje de subsidio absorbe la diferencia. El E1 ya está en 55,99% (tope 60%) y el E2 en 44,99% (tope 50%).\n(5) La subasta de 2009 fue el jueves 26-feb-2009. Semana, fechada el 25, dice 'este jueves'.\n(6) La autorización de la Ordenanza 0009 de 2022 venció el 31-dic-2022. No hay evidencia de que se ejecutara: en 2025 la participación pública es 99,8362%, idéntica a la suma pública de 2020.\n\nDATOS NUEVOS RELEVANTES: el COT va incluido dentro del componente Cv. Neto de COT, el Cv (igual al Cv de nivel 4) subió de $85,28 a $97,93/kWh entre ene y sep de 2026 (+14,8%). Es el componente de comercialización de CENS y la tesis tiene que mirarlo, aunque en pesos es pequeño frente a G. La utilidad neta de CENS fue $123.146 millones en 2025 y $117.543 millones en 2024; repartió cerca del 50% como dividendos. El precio de bolsa promedio en el 1S-2026 fue 312 $/kWh, frente a 258 el año anterior (informe EPM). MinEnergía habló de 'los últimos dos años': medido así, CENS bajó 8,9% entre dic-2023 y dic-2025, no 16%.",
+ "verified": [
+  {
+   "id": "contexto-politico-historia-01",
+   "verdict": "confirmado",
+   "claim_final": "Según el Código de Gobierno Corporativo de CENS (v2.0, aprobado en Junta N°838 el 21-oct-2020), CENS fue creada el 16-jun-1896 por Escritura Pública 121 como 'Compañía de Alumbrado Eléctrico de Cúcuta'. Pasó a llamarse 'Centrales Eléctricas de Cúcuta S.A.' el 16-oct-1952 (Escritura 3552) y desde 1955 tiene su razón social actual. Con la Ley 142 de 1994 la Nación era su principal accionista, con 78,98%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/gobierno-corporativo/Codigo_Gobierno_Corporativo_COD_305_001_JD_838_2020.pdf",
+   "quote": "A partir de la Ley 142 de 1994, CENS adquiere la connotación de Empresa de Servicios Públicos, al ser la Nación su principal accionista con el equivalente a 78,98%",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "figures_final": "Nación 78,98%",
+   "notes": "Las notas EEFF 2T-2026 ratifican la constitución del 16-oct-1952 (Escritura 3552, Notaría Octava de Bogotá). CENS se define como 'empresa de servicios públicos mixta'."
+  },
+  {
+   "id": "contexto-politico-historia-02",
+   "verdict": "confirmado",
+   "claim_final": "En enero de 2009 se firmó en Cúcuta un convenio interadministrativo que designó a EPM 'Operador Idóneo' para precalificar en la compra de las acciones de la Nación en CENS, cerca del 78%. Lo firmaron el gobernador William Villamizar Laguado y el gerente general (e) de EPM, Óscar Hernán Herrera Restrepo, con respaldo del Sindicato de CENS y de la Asamblea Departamental.",
+   "source_url": "https://www.elcolombiano.com/historico/epm_esta_de_compras_en_norte_de_santander-KHEC_27782",
+   "quote": "cuenta con el respaldo del Sindicato de CENS y de la Asamblea Departamental",
+   "second_source_url": "https://www.vanguardia.com/economia/local/2009/01/09/norte-de-santander-se-ira-con-epm-como-socio-para-comprar-la-cens/",
+   "figures_final": "paquete en venta: cerca del 78%; CENS atendía 350 mil instalaciones",
+   "notes": "El Colombiano, 14-ene-2009. Vanguardia (9-ene-2009) cita al gobernador encargado Silvano Serrano Guerrero: 'que Cens siga siendo una empresa pública, con participación de la Gobernación a través de Ifinorte'. Vanguardia no menciona el proceso fallido de 2007-2008; ese dato no quedó verificado."
+  },
+  {
+   "id": "contexto-politico-historia-03",
+   "verdict": "confirmado",
+   "claim_final": "EPM compró a la Nación la mayoría accionaria de CENS en subasta pública en 2009. Ofreció $180.000 millones por CENS y $373.000 millones por ESSA, $553.000 millones en total. La subasta fue el jueves 26-feb-2009 en el auditorio de Fonade en Bogotá.",
+   "source_url": "https://www.semana.com/negocios/articulo/electrificadoras-santander-epm/74606/",
+   "quote": "El ofrecimiento global alcanzó los $553.000 millones, $180.000 millones por CENS y $373.000 millones por ESSA.",
+   "second_source_url": "https://www.laopinion.co/historicos/hace-15-anos-se-subasto-centrales-electricas-de-norte-de-santander",
+   "figures_final": "CENS $180.000 millones; ESSA $373.000 millones; total $553.000 millones (pesos de 2009)",
+   "notes": "Fecha conciliada: Semana (fechada el 25-feb-2009, 7 p.m.) dice que la subasta fue 'este jueves', y el 26-feb-2009 fue jueves. La Opinión (26-feb-2024) da el 26-feb-2009 en Fonade. El Informe de Sostenibilidad EPM 2009 confirma la compra 'mediante subasta pública', sin precio."
+  },
+  {
+   "id": "contexto-politico-historia-04",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (26-feb-2024), William Villamizar Laguado, gobernador en 2009 y otra vez en 2024-2027, dijo entonces que la venta fue exitosa para Norte de Santander. Según lo anunciado entonces, los $553.000 millones de CENS y ESSA se invertirían en la doble calzada Cúcuta-Bucaramanga. La oferta por CENS superó en 9% el precio mínimo del Gobierno ($165.000 millones), fijado por los ministros Hernán Martínez Torres y Óscar Iván Zuluaga.",
+   "source_url": "https://www.laopinion.co/historicos/hace-15-anos-se-subasto-centrales-electricas-de-norte-de-santander",
+   "quote": "\"El negocio fue exitoso desde todo punto de vista para Norte de Santander\", manifestó Villamizar a La Opinión en el 2009.",
+   "second_source_url": "https://www.lafm.com.co/actualidad/norte-de-santander-sequia-altas-temperaturas-fenomeno-elnino-412232",
+   "figures_final": "precio mínimo $165.000 millones; oferta $180.000 millones (9% más); CENS+ESSA $553.000 millones",
+   "notes": "La nota dice textualmente 'quien ocupa nuevamente este cargo para el periodo 2024-2027'. La FM (28-sep-2026) lo cita como gobernador en funciones. La cita de 2009 llega vía La Opinión de 2024; no encontré la nota original de 2009. Que el dinero iría a la doble calzada es lo anunciado, no lo ejecutado."
+  },
+  {
+   "id": "contexto-politico-historia-05",
+   "verdict": "confirmado",
+   "claim_final": "Según el Código de Gobierno Corporativo de CENS, en 2009 EPM Inversiones compró el paquete de la Nación. El 23-jul-2009 EPM, como accionista de EPM Inversiones, compró el 12,54% del Comité Departamental de Cafeteros. En la Junta de EPM, un miembro que pertenecía al Comité Directivo de la Federación Nacional de Cafeteros se abstuvo de votar esa compra (Acta 1502 del 3-abr-2009).",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/gobierno-corporativo/Codigo_Gobierno_Corporativo_COD_305_001_JD_838_2020.pdf",
+   "quote": "el 23 de julio del referido año, Empresas Públicas de Medellín E.S.P. en calidad de accionista de EPM Inversiones adquirió el 12.54% de las acciones propiedad del Comité Departamental de Cafeteros",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/institucional/informes-de-sostenibilidad-historicos-/informe-de-sostenibilidad-2009.pdf",
+   "figures_final": "12,54%. El código dice 91,75% para el Grupo EPM, pero la suma 78,9831% + 12,5360% = 91,5191%: la cifra correcta es 91,52%, la de las notas EEFF 2T-2026",
+   "notes": "Informe EPM 2009: 'se abstendría de votar la solicitud presentada para la posible adquisición por parte de EPM de acciones de ... CENS ... ofrecidas por la Federación Nacional de Cafeteros ... (Acta 1502 del 3 de abril de 2009)'. Fecha de filial según las notas EEFF 2T-2026: 19-mar-2009. Precio del 12,54%: no hallado."
+  },
+  {
+   "id": "contexto-politico-historia-06",
+   "verdict": "confirmado",
+   "claim_final": "Composición accionaria de CENS (Informe de Sostenibilidad 2020, tabla de Gobierno Corporativo, pág. 53): EPM Inversiones 78,9831% (1.199.144.474 acciones); EPM 12,5360% (190.325.000); Ifinorte 7,7890% (118.254.798); Municipio de Cúcuta 0,3974% (6.033.710); trabajadores y jubilados de CENS 0,1622% (2.462.354); Ocaña 0,0674%; Pamplona 0,0446%; Villa del Rosario 0,0187%; otros menores. Total: 1.518.229.945 acciones. La estructura del Grupo EPM con corte al 30-sep-2026 ratifica los porcentajes de EPM (78,98% y 12,54%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/informe-de-sostenibilidad-cens-2020.pdf",
+   "quote": "Instituto Financiero para el Desarrollo de Norte de Santander –IFINORTE- 7,7890% 118.254.798 ... Municipio de Cúcuta 0,3974% 6.033.710",
+   "second_source_url": "https://www.epm.com.co/institucional/sobre-epm/gobierno-corporativo/estructura-grupo-epm/",
+   "figures_final": "Grupo EPM 91,52%; Ifinorte 7,789%; Cúcuta 0,3974%",
+   "notes": "El Informe de Sostenibilidad 2025 solo da 58 accionistas y la división 99,8362% pública / 0,1638% privada. Ese 99,8362% es exactamente la suma de los accionistas públicos de 2020 (EPM Inv + EPM + Ifinorte + Cúcuta + Ocaña + Pamplona + Villa del Rosario), lo que es coherente con que la composición no haya cambiado. El porcentaje de Ifinorte en 2026 no está publicado de forma individual."
+  },
+  {
+   "id": "contexto-politico-historia-07",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 CENS decretó $58.771 millones en dividendos, correspondientes a utilidades de 2024 (utilidad neta 2024: $117.543 millones, payout de cerca del 50%). Pagó $58.780 millones: $58.770 millones de dividendos de 2024 y $10 millones de una sucesión. Por participación, a Ifinorte le corresponden cerca de $4.578 millones, a Cúcuta cerca de $234 millones y al Grupo EPM cerca de $53.786 millones (cálculo propio). En el 1S-2026 CENS pagó $18.471 millones en dividendos.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "Los dividendos decretados durante el año fueron $58,771 los cuales corresponden al año 2025. Durante el 2025 se pagaron dividendos por $58,780 de los cuales $58,770 corresponden a dividendos del 2024",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "figures_final": "$58.771 millones decretados en 2025 (2024: $51.611 millones); Ifinorte ~$4.578 millones; Cúcuta ~$233,6 millones; Grupo EPM (91,5191%) ~$53.786 millones; 1S-2026 pagados $18.471 millones",
+   "notes": "La URL específica es el Anexo 6 del Informe de Sostenibilidad 2025, nota 13.3. Las notas 2T-2026 dicen 'dividendos por $18,471' en la variación de caja. No encontré cuánto se decretó en 2026 sobre la utilidad de 2025 ($123.146 millones). El reparto por accionista es un cálculo."
+  },
+  {
+   "id": "contexto-politico-historia-08",
+   "verdict": "confirmado",
+   "claim_final": "La Asamblea de Norte de Santander (Ordenanza 0009 del 1-sep-2022, sancionada el 6-sep-2022 por el gobernador Silvano Serrano Guerrero) autorizó al gobernador a comprar, a través de Ifinorte, 100.000 acciones de CENS a un accionista particular: valor nominal $350 cada una, 0,0066%. La autorización tenía vigencia solo hasta el 31-dic-2022, y no encontré evidencia de que la compra se ejecutara.",
+   "source_url": "https://administrador.nortedesantander.gov.co/wp-content/uploads/2022/12/ORDENANZA-0009.pdf",
+   "quote": "La cantidad a adquirir es de CIEN MIL (100.000) ACCIONES por valor nominal de TRESCIENTOS CINCUENTA (350) PESOS ... (0,0066%)",
+   "figures_final": "100.000 acciones; 0,0066%; valor nominal total $35 millones",
+   "notes": "Es un PDF escaneado; leí las imágenes. Artículo cuarto: 'La autorización contenida en esta ordenanza se otorga hasta el 31 de diciembre de 2022'. El 99,8362% de inversión pública de 2025 es idéntico al total público de 2020, lo que sugiere (sin probarlo) que no se ejecutó. El encuadre 'lejos de vender' es editorial y sobredimensiona una operación del 0,0066%."
+  },
+  {
+   "id": "contexto-politico-historia-09",
+   "verdict": "confirmado",
+   "claim_final": "El informe de gestión del 4T-2025 de la Secretaría Minero Energética de la Gobernación registra electrificación rural, proyectos estructurados y solar fotovoltaica, con CENS como 'aliado estratégico'. No contiene metas ni acciones sobre tarifas: no hay ninguna coincidencia de 'tarifa' en el texto.",
+   "source_url": "https://administrador.nortedesantander.gov.co/wp-content/uploads/2026/01/Gestion-NdS-4toT-2025-08-MINAS.pdf",
+   "quote": "Se tiene como aliado estrategico el operador de red-Centrales Electricas de Norte de Santander",
+   "figures_final": "meta 157 'Proyectos energéticos estructurados': 8 (valores 4 / 1; 25,0% / 12,5%); redes rurales para 187 y 640 viviendas; solar en Mutiscua, Silos y Cácota",
+   "notes": "Que falten metas tarifarias se basa solo en este informe sectorial, no en el Plan de Desarrollo completo."
+  },
+  {
+   "id": "contexto-politico-historia-10",
+   "verdict": "confirmado",
+   "claim_final": "En septiembre de 2026 (La FM, 28-sep-2026 según la ruta de la imagen), el gobernador Villamizar pidió ahorrar agua y evitar quemas por la sequía y la alerta naranja de Corponor. La nota no menciona energía, CENS ni tarifas.",
+   "source_url": "https://www.lafm.com.co/actualidad/norte-de-santander-sequia-altas-temperaturas-fenomeno-elnino-412232",
+   "quote": "Necesitamos ahorrar agua; vienen momentos muy complejos por la intensa sequía.",
+   "notes": "La fecha es inferida de la ruta de la imagen. Que no hable de tarifas en esta nota no prueba que no se haya pronunciado en otro lugar."
+  },
+  {
+   "id": "contexto-politico-historia-11",
+   "verdict": "corregido",
+   "claim_final": "Octubre de 2022, gobierno Petro: CENS dijo ser parte del 'Pacto por la Justicia Tarifaria' (gerente José Miguel González). Anunció una rebaja de $17-20/kWh que se vería en las facturas de noviembre y diciembre para 586.683 usuarios, y una tarifa acotada al IPC (La Opinión). La cifra del kWh pasando de $785 a $741-738 es de Semana, no de La Opinión, y no cuadra con una rebaja de $17-20. Además, no se materializó: los CU publicados por CENS fueron $785,80 (sep), $776,81 (oct), $768,90 (nov) y $774,82 (dic-2022).",
+   "source_url": "https://laopinion.co/economia/partir-de-cuando-cens-bajara-las-tarifas-de-energia-y-cuanto",
+   "quote": "Somos parte del 'Pacto por la Justicia Tarifaria'",
+   "second_source_url": "https://www.semana.com/nacion/cucuta/articulo/en-cucuta-y-norte-de-santander-disminuira-la-tarifa-de-energia/202215/",
+   "figures_final": "rebaja anunciada $17-20/kWh; 586.683 usuarios; CU real sep-dic 2022: 785,80 / 776,81 / 768,90 / 774,82",
+   "notes": "Semana (14-oct-2022): 'el kilovatio pasaría de $785 (precio en septiembre) a $741- $738'. Semana habla de 'inflación mensual', no de IPC. La serie de CU sale de las publicaciones de CENS 2022 (frente serie-primaria). La reducción efectiva entre sep y nov-2022 fue de unos $16,9/kWh."
+  },
+  {
+   "id": "contexto-politico-historia-12",
+   "verdict": "confirmado",
+   "claim_final": "Protestas de 2022 en Cúcuta. Semana (15-sep-2022) reportó que usuarios decidieron quemar sus recibos frente a CENS ('Esto es absurdo, nos están robando'). El 8-nov-2022 a las 7 p.m. hubo un 'apagatón' de 10 minutos convocado por José Luis Mora, presidente de Asobares Cúcuta (Semana, 3-nov-2022). El CU de agosto de 2022 subió 6,0% ($44,21); un usuario no identificado dijo que el kWh pasó de $649,9 a $781,1 en seis meses (+$131,2, cerca del 20%).",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/esto-es-absurdo-nos-estan-robando-comunidad-cucutena-protesta-por-el-alza-de-precio-en-los-recibos-de-luz/202219/",
+   "quote": "aumentó 6,0 %, equivalente a 44,21 pesos en comparación con el CU del mes de julio",
+   "second_source_url": "https://www.semana.com/nacion/cucuta/articulo/convocan-apagaton-en-cucuta-por-alza-de-tarifa-en-el-recibo-de-la-luz/202231/",
+   "figures_final": "+6,0% CU ago-2022 (CENS: jul 736,87 a ago 781,10); $649,9 a $781,1/kWh",
+   "notes": "La respuesta de CENS (La Opinión, 8-nov-2022) fue genérica, de disposición a dialogar. Ojo: el CU aplicado de ago-2022 ($781,1) estaba por debajo del CU de costo ($850,29) por la opción tarifaria."
+  },
+  {
+   "id": "contexto-politico-historia-13",
+   "verdict": "confirmado",
+   "claim_final": "En mayo de 2023 EPM anunció una reducción total de 6% que solo cobijó a Antioquia y al municipio de El Carmen de Atrato (Chocó), y no vinculó a sus filiales, entre ellas CENS. CENS dijo que estaba 'evaluando diferentes escenarios'.",
+   "source_url": "https://laopinion.co/economia/cens-tambien-bajara-las-tarifas-de-energia-como-lo-decidio-epm",
+   "quote": "no se vinculó a las filiales, como Centrales Eléctricas de Norte de Santander (CENS)",
+   "figures_final": "reducción de 6% (Antioquia y El Carmen de Atrato); 586.683 usuarios de CENS",
+   "notes": "La Opinión, 25-may-2023. No verifiqué si CENS aprobó después alguna rebaja."
+  },
+  {
+   "id": "contexto-politico-historia-14",
+   "verdict": "confirmado",
+   "claim_final": "El 11-jun-2024 el Grupo EPM (Afinia, CENS, CHEC, EDEQ, ESSA y EPM) se acogió al acuerdo del Gobierno para reducir el COT de los estratos 1, 2 y 3. Quedó condicionado a una ley para que la Nación asuma el COT, a créditos de la banca pública con gracia de hasta 12 meses y a una regulación de MinEnergía y la CREG. El alivio iría en proporción a los desembolsos.",
+   "source_url": "https://www.cens.com.co/institucional/sala-de-prensa/comunicado-grupo-epm-acuerdo-para-la-ruta-de-reduccion-de-los-costos-de-la-opcion-tarifaria",
+   "quote": "se hará en la medida en que se realicen los desembolsos",
+   "second_source_url": "https://www.larepublica.co/empresas/grupo-epm-anuncio-que-sus-filiales-de-energia-se-acogeran-a-la-reduccion-tarifaria-3878808",
+   "figures_final": "estratos 1, 2 y 3; períodos de gracia de hasta 12 meses",
+   "notes": "Las publicaciones de 2026 muestran que el COT sigue cobrándose a todos los niveles ($44-65/kWh en NT1 en 2026). Falta saber qué parte del acuerdo se ejecutó."
+  },
+  {
+   "id": "contexto-politico-historia-15",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (13-mar-2025, Leonardo Favio Oliveros), con corte al 28-feb-2025 la Nación le debía a CENS $153.000 millones en subsidios de los estratos 1-3 ($117.000 millones de 2024 y $35.000 millones de 2025; los parciales suman $152.000 millones). El Juzgado Décimo Civil del Circuito de Bogotá ordenó pagar $41.654.551.225 de capital (saldos de obligaciones reconocidas en las resoluciones 00702, 01251 y 01961) y unos $5.259 millones de intereses moratorios, con plazo de cinco días hábiles y amenaza de embargo. El ministro Palma reconoció 'algunas deudas', anunció que impugnaría y dijo que las filiales de EPM 'han recibido el 85% de los pagos'.",
+   "source_url": "https://laopinion.co/economia/no-son-46000-millones-los-que-debe-el-gobierno-petro-cens-sino-153000-millones",
+   "quote": "por la falta de pago de los subsidios en las tarifas para los estratos 1, 2 y 3",
+   "second_source_url": "https://www.semana.com/nacion/medellin/articulo/juez-ordena-embargo-de-cuentas-del-gobierno-petro-por-millonarias-deudas-con-epm/202519/",
+   "figures_final": "$153.000 millones (La Opinión, feb-2025); capital $41.654.551.225 + intereses ~$5.259 millones; La República (11-mar-2025, cifras de EPM): déficit de CENS $68.600 millones",
+   "notes": "Por la orden de embargo, parece un proceso ejecutivo con mandamiento de pago, no una sentencia de fondo; precisarlo con el frente judicial. El ministro de Hacienda dijo que las cuentas son 'inembargables'. No encontré la apelación ni la deuda vigente a oct-2026."
+  },
+  {
+   "id": "contexto-politico-historia-16",
+   "verdict": "confirmado",
+   "claim_final": "MinEnergía (ministro Edwin Palma, 9-ene-2026) afirmó que las tarifas bajaron más de 16% en el país y más de 28% en el Caribe en 'los últimos dos años'. El comunicado no menciona a CENS. Con las publicaciones de CENS, la baja es de -17,6% solo si se mide desde el pico (feb-2025 $1.055,5792 a dic-2025 $869,9421). Con la base de dos años que usa el comunicado, CENS bajó 8,9% (dic-2023 $954,54 a dic-2025) y 11,6% entre dic-2024 ($983,70) y dic-2025. El CU aplicado de dic-2025 seguía 11,4% sobre el de ago-2022 ($781,10), y el de jul-2026 ($959,752) 22,9% por encima.",
+   "source_url": "https://www.minenergia.gov.co/es/sala-de-prensa/noticias-index/las-tarifas-de-energia-bajan-mas-del-16-en-todo-el-pais-y-por-encima-del-28-en-el-caribe-colombiano/",
+   "quote": "Hoy, gracias a decisiones firmes del Gobierno del Cambio, las familias colombianas pagan menos por la luz",
+   "figures_final": "CENS CU aplicado: ago-2022 781,10; dic-2023 954,54; dic-2024 983,6966; feb-2025 1.055,5792; dic-2025 869,9421; jul-2026 959,752",
+   "notes": "El único periodo con fecha en el comunicado es dic-2024 a dic-2025 (-2,54% nacional en electricidad). Las comparaciones con 2022 mezclan tarifas con opción tarifaria: en 2022 el CU aplicado estaba por debajo del de costo, y desde dic-2023 el CU incluye recuperación de COT. Los porcentajes son cálculos propios."
+  },
+  {
+   "id": "contexto-politico-historia-17",
+   "verdict": "confirmado",
+   "claim_final": "El presidente De la Espriella anunció el 6-sep-2026 el 'Plan Energía Ya' (en el cuerpo de la nota, 'Plan de Energía Ya'). Incluye premio al ahorro, cobro adicional a quien supere su meta en más de 10%, un mecanismo para garantizar generación térmica y exención para los usuarios regulados de los municipios afectados por el terremoto. Admitió que algunos usuarios pagarían más.",
+   "source_url": "https://www.eltiempo.com/politica/abelardo-de-la-espriella/presidente-de-la-espriella-anuncia-medidas-para-hacerle-frente-al-fenomeno-de-el-nino-se-premiara-a-quienes-ahorren-energia-3584020",
+   "quote": "Puede haber incrementos para algunos usuarios, pero el precio promedio nacional será inferior",
+   "notes": "El Tiempo, 6-sep-2026, 16:40. La Res. CREG 101 120 que materializa el programa es anterior, del 30-jul-2026."
+  },
+  {
+   "id": "contexto-politico-historia-18",
+   "verdict": "confirmado",
+   "claim_final": "La ministra de Minas y Energía, María Nohemí Arboleda, dijo ante la Comisión Quinta de la Cámara, en el debate del 8-sep-2026, que las tarifas subirán.",
+   "source_url": "https://www.valoraanalitik.com/no-nos-digamos-mentiras-ministra-energia-gobierno-de-la-espriella-aumento-factura-energia/",
+   "quote": "No nos digamos mentiras. Las tarifas van a subir",
+   "second_source_url": "https://www.infobae.com/colombia/2026/09/12/exministro-de-minas-cuestiono-al-gobierno-de-la-espriella-por-la-manera-como-esta-enfrentando-la-crisis-energetica-estan-improvisando/",
+   "notes": "Valora Analitik, 10-sep-2026. Infobae (11-sep-2026) recoge otra formulación, 'la tarifa tiene que subir', fecha el debate el 8-sep y cita a Palma: 'están improvisando'. Si se cita textual, conviene usar la versión de Valora con su fuente."
+  },
+  {
+   "id": "contexto-politico-historia-19",
+   "verdict": "confirmado",
+   "claim_final": "El ministro de Hacienda, Miguel Gómez, respaldó tarifas diferenciales para la Costa Atlántica (la nota menciona Córdoba y Cesar). Norte de Santander y Cúcuta no aparecen en la discusión.",
+   "source_url": "https://www.valoraanalitik.com/minhacienda-respalda-tarifas-diferenciales-de-energia-para-la-costa-pide-definir-beneficiarios-y-plazos/",
+   "quote": "Yo sí creo que se justifica, pero pongámonos de acuerdo por cuánto tiempo",
+   "notes": "Valora Analitik, 9-sep-2026. Que el apoyo sea 'solo' para la Costa es una inferencia: la nota no excluye otras regiones de forma expresa."
+  },
+  {
+   "id": "contexto-politico-historia-20",
+   "verdict": "corregido",
+   "claim_final": "El Gobierno De la Espriella PIDIÓ al Congreso, con mensaje de urgencia, modificar el Presupuesto 2026 por $3,9 billones. Incluye un traslado de $1,2 billones para dar liquidez a las térmicas, sobre todo para cubrir deudas de Air-e: $750.000 millones de proyectos de transporte reprogramados y $450.000 millones del presupuesto de MinEnergía 'inicialmente destinados a subsidios eléctricos'. A 31-oct-2026 no encontré que el Congreso lo hubiera aprobado, así que NO es correcto decir que 'se trasladaron'. Hacienda describe los $450.000 millones como 'no comprometidos', dice que no afectará los subsidios de los estratos 1-3 y afirma que a noviembre habrá girado $4,2 billones en subsidios de energía de 2026.",
+   "source_url": "https://www.bloomberglinea.com/latinoamerica/colombia/gobierno-de-la-espriella-pide-cop39-billones-para-atender-crisis-energetica-y-a-afectados-por-el-terremoto/",
+   "quote": "Los COP$450.000 millones restantes saldrán del presupuesto del Ministerio de Minas y Energía, inicialmente destinados a subsidios eléctricos.",
+   "second_source_url": "https://ifmnoticias.com/gobierno/hacienda-asegura-que-a-noviembre-habra-girado-4-2-billones-para-subsidios-de-ene/",
+   "figures_final": "solicitud total $3,9 billones ($2,7 billones de adición para el Fondo Milagro y $1,2 billones de traslado: $750.000 millones de transporte + $450.000 millones de MinEnergía); subsidios girados a nov-2026: $4,2 billones (Hacienda)",
+   "notes": "Bloomberg Línea, 27-oct-2026. Infobae (21-oct-2026) lo presentó como 'adición para financiar subsidios eléctricos'; Bloomberg e IFM aclaran que es un traslado. Según IFM, el destino es el fondo empresarial de la Superservicios para pagar a los acreedores de Air-e. Falta el texto del proyecto de ley."
+  },
+  {
+   "id": "contexto-politico-historia-21",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 101 120 del 30-jul-2026 creó un programa transitorio de 6 meses, prorrogable, con meta individual de consumo. Lo que exceda la meta sin pasar del 110% no tiene cobro. Sobre el consumo por encima del 110% de la meta se cobra (F-1)×TR×kWh: F = 1,30 en estratos 1-3, 1,50 en estratos 4-6 y 1,70 en comercio e industria. Es decir, un recargo del 30%, 50% o 70% sobre esos kWh, con tope en el CRO del estrato 4. El cobro no modifica la tarifa: son 'recursos de terceros' que van exclusivamente a una bolsa para los usuarios beneficiarios del mismo mercado. El ahorro reconocido no puede superar el 30% de la meta.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/programa-ahorro-establecido-CREG/resolucion_CREG_101_120_2026.pdf",
+   "quote": "Parágrafo 4. El cobro adicional no constituye una modificación de la tarifa del servicio público domiciliario de energía eléctrica. Los recursos asociados a este cobro se destinarán exclusivamente a la bolsa del mercado de comercialización",
+   "figures_final": "factores 1,30 / 1,50 / 1,70; CA=(F-1)*TR*CEC; tope: CRO del estrato 4; ahorro reconocido de hasta 30% de la meta; 6 meses prorrogables",
+   "notes": "Arts. 10, 11 (par. 1-4) y 12 (par. 1: 'recursos de terceros' identificables en la contabilidad). El comercializador factura y recauda en representación de los usuarios."
+  },
+  {
+   "id": "contexto-politico-historia-22",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 101 126 del 21-ago-2026 (Diario Oficial 53.602 del 25-ago-2026) cambió la fecha de inicio fija del 15-ago-2026 por el quinto día hábil tras su publicación, es decir, el 1-sep-2026. También exceptuó a los municipios afectados por el sismo del 10-ago-2026 (desastre declarado por el Decreto 1171 del 11-ago-2026) y declaró pedagógico el primer ciclo facturado. CENS confirma que el programa inició el 1-sep-2026.",
+   "source_url": "https://www.cens.com.co/clientes-y-usuarios/resolucion-creg-101-120-2026",
+   "quote": "El programa inicia el 1 de septiembre de 2026, de acuerdo con la fecha resultante de la publicación de la Resolución CREG 101 126 de 2026.",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "notes": "Matiz: según el Gestor Normativo, la suspensión de la Circular CREG 326 (13-ago-2026) 'aplica en el alcance territorial' del art. 3 de la 101 126, es decir, los municipios del sismo. No fue una suspensión nacional indefinida. Las circulares 348 y 355 figuran solo como concordancias, sin contenido verificado."
+  },
+  {
+   "id": "contexto-politico-historia-23",
+   "verdict": "confirmado",
+   "claim_final": "Según CENS, en el primer ciclo del programa 111.196 usuarios de Cúcuta y su área, Los Patios, Villa del Rosario, Ocaña y Aguachica superaron la meta (Área Cúcuta, 16-oct-2026). Según Alerta, unos 10 mil son comerciales de Cúcuta. Los cobros adicionales corren desde el 1-oct-2026 y se recaudan de octubre a febrero.",
+   "source_url": "https://www.areacucuta.com/cens-implementara-sanciones-a-usuarios-por-consumo-excesivo-de-energia-en-cucuta/",
+   "quote": "Desde el 1 de octubre, los consumos que excedan estos límites serán objeto de cobros adicionales",
+   "second_source_url": "https://www.alerta.com.co/servicios/norte-de-santander-mas-de-111-mil-usuarios-superaron-meta-de-consumo-de-energia-253124",
+   "figures_final": "111.196 sobre la meta (Área Cúcuta) / '111 mil' (Alerta); ~10 mil comerciales en Cúcuta (Alerta); 215 mil 'por debajo de la meta' (Alerta) frente a ~239.000 que 'lograron cumplir la meta de ahorro' (Área Cúcuta)",
+   "notes": "Alerta no trae fecha; la ruta de la imagen sugiere 14-oct-2026. La cifra exacta 111.196 solo aparece en Área Cúcuta. La diferencia 215 mil / 239 mil puede deberse a definiciones distintas (bajo la meta o bajo el 90%)."
+  },
+  {
+   "id": "contexto-politico-historia-24",
+   "verdict": "confirmado",
+   "claim_final": "CENS, en carta firmada por su gerente José Miguel González Campo, pidió a la CREG revisar la Res. 101 120 en sus 47 municipios (Norte de Santander, sur del Cesar y sur de Bolívar). Pidió ajustar las metas de los hogares según variables regionales, excluir a comercio e industria y excluir de cobros a usuarios sin historial, a quienes se les asignó una meta por la mediana. Argumentó que el 75% de sus usuarios vive en municipios cercanos al nivel del mar, que la desocupación de Norte de Santander fue 11,3% al cierre de 2025 y que la informalidad de Cúcuta es del 63%. En lo corrido de octubre, más de 3.095 usuarios comerciales e industriales recibieron recargos de más de $200.000.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "la coyuntura actual de nuestro territorio requiere una mirada diferencial que permita alcanzar los objetivos de confiabilidad del sistema sin afectar la competitividad regional",
+   "figures_final": "más de 3.095 usuarios no residenciales con recargo de más de $200.000 (oct-2026); 75% de usuarios cerca del nivel del mar; desocupación 11,3% (2025); informalidad de Cúcuta 63%",
+   "notes": "La Opinión, 31-oct-2026 (firma 'crojas'). La carta original no está publicada. No hay respuesta de la CREG a esa fecha."
+  },
+  {
+   "id": "contexto-politico-historia-25",
+   "verdict": "confirmado",
+   "claim_final": "El gerente de CENS, José Miguel González Campo, dijo que aplicar el programa de la CREG no fue optativo para CENS y que lo recaudado irá a los usuarios que ahorran.",
+   "source_url": "https://www.alerta.com.co/servicios/norte-de-santander-como-afectara-el-fenomeno-de-el-nino-la-factura-de-energia-254036",
+   "quote": "Para nosotros como CENS no fue optativo que si nos acogíamos o no a esta regulación",
+   "notes": "Fecha inferida de la ruta de la imagen (31-oct-2026). Otra cita: 'Estos recursos van a ir a los usuarios que están teniendo ahorros en los consumos'. Coincide con el art. 12 de la Res. 101 120."
+  },
+  {
+   "id": "contexto-politico-historia-26",
+   "verdict": "confirmado",
+   "claim_final": "Fenalcarbón (Carlos Cante, presidente ejecutivo) advirtió que el recargo del 70% sobre el consumo industrial que supere el 110% de la meta podría subir hasta 10% los costos de producción de la pequeña y mediana minería de carbón en Cundinamarca, Boyacá, Norte de Santander y Córdoba.",
+   "source_url": "https://laopinion.co/economia/penalizar-consumo-de-energia-puede-encarecer-hasta-10-la-produccion-de-carbon-en-norte-de",
+   "quote": "Ahorrar energía es necesario, pero encarecer la producción del carbón que demandan las termoeléctricas puede tener consecuencias inesperadas",
+   "figures_final": "recargo de 70%; hasta +10% en costos de producción",
+   "notes": "La Opinión, 19-oct-2026. Es una estimación del gremio, no un dato verificado."
+  },
+  {
+   "id": "contexto-politico-historia-27",
+   "verdict": "confirmado",
+   "claim_final": "CU de CENS en 2026, según sus publicaciones mensuales ($/kWh): ene 888,059 (+2,08%); feb 862,832 (-2,84%); mar 925,8397 (+4,25%); abr 915,8951 (-1,07%); may 926,9205 (+1,2%); jun 944,5183 (+1,9%); jul 959,752 (+1,61%); ago 1.005,1189 (+4,73%, $45,3669); sep 1.019,0308 (+1,38%, $13,9119); oct 1.018,9488 (-0,01%, $0,082). Entre enero y octubre sube 14,74% (+$130,89). Sep y oct de 2026 son los CU más altos desde feb-2025 ($1.055,5792): el de mar-2025 fue $1.010,1153 y el de jul-2024 $1.003,70.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202609_.pdf",
+   "quote": "El Costo Unitario (CU) del mes de Septiembre aumentó en 1.38% equivalente a $13.9119 en comparación con el mes de Agosto",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202503.pdf",
+   "figures_final": "ene 888,059; ago 1.005,1189; sep 1.019,0308; oct 1.018,9488; +14,74% ene-oct; feb-25 1.055,5792; mar-25 1.010,1153",
+   "notes": "Descargué y leí los 10 PDF de 2026 y los de feb y mar de 2025. Fechas de publicación: 18-sep-2026 y 18-oct-2026. Son valores nominales, sin ajustar por inflación."
+  },
+  {
+   "id": "contexto-politico-historia-28",
+   "verdict": "confirmado",
+   "claim_final": "El alza de 2026 se concentra en generación (G): $298,9047/kWh en enero y $430,9564 en septiembre (+$132,05), más que todo el aumento del CU en ese lapso (+$130,97). La distribución (DtUN) bajó de $317,1201 a $310,7903 en septiembre y a $297,8785 en octubre. En octubre G cayó a $397,0896, pero restricciones (R) saltó de $5,8447 a $55,8206. También subieron la comercialización (Cv) y las pérdidas (PR). El CU incluye un COT de $45,9233 en septiembre y $44,0139 en octubre para recuperar saldos de opción tarifaria de vigencias anteriores.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "En el cálculo de la tarifa de Octubre, incluye un costo de la opción tarifaria (COT), de nivel de tensión 1 de $44.0139 el cual hace parte de la fase de recuperación de los saldos acumulados por opción tarifaria en vigencias anteriores.",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "figures_final": "NT1 CENS. ene: G 298,9047; T 52,9743; DtUN 317,1201; Cv 132,3776; PR 67,3480; R 19,3343; CU 888,0590. sep: G 430,9564; T 43,8332; DtUN 310,7903; Cv 143,8578; PR 83,7484; R 5,8447; CU 1.019,0308. oct: G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127; PR 78,0046; R 55,8206; CU 1.018,9488. Variación ene-sep: G +132,05; T -9,14; DtUN -6,33; Cv +11,48; PR +16,40; R -13,49",
+   "notes": "Verifiqué las imágenes de la pág. 4 de ene, sep y oct; los componentes suman exactamente el CU. Matiz: el COT no es un renglón aparte, va incluido en Cv (ver new_findings). Neto de COT, Cv subió de 85,28 a 97,93 (+14,8%). PR incluye pérdidas valoradas con G, por eso sigue a G. La causa del salto de R en octubre no está documentada."
+  },
+  {
+   "id": "contexto-politico-historia-29",
+   "verdict": "corregido",
+   "claim_final": "Por estrato, entre enero y octubre de 2026: estrato 1 de $424,0945 a $448,4089 (+5,73%); estrato 2 de $530,1181 a $560,5111 (+5,73%); estrato 3 de $754,8502 a $866,1065 (+14,74%, el CU menos el 15%). El estrato 4 paga el CU completo y los estratos 5, 6 y el comercio pagan $1.222,7386 en octubre (CU + 20%, valor explícito en la tabla de CENS). El E1 y el E2 subieron menos porque su tarifa subsidiada se ajusta con la regla del IPC y el porcentaje de subsidio absorbe la diferencia: E1 de 52,2448% a 55,993% (tope legal 60%) y E2 de 40,306% a 44,9912% (tope 50%). No es correcto decir 'protegido por el tope de subsidio': el tope es lo que limitaría esa protección si G sigue subiendo.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "Subsidio de 55.993% ... $448.4089",
+   "figures_final": "E1 +5,73%; E2 +5,73%; E3 +14,74%; E5/E6/comercial $1.222,7386/kWh (oct-2026; ene-2026 $1.065,6708); subsidio E1 55,993% y E2 44,9912% en oct; subsistencia 173 kWh bajo 1.000 msnm",
+   "notes": "Tabla de la pág. 4 verificada en imagen. La regla del IPC para estratos 1-2 es contexto regulatorio general; confirmarlo con el frente tarifa-regulación antes de citar la norma."
+  },
+  {
+   "id": "contexto-politico-historia-30",
+   "verdict": "confirmado",
+   "claim_final": "Corponor pasó de alerta amarilla a naranja en las cuencas de los ríos Pamplonita y Zulia (Res. 701 del 23-sep-2026, según su publicación en X del 24-sep). La Opinión atribuye al IDEAM un promedio reciente de 36°C en Cúcuta y menciona máximas de 39°C sin atribuirlas.",
+   "source_url": "https://laopinion.co/region/alerta-naranja-en-norte-de-santander-corponor-toma-medidas-debido-al-fenomeno-de-el-nino",
+   "quote": "Mediante la Resolución 701 del 23 de septiembre de 2026, pasamos de alerta amarilla preventiva a alerta naranja en las cuencas de los ríos Pamplonita y Zulia.",
+   "figures_final": "36°C promedio (IDEAM, vía La Opinión); 39°C máximas (sin fuente)",
+   "notes": "La Opinión, 25-sep-2026. No tengo la resolución de Corponor ni el boletín del IDEAM. No conviene usar 39°C sin fuente."
+  },
+  {
+   "id": "contexto-politico-historia-31",
+   "verdict": "confirmado",
+   "claim_final": "El 15-oct-2026 el senador Gonzalo Baute (Cambio Radical), acompañado por la representante por el Atlántico Estefanel Gutiérrez, radicó un proyecto de ley para que el consumo de subsistencia incorpore humedad relativa, sensación térmica y altas temperaturas. La nota no menciona coautores de Norte de Santander ni a Cúcuta.",
+   "source_url": "https://www.elheraldo.co/atlantico/2026/10/15/radican-en-el-congreso-proyecto-de-ley-para-cambiar-calculo-del-consumo-basico-de-energia-en-colombia/",
+   "quote": "La regulación vigente se fijó hace 22 años desde un frío escritorio ignorando el calor del Caribe.",
+   "notes": "La nota no trae el número del proyecto."
+  },
+  {
+   "id": "contexto-politico-historia-32",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (18-abr-2020), la Superservicios 'dejó sin piso' la petición del senador Juan Carlos García de investigar a CENS. Concluyó que CENS no aplicó de forma incorrecta la metodología tarifaria y que no había motivos para iniciar una actuación administrativa. En esa época CENS congeló la tarifa de abril a julio de 2020 (salvo los estratos subsidiados 1 y 2) y se acogió a la opción tarifaria de la Res. CREG 012 de 2020.",
+   "source_url": "https://laopinion.co/economia/congelada-tarifa-de-energia-por-cuatro-meses-cens-toma-medidas",
+   "quote": "no se evidencian motivos para iniciar una actuación administrativa",
+   "notes": "Solo vía prensa: no encontré el oficio de la Superservicios. Es una revisión de 2020, no un aval de las tarifas de 2026."
+  },
+  {
+   "id": "contexto-politico-historia-33",
+   "verdict": "confirmado",
+   "claim_final": "No encontré ninguna fuente en que EPM plantee vender CENS. En 2026 EPM culminó la venta de TICSA (18-ago-2026) y la segunda etapa de la enajenación de UNE (enero de 2026). En el 1S-2026 CENS aportó el 4% de los ingresos del Grupo ($732 mil millones de $19,54 billones) y el 4% del EBITDA ($193 mil millones de $5,24 billones). En 2025 aportó $361 mil millones de EBITDA, el 3%.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2026/Informe2T2026_ESP.pdf",
+   "quote": "ESSA el 5% con $1 billón, y CENS el 4% con $732 mil millones",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-relevanta/2026/19-08-2026-InformePeriodicoTrimestreII2026.pdf",
+   "figures_final": "CENS 1S-2026: ingresos $732 mil millones (4%); EBITDA $193 mil millones (4%). 2025: EBITDA $361 mil millones (3%)",
+   "notes": "Corregí la URL: es el PDF Informe2T2026_ESP.pdf (Medellín, 2-sep-2026), no la portada de inversionistas. El informe periódico II-2026 menciona la 'enajenación' solo para UNE. La conclusión se basa en no haber encontrado nada. Publimetro (29-oct-2026) habla en general de 'vender participaciones en algunas filiales' sin identificarlas."
+  },
+  {
+   "id": "contexto-politico-historia-34",
+   "verdict": "confirmado",
+   "claim_final": "El alcalde Federico Gutiérrez descartó vender EPM. Según la Alcaldía y EPM, por las necesidades de Afinia y por El Niño, la transferencia estimada de EPM a Medellín para 2027 bajó de unos $2,8 billones a unos $1,5 billones.",
+   "source_url": "https://www.publimetro.co/medellin/2026/10/29/van-a-vender-epm-federico-gutierrez-tomo-una-decision-tajante-en-medio-de-la-crisis-financiera/",
+   "quote": "EPM es y seguirá siendo 100% pública. Mientras yo sea alcalde así se mantendrá.",
+   "second_source_url": "https://www.elcolombiano.com/medellin/epm-pierde-1-5-billones-al-ano-con-afinia-costa-caribe-HE41453994",
+   "figures_final": "transferencia 2027: de ~$2,8 billones a ~$1,5 billones",
+   "notes": "Publimetro, 29-oct-2026. El Colombiano (23-sep-2026) cita a Gutiérrez: 'la peor decisión que ha tomado EPM en su historia ha sido entrar en el negocio en la costa Caribe con Afinia'. Las pérdidas de $1,5 billones al año de Afinia son una cifra de la administración, no una cita textual de Gutiérrez. Ninguna de las dos notas menciona a CENS."
+  },
+  {
+   "id": "contexto-politico-historia-35",
+   "verdict": "confirmado",
+   "claim_final": "Desde el 1-sep-2026 Energía Atenea, nacida de la escisión de Afinia (filial de EPM), atiende 19 municipios del Cesar, 10 del sur de Bolívar y 6 del Magdalena. La nota no menciona a CENS.",
+   "source_url": "https://www.larepublica.co/empresas/confirman-escision-de-afinia-y-entrada-de-nueva-electrificadora-en-cesar-4469503",
+   "quote": "A partir del 1 de septiembre de 2026",
+   "notes": "La República, 28-ago-2026. El informe EPM 2T-2026 registra que la escisión en Caribemar se perfeccionó el 26-ago-2026."
+  },
+  {
+   "id": "contexto-politico-historia-36",
+   "verdict": "corregido",
+   "claim_final": "Según el Boletín Tarifario de la Superservicios del 1T-2025, en el Grupo 2 (comercializadores de 200.000 a 749.999 usuarios) CENS reportó el componente de generación más alto: 417,77 $/kWh en el 1T-2025, frente a 402,89 en el 4T-2024. El más bajo fue el de CHEC Caldas, con 340,05. El boletín del 2T-2025 reproduce la misma Tabla 17 del Grupo 2 con valores idénticos para todas las empresas (CENS 402,89 y 417,77; CEO 409,20 y 396,69; CEDENAR 307,96 y 343,54) y el mismo promedio (364,12; -0,46%), pero rotula las columnas como 1T y 2T-2025. Es un probable error de copia, así que NO sirve para afirmar que CENS tuvo el G más alto en el 2T-2025. Los valores coinciden con el promedio de las publicaciones mensuales de CENS: 4T-2024 = 402,89 exacto y 1T-2025 = 417,31, el trimestre del pico de feb-2025. La explicación de 'contratos renegociados en condiciones menos favorables o mayor dependencia de bolsa' es una hipótesis genérica del boletín 2T para CEDENAR, CENS y EBSA, no un hallazgo de inspección.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-I-trimestre-de-2025.pdf",
+   "quote": "el mercado de Norte de Santander atendido por el comercializador CENS reportó el costo de generación mayor con un valor de 417,77 $/kWh y el mercado de Caldas atendido por CHEC reportó el menor costo de generación con un valor de 340,05 $/kWh.",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "figures_final": "G CENS: 4T-2024 402,89; 1T-2025 417,77 (Superservicios). Promedios de las publicaciones de CENS: 4T-2024 402,89; 1T-2025 417,31; 2T-2025 305,04 (abr 341,45 / may 308,05 / jun 265,61)",
+   "notes": "Abrí los dos PDF. El boletín 2T-2025 además señala anomalías en el reporte de CENS: Pc de 0,00 $/kWh, cobertura con contratos de 0% y con bolsa de 100% (que califica de 'no coherentes con las operaciones normales'), y ausencia de datos de mayo en el formato T9. Con esto queda resuelta la discrepancia que el investigador original había marcado."
+  },
+  {
+   "id": "contexto-politico-historia-37",
+   "verdict": "confirmado",
+   "claim_final": "La Opinión publicó el 15-ago-2025 (Leonardo Favio Oliveros) que el kWh de CENS llegó a $871,8 en junio de 2025, frente a $1.055 en febrero (-$183,8). El gerente José Miguel González Campo lo atribuyó a embalses 'cercanos al 82%' y a menores precios en bolsa.",
+   "source_url": "https://laopinion.co/economia/la-energia-baja-de-precio-en-cucuta-asi-marcha-el-precio-de-la-tarifa-de-electricidad",
+   "quote": "llegando a un valor de $871.8 el kilovatio, en junio",
+   "figures_final": "$1.055 (feb-2025) a $871,8 (jun-2025): -$183,8",
+   "notes": "La publicación de CENS de jun-2025 dice $873,8326; $871,8147 es el valor reexpresado de la serie. La de feb-2025 dice $1.055,5792 (verificada)."
+  },
+  {
+   "id": "contexto-politico-historia-38",
+   "verdict": "confirmado",
+   "claim_final": "Corrección a la serie del contexto común. Según la publicación de enero de 2026, de ago-25 a dic-25 el CU fue: ago 871,3912; sep 909,6182; oct 909,1769; nov 860,5643; dic 869,9421. El +2,08% ($18,1169) de enero se mide contra 869,9421 (dic): 888,059 - 869,9421 = 18,1169.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "quote": "El Costo Unitario (CU) del mes de Enero aumentó en 2.08% equivalente a $18.1169 en comparación con el mes de Diciembre",
+   "figures_final": "nov-25 $860,5643; dic-25 $869,9421",
+   "notes": "La aritmética confirma el orden: el contexto común traía nov y dic invertidos."
+  },
+  {
+   "id": "contexto-politico-historia-39",
+   "verdict": "confirmado",
+   "claim_final": "La noche del miércoles 16-sep-2026 un conato de incendio en un equipo de la subestación San Mateo dejó sin luz varios sectores de Cúcuta y del área metropolitana, entre ellos la Alcaldía de Los Patios. Las autoridades descartaron un atentado. El gerente pidió un 'uso eficiente y racional de la energía'.",
+   "source_url": "https://www.elheraldo.co/colombia/2026/09/17/incendio-en-una-estacion-electrica-de-cucuta-dejo-sin-luz-a-gran-parte-de-la-ciudad/",
+   "quote": "conato de incendio en un equipo de la subestación San Mateo",
+   "notes": "El Heraldo con EFE, 17-sep-2026. La fecha del suceso se deduce de 'la noche de este miércoles'."
+  },
+  {
+   "id": "contexto-politico-historia-40",
+   "verdict": "corregido",
+   "claim_final": "La Opinión (9-jun-2023) reportó, citando al DANE, que Cúcuta tenía la mayor inflación anual en electricidad (24,18%). La nota no explicita el mes; por la fecha, probablemente mayo de 2023. Según CENS, la tarifa subió en el año previo 21,89% en el estrato 1, 21,90% en el estrato 2 y 21,39% en los estratos 3 a 6, y 6,70% entre diciembre y mayo. El CU estaba en $820/kWh, y las tarifas subsidiadas de E1, E2 y E3 en $329, $411 y $697.",
+   "source_url": "https://laopinion.co/premium/economia/golpe-al-bolsillo-asi-describen-las-alzas-de-tarifas-de-gas-y-luz-en-cucuta",
+   "quote": "Cúcuta siempre ha sido una de las más costosas en energía para los restaurantes.",
+   "figures_final": "inflación de electricidad 24,18% (DANE vía La Opinión); variación anual por estrato 21,89% / 21,90% / 21,39%; dic-may 6,70%; CU $820/kWh",
+   "notes": "La cita es de Juan Pablo Lóndero (Acodrés). Falta verificar el boletín del DANE."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "verif-cph-N01",
+   "claim": "El costo de la opción tarifaria (COT) va incluido dentro del componente de comercialización (Cv) del nivel 1. El Cv de nivel 4 es exactamente el Cv de NT1 menos el COT de NT1. Neto de COT, el componente de comercialización de CENS subió de $85,2814/kWh en ene-2026 a $97,9345 en sep-2026 (+14,8%) y a $96,4988 en oct-2026 (+13,2%). En pesos es pequeño (+$11-13/kWh) frente a G (+$98-132), pero es el componente más ligado a la actividad comercial de la empresa.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202609_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "media",
+   "figures": "ene-2026: Cv NT1 132,3776 - COT 47,0962 = 85,2814 (= Cv nivel 4); NT2 85,2814 + 34,915 = 120,1964; NT3 85,2814 + 36,4602 = 121,7416. sep-2026: 143,8578 - 45,9233 = 97,9345 (= Cv nivel 4). oct-2026: 140,5127 - 44,0139 = 96,4988 (= Cv nivel 4)",
+   "quote": "COMPONENTES DEL COSTO UNITARIO- CU en $/kWh ... Cv 143.8578 ... Nivel 4 97.9345",
+   "source_outlet": "CENS - Tarifas mercado regulado, pág. 4 (ene, sep y oct 2026)",
+   "source_date": "2026-09-18",
+   "period": "ene-oct 2026",
+   "notes": "Las cifras son seguras (leídas en las imágenes y cuadran por nivel). Que el COT vaya dentro de Cv es una deducción aritmética, coherente con el salto de Cv de 76 a 123 en dic-2023, cuando empezó el COT. Cv no es margen puro: incluye costos regulados de comercialización (garantías, cartera, contribuciones) que pueden subir con el precio de la energía. Conviene pedir a CENS el desglose."
+  },
+  {
+   "id": "verif-cph-N02",
+   "claim": "La utilidad neta de CENS fue $123.146 millones en 2025, frente a $117.543 millones en 2024 (+4,8%). Los dividendos decretados en 2025 ($58.771 millones) equivalen a cerca del 50% de la utilidad de 2024. Los resultados acumulados sumaban $600.812 millones al cierre de 2025.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "figures": "utilidad neta 2025 $123.146 millones; 2024 $117.543 millones; dividendos decretados 2025 $58.771 millones (2024: $51.611 millones); resultados acumulados $600.812 millones",
+   "quote": "Resultado neto del ejercicio 123,146 117,543 ... Total resultados acumulados 600,812 536,437",
+   "source_outlet": "CENS - Notas a los Estados Financieros 2025, nota 13.3",
+   "source_date": "2026",
+   "source_title": "Anexo 6 Notas Estados Financieros 2025",
+   "period": "2024-2025",
+   "notes": "Cifras en millones de pesos. La serie completa está en el frente de finanzas."
+  },
+  {
+   "id": "verif-cph-N03",
+   "claim": "El Boletín Tarifario de la Superservicios del 2T-2025 reproduce la Tabla 17 del Grupo 2 del boletín del 1T-2025: mismos valores de G para todas las empresas y mismo promedio (364,12 $/kWh, -0,46%), con las columnas rotuladas 1T/2T-2025 en vez de 4T-2024/1T-2025. El mismo boletín 2T marca anomalías en el reporte de CENS: Pc de 0,00 $/kWh, cobertura con contratos de 0% y con bolsa de 100%, y ausencia de datos de mayo en el formato T9.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "figures": "Tabla 17 (2T-2025) = Tabla 17 (1T-2025): CENS 402,89 / 417,77; CEO 409,20 / 396,69; CEDENAR 307,96 / 343,54; E.HUILA 419,07 / 400,60",
+   "quote": "Se presentan dos casos atípicos que requieren verificación: DISPAC y CENS reportaron una cobertura del 0% con contratos (Qc=0%) y del 100% con bolsa (Qb=100%).",
+   "source_outlet": "Superservicios - Boletín Tarifario de Energía Eléctrica 2T-2025 (diciembre de 2025)",
+   "source_date": "2025-12",
+   "period": "abr-jun 2025",
+   "notes": "Las comparaciones de la Superservicios sobre CENS en el 2T-2025 no se pueden usar sin aclaración. El dato que sí sirve es el del 1T-2025 (ver claim 36)."
+  },
+  {
+   "id": "verif-cph-N04",
+   "claim": "Según el Grupo EPM, el precio promedio de venta en bolsa en Colombia en el 1S-2026 fue de 312 $/kWh, frente a 258 $/kWh un año antes (+21%). Es coherente con que el alza de la tarifa de 2026 venga del componente de generación.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2026/Informe2T2026_ESP.pdf",
+   "source_type": "primario-epm",
+   "confidence": "alta",
+   "figures": "bolsa 1S-2026 312 $/kWh; 1S-2025 258 $/kWh",
+   "quote": "En Colombia el precio promedio de venta en bolsa fue de 312 $/KWh frente a 258 $/KWh del año anterior.",
+   "source_outlet": "Grupo EPM - Resultados Financieros 2T-2026",
+   "source_date": "2026-09-02",
+   "period": "ene-jun 2026"
+  },
+  {
+   "id": "verif-cph-N05",
+   "claim": "En abril de 2026 EPM causó excedentes por $2,6 billones a favor del Distrito de Medellín; al 30-jun-2026 había pagado $1,5 billones. Sirve para dimensionar los dividendos de CENS al Grupo EPM (~$53.786 millones en 2025).",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2026/Informe2T2026_ESP.pdf",
+   "source_type": "primario-epm",
+   "confidence": "alta",
+   "figures": "excedentes causados $2,6 billones; pagados a 30-jun-2026 $1,5 billones",
+   "quote": "En abril se causaron excedentes a pagar al Distrito de Medellín por $2.6 billones, donde al 30 de junio se han pagado $1.5 billones.",
+   "source_outlet": "Grupo EPM - Resultados Financieros 2T-2026",
+   "source_date": "2026-09-02",
+   "period": "2026"
+  },
+  {
+   "id": "verif-cph-N06",
+   "claim": "Según Hacienda, a noviembre de 2026 el Gobierno habrá girado $4,2 billones para los subsidios de energía del año. Los $450.000 millones de MinEnergía del traslado propuesto 'no estaban comprometidos', y el traslado 'no afectará los subsidios de los estratos 1, 2 y 3 este año'. Los recursos irían al fondo empresarial de la Superservicios para pagar a los acreedores de Air-e. El traslado depende de que el Congreso lo apruebe.",
+   "source_url": "https://ifmnoticias.com/gobierno/hacienda-asegura-que-a-noviembre-habra-girado-4-2-billones-para-subsidios-de-ene/",
+   "source_type": "prensa",
+   "confidence": "media",
+   "figures": "$4,2 billones en subsidios girados a nov-2026; traslado de $1,2 billones ($750.000 millones + $450.000 millones) pendiente en el Congreso",
+   "quote": "450.000 millones del Ministerio de Minas y Energía que no estaban comprometidos",
+   "source_outlet": "IFM Noticias",
+   "source_date": "2026-10-17",
+   "period": "octubre 2026",
+   "notes": "Es la versión del Gobierno, no un dato independiente. Contradice el encuadre de que 'se quitaron subsidios'."
+  },
+  {
+   "id": "verif-cph-N07",
+   "claim": "La subasta de 2009 en que EPM compró CENS fue el jueves 26-feb-2009 en el auditorio de Fonade en Bogotá. Semana, fechada el 25-feb-2009, dice 'este jueves', y el 26-feb-2009 fue jueves.",
+   "source_url": "https://www.laopinion.co/historicos/hace-15-anos-se-subasto-centrales-electricas-de-norte-de-santander",
+   "source_type": "prensa",
+   "confidence": "alta",
+   "figures": "26-feb-2009",
+   "quote": "El 26 de febrero de 2009, en el auditorio de Fonade en Bogotá, se cumplió la subasta",
+   "source_outlet": "La Opinión; Semana",
+   "source_date": "2024-02-26",
+   "period": "2009"
+  },
+  {
+   "id": "verif-cph-N08",
+   "claim": "La medición de MinEnergía (más de 16% de baja nacional) se refiere a 'los últimos dos años'. Con esa base, el CU aplicado de CENS bajó 8,9% (dic-2023 $954,54 a dic-2025 $869,94) y 11,6% entre dic-2024 ($983,70) y dic-2025. Desde el pico de feb-2025 ($1.055,58) bajó 17,6%.",
+   "source_url": "https://www.minenergia.gov.co/es/sala-de-prensa/noticias-index/las-tarifas-de-energia-bajan-mas-del-16-en-todo-el-pais-y-por-encima-del-28-en-el-caribe-colombiano/",
+   "source_type": "otro",
+   "confidence": "alta",
+   "figures": "CENS: dic-23 a dic-25 -8,9%; dic-24 a dic-25 -11,6%; feb-25 a dic-25 -17,6%",
+   "quote": "Hoy, gracias a decisiones firmes del Gobierno del Cambio, las familias colombianas pagan menos por la luz",
+   "source_outlet": "MinEnergía; publicaciones de tarifas de CENS (cálculo propio)",
+   "source_date": "2026-01-09",
+   "period": "dic-2023 a dic-2025",
+   "notes": "Los porcentajes son cálculos con la serie de CENS (frente serie-primaria). Verifiqué personalmente feb-2025, mar-2025 y dic-2025."
+  },
+  {
+   "id": "verif-cph-N09",
+   "claim": "Desde sep-2026 las publicaciones de CENS informan un nuevo costo por la prestación del servicio del Prestador de Última Instancia en áreas especiales (CRPUI), calculado según la Res. CREG 101 121 de 2026: $0,0367/kWh en septiembre y $0,0323/kWh en octubre.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "figures": "CRPUI sep-2026 $0,0367/kWh; oct-2026 $0,0323/kWh",
+   "quote": "calculado de conformidad con la metodología establecida en el artículo 10 de la Resolución CREG 101 121 de 2026, para el mes de Octubre corresponde a $0.0323/kWh",
+   "source_outlet": "CENS - Tarifas oct-2026, pág. 4",
+   "source_date": "2026-10-18",
+   "period": "sep-oct 2026",
+   "notes": "Su impacto es mínimo. Probablemente se relaciona con la crisis de Air-e y los prestadores de última instancia; no verifiqué la resolución."
+  },
+  {
+   "id": "verif-cph-N10",
+   "claim": "El Informe de Sostenibilidad CENS 2025 reporta 58 accionistas: 99,8362% de inversión pública y 0,1638% privada. Es la misma suma pública de 2020, lo que es coherente con que la compra autorizada a Ifinorte en 2022 (0,0066%, autorización vencida el 31-dic-2022) no se haya ejecutado.",
+   "source_url": "https://www.cens.com.co/institucional/informes-de-sostenibilidad",
+   "source_type": "primario-cens",
+   "confidence": "media",
+   "figures": "99,8362% pública / 0,1638% privada; 58 accionistas",
+   "quote": "está conformada por 58 accionistas inscritos en el libro de registro de accionistas",
+   "source_outlet": "CENS - Informe de Sostenibilidad 2025",
+   "source_date": "2026",
+   "period": "2025",
+   "notes": "Lo de la no ejecución es una inferencia; para confirmarlo hay que preguntar a Ifinorte o CENS."
+  }
+ ],
+ "bill_cases_checked": [
+  {
+   "where": "Cúcuta (barrio no informado)",
+   "complaint": "Usuaria residencial denunció que su factura de CENS pasó de $165.000 en abril a $251.000 en mayo de 2023 (+$86.000) durante la ola de calor. Verificado en La Opinión; la nota no da barrio ni estrato.",
+   "amount": "$251.000",
+   "previous_amount": "$165.000",
+   "period": "abril-mayo 2023",
+   "estrato": "no informado",
+   "cu_applied": "CU $820/kWh según la nota (mayo-2023; la serie de CENS da $826,74)",
+   "person_named": true,
+   "source_outlet": "La Opinión (Cúcuta)",
+   "source_date": "2023-06-09",
+   "source_url": "https://laopinion.co/premium/economia/golpe-al-bolsillo-asi-describen-las-alzas-de-tarifas-de-gas-y-luz-en-cucuta"
+  },
+  {
+   "where": "Cúcuta, apartamento estrato 5 (3 personas)",
+   "complaint": "El presidente de Asobares Cúcuta publicó su factura residencial ($845.000, periodo del 21-sep al 20-oct de 2022). Dijo que el mes anterior había pagado doble ($1.580.000) y convocó el 'apagatón' del 8-nov-2022 a las 7 p.m. durante 10 minutos. La nota trae además una frase incoherente sobre '$100.000 más caro', probablemente un error de transcripción.",
+   "amount": "$845.000",
+   "previous_amount": "$1.580.000 (según el usuario, factura doble del periodo anterior)",
+   "period": "21-sep a 20-oct 2022",
+   "estrato": "5",
+   "cu_applied": "CU aplicado sep-2022 $785,80; oct-2022 $776,81 (publicaciones de CENS)",
+   "charges": "estrato 5: CU + 20% de contribución",
+   "person_named": true,
+   "source_outlet": "Semana",
+   "source_date": "2022-11-03",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/convocan-apagaton-en-cucuta-por-alza-de-tarifa-en-el-recibo-de-la-luz/202231/"
+  },
+  {
+   "where": "Cúcuta (usuario no identificado)",
+   "complaint": "Un usuario afectado dijo que el kWh pasó de $649,9 a $781,1 en seis meses (+$131,2, cerca del 20%). Semana reporta que los manifestantes decidieron quemar sus recibos frente a las oficinas de CENS.",
+   "cu_applied": "$781,10/kWh aplicado en ago-2022 (CU de costo $850,29, con opción tarifaria)",
+   "period": "mar-ago 2022",
+   "person_named": false,
+   "source_outlet": "Semana",
+   "source_date": "2022-09-15",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/esto-es-absurdo-nos-estan-robando-comunidad-cucutena-protesta-por-el-alza-de-precio-en-los-recibos-de-luz/202219/"
+  },
+  {
+   "where": "Área CENS (47 municipios de Norte de Santander, sur del Cesar y sur de Bolívar): usuarios comerciales e industriales",
+   "complaint": "Dato agregado de la carta de CENS a la CREG: en lo corrido de octubre de 2026 más de 3.095 usuarios comerciales e industriales recibieron recargos superiores a $200.000 por superar el 110% de su meta (Res. CREG 101 120).",
+   "amount": "recargo de más de $200.000 por usuario",
+   "charges": "cobro adicional = (1,70-1) × TR × kWh por encima del 110% de la meta; tope al CRO del estrato 4; tarifa comercial oct-2026 $1.222,7386/kWh",
+   "period": "octubre 2026",
+   "person_named": false,
+   "source_outlet": "La Opinión (Cúcuta)",
+   "source_date": "2026-10-31",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no"
+  }
+ ],
+ "cautions": [
+  "NO usar 'la Superservicios dijo que CENS tuvo el costo de generación más alto en el 2T-2025'. Esa tabla del boletín 2T-2025 es una copia de la del 1T-2025, y el propio boletín marca anomalías en el reporte de CENS. Lo defendible es esto: en el 1T-2025 (ene-mar, el trimestre del pico de feb-2025) CENS reportó el G más alto de su grupo, 417,77 $/kWh. La explicación de 'contratos o bolsa' es una hipótesis genérica de la Superservicios, no una conclusión de inspección. CENS lo podría desmentir con facilidad.",
+  "NO decir que el Gobierno 'trasladó' o 'quitó' $450.000 millones de subsidios. Es una solicitud al Congreso pendiente de aprobación (con mensaje de urgencia). Hacienda dice que son recursos 'no comprometidos', que no afecta los subsidios de los estratos 1-3 y que a noviembre habrá girado $4,2 billones en subsidios.",
+  "Comparar el CU de 2026 con el de 2022 mezcla tarifas con opción tarifaria. En ago-2022 el CU aplicado ($781,10) estaba por debajo del de costo ($850,29), y desde dic-2023 el CU incluye $44-65/kWh de recuperación de COT. Hay que decir 'tarifa aplicada' y explicar que parte del alza es pago diferido de alivios pasados.",
+  "La cifra de MinEnergía de más de 16% se refiere a 'los últimos dos años'. Medido así, CENS bajó 8,9% (dic-2023 a dic-2025); el -17,6% solo sale midiendo desde el pico de feb-2025. Elegir picos, en cualquiera de las dos direcciones, es cherry-picking. Conviene mostrar la serie.",
+  "Los CU de sep-oct 2026 (~$1.019/kWh) son los más altos desde feb-2025 y el 2.º y 3.º de la serie 2019-2026, en pesos corrientes. NO son un 'récord histórico': el récord es feb-2025, con $1.055,58. En términos reales la comparación cambia.",
+  "El alza de 2026 se explica sobre todo por G (+$132/kWh entre ene y sep), en plena El Niño y con la bolsa a 312 $/kWh frente a 258 (EPM). Pero no es cierto que 'solo' subiera G: el componente de comercialización, neto de COT, subió +14,8% ($85,28 a $97,93) y PR +$16,40. El hilo debe mostrar ambos lados y pedir a CENS el desglose de Cv.",
+  "El cobro adicional de la CREG no es un ingreso de CENS. Por norma son recursos de terceros que van a una bolsa para los usuarios que ahorran (Res. 101 120, art. 11 par. 4 y art. 12). Presentarlo como 'CENS cobra multas para enriquecerse' sería falso. El factor 1,70 significa un recargo del 70% sobre los kWh por encima del 110% de la meta, no sobre toda la factura, y tiene tope en el CRO del estrato 4.",
+  "El estrato 1 subió 5,73% frente al 14,74% del CU por la regla de la tarifa subsidiada (ajuste con IPC). El subsidio ya está en 55,99% para E1 (tope 60%) y 44,99% para E2 (tope 50%): si G sigue subiendo, ese colchón se agota. No llamarlo 'protegido por el tope de subsidio'.",
+  "Gobernador Villamizar: la conexión entre su firma de 2009 y su silencio actual es un encuadre editorial fuerte. En 2009 la Gobernación buscaba asociarse con EPM a través de Ifinorte, y quien vendió fue la Nación: los ministros Martínez y Zuluaga fijaron el precio mínimo. 'No encontramos pronunciamientos' es ausencia de evidencia. Antes de publicar hay que pedirle comentario y revisar las actas de 2026 del Concejo y la Asamblea. Tampoco mezclar sus procesos judiciales (imputación por corrupción y extinción de dominio de 2025, arresto por desacato de 2026), que no tienen relación con CENS.",
+  "Ordenanza 0009 de 2022: la autorización venció el 31-dic-2022 y no hay evidencia de que se ejecutara. Es una operación del 0,0066%: no la presenten como una estrategia de la Gobernación para aumentar su participación.",
+  "Dividendos por accionista ($4.578 millones para Ifinorte, $234 millones para Cúcuta y $53.786 millones para el Grupo EPM): son cálculos propios con porcentajes de 2020, no cifras publicadas. Hay que presentarlos como 'según su participación' y aclarar que los $58.771 millones decretados en 2025 corresponden a utilidades de 2024, con un payout de cerca del 50%.",
+  "Deuda de subsidios: $153.000 millones (La Opinión, feb-2025) frente a $68.600 millones (EPM vía La República, mar-2025). Son definiciones y fechas distintas. La decisión del Juzgado Décimo parece un proceso ejecutivo con orden de pago y embargo, no una sentencia de fondo. El Gobierno anunció que la impugnaría. No hay cifra vigente a oct-2026.",
+  "'Rebaja de $17-20/kWh' de 2022: la cifra de $785 a $741-738 es de Semana, es incoherente y no se materializó (CU nov-2022: $768,90). No usarla.",
+  "Las temperaturas de 39°C no tienen fuente en la nota. Usar los 36°C atribuidos al IDEAM o buscar el boletín del IDEAM.",
+  "Hay fechas inferidas de rutas de imagen: Alerta 14-oct y 31-oct-2026, La FM 28-sep-2026. Si se citan, hay que decirlo o confirmarlas. La cifra 111.196 solo aparece en Área Cúcuta; Alerta dice '111 mil'.",
+  "La ministra Arboleda: Valora cita 'Las tarifas van a subir' e Infobae 'la tarifa tiene que subir'. Hay que citar con medio y fecha (debate del 8-sep-2026, Comisión Quinta).",
+  "La tesis de 'enriquecimiento en detrimento de la sociedad' no está respaldada por los datos de este frente. El alza la explican G y el precio de bolsa, la distribución bajó y el recargo no va a CENS. Lo que sí está documentado y es legítimo preguntar: utilidad neta creciente ($117.543 a $123.146 millones), cerca del 50% de payout, más del 91% de los dividendos al Grupo EPM, un Cv neto de COT al alza y el G más alto de su grupo en el 1T-2025, que plantea preguntas sobre su estrategia de compras de energía."
+ ]
+}

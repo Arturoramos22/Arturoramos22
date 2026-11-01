@@ -1,0 +1,401 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL DEL FRENTE \"CONSUMO VS PRECIO\". Reabrí las fuentes primarias:\n- 9 publicaciones tarifarias de CENS (más 6 de 2025 para revisar la serie histórica) y leí en imagen las tablas de componentes;\n- los anexos del IPC del DANE de septiembre de 2026;\n- la API de XM (listado de agentes y demanda horaria de CNSC, de 2025 a 2026);\n- las publicaciones de EPM de octubre de 2025, febrero de 2026 y octubre de 2026;\n- el boletín de la Superservicios del II trimestre de 2025;\n- las resoluciones CREG 101 120 y 101 126 de 2026 y la Circular 348;\n- el estudio UPME/Corpoema;\n- el plan de la RAP Caribe;\n- Congreso Visible;\n- y las notas de prensa citadas.\nRehíce todos los cálculos.\n\nRESULTADO: 23 hallazgos confirmados y 7 corregidos. Ninguno queda refutado.\n- Toda la aritmética cuadra al decimal: CU +12,07% en un año, +12,03% de septiembre a septiembre y +18,10% de febrero a septiembre; IPC 6,29%; electricidad 6,92%; G explica 78% del alza; la descomposición Shapley sale idéntica.\n- La demanda de CNSC en XM coincide exactamente mes a mes.\n\nCORRECCIONES:\n(05) La serie de CENS fue reescrita en julio de 2025. Febrero de 2025 aparece como $1.014,60 y no como $1.055,58. Frente a esa serie, octubre de 2026 queda 0,4% POR ENCIMA, no 3,5% por debajo.\n(14) NASA POWER (MERRA-2), como segunda fuente, confirma un calor mayor de mayo a septiembre de 2026, pero con anomalías menores en septiembre (+0,57 °C). Contradice que enero a abril fueran \"parecidos\" y su dato de octubre no es confiable.\n(20) El mes \"marzo de 2024\" solo consta para el estrato 1.\n(22) El art. 238 de la Ley 2294 modificó el art. 1 de la Ley 1117, no la regla del IPC. Esa regla está en el art. 3, modificado por la Ley 1428 de 2010.\n(24) El 2,8% de hogares con aire acondicionado es el promedio del SIN, no el de clima cálido.\n(25) El PL 218/2024 Senado (631/2025 Cámara) fue ARCHIVADO el 20 de junio de 2026 por tránsito de legislatura.\n(23) La aritmética es correcta, pero el reparto 40%-60% depende del supuesto de que cada hogar consume 7,4% más. Si el aumento por hogar es de 3%, el precio explica entre 59% y 79% del alza.\n\nHALLAZGOS NUEVOS CLAVE:\n(a) En EPM Antioquia, el CU subió 11,93% entre octubre de 2025 y octubre de 2026 ($885,65 a $991,29), casi igual que en CENS (12,07%). El E1 subió igual, 6,28%. El alza anual no es propia de CENS.\n(b) Los cargos D y T de CENS son idénticos al centavo a los de EPM, porque ambas están en el Área de Distribución Centro. La distribución no la fija CENS sola, y bajó.\n(c) CENS cobra cargo fijo de $0 por factura, así que la factura de energía es solo kWh × tarifa.\n(d) La fórmula de la CREG es CA = (F − 1) × TR × CEC. Con ella, el estimado de unos $5.863 en estrato 2 es correcto.\n(e) Las tarifas de E1 y E2 solo siguen al IPC mientras el CU no pase de unos $1.121/kWh, porque ahí se alcanza el tope de subsidio de 60% y 50%. Ese tope ya se alcanzó en febrero de 2025.\n(f) La Superservicios destacó que CENS tuvo una de las reducciones significativas de CU en el II trimestre de 2025.\n\nEn la sustancia, el veredicto del frente se sostiene: \"controlen sus consumos\" es incompleto. El precio subió casi el doble del IPC y un hogar que no consumió más paga entre 6,3% y 12,1% más. Pero la evidencia NO permite atribuir esa alza a decisiones de CENS: es la energía comprada y las restricciones (todo el sistema y todo el Grupo EPM), y la distribución bajó.",
+ "verified": [
+  {
+   "id": "consumo-vs-precio-01",
+   "verdict": "confirmado",
+   "claim_final": "Tarifas CENS de octubre de 2026 (nivel 1, propiedad CENS), publicadas el 18 de octubre de 2026. El CU o tarifa plena es $1.018,9488/kWh y lo paga el estrato 4 y todo E1 a E3 por encima de la subsistencia. Estrato 1: $448,4089 (subsidio de 55,993%). Estrato 2: $560,5111 (44,9912%). Estrato 3: $866,1065 (15%). Subsistencia: 173 kWh por debajo de 1.000 msnm.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "El Costo Unitario (CU) del mes de Octubre disminuyó en 0.01% equivalente a $0.082 en comparación con el mes de Septiembre",
+   "figures_final": "CU 1018,9488; E1 448,4089; E2 560,5111; E3 866,1065; columna 'Mayor CS' de E1 a E3 = 1018,9488; CS 173 kWh",
+   "notes": "Fecha de publicación en la página 4: 'Fecha Publicacion 18 de Octubre 2026'. La misma tabla dice 'COSTO UNITARIO FIJO, CUf PARA TODOS LOS USUARIOS: 0 $ / FACTURA'."
+  },
+  {
+   "id": "consumo-vs-precio-02",
+   "verdict": "confirmado",
+   "claim_final": "El CU de CENS subió 12,07% en un año: de $909,1769 en octubre de 2025 a $1.018,9488 en octubre de 2026. De septiembre a septiembre subió 12,03%: de $909,6182 a $1.019,0308.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202510.pdf",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/energia/tarifas-energia/tarifas-2025/PublicacionTarifasOctubre162025_ANT_OM.pdf",
+   "figures_final": "12,074% y 12,028% (recalculados)",
+   "notes": "Valores 'Sin subsidio' tomados de las publicaciones de octubre de 2025, septiembre de 2025, septiembre de 2026 y octubre de 2026. La publicación de octubre de 2025 tiene fecha del 22 de octubre de 2025. Contexto: EPM Antioquia subió 11,93% en el mismo periodo (ver hallazgos nuevos)."
+  },
+  {
+   "id": "consumo-vs-precio-03",
+   "verdict": "confirmado",
+   "claim_final": "IPC del DANE a septiembre de 2026: 6,29% anual y 5,74% en el año corrido. Cúcuta: 6,36% anual. Índices (base diciembre 2018 = 100): enero 2023 = 128,27; septiembre 2025 = 151,48; febrero 2026 = 155,73; septiembre 2026 = 161,00. El anexo dice 'Actualizado el 7 de Octubre de 2026'.",
+   "source_url": "https://www.dane.gov.co/files/operaciones/IPC/sep2026/anex-IPC-Indices-sep2026.xlsx",
+   "second_source_url": "https://www.dane.gov.co/files/operaciones/IPC/sep2026/anex-IPC-sep2026.xlsx",
+   "quote": "En el mes de septiembre de 2026, el IPC registró una variación de 6,29% en comparación con [septiembre de 2025] (bol-IPC-sep2026.pdf)",
+   "figures_final": "Anual 6,29%; año corrido 5,74%; Cúcuta 6,36% (hoja 6 del anexo general). La división 'Alojamiento, agua, electricidad, gas' en Cúcuta subió 6,17% anual.",
+   "notes": "El dato de Cúcuta no sale de un 'anexo por ciudades' separado: está en la hoja 6 de anex-IPC-sep2026.xlsx. Boletín: https://www.dane.gov.co/files/operaciones/IPC/sep2026/bol-IPC-sep2026.pdf"
+  },
+  {
+   "id": "consumo-vs-precio-04",
+   "verdict": "confirmado",
+   "claim_final": "Entre febrero y septiembre de 2026, el CU de CENS subió 18,10% ($862,832 a $1.019,0308) y el IPC 3,38% (155,73 a 161,00). La subclase Electricidad del IPC nacional subió 9,57% en ese periodo (172,23 a 188,71) y 6,92% en doce meses (176,50 a 188,71).",
+   "source_url": "https://www.dane.gov.co/files/operaciones/IPC/sep2026/anex-IPC-subclases-ingresos-total-sep2026.xlsx",
+   "second_source_url": "https://www.dane.gov.co/files/operaciones/IPC/dic2025/anex-IPC-subclases-ingresos-total-dic2025.xlsx",
+   "figures_final": "CU +18,10%; IPC +3,38%; electricidad +9,57% (febrero a septiembre) y +6,92% (12 meses; el boletín del DANE también publica 6,92%)",
+   "notes": "Febrero de 2026 fue un valle de la serie (ver cautions). El IPC de electricidad recoge tarifas subsidiadas de todas las regiones, así que no se compara directamente con el CU."
+  },
+  {
+   "id": "consumo-vs-precio-05",
+   "verdict": "corregido",
+   "claim_final": "En el largo plazo, el CU aplicado por CENS sigue cerca de la inflación: +29,88% entre enero de 2023 ($784,59, con opción tarifaria; el CU real era $777,45) y septiembre de 2026, frente a +25,52% del IPC. Que octubre de 2026 esté '3,5% por debajo del pico de febrero de 2025' depende de qué serie se use. Con el valor que CENS publicó y aplicó ese mes ($1.055,5792), octubre de 2026 está 3,47% por debajo. Pero desde julio de 2025 CENS muestra en su serie histórica otro valor para febrero de 2025, $1.014,6042. Frente a ese valor, octubre de 2026 está 0,43% POR ENCIMA.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202502.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202507.pdf",
+   "figures_final": "Febrero 2025: 1055,5792 (publicación original, repetida en las de marzo a junio de 2025) frente a 1014,6042 (serie de la publicación de julio de 2025); octubre 2026: 1018,9488",
+   "notes": "Revisión de la serie, valores originales frente a valores de julio de 2025: marzo 1010,1153 → 965,4196; abril 986,157 → 935,5246; mayo 947,3741 → 897,1631; junio 873,8326 → 871,8147. CENS no explica el cambio. Hay que preguntarle antes de usar 'pico'."
+  },
+  {
+   "id": "consumo-vs-precio-06",
+   "verdict": "confirmado",
+   "claim_final": "El CU subió +$109,77/kWh entre octubre de 2025 y octubre de 2026. Aporte por componente: G +85,67 (78,0%), R +28,03 (25,5%), PR +9,67 (8,8%), Cv +6,49 (5,9%), T −3,32 (−3,0%) y D −16,76 (−15,3%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202510.pdf",
+   "figures_final": "Octubre 2025: G 311,4243; T 52,9668; DtUN 314,6380; Cv 134,0271; PR 68,3310; R 27,7897 (suma 909,1769). Octubre 2026: G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127; PR 78,0046; R 55,8206 (suma 1018,9488).",
+   "notes": "Volví a leer la tabla de la página 4 de cada PDF como imagen. Los componentes suman exactamente el CU publicado."
+  },
+  {
+   "id": "consumo-vs-precio-07",
+   "verdict": "confirmado",
+   "claim_final": "De febrero a octubre de 2026, el CU subió $156,12/kWh. G aportó +125,30 (80,3%), R +34,19 (21,9%) y PR +16,05 (10,3%). D bajó 9,15, Cv bajó 9,31 y T bajó 0,97.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202602_.pdf",
+   "figures_final": "Febrero 2026 (publicado el 18 de febrero de 2026): G 271,7857; T 50,6152; D 307,0274; Cv 149,8231; PR 61,9511; R 21,6295; CU 862,8320"
+  },
+  {
+   "id": "consumo-vs-precio-08",
+   "verdict": "confirmado",
+   "claim_final": "Dentro del Cv viene el COT, que recupera saldos de la opción tarifaria de vigencias anteriores. En nivel 1 fue $47,9071 en octubre de 2025, $60,4189 en febrero de 2026, $45,9233 en septiembre de 2026 y $44,0139 en octubre de 2026 (4,3% del CU). Como va bajando, no explica el alza de 2026, aunque sigue siendo un sobrecosto que pagan los usuarios por tarifas diferidas en años anteriores.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "En el cálculo de la tarifa de Octubre, incluye un costo de la opción tarifaria (COT), de nivel de tensión 1 de $44.0139 el cual hace parte de la fase de recuperación de los saldos acumulados por opción tarifaria en vigencias anteriores.",
+   "figures_final": "Cv nivel 1 140,5127 = Cv nivel 4 96,4988 + COT 44,0139. Sin el COT, el Cv de CENS (96,50) es menor que el de EPM (114,28)."
+  },
+  {
+   "id": "consumo-vs-precio-09",
+   "verdict": "confirmado",
+   "claim_final": "En EPM Antioquia, el CU nivel 1 subió 23,72% entre febrero y octubre de 2026 ($801,24 a $991,29). Su G pasó de 252,54 a 403,50. En octubre de 2026, el CU de CENS ($1.018,95) fue 2,79% más alto que el de EPM. En doce meses EPM subió 11,93% ($885,65 en octubre de 2025), casi lo mismo que CENS (12,07%). Es un alza de todo el sistema y de todo el Grupo EPM.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/energia/tarifas-energia/Tarifas%202026/10.PublicacionTarifasOctubre162026_ANT_OM.pdf",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/energia/tarifas-energia/Tarifas%202026/2.1.Reemplazo_PublicacionTarifasFebrero182026_ANT_OM.pdf",
+   "figures_final": "EPM octubre 2026: G 403,50; T 49,64; D 297,88; Cv 114,28; PR 75,48; R 50,50; CU 991,29. EPM febrero 2026: CU 801,24; G 252,54. EPM octubre 2025: CU 885,65; G 313,27.",
+   "notes": "D y T de EPM son idénticos a los de CENS (ver hallazgo nuevo sobre el Área de Distribución Centro)."
+  },
+  {
+   "id": "consumo-vs-precio-10",
+   "verdict": "confirmado",
+   "claim_final": "Según la Superservicios, en el II trimestre de 2025 CENS tuvo el componente G más alto del Grupo 2 (empresas de 200.000 a 749.999 usuarios): 417,77 $/kWh (402,89 en el I trimestre). El promedio del grupo fue 364,12. La entidad lo atribuyó a que 'pueden' influir contratos vencidos o renegociados en condiciones menos favorables, o una mayor dependencia de compras en bolsa. El CU nivel 1 de Norte de Santander fue 895,89 (945,43 en el I trimestre, −5,24%), por debajo del promedio nacional de 914,38. La tarifa de estrato 4 fue 935,79 en CENS y 836,21 en EPM.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "quote": "la dispersión entre el valor más alto, reportado por CENS en Norte de Santander, y el más bajo, registrado por CHEC en Caldas, evidencia las diferencias estructurales y regionales inherentes al costo de la energía, así como los distintos niveles de eficiencia y poder de negociación entre los comercializadores",
+   "figures_final": "G CENS 402,89 (I trim.) y 417,77 (II trim.); promedio del Grupo 2: 364,12; CU nivel 1 de Norte de Santander 945,43 y 895,89; E4 935,79 (= promedio de los CU de abril, mayo y junio de 2025 publicados por CENS)",
+   "notes": "El PDF fue creado el 31 de diciembre de 2025. Lo descargué con WebFetch (curl lo bloquea Incapsula). Para ser justos, el mismo boletín dice: 'La mayoría de los OR experimentaron una disminución en su CU, destacándose reducciones significativas en CARIBEMAR, CENS, EEBP, ENELAR y ESSA'. En octubre de 2026 el G de CENS (397,09) quedó por debajo del de EPM (403,50)."
+  },
+  {
+   "id": "consumo-vs-precio-11",
+   "verdict": "confirmado",
+   "claim_final": "En el listado oficial de agentes de XM, CENS figura con cuatro códigos: CNSC (comercialización, en operación desde 1995-07-20), CNSD (distribución, en operación), CNST (transporte, en operación desde 1996-12-01) y CNSG (generación, INACTIVO). No es 'solo un distribuidor'.",
+   "source_url": "https://servapibi.xm.com.co/lists",
+   "quote": "{\"Code\": \"CNSC\", \"Name\": \"CENTRALES ELECTRICAS DEL NORTE DE SANTANDER S.A. E.S.P.\", \"Activity\": \"COMERCIALIZACIÓN\", \"OperStartdate\": \"1995-07-20\", \"State\": \"OPERACION\"}",
+   "notes": "Consulta POST con MetricId=ListadoAgentes y Entity=Sistema, hecha el 31 de octubre de 2026."
+  },
+  {
+   "id": "consumo-vs-precio-12",
+   "verdict": "confirmado",
+   "claim_final": "La demanda regulada real de CNSC (CENS comercializador) creció año contra año, en GWh/día: +8,72% en mayo, +10,80% en junio, +6,79% en julio, +9,39% en agosto y +6,55% en septiembre de 2026 (164,67 GWh frente a 154,54). Del 1 al 26 de octubre creció +7,42% (138,34 frente a 128,79 GWh). Entre enero y abril de 2026 estuvo prácticamente plana (−0,58% a +2,06%).",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "figures_final": "Septiembre 2025: 5,1514 GWh/día; septiembre 2026: 5,4889 GWh/día. Octubre de 2025 completo: 154,98 GWh.",
+   "notes": "Lo volví a descargar mes a mes (MetricId DemaRealReg, Entity Agente, filtro CNSC). Los días con 24 horas reportadas coinciden. El 27 y el 28 de octubre de 2026 tienen solo 13 y 12 horas. Incluye comercio regulado y nuevos usuarios, así que no es consumo por hogar."
+  },
+  {
+   "id": "consumo-vs-precio-13",
+   "verdict": "confirmado",
+   "claim_final": "Según La República (27 de octubre de 2026, Xavier Becerra Silva, con datos de XM), la demanda nacional creció 6,16% en septiembre de 2026 (7.531,89 GWh). El mercado regulado creció 8,95%, el no regulado cayó 0,58% y la región Oriente creció 4,35%. XM dijo que las altas temperaturas 'podrían haber incidido'.",
+   "source_url": "https://www.larepublica.co/economia/demanda-de-energia-en-colombia-crecio-6-16-en-septiembre-por-el-fenomeno-de-el-nino-4512481",
+   "quote": "Las temperaturas superiores a los promedios climatológicos podrían haber incidido en el comportamiento de la demanda durante el mes, según XM.",
+   "figures_final": "Nacional +6,16%; regulado +8,95%; no regulado −0,58%; Oriente +4,35%",
+   "notes": "La nota no menciona Norte de Santander, Cúcuta ni CENS. Sigue sin confirmar que la región 'Oriente' incluya a Norte de Santander. El dato específico de CNSC (hallazgo 12) es mejor."
+  },
+  {
+   "id": "consumo-vs-precio-14",
+   "verdict": "corregido",
+   "claim_final": "Dos reanálisis coinciden en que de mayo a septiembre de 2026 hizo más calor en Cúcuta que un año antes, pero difieren en cuánto. ERA5 (Open-Meteo): agosto 30,05 °C frente a 28,37 (+1,68) y septiembre 30,31 frente a 29,12 (+1,19). NASA POWER/MERRA-2: +1,43 °C en agosto y +0,57 °C en septiembre, y entre +0,8 y +2,0 °C en mayo, junio y julio. Para enero a abril no coinciden: ERA5 da valores parecidos o un poco más altos, NASA POWER da 2026 entre 0,3 y 1,1 °C más frío. Octubre no es robusto: ERA5 da +0,60 °C en los mismos días 1 a 29, y la serie casi en tiempo real de NASA POWER salta a unos 22 °C, lo que parece un artefacto.",
+   "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=7.8939&longitude=-72.5078&start_date=2023-01-01&end_date=2026-10-29&daily=temperature_2m_max,temperature_2m_mean&timezone=America%2FBogota",
+   "second_source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,T2M_MAX&community=RE&longitude=-72.5078&latitude=7.8939&start=20250101&end=20261029&format=JSON",
+   "figures_final": "Anomalías interanuales. ERA5: mayo +2,13, junio +2,02, julio +0,71, agosto +1,68, septiembre +1,19, octubre (1 al 29) +0,60. NASA POWER: mayo +0,81, junio +2,04, julio +1,51, agosto +1,43, septiembre +0,57.",
+   "notes": "Open-Meteo devolvió un error por límite diario de consultas, así que recalculé ERA5 con el archivo que ya había descargado el investigador (punto de grilla a 310 m). Mis medias mensuales coinciden con las suyas. Ninguna de las dos fuentes es una estación del IDEAM. En el hilo, mejor decir 'entre 0,6 y 1,7 °C más en agosto y septiembre'."
+  },
+  {
+   "id": "consumo-vs-precio-15",
+   "verdict": "confirmado",
+   "claim_final": "El 10 de julio de 2026, el IDEAM estimó un 81% de probabilidad de que El Niño llegara a intensidad 'muy fuerte', con temperaturas del aire por encima de lo normal, principalmente en las regiones Pacífica, Andina y Caribe. El 8 de octubre de 2026 publicó 'IDEAM confirma el fenómeno de El Niño y UNGRD articula la preparación nacional para afrontar sus efectos'. Portafolio (27 de octubre de 2026) informó un pronóstico de máximas de 39 °C en Cúcuta entre el 26 y el 30 de octubre.",
+   "source_url": "https://www.ideam.gov.co/sala-de-prensa/noticia/ideam-indica-que-las-condiciones-tipo-el-nino-continuan-fortaleciendose",
+   "second_source_url": "https://www.portafolio.co/economia/regiones/ideam-preve-una-semana-con-lluvias-intensas-y-calor-de-casi-40-c-amenazan-la-produccion-agricola-en-regiones-505187",
+   "quote": "una probabilidad del 81% de que el fenómeno alcance una intensidad \"muy fuerte\"",
+   "notes": "El 81% era un pronóstico de julio, no un dato observado. Lo de 39 °C también es un pronóstico, y en el cuerpo de la nota se refiere a un solo día ('hoy lunes')."
+  },
+  {
+   "id": "consumo-vs-precio-16",
+   "verdict": "confirmado",
+   "claim_final": "La Resolución CREG 101 120 de 2026 (30 de julio; Diario Oficial 53.575 del 3 de agosto) creó un programa transitorio, modificado por la Res. 101 126 del 21 de agosto. La meta de cada usuario es la mediana de sus consumos diarios de los 12 meses anteriores. Sobre lo que pase del 110% de la meta se cobra CA = (F − 1) × TR × CEC, con F = 1,30 en estratos 1 a 3, 1,50 en estratos 4 a 6 y 1,70 en comercio e industria. TR es la tarifa regulada después de subsidios. El cobro tiene tope en el costo de racionamiento (CRO) del estrato 4. La meta nunca puede ser menor a la subsistencia. El programa empezó el 1 de septiembre de 2026 (quinto día hábil después de la publicación de la Res. 101 126, el 25 de agosto). El primer ciclo de cada usuario es pedagógico (art. 5 de la Res. 101 126). No pagar el cobro no da lugar a corte. La suspensión de la Circular 326 cubre solo a los municipios afectados por el sismo del 10 de agosto de 2026 (M7,4, epicentro en San José del Palmar, Chocó).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-126_2026.htm",
+   "quote": "El cobro adicional aplicable a cada usuario se calculará sobre el consumo excedente objeto de cobro, valorado por la diferencia entre la tarifa resultante de aplicar el factor de cobro y la tarifa regulada de referencia",
+   "figures_final": "Factores 1,30 / 1,50 / 1,70; banda neutral hasta el 110%; duración inicial de 6 meses",
+   "notes": "La fórmula está en una imagen GIF (resolucion_creg_101-120_2026_obj_1.gif) y la leí: CA_i,m = (F_i − 1) * TR_i,m * CEC_i,m. Circular 348: 'El no pago del cobro adicional no da lugar a la suspensión del servicio'. Sobre el primer ciclo dice: 'tiene únicamente fines informativos y no constituye un saldo a pagar'."
+  },
+  {
+   "id": "consumo-vs-precio-17",
+   "verdict": "confirmado",
+   "claim_final": "En la etapa informativa (el primer ciclo, pedagógico), 111.196 usuarios de CENS superaron su meta de consumo y unos 239.000 la cumplieron, según Área Cúcuta (16 de octubre de 2026), que atribuye las cifras a CENS sin nombrar a un vocero. En Alerta, el gerente José Miguel González habló de 215.000 usuarios por debajo de la meta, 110.000 por encima del 110% y 10.000 comercios por encima del límite. Los cobros adicionales aplican después del ciclo pedagógico.",
+   "source_url": "https://www.areacucuta.com/cens-implementara-sanciones-a-usuarios-por-consumo-excesivo-de-energia-en-cucuta/",
+   "second_source_url": "https://www.alerta.com.co/servicios/norte-de-santander-mas-de-111-mil-usuarios-superaron-meta-de-consumo-de-energia-253124",
+   "quote": "\"110 mil superaron el consumo del 110 por ciento\" (José Miguel González, gerente de CENS, en Alerta)",
+   "notes": "Área Cúcuta dice 'superaron la meta', no '110%'. La nota de Alerta no tiene fecha visible; la ruta de la imagen sugiere el 14 de octubre de 2026. Ninguno de esos usuarios pagó recargo por ese ciclo."
+  },
+  {
+   "id": "consumo-vs-precio-18",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (31 de octubre de 2026), CENS afirma que el aumento del consumo responde a necesidades prioritarias ('la refrigeración de alimentos, la conservación de inventarios, los procesos productivos y la climatización de espacios') y no a 'un uso ineficiente de la energía por parte de las familias y empresas'. Pidió a la CREG tres cosas: ajustar las metas de los hogares según las condiciones regionales, excluir del programa a comercio e industria, y no hacer cobros adicionales a usuarios sin historial. La nota también dice que más de 3.095 usuarios comerciales e industriales recibieron recargos de más de $200.000 en lo corrido de octubre, y que 75% de los usuarios viven en municipios cercanos al nivel del mar.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "donde los efectos del fenómeno de El Niño se traducen en aumentos considerables y permanentes de las temperaturas",
+   "figures_final": "Más de 3.095 usuarios comerciales e industriales con recargos de más de $200.000; 75% de los usuarios cerca del nivel del mar",
+   "notes": "Solo hay una fuente de prensa (firma 'crojas'). No encontré el comunicado de CENS ni una segunda nota. La declaración se hizo para pedir que se ajusten las metas del programa de la CREG, no como respuesta a quejas por la tarifa."
+  },
+  {
+   "id": "consumo-vs-precio-19",
+   "verdict": "confirmado",
+   "claim_final": "Consumo residencial promedio en Cúcuta, julio de 2024 frente a julio de 2025 (datos de CENS en La Opinión, 15 de agosto de 2025, Leonardo Favio Oliveros). E1: 160,2 → 154,3 kWh (−3,7%). E2: 201,9 → 191,8 (−5,0%). E3: 225,6 → 212,8 (−5,7%). E4: 289,1 → 262,4 (−9,2%). E5: 389,2 → 357,0 (−8,3%). E6: 630,9 → 521,3 (−17,4%).",
+   "source_url": "https://laopinion.co/economia/la-energia-baja-de-precio-en-cucuta-asi-marcha-el-precio-de-la-tarifa-de-electricidad",
+   "quote": "lo cual obedece a condiciones climáticas más favorables y al uso eficiente de la energía",
+   "notes": "Matiz: julio de 2025 fue un año de consumo bajo (clima favorable), así que la base del ejemplo de la Tabla 4 es baja. La misma nota cita un IPC de electricidad para Cúcuta (−2,28%), lo que indica que el DANE sí publica esa subclase por ciudad."
+  },
+  {
+   "id": "consumo-vs-precio-20",
+   "verdict": "corregido",
+   "claim_final": "Consumos promedio en Cúcuta según CENS, en La Opinión (25 de abril de 2024): estrato 1, 157 kWh en marzo de 2024. Estratos 2 a 6: '200, 224, 290, 390 y 608' (la nota escribe 'kW'), sin decir el mes.",
+   "source_url": "https://laopinion.co/economia/el-impacto-de-la-resolucion-de-la-creg-en-los-usuarios-de-cens-en-cucuta",
+   "notes": "La nota trata sobre la Resolución CREG 101 042 de 2024. Solo el dato de E1 está atado explícitamente a marzo de 2024."
+  },
+  {
+   "id": "consumo-vs-precio-21",
+   "verdict": "confirmado",
+   "claim_final": "El subsidio solo cubre el consumo de subsistencia (CS). Desde el CS, la energía se cobra a la tarifa plena del estrato 4. La Resolución UPME 0355 de 2004 fija el CS en 173 kWh/mes por debajo de 1.000 msnm y en 130 kWh/mes por encima. Los subsidios topan en 60% para el estrato 1, 50% para el 2 y 15% para el 3.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "si un usuario con derecho al subsidio consumió en el mes un valor por encima del CS, a partir del CS se le cobrará la energía con la tarifa plena correspondiente a la definida para el estrato 4."
+  },
+  {
+   "id": "consumo-vs-precio-22",
+   "verdict": "corregido",
+   "claim_final": "Entre octubre de 2025 y octubre de 2026, las tarifas subsidiadas de estratos 1 y 2 de CENS subieron 6,28% (E1 de $421,8943 a $448,4089; E2 de $527,3678 a $560,5111), igual al IPC (6,29%). El estrato 3 y la tarifa plena subieron 12,07%. La regla viene del art. 3 de la Ley 1117 de 2006, modificado por la Ley 1428 de 2010 y prorrogado después: el incremento sobre el consumo de subsistencia de estratos 1 y 2 'corresponda en cada mes como máximo a la variación del Índice de Precios al Consumidor', con subsidio máximo de 60% y 50%. El art. 238 de la Ley 2294 de 2023 modificó el art. 1 de esa ley (normalización de redes), no la regla del IPC.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/ley_1117_2006.htm",
+   "figures_final": "E1 y E2 +6,285%; E3 y CU +12,074%. En EPM, E1 +6,28% y E2 +6,29% en el mismo periodo.",
+   "notes": "El subsidio de E1 pasó de 53,596% a 55,993% y el de E2 de 41,995% a 44,9912%. Esa diferencia la paga el Fondo de Solidaridad (FSSRI). No verifiqué el texto exacto de la última prórroga del art. 3."
+  },
+  {
+   "id": "consumo-vs-precio-23",
+   "verdict": "confirmado",
+   "claim_final": "Ejemplo ilustrativo, solo cargo de energía, octubre 2025 frente a octubre 2026, suponiendo que cada hogar consume 7,4% más (el crecimiento agregado del mercado). E2 (191,8 → 206,0 kWh): $108.327,16 → $130.593,73 (+20,55%); efecto precio $8.576,88 (38,5%) y efecto consumo $13.689,69 (61,5%). E3: +21,55%, con 58,4% por precio. E4: +20,40%, con 61,4% por precio. E1: +14,14%, con 46,1% por precio. Un hogar que no consumió más paga +12,07% (E3 y E4), +7,20% (E2) o +6,28% (E1). Si el aumento por hogar fuera de 3%, el precio explicaría 67% (E1), 59% (E2), 77% (E3) y 79% (E4) del alza.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "figures_final": "Todo recalculado al centavo, igual que en la Tabla 4. Escenario de +20% en E2: recibo +43,3%, con 21,1% por precio. Cobro CREG estimado: 19,18 kWh × 0,30 × 1.018,95 ≈ $5.863.",
+   "notes": "CENS cobra cargo fijo de $0 por factura, así que no falta ningún cargo fijo. Fuera del cálculo quedan alumbrado público, aseo y otros cobros de terceros, y la contribución, que solo pagan E5, E6 y los no residenciales. La fórmula de la CREG (F − 1) × TR × CEC confirma la forma del estimado de $5.863."
+  },
+  {
+   "id": "consumo-vs-precio-24",
+   "verdict": "corregido",
+   "claim_final": "Estudio UPME/Corpoema (13 de diciembre de 2019, con datos del SUI de 2018). En clima cálido, 39,6% de los usuarios consumía en promedio más de 180 kWh/mes, y el estudio concluyó que el CS vigente 'podría' estar cubriendo el 100% del consumo del 60% de los hogares. La canasta básica para menos de 500 msnm es de 155,0 kWh/mes con los equipos actuales y 91,0 con equipos eficientes. Incluye ventilador (94% de los hogares lo tienen), nevera y otros 7 equipos, pero no aire acondicionado. El 2,8% de hogares con aire acondicionado es el promedio de todo el SIN, no el de clima cálido. La propuesta (75 a 91 kWh) implicaba $729.007 millones al año menos en subsidios (−44%) y no se adoptó.",
+   "source_url": "https://bdigital.upme.gov.co/bitstream/handle/001/1367/2019-12-13%20Informe%20Final%20Subsistencia.pdf?sequence=1&isAllowed=y",
+   "quote": "el 39,6% de los usuarios tienen consumos promedio por encima de 180 kWh/mes, esto podría sugerir que el consumo de subsistencia vigente actual está cubriendo el 100% del consumo del 60% de los hogares",
+   "notes": "El mismo dato también le sirve a los críticos: 4 de cada 10 hogares de clima cálido ya superaban el umbral en 2018."
+  },
+  {
+   "id": "consumo-vs-precio-25",
+   "verdict": "corregido",
+   "claim_final": "El proyecto de ley 218 de 2024 Senado (631 de 2025 Cámara), 'Ley de Energía Justa', de Gustavo Moreno, proponía un tercer piso térmico para definir la subsistencia según temperatura, humedad y altitud. La plenaria del Senado lo aprobó en segundo debate el 23 de abril de 2025, con 67 votos a favor y ninguno en contra. Fue ARCHIVADO el 20 de junio de 2026 por tránsito de legislatura (art. 190 de la Ley 5 de 1992), con la ponencia para tercer debate en la Comisión Quinta de la Cámara.",
+   "source_url": "https://congresovisible.uniandes.edu.co/proyectos-de-ley/ppor-medio-de-la-cual-se-establece-un-tercer-piso-termico-con-el-fin-de-garantizar-la-equidad-en-la-distribucion-del-consumo-de-subsistencia-del-servicio-de-energia-electrica-y-se-dictan-otras-disposiciones-ley-de-energia-justa-equidad-en-distribucion-de-consumo-energia-electrica/13522/",
+   "second_source_url": "https://www.elnuevosiglo.com.co/politica/avanza-proyecto-en-beneficio-de-usuarios-de-energia-electrica",
+   "quote": "Archivado por Tránsito de Legislatura - Gaceta: S/N (20/06/2026)",
+   "notes": "El Nuevo Siglo llama a Moreno 'autor y ponente'. Congreso Visible lista como ponentes de segundo debate a Marcos Daniel Pineda e Inti Asprilla. No hay que presentarlo como un proyecto vivo."
+  },
+  {
+   "id": "consumo-vs-precio-26",
+   "verdict": "confirmado",
+   "claim_final": "El senador Gonzalo Baute radicó el 15 de octubre de 2026 un proyecto que modifica el art. 8 de la Ley 632 de 2000 para que la temperatura media y máxima, la humedad relativa y el índice de calor cuenten al fijar la subsistencia. La UPME tendría 12 meses para actualizar la metodología y la CREG 6 meses más para ajustar la regulación. El proyecto no sube automáticamente los subsidios.",
+   "source_url": "https://rionoticias.co/proponen-que-el-calor-de-cada-region-cuente-para-calcular-el-consumo-basico-de-energia/",
+   "quote": "no modifica automáticamente las tarifas, no fija nuevos límites de consumo ni aumenta de inmediato los subsidios",
+   "notes": "Solo hay una fuente de prensa (Río Noticias, 19 de octubre de 2026) y no da el número del proyecto."
+  },
+  {
+   "id": "consumo-vs-precio-27",
+   "verdict": "confirmado",
+   "claim_final": "El Plan Caribe Energético 2026-2030 de la RAP Caribe propone un tercer umbral de subsistencia para municipios por debajo de 500 msnm: pasar de 173 a 210 kWh/mes para estratos 1 y 2.",
+   "source_url": "https://rapcaribe.gov.co/wp-content/uploads/2026/06/PLAN-CARIBE-ENERGETICO.pdf",
+   "quote": "Propone establecer un tercer umbral de Consumo Básico de Subsistencia para municipios por debajo de 500 msnm, incrementando el CBS subsidiable de 173 a 210 kWh/mes para estratos 1 y 2, con el fin de ajustar el subsidio a las necesidades reales en climas cálidos.",
+   "notes": "La ruta del archivo indica junio de 2026. Cúcuta (unos 320 msnm) estaría por debajo del umbral de 500 msnm, aunque el plan es de la región Caribe."
+  },
+  {
+   "id": "consumo-vs-precio-28",
+   "verdict": "confirmado",
+   "claim_final": "La Defensoría del Pueblo, en un documento de advertencia del 16 de septiembre de 2022 (difundido el 28 de octubre de 2022), puso a consideración de MinEnergía, MinHacienda y la UPME volver a 200 kWh-mes en cabeceras municipales por debajo de 1.000 msnm. El 11 de marzo de 2024, el alcalde de Cartagena, Dumek Turbay, pidió al ministro Camacho que la UPME ampliara la subsistencia a 252 kWh/mes en territorios de hasta 350 msnm y más de 24 °C. Ninguna de las dos se adoptó.",
+   "source_url": "https://www.defensoria.gov.co/web/guest/-/defensor%C3%ADa-reitera-recomendaciones-ante-fallas-en-la-prestaci%C3%B3n-de-servicio-de-energ%C3%ADa-en-la-regi%C3%B3n-caribe",
+   "second_source_url": "https://www.infobae.com/colombia/2024/03/12/precio-de-la-energia-en-el-caribe-colombiano-podria-bajar-ante-duras-criticas-la-creg-anuncio-nuevas-medidas/",
+   "quote": "retornar el consumo de subsistencia para las cabeceras municipales con altitud menor a 1.000 metros sobre el nivel del mar",
+   "notes": "La Circular CREG 348 de 2026 todavía usa 173 y 130 kWh-mes (Res. UPME 355 de 2004)."
+  },
+  {
+   "id": "consumo-vs-precio-29",
+   "verdict": "confirmado",
+   "claim_final": "En el El Niño anterior, el gerente de CENS reportó que el consumo en su área creció 16,4% hasta el 10 de febrero de 2024 frente al año anterior. Dijo que la sequía sube sobre todo el precio de la generación. En ese momento CENS tenía 600.000 usuarios, 300.000 en el área metropolitana.",
+   "source_url": "https://laopinion.co/economia/bajo-el-servicio-de-energia-en-norte-de-santander-en-cuanto",
+   "quote": "La sequía lo que trae es mayor precio en la generación de energía, básicamente."
+  },
+  {
+   "id": "consumo-vs-precio-30",
+   "verdict": "confirmado",
+   "claim_final": "En sus publicaciones de tarifas, CENS dice que aplica la regulación 'buscando mitigar los crecimientos de la tarifa sin poner en riesgo la sostenibilidad financiera de la empresa' y que mantiene campañas de uso racional.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "CENS sigue dando aplicación a la regulación buscando mitigar los crecimientos de la tarifa sin poner en riesgo la sostenibilidad financiera de la empresa.",
+   "notes": "Es un texto fijo que se repite en las publicaciones de 2025 y 2026."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "cvp-new-01",
+   "claim": "El alza anual de la tarifa plena no es propia de CENS. En EPM Antioquia, la matriz, el CU nivel 1 subió 11,93% entre octubre de 2025 ($885,65) y octubre de 2026 ($991,29), casi lo mismo que CENS (12,07%). Su G subió +90,23 $/kWh (85% del alza) y su tarifa subsidiada de E1 subió 6,28%, igual que en CENS. La diferencia entre el CU de CENS y el de EPM se mantuvo estable: 2,66% en octubre de 2025 y 2,79% en octubre de 2026.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/energia/tarifas-energia/tarifas-2025/PublicacionTarifasOctubre162025_ANT_OM.pdf",
+   "source_type": "primario-epm",
+   "confidence": "alta",
+   "source_outlet": "EPM",
+   "source_title": "Tarifas y Costo de Energía Eléctrica - Mercado Regulado, octubre de 2025",
+   "period": "octubre 2025 a octubre 2026",
+   "figures": "EPM octubre 2025: CU 885,65; G 313,27; T 52,97; D 314,64; Cv 114,69; PR 65,48; R 24,61; E1 401,79; E2 502,24; E3 752,80",
+   "notes": "Para comparar: https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/energia/tarifas-energia/Tarifas%202026/10.PublicacionTarifasOctubre162026_ANT_OM.pdf"
+  },
+  {
+   "id": "cvp-new-02",
+   "claim": "Los cargos de distribución (D) y transmisión (T) que cobra CENS son idénticos al centavo a los de EPM Antioquia. D fue 314,64 en octubre de 2025, 307,03 en febrero de 2026 y 297,88 en octubre de 2026 en ambas empresas, y T fue 52,97, 50,62 y 49,64. La razón es que las dos están en la misma Área de Distribución (ADD Centro): la Superservicios agrupa en ella a Antioquia, Caldas, Norte de Santander, Pereira, Quindío y Ruitoque. El cargo de distribución no lo fija CENS sola, y entre octubre de 2025 y octubre de 2026 bajó $16,76/kWh.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "source_outlet": "Superservicios (tabla de CU por ADD y mercado); publicaciones de tarifas de CENS y EPM",
+   "period": "2025-2026",
+   "figures": "D CENS = D EPM: 314,6380/314,64 (octubre 2025); 307,0274/307,03 (febrero 2026); 297,8785/297,88 (octubre 2026)",
+   "notes": "Esto debilita el argumento de que 'CENS solo es un distribuidor' en los dos sentidos: lo que sube no es la distribución, y la distribución tampoco depende solo de CENS."
+  },
+  {
+   "id": "cvp-new-03",
+   "claim": "CENS no cobra cargo fijo en la factura de energía (CUf = $0 por factura), así que el valor de la energía es solo kWh × tarifa. Los $12.304 de octubre de 2026 son el 'Costo base de comercialización (Cf)', que se usa para calcular el componente Cv; no se cobra aparte.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS",
+   "source_date": "2026-10-18",
+   "quote": "COSTO UNITARIO FIJO, CUf PARA TODOS LOS USUARIOS: 0 $ / FACTURA",
+   "notes": "Esto resuelve el vacío sobre el 'cargo fijo' de la Tabla 4."
+  },
+  {
+   "id": "cvp-new-04",
+   "claim": "Las tarifas subsidiadas de estratos 1 y 2 suben con el IPC solo mientras el subsidio no pase del tope legal (60% para E1, 50% para E2). Con las tarifas de octubre de 2026, ese tope se alcanzaría si el CU supera unos $1.121/kWh, es decir, un 10% más que hoy. Ya pasó en febrero de 2025: con un CU de $1.055,58, CENS aplicó subsidios de exactamente 60,0000% (E1) y 50,0000% (E2). Si El Niño sigue empujando el G, los estratos 1 y 2 podrían ver alzas por encima del IPC.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202502.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS; cálculo propio con el art. 3 de la Ley 1117 de 2006",
+   "period": "febrero 2025 y octubre 2026",
+   "figures": "Umbral = 448,4089/0,40 = 560,5111/0,50 = 1.121,02 $/kWh; febrero 2025: E1 422,2317 (subsidio 60%), E2 527,7896 (50%)",
+   "notes": "Base legal: https://gestornormativo.creg.gov.co/gestor/entorno/docs/ley_1117_2006.htm. Conecta con el debate sobre el recorte de subsidios en el presupuesto de 2027 (otro frente): el porcentaje subsidiado de CENS subió de 53,6% a 56,0% en E1 en un año."
+  },
+  {
+   "id": "cvp-new-05",
+   "claim": "CENS reescribió su serie histórica de tarifas en julio de 2025. Las publicaciones originales de febrero a junio de 2025 dicen 1.055,58, 1.010,12, 986,16, 947,37 y 873,83 $/kWh. Desde la publicación de julio de 2025, esos mismos meses aparecen como 1.014,60, 965,42, 935,52, 897,16 y 871,81. CENS no explica el cambio.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202507.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS (también T2025/Tarifa_CENS_202502.pdf a 202506.pdf)",
+   "period": "febrero a julio 2025",
+   "figures": "Diferencias: −40,98 (febrero), −44,70 (marzo), −50,63 (abril), −50,21 (mayo), −2,02 (junio)",
+   "notes": "Hay que preguntarle a CENS antes de usar cualquier 'pico' o comparación con el primer semestre de 2025. La Opinión (agosto de 2025) mezcló las dos series: usó $871,8 para junio y $1.055 para febrero."
+  },
+  {
+   "id": "cvp-new-06",
+   "claim": "Serie mensual del CU de CENS de noviembre de 2025 a octubre de 2026, tomada de los gráficos históricos de sus publicaciones: noviembre 860,56; diciembre 869,94; enero 888,06; febrero 862,83; marzo 925,84; abril 915,90; mayo 926,92; junio 944,52; julio 959,75; agosto 1.005,12; septiembre 1.019,03; octubre 1.018,95. Febrero de 2026 fue un valle; el mínimo fue noviembre de 2025. El salto más grande llegó en agosto (+4,73%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202607_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS (también las publicaciones de febrero, agosto, septiembre y octubre de 2026)",
+   "period": "noviembre 2025 a octubre 2026",
+   "quote": "El Costo Unitario (CU) del mes de Agosto aumentó en 4.73%",
+   "notes": "Para no elegir a conveniencia el punto de partida, conviene usar la comparación de 12 meses (+12%) en lugar de 'desde febrero' (+18%)."
+  },
+  {
+   "id": "cvp-new-07",
+   "claim": "Superservicios, II trimestre de 2025: 'La mayoría de los OR experimentaron una disminución en su CU, destacándose reducciones significativas en CARIBEMAR, CENS, EEBP, ENELAR y ESSA'. El CU de Norte de Santander bajó 5,24% frente al I trimestre (945,43 a 895,89).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "source_outlet": "Superintendencia de Servicios Públicos",
+   "source_date": "2025-12-31",
+   "period": "I y II trimestre de 2025",
+   "quote": "La mayoría de los OR experimentaron una disminución en su CU, destacándose reducciones significativas en CARIBEMAR, CENS, EEBP, ENELAR y ESSA.",
+   "notes": "Es un dato a favor de la empresa. Debe ir junto al de su G, el más alto del grupo."
+  },
+  {
+   "id": "cvp-new-08",
+   "claim": "La fórmula oficial del cobro adicional de la CREG es CA = (F − 1) × TR × CEC. TR es la tarifa regulada que pagaría el usuario sin el programa, después de subsidios. Para los kWh por encima de 173 de un hogar de estratos 1 a 3, esa tarifa es el CU pleno. El cobro tiene tope en el costo incremental de racionamiento (CRO) del estrato 4. La Circular 348 aclara que no se usa la tarifa sin subsidio para la parte subsidiada.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/graficas/resolucion_creg_101-120_2026_obj_1.gif",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "source_outlet": "CREG, Res. 101 120 de 2026 (art. 11, imagen de la fórmula; definición en el art. 3) y Circular 348 de 2026",
+   "source_date": "2026-07-30",
+   "quote": "Tarifa regulada de referencia: tarifa regulada aplicable al usuario en ausencia del presente programa, después de considerar los subsidios o contribuciones que correspondan según el tipo de usuario, estrato, rango de consumo y nivel de tensión",
+   "notes": "Con esto se confirma el estimado de unos $5.863 de recargo para un hogar de E2 que consume 20% más que su meta (230,2 kWh frente a una meta de 191,8)."
+  },
+  {
+   "id": "cvp-new-09",
+   "claim": "La Res. CREG 101 126 de 2026 aplazó el inicio del programa por el sismo de magnitud 7,4 del 10 de agosto de 2026 (epicentro en San José del Palmar, Chocó; desastre nacional por el Decreto 1171 del 11 de agosto). También excluyó a los municipios afectados que identifique la UNGRD (art. 3) y declaró pedagógico el primer ciclo facturado de cada usuario (art. 5). El programa empezó el quinto día hábil después de la publicación del 25 de agosto, es decir, el 1 de septiembre de 2026.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-126_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "source_outlet": "CREG",
+   "source_date": "2026-08-21",
+   "quote": "El primer ciclo de lectura de cada usuario cuya fecha de finalización sea igual o posterior a la fecha de inicio del programa tendrá carácter pedagógico.",
+   "notes": "Nada indica que Norte de Santander esté entre los municipios excluidos (el sismo afectó la región Andina occidental y el Pacífico)."
+  },
+  {
+   "id": "cvp-new-10",
+   "claim": "Segunda fuente de temperatura (NASA POWER, reanálisis MERRA-2, punto de Cúcuta). La temperatura media de 2026 fue mayor que la de 2025 en mayo (+0,81 °C), junio (+2,04), julio (+1,51), agosto (+1,43) y septiembre (+0,57). Eso coincide con el crecimiento de la demanda de CNSC desde mayo. Entre enero y abril de 2026 fue más baja que en 2025 (−0,3 a −1,1 °C), cuando la demanda estuvo plana.",
+   "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,T2M_MAX&community=RE&longitude=-72.5078&latitude=7.8939&start=20250101&end=20261029&format=JSON",
+   "source_type": "otro",
+   "confidence": "media",
+   "source_outlet": "NASA POWER (cálculo propio)",
+   "period": "enero 2025 a septiembre 2026",
+   "notes": "La grilla es gruesa (elevación del modelo: 741 m). Los datos de octubre de 2026 caen a unos 22 °C y parecen un artefacto de la fuente casi en tiempo real; no deben usarse."
+  },
+  {
+   "id": "cvp-new-11",
+   "claim": "El proyecto de ley 218 de 2024 Senado / 631 de 2025 Cámara ('Ley de Energía Justa', subsistencia según el calor) fue archivado el 20 de junio de 2026 por tránsito de legislatura, después de su aprobación en la plenaria del Senado el 23 de abril de 2025 y de la publicación de la ponencia para tercer debate (Gaceta 1188/25).",
+   "source_url": "https://congresovisible.uniandes.edu.co/proyectos-de-ley/ppor-medio-de-la-cual-se-establece-un-tercer-piso-termico-con-el-fin-de-garantizar-la-equidad-en-la-distribucion-del-consumo-de-subsistencia-del-servicio-de-energia-electrica-y-se-dictan-otras-disposiciones-ley-de-energia-justa-equidad-en-distribucion-de-consumo-energia-electrica/13522/",
+   "source_type": "otro",
+   "confidence": "alta",
+   "source_outlet": "Congreso Visible (Universidad de los Andes)",
+   "period": "2024-2026",
+   "quote": "Archivado por Tránsito de Legislatura - Gaceta: S/N"
+  }
+ ],
+ "cautions": [
+  "NO ATRIBUIR EL ALZA A UNA DECISIÓN DE CENS. El +12% anual del CU es casi igual al de EPM Antioquia (+11,93%). Viene del G (compra de energía) y de las restricciones (R). La distribución (D) bajó y es un cargo común del Área de Distribución Centro, idéntico al de EPM. Decir que 'CENS subió la tarifa 12%' como si fuera una decisión propia es injusto y fácil de desmentir. La fórmula sería: 'el kWh que cobra CENS subió 12%, impulsado por el costo de la energía comprada'.",
+  "TAMPOCO DAR POR CIERTO QUE CENS ES 'SOLO DISTRIBUIDOR'. CENS es la comercializadora (código CNSC en XM): compra la energía y traslada su costo (G). La Superservicios dijo que en el I y II trimestre de 2025 tuvo el G más alto de su grupo y mencionó como posibles causas contratos menos favorables o más compras en bolsa ('pueden atribuirse'). Pero en octubre de 2026 su G (397,09) fue menor que el de EPM (403,50). No hay que exagerar ni la culpa ni la inocencia.",
+  "NO MEZCLAR ESTE FRENTE CON 'GANANCIAS'. G y R son costos que se trasladan al usuario (pass-through); no son margen de CENS. Si el hilo habla de ganancias exageradas, debe usar las cifras del frente de finanzas. No se puede insinuar que el +12% del CU 'va a las utilidades'.",
+  "EVITAR ELEGIR EL PUNTO DE PARTIDA A CONVENIENCIA. El '+18% desde febrero' arranca en un valle de la serie (febrero de 2026, $862,83). La comparación robusta es la de 12 meses: +12,07% contra un IPC de 6,29%. Decir 'casi el doble de la inflación' es exacto (1,92 veces).",
+  "EL 'PICO DE FEBRERO DE 2025' ES DISCUTIBLE. CENS reescribió en julio de 2025 su serie del primer semestre de 2025 (febrero: $1.055,58 → $1.014,60). Con la serie revisada, octubre de 2026 está 0,4% por encima de febrero de 2025, no 3,5% por debajo. Hay que preguntarle a CENS antes de publicar o, mejor, omitir ese dato.",
+  "EL REPARTO 'CONSUMO 40-60%' ES UN ESCENARIO, NO UN HECHO. Supone que cada hogar consume 7,4% más, pero ese 7,4% es la demanda agregada del mercado regulado, que incluye comercio y usuarios nuevos. Si el aumento por hogar fue de 3%, el precio explica entre 59% y 79% del alza. La base de consumo (julio de 2025) además fue un año bajo: según CENS, el consumo cayó entre 4% y 17% frente a 2024 por clima favorable. Hay que presentarlo como 'ejemplo ilustrativo'.",
+  "LO QUE NADIE PUEDE DESMENTIR: un hogar que consumió exactamente lo mismo paga 12,07% más en estratos 3 y 4, 7,20% más en estrato 2 (con 191,8 kWh) y 6,28% más en estrato 1 dentro de la subsistencia. Esto sale directo de las tarifas publicadas por CENS.",
+  "SOBRE 'LA PROPIA CENS DESMIENTE A SUS DEFENSORES': hay una sola fuente (La Opinión, 31 de octubre de 2026), y la declaración se hizo para pedir a la CREG que ajuste las metas del programa de eficiencia, no para hablar de la tarifa. Es más preciso decir 'CENS atribuye el mayor consumo al calor de El Niño y no a uso ineficiente'. No decir que CENS niega que el consumo pese en el recibo.",
+  "SOBRE LOS 111.196 USUARIOS: es una cifra de la etapa informativa, el primer ciclo pedagógico, en el que no se cobra nada. No hay que decir que 111 mil usuarios pagaron recargos. Los 3.095 recargos de más de $200.000 son de usuarios comerciales e industriales, no de hogares. Las cifras de la prensa no coinciden: 239.000 frente a 215.000 bajo la meta, y 'superaron la meta' frente a 'superaron el 110%'.",
+  "EL PROYECTO 218 DE 2024 ESTÁ ARCHIVADO desde el 20 de junio de 2026. Presentarlo como 'aprobado 67-0' sin decir eso es engañoso. El de Baute (15 de octubre de 2026) no tiene número conocido y, según la nota, no sube los subsidios de inmediato.",
+  "LOS DATOS DE CLIMA NO SON OFICIALES DEL IDEAM. Tanto ERA5 como NASA POWER confirman más calor de mayo a septiembre de 2026, pero la magnitud varía (septiembre: +1,19 frente a +0,57 °C) y octubre no es robusto. El 81% del IDEAM era un pronóstico de julio, los 39 °C en Cúcuta eran un pronóstico, y XM dijo que el calor 'podría haber incidido'. Hay que respetar ese lenguaje condicional.",
+  "COMPARACIONES QUE PUEDEN ENGAÑAR: el IPC de electricidad (6,92%) mide tarifas pagadas por todos los estratos y regiones, con subsidios incluidos, así que no es comparable uno a uno con el CU pleno de CENS. El dato regional 'Oriente +4,35%' de XM no está confirmado como Norte de Santander; usar la demanda de CNSC (+6,55% en septiembre).",
+  "ESTRATOS 1 Y 2 TIENEN UN RIESGO FUTURO: sus tarifas siguen al IPC solo mientras el subsidio no toque el tope de 60% y 50%. Eso pasaría si el CU supera unos $1.121/kWh (+10%), como ya ocurrió en febrero de 2025. No hay que afirmar que eso vaya a pasar; solo que puede pasar.",
+  "EL COT (unos $44/kWh, 4,3% del CU) es el pago de tarifas diferidas en años anteriores (opción tarifaria). Es una 'variable que se deja por fuera' legítima, pero va bajando y no explica el alza de 2026.",
+  "AL CONSEJO DE @Andresbautistam: 'controlen sus consumos' es un consejo práctico válido. Cada kWh por encima de 173 cuesta $1.018,95, y desde el segundo ciclo del programa de la CREG, pasar del 110% de la meta genera un recargo, aunque no pagarlo no da lugar a corte. Lo que no sirve es usarlo para descartar las quejas por el precio, ni para culpar del aumento de consumo al descuido de los usuarios en medio de El Niño."
+ ]
+}

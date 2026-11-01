@@ -1,0 +1,471 @@
+{
+ "summary": "Verificación adversarial del frente \"criticas-expertos\" con corte al 31-oct-2026. Volví a descargar con curl todas las fuentes primarias y de prensa (copias en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-criticas-expertos/) y busqué cada cita textual por página con pdftotext.\n\nResultado: 36 hallazgos revisados. 29 quedan confirmados, 7 corregidos y ninguno refutado. Todas las citas textuales existen tal cual en la URL indicada.\n\nCorrecciones de peso:\n(a) Hallazgo 02. El CU de 851,07 es un promedio simple de todos los agentes del mercado Norte de Santander, no el CU de CENS. El CU propio de CENS en el 1T-2026 fue 892,24 $/kWh (tarifa de estrato 4, Tabla 47, p. 100). Con ese valor, la generación pesa 32,8% y el CU de CENS queda 8,85% por encima del promedio de los comercializadores integrados (819,70). El dato corregido es más fuerte que el original.\n(b) Hallazgo 04. El 70% de compras a vinculados en 2020 no es \"el más alto\": empata con ESSC (ESSA), que también es del Grupo EPM.\n(c) Hallazgo 10. Diego Jara señala la integración vertical como una de tres raíces del problema, no como la única.\n(d) Hallazgo 22. La República es inconsistente: el subtítulo atribuye los $3,4 billones a deuda por subsidios y el cuerpo a la opción tarifaria.\n(e) Hallazgo 25. El precio de escasez inferior lo creó la Res. CREG 101 066 de 2024. La Res. 101 102 de 2026 solo reabre la opción, porque ningún generador se había acogido.\n(f) Hallazgo 27. La Defensoría dirigió su recomendación de 200 kWh a MinMinas, MinHacienda y la UPME, no a la CREG. El umbral de 173 kWh lo fija la Res. UPME 355 de 2004.\n(g) Paginación. En los boletines II-2025 y III-2025 de la Superservicios, la página impresa es la del PDF menos 1.\n\nHallazgos nuevos:\n1. Fuente primaria de la cifra de comercialización: Documento CREG 901 060 de 2024, p. 60, estima −45,1% en el componente C y −5,3% en el CU.\n2. Considerandos de la Res. CREG 101 117 de 2026: la CREG admite fallas de mercado persistentes que \"permiten la discriminación de agentes\" y precios que \"no se dan en condiciones de competencia\".\n3. La Res. 130 de 2019 queda derogada cuando el nuevo SICEP entre en operación (plazo: 31-dic-2026). En la práctica, el tope de 10% previsto para 2027 nunca aplicará y regirá el 20%.\n4. Cobertura de CENS en el 1T-2026, leída de las gráficas de la Superservicios: unos 62% en contratos en enero, 87% en febrero y 92% en marzo.\n\nRiesgos principales:\n- El dato de 2019 (83% en contratos) es viejo.\n- En el 2T-2025 CENS tuvo el G más alto de su grupo, pero la Superservicios dice que compra a precio de mercado.\n- El exceso del cargo de distribución lo fija una regla de la CREG (Res. 058 de 2008, más el Decreto 388 de 2007). CENS no lo retiene: compensa sobre todo a filiales de EPM.\n- El \"100% en bolsa\" de mayo de 2025 es un error de reporte.",
+ "verified": [
+  {
+   "id": "criticas-expertos-01",
+   "verdict": "confirmado",
+   "claim_final": "Sergio Cabrales, profesor de la Universidad de los Andes, dijo a Valora Analitik (republicado en Yahoo Noticias el 8-sep-2026) que la generación pesa entre 30% y 40% del costo unitario. La frase según la cual la distribución, las pérdidas y la comercialización son 'determinantes' es paráfrasis del medio, no cita directa.",
+   "source_url": "https://es-us.noticias.yahoo.com/listado-empresas-tarifas-caras-energ%C3%ADa-160000006.html",
+   "quote": "\"La generación está incluida y pesa entre 30 % o 40 % de la tarifa final o costo unitario, pero es la base para los estratos 1, 2 y 3, porque los subsidios son de 60 %, 50 % y 15 % sobre esa tarifa. Y para los estratos 5 y 6 pagan 20 % más sobre la tarifa\", dijo Cabrales .",
+   "figures_final": "G 30%-40% del CU (Cabrales). Desglose atribuido de forma genérica: G 30%, T 7%, D 40%, C 13%, PR 7%, R 3%",
+   "notes": "Texto y fecha reverificados con curl ('mar, 8 de septiembre de 2026'). Los subsidios de 60% y 50% que menciona Cabrales son topes legales; CENS aplicó 52,2448% y 40,306% en enero de 2026, así que no deben trasladarse a CENS. Es prensa, no un estudio publicado."
+  },
+  {
+   "id": "criticas-expertos-02",
+   "verdict": "corregido",
+   "claim_final": "En el 1T-2026, la generación de CENS (292,42 $/kWh, Tabla 17, p. 30) fue el 32,8% de su propio costo unitario. Ese CU es la tarifa de estrato 4 aplicada por CENS: 892,24 $/kWh (Tabla 47, p. 100). La Superservicios aclara que la tarifa de estrato 4 refleja el CU porque ese estrato no recibe subsidios ni paga contribuciones. Así, alrededor de dos tercios del CU corresponden a otros componentes: transmisión, distribución, comercialización, pérdidas y restricciones. Pérdidas y restricciones también se ligan en parte al mercado mayorista. El CU de CENS estuvo 8,85% por encima del promedio de los comercializadores integrados (819,70 $/kWh, Tabla 10, p. 20). El valor de 851,07 que usaba el hallazgo original es el promedio simple de todos los agentes del mercado Norte de Santander (nota de las tablas 14 y 15), no el CU de CENS.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_page": "p. 30 (Tabla 17), p. 100 (Tabla 47), p. 99 (texto sobre estrato 4), p. 20 (Tabla 10), p. 24 (Tabla 13), p. 26 (Tabla 14)",
+   "quote": "CENS 892,24",
+   "figures_final": "292,42/892,24 = 32,77%; 892,24/819,70 − 1 = 8,85%. Alternativa con el promedio del mercado: 292,42/851,07 = 34,36% y 851,07/819,70 − 1 = 3,83%",
+   "notes": "Cita de apoyo de la p. 99: \"Dado que este estrato no recibe subsidios ni paga contribuciones, la tarifa refleja de manera más directa el comportamiento del Costo Unitario de Prestación del Servicio (CU)\". Nota de la p. 26: \"*Promedio CU del mercado, los cálculos tienen en cuenta el CU de todos los agentes que atienden del mercado\". Boletín de julio de 2026; lo aprobó Omar Camilo López López."
+  },
+  {
+   "id": "criticas-expertos-03",
+   "verdict": "confirmado",
+   "claim_final": "Según el estudio que la CREG contrató a Estudios Energéticos Consultores (Anexo 2 de la Circular 083 de 2021, informe R 1175-21 de noviembre de 2021), CENS (código CNSC, integrado con operador de red) cubrió en 2019 el 83% de su demanda regulada con contratos y el 17% en bolsa. La cifra es una estimación: el estudio asume que la proporción de contratos sobre la demanda total es igual a la de la demanda regulada.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/52188526a7290f8505256eee0072eba7/728941f75f3c10140525878b007b76d4/$FILE/Circular083-2021%20Anexo2.pdf",
+   "source_page": "p. 20 impresa (p. 21 del PDF), Tabla 6; supuesto en la p. 21 impresa (p. 22 del PDF)",
+   "quote": "CENTRALES ELECTRICAS DEL NORTE DE SANTANDER S.A. E.S.P. CNSC SI 1,240.66 251 1,492 83% 17%",
+   "figures_final": "1.240,66 / 1.492 = 83,15%; 251 / 1.492 = 16,82%",
+   "notes": "El dato es de 2019. Datos más recientes, leídos de las barras de las figuras 17, 19 y 21 del boletín 1T-2026 de la Superservicios (pp. 52, 54 y 56): CENS cubrió unos 62% con contratos en enero de 2026, 87% en febrero y 92% en marzo. Son mayoritariamente contratos, pero enero tuvo una exposición a bolsa (~38%) superior al promedio nacional (20,71%). Nota del estudio en la p. 22 del PDF: \"se asume que la proporción de compras en contratos de cada comercializador para su demanda total (dato obtenido de XM) es la misma que para su demanda regulada\"."
+  },
+  {
+   "id": "criticas-expertos-04",
+   "verdict": "corregido",
+   "claim_final": "En el Gráfico 9 del estudio de la CREG (integración vertical en el mercado regulado, 2020), CENS (CNSC) aparece con 70% de contratación con empresas vinculadas, empatado con ESSA (ESSC), también del Grupo EPM, como el valor más alto. El gráfico asigna además 24% no vinculado y 6% no contratado. El Gráfico 10 muestra para CNSC 70% en 2020, 48% en 2021 y 33% proyectado para 2022 (ese año, 62% sin contratar). El texto confirma que hay agentes integrados que llegan al 70% con vinculados.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/52188526a7290f8505256eee0072eba7/728941f75f3c10140525878b007b76d4/$FILE/Circular083-2021%20Anexo2.pdf",
+   "source_page": "p. 21 impresa (p. 22 del PDF): texto y Gráfico 9; p. 22 impresa (p. 23 del PDF): Gráfico 10 y conclusión",
+   "quote": "El 65% de la demanda regulada presenta algún grado de integración vertical. Las siguientes graficas presentan los comercializadores que tienen integración vertical según los declarado por cada agente. Como se observa, los agentes integrados verticalmente presentan altos porcentajes de contratación con empresas vinculadas llegando al 70% en algunos casos.",
+   "figures_final": "CNSC 2020: 70% vinculado / 24% no vinculado / 6% no contratado; ESSC 2020: 70% / 20% / 11%. CNSC: 70% (2020), 48% (2021), 33% (2022 proyectado)",
+   "notes": "El título interno de los gráficos es \"Integracion vertical - Res CREG 079/2019\": son datos declarados por los agentes según la Res. 079 de 2019, la misma base que usa la Res. 130 de 2019 para calcular las compras propias al entrar en vigencia. Hay artefactos en los datos: EBSC aparece con 102%. Contrapeso en la p. 22 impresa: \"Esto último no sería un problema siempre y cuando lo precios y condiciones contractuales sean competitivas y transparentes.\""
+  },
+  {
+   "id": "criticas-expertos-05",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 130 de 2019 (art. 19) fijó para 2020-2021 un tope de compras propias de 50% de la demanda regulada; la senda bajaba a 40% en 2022, a 20% en 2023-2026 y, según el art. 18, a 10% desde 2027. El 70% de CENS con vinculados en 2020 superaba en 20 puntos el tope de 2020. No era ilegal: el límite solo aplica a contratos nuevos resultantes de convocatorias. Quien ya lo superaba al entrar en vigencia la norma no podía aumentar, prorrogar ni modificar esos contratos (art. 20.2).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0130_2019.htm",
+   "quote": "19.1. Para los años 2020 y 2021, el porcentaje de compras propias del comercializador no puede ser mayor al cincuenta por ciento (50%) de su demanda regulada.",
+   "figures_final": "70% − 50% = 20 puntos porcentuales (2020)",
+   "notes": "Art. 20: el porcentaje de compras propias de cada comercializador al entrar en vigencia la norma \"es el porcentaje calculado por el ASIC a partir de la información suministrada en virtud de la Resolución CREG 079 de 2019\", la misma base del Gráfico 9. Art. 21: la verificación se hace \"únicamente en el momento de solicitud de registro de los contratos\", y excluye subastas del MME y mecanismos aprobados según la Res. 114 de 2018. La Res. 130 se entenderá derogada cuando el SICEP transaccional entre en operación (Res. 101 117 de 2026, arts. 64.3 y 66; plazo: 31-dic-2026)."
+  },
+  {
+   "id": "criticas-expertos-06",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 101 117 de 2026 (9 de julio; Diario Oficial 53.554 del 15-jul-2026) fija en su art. 50 un tope único de compras propias de 20% de la demanda regulada, sin senda de reducción. Su art. 64.3 fija como plazo de operación plena del SICEP el 31-dic-2026, y desde esa fecha queda derogada la Res. 130 de 2019. En la práctica, el tope de 10% previsto para 2027 no llegará a aplicarse.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-117_2026.htm",
+   "quote": "ARTÍCULO 50. LÍMITE DE COMPRAS PROPIAS. Los comercializadores no pueden formalizar contratos resultantes de convocatorias públicas para el mercado regulado con generadores o comercializadores con quienes se encuentren en situación de control, en un porcentaje superior al veinte por ciento (20%) de su demanda regulada.",
+   "figures_final": "20% (Res. 101 117 de 2026) frente al 10% que la Res. 130 de 2019 programaba desde 2027",
+   "notes": "Leerlo como una 'flexibilización' es inferencia nuestra; no se halló la justificación de la CREG, que estaría en el Documento CREG 901 360 de 2026, no revisado. El art. 52 prohíbe usar las compras propias para \"distorsionar la señal de precios de la energía, o afectar las condiciones de competencia en detrimento de los usuarios\". El art. 50, como el de la Res. 130, solo cubre contratos de convocatorias públicas."
+  },
+  {
+   "id": "criticas-expertos-07",
+   "verdict": "confirmado",
+   "claim_final": "En el Documento CREG-701 007 (13-mar-2023, sesión 1250), la CREG reporta que en los últimos cinco años más del 97% de la energía la comercializaron agentes con situaciones de control con otras actividades de la cadena, y más del 99% de la generación la cubrieron agentes integrados. Concluye que los límites a la participación accionaria no han bastado para mitigar la integración vertical.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/pdf/doc_creg_0701_07_2023.pdf",
+   "source_page": "p. 7 (97% y 99%) y p. 8 (conclusión)",
+   "quote": "Resulta evidente entonces que los límites a la participación accionaria establecidos en la regulación, no ha sido suficientes para mitigar situaciones de integración vertical, sobre todo en actividades en competencia como la generación o la comercialización.",
+   "figures_final": ">97% de la comercialización y >99% de la generación por agentes integrados (últimos cinco años)",
+   "notes": "La página impresa coincide con la del PDF. El documento soporta el proyecto de resolución CREG 701 008 de 2023, que la sesión 1250 sometió a consulta pública el 13-mar-2023. No se verificó que se adoptara como resolución definitiva."
+  },
+  {
+   "id": "criticas-expertos-08",
+   "verdict": "confirmado",
+   "claim_final": "El Documento CREG-701 007 de 2023 advierte que las situaciones de control entre generación y comercialización pueden llevar a precios superiores a los de un mercado en competencia y al traslado de ineficiencias al usuario por la tarifa. También advierte que un agente que integra distribución, comercialización y generación puede hacer compras y ventas internas a precios que no responden a la competencia. Es una advertencia general de riesgo, no un hallazgo sobre CENS.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/pdf/doc_creg_0701_07_2023.pdf",
+   "source_page": "p. 18 (cita principal), p. 21 (compras internas), p. 15 (matiz)",
+   "quote": "Los efectos de una situación de control como la descrita en el ejemplo anterior sobre la prestación del servicio se podrían resultar en unas asignaciones ineficientes, con precios superiores a aquellos que se habrían observado en condiciones de rivalidad entre oferta y demanda. Esto llevaría al traslado de ineficiencias a los usuarios a través de la tarifa que deben pagar por el servicio.",
+   "notes": "Matiz obligatorio de la p. 15: \"Esto no implica que dicho conflicto haya efectivamente ocurrido.\""
+  },
+  {
+   "id": "criticas-expertos-09",
+   "verdict": "confirmado",
+   "claim_final": "Según la CREG, en Colombia el comercializador minorista suele tener una situación de control con el distribuidor local, y por eso la comercialización no se desarrolla en competencia efectiva en la mayoría de los mercados. CENS figura como comercializador integrado con operador de red (C-OR) en el boletín 1T-2026 de la Superservicios (p. 83).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/pdf/doc_creg_0701_07_2023.pdf",
+   "source_page": "p. 17",
+   "quote": "En Colombia, es común que el comercializador minorista tenga una situación de control con el distribuidor local. Esta ha sido una de las causas de la existencia de altas barreras de entrada para comercializadores no integrados. En consecuencia, la actividad de comercialización no se desarrolla en condiciones de competencia efectiva en la mayoría de los mercados del país.",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "notes": "La afirmación de la CREG es general. Que se aplica a CENS es una inferencia nuestra, apoyada en su condición de C-OR."
+  },
+  {
+   "id": "criticas-expertos-10",
+   "verdict": "corregido",
+   "claim_final": "En los considerandos de la Res. CREG 130 de 2019, la CREG cita a la Fundación ECSIM (2013), que califica el mercado de contratos como 'el problema crucial del sector'. Según ECSIM, las convocatorias son inadecuadas por la integración vertical generación-distribución-comercialización, y esos factores favorecen el poder de mercado. También cita el informe de Diego Jara (experto contratado por la CREG en 2016), que identifica tres raíces del problema: la baja estandarización, la poca información crediticia y la integración vertical de agentes importantes. La integración vertical es una de las tres, no la única.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0130_2019.htm",
+   "quote": "Al igual que en otros estudios, se señala que la baja estandarización, la poca información con la que se evalúan las calidades crediticias de los agentes contratantes y la integración vertical de agentes importantes son las raíces del problema.",
+   "notes": "La cita de ECSIM es textual: \"el mercado de contratos es el problema crucial del sector eléctrico colombiano y solo su puesta a punto sentará las bases de una mejor eficiencia del sistema\". La de Jara también: \"opacidad en los precios y en general en las operaciones efectuadas, iliquidez del mercado, propensión a discriminar precios según el agente interesado (…), entre otros\". Resolución del 4-oct-2019, Diario Oficial 51.103."
+  },
+  {
+   "id": "criticas-expertos-11",
+   "verdict": "confirmado",
+   "claim_final": "El White Paper del Foco 1 de la Misión de Transformación Energética (enero de 2020; MinEnergía con BID y Banco Mundial; autores Pablo Corredor, Udi Helman, Diego Jara y Frank A. Wolak) sostiene que un proveedor integrado es 'indiferente' al precio de corto plazo porque puede trasladarlo a sus consumidores, mientras su unidad de generación 'prefiere naturalmente precios más altos'. También afirma que los precios de la demanda no regulada suelen estar muy por debajo de los de la regulada y que la opacidad favorece a los grandes integrados.",
+   "source_url": "https://www.minenergia.gov.co/documents/7681/1._ES_Competencia_participaci%C3%B3n_y_estructura_del_mercado_el%C3%A9ctrico.pdf",
+   "source_page": "p. 29 (cita principal), p. 28; la página impresa coincide con la del PDF",
+   "quote": "Un proveedor integrado verticalmente es indiferente al precio de la energía a corto plazo en la medida en que puede transmitirlo a sus consumidores. Sin embargo, su unidad de generación prefiere naturalmente precios más altos. La estructura actual coloca en una posición injusta a los participantes no integrados",
+   "notes": "Conviene evitar la paráfrasis 'no tiene incentivo a bajar el precio' y usar 'es indiferente'. El documento no menciona a CENS. Los logos del BID y el Banco Mundial están en la portada (p. 1)."
+  },
+  {
+   "id": "criticas-expertos-12",
+   "verdict": "confirmado",
+   "claim_final": "En la consulta del proyecto 701 112 de 2025 (soporte de la Res. CREG 101 100 de 2026), el Grupo EPM pidió que las compras en el nuevo mecanismo anónimo (MCE) no contaran para los límites de compras propias de los arts. 18 y 19 de la Res. 130 de 2019. La CREG respondió que no procedía porque esos límites ya solo aplican a contratos de convocatorias. Es decir, la excepción ya existía.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_100_2026/Documento_CREG_901_343_2026.pdf",
+   "source_page": "p. 21 (Anexo 1, sección '1. GRUPO EPM', desde la p. 13)",
+   "quote": "(…) Límite de compras propias – agentes integrados. Considerando las características de anonimato de las transacciones del MCE, respetuosamente solicitamos que la Resolución definitiva haga explícito que las compras efectuadas en el mecanismo no estarán sujetas a los dispuesto en los Artículos 18 y 19 de la Resolución CREG 130 de 2019. (…)",
+   "notes": "Respuesta 10, textual: \"Teniendo en cuenta que la Resolución CREG 130 de 2019 ya define que el límite de compras propias aplica para la formalización de contratos resultantes de las convocatorias de las que trata esa misma resolución, no procede hacer la solicitud planteada en el comentario\". Documento del 19-feb-2026. No hay que presentarlo como un rechazo a EPM."
+  },
+  {
+   "id": "criticas-expertos-13",
+   "verdict": "confirmado",
+   "claim_final": "En el 2T-2025, CENS reportó el componente de generación más alto del Grupo 2 de la Superservicios: 417,77 $/kWh, frente a 402,89 en el 1T-2025 y un promedio del grupo de 364,12. La Superservicios atribuye las alzas a posibles contratos vencidos o renegociados en peores condiciones, o a mayor compra en bolsa en horas caras, y la dispersión entre comercializadores a diferencias de 'eficiencia y poder de negociación'.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "source_page": "p. 27 impresa (p. 28 del PDF), Tabla 17; p. 28 impresa (p. 29 del PDF), texto",
+   "quote": "En cuanto al rango de costos, la dispersión entre el valor más alto, reportado por CENS en Norte de Santander, y el más bajo, registrado por CHEC en Caldas, evidencia las diferencias estructurales y regionales inherentes al costo de la energía, así como los distintos niveles de eficiencia y poder de negociación entre los comercializadores del grupo.",
+   "figures_final": "G de CENS: 402,89 (1T-2025) → 417,77 $/kWh (2T-2025); promedio del Grupo 2: 364,12",
+   "notes": "Contrapeso en el mismo boletín (p. 34 impresa, p. 35 del PDF): en abril de 2025 CENS figura entre los agentes con precio de compra (Pc) inferior al promedio del mercado (Mc). Un G alto no prueba contratos sobrecostosos, porque el G depende también de la cobertura con contratos (Qc), las compras en bolsa (Qb) y el componente transitorio."
+  },
+  {
+   "id": "criticas-expertos-14",
+   "verdict": "confirmado",
+   "claim_final": "Para mayo de 2025, la Superservicios califica como caso atípico, 'no coherente' con la operación normal de un comercializador regulado, el reporte de CENS (y de DISPAC) con 0% de contratos y 100% de bolsa. Lo atribuye a una posible inconsistencia del reporte o a una situación excepcional transitoria.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "source_page": "p. 46 impresa (p. 47 del PDF); precio de compra de 0,00 en la p. 35 impresa (p. 36 del PDF)",
+   "quote": "Se presentan dos casos atípicos que requieren verificación: DISPAC y CENS reportaron una cobertura del 0% con contratos (Qc=0%) y del 100% con bolsa (Qb=100%). Estos valores extremos no son coherentes con las operaciones normales de un comercializador en el mercado regulado y sugieren una posible inconsistencia en el reporte de información o una situación excepcional transitoria que debe ser revisada frente a los datos oficiales del SUI.",
+   "notes": "Sirve para desactivar a quien cite ese dato como prueba de que CENS 'compra en bolsa'. No prueba manipulación."
+  },
+  {
+   "id": "criticas-expertos-15",
+   "verdict": "confirmado",
+   "claim_final": "En el 2T-2025, los usuarios del Área de Distribución Centro, incluidos los de CENS, pagaron un cargo único de distribución (DtUN) promedio de 320,03 $/kWh. El cargo propio de CENS fue 292,72 $/kWh. La diferencia es de 27,31 $/kWh (9,33%), que por regla de la CREG (Res. 058 de 2008, en desarrollo del Decreto 388 de 2007) compensa a operadores del área con costos mayores.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "source_page": "p. 56 impresa (p. 57 del PDF); Tabla 25 en la p. 52 impresa (p. 53 del PDF)",
+   "quote": "Por el contrario, otros OR operan con costos significativamente inferiores al promedio del área, destacándose EEP (214,49 $/kWh) y CENS (292,72 $/kWh).",
+   "figures_final": "320,03 − 292,72 = 27,31 $/kWh; 27,31/292,72 = 9,33%; ×173 kWh = $4.724,63/mes bruto. Neto ilustrativo: E1 $2.256,26, E2 $2.820,32, E3 $4.015,94",
+   "notes": "Misma página: \"El DtUN, que es el cargo único que aplican todos los OR de esta área, se ubicó en un promedio de 320,03 $/kWh para el trimestre\". Por encima del DtUN estaban Ruitoque (548,58), EDEQ (378,68) y ESSA (362,05). CENS no retiene el excedente. La regla es de la CREG por mandato de un decreto del Ministerio."
+  },
+  {
+   "id": "criticas-expertos-16",
+   "verdict": "confirmado",
+   "claim_final": "En el 3T-2025, la Superservicios menciona a CENS entre los operadores del ADD Centro con cargo individual 'inferior al DtUN' (promedio trimestral de 318,27 $/kWh). El texto es internamente inconsistente: el rango que da llega a 375,04, por encima del DtUN. Además, no asigna a CENS el valor de 292,53. Tiene bajo valor probatorio.",
+   "source_url": "https://superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-III-trimestre-de-2025.pdf",
+   "source_page": "p. 57 del PDF (texto); Tabla 27 en la p. 56 del PDF",
+   "quote": "Mientras la mayoría de los agentes (CENS, CHEC, EDEQ, EEP, EPM, ESSA) presentaron cargos individuales inferiores al DtUN (oscilando entre 292.53 $/kWh y 375.04 $/kWh), el operador RUITOQUE reportó consistentemente un valor muy superior",
+   "figures_final": "DtUN de 308,58 (julio) a 325,33 (septiembre); promedio 318,27 $/kWh",
+   "notes": "La Tabla 27 tiene otra inconsistencia: muestra Centro 320,03 → 318,27 con una variación de '1,69%', cuando en realidad es −0,55%. No usar como captura principal."
+  },
+  {
+   "id": "criticas-expertos-17",
+   "verdict": "confirmado",
+   "claim_final": "La evaluación ex post de las Áreas de Distribución del Ministerio de Minas (archivo 'V8Nov', noviembre de 2023) resume un estudio de Celsia. Según ese estudio, en el ADD Centro, CENS es operador 'excedentario': su cargo propio es unos 10% inferior al cargo único que se cobra a sus usuarios. Los deficitarios son CHEC, EDEQ y ESSA. Norte de Santander tiene un ingreso 28% inferior al promedio del área y un NBI 'sustancialmente mayor'.",
+   "source_url": "https://www.minenergia.gov.co/documents/11070/Expost_ADD_2023_compressed.pdf",
+   "source_page": "pp. 109-110 impresas (pp. 114-115 del PDF), sección 'Estudio de Celsia'",
+   "quote": "En la ADD Centro, los OR excedentarios son EPP, EPM y CENS que presentan Dt inferiores al DtUN que se les cobra, de aproximadamente 50% 10% y 10%, respectivamente. Los OR deficitarios son CHEC, EDEQ y ESSA con Dt inferiores con respecto a DtUN de 5%, 12% y 20% respectivamente.",
+   "figures_final": "CENS excedentario ~10% (estudio de Celsia); ingreso de Norte de Santander −28% frente al promedio del ADD Centro",
+   "notes": "El original tiene erratas visibles en la captura: 'EPP' por EEP e 'inferiores' por 'superiores' en el caso de los deficitarios. La p. 110 dice: \"mientras que el ingreso de Quindío y Norte de Santander es inferior al del promedio en 12% y 28% aproximadamente. El índice de NBI de los departamentos asociados con esta ADD son similares, excepto el de Norte de Santander, que es sustancialmente mayor.\" El estudio de Celsia no se obtuvo."
+  },
+  {
+   "id": "criticas-expertos-18",
+   "verdict": "confirmado",
+   "claim_final": "En la encuesta del Ministerio de Minas, CENS pidió revisar el esquema de Áreas de Distribución. Argumentó que, con la remuneración por ingreso máximo, dentro del ADD hay 'subsidios cruzados' por los que empresas pequeñas aportan a las inversiones de otras.",
+   "source_url": "https://www.minenergia.gov.co/documents/11070/Expost_ADD_2023_compressed.pdf",
+   "source_page": "p. 100 impresa (p. 105 del PDF)",
+   "quote": "CENS manifiesta que es conveniente revisar y ajustar el esquema de ADD debido a que, con la entrada del esquema de remuneración por ingreso máximo, dentro del ADD se presentan subsidios cruzados en el tema del apalancamiento de las inversiones, dado que empresas pequeñas de alguna manera aportan a las inversiones de otras",
+   "notes": "La frase continúa: \"y adicionalmente considera que el esquema ADD presenta dificultades para la aplicación de cargos/tarifas horarias\". En la misma página, el ministerio anota que quienes pidieron conservar el esquema tal como está son todos operadores deficitarios."
+  },
+  {
+   "id": "criticas-expertos-19",
+   "verdict": "confirmado",
+   "claim_final": "En agosto de 2025, el ministro de Minas Edwin Palma criticó la Res. CREG 058 de 2008 (Áreas de Distribución) en el caso de Cali: 'No puede la empresa pública terminar subsidiando a la empresa privada'. Según Infobae, cálculos iniciales del ministerio apuntaban a que modificar la norma podría reducir entre 15% y 20% las facturas de miles de familias caleñas.",
+   "source_url": "https://www.infobae.com/colombia/2025/08/05/ministro-edwin-palma-advirtio-que-familias-vulnerables-en-cali-estan-pagando-la-factura-electrica-de-empresas-privadas/",
+   "quote": "“No puede la empresa pública terminar subsidiando a la empresa privada“, sentenció el funcionario",
+   "figures_final": "Emcali: $497.000 millones recaudados por distribución en 2024; más de $278.000 millones girados a otros operadores (cifras de Roger Mina, gerente de Emcali); rebaja posible de 15%-20% en Cali",
+   "notes": "Ahora verificado con curl; fecha de publicación 2025-08-05. Es un caso análogo (ADD Occidente, Emcali), no CENS. En el ADD Centro, el excedente de CENS va sobre todo a filiales del mismo Grupo EPM (CHEC, EDEQ, ESSA) y a Ruitoque, así que el argumento de 'lo público subsidia a lo privado' no encaja tal cual."
+  },
+  {
+   "id": "criticas-expertos-20",
+   "verdict": "confirmado",
+   "claim_final": "Entre el 4T-2025 y el 1T-2026, CENS tuvo el mayor aumento del componente de comercialización de su grupo: +11,56%, de 131,81 a 147,04 $/kWh. La Superservicios aclara que ese componente refleja también la recuperación de saldos de la opción tarifaria y resoluciones particulares, no solo costos operativos.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_page": "p. 78 (texto), p. 77 (Tabla 35), p. 84 (matiz)",
+   "quote": "El mayor incremento correspondió a CENS, con 11,56%, al pasar de 131,81 $/kWh a 147,04 $/kWh.",
+   "figures_final": "147,04/131,81 − 1 = 11,55% (la diferencia con 11,56% es de redondeo); C = 16,5% del CU propio de CENS (892,24) o 17,3% del promedio del mercado (851,07); C sin opción tarifaria = 147,04 − 37,03 = 110,01 $/kWh (12,3% del CU de CENS)",
+   "notes": "Cita de la p. 84: \"La evidencia muestra que las diferencias del componente C no responden únicamente a los costos operativos de comercialización. También reflejan las particularidades regulatorias de cada mercado, las resoluciones particulares aplicables y la incidencia de la recuperación de saldos de la Opción Tarifaria.\""
+  },
+  {
+   "id": "criticas-expertos-21",
+   "verdict": "confirmado",
+   "claim_final": "El recibo de CENS de enero de 2026 incluyó un costo de opción tarifaria de 47,0962 $/kWh, el 5,3% del CU de ese mes (888,059), como parte de la recuperación de saldos acumulados. La Superservicios registró para CENS 51,25 $/kWh en el boletín II-2025 y 37,03 $/kWh en promedio en el 1T-2026, y la calificó como una contribución 'moderada pero aún significativa' al componente C.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "source_page": "p. 3 de la hoja tarifaria de CENS; Superservicios II-2025: p. 72 impresa (p. 73 del PDF); I-2026: p. 84, Tabla 40",
+   "quote": "En el cálculo de la tarifa de Enero, incluye un costo de la opción tarifaria (COT), de nivel de tensión 1 de $47.0962 el cual hace parte de la fase de recuperación de los saldos acumulados por opción tarifaria en vigencias anteriores.",
+   "figures_final": "47,0962/888,059 = 5,30%; ×173 kWh = $8.147,64 bruto; E1 neto ilustrativo $3.890,92; COT/C = 36,0% (51,25/142,49) y 25,2% (37,03/147,04)",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "notes": "La misma hoja de CENS añade en la p. 3: \"CENS sigue dando aplicación a la regulación buscando mitigar los crecimientos de la tarifa sin poner en riesgo la sostenibilidad financiera de la empresa.\" La Tabla 40 del II-2025 lleva el encabezado 'Promedio 1T 2025' aunque está en el boletín del 2T."
+  },
+  {
+   "id": "criticas-expertos-22",
+   "verdict": "corregido",
+   "claim_final": "Según La República (27-ene-2025), la Contraloría advirtió que los usuarios de estratos 1, 2 y 3 podrían ver facturas más altas si el Gobierno no giraba los recursos de subsidios y de opción tarifaria. La cifra de $3,4 billones es ambigua en la propia nota: el subtítulo la atribuye a 'deuda por los subsidios' y el cuerpo a la opción tarifaria. El informe intergremial que cita la nota habla de $3,3 billones por opción tarifaria y $2,7 billones por subsidios. Se recomienda usar solo la cita.",
+   "source_url": "https://www.larepublica.co/economia/contraloria-advirtio-que-deudas-por-opcion-tarifaria-ascienden-a-3-4-billones-y-hay-riesgo-de-desabastecimiento-4046738",
+   "quote": "“Los usuarios con menos recursos en estratos 1, 2 y 3, puedan ver incrementados los costos de las facturas sino se giran los recursos y pagos por parte del gobierno correspondientes a subsidios y opción tarifaria. Adicionalmente, sigue creciendo la deuda que tienen muchas entidades del Estado que no han pagado a los prestadores de servicio de energía y gas ”, detalló la Contraloría.",
+   "figures_final": "$3,4 billones (atribución ambigua en la nota); informe intergremial: $2,7 billones en subsidios, $3,3 billones en opción tarifaria, $1 billón de deuda oficial; total $7,6 billones con gas",
+   "notes": "Subtítulo de la nota: \"El órgano de control estima que la deuda por los subsidios asciende a $3,4 billones\". No se obtuvo el comunicado original de la Contraloría. La nota no menciona a CENS."
+  },
+  {
+   "id": "criticas-expertos-23",
+   "verdict": "confirmado",
+   "claim_final": "En entrevista con María Isabel Rueda (El Tiempo, 15-abr-2024), el exministro Amylkar Acosta criticó que las pérdidas no técnicas se trasladen al usuario en el régimen especial del Caribe. Dijo que la opción tarifaria suma 'casi 200 pesos por kilovatio' y que el costo de las restricciones hoy está 100% a cargo del consumidor.",
+   "source_url": "https://www.eltiempo.com/economia/sectores/por-que-en-colombia-en-los-recibos-se-paga-mas-luz-de-la-que-consumimos-3333739",
+   "quote": "Entonces, la maquillaron y establecieron que las pérdidas no técnicas, que no son otra cosa que el robo de energía y las instalaciones fraudulentas, se las trasladaran también al usuario.",
+   "figures_final": "Pérdidas: ~8,5% en el resto del país y 24% en el Caribe (según Acosta). Pérdidas de CENS: 66,82 $/kWh en el 1T-2026 = 7,49% de su CU (892,24)",
+   "notes": "La crítica a las pérdidas es sobre el Caribe (Afinia y Air-e), no sobre CENS. Los 200 $/kWh son una referencia nacional sin verificar; la opción tarifaria de CENS ha estado entre 37 y 51 $/kWh."
+  },
+  {
+   "id": "criticas-expertos-24",
+   "verdict": "confirmado",
+   "claim_final": "En su columna de La República (30-ago-2026), Amylkar Acosta sostiene que, cuando una restricción obedece a atrasos o fallas evitables de infraestructura atribuibles al ejecutor, su costo no debería trasladarse automáticamente al usuario. Cita un informe de la Superservicios según el cual los usuarios asumieron $24,9 billones por restricciones entre 2022 y 2025. Para CENS, el componente de restricciones fue de 24,00 $/kWh en el 1T-2026.",
+   "source_url": "https://www.larepublica.co/analisis/amylkar-d-acosta-m-557896/la-clavija-de-las-restricciones-4470389",
+   "quote": "En nuestro concepto, cuando una restricción obedece a atrasos, insuficiencias o fallas evitables de la infraestructura, atribuibles al ejecutor del proyecto del cual se trate, su costo no debería trasladarse automáticamente a los usuarios.",
+   "figures_final": "$24,9 billones = 42,3% de $58,9 billones acumulados desde 2008; 189/390 = 48,5% de restricciones sin proyecto asociado; R de CENS 27,20 → 24,00 $/kWh (Superservicios 1T-2026, Tabla 44, p. 92)",
+   "second_source_url": "https://www.larepublica.co/economia/superservicios-estima-que-usuarios-de-energia-han-pagado-24-9-billones-por-obras-de-transmision-inconclusas-4452814",
+   "notes": "La nota de prensa de La República del 6-ago-2026 (y notas de El Tiempo, Portafolio y El Heraldo) atribuye el informe 'Análisis de la expansión de la transmisión en Colombia 2026' a la Superservicios. El PDF primario no se halló en superservicios.gov.co. Ojo: los $24,9 billones son el costo total de restricciones, no solo el de obras atrasadas, aunque algunos titulares lo presentan así."
+  },
+  {
+   "id": "criticas-expertos-25",
+   "verdict": "corregido",
+   "claim_final": "En los considerandos de la Res. CREG 101 102 de 2026 (12 de marzo; Diario Oficial 53.433), la CREG recuerda que en algunos periodos de 2023 el precio de escasez fue superior al costo de racionamiento, lo que afectó su función de techo de las compras en bolsa (análisis del Documento CREG 901 122 de 2024). El precio de escasez inferior lo creó la Res. CREG 101 066 de 2024; la Res. 101 102 de 2026 solo reabre la oportunidad de acogerse a él, porque ningún generador de plantas de costo variable bajo se había acogido.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-102_2026.htm",
+   "quote": "La Comisión expidió el Documento CREG 901 122 de 2024 mediante el cual se hizo una propuesta para incluir un precio de escasez para las plantas de costos variables bajos, dado que la función de precio techo a las compras en bolsa se había afectado, dado que el precio de escasez fue superior al costo de racionamiento en algunos períodos de 2023, de conformidad con el análisis de mencionado documento.",
+   "notes": "Mismo texto: \"De acuerdo con la información publicada por el Administrador del Sistema de Intercambios Comerciales (ASIC) ningún agente generador que representa plantas del grupo de plantas con precios variables inferiores se acogió a los menús de corto o largo plazo dispuestos en la Resolución CREG 101 066 de 2024.\" El título oficial dice: 'Por la cual se habilita la oportunidad para acogerse al Precio de Escasez Inferior del Cargo por Confiabilidad.'"
+  },
+  {
+   "id": "criticas-expertos-26",
+   "verdict": "confirmado",
+   "claim_final": "José Camilo Manzur, presidente de Asocodis, dijo a Valora Analitik (7-nov-2024) que la CREG estimó en un documento soporte que el cargo de comercialización bajaría en promedio 45%, y que en la audiencia pública la cifra se rebajó a 32,8%. El 45% está confirmado en fuente primaria: el Documento CREG 901 060 de 2024 (13-abr-2024), soporte del proyecto 701 038 de 2024, estima un impacto de 'cerca del −45,1%' en el componente de comercialización y de −5,3% en el CU. El 32,8% sigue siendo de segunda mano.",
+   "source_url": "https://www.valoraanalitik.com/creg-pondria-en-jaque-a-las-comercializadoras-de-energia-con-reduccion-en-su-remuneracion/",
+   "quote": "“¿Cuáles serían los costos? La CREG nos ha dicho dos valores -que se le restan al costo de remuneración actual que se paga en Colombia por la comercialización de energía-: en un documento que fue adjunto a la propuesta que sacó con el borrador de resolución dijo que, en promedio, en el país, el cargo disminuiría en un 45 %. Pero en la audiencia público que hubo en Bogotá se bajó al 32,8 %”, relató.",
+   "figures_final": "Documento CREG 901 060 de 2024, p. 60: −45,1% en C y −5,3% en el CU (promedio ponderado, base abril de 2023); 32,8% según Manzur",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_038_2024/Documento_CREG_901_060_2024.pdf",
+   "notes": "Cita primaria (p. 60): \"El promedio ponderado de los impactos en el costo unitario para la prestación del servicio de la implementación de la propuesta metodológica es de aproximadamente–5,3%, mientras que el impacto en el componente de comercialización es de cerca del -45,1% como se muestra en la Figura 9.\" La Figura 9 usa mercados anónimos (M01-M27), así que no identifica a CENS. No se verificó una resolución definitiva."
+  },
+  {
+   "id": "criticas-expertos-27",
+   "verdict": "corregido",
+   "claim_final": "En su Documento de Advertencia de septiembre de 2022, enfocado en la región Caribe, la Defensoría del Pueblo (Carlos Camargo Assis) recomendó al Ministerio de Minas, al de Hacienda y a la UPME (no a la CREG) volver a un consumo de subsistencia de 200 kWh/mes para las cabeceras municipales bajo 1.000 msnm. Hoy son 173 kWh, fijados por la Res. UPME 355 de 2004. También pidió considerar tarifas diferenciadas para zonas cálidas. La frase sobre la 'falta de enfoque diferencial' se refiere a las comercializadoras del Caribe.",
+   "source_url": "https://www.defensoria.gov.co/documents/20123/1100367/Doc.+Advertencia+tarifas+energi%CC%81a+ele%CC%81ctrica.pdf/1f1bcccc-c237-422d-625a-51b3b41e2517?t=1666990168572",
+   "source_page": "p. 27 (recomendación 1 y destinatarios), p. 28 (zonas cálidas)",
+   "quote": "se pone en consideración retornar el consumo de subsistencia para las cabeceras municipales con altitud menor a 1.000 metros sobre el nivel del mar –msnm- a la norma anterior donde se aplicaba el subsidio sobre un consumo básico de 200kW/h-mes.",
+   "figures_final": "200 − 173 = 27 kWh/mes adicionales subsidiables",
+   "notes": "Encabezado del texto: \"A los Ministerios de Minas y Energía, Hacienda y Crédito Público y a la Unidad de Planeación Minero Energética -UPME. En atención a que en la Resolución UPME 355 de 2004, se establece el 'Consumo de Subsistencia en 173 kW/h-mes...'\". La recomendación incluye fortalecer el FSSRI. No es vinculante. El documento se dirige a la población del Caribe, pero el criterio de altitud cubre a Cúcuta."
+  },
+  {
+   "id": "criticas-expertos-28",
+   "verdict": "confirmado",
+   "claim_final": "El estudio de CORPOEMA para la UPME (13-dic-2019) reporta que en clima cálido el 39,6% de los usuarios consume en promedio más de 180 kWh/mes. Según la encuesta de la UPME de 2015, los hogares de clima cálido de estratos 1, 2 y 3 consumen 181,64, 217,37 y 259,85 kWh/mes. Cúcuta está clasificada como municipio cálido (<500 msnm). El mismo estudio estima, sin embargo, una necesidad de subsistencia menor: 154,4 kWh en el análisis de equipos y 155,0 kWh (91,0 con equipos eficientes) en la propuesta final.",
+   "source_url": "https://bdigital.upme.gov.co/bitstream/handle/001/1367/2019-12-13%20Informe%20Final%20Subsistencia.pdf?sequence=1&isAllowed=y",
+   "source_page": "p. 75 del PDF (texto), p. 94 (Tabla 39), p. 93 (Tabla 38, Cúcuta), p. 97 (154,4), p. 162 (Tabla 135: 155,0)",
+   "quote": "Para clima cálido el consumo de subsistencia actual es de 173 kWh/mes, la Gráfica 19 permite identificar además, que el 39,6% de los usuarios tienen consumos promedio por encima de 180 kWh/mes, esto podría sugerir que el consumo de subsistencia vigente actual está cubriendo el 100% del consumo del 60% de los hogares.",
+   "figures_final": "E1 181,64 (+8,64; +5,0%); E2 217,37 (+44,37; +25,6%); E3 259,85 (+86,85; +50,2%)",
+   "notes": "El estudio no respalda subir el umbral; muestra que el consumo real promedio supera los 173 kWh. Los datos de consumo por estrato son de 2015."
+  },
+  {
+   "id": "criticas-expertos-29",
+   "verdict": "confirmado",
+   "claim_final": "La ponencia positiva para primer debate del Proyecto de Ley 064 de 2025 Cámara ('Ley de Energía Justa') se publicó en la Gaceta 641 del 4-jun-2026. El autor es el senador Gustavo Moreno y el ponente, el representante José Octavio Cardona León. Sostiene que los usuarios de zonas calurosas reciben el mismo umbral de subsidio que los de climas fríos, y menciona a Norte de Santander como zona de clima cálido seco.",
+   "source_url": "https://www.redjurista.com/Compilaciones2018/gacetasCongreso/2026/gc_0641_2026.pdf",
+   "source_page": "p. 4 de la Gaceta",
+   "quote": "usuarios en zonas de alta temperatura y humedad -donde el consumo energético para refrigeración es imprescindible- reciben el mismo umbral de subsidio que aquellos en climas templados o fríos, donde dicho consumo no es necesario.",
+   "notes": "Misma página: \"Este tipo de clima es común en zonas del interior del país como parte del cesar, Norte de Santander o los Llanos orientales.\" La copia es de RedJurista, un compilador privado; la cabecera remite a www.imprenta.gov.co. El estado actual del trámite no se verificó."
+  },
+  {
+   "id": "criticas-expertos-30",
+   "verdict": "confirmado",
+   "claim_final": "El art. 10 de la Res. CREG 101 120 de 2026 (sesión 1482 del 30-jul-2026) fija un cobro adicional transitorio, asociado a El Niño, sobre el consumo que supere el 110% de la meta: factor 1,30 para estratos 1-3, 1,50 para estratos 4-6 y 1,70 para comercio e industria. En la matriz de comentarios, la CREG rechazó ajustar la meta por el efecto del calor.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_120_2026/Resoluci%C3%B3n_CREG_101_120_2026.pdf",
+   "source_page": "p. 20 del PDF (art. 10); p. 31 (el cobro no forma parte de la tarifa); matriz: hoja 'Comentarios', fila 10 (comentario 9)",
+   "quote": "No se acoge un ajuste de la meta por el efecto climático pasivo sobre el consumo. La meta se calcula como la mediana de los consumos del propio usuario en los doce (12) meses anteriores (artículo 6), que ya incorpora su perfil de consumo, incluidos periodos cálidos previos y el uso de refrigeración. La banda neutral hasta el ciento diez por ciento (110%) de la meta (artículo 10) absorbe las variaciones ordinarias asociadas a la temperatura sin generar cobro, y el cobro se topa al CRO del estrato 4 (artículo 11, parágrafo 3).",
+   "figures_final": "Factores 1,30 / 1,50 / 1,70; CA = (F − 1) × TR × CEC",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_120_2026/ANEXO_MATRIZ_COMENTARIOS_701_131_2026.xlsx",
+   "notes": "El comentario 9 lo radicó Miguel Ángel Ramírez Figueroa (E2026009174), un ciudadano sin afiliación declarada, no un experto. La p. 31 de la resolución dice que el cobro \"no forma parte de su tarifa\" y que su no pago \"no dará lugar a la suspensión del servicio\"."
+  },
+  {
+   "id": "criticas-expertos-31",
+   "verdict": "confirmado",
+   "claim_final": "El Grupo EPM, en nombre de Afinia, CENS, CHEC, EDEQ, ESSA y EPM (radicado E2026009755), pidió a la CREG evaluar el trato a usuarios con consumo estacional. Advirtió que la metodología podía generar cobros adicionales a usuarios cuyo consumo sube por la naturaleza de su actividad, por factores climáticos o por patrones estacionales, sin que haya uso ineficiente. Su propuesta apuntaba sobre todo a clientes comerciales, industriales y agrícolas. La CREG no lo acogió.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_120_2026/ANEXO_MATRIZ_COMENTARIOS_701_131_2026.xlsx",
+   "source_page": "Hoja 'Comentarios', fila 138 (comentario 137); encabezados en la fila 1",
+   "quote": "Se solicita a la Comisión evaluar el tratamiento aplicable a los usuarios con comportamiento de consumo estacional, la metodología propuesta podría generar que usuarios con incrementos normales de consumo asociados a la naturaleza de su actividad, a factores climáticos o a patrones estacionales sean sujetos de cobros adicionales, aun cuando no exista un incremento atribuible a un uso ineficiente de la energía.",
+   "notes": "Respuesta de la CREG: \"No se acoge establecer una causal de exclusión ni un tratamiento diferencial por estacionalidad o por tipo de actividad económica.\" No hay que presentarlo como una petición explícita de ajustar las metas por temperatura; esa petición está en la carta posterior de CENS (hallazgo 32)."
+  },
+  {
+   "id": "criticas-expertos-32",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (31-oct-2026), CENS radicó ante la CREG una solicitud formal firmada por su gerente, José Miguel González Campo. Pide ajustar las metas de consumo por temperatura, clima y actividad económica, excluir a comercio e industria y no cobrar a usuarios sin historial. Argumenta que el 75% de sus usuarios vive cerca del nivel del mar.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "“la coyuntura actual de nuestro territorio requiere una mirada diferencial que permita alcanzar los objetivos de confiabilidad del sistema sin afectar la competitividad regional y la sostenibilidad de las familias más vulnerables y sectores productivos”",
+   "figures_final": "47 municipios; 75% de los usuarios cerca del nivel del mar; desocupación de Norte de Santander 11,3% (cierre de 2025); informalidad de Cúcuta 63%; más de 3.095 usuarios comerciales e industriales con recargos superiores a $200.000 en octubre",
+   "notes": "Fecha visible: 'Sábado, 31 de Octubre de 2026'. Es a la vez crítica a la CREG y defensa de CENS."
+  },
+  {
+   "id": "criticas-expertos-33",
+   "verdict": "confirmado",
+   "claim_final": "Según el gerente de CENS, José Miguel González (Alerta Santanderes, 19-oct-2026), unos 110.000 a 111.000 usuarios superaron el 110% de su meta en septiembre y recibirán cobro adicional en la factura de octubre. Cerca de 10.000 son comercios de Cúcuta. Otros 215.000 quedaron por debajo de la meta.",
+   "source_url": "https://www.alerta.com.co/servicios/norte-de-santander-mas-de-111-mil-usuarios-superaron-meta-de-consumo-de-energia-253124",
+   "quote": "\"215 mil usuarios quedaron por debajo de la meta establecida por la CREG; pero 110 mil superaron el consumo del 110 por ciento; ya tenemos un reto principalmente con el comercio, donde 10 mil usuarios superaron el límite del consumo establecido\", manifestó el gerente de CENS.",
+   "figures_final": "110.000 (cita) frente a 111.000 (titular); 215.000 por debajo de la meta",
+   "notes": "datePublished 2026-10-19. En el trino conviene usar 'unos 110.000', que es la cifra de la cita."
+  },
+  {
+   "id": "criticas-expertos-34",
+   "verdict": "confirmado",
+   "claim_final": "En su evaluación integral de agosto de 2019, la Superservicios atribuyó el salto de la utilidad de CENS en 2018 ($17.653 millones → $42.140 millones) a tres causas: la mayor tarifa de venta, un fallo a favor en la demanda de Chivor y la reducción de pérdidas (indicador de 12,83%).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/ei_centrales_electricas_del_norte_de_santander.pdf",
+   "source_page": "p. 53 de 56 (p. 38: pérdidas previstas de 11,27% para 2025)",
+   "quote": "Para el año 2018 CENS presentó una ganancia de $42.140 millones de pesos superada respecto al año 2017 donde registró una utilidad de $17.653 millones de pesos, estos resultados se presentan por la mayor tarifa de venta a sus clientes, un fallo a favor de la empresa, por la demanda presentada por la Sociedad Chivor S.A. E.S.P., y un plan de recuperación de pérdidas de energía el cual ubico el indicador en 12,83%, mostrando una disminuyó en 0,67%.",
+   "notes": "El dato es de 2018. La tarifa fue una de tres causas y no hay que presentarla como la única. Contrapeso en la misma página: \"CENS es una compañía financieramente viable...\"."
+  },
+  {
+   "id": "criticas-expertos-35",
+   "verdict": "confirmado",
+   "claim_final": "Según el acta del 8-jul-2025 del Concejo de Cúcuta, la concejal Nidia Gimena Camacho expresó preocupación por el aumento significativo de los cobros de energía de CENS (p. 47). El concejal José Leonardo Jácome Carrascal criticó que las utilidades de CENS vayan a Medellín sin inversiones proporcionales en Cúcuta (p. 45). Son paráfrasis de la secretaría, sin soporte técnico.",
+   "source_url": "https://concejocucuta.gov.co/wp-content/uploads/2025/documentos/actas/2025/julio/Acta%208%20julio%202025.pdf",
+   "source_page": "p. 47 (Camacho), p. 45 (Jácome)",
+   "quote": "Finalmente, reiteró su preocupación frente a las altas tarifas en otros servicios públicos, particularmente en lo relacionado con Centrales Eléctricas, cuyos cobros por consumo de energía eléctrica se han incrementado de manera significativa.",
+   "notes": "Verifiqué la atribución: el turno de Jácome Carrascal empieza antes del pasaje sobre CENS (p. 45) y el de Camacho antes del de la p. 47. Úsese solo como contexto político."
+  },
+  {
+   "id": "criticas-expertos-36",
+   "verdict": "confirmado",
+   "claim_final": "La CREG reconoce a la actividad de distribución una tasa de retorno de 12,09% desde 2022 (Res. CREG 016 de 2018, art. 2, modificado por la Res. 215 de 2021). No se halló una crítica atribuible de experto o de un organismo de control a ese valor.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0016_2018.htm",
+   "quote": "En virtud de la aplicación de la metodología aprobada en la Resolución CREG 095 de 2015, el valor de la tasa de retorno de la actividad de distribución de energía eléctrica, para una metodología de ingreso máximo, será de 12,09% a partir del año 2022.",
+   "figures_final": "12,09%",
+   "notes": "Solo es contexto. No se precisó si la tasa es real antes o después de impuestos; no compararla con otras tasas."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "criticas-expertos-v01",
+   "claim": "En los considerandos de su nueva resolución de contratos (2026), la propia CREG admite que persisten fallas de mercado en la contratación de largo plazo que permiten discriminar agentes y limitan la formación competitiva de precios. Cita su análisis ex post de la Res. 130 de 2019 (Documento 901-224 de 2025): prácticas de contratación que facilitan el poder de mercado, convocatorias con baja o nula concurrencia y precios que no se forman en competencia.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-117_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "who": "CREG",
+   "source_outlet": "CREG, Gestor Normativo; Diario Oficial No. 53.554 del 15-jul-2026",
+   "source_title": "Resolución CREG 101 117 de 2026 (9 de julio), considerandos",
+   "source_date": "2026-07-09",
+   "quote": "No obstante, la experiencia de aplicación de la Resolución CREG 130 de 2019 y los análisis adelantados por la CREG han mostrado que persisten fallas de mercado en la contratación de largo plazo que permiten la discriminación de agentes, limitan la formación competitiva de precios y dificultan la profundización de la cobertura de la demanda regulada frente a la volatilidad de la bolsa de energía.",
+   "notes": "Otra cita del mismo texto, tomada del Documento 901-224 de 2025: \"(…) la persistencia de prácticas de contratación individualizadas que facilitan el ejercicio de poder de mercado, convocatorias públicas con baja o nula concurrencia de oferentes y con formaciones de precios que no se dan en condiciones de competencia\". Es una crítica del regulador, de 2026, al mercado de contratos del que depende el G de CENS. No menciona a CENS."
+  },
+  {
+   "id": "criticas-expertos-v02",
+   "claim": "La Res. 130 de 2019, con su tope de compras propias de 10% desde 2027, quedará derogada cuando el SICEP transaccional entre en operación, con plazo hasta el 31-dic-2026. Desde entonces regirá el tope de 20% de la Res. 101 117 de 2026, sin senda de reducción, así que el 10% previsto nunca llegará a aplicarse.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-117_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "who": "CREG",
+   "source_title": "Resolución CREG 101 117 de 2026, arts. 64.3 y 66",
+   "source_date": "2026-07-09",
+   "quote": "64.3. Operación transaccional plena de convocatorias de compra y venta, incluida la fase de pruebas y validación previa de la parametrización: a más tardar el 31 de diciembre de 2026.",
+   "notes": "Art. 66: \"a partir del día de la entrada en operación del SICEP con las funcionalidades previstas en esta resolución, informada mediante la Circular prevista en el artículo 63, se entenderá que queda derogada la Resolución CREG 130 de 2019.\" Si el plazo se incumple, la Res. 130 seguiría vigente."
+  },
+  {
+   "id": "criticas-expertos-v03",
+   "claim": "Fuente primaria de la cifra de comercialización: el documento soporte de la CREG para la nueva metodología estimó que el componente de comercialización bajaría cerca de 45,1% y el CU cerca de 5,3%. La CREG también se fijó como meta que el peso de la comercialización sin opción tarifaria baje de 12% a menos de 10% del CU. Con datos del 1T-2026, el C de CENS sin opción tarifaria fue unos 110,01 $/kWh, el 12,3% de su CU.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_038_2024/Documento_CREG_901_060_2024.pdf",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "who": "CREG",
+   "source_title": "Documento CREG-901 060 de 2024: Remuneración de la actividad de comercialización de energía eléctrica a usuarios regulados (sesión 1308)",
+   "source_date": "2024-04-13",
+   "source_page": "p. 60 (texto, Figura 9 y Tabla 18)",
+   "quote": "El promedio ponderado de los impactos en el costo unitario para la prestación del servicio de la implementación de la propuesta metodológica es de aproximadamente–5,3%, mientras que el impacto en el componente de comercialización es de cerca del -45,1% como se muestra en la Figura 9.",
+   "figures": "−45,1% en C; −5,3% en el CU (base abril de 2023). Meta de la Tabla 18: peso de C sin opción tarifaria de 12% a <10%. CENS 1T-2026: (147,04 − 37,03)/892,24 = 12,3% (cálculo propio con datos de la Superservicios)",
+   "notes": "La Figura 9 usa mercados anónimos (M01-M27), así que no se puede atribuir el impacto a CENS. Es un proyecto (701 038 de 2024); no se verificó si hay metodología definitiva. El 12,3% de CENS es un cálculo nuestro que combina promedios trimestrales."
+  },
+  {
+   "id": "criticas-expertos-v04",
+   "claim": "El CU propio de CENS en el 1T-2026, medido como la tarifa de estrato 4, fue 892,24 $/kWh. Es 8,85% más que el promedio de los comercializadores integrados (819,70), y la generación pesa 32,8% de ese CU.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "who": "Superservicios, Dirección Técnica de Gestión de Energía",
+   "source_title": "Boletín Tarifario de Energía Eléctrica, Primer Trimestre 2026 (julio de 2026)",
+   "source_date": "2026-07",
+   "source_page": "p. 100 (Tabla 47), p. 99 (texto), p. 20 (Tabla 10), p. 30 (Tabla 17)",
+   "quote": "CENS 892,24",
+   "figures": "892,24/819,70 − 1 = 8,85%; 292,42/892,24 = 32,77%. Tarifas promedio de CENS en el 1T-2026 (Tabla 46, p. 98): E1 428,98; E2 536,22; E3 758,41 $/kWh",
+   "notes": "Sustituye el 851,07 del hallazgo 02, que es un promedio simple de todos los agentes del mercado. El 819,70 es el 'Promedio CU' de los comercializadores integrados (C-OR) en la Tabla 10, que la Tabla 14 rotula como 'CU promedio nacional'."
+  },
+  {
+   "id": "criticas-expertos-v05",
+   "claim": "Cobertura de CENS con contratos en el 1T-2026, según las gráficas de la Superservicios: unos 62% en enero (bolsa ~38%, por encima del promedio nacional de 20,71%), unos 87% en febrero y unos 92% en marzo. CENS compra mayoritariamente por contratos, pero tuvo una exposición alta a bolsa en enero.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_type": "primario-control",
+   "confidence": "media",
+   "who": "Superservicios",
+   "source_title": "Boletín Tarifario I-2026, figuras 17, 19 y 21 (Qc frente a Qb por comercializador)",
+   "source_date": "2026-07",
+   "source_page": "p. 52 (enero), p. 54 (febrero), p. 56 (marzo)",
+   "quote": "Durante enero de 2026, la demanda comercial regulada fue atendida en promedio mediante 79,29% de energía contratada (Qc) y 20,71% de compras en bolsa (Qb)",
+   "figures": "CENS, leído de las barras: Qc ~62% (enero), ~87% (febrero), ~92% (marzo)",
+   "notes": "La confianza es media porque los porcentajes de CENS se leen a ojo de gráficos de barras; el boletín no da la cifra en texto. La captura debe ser el gráfico. Sirve tanto para desmentir que CENS 'se transa en la bolsa' como para que CENS muestre exposición a bolsa en enero."
+  },
+  {
+   "id": "criticas-expertos-v06",
+   "claim": "Contrapeso: la Superservicios encontró que en el 1T-2026 los costos de contratación de CENS estuvieron alineados con el promedio de los contratos bilaterales del mercado, con una diferencia inferior a 5 $/kWh entre el G de contratos y el G de referencia.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "who": "Superservicios",
+   "source_title": "Boletín Tarifario I-2026, Figura 13 (G de contratos frente a G de referencia)",
+   "source_date": "2026-07",
+   "source_page": "p. 47",
+   "quote": "Por otra parte, comercializadores como EDEQ, DISPAC, EEBP, ELECTROCAQUETÁ, EMSA y CENS registran diferencias inferiores a 5 $/kWh entre ambas variables, evidenciando una alta alineación entre los costos de contratación reportados y el costo promedio de los contratos bilaterales del mercado.",
+   "notes": "Es una defensa de CENS que debe aparecer si se usa el ángulo de los contratos con vinculados. No contradice la crítica de la CREG al mercado de contratos en su conjunto (v01)."
+  },
+  {
+   "id": "criticas-expertos-v07",
+   "claim": "El arreglo de la CREG al precio de escasez no funcionó en la práctica. El precio de escasez inferior, creado por la Res. 101 066 de 2024, era voluntario, y ningún generador de plantas de costo variable bajo se acogió a él. En 2026 la CREG tuvo que reabrir la ventana.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-102_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "who": "CREG",
+   "source_title": "Resolución CREG 101 102 de 2026 (12 de marzo), considerandos",
+   "source_date": "2026-03-12",
+   "quote": "De acuerdo con la información publicada por el Administrador del Sistema de Intercambios Comerciales (ASIC) ningún agente generador que representa plantas del grupo de plantas con precios variables inferiores se acogió a los menús de corto o largo plazo dispuestos en la Resolución CREG 101 066 de 2024.",
+   "notes": "La reapertura se hizo a pedido de GECELCA y URRA, según la misma resolución. No se verificó si alguien se acogió después de marzo de 2026."
+  },
+  {
+   "id": "criticas-expertos-v08",
+   "claim": "El Documento CREG 701 007 de 2023 soporta un proyecto de resolución sometido a consulta (Res. CREG 701 008 de 2023, sesión 1250 del 13-mar-2023). No se encontró que la CREG haya expedido las reglas generales de integración vertical como resolución definitiva.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_701-8_2023.htm",
+   "source_type": "primario-regulador",
+   "confidence": "media",
+   "who": "CREG",
+   "source_title": "Resolución CREG 701 008 de 2023 (13 de marzo), proyecto de resolución",
+   "source_date": "2023-03-13",
+   "quote": "La Comisión de Regulación de Energía y Gas, en su sesión No. 1250 del 13 de marzo de 2023, aprobó someter a consulta pública el presente proyecto de resolución por el término de dos (2) meses contados a partir del día siguiente a su publicación en el portal web de la CREG.",
+   "notes": "La confianza es media porque la ausencia de una resolución definitiva no se pudo confirmar en forma exhaustiva. En el hilo, la cita del Documento 701 007 debe presentarse como 'diagnóstico/propuesta de la CREG', no como norma."
+  }
+ ],
+ "cautions": [
+  "No usar 851,07 $/kWh como 'el CU de CENS': es el promedio simple de todos los comercializadores del mercado Norte de Santander. El CU propio de CENS en el 1T-2026 fue 892,24 $/kWh (tarifa de estrato 4, Tabla 47, p. 100). La generación pesa 32,8% de ese CU y CENS queda 8,85% sobre el promedio de los comercializadores integrados.",
+  "El 70% de compras a vinculados en 2020 empata con ESSA; no es 'el más alto'. Tampoco fue ilegal: el límite de la Res. 130 de 2019 solo aplica a contratos nuevos de convocatorias, y los contratos previos quedaron protegidos (art. 20.2). Decir que CENS 'violó' la norma sería falso y desmentible.",
+  "Los datos de contratos (83% en 2019; 70% con vinculados en 2020) tienen más de cinco años. En enero de 2026, CENS cubrió unos 62% con contratos y unos 38% en bolsa, por encima del promedio nacional (lectura de gráficas, aproximada); en febrero y marzo, 87-92% en contratos. Hay que fechar cada cifra.",
+  "Contrapesos que CENS puede usar: la Superservicios encontró que sus costos de contratación están alineados con el mercado (diferencia inferior a 5 $/kWh, I-2026, p. 47), que su precio de compra estuvo bajo el promedio en abril de 2025 (II-2025, p. 34 impresa) y que su cargo propio de distribución es bajo. Un G alto (417,77 en el 2T-2025) no prueba sobrecosto contractual.",
+  "Las críticas de la CREG a la integración vertical (Documento 701 007 de 2023, Res. 130 de 2019, Res. 101 117 de 2026) y de la Misión de Transformación Energética son generales y no mencionan a CENS. El Documento 701 007 aclara que identificar un conflicto 'no implica que dicho conflicto haya efectivamente ocurrido'. Además, ese documento soporta un proyecto (701 008 de 2023), no una norma vigente.",
+  "Sobre el cargo de distribución: el exceso de 27,31 $/kWh lo impone una regla regulatoria (Decreto 388 de 2007 del MinMinas y Res. CREG 058 de 2008), no una decisión de CENS, que no retiene ese dinero. Va sobre todo a filiales del Grupo EPM (CHEC, EDEQ, ESSA) y a Ruitoque. CENS misma pidió revisar el esquema. El argumento de Palma ('lo público subsidia a lo privado') no encaja tal cual.",
+  "El documento del Ministerio de Minas tiene erratas visibles en la captura ('EPP'; 'inferiores' por 'superiores'), y sus cifras salen de un estudio de Celsia no obtenido. El boletín III-2025 es internamente inconsistente. Para la captura conviene usar el boletín II-2025, p. 56 impresa.",
+  "Paginación: en los boletines II-2025 y III-2025 de la Superservicios, la página impresa ('Página N de 115') es la del PDF menos 1. Se cita la impresa, pero el recorte debe mostrar el número visible. En los boletines I-2026 y en los documentos de la CREG coinciden.",
+  "Los 173 kWh de subsistencia los fija la UPME (Res. 355 de 2004), no la CREG. La Defensoría dirigió su recomendación de 200 kWh a MinMinas, MinHacienda y la UPME, en un documento sobre el Caribe. El estudio de la UPME (CORPOEMA) estimó una necesidad de subsistencia de unos 155 kWh en clima cálido, así que no respalda subir el umbral.",
+  "El cobro adicional de la Res. CREG 101 120 de 2026 no es tarifa: es transitorio, su no pago no permite suspender el servicio y está topado al costo de racionamiento del estrato 4. No hay que presentarlo como un 'aumento de tarifa'. El comentario de la fila 10 de la matriz es de un ciudadano, no de un experto.",
+  "El Grupo EPM (fila 138) pidió un trato para usuarios estacionales (comerciales, industriales, agrícolas), mencionando de paso los factores climáticos. La petición explícita de ajustar metas por temperatura es la carta de CENS que reporta La Opinión (31-oct-2026). Cifra de usuarios con cobro: la cita del gerente dice 110.000; el titular, 111.000.",
+  "Los $24,9 billones (2022-2025) son el costo total de restricciones según la Superservicios, que se conoce por la columna de Acosta y por prensa del 6-ago-2026; el PDF primario no se halló. No todo ese monto corresponde a 'obras atrasadas', aunque así lo titularon algunos medios. Los 'casi 200 pesos por kilovatio' de opción tarifaria que dijo Acosta son una cifra nacional sin verificar; en CENS el cargo fue de 37 a 51 $/kWh.",
+  "Contraloría: La República atribuye los $3,4 billones a 'subsidios' en el subtítulo y a la opción tarifaria en el cuerpo. Usar solo la cita textual de la Contraloría.",
+  "Cabrales habla de subsidios de 60% y 50%, que son topes legales; CENS aplicó 52,24% y 40,31% en enero de 2026. Su desglose de componentes (D 40%, etc.) es nacional y genérico, no de CENS.",
+  "Comercialización: el −45,1% es la estimación de la CREG para un proyecto de 2024 con base en abril de 2023, sobre mercados anónimos. No se sabe el impacto en CENS ni si la metodología es definitiva. El 32,8% llega solo a través de Asocodis, gremio que se opone a la reducción.",
+  "La 'flexibilización' del tope de compras propias, de 10% a 20%, es una inferencia nuestra al comparar los textos; no se revisó la justificación de la CREG (Documento CREG 901 360 de 2026). Ambos topes aplican solo a contratos de convocatorias públicas: los mecanismos anónimos y las subastas del MME quedan fuera.",
+  "La copia de la Gaceta 641 de 2026 es de RedJurista, un compilador privado; conviene recortar también desde la Imprenta Nacional. Las actas del Concejo son paráfrasis sin soporte técnico.",
+  "Ninguna cifra mezcla bien periodos: la Tabla 1 del frente combina el diferencial del 2T-2025 con los subsidios de enero de 2026. Si se publica, hay que rotularla como 'ilustrativa'."
+ ]
+}

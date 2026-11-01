@@ -1,0 +1,455 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL DEL FRENTE SUPERINTENDENCIAS Y CONTROL (corte 31-oct-2026). Reabrí con curl y pdftotext casi todas las fuentes primarias: la Superservicios, la CREG, la Contraloría Distrital de Medellín, CENS, la Rama Judicial y el Senado. Los boletines de la SSPD también se descargaron sin problema; el de 1T-2025 tuvo que reintentarse por Incapsula. La prensa la reabrí con WebFetch o curl. Las copias quedaron en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-superintendencias-control/.\n\nRESULTADO: 25 confirmados, 6 corregidos, 0 refutados y 0 no verificables.\n\nLO CENTRAL SE SOSTIENE: (a) Evaluación de la Gestión 2024 de la SSPD (PDF del 30-sep-2025): CENS registra 36,69 reclamos de facturación por cada 10.000 facturas, frente a un referente de ≤22,49, y sale NO CUMPLE. También incumple en atención de reclamos (1,23% frente a ≤0,55%) y en conexión (0,86% frente a ≤0,44%). A nivel nacional, 27 de 64 prestadores incumplen, según la tabla resumen del propio documento. (b) La CREG 034/2004 define que ese indicador cuenta 'únicamente los reclamos resueltos a favor del suscriptor'. (c) Inspección especial de la vigencia 2022 (PDF del 6-sep-2023, 162 páginas): las citas sobre el error del CU en comercialización, el factor M de la energía reactiva, el saldo de opción tarifaria de 102,85 mil millones, la frase 'no afectó directamente a los usuarios' y la de que no hubo 'conducta que vaya en perjuicio de los usuarios' son textuales. (d) Las cifras de los boletines tarifarios (G 417,77; C +11,56%; COT 51,25 y 37,03; CU de Norte de Santander entre 2% y 4% sobre el promedio nacional) son exactas. (e) Contraloría Distrital de Medellín: fenecimientos de 2023 y 2024 y opinión limpia sobre 2025. La salvedad de $674.841.154 aparece tal cual. KPMG tampoco encontró aspectos relevantes. (f) Las citas de la CREG 101 120 de 2026 y de los arts. 154-158 de la Ley 142 son textuales. (g) Decreto 1583 del 21-oct-2026: García Puche.\n\nCORRECCIONES: (1) La Res. SSPD 20242400603295 sancionó a VATIA con AMONESTACIÓN, no con multa. El caso es la frontera del CC Jardín Plaza Cúcuta, donde CENS actuó como operador de red. (2) La multa de 2020 a CENS ($1.106.024.634) aparece en El Tiempo 'en recurso de reposición' y dentro de un balance enero-mayo 2020. CEDENAR figura con exactamente el mismo monto, lo que puede ser un error del medio. (3) Las 51 sanciones por $10.697.102.139 del informe de gestión SSPD 2025 son de acueducto, alcantarillado y aseo. En energía eléctrica hubo 8 pliegos de cargos y 9 sanciones (Tabla 3); las multas en firme de energía y gas suman $22.419.873.333. Ninguna menciona a CENS. (4) La cita de 'Qc=0%/Qb=100%' sale del boletín II-2025 y se refiere a mayo de 2025. El boletín III-2025 trata julio y agosto, con Pc=0, y septiembre de 2025, cuando CENS llega a 60,68% en contratos y su Pc queda 1,71 por debajo del Mc 'tras no reportar información en los meses anteriores'. (5) El T9 de septiembre de 2022 sí se certificó, el 24-oct-2022. Lo de 'no reporte desde septiembre de 2022' es la redacción del requerimiento de la SSPD; el certificado tarde fue el T9 de octubre a diciembre de 2022, en junio de 2023. (6) La República (may-2026) sí menciona 'filiales', pero solo al recordar la petición de Minminas de 2025; no las incluye en la inspección de 2026.\n\nHALLAZGOS NUEVOS QUE IMPORTAN PARA EL HILO: (i) El art. 155 de la Ley 142 exige que, para recurrir, el usuario acredite el pago de lo no reclamado o del promedio de los últimos cinco periodos. No se puede decir 'no pague'. (ii) Según la CREG 101 120, art. 20, el cobro adicional sigue siendo exigible y la obligación no se extingue, aunque no pagarlo no permite cortar el servicio. (iii) La CREG 101 126 de 2026 (art. 3) excluye del programa a los municipios que la UNGRD identifique como afectados por el sismo del 10-ago-2026, con refacturación y devolución. La prensa reporta afectaciones en Cúcuta, Chinácota, Lourdes y Silos. Hay que verificar si algún municipio de CENS quedó excluido antes de hablar de los 111.000 cobros. (iv) La propia SSPD recomienda actualizar los conceptos de la CREG 072/2002, de modo que la metodología del indicador es antigua. (v) El gerente de CENS que aparece en las comunicaciones de la Contraloría es José Miguel González Campo.\n\nBALANCE: la evidencia de control respalda un trino sobre deficiencias de servicio y facturación (reclamos ganados por usuarios, demoras, errores en la inspección de 2022). No respalda ninguna tesis de ilegalidad o 'enriquecimiento' declarada por un órgano de control: la SSPD descartó perjuicio a los usuarios, la Contraloría da opinión limpia y el CU apenas supera el promedio nacional.",
+ "verified": [
+  {
+   "id": "superintendencias-control-01",
+   "verdict": "confirmado",
+   "claim_final": "En su Evaluación de la Gestión Año 2024 (información SUI de 2024; PDF creado el 30-sep-2025), la Superservicios registró para CENS 36,69 reclamos de facturación por cada 10.000 facturas, frente a un referente de grupo de ≤22,49: NO CUMPLE. También salió NO CUMPLE en Atención Reclamos Servicio (1,23%; ref. ≤0,55%) y en Atención Solicitud de Conexión (0,86%; ref. ≤0,44%), y CUMPLE en suscriptores sin medición (0,73%; ref. <5%). A nivel nacional, 27 de 64 prestadores incumplieron el referente de reclamos.",
+   "figures_final": "CENS 36,69 (ref. ≤22,49). Pares del grupo comercialización-distribución-generación-transmisión: EBSA 3,79; EPM 21,79 (cumple); ESSA 25,79; Celsia 30,82; CHEC 57,60. Tabla resumen: reclamos facturación, 37 cumplen y 27 no (64 evaluados); atención reclamos y conexión, 45 cumplen y 19 no cada uno. Financieros de CENS: razón corriente 1,36 (ref. ≥3,24, No cumple); rotación de cartera 135,60 días (ref. ≤46,94, No cumple); margen operacional 23,25 'Cumple' frente a ref. ≥30,38% (toda la columna dice 'Cumple', posible error del documento); cubrimiento de gastos financieros 4,14 (No cumple). SAIDI 0,87 y SAIFI 0,70: CUMPLE.",
+   "quote": "CENTRALES ELECTRICAS DEL NORTE DE SANTANDER S.A. ESP 0,73% CUMPLE 36,69 NO CUMPLE 1,23% NO CUMPLE 0,86% NO CUMPLE",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/2025-09/Indicadores-de-gestion-energia-electrica-ano-2024-v3.pdf",
+   "notes": "Descargado de nuevo con curl (754.758 bytes, idéntico al del investigador). Aprobó: Omar Camilo López López, Superintendente Delegado para Energía y Gas. Revisó: Héctor Suárez Bernal (DTGE). El documento dice que 'se utilizaron los referentes calculados con la información (...) del año 2024'. En recomendaciones, la propia SSPD pide 'Actualizar los conceptos de la Resolución 072 de 2002'. CENS es el 5.º de 6 de su grupo; CHEC está peor."
+  },
+  {
+   "id": "superintendencias-control-02",
+   "verdict": "confirmado",
+   "claim_final": "Según el numeral 2.3 del Anexo 1 de la Res. CREG 034/2004, que sustituyó el de la CREG 072/2002, el indicador 'Relación Reclamos Facturación (por 10.000 facturas)' cuenta para los comercializadores 'únicamente los reclamos resueltos a favor del suscriptor'. Por definición regulatoria, el 36,69 de CENS en 2024 corresponde a reclamos de facturación resueltos a favor del usuario.",
+   "figures_final": "Denominador: 10.000 facturas (CREG 072/2002, lista de indicadores, 2.3). 36,69 por 10.000 equivale a cerca de 0,37% de las facturas.",
+   "quote": "2.3 Relación Reclamos Facturación (por 10,000) Se contabilizan únicamente los reclamos resueltos a favor del suscriptor, para el caso de los comercializadores, o a favor de quien presenta el reclamo, si se trata de las otras actividades de la cadena.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0034_2004.htm",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0072_2002.htm",
+   "notes": "El texto de la CREG 072 compilado registra que el numeral fue 'sustituido por el Anexo 1 de la Resolución 34 de 2004'. Ojo: la SSPD no publica ni el numerador ni el denominador de CENS. Que el 36,69 sea de reclamos 'ganados' es una inferencia correcta a partir de la definición regulatoria, no algo que diga expresamente el documento de la SSPD. No se sabe si cuenta los reclamos a los que se accedió solo parcialmente."
+  },
+  {
+   "id": "superintendencias-control-03",
+   "verdict": "confirmado",
+   "claim_final": "En la evaluación anterior (documento 'año 2024' v2, PDF del 7-oct-2024, que según su texto usó referentes calculados con información de 2023), CENS salió NO CUMPLE: 33,13 reclamos de facturación por 10.000 (referente ≤33,13), atención reclamos 1,51% (ref. ≤0,26%) y conexión 1,04% (ref. ≤0,26%). Sin medición, 0,44%: CUMPLE. En calidad de la vigencia 2023, SAIDI 0,98 y SAIFI 0,77: CUMPLE.",
+   "figures_final": "33,13 (ref. ≤33,13); 1,51%; 1,04%; 0,44%; SAIDI 0,98; SAIFI 0,77 (vigencia 2023).",
+   "quote": "CENTRALES ELECTRICAS DEL NORTE DE SANTANDER S.A. ESP 0,44% CUMPLE 33,13 NO CUMPLE 1,51% NO CUMPLE 1,04% NO CUMPLE",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Indicadores-de-gestion-energia-electrica-ano-2024-v2.pdf",
+   "notes": "Confirmadas las inconsistencias. CENS está sola en el grupo 'Comercialización-Distribución-Transmisión', así que el referente es su propio valor y aun así figura NO CUMPLE. El texto dice: 'Para evaluar la gestión del año 2024, se utilizaron los referentes calculados con la información (...) del año 2023'. Aprobó Sandra Milena Téllez Gutiérrez. Por estas rarezas, el 33,13 no conviene usarlo en el hilo; el 36,69 de la v3 es más sólido."
+  },
+  {
+   "id": "superintendencias-control-04",
+   "verdict": "confirmado",
+   "claim_final": "La inspección especial de la SSPD a CENS (vigencia 2022; visita del 14 al 16 de junio de 2023; PDF de 162 páginas creado el 6-sep-2023) marca NO CUMPLE en 'Errores en el cálculo de los componentes del Costo Unitario de Prestación del Servicio (CU) que afectaron la opción tarifaria (Componente de Comercialización)'. CENS incluyó en el cálculo garantías financieras declaradas tarde que no podía recuperar. La SSPD le pidió recalcular y aclaró que el impacto no afectó directamente a los usuarios, sino a los saldos de la opción tarifaria.",
+   "figures_final": "Sin monto cuantificado. Compromiso: 'realizar los cálculos del impacto y los ajustes que debe realizar por el reporte extemporáneo de las garantías financieras ante el SUI' (Tabla 57).",
+   "quote": "se solicitó a la empresa realizar el recalculo del componente de Comercialización y evaluar el posible impacto generado al haber incluido en los cálculos garantías financieras que no era posible recuperar por lo anteriormente expuesto. Es preciso aclarar que este impacto no afectó directamente a los usuarios, debido a que la empresa se encuentra aplicando la metodología de Opción Tarifaria, por lo cual el impacto se generó en los saldos acumulados.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "Descargado de nuevo con curl (3.508.282 bytes). El rótulo exacto en la Tabla 57 dice 'Costo Unitario de Prestación del Servicio (CU)', no solo 'CU'. La fecha sale de los metadatos del PDF; el informe no trae fecha en el texto."
+  },
+  {
+   "id": "superintendencias-control-05",
+   "verdict": "confirmado",
+   "claim_final": "La misma inspección marcó NO CUMPLE en 'Facturación energía reactiva - Aplicación del factor multiplicador M'. Tras reiniciar M a 1, CENS lo subía a 2 sin esperar los 12 meses que exige la regla. La SSPD ordenó corregir la facturación a esos usuarios.",
+   "figures_final": "Sin número de usuarios ni montos.",
+   "quote": "El procedimiento que realiza la empresa da cuenta de que, luego del reinicio a 1 del factor multiplicador, al presentarse nuevamente la condición de exceso de transporte de energía reactiva, el factor M incrementa a 2 sin que antes transcurran 12 meses.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "Acción correctiva textual: 'La empresa debe realizar las respectivas correcciones y adecuaciones para la correcta facturación a los usuarios a los cuales les aplica el factor multiplicador M.' No hay información pública sobre devoluciones. Afecta sobre todo a usuarios con cobro de reactiva, típicamente no residenciales."
+  },
+  {
+   "id": "superintendencias-control-06",
+   "verdict": "confirmado",
+   "claim_final": "Según la SSPD, CENS aplica la opción tarifaria desde febrero de 2020 y cerró 2022 con saldos acumulados por encima de $100 mil millones ($102,85 mil millones en diciembre de 2022), que aún no empezaba a recuperar. La opción 'implica un incremento progresivo en los cobros realizados al usuario'. En 2022, el CU de la opción tarifaria pasó de 642,13 a 774,82 $/kWh (nivel de tensión 1).",
+   "figures_final": "SA (miles de millones): ene-22 46,96; mar 61,98; jun 83,06; ago 95,32; oct 99,77; dic 102,85. CUv: ene 703,77; ago 850,29; dic 785,34. CU OT: ene 642,13; jun 715,40; ago 781,08; dic 774,82 $/kWh. En diciembre de 2022, el CU OT seguía 1,34% por debajo del CU general.",
+   "quote": "la opción tarifaria debe aplicarse hasta que se recupere el valor financiado que dejó de percibir, lo que implica un incremento progresivo en los cobros realizados al usuario. Desde el mes de febrero del 2020, CENS entró en opción tarifaria. (...) CENS cerró el año con saldos acumulados superiores a los $100 mil millones de pesos. Sin embargo, se observa que hasta diciembre de 2022 la empresa aún no había comenzado a recuperar dichos saldos",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "Cifras de la Figura 26 verificadas en el texto. Son a la vez argumento de CENS (costo diferido) y del usuario (lo paga después vía COT)."
+  },
+  {
+   "id": "superintendencias-control-07",
+   "verdict": "confirmado",
+   "claim_final": "Conclusiones de la inspección de 2022. Comerciales: la DTGE no evidenció conductas de CENS en perjuicio de los usuarios. Técnicas: en 2022 los usuarios percibieron una calidad de servicio disminuida respecto de 2020 y 2021. Por fallas en los soportes de exclusión de eventos, los indicadores de interrupciones 'podrían estar subdimensionados'.",
+   "figures_final": "Incumplimientos DIU>360 h: 15.871 (2019), 24.613 (2020), 26.623 (2021), 27.459 (2022, +3,14%). Usuarios afectados: 3.396; 4.720; 4.494; 5.005 (2022, +11,37%; 0,85% del mercado). Condensador Belén 02: 3.901,26 HC; CENS fue el transmisor nacional con más horas compensadas en el STN en 2022.",
+   "quote": "no se evidencia por parte de la DTGE, alguna conducta que vaya en perjuicio de los usuarios y/o de otros comercializadores (...) los usuarios del servicio de energía eléctrica del mercado de comercialización de CENS SA ESP percibieron durante el año 2022, una calidad del servicio disminuida respecto a los años 2020 y 2021",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "Páginas 159-160 del informe. Tabla 37 verificada."
+  },
+  {
+   "id": "superintendencias-control-08",
+   "verdict": "corregido",
+   "claim_final": "La inspección de 2022 marcó NO CUMPLE en reportes de información tarifaria al SUI. CENS certificó los formatos T9 (variables del CU) de octubre, noviembre y diciembre de 2022 el 12, 12 y 14 de junio de 2023; el de septiembre de 2022 sí se había certificado el 24-oct-2022. Mediante el radicado 20232232051441 del 14-jun-2023, la SSPD pidió a CENS las razones del 'no reporte' de los formatos T7 y T9 'a partir de septiembre del año 2022 hasta la fecha'. CENS lo atribuyó a un ciberataque y la SSPD respondió que la empresa debe poder resolver esos imprevistos sin afectar la oportunidad de los reportes.",
+   "figures_final": "T9 oct-22 certificado el 12-jun-2023; nov-22 el 12-jun-2023; dic-22 el 14-jun-2023; sep-22 el 24-oct-2022. Respuesta de CENS: radicado 20235292290882 del 26-jun-2023.",
+   "quote": "La empresa justificó lo sucedido en el ataque cibernético del cual fueron víctimas, pero como ya se mencionó anteriormente, la empresa debe estar en condiciones de resolver estos imprevistos sin generar impacto en los reportes de información de manera oportuna.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "La corrección es menor: la Tabla 27 muestra el T9 de septiembre de 2022 certificado en octubre de 2022, así que 'no reportó desde septiembre' es la redacción del requerimiento de la SSPD, no un hecho para el T9 de ese mes. La Tabla 57 también marca NO CUMPLE en remisión de cálculos del CU, en varios formatos FSSRI/FOES y en el art. 19 del Código de Medida."
+  },
+  {
+   "id": "superintendencias-control-09",
+   "verdict": "confirmado",
+   "claim_final": "Con datos SUI-XBRL, la SSPD reporta para CENS ingresos ordinarios de $1.226.327 millones en 2022 (+25,2% frente a $979.412 millones en 2021) y utilidad neta de $131.200 millones (+22,5% frente a $107.107 millones).",
+   "figures_final": "Ingresos: $1.226.327 millones (2022) y $979.412 millones (2021). Utilidad: $131.200 millones y $107.107 millones. Deuda/activos: 62,82% (64,38% en 2021). Aumento de cuentas por cobrar por subsidios: $54.835 millones.",
+   "quote": "El prestador ha mantenido un crecimiento significativo tanto en sus ingresos como en sus ganancias en las últimas dos vigencias, con una variación del 25,2% en los ingresos de actividades ordinarias y del 22,5% en la utilidad neta, entre los años 2021 y 2022.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "La misma sección dice que la deuda 'no genera una alerta de riesgo financiero'."
+  },
+  {
+   "id": "superintendencias-control-10",
+   "verdict": "confirmado",
+   "claim_final": "En la Evaluación Integral de CENS (análisis 2018; 'Bogotá, agosto de 2019'), la SSPD dejó constancia de que no se formuló pliego de cargos ni solicitud de investigación. Atribuyó la utilidad de 2018 ($42.140 millones, frente a $17.653 millones en 2017) a la mayor tarifa de venta a los clientes, a un fallo a favor en la demanda de Chivor y al plan de reducción de pérdidas (12,83%).",
+   "figures_final": "Utilidad 2018: $42.140 millones; 2017: $17.653 millones. Pérdidas: 12,83%. Clientes: 519.533. Cargues SUI: 87% fuera de término (294) y 13% oportunos (45). Ingresos 2018: $688.659 millones (+$72.666 millones), según cita de la empresa.",
+   "quote": "Para el período evaluado la empresa no se le formuló pliego de cargos o solicitud de investigación. (...) Para el año 2018 CENS presentó una ganancia de $42.140 millones de pesos superada respecto al año 2017 donde registró una utilidad de $17.653 millones de pesos, estos resultados se presentan por la mayor tarifa de venta a sus clientes, un fallo a favor de la empresa, por la demanda presentada por la Sociedad Chivor S.A. E.S.P., y un plan de recuperación de pérdidas",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/ei_centrales_electricas_del_norte_de_santander.pdf",
+   "notes": "El texto fecha el informe en 'agosto de 2019'; los metadatos del PDF dicen 7-nov-2019. Sobre los subsidios: 'se están girando aproximadamente cada 6 meses'. Que el 70% del mercado esté en estratos 1, 2 y 3 también está confirmado."
+  },
+  {
+   "id": "superintendencias-control-11",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (18-abr-2020), la Superservicios 'dejó sin piso' la petición del senador Juan Carlos García. Concluyó que no identificó que CENS hubiera aplicado de forma incorrecta la metodología tarifaria de la CREG y atribuyó el alza de febrero de 2020 ($57,6/kWh) 'en gran medida al cambio en el componente de generación'.",
+   "figures_final": "Alza de febrero de 2020: $57,6/kWh. Variación esperada con la opción tarifaria: 1% respecto de febrero. Opción tarifaria de la CREG 012/2020, adoptada por CENS para las tarifas publicadas en marzo de 2020.",
+   "quote": "no identificó que Cens haya aplicado de forma incorrecta la metodología tarifaria definida por la CREG, por lo cual no se evidencian motivos para iniciar una actuación administrativa.",
+   "source_url": "https://laopinion.co/economia/congelada-tarifa-de-energia-por-cuatro-meses-cens-toma-medidas",
+   "notes": "Reabierto con WebFetch: sábado 18-abr-2020. Es prensa que cita una comunicación de la SSPD que no se ha visto. No reabrí la fuente secundaria de Área Cúcuta."
+  },
+  {
+   "id": "superintendencias-control-12",
+   "verdict": "corregido",
+   "claim_final": "En una lista de El Tiempo (29-may-2020) basada en un informe de la Superservicios sobre multas de enero a mayo de 2020, CENS aparece en el puesto 10 de energía y gas, 'Multada con $ 1.106.024.634', por 'Falla en la prestación del servicio - incumplimiento a los indicadores de calidad', en estado 'en recurso de reposición'. Es la única multa de la SSPD a CENS documentada y no tiene que ver con tarifas.",
+   "figures_final": "$1.106.024.634. El mismo monto exacto aparece para Centrales Eléctricas de Nariño (puesto 9).",
+   "quote": "10. CENTRALES ELÉCTRICAS DEL NORTE DE SANTANDER. Multada con $ 1.106.024.634, con el argumento de \"Falla en la prestación del servicio - incumplimiento a los indicadores de calidad\". Estado : en recurso de reposición",
+   "source_url": "https://www.eltiempo.com/economia/sectores/servicios-publicos-multas-a-empresas-que-han-cometido-infracciones-500912",
+   "notes": "Corrección: la cita del investigador no era textual. El estado es 'en recurso de reposición' y la lista cubre enero-mayo de 2020. Que CEDENAR tenga el mismo monto (y que otras empresas compartan montos idénticos) sugiere un posible error de El Tiempo. Sin resolución de la SSPD no conviene usar la cifra exacta, o hay que presentarla como 'según El Tiempo, en recurso'."
+  },
+  {
+   "id": "superintendencias-control-13",
+   "verdict": "corregido",
+   "claim_final": "La Res. SSPD 20242400603295 del 2-oct-2024 (expediente 2022240350600005E) resolvió una investigación contra VATIA S.A. E.S.P. Archivó el cargo primero y, por el cargo segundo, la sancionó con AMONESTACIÓN, no con multa. El caso se refiere al cambio de comercializador de las fronteras del Centro Comercial Jardín Plaza Cúcuta. A CENS solo se le pidió información como operador de red. No es una sanción contra CENS.",
+   "figures_final": "Expediente 2022240350600005E; pliego de cargos 20222400259676 del 30-sep-2022.",
+   "quote": "ARTÍCULO TERCERO: En consecuencia, SANCIONAR en la modalidad de AMONESTACIÓN a la empresa VATIA S.A. E.S.P. (...) requirió a la INVESTIGADA, a la sociedad CENTRAL CONTROL S.A.S. (...) y a la empresa CENTRALES ELÉCTRICAS DEL NORTE DE SANTANDER S.A. E.S.P. (...) para que allegaran información relevante para esclarecer los hechos objeto de investigación.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/2024-12/Resolucion-SSPD-20242400603295.pdf",
+   "notes": "Corrección: el investigador la llamó 'multa'. La firmó la Superintendente Delegada para Energía y Gas Combustible."
+  },
+  {
+   "id": "superintendencias-control-14",
+   "verdict": "confirmado",
+   "claim_final": "CENS demandó a la Superservicios en nulidad y restablecimiento del derecho contra la Res. SSPD 20198400038225 del 30-may-2019. Esa resolución, dictada tras los recursos de reposición y apelación del titular de un establecimiento comercial de Ocaña, llevó a CENS a reconocerle dinero por la reliquidación de un 'ajuste de contribución'. CENS busca que se le devuelva esa suma. En un auto del 30-nov-2023, el Juzgado Once Administrativo de Cúcuta, con sede en Los Patios, saneó el proceso y vinculó al usuario como tercero.",
+   "figures_final": "Radicado 54001-33-33-009-2019-00370-00, venido del Juzgado 9.º y remitido el 9-nov-2022. Auto del 30-nov-2023. Monto no especificado.",
+   "quote": "en caso de accederse a la declaratoria de nulidad del acto administrativo contenido en la Resolución identificada con el No. 20198400038225 de fecha 30 de mayo del año 2019, expedida por la entidad demandada Superintendencia de Servicios Públicos Domiciliarios, podría generarse un restablecimiento del derecho que afectaría al usuario",
+   "source_url": "https://portalhistorico.ramajudicial.gov.co/documents/120627273/160758509/AUTOS72.pdf/79fdeed4-9853-49c2-8e1c-818b81ce45b7",
+   "notes": "El auto da el nombre del usuario, el del establecimiento y su código de cliente; no se deben usar. No encontré el resultado del proceso (búsqueda extended por radicado)."
+  },
+  {
+   "id": "superintendencias-control-15",
+   "verdict": "confirmado",
+   "claim_final": "Según El Tiempo (11-mar-2025), el ministro de Minas Edwin Palma pidió a la Superservicios ejercer inspección, vigilancia y control sobre EPM y sus filiales, después de que un juez ordenara el 4 de marzo el embargo de cuentas de la Nación por más de $83 mil millones por una deuda con CENS.",
+   "figures_final": "Más de $83 mil millones (El Tiempo). Portafolio (11-mar-2025) cita el mandamiento de pago en el proceso ejecutivo de CENS: $41.654 millones de saldos insolutos más $5.528 millones de intereses moratorios.",
+   "quote": "Un juez ordenó el 4 de marzo el embargo de cuentas de la Nación -por más de 83 mil millones de pesos- por una deuda acumulada con la empresa Centrales Eléctricas de Norte de Santander, del Grupo EPM",
+   "source_url": "https://www.eltiempo.com/unidad-investigativa/minminas-pide-inspeccion-a-epm-tras-embargo-de-cuentas-del-gobierno-y-choque-con-fico-gutierrez-3434471",
+   "second_source_url": "https://www.portafolio.co/energia/embargos-al-gobierno-suben-la-tension-por-las-deudas-de-subsidios-de-energia-625579",
+   "notes": "El nombre del superintendente Yanod Márquez aparece solo en el pie de foto de El Tiempo. Portafolio no menciona los 83 mil millones y nombra el juzgado de forma inconsistente (civil o administrativo). Las cifras del embargo no son homogéneas."
+  },
+  {
+   "id": "superintendencias-control-16",
+   "verdict": "confirmado",
+   "claim_final": "Según La República (4-may-2026, Juan Camilo Quiceno), la Superservicios, con Felipe Durán como superintendente, anunció una inspección a EPM que revisará 'el cálculo adecuado y cobro de las tarifas a los usuarios finales', la aplicación de los estratos y la atención de PQR. La inspección no menciona a CENS ni a Norte de Santander.",
+   "figures_final": "Sin cifras",
+   "quote": "el cálculo adecuado y cobro de las tarifas a los usuarios finales (...) la eficacia en la atención de peticiones, quejas y recursos (PQR)",
+   "source_url": "https://www.larepublica.co/empresas/superservicios-confirmo-nueva-inspeccion-a-epm-y-dijo-que-revisara-temas-tarifarios-4384871",
+   "notes": "Matiz: la nota sí usa la palabra 'filiales', pero solo al recordar la petición de Palma de marzo de 2025, no para describir la inspección de 2026. No reabrí El Colombiano."
+  },
+  {
+   "id": "superintendencias-control-17",
+   "verdict": "confirmado",
+   "claim_final": "Según Portafolio (18-mar-2025), a inicios de febrero de 2025 el Gobierno, la Procuraduría, la Contraloría y los gremios acordaron un pago parcial de la deuda de subsidios: $1 billón en los primeros cuatro meses, cumplido solo en parte. La deuda de los estratos 1 a 3 era de $2,7 billones. CENS figuraba en la lista con $36.322 millones.",
+   "figures_final": "Enero: $200.000 millones pagados. Febrero: $350.000 millones proyectados y no pagados completos. Marzo: $250.000 millones. Abril: $200.000 millones. Deuda: $2,7 billones (gremios: ~$2,84 billones con corte al 28-feb). CENS: $36.322 millones.",
+   "quote": "se logró un acuerdo en el pago parcial de la cuenta que actualmente tienen las empresas de energía (...) la deuda de subsidios para los estratos 1, 2 y 3 actualmente se encuentra en $2,7 billones",
+   "source_url": "https://www.portafolio.co/energia/compromiso-incompleto-deuda-de-subsidios-de-energia-continua-en-2-7-billones-625968",
+   "second_source_url": "https://www.portafolio.co/energia/embargos-al-gobierno-suben-la-tension-por-las-deudas-de-subsidios-de-energia-625579",
+   "notes": "La nota del 11-mar-2025 también lista a CENS con $36.322 millones (mismo medio). La cita del investigador usaba una elipsis; la frase textual sobre el acuerdo es la que va arriba."
+  },
+  {
+   "id": "superintendencias-control-18",
+   "verdict": "confirmado",
+   "claim_final": "Con base en la Auditoría Financiera, de Gestión y Resultados de la vigencia 2024, la Contraloría Distrital de Medellín fenece la cuenta fiscal de CENS de 2024 (fenecimiento n.º 048, 16-dic-2025). Da opinión limpia o sin salvedades sobre los estados financieros, concepto razonable sobre presupuesto y concepto favorable sobre la gestión. La única salvedad es un mayor valor pagado en el contrato CW270036 más un faltante de almacén, valorados en $674.841.154.",
+   "figures_final": "Eficacia 98,4%; eficiencia 96,6%; economía 100%; salvedad de $674.841.154. Vigencia 2023 (fenecimiento n.º 027, 20-dic-2024): calificación consolidada de 94,5%, sin salvedades. Estados financieros 2025: opinión 'Limpia o Sin Salvedades' (radicado del 7-may-2026).",
+   "quote": "se evidenció el correcto manejo de los fondos y bienes, y el cumplimiento de los principios de la gestión fiscal de Eficacia (98,4%), Eficiencia (96,6%) y Economía (100 %), salvo por un mayor valor pagado en el contrato CW270036 y un saldo pendiente de recuperar por faltante de almacén valorados en $674.841.154.",
+   "source_url": "https://www.cens.com.co/Portals/cens/menu-transparencia/mecanismos-de-control/informes-contraloria-general/Anexo%201.%20Informe%202024.pdf",
+   "notes": "PDF escaneado, leído como imagen (rasterizado). Firma Pablo Andrés Garcés Vásquez, Contralor Distrital. Dirigido a José Miguel González Campo, gerente general de CENS. Contra el fenecimiento 'no procede recurso alguno'."
+  },
+  {
+   "id": "superintendencias-control-19",
+   "verdict": "confirmado",
+   "claim_final": "Según su reporte consolidado de planes de mejoramiento (corte 31-dic-2025), CENS registra 2 informes y 3 hallazgos de la Contraloría Distrital de Medellín (1 cerrado y 2 en ejecución). La revisoría fiscal (2 informes) y la auditoría externa de gestión y resultados (2 informes) no reportan hallazgos.",
+   "figures_final": "CDM: 2 informes, 3 hallazgos. Revisoría fiscal: 2 informes, 0 hallazgos. AEGR: 2 informes, 0 hallazgos.",
+   "quote": "Contraloría Distrital de Medellín 2 3 (1) cerrado (2) En ejecución",
+   "source_url": "https://www.cens.com.co/Portals/cens/menu-transparencia/mecanismos-de-control/Planes_de_Mejoramiento_CENS.pdf",
+   "notes": "Lo publica CENS (autorreporte). No describe el contenido de los hallazgos."
+  },
+  {
+   "id": "superintendencias-control-20",
+   "verdict": "confirmado",
+   "claim_final": "La auditoría externa de gestión y resultados de KPMG para 2025 (8-jul-2026; aseguramiento limitado bajo ISAE 3000) concluyó que 'no se identificaron aspectos que llamaran nuestra atención'. Sí señaló el seguimiento requerido sobre indicadores financieros por debajo de los referentes regulatorios y la necesidad de fortalecer el seguimiento de las pérdidas no técnicas.",
+   "figures_final": "Sin cifras",
+   "quote": "no se identificaron aspectos que llamaran nuestra atención (...) sin perjuicio del seguimiento requerido sobre los indicadores financieros que se ubicaron por debajo de los referentes regulatorios (...) manteniendo la necesidad de fortalecer el seguimiento sobre las pérdidas no técnicas.",
+   "source_url": "https://www.cens.com.co/Portals/cens/menu-transparencia/mecanismos-de-control/AEGR/Informe_AEGR_2025.pdf",
+   "notes": "Es aseguramiento limitado, basado en información de la compañía; el auditor lo contrata la empresa (art. 51 de la Ley 142). El informe no aborda reclamos de facturación ni razonabilidad tarifaria."
+  },
+  {
+   "id": "superintendencias-control-21",
+   "verdict": "confirmado",
+   "claim_final": "Según el boletín tarifario de la SSPD del primer trimestre de 2025, el mercado de Norte de Santander (CENS) reportó el mayor costo de generación del Grupo 2 (comercializadores de 200.000 a 749.999 usuarios): 417,77 $/kWh. El menor fue el de CHEC en Caldas (340,05).",
+   "figures_final": "G de CENS: 402,89 (4T-2024) y 417,77 (1T-2025), +3,69%. Promedio G del Grupo 2 en 1T-2025: 364,12 $/kWh.",
+   "quote": "el mercado de Norte de Santander atendido por el comercializador CENS reportó el costo de generación mayor con un valor de 417,77 $/kWh y el mercado de Caldas atendido por CHEC reportó el menor costo de generación con un valor de 340,05 $/kWh.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-I-trimestre-de-2025.pdf",
+   "notes": "Reabierto (PDF del 31-dic-2025, 109 páginas). Ojo: en el boletín II-2025 la tabla de G repite 402,89 y 417,77 con los rótulos '1T 2025' y '2T 2025', probablemente un error de copia. La frase de que 'el valor más alto' lo reportó CENS en el 2T no es confiable como dato independiente."
+  },
+  {
+   "id": "superintendencias-control-22",
+   "verdict": "corregido",
+   "claim_final": "La SSPD señaló como atípicos los reportes SUI de compras de CENS en 2025. En mayo de 2025 (boletín II-2025), CENS y DISPAC reportaron 0% de cobertura con contratos y 100% en bolsa, lo que la SSPD calificó de 'posible inconsistencia en el reporte de información o una situación excepcional transitoria'. En julio y agosto de 2025 (boletín III-2025), CENS reportó 100% en bolsa y un precio de contratos (Pc) igual a cero, que 'requieren validación'. En septiembre de 2025 CENS reportó 60,68% de cobertura con contratos y 39,32% en bolsa, con un Pc 1,71 $/kWh por debajo del Mc, 'tras no reportar información en los meses anteriores'.",
+   "figures_final": "May-2025: Qc 0% y Qb 100%. Jul-ago 2025: Qb 100% y Pc=0. Sep-2025: Qc 60,68%, Qb 39,32%, Pc −1,71 $/kWh frente al Mc.",
+   "quote": "Se presentan dos casos atípicos que requieren verificación: DISPAC y CENS reportaron una cobertura del 0% con contratos (Qc=0%) y del 100% con bolsa (Qb=100%). Estos valores extremos no son coherentes con las operaciones normales de un comercializador en el mercado regulado y sugieren una posible inconsistencia en el reporte de información o una situación excepcional transitoria que debe ser revisada frente a los datos oficiales del SUI.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-III-trimestre-de-2025.pdf",
+   "notes": "Corrección: la cita textual viene del boletín II-2025 (sección de mayo de 2025), no del III. Que fuera julio-agosto sale del III, que dice que CENS 'en julio y agosto había reportado una exposición del 100% a bolsa'. No prueba compras reales al 100% en bolsa."
+  },
+  {
+   "id": "superintendencias-control-23",
+   "verdict": "confirmado",
+   "claim_final": "Según el boletín de la SSPD del primer trimestre de 2026, CENS tuvo el mayor aumento del componente de comercialización del Grupo 2: +11,56%, de 131,81 a 147,04 $/kWh. Su COT promedio en ese trimestre fue de 37,03 $/kWh.",
+   "figures_final": "C: 131,81 (4T-2025) y 147,04 (1T-2026) $/kWh. COT 1T-2026: 37,03. Tarifas aplicadas en 1T-2026: E1 428,98; E2 536,22; E3 758,41; E4 892,24; E5-6, comercial e industrial 1.070,69 $/kWh. En E4, CENS está por debajo de CEDENAR (925,99), Caribemar (922,52), CHEC (922,20), EBSA (917,00), Electrocaquetá (965,96) y Electrohuila (1.002,56).",
+   "quote": "El mayor incremento correspondió a CENS, con 11,56%, al pasar de 131,81 $/kWh a 147,04 $/kWh.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "notes": "PDF del 24-jul-2026, 116 páginas. Advertencia textual del boletín: las variaciones 'no deben atribuirse exclusivamente a cambios en los costos ordinarios de comercialización, dado que también pueden reflejar el comportamiento del COT'."
+  },
+  {
+   "id": "superintendencias-control-24",
+   "verdict": "confirmado",
+   "claim_final": "Según los boletines tarifarios de la SSPD, el CU promedio del mercado de Norte de Santander (nivel de tensión 1) estuvo entre 2,1% y 3,8% por encima del promedio nacional en 1T, 2T y 3T de 2025 y en 1T-2026. No figuró entre los tres mercados más caros en ninguno de esos trimestres y bajó de 945,43 $/kWh (1T-2025) a 851,07 $/kWh (1T-2026).",
+   "figures_final": "Norte de Santander frente al promedio nacional: 1T-25, 945,43 vs 914,38 (+3,4%); 2T-25, 895,89 vs 865,56 (+3,5%); 3T-25, 868,95 vs 850,82 (+2,1%); 1T-26, 851,07 vs 819,70 (+3,8%). 4T-24: 930,24; 4T-25: 862,08. Los tres más caros: 1T-25 Sibundoy, Bajo Putumayo y Arauca; 2T-25 Sibundoy, Bajo Putumayo y Arauca; 3T-25 Huila, Sibundoy y Arauca; 1T-26 Sibundoy, Huila y Caquetá.",
+   "quote": "Durante el primer trimestre de 2026, los mercados de Sibundoy, Huila y Caquetá registraron los mayores Costos Unitarios promedio del conjunto analizado (...) No obstante, la diferencia observada respecto al promedio nacional no constituye, por sí sola, evidencia de ineficiencias en la gestión de los prestadores",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-III-trimestre-de-2025.pdf",
+   "notes": "Porcentajes recalculados por mí. Según nota del boletín, el 'Promedio CU del mercado' incluye a todos los comercializadores del mercado, no solo a CENS. El promedio nacional de 1T-2026 es el 'Promedio CU' de la Tabla 10; no se dice si es simple o ponderado. El CU es costo antes de subsidios y contribuciones: no equivale a la factura."
+  },
+  {
+   "id": "superintendencias-control-25",
+   "verdict": "confirmado",
+   "claim_final": "Según la SSPD, el COT de CENS bajó de 51,25 $/kWh (1T-2025) a 37,03 $/kWh (1T-2026). En la tabla del boletín III-2025, rotulada '2T 2025', aparece 48,17.",
+   "figures_final": "1T-2025: 51,25 (Tabla 40). Boletín II-2025, tabla rotulada '2T 2025': 51,25 (repetido). Boletín III-2025, tabla rotulada '2T 2025': 48,17. 1T-2026: 37,03 $/kWh.",
+   "quote": "CENTRALES ELÉCTRICAS DE NORTE DE SANTANDER CENS 51,25",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-I-trimestre-de-2025.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "notes": "Rótulos erróneos confirmados en los boletines II y III de 2025. En el hilo, usar solo 1T-2025 (51,25) y 1T-2026 (37,03)."
+  },
+  {
+   "id": "superintendencias-control-26",
+   "verdict": "confirmado",
+   "claim_final": "Según la Res. CREG 101 120 de 2026 (sesión del 30-jul-2026; Diario Oficial 53.575 del 3-ago-2026; rige desde el 1-sep-2026, modificada por la CREG 101 126 del 21-ago-2026), el cobro adicional por exceso de consumo es excepcional y transitorio, no es contraprestación del servicio, no forma parte de la tarifa y no pagarlo no da lugar a la suspensión. Las PQR se tramitan por la Ley 142 y la información queda sujeta a la vigilancia y el control de la SSPD.",
+   "figures_final": "Art. 20, i a vi. Art. 22: conservación de la información bajo vigilancia de la SSPD. Art. 25: informes del ASIC. Lo recaudado integra la 'bolsa de recursos del respectivo mercado' (recursos de terceros).",
+   "quote": "El cobro adicional previsto en esta resolución es excepcional y transitorio y corresponde al esquema diferencial autorizado para este programa; no es una contraprestación por la prestación del servicio, no forma parte de su tarifa (...) i) El no pago del cobro adicional no dará lugar a la suspensión del servicio público domiciliario de energía eléctrica. (...) vi) Las peticiones, quejas y reclamos relacionados con la aplicación del presente programa se tramitarán conforme al régimen de peticiones, quejas y recursos previsto en la Ley 142 de 1994",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "notes": "El mismo art. 20 trae matices que no pueden faltar. ii) 'la exigibilidad, el cobro y el recaudo del cobro adicional se rigen por las mismas reglas aplicables a los demás conceptos'. iv) 'La obligación de pago no se extingue'. v) un pago parcial se imputa primero al servicio y después al cobro adicional. Además, hay una nota de vigencia: la Circular 326 del 13-ago-2026 suspendió la entrada en operación del programa en el ámbito territorial del art. 3 de la CREG 101 126, es decir, los municipios afectados por el sismo del 10-ago-2026."
+  },
+  {
+   "id": "superintendencias-control-27",
+   "verdict": "confirmado",
+   "claim_final": "Ley 142 de 1994. No proceden reclamaciones contra facturas de más de 5 meses (art. 154). La reposición contra la decisión sobre un reclamo de facturación se interpone dentro de los 5 días siguientes y la apelación va ante la Superservicios (art. 154). La empresa no puede exigir el pago de la factura para atender un recurso sobre ella ni cortar mientras se notifica la decisión de recursos oportunos; pero para recurrir, el usuario debe acreditar el pago de lo no reclamado o del promedio de los últimos cinco periodos (art. 155). Las personerías deben asesorar a quien lo pida personalmente (art. 157). La empresa tiene 15 días hábiles para responder; si no lo hace, opera el silencio administrativo positivo y debe reconocerlo dentro de las 72 horas siguientes (art. 158, subrogado por el art. 123 del Decreto 2150/1995).",
+   "figures_final": "5 meses; 5 días para la reposición; 15 días hábiles; 72 horas; pago de lo no reclamado o del promedio de los últimos 5 periodos.",
+   "quote": "En ningún caso, proceden reclamaciones contra facturas que tuviesen más de cinco (5) meses de haber sido expedidas por las empresas de servicios públicos. (...) La apelación se presentará ante la superintendencia. (...) Ninguna empresa de servicios públicos podrá exigir la cancelación de la factura como requisito para atender un recurso relacionado con ésta. (...) Sin embargo, para recurrir el suscriptor o usuario deberá acreditar el pago de las sumas que no han sido objeto de recurso, o del promedio del consumo de los últimos cinco períodos. (...) Las personerías municipales deberán asesorar a los suscriptores o usuarios que deseen presentar recursos, cuando lo soliciten personalmente.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "notes": "Página con 'Última actualización: 15 de octubre de 2026'. Añadí el inciso del art. 155 (condicionalmente exequible), que limita el mensaje de 'no pague para reclamar'."
+  },
+  {
+   "id": "superintendencias-control-28",
+   "verdict": "confirmado",
+   "claim_final": "El 26-feb-2024 (radicado SSPD 20242200680941), la Dirección Técnica de Gestión de Energía de la Superservicios trasladó a CENS, por competencia, las preguntas 3 y 4 de la Proposición 117 del Senado (liquidez de comercializadoras e impacto en la tarifa; pérdidas y fraude) y le pidió responder directamente al Congreso.",
+   "figures_final": "Radicado 20242200680941 del 26/02/2024. Firma: Luis Adolfo Vargas Agudelo, director técnico de Gestión de Energía (E).",
+   "quote": "Sírvase informar sobre la situación financiera de comercializadoras de energía que han reportado dificultades de liquidez y el impacto que esto puede generar en la prestación del servicio y en la tarifa de energía",
+   "source_url": "http://www.secretariasenado.gov.co/cuatrienio-2022-2026/legislatura-2023-2024/respuestas-proposiciones-de-control-politico/respuestas-proposicion-116-117-118/12960-re-037-superservicios/file",
+   "notes": "Es un traslado genérico, con preguntas sectoriales que probablemente se enviaron a varias empresas. No es un control político dirigido a CENS."
+  },
+  {
+   "id": "superintendencias-control-29",
+   "verdict": "confirmado",
+   "claim_final": "José Ignacio García Puche es superintendente de Servicios Públicos Domiciliarios, designado por el gobierno de Abelardo de la Espriella mediante el Decreto 1583 del 21-oct-2026. En mayo de 2026 el superintendente era Felipe Durán (La República). En marzo de 2025 era Yanod Márquez, según el pie de foto de El Tiempo.",
+   "figures_final": "Decreto 1583 del 21-oct-2026",
+   "quote": "según quedó establecido en el Decreto 1583 del 21 de octubre de 2026.",
+   "source_url": "https://www.valoraanalitik.com/gobierno-de-la-espriella-designa-a-jose-ignacio-garcia-como-nuevo-superintendente-de-servicios-publicos/",
+   "second_source_url": "https://www.elheraldo.co/economia/2026/10/22/jose-ignacio-garcia-puche-es-el-nuevo-superintendente-de-servicios-publicos-domiciliarios/",
+   "notes": "Ni Valora Analitik ni El Heraldo dicen a quién reemplaza. Un resumen de búsqueda menciona a María Rocío Cortés como encargada, pero no lo confirmé en ninguna página reabierta, así que sigue sin verificar."
+  },
+  {
+   "id": "superintendencias-control-30",
+   "verdict": "confirmado",
+   "claim_final": "En su Informe de Sostenibilidad 2025 (p. 163), CENS reporta un 'indicador de reclamos' propio de 4,26 (2023), 3,23 (2024) y 1,96 (2025) reclamos por cada 10.000 clientes. Es una métrica distinta de la de la SSPD (36,69 reclamos de facturación resueltos a favor del usuario por cada 10.000 facturas en 2024) y CENS no publica su definición.",
+   "figures_final": "CENS: 4,26 (2023); 3,23 (2024); 1,96 (2025). En la inspección de 2022, CENS reportó 3,44 (2021, meta 5) y 2,69 (2022, meta 4) 'reclamos atribuibles a facturación por cada 10000 usuarios'.",
+   "quote": "El indicador muestra una reducción sostenida, pasando de 3.23 reclamos por cada 10,000 clientes en 2024 a 1.96 en la vigencia actual. Este desempeño no solo refleja una tendencia decreciente, sino que supera significativamente los estándares corporativos establecidos.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Ubicado en la página 163 del PDF (descargado de nuevo, 54,5 MB). Puede ser un promedio mensual frente a un acumulado anual. No se deben comparar sin la aclaración de CENS."
+  },
+  {
+   "id": "superintendencias-control-31",
+   "verdict": "corregido",
+   "claim_final": "El informe de gestión 2025 de la Superservicios (PDF del 30-ene-2026, 108 páginas) no menciona a CENS, Norte de Santander ni Cúcuta. Las '51 sanciones por $10.697.102.139' corresponden a la Delegada de Acueducto, Alcantarillado y Aseo, no al total de la entidad. En energía eléctrica, la Tabla 3 registra 8 pliegos de cargos y 9 sanciones impuestas en 2025 (22 sanciones contando gas). Los recursos resueltos dejaron multas en firme por $22.419.873.333 (11 decisiones de energía eléctrica y 9 de gas).",
+   "figures_final": "Acueducto, alcantarillado y aseo: 51 sanciones por $10.697.102.139. Energía eléctrica: 8 pliegos de cargos y 9 sanciones. Gas: 15 pliegos y 13 sanciones. Multas en firme de energía y gas tras reposición: $22.419.873.333.",
+   "quote": "Tabla No. 3 Sanciones impuestas sector Energía Eléctrica y Gas Combustible. (...) Pliegos de cargos formulados 8 15 23 Sanciones impuestas 9 13 22 Recursos de reposición resueltos 11 9 20",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-gestion-SSPD-Vigencia-2025.pdf",
+   "notes": "Corrección: la cifra de 51 sanciones aparece justo después del párrafo sobre aprovechamiento y recicladores (sector AAA). Que el informe no mencione a CENS es solo evidencia de ausencia en este documento."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "sc-verif-nf-01",
+   "claim": "En 2025 la Superservicios formuló 8 pliegos de cargos e impuso 9 sanciones en el sector de energía eléctrica (22 sanciones contando gas). Los recursos de reposición resueltos dejaron multas en firme por $22.419.873.333 en energía y gas. El informe no nombra a CENS.",
+   "quote": "Pliegos de cargos formulados 8 15 23 Sanciones impuestas 9 13 22 Recursos de reposición resueltos 11 9 20 (...) dejando multas en firme por un valor total de $22.419.873.333, correspondientes a once (11) decisiones del sector de energía eléctrica y nueve (9) del sector de gas combustible.",
+   "figures": "Energía eléctrica: 8 pliegos y 9 sanciones. Gas: 15 y 13. Multas en firme: $22.419.873.333.",
+   "period": "2025",
+   "source_date": "2026-01-30",
+   "source_outlet": "Superservicios",
+   "source_title": "Informe de gestión de la Superintendencia de Servicios Públicos Domiciliarios 2025, Tabla No. 3",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-gestion-SSPD-Vigencia-2025.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "notes": "Sustituye la cifra mal atribuida de 51 sanciones / $10.697 millones, que es del sector de acueducto, alcantarillado y aseo."
+  },
+  {
+   "id": "sc-verif-nf-02",
+   "claim": "La Res. CREG 101 126 de 2026 (21-ago-2026) excluye del programa de cobro adicional a los usuarios regulados de los municipios que la UNGRD identifique como afectados por el sismo del 10-ago-2026. Lo que ya se haya facturado y recaudado a esos usuarios debe refacturarse y devolverse como saldo a favor. Además, la Circular CREG 326 del 13-ago-2026 suspendió la entrada en operación del programa en ese ámbito territorial.",
+   "quote": "ARTÍCULO 3o. EXCLUSIÓN TERRITORIAL. No será aplicable el programa a los usuarios regulados ubicados en aquellos municipios que la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD) haya identificado como afectados por el sismo del diez (10) de agosto de 2026 (...) los cobros adicionales que hubieren sido facturados y recaudados con anterioridad a la efectividad de la exclusión serán objeto de refacturación y devolución al usuario",
+   "figures": "Sin cifras. La prensa (La Opinión) reporta afectaciones en Lourdes, Chinácota, Silos y Cúcuta; un sitio no oficial agrega El Tarra, Los Patios y Pamplona. No se verificó la lista de la UNGRD.",
+   "period": "Desde ago-2026",
+   "source_date": "2026-08-21",
+   "source_outlet": "CREG - Gestor Normativo",
+   "source_title": "Resolución CREG 101 126 de 2026, art. 3",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-126_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "notes": "La norma está confirmada; su aplicación en municipios de CENS no. Antes de citar los '111.000 usuarios con cobro', hay que establecer si algún municipio de Norte de Santander quedó excluido. Nota de La Opinión: https://laopinion.co/region/tras-fuerte-terremoto-en-colombia-cuatro-municipios-de-norte-de-santander-reportan"
+  },
+  {
+   "id": "sc-verif-nf-03",
+   "claim": "Según la Ley 142, art. 155, la empresa no puede exigir el pago de la factura para tramitar un recurso, pero para recurrir el usuario debe acreditar el pago de las sumas no reclamadas o del promedio de consumo de los últimos cinco periodos.",
+   "quote": "Sin embargo, para recurrir el suscriptor o usuario deberá acreditar el pago de las sumas que no han sido objeto de recurso, o del promedio del consumo de los últimos cinco períodos.",
+   "figures": "Promedio de los últimos 5 periodos",
+   "period": "Vigente",
+   "source_date": "1994-07-11",
+   "source_outlet": "Secretaría del Senado",
+   "source_title": "Ley 142 de 1994, art. 155 (inciso condicionalmente exequible)",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "source_type": "otro",
+   "confidence": "alta",
+   "notes": "Matiz obligatorio para cualquier trino de servicio al usuario."
+  },
+  {
+   "id": "sc-verif-nf-04",
+   "claim": "Según la CREG 101 120, art. 20, aunque no pagar el cobro adicional no permite suspender el servicio, el cobro sigue siendo exigible, la obligación no se extingue al terminar el programa y un pago parcial se imputa primero al servicio y después al cobro adicional.",
+   "quote": "ii) Sin perjuicio del numeral anterior, la exigibilidad, el cobro y el recaudo del cobro adicional se rigen por las mismas reglas aplicables a los demás conceptos que el comercializador factura a sus usuarios. (...) iv) La obligación de pago no se extingue por la liquidación de un periodo de liquidación del programa ni por su terminación. (...) v) Cuando el usuario efectúe un pago parcial de la factura, este se imputará en primer lugar a las obligaciones derivadas de la prestación del servicio público domiciliario y, una vez cubiertas estas, al cobro adicional del programa.",
+   "figures": "Sin cifras",
+   "period": "Desde 1-sep-2026",
+   "source_date": "2026-08-03",
+   "source_outlet": "CREG - Gestor Normativo",
+   "source_title": "Resolución CREG 101 120 de 2026, art. 20",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "notes": "Evita un trino que sugiera que el cobro adicional 'no se debe pagar'."
+  },
+  {
+   "id": "sc-verif-nf-05",
+   "claim": "En la Evaluación de la Gestión 2024, de 64 prestadores de energía evaluados, 27 no cumplieron el referente de reclamos de facturación, y 19 no cumplieron los de atención de reclamos y de conexión. La propia SSPD recomienda actualizar los conceptos de la CREG 072/2002 con que se calculan los indicadores.",
+   "quote": "Prestadores que no cumplen el referente 6 27 19 19 6 7 (...) Actualizar los conceptos de la Resolución 072 de 2002 y sus modificatorias, para el cálculo de los indicadores utilizados en la evaluación de la gestión",
+   "figures": "Reclamos de facturación: 37 cumplen y 27 no. Atención de reclamos: 45 y 19. Conexión: 45 y 19. Sin medición: 58 y 6. SAIDI: 21 y 6. SAIFI: 20 y 7.",
+   "period": "2024",
+   "source_date": "2025-09-30",
+   "source_outlet": "Superservicios - DTGE",
+   "source_title": "Indicadores de gestión energía eléctrica año 2024 v3, Tabla resumen y Recomendaciones",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/2025-09/Indicadores-de-gestion-energia-electrica-ano-2024-v3.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "notes": "Contexto: incumplir el referente de reclamos es frecuente (42% de los prestadores). CENS no es un caso aislado."
+  },
+  {
+   "id": "sc-verif-nf-06",
+   "claim": "En la lista de El Tiempo de multas de la SSPD (enero-mayo de 2020), Centrales Eléctricas de Nariño (CEDENAR) figura con exactamente el mismo monto que CENS, $1.106.024.634, y la misma causal. Esto obliga a pedir la resolución antes de usar la cifra.",
+   "quote": "9. CENTRALES ELÉCTRICAS DE NARIÑO. Fue multada con $ 1.106.024.634. (...) 10. CENTRALES ELÉCTRICAS DEL NORTE DE SANTANDER. Multada con $ 1.106.024.634",
+   "figures": "$1.106.024.634 (CEDENAR y CENS)",
+   "period": "Enero-mayo 2020",
+   "source_date": "2020-05-29",
+   "source_outlet": "El Tiempo",
+   "source_title": "El top 10 de las millonarias multas a empresas de servicios públicos",
+   "source_url": "https://www.eltiempo.com/economia/sectores/servicios-publicos-multas-a-empresas-que-han-cometido-infracciones-500912",
+   "source_type": "prensa",
+   "confidence": "media",
+   "notes": "Puede ser un error del medio o montos estandarizados. Estado: 'en recurso de reposición'."
+  },
+  {
+   "id": "sc-verif-nf-07",
+   "claim": "La Res. SSPD 20242400603295 de 2024 se refiere al cambio de comercializador a VATIA de las fronteras del Centro Comercial Jardín Plaza Cúcuta. La sanción a VATIA fue una amonestación y CENS intervino solo como operador de red requerido.",
+   "quote": "estando VATIA habilitado por el usuario CENTRO COMERCIAL JARDIN PLAZA CUCUTA quien actúa como propietario del inmueble (...) SANCIONAR en la modalidad de AMONESTACIÓN a la empresa VATIA S.A. E.S.P.",
+   "figures": "Expediente 2022240350600005E",
+   "period": "2019-2024",
+   "source_date": "2024-10-02",
+   "source_outlet": "Superservicios",
+   "source_title": "Resolución SSPD 20242400603295",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/2024-12/Resolucion-SSPD-20242400603295.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "notes": "Sirve para evitar una atribución errónea a CENS."
+  },
+  {
+   "id": "sc-verif-nf-08",
+   "claim": "El gerente general de CENS al que la Contraloría Distrital de Medellín dirige los fenecimientos de 2023 y 2024 y la opinión de 2025 es José Miguel González Campo.",
+   "quote": "Se remite la presente decisión al doctor José Miguel González Campo, como Gerente General de la Empresa Centrales Eléctricas del Norte de Santander S.A E.S.P. - CENS",
+   "figures": "Sin cifras",
+   "period": "Dic-2024 a may-2026",
+   "source_date": "2025-12-16",
+   "source_outlet": "Contraloría Distrital de Medellín (publicado por CENS)",
+   "source_title": "Fenecimiento de la cuenta vigencia 2024 - 048",
+   "source_url": "https://www.cens.com.co/Portals/cens/menu-transparencia/mecanismos-de-control/informes-contraloria-general/Anexo%201.%20Informe%202024.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "notes": "Útil para dirigir preguntas formales a la empresa. Es un directivo público, no un particular."
+  },
+  {
+   "id": "sc-verif-nf-09",
+   "claim": "La Superservicios atribuyó el alza de febrero de 2020 ($57,6/kWh) 'en gran medida al cambio en el componente de generación'. Señaló que la opción tarifaria de la CREG 012 de 2020 era optativa y que CENS la adoptó para las tarifas publicadas en marzo de 2020.",
+   "quote": "se debió en gran medida al cambio en el componente de generación (...) la aplicación de la opción tarifaria, establecida en la Resolución CREG 012 de 2020, es decisión de cada operador (...) CENS optó por ella para las tarifas publicadas en marzo.",
+   "figures": "$57,6/kWh (febrero de 2020)",
+   "period": "Feb-abr 2020",
+   "source_date": "2020-04-18",
+   "source_outlet": "La Opinión",
+   "source_title": "Congelada tarifa de energía por cuatro meses, Cens toma medidas",
+   "source_url": "https://laopinion.co/economia/congelada-tarifa-de-energia-por-cuatro-meses-cens-toma-medidas",
+   "source_type": "prensa",
+   "confidence": "media",
+   "notes": "Es el origen de los saldos de opción tarifaria que hoy se recuperan vía COT."
+  }
+ ],
+ "bill_cases_checked": [
+  {
+   "where": "Ocaña (Norte de Santander), establecimiento comercial 'Panadería y Heladería' (usuario no residencial)",
+   "complaint": "El titular del establecimiento presentó reposición y apelación ante CENS y la Superservicios contra la reliquidación de un 'ajuste de contribución'. La Res. SSPD 20198400038225 del 30-may-2019 llevó a CENS a reconocerle una suma de dinero. CENS demandó la nulidad de esa resolución para que se le devuelva lo pagado (radicado 54001-33-33-009-2019-00370-00). Verificado en el auto del 30-nov-2023 del Juzgado Once Administrativo de Cúcuta, que vincula al usuario como tercero. Se desconoce el resultado.",
+   "estrato": "Comercial (no residencial)",
+   "amount": "No especificado en el auto",
+   "period": "2019 (resolución SSPD); proceso vigente al menos hasta nov-2023",
+   "charges": "Contribución (sobretasa para usuarios comerciales); reliquidación por 'ajuste de contribución'",
+   "person_named": true,
+   "source_outlet": "Juzgado Once Administrativo de Cúcuta (documento judicial público, no prensa)",
+   "source_date": "2023-11-30",
+   "source_url": "https://portalhistorico.ramajudicial.gov.co/documents/120627273/160758509/AUTOS72.pdf/79fdeed4-9853-49c2-8e1c-818b81ce45b7"
+  }
+ ],
+ "cautions": [
+  "El indicador de 36,69 es de 2024 y mide reclamos de facturación resueltos a favor del usuario por cada 10.000 facturas, unas 0,37% de las facturas, según la definición CREG 034/2004. La SSPD no publica el numerador. No dice nada sobre los recibos de 2026. Debe redactarse como 'según la Superservicios, en 2024 CENS superó el máximo de reclamos de facturación resueltos a favor del usuario para su grupo', no como 'CENS cobra mal'.",
+  "No se debe presentar a CENS como 'la peor': en su grupo, CHEC está peor (57,60), y a nivel nacional 27 de 64 prestadores incumplen el referente. EPM, su matriz, cumplió (21,79). El referente se calcula con los datos del propio grupo de 6 empresas y la SSPD reconoce que la metodología de la CREG 072/2002 necesita actualización.",
+  "En la evaluación con datos de 2023 (33,13), CENS figura NO CUMPLE con un valor igual al referente y estaba sola en su grupo. CENS podría desacreditar esa cifra con facilidad; es mejor usar solo la de 2024.",
+  "Inspección de la vigencia 2022: es correcto decir que la SSPD halló 'errores en el cálculo' del componente de comercialización y en el cobro de reactiva. Pero el mismo informe dice que el error del CU 'no afectó directamente a los usuarios' y que no evidenció 'conducta que vaya en perjuicio de los usuarios'. Omitir estos contrapesos sería injusto y fácil de rebatir. Sobre la reactiva no hay cuantificación ni constancia de devoluciones: preguntar, no afirmar.",
+  "Ningún órgano de control (SSPD, Contraloría, Procuraduría, KPMG) ha declarado enriquecimiento indebido, cobro ilegal ni sobrefacturación sistemática de CENS. La utilidad de 2022 (+22,5%) es real, pero la SSPD dijo que la deuda 'no genera una alerta' y la Contraloría dio opinión limpia. Atribuir 'enriquecimiento en detrimento de la sociedad' a partir de este frente sería difamatorio y no tiene respaldo.",
+  "Multa de 2020 ($1.106.024.634): la única fuente es prensa (El Tiempo), estaba 'en recurso de reposición' y su monto coincide al peso con el de CEDENAR. Sin la resolución, no hay que darla como sanción en firme ni usar la cifra exacta como dato duro. Además, era por calidad del servicio, no por tarifas.",
+  "La Res. SSPD 20242400603295 sancionó a VATIA con amonestación, no a CENS. Atribuírsela a CENS sería un error grave.",
+  "La cifra de 51 sanciones y $10.697 millones del informe SSPD 2025 es de acueducto, alcantarillado y aseo. No la uses como 'la SSPD sancionó a 51 empresas y ninguna fue CENS'. El dato correcto para energía es de 9 sanciones en 2025.",
+  "Cobro adicional (CREG 101 120): no pagarlo no permite cortar el servicio, pero el cobro sigue siendo exigible, la obligación no se extingue y un pago parcial se aplica primero al servicio (art. 20, ii, iv y v). Un trino que invite a 'no pagar' sería engañoso. Además, la CREG 101 126 excluye los municipios afectados por el sismo del 10-ago-2026 según la UNGRD, y la prensa reporta afectaciones en Cúcuta, Chinácota, Lourdes y Silos. Hay que verificar si esos usuarios quedaron excluidos antes de dar cifras de afectados por el cobro.",
+  "Ley 142, art. 155: para recurrir hay que pagar lo no reclamado o el promedio de los últimos cinco periodos. Hay que decirlo junto con 'CENS no puede exigir el pago para tramitar el reclamo'. El silencio positivo exige que el usuario no haya causado la demora y que no se hayan requerido pruebas.",
+  "Comparaciones de CU: según la SSPD, Norte de Santander estuvo solo 2-4% por encima del promedio nacional y nunca entre los 3 mercados más caros en 2025-1T 2026; además, el CU bajó un 10% en un año. Decir que es 'la luz más cara del país' es falso con estos datos. El 'promedio CU del mercado' incluye a todos los comercializadores de ese mercado y el CU no es la factura: cuentan subsidios, contribución y consumo. Si los recibos suben, lo que más pesa es el consumo (calor) más que el precio.",
+  "Los boletines de la SSPD tienen errores de rótulo: la tabla de G del II-2025 repite los valores del 1T, y las tablas de COT del II y III de 2025 dicen '2T 2025'. Conviene citar solo los boletines de 1T-2025 y 1T-2026 para G, C y COT.",
+  "Los reportes de '100% en bolsa' de mayo, julio y agosto de 2025 los marca la propia SSPD como posible inconsistencia de reporte. No prueban que CENS haya comprado toda su energía en bolsa; sirven como pregunta a CENS y a la SSPD.",
+  "El 11,56% de alza en comercialización (1T-2026) mezcla el costo de comercialización con el COT (la recuperación de la opción tarifaria), como advierte el boletín. No es margen de CENS.",
+  "El indicador propio de reclamos de CENS (1,96 por 10.000 clientes en 2025) y el de la SSPD (36,69 por 10.000 facturas en 2024) no son comparables. Presentarlos como contradicción sin la aclaración de CENS es engañoso en ambas direcciones.",
+  "Control fiscal: la Contraloría Distrital de Medellín y KPMG no evalúan si la tarifa es justa. KPMG da aseguramiento limitado con información de la empresa y es contratado por ella. Su 'visto bueno' no avala las tarifas, pero tampoco se lo puede presentar como complicidad.",
+  "Caso de Ocaña: el auto publica el nombre, el establecimiento y el código de cliente del usuario; no se deben usar. Que CENS demande una decisión de la SSPD es un derecho legítimo. Se puede contar como 'ganar en la Superservicios no siempre cierra el caso' sin insinuar mala fe. El resultado se desconoce.",
+  "La Proposición 117 del Senado (feb-2024) fue un traslado genérico de preguntas sectoriales: no es un debate de control político contra CENS.",
+  "Superintendentes: Yanod Márquez (mar-2025) aparece solo en un pie de foto de El Tiempo y María Rocío Cortés (encargada en sep-oct de 2026) no está verificada. García Puche y el Decreto 1583 del 21-oct-2026 sí están confirmados por varias fuentes.",
+  "Hay que dejar clara la ausencia de vigilancia: no se halló ninguna sanción ni pliego de cargos de la SSPD contra CENS por tarifas en 2021-2026, y la última inspección publicada es de la vigencia 2022. Pero 'no se encontró' no equivale a 'no existe': redactarlo como 'no hay registro público de...' y preguntarle a la SSPD."
+ ]
+}

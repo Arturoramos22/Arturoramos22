@@ -1,0 +1,408 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL, frente \"debate-octubre-2026\". Reabrí todas las fuentes primarias de CENS: Informe de Sostenibilidad 2025, ESF del primer trimestre de 2025 y de 2026, ERI del primer y segundo trimestre de 2026 y del tercer trimestre de 2025, notas del primer y segundo trimestre de 2026, y los PDF de tarifas de oct-2025, ene-2026, abr-2026, sep-2026 y oct-2026, con la página 4 vista como imagen. También el texto de la Res. CREG 101 120 en el gestor normativo, la página de EPM y los 7 artículos de prensa. Rehíce todos los cálculos con python. Resultado: 24 hallazgos confirmados, 3 corregidos y ninguno refutado.\n\nLO SÓLIDO:\n(1) Los \"$123 mil millones\" de @fredyparada90 son exactamente la utilidad NETA de CENS en 2025: COP $123.146 millones. Aparece en el Informe de Sostenibilidad y en el ESF (columna dic-2025). Hay una segunda fuente de prensa independiente y anterior a La República: Valora Analitik, 30-jun-2026, con datos de Supersociedades.\n(2) 2026 viene a la baja. El primer semestre deja $56.494 millones (-35%) y los últimos 12 meses suman $92.691 millones. El tercer trimestre de 2026 sigue sin publicarse (404).\n(3) Dividendos de 2025: ~$73.888 millones (60%). El patrimonio cuadra (644.626 + 32.981 − 603.720 = 73.887) y la Nota 9 registra una cuenta por pagar de \"Dividendos y participaciones $73,885\". Sigue siendo una deducción, porque no hay acta de asamblea.\n(4) Los componentes del CU de octubre ($1.018,9488) y de enero ($888,059) suman exactamente. El alza se debe en un 75% a G y en un 28% a R. DtUN bajó 6,1%.\n\nCORRECCIONES:\n(a) El COT ($44,0139) NO se cobra aparte: está DENTRO de Cv. En los dos meses y en los tres niveles de tensión, Cv − COT da exactamente el Cv del nivel 4: 96,4988 en octubre y 85,2814 en enero. Así, la comercialización \"pura\" subió 13,15% entre enero y octubre. DtUN + Cv puro pesan 38,7% del CU, no 43%. Además DtUN es un cargo del ADD Centro, no un ingreso exclusivo de CENS.\n(b) El presupuesto 2027 que enlaza @soynegrojohn está desactualizado. El 20-oct-2026 el Congreso lo aprobó y adicionó $3 billones para subsidios de energía y gas (La República, Canal 1, El Heraldo). Los subsidios a los estratos 1-3 siguen siendo obligación legal; el problema es que estaban subfinanciados (La Silla Vacía: $1,4 billones en el proyecto frente a ~$6 billones necesarios).\n(c) La caída de la utilidad en el primer semestre de 2026 no se explica solo por nómina, impuesto al patrimonio y gastos financieros. También pesan las compras de energía (+$13.972 millones) y los gastos de administración (+$8.662 millones), mientras los ingresos apenas crecieron $3.458 millones. El impuesto al patrimonio es marginal: +$2.813 millones.\n\nVACÍOS RESUELTOS: la Circular CREG 326 suspendió el programa el 13-ago-2026, por el desastre nacional del sismo (Decreto 1171). La Res. 101 126 del 21-ago lo reactivó a partir del 1-sep, así que el programa sigue vigente. El texto de la Res. 101 120 (Art. 12) dice que lo recaudado son \"recursos de terceros\" destinados exclusivamente a los usuarios que ahorran, y el Art. 11 pone un tope al recargo: el Costo Incremental Operativo de Racionamiento (CRO).\n\nSIGUE SIN VERIFICAR: los trinos (X no es accesible), qué fuente usó Parada, declaraciones de políticos sobre CENS entre el 20 y el 31 de oct (no encontré ninguna), el acta de dividendos, el monto total de recargos y la utilidad del tercer trimestre de 2026.\n\nPARA SER JUSTOS CON CENS: su margen neto (8,5%) es inferior al de su filial hermana ESSA (~12,6% según Valora Analitik). El dinero de los recargos no es suyo. Y la propia CENS pidió a la CREG excluir a comercio e industria.\n\nEN CONTRA DE LA DEFENSA: CENS no es \"solo distribuidor\". El gerente atribuye la baja de tarifa de 2025 a una \"gestión comercial estratégica\". Y la carta de CENS a la CREG dice que el mayor consumo no responde a \"un uso ineficiente\", lo que contradice el \"controlen sus consumos\".",
+ "verified": [
+  {
+   "id": "debate-octubre-2026-01",
+   "verdict": "confirmado",
+   "claim_final": "La utilidad neta de CENS en 2025 fue COP $123.146 millones, con ingresos de COP $1.445.154 millones y EBITDA de COP $361.222 millones. Es el origen exacto de los '$123 mil millones'.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "quote": "Alcanzamos resultados positivos en el año, con ingresos por COP$1.445.154 millones que superaron la meta definida; el EBITDA ascendió a COP$361.222 millones y la Utilidad Neta cerró en COP$123.146 millones.",
+   "second_source_url": "https://www.valoraanalitik.com/las-companias-que-lideran-el-centro-oriente-colombiano/",
+   "notes": "Revisé el texto con pdftotext (mensaje del gerente y p. 29). La segunda fuente es independiente: Valora Analitik, 30-jun-2026, con base en el informe de Supersociedades ('una utilidad neta por $123.146 millones'). Es utilidad neta, no EBITDA."
+  },
+  {
+   "id": "debate-octubre-2026-02",
+   "verdict": "confirmado",
+   "claim_final": "Serie oficial de CENS. Utilidad neta: 2023 $68.595 millones; 2024 $117.543 millones (+71,4%); 2025 $123.146 millones (+4,77%). EBITDA: $232.396, $330.228 y $361.222 millones. Ingresos: $1.418.185, $1.519.523 y $1.445.154 millones. Deuda con el sector financiero, según el informe: $809.131 millones.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "quote": "Utilidad neta 2025 COP$ 123,146 millones 2024: COP$ 117,543 millones 2023: COP$ 68,595 millones ... Deuda con sector financiero COP$ 809,131 millones",
+   "notes": "Matiz menor: en el ESF de dic-2025, 'Créditos y préstamos' suma $825.577 millones (680.002 de largo plazo + 145.575 de corto plazo), algo más que los $809.131 del informe. Es una diferencia de definición. Los ingresos de 2025 cayeron 4,9% mientras la utilidad subió 4,8%."
+  },
+  {
+   "id": "debate-octubre-2026-03",
+   "verdict": "confirmado",
+   "claim_final": "El ESF de CENS muestra un 'Resultado neto del período' de 123.146 a dic-2025. El patrimonio era de 644.626 a dic-2025 y de 569.112 a dic-2024 (millones de COP).",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ESF_Primer_Trimestre_2026.pdf",
+   "quote": "Resultado neto del período 32,981 123,146 ... TOTAL PATRIMONIO 603,720 644,626",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2025/ESF_Primer_Trimestre_2025.pdf",
+   "notes": "En el ESF del primer trimestre de 2025 la columna dic-2024 dice: resultados acumulados 418.894, resultado neto 117.543, total patrimonio 569.112. Las reservas no cambian (43.815)."
+  },
+  {
+   "id": "debate-octubre-2026-04",
+   "verdict": "confirmado",
+   "claim_final": "Enero-junio 2026: utilidad neta de $56.494 millones, contra $86.949 millones en enero-junio 2025 (-35,0%). La utilidad antes de impuestos pasó de 128.035 a 88.908. Los ERI del tercer trimestre de 2026 no están publicados (404 al 31-oct-2026).",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Segundo_Trimestre_2026.pdf",
+   "quote": "Resultado neto del ejercicio 56,494 86,949",
+   "notes": "Gastos financieros: 55.823 frente a 43.874. Costo de prestación: 546.039 frente a 519.325. Gastos de administración: 52.856 frente a 44.194. Últimos 12 meses (jul-25 a jun-26): 92.691. Comprobé el 404 del archivo ERI_Tercer_Trimestre_2026.pdf."
+  },
+  {
+   "id": "debate-octubre-2026-05",
+   "verdict": "confirmado",
+   "claim_final": "Primer trimestre de 2026: utilidad neta de $32.981 millones, contra $52.826 millones en el primer trimestre de 2025 (-37,6%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Primer_Trimestre_2026.pdf",
+   "quote": "Resultado neto del período/ejercicio 32,981 52,826",
+   "notes": "Ingresos ordinarios del trimestre: 344.535 frente a 381.008 (-9,6%)."
+  },
+  {
+   "id": "debate-octubre-2026-06",
+   "verdict": "confirmado",
+   "claim_final": "Enero-septiembre 2025: utilidad neta de $103.895 millones, contra $119.458 millones en el mismo periodo de 2024. Cálculo propio: el cuarto trimestre de 2025 aportó ~$19.251 millones y el de 2024 fue de ~-$1.915 millones.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2025/ERI_Tercer_Trimestre_2025.pdf",
+   "quote": "Resultado neto del ejercicio 103,895 119,458",
+   "notes": "El cálculo de los cuartos trimestres es una resta propia sobre las cifras anuales oficiales."
+  },
+  {
+   "id": "debate-octubre-2026-07",
+   "verdict": "corregido",
+   "claim_final": "Según las notas de CENS, en el primer semestre de 2026 el precio promedio residencial bajó de $895,3 a $843,8/kWh (-5,8%), y la venta de energía cayó $13.712 millones (-2%) por menor precio. La caída de la utilidad antes de impuestos (-$39.127 millones) se debe a que los ingresos totales casi no crecieron (+$3.458 millones) mientras subían los costos: costo de prestación +$26.714 millones (compras de energía y otros costos comerciales +$13.972; nómina +$10.233 por nuevo personal y un incremento salarial del 12%; impuestos +$3.738, de los cuales el impuesto al patrimonio de los Decretos 173 y 240 de 2026 son +$2.813), gastos de administración +$8.662 millones y gastos financieros +$11.949 millones.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "quote": "el segmento residencial aumenta consumo de 488.8 GWh en 2025 vs 514,9 GWh en 2026, pero aun así reduce ingresos en $36,409 por la caída de su precio promedio de $895,3/kWh a $843,8/kWh (-5,8%) ... Sueldos y salarios ... aumentó $10,233, generado por el ingreso de nuevo personal de planta y el incremento salarial del 12% ... Impuesto al patrimonio con incremento de $2,813",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Segundo_Trimestre_2026.pdf",
+   "notes": "La versión original omitía las compras de energía y los gastos de administración, y hacía ver el impuesto al patrimonio como causa central, cuando son apenas $2.813 millones. Las notas explican cómo variaron los costos; no dicen literalmente que esas sean las causas de 'la caída de la utilidad'. La descomposición es un cálculo propio con las cifras del ERI, y la suma cuadra con -39.127."
+  },
+  {
+   "id": "debate-octubre-2026-08",
+   "verdict": "confirmado",
+   "claim_final": "Sobre la utilidad de 2025, los estados financieros de CENS muestran ~$73.888 millones distribuidos como dividendos (60%) y $49.258 millones retenidos. La cuenta por pagar de 'Dividendos y participaciones' subió $73.885 millones en el primer trimestre de 2026, y en el segundo trimestre se pagaron $18.471 millones. Sobre la utilidad de 2024 se distribuyeron ~$58.771 millones (50%). Al Grupo EPM (91,52%) le corresponderían ~$67.622 millones de los dividendos de 2025.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20PRIMER%20TRIM2026.pdf",
+   "quote": "Nota 9. Acreedores y otras cuentas por pagar. Aumentó en $ 6,597, generada principalmente por Dividendos y participaciones $73,885 ... [Nota 5] dividendos por $3",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ESF_Primer_Trimestre_2026.pdf",
+   "notes": "Es una deducción contable sólida, pero no está en un acta. Reconciliación: 644.626 + 32.981 − 603.720 = 73.887. Las reservas no cambian. No pude reabrir las notas del primer trimestre de 2025 (las URL probadas dan 404), así que la cifra '$58.762' de 2024 no está reverificada; el 50% de 2024 sale solo del ESF. Hay que redactarlo como 'según sus estados financieros' y no como 'decretó', salvo que se consiga el acta."
+  },
+  {
+   "id": "debate-octubre-2026-09",
+   "verdict": "confirmado",
+   "claim_final": "El Grupo EPM es el máximo accionista de CENS, con el 91,52%. CENS está autorizada para la transmisión, la distribución y la comercialización de energía, no solo la distribución.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "quote": "siendo su máximo accionista el Grupo EPM con una participación del 91.52% ... CENS está autorizada para prestar el servicio público domiciliario de energía eléctrica y sus actividades complementarias de transmisión, distribución y comercialización",
+   "notes": "La 'transmisión' de CENS corresponde a redes regionales (STR), no al STN de 220 kV o más."
+  },
+  {
+   "id": "debate-octubre-2026-10",
+   "verdict": "confirmado",
+   "claim_final": "CENS compra energía por contratos y en bolsa y la vende a los usuarios regulados, como lo muestran sus estados financieros. En el primer semestre de 2026 compró +105,6 GWh por contratos (precio promedio $310,6/kWh) y -72,8 GWh en bolsa ($320,1/kWh). Esto refuta que 'CENS solo es un distribuidor' y que la energía 'se transa en la bolsa'.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "quote": "Compra en contratos: Aumentó 32,429, explicada por un mayor volumen contratado (aprox. +105,6 GWh) ... Compra en bolsa: Disminuyó $18,457 principalmente por una menor energía comprada (aprox. -72,8 GWh frente a 2025)",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "notes": "Matiz: la cita de la p. 12 del informe ('Compramos energía mediante contratos y en el mercado mayorista (bolsa)...') es textual, pero está en un bloque 'Nuestros negocios' que también habla de generación y de transmisión de 220 kV o más, lo que parece una descripción genérica del Grupo EPM. Es mejor citar la Nota 13, que es específica de CENS. Refuerzo: el gerente atribuye la baja tarifaria de 2025 a 'una gestión comercial estratégica'."
+  },
+  {
+   "id": "debate-octubre-2026-11",
+   "verdict": "confirmado",
+   "claim_final": "La República (30-jul-2026, Isabella Salazar Gaitán) reprodujo, a partir del informe de Supersociedades, que CENS fue la segunda empresa más grande de la región en 2025, con ingresos de $1,44 billones y una utilidad neta de $123.146 millones. Valora Analitik había publicado lo mismo el 30-jun-2026.",
+   "source_url": "https://www.larepublica.co/especiales/encontremonos-en-norte-de-santander/cens-grupo-epm-invertira-4-700-millones-a-traves-de-obras-por-impuestos-4446999",
+   "quote": "Cens Grupo EPM se ubicó en el segundo lugar de las empresas más grandes, con ingresos por $1,44 billones, cerrando el año pasado con una utilidad neta de $123.146 millones.",
+   "second_source_url": "https://www.valoraanalitik.com/las-companias-que-lideran-el-centro-oriente-colombiano/",
+   "notes": "La frase está en un recuadro de artículo relacionado ('La segunda empresa más grande de la región'), no en el cuerpo de la nota sobre obras por impuestos. Ese recuadro atribuye el ranking a Supersociedades. La sección especial tiene contenido y fotos de la empresa. Sigue sin saberse qué fuente usó Parada."
+  },
+  {
+   "id": "debate-octubre-2026-12",
+   "verdict": "confirmado",
+   "claim_final": "El Grupo EPM ganó COP $5,3 billones en 2025 (ingresos de $40,6 billones y EBITDA de $11 billones). La utilidad de CENS equivale a ~2,3% de la del grupo (cálculo ilustrativo). EPM transfirió COP $2,6 billones a Medellín, el 55% de su utilidad de 2024.",
+   "source_url": "https://www.epm.com.co/inversionistas/noticias/resultados-financieros-2025-grupo-epm-solidez/",
+   "quote": "los ingresos consolidados alcanzaron COP 40.6 billones ... el EBITDA llegó a COP 11 billones ... la utilidad neta se ubicó en COP 5.3 billones",
+   "notes": "Boletín fechado en Medellín el 17-mar-2026 y publicado en la web el 24-mar-2026. No menciona a CENS."
+  },
+  {
+   "id": "debate-octubre-2026-13",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 el CU de CENS bajó 11% ($106/kWh, de ~$976 en dic-2024 a ~$869 en dic-2025) porque el precio de bolsa cayó (promedio de $287 frente a $609 en 2024). Ese año CENS asumió $132.631 millones de caja por subsidios que el Gobierno no giró, y al cierre tenía $54.884 millones de opción tarifaria pendientes por trasladar.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "quote": "En el 2025 el CU se redujo en $106/kWh, que equivale al 11% comparado con el año anterior ... el precio de bolsa de energía, el cual promedió $287 frente a los $609 registrados en 2024 ... CENS asumió esfuerzos de caja por COP $132,631 millones por pago de subsidios no girados por parte del Gobierno Nacional",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "notes": "Los 'esfuerzos de caja' son financiación (una cuenta por cobrar a la Nación), no una pérdida ni un regalo. En el segundo trimestre de 2026 MinEnergía giró y la cuenta bajó $107.057 millones. El gerente atribuye la baja a 'una gestión comercial estratégica y las condiciones favorables del mercado mayorista'."
+  },
+  {
+   "id": "debate-octubre-2026-14",
+   "verdict": "confirmado",
+   "claim_final": "Tarifa de octubre de 2026 (publicada el 18-oct-2026), nivel de tensión 1, activo de CENS: CUv $1.018,9488/kWh. Componentes: G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127 (incluye un COT de 44,0139); PR 78,0046; R 55,8206. En enero de 2026 el CUv era $888,0590 (G 298,9047; T 52,9743; DtUN 317,1201; Cv 132,3776, que incluye un COT de 47,0962; PR 67,3480; R 19,3343). El alza es de +130,8898 (+14,74%): G aporta el 75,0% y R el 27,9%; DtUN baja 6,1%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "Fecha Publicacion 18 de Octubre 2026 ... COMPONENTES DEL COSTO UNITARIO- CU en $/kWh ... CUv 1018.9488",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "notes": "Revisé visualmente la página 4 de ambos PDF; las sumas cuadran exactamente. Ojo: el Cv incluye el COT (ver el hallazgo 17 corregido), así que la comercialización pura subió 13,15% (85,2814 → 96,4988), no 6,1%."
+  },
+  {
+   "id": "debate-octubre-2026-15",
+   "verdict": "confirmado",
+   "claim_final": "Serie del CU de CENS (nivel de tensión 1, $/kWh). 2025: ago 871,3912; sep 909,6182; oct 909,1769; nov 860,5643; dic 869,9421. 2026: ene 888,059; feb 862,832; mar 925,8397; abr 915,8951; may 926,9205; jun 944,5183; jul 959,752; ago 1.005,1189 (+4,73%); sep 1.019,0308 (+1,38%); oct 1.018,9488 (-0,01%). Oct-26 frente a oct-25: +12,07%. Oct-26 queda 3,47% por debajo del pico de ene-2025 ($1.055,6).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "El Costo Unitario (CU) del mes de Octubre disminuyó en 0.01% equivalente a $0.082 en comparación con el mes de Septiembre",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202510.pdf",
+   "notes": "Cada tramo salió de un PDF distinto: oct-2025 para may-oct 2025, abr-2026 para nov-25 a abr-26 y oct-2026 para may-oct 2026. El pico de ene-2025 viene del gráfico 'Tarifa aplicada' del Informe de Sostenibilidad."
+  },
+  {
+   "id": "debate-octubre-2026-16",
+   "verdict": "confirmado",
+   "claim_final": "Tarifas con subsidio en octubre de 2026 (subsistencia de 173 kWh bajo 1.000 msnm): E1 $448,4089 (55,993%), E2 $560,5111 (44,9912%), E3 $866,1065 (15%). Frente a enero, E1 y E2 suben 5,73% y E3 14,74%. Frente a oct-2025, E1 y E2 suben 6,28% y E3 12,07%. Lo que pase de 173 kWh se cobra al CU pleno, $1.018,9488, también en los estratos 1 a 3.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "Estrato 1 Subsidio de 55.993% $448.4089 ... Estrato 2 Subsidio de 44.9912% $560.5111 ... Estrato 3 Subsidio de 15% $866.1065 ... Sin subsidio $1018.9488",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202510.pdf",
+   "notes": "La tabla 'Mayor CS' de la página 4 confirma que E1-E3 pagan 1.018,9488 por encima de la subsistencia. Recalculé el ejemplo de estrato 2 con 250 kWh: $160.090,97 en enero y $175.427,48 en octubre, +$15.336,50 (+9,58%). Para estrato 1 con 250 kWh: +$14.284,91 (+10,08%)."
+  },
+  {
+   "id": "debate-octubre-2026-17",
+   "verdict": "corregido",
+   "claim_final": "El COT de octubre de 2026 ($44,0139/kWh en nivel de tensión 1, recuperación de saldos de opción tarifaria de vigencias anteriores) NO se suma aparte: va incluido en el componente Cv y por eso forma parte del CU. Prueba aritmética: Cv(NT1) 140,5127 − 44,0139 = 96,4988; Cv(NT2) 120,1895 − 23,6907 = 96,4988; Cv(NT3) 101,2727 − 4,7739 = 96,4988. Las tres restas dan el Cv del nivel 4, que no tiene COT. En enero pasa lo mismo: 132,3776 − 47,0962 = 85,2814 = Cv del nivel 4.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "En el cálculo de la tarifa de Octubre, incluye un costo de la opción tarifaria (COT), de nivel de tensión 1 de $44.0139 el cual hace parte de la fase de recuperación de los saldos acumulados por opción tarifaria en vigencias anteriores.",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/COT2026/COT_202610.xlsx",
+   "notes": "Resuelve el vacío del hallazgo original. El formato de reporte COT (Res. CREG 101 028 de 2023) confirma COT NT1 = 44,0139. Consecuencia: la comercialización pura subió de 85,2814 a 96,4988 (+13,15%) entre enero y octubre, y el COT pesa 4,32% del CU de octubre."
+  },
+  {
+   "id": "debate-octubre-2026-18",
+   "verdict": "confirmado",
+   "claim_final": "La CREG creó con la Res. 101 120 (30-jul-2026, Diario Oficial 53.575 del 3-ago) un programa transitorio de ahorro por El Niño. La Circular 326 del 13-ago-2026 suspendió su arranque por el desastre nacional (Decreto 1171 del 11-ago) y la Res. 101 126 (21-ago-2026) lo fijó para el 1-sep-2026. La primera factura es pedagógica, el cobro aplica solo a los kWh que superen la meta en más de 10%, la duración inicial es de seis meses (prorrogable) y el recargo no modifica la tarifa. Lo recaudado se destina íntegramente a quienes ahorran.",
+   "source_url": "https://creg.gov.co/publicaciones/16043/creg-fija-para-el-1-de-septiembre-el-inicio-del-programa-de-ahorro-de-energia-ante-el-fenomeno-de-el-nino-y-establece-un-primer-ciclo-pedagogico/",
+   "quote": "La primera factura que se emita luego del 1° de septiembre de 2026 tendrá un carácter pedagógico e informativo ... Quien supere su meta en más del 10 % asume un cobro adicional, sobre el consumo que exceda ese margen ... no modifica la tarifa del servicio de energía ni forma parte de ella ... La duración inicial del programa será de seis meses.",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "notes": "Comunicado de la CREG del 31-ago-2026. El gestor normativo confirma las fechas de las resoluciones y la nota de vigencia sobre la Circular 326. Ya no es cierto que el programa esté suspendido: CENS empezó a cobrar en octubre."
+  },
+  {
+   "id": "debate-octubre-2026-19",
+   "verdict": "confirmado",
+   "claim_final": "Los factores del cobro adicional son 1,30 para los estratos 1-3, 1,50 para los estratos 4-6 y 1,70 para comercio e industria regulados, aplicados solo al consumo que supera el 110% de la meta. El recargo es la diferencia entre la tarifa con factor y la 'tarifa regulada de referencia' (después de subsidios y contribuciones), con un tope en el Costo Incremental Operativo de Racionamiento (CRO). Lo recaudado se registra como 'recursos de terceros' y forma una bolsa exclusiva para los usuarios que ahorran en el mismo mercado; no es ingreso de la empresa.",
+   "source_url": "https://www.epm.com.co/clientesyusuarios/resolucion-creg-101-120-2026/",
+   "quote": "Residencial - estratos 1, 2 y 3: Factor = 1,30 ... estratos 4, 5 y 6: Factor = 1,50 ... Comercial e industrial regulado: Factor = 1,70 ... el cobro adicional solo aplica cuando el consumo supera el 110% de la meta asignada",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "notes": "La fuente primaria es la Res. 101 120: Art. 3 (tarifa regulada de referencia), Art. 10 (factores), Art. 11 par. 3 (tope en el CRO) y Art. 12 (bolsa como recursos de terceros). Según la página de EPM, la meta es la mediana de los promedios diarios de los últimos 12 meses contados hacia atrás desde el 3 de agosto."
+  },
+  {
+   "id": "debate-octubre-2026-20",
+   "verdict": "confirmado",
+   "claim_final": "Alerta Cúcuta (Elibardo León Estévez, fecha inferida ~14-oct-2026) citó al gerente de CENS, José Miguel González: ~110.000 usuarios superaron el 110% de la meta en el ciclo de septiembre (el titular dice 'más de 111 mil'), entre ellos ~10.000 comercios, y 215.000 quedaron por debajo. Los valores adicionales se recogen de octubre a febrero.",
+   "source_url": "https://www.alerta.com.co/servicios/norte-de-santander-mas-de-111-mil-usuarios-superaron-meta-de-consumo-de-energia-253124",
+   "quote": "215 mil usuarios quedaron por debajo de la meta establecida por la CREG ... 10 mil usuarios superaron el límite del consumo establecido ... De octubre a febrero, lo que vamos a tener es que estos valores adicionales a la meta...",
+   "notes": "La página no trae fecha explícita; la inferí de la ruta de la imagen (/2026/10/14/). El artículo es inconsistente entre 110.000 y 111.000."
+  },
+  {
+   "id": "debate-octubre-2026-21",
+   "verdict": "confirmado",
+   "claim_final": "Área Cúcuta (16-oct-2026, sin autor) informó que CENS terminaba la etapa pedagógica y empezaba a cobrar: 111.196 usuarios por encima de la meta, ~239.000 que la cumplieron y cobros adicionales desde el 1 de octubre en Cúcuta, Los Patios, Villa del Rosario, Ocaña y Aguachica.",
+   "source_url": "https://www.areacucuta.com/cens-implementara-sanciones-a-usuarios-por-consumo-excesivo-de-energia-en-cucuta/",
+   "quote": "111,196 usuarios han superado la meta de consumo de energía ... alrededor de 239,000 usuarios lograron cumplir la meta de ahorro ... Desde el 1 de octubre, los consumos que excedan estos límites serán objeto de cobros adicionales",
+   "notes": "Las cifras de usuarios bajo la meta no coinciden con Alerta (239.000 frente a 215.000). 'Sanciones' es un término impreciso: técnicamente es un cobro adicional o recargo."
+  },
+  {
+   "id": "debate-octubre-2026-22",
+   "verdict": "confirmado",
+   "claim_final": "El 19-oct-2026, Carlos Cante, presidente de Fenalcarbón, advirtió en La Opinión que el recargo del 70% para los usuarios industriales regulados podría elevar hasta 10% los costos de producción de la pequeña y mediana minería de carbón, y pidió excluir al sector.",
+   "source_url": "https://laopinion.co/economia/penalizar-consumo-de-energia-puede-encarecer-hasta-10-la-produccion-de-carbon-en-norte-de",
+   "quote": "un recargo del 70% sobre la tarifa de referencia ... podrían incrementar hasta en un 10% sus costos de producción ... excluir a la industria del carbón del esquema de penalizaciones",
+   "second_source_url": "https://www.eltiempo.com/economia/sectores/sanciones-por-no-ahorrar-energia-podrian-encarecer-hasta-en-10-la-produccion-de-carbon-en-colombia-3594692",
+   "notes": "El Tiempo publicó una nota equivalente, que vi solo en resultados de búsqueda. El artículo no cita a ningún político."
+  },
+  {
+   "id": "debate-octubre-2026-23",
+   "verdict": "confirmado",
+   "claim_final": "La Opinión (fecha que muestra la página: 31-oct-2026) informó que CENS, en carta firmada por su gerente José Miguel González Campo, pidió a la CREG tres cosas: ajustar las metas de los hogares según la temperatura, excluir de la Res. 101-120 a comercio e industria y excluir a los usuarios sin historial. Según la carta, más de 3.095 usuarios comerciales e industriales recibieron en octubre recargos superiores a $200.000, el 75% de los usuarios de CENS vive cerca del nivel del mar y el mayor consumo responde a necesidades prioritarias y no a un uso ineficiente.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "el incremento del consumo de energía responde a necesidades prioritarias como la refrigeración de alimentos, la conservación de inventarios, los procesos productivos y la climatización de espacios y no a un uso ineficiente de la energía por parte de las familias y empresas ... más de 3.095 usuarios comerciales e industriales han recibido recargos superiores a $200.000",
+   "second_source_url": "https://www.alerta.com.co/servicios/norte-de-santander-como-afectara-el-fenomeno-de-el-nino-la-factura-de-energia-254036",
+   "notes": "Firma 'crojas'. El artículo no da el monto total de recargos ni el número de hogares con cobro, y no cita a ningún político. Alerta (31-oct) confirma por separado que CENS pidió 'una exclusión del sector empresarial'."
+  },
+  {
+   "id": "debate-octubre-2026-24",
+   "verdict": "confirmado",
+   "claim_final": "Alerta Cúcuta (Juan David Quijano Castillo, fecha inferida ~31-oct-2026): el gerente de CENS dijo que la regulación de la CREG es de obligatorio cumplimiento, que lo recaudado irá a los usuarios que ahorran y que este El Niño 'es el más intenso que ha vivido Colombia y Latinoamérica en varias décadas'. También mencionó que se pidió excluir al sector empresarial.",
+   "source_url": "https://www.alerta.com.co/servicios/norte-de-santander-como-afectara-el-fenomeno-de-el-nino-la-factura-de-energia-254036",
+   "quote": "Esta es una reglamentación de obligatorio cumplimiento para todo el país ... Estos recursos van a ir a los usuarios que están teniendo ahorros en los consumos ... Es el más intenso que ha vivido Colombia y Latinoamérica en varias décadas",
+   "notes": "La fecha es inferida de la ruta de la imagen (/2026/10/31/)."
+  },
+  {
+   "id": "debate-octubre-2026-25",
+   "verdict": "corregido",
+   "claim_final": "El Colombiano (24-sep-2026) informó que el PROYECTO de Presupuesto 2027 reducía diez subsidios de $22 a $13 billones (-40% nominal, -37% real) y que el de energía pasaba de $6 billones a poco más de $1 billón. El artículo no habla de eliminar los subsidios a los estratos 1-3. ESA CIFRA YA NO ES LA VIGENTE: el 20-oct-2026 el Congreso aprobó el Presupuesto 2027 ($634,9 billones) y adicionó $3 billones para subsidios de energía y gas en Minas y Energía. @soynegrojohn enlazó el 30-oct una nota sobre el proyecto, no sobre el presupuesto aprobado.",
+   "source_url": "https://www.elcolombiano.com/negocios/presupuesto-2027-recorte-subsidios-pobres-programas-afectados-AH41461908",
+   "quote": "Los recursos pasan de $6 billones en 2026 a poco más de $1 billón en 2027 ... La caída equivale a 40% en términos corrientes y 37% en pesos constantes",
+   "second_source_url": "https://www.larepublica.co/economia/congreso-de-la-republica-dio-luz-verde-al-presupuesto-de-2027-por-634-9-billones-4506678",
+   "notes": "La República (20-oct-2026, Juliana Trujillo Velásquez) escribe: 'En Minas y Energía, se adicionaron $3 billones para financiar subsidios de energía y gas.' Lo confirman Canal 1 y El Heraldo (20-oct). Ninguno desglosa cuánto va a energía y cuánto a gas, ni el total final del rubro de energía. El mismo artículo de El Colombiano aclaraba que la distribución 'todavía está en discusión' y que había 12 proposiciones para subir los subsidios en más de $7 billones."
+  },
+  {
+   "id": "debate-octubre-2026-26",
+   "verdict": "confirmado",
+   "claim_final": "En el segundo trimestre de 2026, el Ministerio de Minas asignó recursos para cubrir subsidios adeudados a CENS: la cuenta por cobrar de subsidios bajó $107.057 millones. En el semestre ingresaron $155.856 millones por 'aportes, contribuciones y subsidios'.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "quote": "Subsidios servicio disminuye en $107,057 debido a que el Ministerio de Minas ha asignado recursos para cubrir estos valores en el trimestre.",
+   "notes": "La cifra de $155.856 millones sale de la Nota 6 (flujo de efectivo)."
+  },
+  {
+   "id": "debate-octubre-2026-27",
+   "verdict": "confirmado",
+   "claim_final": "El cargo de distribución DtUN no es exclusivo de CENS: es un cargo unificado del ADD Centro. Como el DtUN supera al Dt propio de CENS, la empresa traslada la diferencia al ADD, un costo que subió $7.953 millones en el primer semestre de 2026. Por eso el DtUN sobrestima lo que realmente recibe CENS por distribución.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "quote": "ADD: Aumentó en $7,953, producto de una mayor brecha entre el DtUN y el Dt propio producto de una mayor inversión por parte de otros OR del ADD centro.",
+   "notes": "Que el Dt propio sea menor que el DtUN es una lectura de la nota, que habla de 'brecha' registrada como costo. Si se suma a esto que el Cv incluye el COT, la afirmación 'DtUN + Cv = 43% que remunera a CENS' queda sobrestimada."
+  },
+  {
+   "id": "debate-octubre-2026-28",
+   "verdict": "confirmado",
+   "claim_final": "Indicadores calculados con cifras oficiales de 2025: margen neto de 8,52% (2024: 7,74%; 2023: 4,84%); margen EBITDA de 25,0%; utilidad sobre patrimonio contable de 20,3% (patrimonio promedio) o 21,6% (patrimonio inicial); utilidad por cliente de ~$191.297 al año (~$15.941 al mes, con 643.741 clientes). Un referente parcial: según Valora Analitik, ESSA (filial de EPM en Santander) ganó $269.427 millones sobre $2,14 billones facturados en 2025, un margen de ~12,6%, por encima del de CENS.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "quote": "cerrando el año con un total de 643.741 clientes atendidos",
+   "second_source_url": "https://www.valoraanalitik.com/las-companias-que-lideran-el-centro-oriente-colombiano/",
+   "notes": "Rehíce todos los cálculos y coinciden. Son cálculos propios. Sigue faltando un referente regulatorio verificado (WACC de la CREG) para calificar la rentabilidad de 'exagerada'. El margen de ESSA es un cálculo sobre cifras de prensa ('acumulado de $269.427 millones' sobre 'facturación de $2,14 billones'), con confianza media."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "debate-octubre-2026-N01",
+   "claim": "El componente de comercialización (Cv) del CU de CENS incluye el costo de recuperación de la opción tarifaria (COT). Sin el COT, la comercialización 'pura' fue $96,4988/kWh en octubre de 2026, contra $85,2814 en enero (+13,15%). DtUN + Cv puro suman $394,38/kWh, el 38,7% del CU de octubre, no el 43%. El COT pesa 4,32%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "Para el mes de Octubre el Costo de recuperación de la Opción Tarifaria (COT) es de: NT1 $44.0139 NT2 $23.6907 y NT3 $4.7739",
+   "figures": "Cv oct: NT1 140,5127; NT2 120,1895; NT3 101,2727; NT4 96,4988. Restando el COT de cada nivel, todos dan 96,4988. En enero: 132,3776 − 47,0962 = 85,2814 = Cv del NT4.",
+   "period": "Enero y octubre 2026",
+   "source_date": "2026-10-18",
+   "source_outlet": "CENS – Tarifas mercado regulado",
+   "source_title": "Tarifas_CENS_202610_.pdf, p. 4 (y Tarifas_CENS_202601_.pdf, p. 4)",
+   "notes": "Es una deducción aritmética exacta en dos meses y tres niveles. El Cv también depende de la fórmula de la CREG. Esto matiza tanto el argumento 'DtUN bajó' de la defensa como el '43% remunera a CENS' de la crítica."
+  },
+  {
+   "id": "debate-octubre-2026-N02",
+   "claim": "El 20-oct-2026 el Congreso aprobó el Presupuesto General 2027 por $634,9 billones y adicionó $3 billones en Minas y Energía para financiar subsidios de energía eléctrica y gas. Con eso se revierte en parte el recorte del proyecto que había reportado El Colombiano el 24-sep, y que @soynegrojohn enlazó el 30-oct.",
+   "source_url": "https://www.larepublica.co/economia/congreso-de-la-republica-dio-luz-verde-al-presupuesto-de-2027-por-634-9-billones-4506678",
+   "source_type": "prensa",
+   "confidence": "alta",
+   "quote": "En Minas y Energía, se adicionaron $3 billones para financiar subsidios de energía y gas.",
+   "figures": "Adición de $3 billones (energía + gas); presupuesto total de $634,9 billones",
+   "period": "Presupuesto 2027",
+   "source_date": "2026-10-20",
+   "source_outlet": "La República (Juliana Trujillo Velásquez); también Canal 1 y El Heraldo, 20-oct-2026",
+   "source_title": "Salud fue el sector más beneficiado tras la aprobación del presupuesto de 2027",
+   "notes": "No hay desglose entre energía y gas ni total final del rubro de energía. Según El Heraldo, el presupuesto 'contempla $ 3 billones para financiar los subsidios de energía eléctrica y gas', redacción que podría leerse como total y no como adición. Falta confirmar con MinHacienda."
+  },
+  {
+   "id": "debate-octubre-2026-N03",
+   "claim": "La Silla Vacía (5-oct-2026) informó que el proyecto de presupuesto asignaba $1,4 billones a subsidios de energía frente a unos $6 billones necesarios: un déficit de ~$4,5 billones, o 77% de desfinanciación. También explicó que los subsidios a los estratos 1 y 2 son un mandato legal y no han sido eliminados.",
+   "source_url": "https://www.lasillavacia.com/silla-nacional/empresas-de-luz-asumen-en-silencio-recorte-de-subsidios-de-energia-de-abelardo/",
+   "source_type": "prensa",
+   "confidence": "media",
+   "quote": "Es una obligación salvo que se haga una reforma de ley",
+   "figures": "Necesidad ~$6 billones; asignación en el proyecto $1,4 billones; déficit ~$4,5 billones; deuda estatal con el sector ~$7,9 billones (Asocodis)",
+   "period": "Proyecto de Presupuesto 2027",
+   "source_date": "2026-10-05",
+   "source_outlet": "La Silla Vacía (Camilo Andrés Garzón y Pablo Manrique)",
+   "source_title": "Empresas asumen en silencio recorte de subsidios de energía de Abelardo",
+   "notes": "La cita es de Tomás González (CREE). La entradilla habla de 'poco más de $1 billón' y el cuerpo de $1,4 billones. No menciona a CENS. La página traía un texto con instrucciones embebidas, que ignoré."
+  },
+  {
+   "id": "debate-octubre-2026-N04",
+   "claim": "El texto oficial de la Res. CREG 101 120 de 2026 confirma tres cosas. Las fechas: firmada el 30-jul-2026 y publicada en el Diario Oficial 53.575 el 3-ago. La suspensión: la Circular 326 del 13-ago-2026 suspendió el arranque por el desastre nacional (Decreto 1171 del 11-ago), y la Res. 101 126 (21-ago, Diario Oficial 53.602) lo reprogramó. Y el destino del dinero: lo recaudado se registra como recursos de terceros, se destina exclusivamente a los usuarios beneficiarios del mismo mercado, y el recargo tiene un tope en el Costo Incremental Operativo de Racionamiento (CRO) del estrato 4.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "Dada en Bogotá, D.C., a los treinta (30) días del mes de julio de 2026 ... Suspensión transitoria de la entrada en operación del programa transitorio de incentivos al uso eficiente ... [el recargo] no podrá superar el consumo excedente objeto de cobro valorado al Costo Incremental Operativo de Racionamiento",
+   "period": "Jul-2026 a feb-2027 (inicial)",
+   "source_date": "2026-07-30",
+   "source_outlet": "CREG – Gestor Normativo",
+   "source_title": "Resolución CREG 101 120 de 2026 (con notas de vigencia)",
+   "notes": "Resuelve el vacío de Corrillos: la suspensión fue en agosto y la superó la Res. 101 126. El programa está vigente en octubre. El Art. 1 par. 2 dice que no da derecho a costos adicionales para los comercializadores."
+  },
+  {
+   "id": "debate-octubre-2026-N05",
+   "claim": "En su mensaje del Informe de Sostenibilidad 2025, el gerente de CENS atribuye la baja de tarifa de 2025 en parte a la 'gestión comercial estratégica' de la empresa. Es decir, la propia CENS reconoce que su estrategia de compra de energía influye en la tarifa, lo que contradice el 'CENS solo es un distribuidor'.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "Con relación a la tarifa aplicada en Cens, durante el periodo 2025 presentó una senda decreciente, resultado de la conjunción entre una gestión comercial estratégica y las condiciones favorables del mercado mayorista. En el transcurso del año el Costo Unitario aplicado disminuyó en 11% pasando de un precio por Kw de $976 en diciembre de 2024 a $869 en el 2025.",
+   "figures": "$976 (dic-2024) → $869 (dic-2025), -11%",
+   "period": "2025",
+   "source_date": "2026",
+   "source_outlet": "CENS",
+   "source_title": "Informe ejecutivo de Sostenibilidad CENS 2025, mensaje del gerente (p. 6)",
+   "notes": "Sirve a los dos lados: CENS sí incide en el componente G a través de sus contratos, pero en 2025 esa gestión bajó la tarifa."
+  },
+  {
+   "id": "debate-octubre-2026-N06",
+   "claim": "En el 'Valor generado y distribuido' de 2025, CENS asigna a los 'Dueños' COP $123.146 millones (18%) de un total de ~$675.898 millones. Al Estado le asigna $92.229 millones (14%), a la 'Gente CENS' $130.159 millones (19%), a la reinversión en la empresa $135.309 millones (20%), a los proveedores de bienes y servicios $111.032 millones (16%), a los proveedores financieros $81.263 millones (12%) y a la comunidad y el medio ambiente $2.760 millones (0,4%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "Valor generado y distribuido a nuestros grupos de interés ... Dueños COP $123,146 ... Estado COP $92,229 ... Comunidad y medio ambiente COP $2,760",
+   "figures": "Suma propia: 675.898. Comunidad y medio ambiente = 0,4%",
+   "period": "2025",
+   "source_date": "2026",
+   "source_outlet": "CENS",
+   "source_title": "Informe ejecutivo de Sostenibilidad CENS 2025, p. 31",
+   "notes": "Cautela: la línea 'Dueños' es igual a toda la utilidad neta, pero el balance muestra que solo ~60% ($73.888 millones) se distribuyó como dividendo y $49.258 millones se retuvieron. No hay que presentar los $123.146 millones como dividendos pagados."
+  },
+  {
+   "id": "debate-octubre-2026-N07",
+   "claim": "Valora Analitik (30-jun-2026), con base en el informe de Supersociedades, publicó las cifras de CENS de 2025 (ingresos de $1,44 billones y utilidad neta de $123.146 millones) y las de ESSA (facturación de $2,14 billones y utilidad acumulada de $269.427 millones). El margen neto implícito de ESSA (~12,6%) supera al de CENS (8,5%).",
+   "source_url": "https://www.valoraanalitik.com/las-companias-que-lideran-el-centro-oriente-colombiano/",
+   "source_type": "prensa",
+   "confidence": "media",
+   "quote": "una utilidad neta por $123.146 millones ... una facturación de $2,14 billones en 2025 ... un acumulado de $269.427 millones",
+   "figures": "ESSA: 269.427 / 2.140.000 = 12,6%; CENS: 8,52%",
+   "period": "2025",
+   "source_date": "2026-06-30",
+   "source_outlet": "Valora Analitik (Jessika Paola Rodríguez Mendoza)",
+   "source_title": "Las compañías que lideran el centro-oriente colombiano",
+   "notes": "Es la fuente pública más temprana de los '$123 mil millones' que encontré. La comparación con ESSA es aproximada, porque 'facturación' y 'acumulado' pueden no coincidir con los ingresos ordinarios y la utilidad neta auditados."
+  },
+  {
+   "id": "debate-octubre-2026-N08",
+   "claim": "Descomposición de la caída de la utilidad antes de impuestos de CENS entre el primer semestre de 2025 y el de 2026 (-$39.127 millones): ingresos totales +3.458; costo de prestación +26.714; gastos de administración +8.662; gastos financieros +11.949; menor deterioro +2.872; ingresos financieros +2.132.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Segundo_Trimestre_2026.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "Total Ingresos 731,779 728,321 ... Costo prestacion de servicios 546,039 519,325 ... Gastos de administración 52,856 44,194 ... Gastos financieros 55,823 43,874 ... Resultado del período antes de impuestos 88,908 128,035",
+   "figures": "Suma de variaciones = -39.127 (cuadra)",
+   "period": "Enero-junio 2026 frente a 2025",
+   "source_date": "2026",
+   "source_outlet": "CENS",
+   "source_title": "ERI enero-junio 2026 y Notas 12-13",
+   "notes": "Cálculo propio. Según las notas, dentro del costo de prestación pesan las compras de energía +13.972, la nómina +10.233 y los impuestos +3.738."
+  },
+  {
+   "id": "debate-octubre-2026-N09",
+   "claim": "Las tarifas subsidiadas de CENS en oct-2025 eran E1 $421,8943, E2 $527,3678 y E3 $772,8004, con un CU de $909,1769. Frente a oct-2025, en oct-2026 E1 y E2 suben 6,28% y E3 y el CU pleno suben 12,07%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202510.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "El Costo Unitario (CU) del mes de Octubre disminuyó en 0.05% ... $421.8943 $527.3678 $772.8004 ... $909.1769",
+   "figures": "E1 448,4089/421,8943 = +6,28%; E2 +6,28%; E3 866,1065/772,8004 = +12,07%",
+   "period": "Oct-2025 frente a oct-2026",
+   "source_date": "2025-10",
+   "source_outlet": "CENS",
+   "source_title": "Tarifa_CENS_202510.pdf",
+   "notes": "La comparación interanual evita el sesgo estacional de comparar enero con octubre. Conviene usarla en el hilo."
+  },
+  {
+   "id": "debate-octubre-2026-N10",
+   "claim": "Estimación del recaudo mensual del COT en octubre de 2026: ~$5.538 millones en el nivel de tensión 1 (44,0139 $/kWh × 125.828.027 kWh de ventas reguladas reportadas para m-2) y ~$5.816 millones sumando los niveles 1 a 3. Al cierre de 2025 CENS reportaba $54.884 millones de opción tarifaria pendientes, lo que sugiere que la fase de recuperación podría estar terminando.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/COT2026/COT_202610.xlsx",
+   "source_type": "primario-cens",
+   "confidence": "baja",
+   "quote": "COTn,i,j,m ... $/kWh 44.0139 ... VRn,i,j,m−2 ... kWh 125828026.89496173",
+   "figures": "NT1 ~5.538; NT2 ~267; NT3 ~10,7 (millones de COP al mes)",
+   "period": "Octubre 2026",
+   "source_date": "2026-10",
+   "source_outlet": "CENS – Reporte COT (Res. CREG 101 028 de 2023)",
+   "source_title": "COT_202610.xlsx",
+   "notes": "Cálculo propio y especulativo sobre cuándo termina el COT. Si termina, el CU podría bajar unos $44/kWh. No lo afirmes sin confirmarlo con CENS."
+  }
+ ],
+ "cautions": [
+  "Los '$123 mil millones' son exactos como utilidad NETA de 2025, pero no como ritmo actual. En el primer semestre de 2026 cayó 35% ($56.494 millones) y los últimos 12 meses suman $92.691 millones. Escribir 'gana $123 mil millones al año' en presente sin aclarar que es 2025 se puede desmentir.",
+  "No llamar 'exagerada' a la ganancia como si fuera un hecho. Es un juicio de valor y no hay referente regulatorio verificado. El margen neto de CENS (8,5%) es menor que el de ESSA (~12,6%, cifras de prensa). La rentabilidad sobre patrimonio contable de ~20% es alta, pero en un negocio regulado intensivo en capital no prueba abuso. Lo defendible es decir que los trinos a favor de CENS 'omiten' la utilidad y los dividendos.",
+  "Dividendos: hay que hablar de 'dividendos por pagar reconocidos en sus estados financieros por $73.885 millones (~60% de la utilidad de 2025)' y no de 'decretó', mientras no se tenga el acta. Tampoco presentar como dividendos pagados los $123.146 millones que el informe asigna a 'Dueños' en el valor distribuido. Al 30-jun solo se habían pagado $18.471 millones.",
+  "El COT está dentro del Cv. Sumar DtUN + Cv como '43% que remunera a CENS' sobrestima su ingreso propio por dos razones: el COT es recuperación de saldos que la empresa financió en vigencias anteriores, y el DtUN es un cargo unificado del ADD Centro del que CENS traslada una parte. La cifra prudente es ~38,7% (DtUN + Cv puro), y aun así es un techo.",
+  "La defensa acierta en lo esencial del alza de 2026: el 75% viene de la generación (G) y el 28% de las restricciones (R), y el DtUN bajó. Pero la comercialización pura subió 13,15% entre enero y octubre. Atribuir todo el alza a la 'codicia' de CENS sería injusto y CENS lo desmentiría con sus propios PDF.",
+  "No decir ni sugerir que los recargos de El Niño enriquecen a CENS. La Res. 101 120 (Art. 12) los clasifica como 'recursos de terceros' destinados exclusivamente a los usuarios que ahorran. Afirmar lo contrario sería falso y potencialmente difamatorio.",
+  "Usar 'cobro adicional' o 'recargo', no 'sanción' ni 'multa', aunque algunos medios usen 'sanciones'. El cobro solo cae sobre los kWh que superan el 110% de la meta y tiene un tope en el CRO.",
+  "El programa NO está suspendido. La Circular 326 de agosto fue anterior a la Res. 101 126, y CENS cobra desde octubre. No repetir la versión de Corrillos.",
+  "Subsidios: el trino de @soynegrojohn ('quitó subsidios a estratos 1, 2 y 3') es inexacto por dos razones. Los subsidios son obligación legal y no fueron eliminados, y el 20-oct el Congreso adicionó $3 billones para subsidios de energía y gas. La nota de El Colombiano que enlaza (24-sep) describe el proyecto, no el presupuesto aprobado. Aun así, el riesgo de desfinanciación sigue siendo real.",
+  "Los $132.631 millones de subsidios 'asumidos' por CENS en 2025 fueron financiación temporal, no un regalo: el Gobierno giró y la cuenta bajó $107.057 millones en el segundo trimestre de 2026. No usar la cifra como prueba de que CENS 'subsidia' a los usuarios con su utilidad.",
+  "El ejemplo del recibo de estrato 2 con 250 kWh (+$15.337, +9,6%) incluye solo energía. Deja por fuera el recargo de la CREG, el alumbrado, el aseo y las contribuciones. Además, CENS aplica el CU que permanezca más días publicado en el periodo de facturación, así que un recibo de octubre puede reflejar el CU de septiembre. Debe presentarse como ilustrativo.",
+  "Para no exagerar, usar la variación interanual (+12,07% frente a oct-2025) además de la de enero a octubre (+14,74%). El CU de octubre de 2026 ($1.018,95) sigue 3,5% por debajo del de enero de 2025 ($1.055,6): no es un récord histórico.",
+  "Las cifras de prensa sobre usuarios no coinciden: 110.000 frente a 111.000 frente a 111.196 por encima de la meta, y 215.000 frente a 239.000 por debajo. Las fechas de los dos artículos de Alerta son inferidas. Hay que citar el número con la fuente y la fecha exactas.",
+  "No se pudo ver ningún trino (X da error 402) ni identificar qué fuente usó @fredyparada90. Las fuentes públicas más tempranas de la cifra son Valora Analitik (30-jun-2026) y La República (30-jul-2026), ambas con base en Supersociedades. No atribuirle una fuente a Parada.",
+  "No encontré declaraciones de concejales, diputados, congresistas, del alcalde ni del gobernador sobre CENS entre el 20 y el 31 de octubre. Afirmar que 'los políticos' desataron el debate o que mintieron no tiene respaldo. La crítica de 2022 sobre utilidades que 'se van a Medellín' (exconcejal Leonardo Jácome) es vieja y no debe presentarse como actual.",
+  "La afirmación 'CENS solo es distribuidor' es falsa: CENS también es comercializadora y compra por contratos y en bolsa. Pero conviene apoyarse en la Nota 13 de los estados financieros y no en la p. 12 del informe, que describe negocios que parecen del Grupo EPM, como generación y transmisión de 220 kV o más.",
+  "La propia CENS (carta a la CREG, 31-oct) dice que el mayor consumo no responde a 'un uso ineficiente'. Es útil contra el 'controlen sus consumos', pero hay que citarlo como argumento de la empresa para pedir la exclusión de comercio e industria, no como admisión de que los usuarios no tienen ninguna responsabilidad.",
+  "El COT (~$44/kWh) podría estar cerca de terminar según mi estimación (~$5,5-5,8 mil millones al mes frente a $54.884 millones pendientes a dic-2025). Si CENS anuncia pronto una baja por fin del COT, un hilo que dé el alza por permanente quedaría desactualizado. Es una estimación no confirmada.",
+  "El tercer trimestre de 2026 (enero-septiembre) no está publicado. Si sale pronto, puede cambiar el 'lo corrido de 2026'."
+ ]
+}

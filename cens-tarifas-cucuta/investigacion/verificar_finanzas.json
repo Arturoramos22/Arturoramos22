@@ -1,0 +1,532 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL DEL FRENTE FINANZAS (CENS). Volví a descargar las fuentes en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif_finanzas/ (pdf/ y txt/): notas y EEFF de CENS 2023-2025, trimestrales de 2026, ERI y ESF de diciembre 2018-2021 (los escaneados los revisé como imagen), informes de sostenibilidad 2018-2025, EEFF separados de EPM 2025, notas de EPM Inversiones a marzo de 2026, informes trimestrales del Grupo EPM, inspección de la SSPD y resumen de Fitch. También reabrí las notas de prensa (Semana, La Opinión x2, La República, El Colombiano). El archivo no trae bill_cases: este frente no tiene recibos que verificar.\n\nRESULTADO. De 38 claims, 36 quedan confirmados y 2 corregidos; ninguno refutado. finanzas-09: la tasa de 13,69% EA está en el Informe de Sostenibilidad 2025, no en las notas. finanzas-28: la subasta fue el 26 de febrero de 2009, y los 165.000 millones eran la \"propuesta del Gobierno Nacional\", no un \"precio mínimo\". Las series de utilidad, ingresos, EBITDA, deuda, patrimonio, dividendos, valor agregado, opción tarifaria y subsidios cuadran con las fuentes primarias. Para la cifra más débil, el dividendo de 2026, encontré una tercera prueba: el movimiento del patrimonio (644.626 + 32.981 − 603.720 = 73.887) y el de los resultados acumulados (600.812 a 526.924).\n\nLO QUE CAMBIA PARA EL HILO.\n(1) La \"asimetría de 2025\" (bolsa −61% frente a tarifa −4,6%) es engañosa tal como está. La bolsa era solo el 39% del costo de compra de energía en 2024 (29% en 2025), los contratos subieron 24,8 $/kWh y las redes, 14.361 millones. Comparación correcta (cálculo propio con la Nota 26): el costo de energía más redes por kWh vendido bajó unos 51,5 $/kWh y la tarifa promedio, 41,2. La brecha de unos 10 $/kWh equivale a unos 15.000 millones, casi exactamente el aumento del EBITDA (14.962). Esa versión sí resiste una réplica.\n(2) El \"NO CUMPLE\" de la SSPD debe ir con la aclaración del mismo informe: el impacto \"no afectó directamente a los usuarios\" porque quedó en los saldos acumulados de la opción tarifaria; la empresa se comprometió a recalcular, y la SSPD no evidenció conducta en perjuicio de los usuarios.\n(3) El déficit de subsidios de 2025 no es una deuda nueva de la Nación: ese año la Nación giró 200.293 millones, más que el déficit del año (183.515), y la cuenta por cobrar bajó 16.064.\n(4) La caída de la utilidad en el S1-2026 se explica sobre todo por el costo de prestación (+26.714: más energía en contratos y alza salarial del 12%). El impuesto al patrimonio sumó apenas 2.813.\n(5) La frase \"Medellín recibe la mitad de la utilidad de CENS\" no es exacta. Lo correcto: cerca de la mitad entra en la base sobre la que EPM calcula sus excedentes, por método de participación; no es un giro directo. El 25% extraordinario requiere aprobación cada año. Para 2026, EPM (informe 2T-2026) reporta 2,6 billones causados, frente a los 2,8 billones que publicó la prensa.\n(6) La remuneración de corto plazo de la gerencia subió 14,8%: el total bajó solo por los beneficios de largo plazo.\n\nBalance: los datos sostienen alta rentabilidad, dividendos crecientes hacia entes públicos y un aporte comunitario mínimo según la contabilidad de la propia empresa. No sostienen \"enriquecimiento ilícito\" ni conducta abusiva comprobada.",
+ "verified": [
+  {
+   "id": "finanzas-01",
+   "verdict": "confirmado",
+   "claim_final": "Utilidad neta de CENS: 42.141 (2018), 65.033 (2019), 67.938 (2020), 107.107 (2021), 131.200 (2022), 68.595 (2023), 117.543 (2024) y 123.146 millones (2025). Suma 2018-2025: 722.703 millones.",
+   "figures_final": "2018 42.141 | 2019 65.033 | 2020 67.938 | 2021 107.107 | 2022 131.200 | 2023 68.595 | 2024 117.543 | 2025 123.146 (millones COP); suma 722.703",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Anexo%204.%20Estados%20financieros%202024.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "ERI dic-2019 (imagen): 'Resultado neto del ejercicio 65,033 / 42,141'; ERI dic-2021: '107,107 / 67,938'; EEFF 2023: '68.595 / 131.200'; EEFF 2024: '117,543'; Notas 2025: 'Resultado neto del ejercicio 123,146 117,543'",
+   "notes": "Revisé cada año en su fuente primaria. Los escaneados de 2018-2019 los revisé como imagen. Segunda fuente para 2025: La República, que cita a Supersociedades (123.146)."
+  },
+  {
+   "id": "finanzas-02",
+   "verdict": "confirmado",
+   "claim_final": "Ingresos totales de CENS: 688.659 (2018), 777.880 (2019), 856.035 (2020), 985.344 (2021), 1.232.156 (2022), 1.418.185 (2023), 1.519.523 (2024) y 1.445.154 millones (2025). Ingresos de actividades ordinarias: 1.509.504 (2024) y 1.434.551 (2025).",
+   "figures_final": "Cifras idénticas a las del claim. La caída de 2025 fue de 74.369 millones (−4,9%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "'ingresos por COP$1.445.154 millones' (Inf. 2025); Nota 23: 'Total 1,434,551 1,509,504'; EEFF 2024: 'Total ingresos 1,519,523 1,418,185'",
+   "notes": "2018 en el ERI dic-2019 (imagen): 688.659. En ese ERI las 'actividades ordinarias' de 2018 suman 688.610 porque incluyen otros ingresos. 2020-2021 en el ERI dic-2021; 2022-2023 en los EEFF 2023."
+  },
+  {
+   "id": "finanzas-03",
+   "verdict": "confirmado",
+   "claim_final": "EBITDA de CENS: 125.221 (2018), 166.343 (2019), 184.077 (2020), 255.229 (2021), 293.515 (2022), 232.296 (2023), 330.228 (2024; reexpresado a 346.260 en el informe 2025) y 361.222 millones (2025). Margen EBITDA reportado: 21,5% (2020), 26,0% (2021), 23,9% (2022), 16,4% (2023), 21,8% (2024 original) / 22,9% (2024 reexpresado) y 25,1% (2025).",
+   "figures_final": "Cifras idénticas a las del claim. Para 2018 el CMI 2019 dice margen 16,68%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2022/Informe%20de%20Sostenibilidad%20CENS%202022.pdf",
+   "quote": "\"A partir del año 2025, el rubro de pensiones de jubilación patronales y conmutación pensional, se excluyen del cálculo y con el fin de ser comparativo se modifica el año 2024 el cual había sido reportado con el valor de COP$ 330,228 millones.\"",
+   "notes": "El CMI del Informe 2019 trae 'EBITDA 166.343 ... 125.221; Margen EBITDA 21,49 ... 16,68'. El cambio de metodología de 2025 sube el EBITDA: para comparar 2025 con años anteriores hay que usar el 2024 reexpresado (346.260)."
+  },
+  {
+   "id": "finanzas-04",
+   "verdict": "confirmado",
+   "claim_final": "Según la Nota 26 de 2025, CENS pagó la energía de bolsa a un promedio de 254,3 $/kWh, frente a 656,8 en 2024 (ahorro por precio de 149.010 millones). Los contratos se encarecieron 24,8 $/kWh (de 290 $/kWh). Según la Nota 23, su tarifa promedio de venta bajó 41,2 $/kWh desde 888,3 (−4,6%). Compras en bolsa: de 271.009 a 167.328 millones; contratos: de 415.925 a 413.804; total: de 686.934 a 581.132 (−15,4%). El ingreso por distribución bajó de 1.451.018 a 1.369.163 (−5,6%).",
+   "figures_final": "Las cifras coinciden. La bolsa pesaba el 39,5% del costo de energía comprada en 2024 y el 28,8% en 2025 (cálculo propio).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "\"Compras en bolsa y/o a corto plazo con disminución producto de un menor precio de 402,5 $/kWh respecto al valor del 2024 (656,8 $/kWh), generando un ahorro de $149.010\" ... \"menor ingreso asociado a una tarifa promedio inferior en 41,2 $/kWh, comparada con la tarifa del año anterior ($888,3/kWh).\"",
+   "notes": "Los datos son exactos, pero comparar el −61% de la bolsa con el −4,6% de la tarifa es engañoso (ver new_findings). Hay inconsistencias internas de CENS: el Informe de Sostenibilidad habla de una 'disminución neta de COP$ 12,963 millones' en compra en bolsa, mientras la Nota 26 da −103.681, y atribuye los 402,5 $/kWh a 'bolsa y contratos'. En el hilo conviene citar las notas auditadas."
+  },
+  {
+   "id": "finanzas-05",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 los ingresos de CENS cayeron 74.369 millones, pero el EBITDA subió 14.962 millones y la utilidad neta 5% (5.603 millones). CENS lo atribuye a una 'optimización de COP$ 86,418 millones en costos y gastos efectivos', con un ahorro de 91.505 millones en la operación comercial por la compra de energía en bolsa a 254,3 $/kWh promedio. Utilidad operacional: 264.622 (+8.799).",
+   "figures_final": "Márgenes 2025 según CENS: EBITDA 25,1%, operacional 18,3%, neto 8,5%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "\"El EBITDA de CENS alcanzó un incremento de COP$ 14,962 millones, impulsado principalmente por una optimización de COP$ 86,418 millones en costos y gastos efectivos. El factor determinante fue la gestión en la operación comercial, que generó un ahorro de COP$ 91,505 millones gracias a la compra de energía en bolsa a precios más competitivos ($254,3 /kWh en promedio).\"",
+   "notes": "Informe de Sostenibilidad 2025, p. 125. Recalculé 74.369 (1.519.523 − 1.445.154) y 5.603 (123.146 − 117.543)."
+  },
+  {
+   "id": "finanzas-06",
+   "verdict": "confirmado",
+   "claim_final": "CENS afirma que su Costo Unitario aplicado bajó 11% en 2025: de $976/kWh en diciembre de 2024 a $869.",
+   "figures_final": "$976 a $869 = −10,96%. Coincide con un CU de diciembre de 2025 de 869,94, derivado de la tarifa de enero de 2026 (888,059 − 18,1169).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "\"En el transcurso del año el Costo Unitario aplicado disminuyó en 11% pasando de un precio por Kw de $976 en diciembre de 2024 a $869 en el 2025.\"",
+   "notes": "Es la cifra de la propia empresa (mensaje del gerente). En enero de 2026 el CU volvió a subir (+2,08%)."
+  },
+  {
+   "id": "finanzas-07",
+   "verdict": "confirmado",
+   "claim_final": "En el primer semestre de 2026 la utilidad neta de CENS cayó 35%, a 56.494 millones (86.949 en el S1-2025), con ingresos casi planos (731.779 frente a 728.321). Subieron el costo de prestación (546.039 frente a 519.325; +26.714), los gastos de administración (52.856 frente a 44.194; +19,6%) y los gastos financieros (55.823 frente a 43.874; +27,2%). El precio promedio residencial bajó de 895,3 a 843,8 $/kWh (−5,8%) aunque el consumo residencial subió de 488,8 a 514,9 GWh.",
+   "figures_final": "Impuesto de renta S1-2026: 32.414 (41.086 en el S1-2025). Impuesto al patrimonio: +2.813.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Segundo_Trimestre_2026.pdf",
+   "quote": "\"el segmento residencial aumenta consumo de 488.8 GWh en 2025 vs 514,9 GWh en 2026, pero aun así reduce ingresos en $36,409 por la caída de su precio promedio de $895,3/kWh a $843,8/kWh (-5,8%)\"; \"Impuesto al patrimonio con incremento de $2,813, establecido como medida tributaria en los Decretos N° 173 y 240 de 2026 respecto al estado de emergencia declarado por el Gobierno Nacional mediante el Decreto N° 150 de 2026.\"",
+   "notes": "Las cifras del claim son exactas, pero el summary atribuye la caída a gastos financieros, administrativos e impuesto al patrimonio. El rubro que más subió fue el costo de prestación: contratos +32.429 por 105,6 GWh más, y salarios +10.233 por el alza de 12%. El impuesto al patrimonio fue marginal (2.813). Estados no auditados."
+  },
+  {
+   "id": "finanzas-08",
+   "verdict": "confirmado",
+   "claim_final": "En el 1T-2026 CENS compró energía en bolsa a 216,1 $/kWh (491,7 en el 1T-2025) y en contratos a 287,1 $/kWh (314,7). El precio promedio residencial bajó de 963,1 a 831,8 $/kWh (−14%). Utilidad del 1T-2026: 32.981 millones, frente a 52.826.",
+   "figures_final": "Cifras idénticas a las del claim.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20PRIMER%20TRIM2026.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Primer_Trimestre_2026.pdf",
+   "quote": "\"Compra en bolsa: Disminuyó $28,961, por un menor precio promedio ($216.1/kWh vs $491.7/kWh en 2025)\" ... \"disminuyo ingresos en $45,314 por la caída de su precio promedio de $963,1/kWh a $831,8/kWh (-14%)\"",
+   "notes": "Ojo: en el semestre la bolsa se encareció (320,1 $/kWh frente a 294,7 en el S1-2025, según las notas 2T-2026). El precio barato del 1T-2026 no vale para todo 2026."
+  },
+  {
+   "id": "finanzas-09",
+   "verdict": "corregido",
+   "claim_final": "La deuda financiera (créditos y préstamos) de CENS pasó de 405.698 millones (2018) a 463.188 (2019), 494.685 (2020), 409.845 (2021), 473.456 (2022), 645.931 (2023), 766.792 (2024), 825.577 (2025) y 957.215 millones (junio de 2026). Según el Informe de Sostenibilidad 2025, no las notas, la tasa promedio ponderada cerró 2025 en 13,69% EA.",
+   "figures_final": "Las cifras de deuda se confirman (corriente + no corriente de cada ESF). Gastos financieros 2025: 84.553; intereses pagados: 91.326. La tasa de capitalización de costos por préstamos en las notas es 13,51% (2024: 12,54%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "\"Créditos y préstamos (Ver nota 15 Créditos y préstamos ) 766,792.38 ... 825,577\" (Notas 2025); \"los gastos financieros aumentaron en COP$ 1,169 millones debido al incremento en la tasa promedio ponderada, que cerró en 13,69% EA\" (Inf. Sostenibilidad 2025)",
+   "notes": "Corrección: la frase del 13,69% está en el Informe de Sostenibilidad 2025, no en las Notas. Hay una inconsistencia de CENS: el informe dice que los gastos financieros subieron 1.169 millones, y las notas dan 84.553 frente a 84.552. ESF verificados: dic-2018 (imagen: 330.758 + 74.940), dic-2020 (416.302 + 78.383), dic-2021 (324.411 + 85.434), EEFF 2023 y 2024, y ESF 2T-2026 (797.259 + 159.956; la columna comparativa de ese ESF es marzo de 2026, no diciembre)."
+  },
+  {
+   "id": "finanzas-10",
+   "verdict": "confirmado",
+   "claim_final": "ROE (cálculo propio: utilidad neta / patrimonio promedio): 19,2% (2018), 25,0% (2019), 21,3% (2020), 25,9% (2021), 25,5% (2022), 13,2% (2023), 22,2% (2024), 20,3% (2025) y 17,8% anualizado en el S1-2026.",
+   "figures_final": "Patrimonio: 208.408 (2017, deducido de un aumento de 21.052 en 2018), 229.460, 290.162, 346.908, 480.789, 548.632, 491.211, 569.112, 644.626 y 627.233 (junio de 2026). Recalculado: coincide.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Anexo%204.%20Estados%20financieros%202024.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-mensuales/2021/estado-de-situacion-financiera-esf/esf-diciembre-2021-2020.pdf",
+   "quote": "\"Total patrimonio 569,112 491,211\" (ESF 2024); \"Patrimonio 644.626\" (Inf. 2025); \"El patrimonio aumentó COP$ 21,052 millones\" (Inf. 2018)",
+   "notes": "Es un indicador derivado que CENS no publica. Lo infla el alto apalancamiento: el patrimonio es poco frente a la deuda. La comparación pertinente es con el WACC regulatorio de la CREG, que no está verificado (gap)."
+  },
+  {
+   "id": "finanzas-11",
+   "verdict": "confirmado",
+   "claim_final": "La asamblea de CENS decretó dividendos por 83.195 millones en 2022 (sobre la utilidad de 2021: 77,7%) y 92.998 millones en 2023 (sobre la de 2022: 70,9%; Asamblea Ordinaria N°121 del 29 de marzo de 2023). En caja pagó 83.194 (2022) y 69.742 (2023); el saldo de 23.257 lo pagó en 2024.",
+   "figures_final": "Cifras idénticas a las del claim.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2023/Anexos/Anexo%204.%20Estados%20Financieros%202023.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2023/Informe%20de%20Sostenibilidad%20CENS%202023.pdf",
+   "quote": "\"Dividendos decretados (92,998) (83,195)\" ... \"Los dividendos decretados durante el año fueron $92,998 los cuales corresponden al año 2022.\"; \"En la Asamblea General Ordinaria de Accionistas N°121 llevada a cabo el 29 de marzo de 2023\"",
+   "notes": "Los EEFF 2023 mencionan 283 millones de 'causación de intereses por acuerdo de pago en dividendos' (monto menor)."
+  },
+  {
+   "id": "finanzas-12",
+   "verdict": "confirmado",
+   "claim_final": "CENS decretó dividendos por 51.611 millones en 2024 (Asamblea N°123 del 18 de marzo de 2024, el 75,2% de la utilidad de 2023) y 58.771 millones en 2025 (Asamblea N°124 del 13 de marzo de 2025, el 50,0% de la utilidad de 2024). En caja pagó 74.855 en 2024 (incluye el saldo de 2023) y 58.780 en 2025.",
+   "figures_final": "Cifras idénticas a las del claim.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Anexo%204.%20Estados%20financieros%202024.pdf",
+   "quote": "\"Dividendos decretados (58,771) (51,611)\" ... \"Durante el 2025 se pagaron dividendos por $58,780 de los cuales $58,770 corresponden a dividendos del 2024 y $10 a pagos de dividendos que estaban pendientes de proceso de sucesión\"",
+   "notes": "Las fechas y números de asamblea están confirmados en los informes de sostenibilidad 2024 (N°123) y 2025 (N°124)."
+  },
+  {
+   "id": "finanzas-13",
+   "verdict": "confirmado",
+   "claim_final": "En el 1T-2026 CENS registró dividendos por pagar de unos 73.887 millones sobre la utilidad de 2025 (60%). De ellos, 58.358,7 millones son para EPM Inversiones (78,9831%). En el 2T-2026 pagó 18.471 millones.",
+   "figures_final": "Triple cuadre: (a) la CxP de dividendos sube 73.885 (Notas 1T-2026); (b) EPM Inversiones tiene una CxC de $58.358.705.462 (= 78,9831% de 73.887); (c) patrimonio dic-2025 644.626 + utilidad 1T 32.981 − patrimonio mar-2026 603.720 = 73.887, y resultados acumulados 600.812 (dic-2025) a 526.924 (mar-2026) = 73.888.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20PRIMER%20TRIM2026.pdf",
+   "second_source_url": "https://www.grupo-epm.com/content/dam/Grupo-Epm/grupo-epm/documentos/informacion-financiera/2026/notas-estados-financieros-separados-epm-inversiones-marzo-2026.pdf",
+   "quote": "\"Aumentó en $ 6,597, generada principalmente por Dividendos y participaciones $73,885\" (CENS 1T-2026); \"Centrales Eléctricas Norte de Santander S.A. E.S.P. 58,358,705,462\" (EPM Inversiones, cuentas por cobrar por 'Dividendos decretados a favor de la empresa')",
+   "notes": "Subo la confianza a alta por el cuadre patrimonial (ESF 2T-2026, columna marzo de 2026, y Nota 13.3 de 2025). Sigue sin aparecer el acta de 2026: en el hilo, mejor 'según sus estados financieros'. El pago del 2T-2026 es 18.471 según las notas 2T (el claim dice 18.474 para el semestre)."
+  },
+  {
+   "id": "finanzas-14",
+   "verdict": "confirmado",
+   "claim_final": "CENS no decretó dividendos en 2019, 2020 ni 2021: retuvo las utilidades de 2018 (42.141), 2019 (65.033) y 2020 (67.938). En 2018 había reconocido un pasivo por 19.288 millones (utilidad de 2017 de 17.653 más la liberación de una reserva de 1.635).",
+   "figures_final": "Resultados acumulados: 166.362 (2018), 208.502 (2019), 273.535 (2020), 341.473 (2021) y saldo inicial de 2022 de 448.580 (= 341.473 + 107.107). Reservas constantes en 43.815.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/Informe-de-sostenibilidad-2019.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-mensuales/2021/estado-de-situacion-financiera-esf/esf-diciembre-2021-2020.pdf",
+   "quote": "\"durante la vigencia 2019 no se distribuyeron dividendos correspondientes al periodo 2018 por valor de COP$ 42,141 millones y se registraron en utilidades acumuladas\" (Inf. 2019); \"reconocimiento del pasivo por COP$ 19.288 millones (Utilidad año 2017 COP$ 17,653 millones y liberación de reserva del artículo 130 COP$ 1,635 millones)\" (Inf. 2018)",
+   "notes": "Lo confirma el cuadre de los ESF de diciembre de 2019, 2020 y 2021 y la nota 13 de 2023 (saldo inicial de 2022: 448.580)."
+  },
+  {
+   "id": "finanzas-15",
+   "verdict": "confirmado",
+   "claim_final": "Composición accionaria de CENS (Informe de Sostenibilidad 2020): EPM Inversiones 78,9831%, Empresas Públicas de Medellín 12,5360% (Grupo EPM 91,52%), IFINORTE 7,7890%, Municipio de Cúcuta 0,3974%, trabajadores y jubilados 0,1622%, Ocaña 0,0674%, Pamplona 0,0446% y Villa del Rosario 0,0187%. Son 1.518.229.945 acciones con valor nominal de $5 (capital emitido 7.591 millones).",
+   "figures_final": "Sector público 99,8362% y privado 0,1638% (informes 2022 y 2023). El Grupo EPM tiene el 91,52% según las Notas 1T-2026.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/informe-de-sostenibilidad-cens-2020.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20PRIMER%20TRIM2026.pdf",
+   "quote": "\"EPM Inversiones S.A. 78,9831% 1.199.144.474; Empresas Públicas de Medellín E.S.P. 12,5360% 190.325.000; ... IFINORTE- 7,7890% 118.254.798; Municipio de Cúcuta 0,3974% 6.033.710\"; \"siendo su máximo accionista el Grupo EPM con una participación del 91.52%\"",
+   "notes": "Según el Informe 2025, en 2025 no hubo enajenaciones: solo una sucesión, sin cambio en la composición."
+  },
+  {
+   "id": "finanzas-16",
+   "verdict": "confirmado",
+   "claim_final": "EPM recibió directamente de CENS 7.369 millones en dividendos en 2025 y 6.470 millones en 2024 (participación del 12,536%), y registró 15.439 millones por método de participación sobre el resultado de CENS de 2025. Su filial EPM Inversiones le pagó 268.033 millones en dividendos en 2025 (278.389 en 2024), por el conjunto de sus inversiones, no solo CENS.",
+   "figures_final": "Inversión directa de EPM en CENS: costo 57.052; valor en libros 2025: 84.757 (2024: 75.289). Dividendos totales de subsidiarias a EPM: 573.442 (2025) y 452.006 (2024).",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/estados-financieros/estados-financieros-trimestrales-epm-matriz/2025/EPM_EEFF_Separados_certificaci%C3%B3n_informe_del_auditor_y_Notas_al_31-12-2025.pdf",
+   "quote": "\"Centrales Eléctricas del Norte de Santander S.A. E.S.P. CENS 57,052 35,074 - (7,369) 84,757\"; \"EPM Inversiones S.A. 1,561,331 1,088,900 - (268,033) 2,382,198\"; \"Se decretaron dividendos por $573,442 (2024: $452,006), los cuales fueron cancelados en su totalidad.\"",
+   "notes": "Los 573.442 son el total de dividendos de todas las subsidiarias a EPM, no los de EPM Inversiones. Cuadre: 12,536% de 58.771 = 7.367; 12,536% de 123.146 = 15.437."
+  },
+  {
+   "id": "finanzas-17",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 EPM pagó al Distrito de Medellín excedentes por 2.654.250 millones: 1.447.773 ordinarios y 1.206.477 extraordinarios. Equivalen exactamente al 55% (30% + 25%) de su utilidad separada de 2024 (4.825.910 millones). Su utilidad de 2025 fue de 4.875.861 millones.",
+   "figures_final": "2.654.250 / 4.825.910 = 55,0%; ordinarios = 30,0%; extraordinarios = 25,0%. Para 2026: según EPM (informe 2T-2026), 'en abril se causaron excedentes a pagar al Distrito de Medellín por $2.6 billones', de los que había pagado 1,5 billones al 30 de junio; El Colombiano (8 de mayo de 2026) publicó 2,8 billones.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/estados-financieros/estados-financieros-trimestrales-epm-matriz/2025/EPM_EEFF_Separados_certificaci%C3%B3n_informe_del_auditor_y_Notas_al_31-12-2025.pdf",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2026/Informe2T2026_ESP.pdf",
+   "quote": "\"Los excedentes pagados durante el año fueron $2,654,250 (2024: $2,070,905), de ordinarios fueron $1,447,773 (2024: $1,129,585) y de extraordinarios fueron $1,206,477 (2024: $941,320).\"",
+   "notes": "La nota de El Colombiano (8 de mayo de 2026) confirma los 2,8 billones pero no menciona la regla del 55%. Según una búsqueda en prensa, el tope ordinario del 30% viene del Acuerdo 069 de 1997 y el excedente requiere autorización adicional; no lo verifiqué en la norma. Para 2026, prefiero la cifra primaria de EPM (2,6 billones causados)."
+  },
+  {
+   "id": "finanzas-18",
+   "verdict": "confirmado",
+   "claim_final": "Estimación propia: cerca del 50% de la utilidad neta de CENS entra en la base de cálculo de los excedentes de EPM al Distrito de Medellín (91,52% x 55% = 50,3%), vía método de participación. Con la utilidad de 2024 (117.543 millones), el aporte implícito a los 2.654.250 millones transferidos en 2025 fue de unos 59.166 millones (2,2%).",
+   "figures_final": "117.543 x 0,9152 x 0,55 = 59.166; con la utilidad de 2025: ~61.986 millones.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/estados-financieros/estados-financieros-trimestrales-epm-matriz/2025/EPM_EEFF_Separados_certificaci%C3%B3n_informe_del_auditor_y_Notas_al_31-12-2025.pdf",
+   "quote": "Cálculo propio sobre: método de participación (EPM registra 15.439 directo por CENS) y excedentes = 55% de la utilidad separada.",
+   "notes": "La aritmética es correcta, pero es contable: no es un giro de caja identificado. No debe decirse 'Medellín se queda con la mitad de la utilidad de CENS', sino 'cerca de la mitad entra en la base de lo que EPM transfiere a Medellín'. El 25% extraordinario requiere aprobación cada año."
+  },
+  {
+   "id": "finanzas-19",
+   "verdict": "confirmado",
+   "claim_final": "Cálculo propio: CENS decretó 379.750 millones en dividendos entre 2018 y 2026. Al Grupo EPM (91,52%) le corresponden unos 347.544; a IFINORTE (7,789%), unos 29.579; al Municipio de Cúcuta (0,3974%), unos 1.509. Entre 2022 y 2026 los decretos sumaron 360.462 millones, de los cuales unos 329.892 son para el Grupo EPM y unos 1.433 para Cúcuta.",
+   "figures_final": "19.288 + 83.195 + 92.998 + 51.611 + 58.771 + 73.887 = 379.750 (verificado). 379.750 x 0,9152 = 347.547; la diferencia con 347.544 es redondeo por año.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "Dividendos decretados (EEFF 2023-2025, Notas 1T-2026) x composición accionaria (Informe de Sostenibilidad 2020)",
+   "notes": "Cifras nominales. Usa la composición de 2020; para 2025 el informe dice que no hubo cambios, y el 91,52% del Grupo EPM está confirmado en 2026."
+  },
+  {
+   "id": "finanzas-20",
+   "verdict": "confirmado",
+   "claim_final": "Sobre las utilidades 2018-2025 (722.703 millones), CENS decretó en dividendos entre 2019 y 2026 el 49,9% (360.462 millones) y retuvo el resto. Aun así, su deuda bancaria pasó de 405.698 (2018) a 957.215 millones (junio de 2026).",
+   "figures_final": "Payout sobre la utilidad del año anterior: 0% (2019-2021), 77,7% (2022), 70,9% (2023), 75,2% (2024), 50,0% (2025) y 60,0% (2026). Verificado.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Anexo%204.%20Estados%20financieros%202024.pdf",
+   "quote": "Ver finanzas-11 a finanzas-14 (cálculo propio).",
+   "notes": "Matiz: desde 2022 el payout fue de 50% a 78%. El 49,9% se explica por los tres años sin dividendos (2019-2021)."
+  },
+  {
+   "id": "finanzas-21",
+   "verdict": "confirmado",
+   "claim_final": "Según su 'Cuarto Estado Financiero', en 2025 CENS distribuyó 675.898 millones de valor agregado: Dueño 123.146 (18%), empleados 130.159 (19%), reinversión 135.309 (20%), Estado 92.229 (14%), proveedores de bienes y servicios 111.032 (16%), proveedores financieros 81.263 (12%) y Comunidad y medio ambiente 2.760 (0%).",
+   "figures_final": "2.760 = 0,41% del valor distribuido y 2,2% de la utilidad neta; proveedores financieros / comunidad = 29,4 veces.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "\"Dueño (123,146) 18% ... Comunidad y Medio Ambiente (2,760) 0% ... Proveedores Financieros (81,263) 12%\"; \"El valor invertido durante este periodo asciende a COP$ 2,760 millones.\"",
+   "notes": "Salvedad de CENS (Informe 2018, nota al pie): 'Las inversiones en comunidad y medio ambiente también se encuentran incluidas en reinversión en la empresa y proveedores de bienes y servicios.' Las obras por impuestos van en 'Estado'. En el mismo cuadro CENS llama 'dividendos' del Dueño a toda la utilidad (123.146)."
+  },
+  {
+   "id": "finanzas-22",
+   "verdict": "confirmado",
+   "claim_final": "Valor distribuido a 'Comunidad y medio ambiente' según CENS: 507 (2018), 1.886 (2019), 3.482 (2020), 4.351 (2021), 6.229 (2022), 4.109 (2023), 3.741 (2024) y 2.760 millones (2025). Total: 27.065 millones, frente a 722.703 millones de utilidad en el mismo periodo.",
+   "figures_final": "Estado: 44.322 (2019), 55.048, 83.927, 92.451, 57.737, 88.669 y 92.229 (2025); total 2019-2025: 514.383. Verificado año por año.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/Informe-de-sostenibilidad-2018.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/informe-de-sostenibilidad-cens-2021.pdf",
+   "quote": "\"El valor invertido durante este periodo asciende a COP$ 507 millones.\" (2018); \"Comunidad y Medio Ambiente -4.351 1%\" (2021); \"(6,229) 1%\" (2022)",
+   "notes": "La misma salvedad de CENS aplica a toda la serie. En el Informe 2021 aparece '$80,977' junto a la leyenda 'Comunidad y medio ambiente', pero es un artefacto de diagramación: corresponde a proveedores de bienes y servicios."
+  },
+  {
+   "id": "finanzas-23",
+   "verdict": "confirmado",
+   "claim_final": "Los usuarios de CENS pagan en sus recibos, con intereses, el saldo de la opción tarifaria acumulado desde febrero de 2020. Saldo con intereses: 174.632 (2023), 114.758 (2024) y 54.884 millones (2025). CENS reporta una recuperación de 59.874 millones (47.929 de capital y 11.945 de intereses). Al cierre de 2025 estimaba recuperar el saldo restante en un año, es decir, durante 2026.",
+   "figures_final": "Ambas caídas anuales del saldo son exactamente 59.874 (174.632 − 114.758 y 114.758 − 54.884). Deterioro específico de la OT: 43.658 (2023), 28.184 (2024) y 12.903 (2025).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2023/Anexos/Anexo%204.%20Estados%20Financieros%202023.pdf",
+   "quote": "\"Los valores acumulados correspondientes a la opción tarifaria, que incluyen los intereses liquidados, son $54,884 (Año 2024 U.M $114.758) ... El periodo estimado de recuperación de la cartera correspondiente a la opción tarifaria es de un año.\"; \"la recuperación de la Opción Tarifaria, que aportó COP$ 59,874 millones (desglosados en COP$ 47,929 millones de capital y COP$ 11,945 millones en intereses)\"",
+   "notes": "Los informes 2024 y 2025 repiten el mismo desglose y las dos caídas son idénticas: posible copia o error de CENS. Conviene preguntarle. La OT fue un diferimiento regulado de alzas: los usuarios pagaron menos en 2020-2022 y ahora pagan el saldo con su costo financiero."
+  },
+  {
+   "id": "finanzas-24",
+   "verdict": "confirmado",
+   "claim_final": "En su inspección especial de la vigencia 2022 (visita en junio de 2023), Superservicios encontró que CENS está en opción tarifaria desde febrero de 2020, con saldos acumulados superiores a 100 mil millones a diciembre de 2022 (102,85 mil millones), y que aún no había empezado a recuperarlos. Calificó 'NO CUMPLE' por 'Errores en el cálculo de los componentes del Costo Unitario ... que afectaron la opción tarifaria (Componente de Comercialización)', por incluir garantías financieras no recuperables. La misma SSPD aclaró que ese impacto 'no afectó directamente a los usuarios' porque quedó en los saldos acumulados, y que la empresa se comprometió a recalcular.",
+   "figures_final": "Saldo dic-2022: 102,85 mil millones; CU de la OT dic-2022: 774,82 $/kWh, frente a un CU regulado de 785,34 (1,34% menos); deuda = 62,82% de los activos; ingresos ordinarios +25,2% y utilidad +22,5% (2021-2022).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "quote": "\"Desde el mes de febrero del 2020, CENS entró en opción tarifaria\"; \"CENS cerró el año con saldos acumulados superiores a los $100 mil millones de pesos\"; \"Es preciso aclarar que este impacto no afectó directamente a los usuarios, debido a que la empresa se encuentra aplicando la metodología de Opción Tarifaria, por lo cual el impacto se generó en los saldos acumulados.\"; \"no se evidencia por parte de la DTGE, alguna conducta que vaya en perjuicio de los usuarios\"",
+   "notes": "El PDF lo reabrí con WebFetch, porque curl queda bloqueado por Incapsula, y es idéntico byte a byte al que bajó el investigador. Es un informe de 2023 sobre la vigencia 2022: no presentarlo como actual. No sé si CENS hizo el recálculo (gap)."
+  },
+  {
+   "id": "finanzas-25",
+   "verdict": "confirmado",
+   "claim_final": "Subsidios de estratos 1 a 3: en 2024 el déficit (subsidios menos contribuciones) sumó 212.035 millones y la Nación giró 123.691, de modo que la cuenta por cobrar subió 88.732. En 2025 el déficit fue de 183.515 millones y los giros, de 200.293: la cuenta por cobrar bajó 16.064.",
+   "figures_final": "2024: déficit 212.035 / giros 123.691 / CxC +88.732. 2025: déficit 183.515 / giros 200.293 / CxC −16.064.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Informe%20de%20Sostenibilidad%20CENS%202024_Full%20versi%C3%B3n.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "\"Subsidios de servicio de energía con incremento de COP$ 88,732 millones, por el déficit acumulado de enero a diciembre que asciende a COP$ 212,035 millones ... los giros, recibidos de la nación en lo corrido del año son de COP$ 123,691 millones\"; \"rubro de subsidios por servicio de energía registró una disminución de COP$ 16,064 millones. generado por la recepción de giros de la Nación por un valor de COP$ 200,293 millones. Sin embargo ... persiste un déficit acumulado en lo corrido del año que asciende a COP$ 183,515 millones\"",
+   "notes": "Las cifras del claim son exactas, pero la company_defense ('la Nación le dejó un déficit de 183.515 en 2025') es engañosa: en 2025 la Nación giró más que el déficit del año."
+  },
+  {
+   "id": "finanzas-26",
+   "verdict": "confirmado",
+   "claim_final": "En 2023 CENS compró 127,7 GWh más en bolsa, a 613 $/kWh promedio (399,1 $/kWh más que en 2022). Su EBITDA cayó 61.219 millones (−20,9%, a 232.296) y la utilidad 47,7% (−62.605, a 68.595), con un deterioro de la opción tarifaria de 30.829 millones. Su tarifa promedio de venta subió 62 $/kWh.",
+   "figures_final": "Deterioro de cuentas por cobrar neto 2023: 42.107 (12.086 en 2022).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2023/Informe%20de%20Sostenibilidad%20CENS%202023.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2023/Anexos/Anexo%204.%20Estados%20Financieros%202023.pdf",
+   "quote": "\"compra de 127.7 GWh de energía en bolsa en relación al año anterior, adquiridas a una tarifa promedio de COP$613 kWh, siendo ésta superior en COP$$399.1 /kWh en comparación a la del 2022\"; \"El EBITDA tuvo un resultado de COP$232,296 millones, presentando una disminución de COP$61,219 millones\"; \"el resultado neto del ejercicio presenta disminución del 47.7% (COP $62,605 millones)\"",
+   "notes": "Es un buen dato de contrapeso: el riesgo de bolsa también le golpea."
+  },
+  {
+   "id": "finanzas-27",
+   "verdict": "confirmado",
+   "claim_final": "En 2022 la venta de energía de CENS creció 24% (194.948 millones), que CENS atribuye sobre todo a 'los ajustes al plan de inversiones en aplicación de la circular 012 y 024 de 2020' (162.542 millones más en ingresos) y al crecimiento de la demanda (43 GWh, 32.406 millones). En 2023 la tarifa promedio subió 62 $/kWh y en 2024, 69,2 $/kWh.",
+   "figures_final": "Cifras idénticas a las del claim.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2022/Informe%20de%20Sostenibilidad%20CENS%202022.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Informe%20de%20Sostenibilidad%20CENS%202024_Full%20versi%C3%B3n.pdf",
+   "quote": "\"La venta de energía presenta un incremento del 24% correspondiente a COP $194,948 millones, lo cual es producto de los ajustes al plan de inversiones en aplicación de la circular 012 y 024 de 2020, generando mayores ingresos por valor de COP $162,542 millones, el crecimiento de la demanda en 43GWh, que representa mayor ingreso por COP $32,406 millones\"",
+   "notes": "CENS no escribe 'CREG' en la cita. Por búsqueda, la Circular CREG 024 de 2020 existe (formatos de reporte de ejecución del plan de inversiones de la Res. CREG 015 de 2018), pero no la abrí. En el hilo conviene escribir 'circulares 012 y 024 de 2020, según CENS'."
+  },
+  {
+   "id": "finanzas-28",
+   "verdict": "corregido",
+   "claim_final": "En la subasta del jueves 26 de febrero de 2009 (auditorio de Fonade, Bogotá), EPM compró a la Nación el 78% de CENS por 180.000 millones, un 9% más que la 'propuesta del Gobierno Nacional' de 165.000 millones. Fue parte de una oferta global de 553.000 millones con ESSA (373.000 por el 74%). El 23 de julio de 2009, Empresas Públicas de Medellín, como accionista de EPM Inversiones, compró el 12,54% del Comité Departamental de Cafeteros, y el Grupo EPM llegó al 91,52%. CENS es filial del Grupo EPM desde el 19 de marzo de 2009.",
+   "figures_final": "180.000 millones por el 78% (nominales de 2009); propuesta del Gobierno: 165.000; precio del 12,54%: no encontrado.",
+   "source_url": "https://www.semana.com/negocios/articulo/electrificadoras-santander-epm/74606/",
+   "second_source_url": "https://www.laopinion.co/historicos/hace-15-anos-se-subasto-centrales-electricas-de-norte-de-santander",
+   "quote": "\"El ofrecimiento global alcanzó los $553.000 millones, $180.000 millones por CENS y $373.000 millones por ESSA\" (Semana, fechada el 25 de febrero de 2009, que habla de 'este jueves'); \"El ofrecimiento por CENS alcanzó, en aquel momento, los $180.000 millones, superando la propuesta del Gobierno Nacional, que fue de $165.000 millones, es decir, 9% más.\" (La Opinión, 26 de febrero de 2024)",
+   "notes": "Corrección: (1) la subasta fue el 26 de febrero de 2009, no 'el 25 y 26'; el 25 es la fecha que muestra el archivo de Semana. (2) La Opinión habla de 'propuesta del Gobierno Nacional', no de 'precio mínimo'. La propiedad está confirmada en el Informe de Sostenibilidad CENS 2023 y la fecha de filial en las Notas 1T-2026."
+  },
+  {
+   "id": "finanzas-29",
+   "verdict": "confirmado",
+   "claim_final": "Según los informes de resultados del Grupo EPM, CENS aportó el 3% del EBITDA del grupo en 2025 (361 mil millones de 11,1 billones) y el 4% en el primer semestre de 2026 (193 mil millones de 5,24 billones; ingresos de 732 mil millones). Sus ingresos de 2025 cayeron 74 mil millones.",
+   "figures_final": "Cifras idénticas a las del claim.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2026/Informe2T2026_ESP.pdf",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2025/Informe4T2025_ESP-VF.pdf",
+   "quote": "\"CHEC el 3% con $367 mil millones y CENS el 3% con $361 mil millones\" (4T-2025, 22 de abril de 2026); \"CHEC el 4% con $220 mil millones y CENS el 4% con $193 mil millones\" (2T-2026, 2 de septiembre de 2026)",
+   "notes": "Informe del 2 de septiembre de 2026. Trae además un dato útil: el precio promedio de venta en bolsa en Colombia fue de 312 $/kWh en el S1-2026, frente a 258 un año antes."
+  },
+  {
+   "id": "finanzas-30",
+   "verdict": "confirmado",
+   "claim_final": "CENS registró costos y gastos con EPM matriz por compras de energía y bienes y servicios de 128.304 millones en 2025, frente a 77.458 (2024), unos 14.569 (2023) y 129.881 (2022). A la vez, le vendió a EPM matriz 35.715 millones en 2025 (36.711 en 2024). Total de costos con partes relacionadas en 2025: 168.196 millones.",
+   "figures_final": "Subsidiarias 2025: ESSA 17.762, CHEC 10.310, EDEQ 4.010.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2023/Anexos/Anexo%204.%20Estados%20Financieros%202023.pdf",
+   "quote": "\"Corresponde a costos y gastos generados por transacciones asociadas a compras de energía y adquisición de bienes y servicios. Con Matriz $ 128,304 (2024 $77,458)\"",
+   "notes": "Para 2023 los EEFF traen 14.569 en la tabla y '$14.509' en el texto: inconsistencia de CENS. Hay que mostrar ambos sentidos del flujo. No hay evidencia de irregularidad."
+  },
+  {
+   "id": "finanzas-31",
+   "verdict": "confirmado",
+   "claim_final": "La remuneración del personal clave de la gerencia de CENS (siete cargos) fue de 4.075 millones en 2025 y 5.448 millones en 2024. Los salarios y beneficios de corto plazo subieron de 3.257 a 3.738 millones (+14,8%). El total bajó solo porque los beneficios de largo plazo pasaron de 2.191 a 337 millones.",
+   "figures_final": "Corto plazo: 3.738 (2025) y 3.257 (2024); largo plazo: 337 y 2.191.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "\"Salarios, otros beneficios a los empleados a corto plazo y honorarios 3,738 3,257 ... Otros beneficios a los empleados a largo plazo 337 2,191 ... Remuneración al personal clave de la gerencia 4,075 5,448\"",
+   "notes": "Presentado como caída, el dato es engañoso. Son funcionarios de una empresa de servicios públicos mixta, pero el hilo no debería personalizar."
+  },
+  {
+   "id": "finanzas-32",
+   "verdict": "confirmado",
+   "claim_final": "CENS empezó a reconocer como ingreso los intereses de mora: 4.792 millones en 2025, según la nota 23, que habla de 'a partir del año 2025'. En el S1-2026 los ingresos por intereses subieron 19% (3.065 millones), de los cuales 1.752 corresponden al cambio de política 'a partir de diciembre del 2025'.",
+   "figures_final": "Componente de financiación: 25.217 (2025) frente a 21.343 (2024).",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "quote": "\"Intereses, presentó aumento del 19% correspondiente a $3,065, generado básicamente por el cambio en la política del reconocimiento de los intereses de mora, a partir de diciembre del 2025 $1,752\"; \"Componente de financiación con incremento generado básicamente por el reconocimiento de los intereses de mora a partir del año 2025 por $4,792.\"",
+   "notes": "CENS es inconsistente sobre la fecha de inicio ('a partir del año 2025' frente a 'a partir de diciembre del 2025'). Son montos menores."
+  },
+  {
+   "id": "finanzas-33",
+   "verdict": "confirmado",
+   "claim_final": "Según el resumen que publica CENS, Fitch Ratings Colombia afirmó el 13 de mayo de 2026 las calificaciones AAA(col) y F1+(col) de CENS, con perspectiva estable. Destacó que su perfil de negocio 'se beneficia de la condición de monopolio natural del servicio, la estructura tarifaria regulada y la estabilidad de sus ingresos'.",
+   "figures_final": "AAA(col) / F1+(col), perspectiva estable.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Calificacion-del-riesgo-crediticio-2023/Calificaci%C3%B3n_riesgo_crediticio_2026.pdf",
+   "quote": "\"Fitch destaca que el perfil de negocio de CENS se beneficia de la condición de monopolio natural del servicio, la estructura tarifaria regulada y la estabilidad de sus ingresos, factores que aportan predictibilidad a la generación de caja.\"; \"la recuperación de los saldos asociados a la opción tarifaria durante 2026 contribuirá positivamente a la generación de caja de la empresa.\"",
+   "notes": "Es un texto de CENS que resume a Fitch, no el comunicado original de Fitch. 'Monopolio natural' es un término técnico, no peyorativo."
+  },
+  {
+   "id": "finanzas-34",
+   "verdict": "confirmado",
+   "claim_final": "Inversión de CENS: 164.982 millones en 2024 (82% de la meta). En 2025, 213.726 millones en propiedad, planta y equipo y 189.187 ejecutados del plan de inversiones (de 219.288 planeados, el 86,3%). Anuncia más de 208.000 millones para 2026. Compras de PPE en caja: 184.400 (2023) y 175.632 (2024).",
+   "figures_final": "Ejecución del plan 2025: 189.187 de 219.288 (86,3%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Anexo%204.%20Estados%20financieros%202024.pdf",
+   "quote": "\"En el 2026, nuestro compromiso está puesto en la ejecución de inversiones estratégicas por más de COP$208.000 millones\"; \"inversión realizada en COP$ 213,726 millones\"; \"Total inversión 219.288 189.187 86.3%\"",
+   "notes": "Dato a favor de la empresa, aunque no cumplió las metas de inversión de 2024 (82%) ni de 2025 (86,3%)."
+  },
+  {
+   "id": "finanzas-35",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (24 de febrero de 2026), que cita a CENS, la empresa pierde el 14,30% de la energía por conexiones ilegales (cifra del gerente José Miguel González) y cerca del 47% en el Catatumbo (cifra sin atribución personal). Son 322,9 GWh al año, con un impacto cercano a 104.000 millones (cifras de Edwin Tarazona Ochoa, líder de Control de Pérdidas).",
+   "figures_final": "14,30%; 47% en el Catatumbo; 322,9 GWh al año; ~104.000 millones.",
+   "source_url": "https://www.laopinion.co/economia/robo-de-energia-le-cuesta-centrales-electricas-de-norte-de-santander-104000-millones-al",
+   "quote": "\"pierde el 14,30% de la energía por conexiones ilegales\"; \"En el Catatumbo la cifra es más alta, aproximadamente las pérdidas son de 47%\"; \"pérdidas que alcanzan los 322,9 gigavatios hora (GWh) al año\"; \"con un impacto económico cercano a los $104.000 millones\"",
+   "notes": "Es prensa que cita a funcionarios de CENS, no un dato auditado. Las pérdidas reconocidas en la tarifa las fija la CREG."
+  },
+  {
+   "id": "finanzas-36",
+   "verdict": "confirmado",
+   "claim_final": "Según La República (30 de julio de 2026), que cita a Supersociedades, CENS fue la segunda empresa más grande de Norte de Santander en 2025, con ingresos de 1,44 billones y utilidad neta de 123.146 millones, y el puesto 28 entre las energéticas del país. Anunció 4.700 millones en obras por impuestos para Centros de Desarrollo Infantil del ICBF.",
+   "figures_final": "Ingresos 1,44 billones; utilidad 123.146 millones; obras por impuestos 4.700 millones.",
+   "source_url": "https://www.larepublica.co/especiales/encontremonos-en-norte-de-santander/cens-grupo-epm-invertira-4-700-millones-a-traves-de-obras-por-impuestos-4446999",
+   "quote": "\"con ingresos por $1,44 billones, cerrando el año pasado con una utilidad neta de $123.146 millones\"",
+   "notes": "Es una segunda fuente independiente de la utilidad de 2025. Las obras por impuestos se pagan con el impuesto de renta: no son un aporte adicional."
+  },
+  {
+   "id": "finanzas-37",
+   "verdict": "confirmado",
+   "claim_final": "Cálculo propio: con 643.741 clientes y usuarios en 2025, la utilidad neta de CENS equivale a unos $191.300 por usuario al año y el dividendo de 2026 a unos $114.800 por usuario (unos $48,7 por acción de valor nominal $5).",
+   "figures_final": "123.146 millones / 643.741 = $191.297; 73.887 millones / 643.741 = $114.778; 73.887 millones / 1.518.229.945 acciones = $48,67.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "\"Clientes y usuarios Cantidad o número 643.741\"",
+   "notes": "Promedio aritmético que incluye comercio e industria: no es lo que paga un hogar. Si se usa, decirlo explícitamente."
+  },
+  {
+   "id": "finanzas-38",
+   "verdict": "confirmado",
+   "claim_final": "Impuesto de renta de CENS: 29.077 (2018), 28.781 (2019), 32.628 (2020), 63.888 (2021), 70.851 (2022), 31.961 (2023), 58.915 (2024) y 62.016 millones (2025). Tarifa nominal de renta: 35%.",
+   "figures_final": "2025: renta corriente 67.827 y diferido −5.811. 2022 y 2023 salen de la utilidad antes de impuestos (202.051 y 100.556) menos la neta.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-mensuales/2019/estado-de-resultado-integral-eri/eri-diciembre-2019-2018.pdf",
+   "quote": "\"Impuesto sobre la renta 62,016 58,915\"; \"Renta 35%\"; ERI dic-2019 (imagen): \"Impuesto sobre la renta y complementarios 28,781 29,077\"",
+   "notes": "Verificado en el ERI dic-2019 (imagen), el ERI dic-2020, el ERI dic-2021, los EEFF 2023 y 2024 y las Notas 2025."
+  }
+ ],
+ "bill_cases_checked": [],
+ "new_findings": [
+  {
+   "id": "verif-fin-01",
+   "claim": "Comparación homogénea de 2025 (cálculo propio): el costo de la energía comprada más el uso de redes por kWh vendido bajó unos 51,5 $/kWh (de 576,1 a 524,7) y la tarifa promedio de venta, 41,2 $/kWh. La brecha de unos 10,3 $/kWh, multiplicada por los 1.456 GWh vendidos, da unos 14.960 millones, casi exactamente el aumento del EBITDA de 2025 (14.962). Solo la energía cayó 63,6 $/kWh vendido (−13,7%).",
+   "figures": "Compras de energía 686.934 (2024) a 581.132 (2025); uso de líneas y redes 168.616 a 182.977; ventas 1.485 a 1.456,4 GWh; la bolsa fue el 39,5% del costo de energía en 2024 y el 28,8% en 2025",
+   "period": "2025 vs 2024",
+   "quote": "\"las ventas se ubicaron 28,6 GWh por debajo de los 1.485 GWh registrados en 2024\"; Nota 26: \"Compras en bloque y/o a largo plazo 413,804 415,925; Uso de líneas, redes y ductos 182,977 168,616; Compras en bolsa y/o a corto plazo 167,328 271,009\"",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_outlet": "CENS - Notas EEFF 2025 (Notas 23 y 26); cálculo propio",
+   "source_date": "2026-02",
+   "source_title": "Notas Estados Financieros 2025",
+   "source_type": "primario-cens",
+   "confidence": "media",
+   "notes": "Es más defendible que el '−61% frente a −4,6%'. Es una aproximación: la tarifa promedio de CENS no se calcula sobre la misma base y parte de la tarifa recupera la opción tarifaria."
+  },
+  {
+   "id": "verif-fin-02",
+   "claim": "Superservicios aclaró que el error en el componente de comercialización (garantías financieras no recuperables) no afectó directamente a los usuarios: el impacto quedó en los saldos acumulados de la opción tarifaria. Ordenó a CENS recalcular, hacer los ajustes e informar al usuario.",
+   "figures": "Saldo OT dic-2022: 102,85 mil millones",
+   "period": "Vigencia 2022 (informe de 2023)",
+   "quote": "\"Es preciso aclarar que este impacto no afectó directamente a los usuarios, debido a que la empresa se encuentra aplicando la metodología de Opción Tarifaria, por lo cual el impacto se generó en los saldos acumulados. De igual manera, la empresa debe realizar los ajustes a los que haya lugar ... deberá informar al usuario de la mejor manera el ajuste tarifario realizado.\"",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "source_outlet": "Superintendencia de Servicios Públicos Domiciliarios",
+   "source_date": "2023",
+   "source_title": "Informe de vigilancia o inspección especial CENS SA ESP 2022 (VI-F-004)",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "notes": "Debe acompañar siempre la mención del 'NO CUMPLE'. Pregunta pendiente para CENS y la SSPD: ¿se hizo el recálculo y cuánto bajó el saldo?"
+  },
+  {
+   "id": "verif-fin-03",
+   "claim": "El dividendo de 2026 (unos 73.887 millones, el 60% de la utilidad de 2025) se confirma con el movimiento del patrimonio de CENS: 644.626 (diciembre de 2025) + utilidad del 1T-2026 de 32.981 − 603.720 (marzo de 2026) = 73.887. Los resultados acumulados bajaron de 600.812 a 526.924 (73.888).",
+   "figures": "73.887-73.888 millones",
+   "period": "1T-2026",
+   "quote": "ESF 2T-2026, columna marzo de 2026: \"Resultados acumulados 526,924 ... Resultado neto del período 32,981 ... TOTAL PATRIMONIO 603,720\"; Notas 2025: \"Total resultados acumulados 600,812\"",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ESF_Segundo_Trimestre_2026.pdf",
+   "source_outlet": "CENS - ESF segundo trimestre 2026 y Notas EEFF 2025",
+   "source_date": "2026",
+   "source_title": "Estado de Situación Financiera trimestral 2026",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Es la tercera prueba independiente, junto con la CxP de CENS y la CxC de EPM Inversiones."
+  },
+  {
+   "id": "verif-fin-04",
+   "claim": "En el S1-2026 el factor que más redujo la utilidad de CENS fue el costo de prestación (+26.714 millones). Lo empujaron las compras en contratos (+32.429, por unos 105,6 GWh más) y los salarios (+10.233, con un alza de 12% y personal nuevo). El impuesto al patrimonio de la emergencia sumó apenas 2.813 millones. La energía de bolsa se encareció: 320,1 $/kWh frente a 294,7 en el S1-2025.",
+   "figures": "Costo de prestación 546.039 frente a 519.325; contratos +32.429; salarios +10.233; impuesto al patrimonio +2.813; bolsa 320,1 frente a 294,7 $/kWh",
+   "period": "enero-junio 2026",
+   "quote": "\"Compra en contratos: Aumentó 32,429, explicada por un mayor volumen contratado (aprox. +105,6 GWh)\"; \"Compra en bolsa ... a pesar de haber un mayor precio promedio ($320,1/kWh vs $294,7/kWh en 2025)\"; \"Sueldos y salarios ... aumentó $10,233, generado por el ingreso de nuevo personal de planta y el incremento salarial del 12%.\"",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "source_outlet": "CENS - Notas EEFF segundo trimestre 2026",
+   "source_date": "2026",
+   "source_title": "Notas a los EEFF segundo trimestre 2026",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Corrige la atribución del summary del investigador. Estados no auditados."
+  },
+  {
+   "id": "verif-fin-05",
+   "claim": "Según el informe del Grupo EPM del 2T-2026, en abril de 2026 se causaron excedentes a pagar al Distrito de Medellín por 2,6 billones, de los cuales había pagado 1,5 billones al 30 de junio. El mismo informe dice que el precio promedio de venta en bolsa en Colombia fue de 312 $/kWh, frente a 258 un año antes.",
+   "figures": "Excedentes 2026: 2,6 billones causados y 1,5 billones pagados a junio; bolsa 312 frente a 258 $/kWh",
+   "period": "S1-2026",
+   "quote": "\"En abril se causaron excedentes a pagar al Distrito de Medellín por $2.6 billones, donde al 30 de junio se han pagado $1.5 billones.\"; \"En Colombia el precio promedio de venta en bolsa fue de 312 $/KWh frente a 258 $/KWh del año anterior.\"",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2026/Informe2T2026_ESP.pdf",
+   "source_outlet": "Grupo EPM - Resultados Financieros Segundo Trimestre 2026",
+   "source_date": "2026-09-02",
+   "source_title": "Resultados Financieros Segundo Trimestre 2026",
+   "source_type": "primario-epm",
+   "confidence": "alta",
+   "notes": "Difiere de los 2,8 billones que publicó El Colombiano (8 de mayo de 2026). El 55% de la utilidad de EPM de 2025 (4.875.861) sería unos 2,68 billones. Mejor usar la cifra primaria."
+  },
+  {
+   "id": "verif-fin-06",
+   "claim": "Al cierre de 2025 quedaban 54.884 millones de opción tarifaria por cobrar a los usuarios, con intereses, y CENS estimaba recuperarlos en un año: los recibos de 2026 siguen incluyendo ese cobro. En 2023 el plazo estimado era de tres años, con un saldo de 174.632 y un deterioro de 43.658.",
+   "figures": "Saldo OT: 174.632 (2023, plazo de 3 años), 114.758 (2024) y 54.884 (2025, plazo de 1 año); deterioro: 43.658, 28.184 y 12.903",
+   "period": "2023-2026",
+   "quote": "\"El periodo estimado de recuperación de la cartera correspondiente a la opción tarifaria es de un año.\" (Notas 2025); \"son $174,632 y el deterioro de cartera específico es $43,658. El periodo estimado de recuperación de la cartera correspondiente a la opción tarifaria es de tres años.\" (EEFF 2023)",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_outlet": "CENS - Notas EEFF 2025 y EEFF 2023",
+   "source_date": "2026-02",
+   "source_title": "Nota 7 Deudores comerciales",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Lo corrobora Fitch (resumen de CENS, 13 de mayo de 2026): 'la recuperación de los saldos asociados a la opción tarifaria durante 2026 contribuirá positivamente a la generación de caja'. Sirve para conectar los recibos de 2026 con la deuda de 2020-2022."
+  },
+  {
+   "id": "verif-fin-07",
+   "claim": "En el 2T-2026 CENS tomó créditos nuevos por 183.400 millones (133.400 de largo plazo y 50.000 transitorios), pagó 18.471 millones en dividendos y recibió 155.856 millones en aportes, contribuciones y subsidios. Su deuda financiera subió de 897.093 (marzo) a 957.215 millones (junio de 2026).",
+   "figures": "Desembolsos de largo plazo 133.400; crédito transitorio 50.000; dividendos pagados 18.471; abonos a capital e intereses 155.538; subsidios y contribuciones recibidos 155.856",
+   "period": "abril-junio 2026",
+   "quote": "\"aportes, contribuciones y subsidios por $155,856, desembolsos de empréstitos largo plazo por $133,400, desembolso de crédito transitorio por $50,000 ... dividendos por $18,471, abono a capital e intereses pagados por $155,538.\"",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "source_outlet": "CENS - Notas EEFF segundo trimestre 2026",
+   "source_date": "2026",
+   "source_title": "Notas a los EEFF segundo trimestre 2026 (Nota de efectivo)",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Deuda de marzo de 2026: 692.287 + 204.806 (columna comparativa del ESF 2T-2026). No implica irregularidad: financia inversiones."
+  },
+  {
+   "id": "verif-fin-08",
+   "claim": "En 2025 la cuenta por cobrar de subsidios de CENS a la Nación bajó 16.064 millones, porque los giros (200.293) superaron el déficit del año (183.515). En 2024 había subido 88.732 millones.",
+   "figures": "2024: +88.732; 2025: −16.064",
+   "period": "2024-2025",
+   "quote": "\"rubro de subsidios por servicio de energía registró una disminución de COP$ 16,064 millones. generado por la recepción de giros de la Nación por un valor de COP$ 200,293 millones\"",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "source_outlet": "CENS - Informe de Sostenibilidad 2025",
+   "source_date": "2026-03",
+   "source_title": "Informe de Sostenibilidad CENS 2025, balance general",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Limita el argumento de defensa sobre los subsidios adeudados: en 2025 la Nación se puso parcialmente al día."
+  },
+  {
+   "id": "verif-fin-09",
+   "claim": "La caída de la remuneración del personal clave de la gerencia de CENS (5.448 a 4.075 millones) se debe solo a los beneficios de largo plazo (2.191 a 337). Los salarios y beneficios de corto plazo de los siete directivos subieron 14,8% (3.257 a 3.738 millones), unos 534 millones por cargo al año en promedio.",
+   "figures": "Corto plazo 3.738 frente a 3.257 (+14,8%); largo plazo 337 frente a 2.191",
+   "period": "2024-2025",
+   "quote": "\"Salarios, otros beneficios a los empleados a corto plazo y honorarios 3,738 3,257 ... Otros beneficios a los empleados a largo plazo 337 2,191\"",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_outlet": "CENS - Notas EEFF 2025, Nota 33",
+   "source_date": "2026-02",
+   "source_title": "Notas Estados Financieros 2025",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "El promedio por cargo es un cálculo propio y el rubro incluye honorarios. No personalizar."
+  },
+  {
+   "id": "verif-fin-10",
+   "claim": "Según prensa, el esquema de excedentes de EPM tiene un tope ordinario del 30% fijado por el Acuerdo 069 de 1997. Lo que supera ese tope requiere autorización adicional, y desde 2011 el total ha sido del 55%. En 2023 se propuso subirlo al 65%.",
+   "figures": "30% ordinario + 25% extraordinario = 55%; propuesta de 2023: 65%",
+   "period": "1997-2026",
+   "quote": "Resumen de búsqueda (no reabierto): el Acuerdo 069 de 1997 fijó el tope del 30%; Telemedellín informó que EPM aprobó elevar el porcentaje del 55% al 65%.",
+   "source_url": "https://telemedellin.tv/epm-autilidades-para-medellin/",
+   "source_outlet": "Telemedellín; El Mundo; Yahoo/El Colombiano (resultados de búsqueda)",
+   "source_date": "varias",
+   "source_title": "EPM autorizó 10% más de utilidades para Medellín",
+   "source_type": "prensa",
+   "confidence": "baja",
+   "notes": "No abrí estas notas ni la norma: solo sirve como pista. La aritmética de 2025 (55,0% exacto) sí está en los EEFF de EPM."
+  }
+ ],
+ "cautions": [
+  "La 'asimetría' de 2025 contada como 'la bolsa bajó 61% y la tarifa solo 4,6%' es la comparación más fácil de desmentir para CENS. La bolsa era solo el 29-39% del costo de compra de energía, los contratos subieron 24,8 $/kWh, las redes subieron 14.361 millones, el componente G se traslada con rezago regulado y la tarifa de 2025 incluía la recuperación de la opción tarifaria. Usar la versión homogénea: costo de energía y redes −51,5 $/kWh vendido frente a tarifa −41,2; la brecha de unos 15.000 millones es casi igual al aumento del EBITDA.",
+  "El 'NO CUMPLE' de la SSPD no puede ir solo. El mismo informe dice que el impacto 'no afectó directamente a los usuarios' (quedó en los saldos acumulados), que CENS se comprometió a recalcular y que la SSPD no evidenció 'conducta que vaya en perjuicio de los usuarios'. Además es la inspección de la vigencia 2022, publicada en 2023: no es una sanción ni un hallazgo de 2026.",
+  "Opción tarifaria: es cierto que los usuarios pagan el saldo con intereses (59.874 millones al año según CENS, con 11.945 de intereses), pero fue un mecanismo regulado que les difirió alzas en 2020-2022 (en dic-2022 el CU de la OT era 1,34% menor que el regulado). Decir 'pagamos su deuda' sería injusto: es el costo diferido del propio consumo. Los informes 2024 y 2025 repiten idéntico el desglose y las dos caídas del saldo: posible error de CENS, hay que preguntar antes de publicarlo como dato anual.",
+  "No escribir 'Medellín se queda con la mitad de la utilidad de CENS'. Lo defendible: cerca de la mitad de la utilidad entra en la base contable sobre la que EPM calcula los excedentes que transfiere a Medellín (método de participación). No es un giro identificado, y el 25% extraordinario se aprueba cada año. Para 2026 usar la cifra primaria de EPM (2,6 billones causados), no los 2,8 de la prensa.",
+  "Tesis de 'enriquecimiento en detrimento de la sociedad': los datos no la prueban. El 99,84% del capital es público (EPM-Medellín, IFINORTE, Cúcuta y otros municipios), la tarifa la regula la CREG, la SSPD no encontró conducta lesiva, en 2023 la bolsa le recortó 21% del EBITDA, la utilidad cae 35% en el S1-2026 y reinvierte cerca de la mitad. Hablar de 'enriquecimiento ilícito', 'robo' o 'abuso' sin una decisión de autoridad podría ser difamatorio. El ángulo sostenible es la rentabilidad y a dónde va la plata.",
+  "El ROE de 20-26% es cálculo propio sobre el patrimonio contable, inflado por el apalancamiento. No compararlo como prueba de abuso sin el WACC regulatorio de la CREG (no verificado). La frase de Fitch sobre el 'monopolio natural' es técnica, y la fuente es el resumen que publica CENS, no el comunicado de Fitch: citarla así.",
+  "'Comunidad y medio ambiente' (2.760 millones en 2025; 27.065 en 2018-2025) es el rubro que CENS se asigna a sí misma, y la empresa advierte que parte de esa inversión está también en reinversión y proveedores. Las obras por impuestos (4.700 millones) se pagan con el impuesto de renta. Si se usa el contraste con la utilidad, citar la salvedad o CENS lo desmentirá.",
+  "Subsidios: decir que 'la Nación le dejó un déficit de 183.515 millones en 2025' es incorrecto. En 2025 la Nación giró 200.293, más que el déficit del año, y la cuenta por cobrar bajó 16.064. El argumento de liquidez solo aplica con fuerza a 2024 (+88.732).",
+  "Caída de la utilidad en 2026: no atribuirla al impuesto al patrimonio de la emergencia (+2.813). El factor principal es el costo de prestación (+26.714: más compras en contratos, alza salarial del 12%); también suben los gastos financieros (+11.949) y los administrativos (+8.662). Además la bolsa se encareció en el S1-2026 (320,1 frente a 294,7 $/kWh).",
+  "Dividendo de 2026 (unos 73.887 millones): está respaldado por tres cuadres contables, pero no hay acta de asamblea. Redactar 'según sus estados financieros, CENS registró dividendos por unos 73.900 millones (60% de la utilidad 2025)'. La distribución por accionista usa la composición de 2020 (sin cambios reportados en 2025).",
+  "La remuneración de la gerencia no bajó: los salarios de corto plazo subieron 14,8%. Si se usa, no personalizar en los directivos nombrados en las notas.",
+  "Las compras a EPM matriz (128.304 millones en 2025) van con las ventas de CENS a EPM (35.715). No hay evidencia de sobreprecio ni de contratación irregular: no insinuarlo.",
+  "Cálculos por usuario ($191.300 de utilidad y $114.800 de dividendo por usuario): son promedios que incluyen comercio e industria. No equivalen a lo que paga cada hogar y no deben presentarse como 'sobrecosto' en el recibo.",
+  "Precedente de 2009: la subasta fue el 26 de febrero de 2009; los 165.000 millones eran la 'propuesta del Gobierno', no un 'precio mínimo'. Las cifras son nominales: comparar los 180.000 millones de 2009 con dividendos recientes sin ajustar por inflación, y sin los dividendos de 2010-2017, sería engañoso.",
+  "Los documentos de CENS tienen inconsistencias internas que la empresa podría usar para restar credibilidad a un dato mal citado. Ejemplos: ahorro neto en bolsa de 12.963 (informe) frente a −103.681 (Nota 26); compras a la matriz en 2023 de 14.569 frente a 14.509; intereses de mora 'desde 2025' frente a 'desde diciembre de 2025'; gastos financieros +1.169 (informe) frente a +1 (notas). Preferir siempre las notas auditadas y citar página y nota.",
+  "Periodos: los datos de 2026 son trimestrales no auditados. El CU bajó en 2025 ($976 a $869, según CENS), pero volvió a subir en enero de 2026 (+2,08%), y la bolsa nacional se encareció en el S1-2026. No mezclar la baja de 2025 con las quejas por alzas de 2026 sin aclarar fechas."
+ ]
+}

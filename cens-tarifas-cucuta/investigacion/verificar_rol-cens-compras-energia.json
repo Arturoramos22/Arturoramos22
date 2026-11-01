@@ -1,0 +1,397 @@
+{
+ "summary": "Verificación adversarial del frente \"rol-cens-compras-energia\" (31-oct-2026). Volví a descargar y revisar las fuentes primarias: API de XM, notas a los estados financieros de CENS 2025 y del 2T-2026, informe del gerente, hojas tarifarias, formatos COT, boletines tarifarios de Superservicios II-2025 y I-2026, inspección de Superservicios de 2022, estados financieros de EPM 2025, la página de compras de energía de CENS, El Tiempo 1996 y el Substack de Andrés Moreno.\n\nRESULTADO: de 28 hallazgos, 26 confirmados y 2 corregidos. Ninguno refutado. Las cifras duras salieron exactas.\n- XM: CENS tiene activos los códigos CNSC, CNSD y CNST; CNSG figura INACTIVO y no tiene ninguna planta entre 2.499 recursos.\n- Compras de energía, recalculadas desde cero con la API de XM:\n  - 2023: contratos 1.307,4 GWh, bolsa 426,8 GWh, demanda 1.734,0 GWh.\n  - 2024: contratos 1.420,8 GWh, bolsa 394,2 GWh, demanda 1.814,9 GWh.\n  - 2025: contratos 1.327,7 GWh, bolsa 456,2 GWh, demanda 1.783,8 GWh.\n  - En 2026 la bolsa bajó a 7-20% mensual.\n  - XM no registra demanda no regulada de CNSC.\n- CU de octubre de 2026: G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127; PR 78,0046; R 55,8206; total 1.018,9488. La identidad Cv NT1 − COT = Cv NT4 se cumple en todos los meses revisados (feb-25, may-25, ago-25, feb-26, oct-26).\n- Estados financieros 2025: contratos $413.804 M, bolsa $167.328 M, uso de redes $182.977 M. Costos con la matriz: $14.569 M (2023), $77.458 M (2024) y $128.304 M (2025).\n- Precio de bolsa (promedio simple horario): 212,4 $/kWh en enero de 2026 y 943,5 en agosto.\n- La reexpresión del CU de febrero a junio de 2025 está confirmada. Mayo pasó de 947,3741 a 897,1631 (G de 308,0530 a 266,4362).\n\nCORRECCIONES CLAVE:\n(1) \"G más alto de su grupo en 2T-2025\" (417,77 $/kWh) no sirve como evidencia. En otros trimestres el G que publica Superservicios coincide exactamente con el promedio de las hojas de CENS (4T-2025: 290,07; 1T-2026: 292,42). En 2T-2025, en cambio, las hojas de CENS dan 305,04 con la publicación original y unos 291 con la reexpresión, por debajo del promedio del grupo (364,12). Lo más probable es un error de dato ligado a los reportes atípicos al SUI de mayo de 2025.\n(2) Superservicios no dice que EPM atienda \"los grandes clientes no regulados de la zona\". Dice que CENS dejó de atender demanda no regulada al entrar al grupo y que, dentro del Grupo EPM, ese segmento lo atiende EPM. El mercado no regulado es de libre competencia.\n\nMATICES QUE CAMBIAN EL ÁNGULO:\n- El +11,56% del componente C en 1T-2026 sube 15,23 $/kWh. De eso, 10,58 (69%) es COT y solo 4,66 (+5,5%) es Cv base.\n- La \"parte de CENS\" (~43%) está sobreestimada. El DtUN incluye el cargo del STR (33,43 $/kWh en octubre de 2026, 3,3% del CU) y la compensación del ADD Centro (brecha de 8,5% en 2T-2025). El COT recupera costos de vigencias pasadas que se difirieron. Mi estimación de lo propio de CENS en octubre de 2026 es ~36-37% del CU, y no es utilidad.\n- CENS también le factura a EPM: $35.715 M en 2025. El flujo neto hacia la matriz es de $92.589 M.\n- Las notas del 2T-2026 ya no mencionan la generación entre las actividades autorizadas.\n\nPara el hilo, la conclusión se sostiene: \"CENS solo es un distribuidor\" es falso. CENS es comercializador integrado: compra la energía, calcula y publica el CU y factura. \"Se transa en la bolsa\" es una verdad a medias: el 74-78% se compró con contratos en 2023-2025. Hay que reconocer lo que es cierto: la CREG fija las fórmulas, el alza de G en agosto-septiembre de 2026 obedece sobre todo al disparo de la bolsa, y el precio de contratos de CENS está en el promedio del mercado.\n\nArchivos de verificación en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-rol-compras/ (dl/, xm/h, xm/h2, xm/h3, img/). Scripts: /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts/vrc_xm_fetch.py, /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts/vrc_xm_sum.py y /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts/vrc_pb.py.",
+ "verified": [
+  {
+   "id": "rol-cens-compras-energia-01",
+   "verdict": "confirmado",
+   "claim_final": "En el registro de agentes de XM, CENS figura con tres actividades en operación: comercialización (CNSC, desde 20-jul-1995), distribución (CNSD, desde 20-jul-1995) y transporte/transmisión (CNST, desde 1-dic-1996). Su código de generación (CNSG) está INACTIVO.",
+   "source_url": "https://servapibi.xm.com.co/lists",
+   "figures_final": "3 actividades en operación; generación inactiva",
+   "quote": "{'Code': 'CNSC', ... 'Activity': 'COMERCIALIZACIÓN', 'OperStartdate': '1995-07-20', 'State': 'OPERACION'} ... {'Code': 'CNSG', ... 'Activity': 'GENERACIÓN', 'OperStartdate': '1995-07-20', 'State': 'INACTIVO'}",
+   "notes": "Consultado de nuevo el 31-oct-2026 con POST {\"MetricId\":\"ListadoAgentes\",\"Entity\":\"Sistema\"}. Es fuente primaria del operador del mercado."
+  },
+  {
+   "id": "rol-cens-compras-energia-02",
+   "verdict": "confirmado",
+   "claim_final": "XM no le registra a CENS ningún recurso de generación: ninguno de los 2.499 recursos listados tiene códigos CNS*. Tasajero 1 (en operación desde 1985) es de TRMG (Termotasajero S.A. E.S.P.) y Tasajero 2 de TERG (Termotasajero Dos S.A. E.S.P.).",
+   "source_url": "https://servapibi.xm.com.co/lists",
+   "figures_final": "0 recursos de CENS entre 2.499",
+   "quote": "{'Code': 'TSJ1', 'Name': 'TASAJERO 1', ... 'CompanyCode': 'TRMG', ... 'OperStartdate': '1985-02-20'}; {'Code': 'TSJ2', 'Name': 'TASAJERO 2', ... 'CompanyCode': 'TERG'}",
+   "notes": "MetricId ListadoRecursos. En Norte de Santander también aparece 'PETALO DEL NORTE DE SANTANDER I' (solar, agente ERRG), que no es de CENS."
+  },
+  {
+   "id": "rol-cens-compras-energia-03",
+   "verdict": "confirmado",
+   "claim_final": "La Nota 1 de los estados financieros 2025 de CENS dice que está autorizada para generación, transmisión, distribución y comercialización, y que Grupo EPM tiene el 91,52%. Matiz: en las notas del segundo trimestre de 2026 la misma Nota 1 enumera solo 'transmisión, distribución y comercialización', sin generación.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "figures_final": "91,52% Grupo EPM (EPM directo 12,54% según los EEFF de EPM)",
+   "quote": "CENS está autorizada para prestar el servicio público domiciliario de energía eléctrica y sus actividades complementarias de generación, transmisión, distribución y comercialización (EEFF 2025). / '...actividades complementarias de transmisión, distribución y comercialización' (Notas 2T-2026)",
+   "notes": "El hilo no debe decir que CENS 'genera'. Lo correcto: está autorizada estatutariamente, pero no genera para el sistema."
+  },
+  {
+   "id": "rol-cens-compras-energia-04",
+   "verdict": "confirmado",
+   "claim_final": "En su Informe de Sostenibilidad 2025, CENS presenta cuatro negocios. En comercialización dice que compra energía 'mediante contratos y en el mercado mayorista (bolsa)' y la vende a usuarios regulados. Su generación propia es marginal: 590 paneles con 395,68 kWp para autoconsumo, unos 46.029 kWh/mes.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "figures_final": "4 negocios declarados; 395,68 kWp para autoconsumo",
+   "quote": "Comercialización: Compramos energía mediante contratos y en el mercado mayorista (bolsa) para cubrir la demanda de energía de los mercados que atendemos y vendemos energía a los usuarios del mercado regulado.",
+   "notes": "El tamaño del archivo coincide con el publicado (54.507.658 bytes; last-modified 20-mar-2026). El informe dice 'Logramos la entrada en operación de 128,5 MW de nueva capacidad de generación en el marco de la Resolución CREG 075 de 2021'. Esa resolución regula la conexión, así que son proyectos conectados a la red de CENS, no plantas de CENS. Conviene confirmarlo con CENS antes de afirmarlo de forma tajante."
+  },
+  {
+   "id": "rol-cens-compras-energia-05",
+   "verdict": "corregido",
+   "claim_final": "Según Superservicios, el RUPS de CENS (certificado el 24-01-2023) registra 'Transmisión, Distribución y Comercialización'. CENS atiende solo usuarios regulados (552.580 regulados y 0 no regulados en dic-2022) porque dejó de atender demanda no regulada al entrar al Grupo EPM: dentro del grupo, ese segmento lo atiende EPM. No implica que EPM atienda todo el mercado no regulado de Norte de Santander, que es de libre competencia.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "second_source_url": "https://servapibi.xm.com.co/hourly",
+   "figures_final": "Regulados 552.580; no regulados 0 (dic-2022). XM: DemaComeNoReg de CNSC vacío en jun-2025 y sep-2026; DemaCome = DemaComeReg (141,8 y 166,8 GWh)",
+   "quote": "la empresa CENS solo atiende usuarios regulados, ya que dejó de atender demanda no regulada una vez entraron al Grupo EPM, ya que Empresas Públicas de Medellín sería quien atendería ese segmento del mercado. / ...el mercado no regulado de las empresas del Grupo EPM es atendido directamente por Empresas Públicas de [Medellín]",
+   "notes": "Corrijo la frase 'el mercado no regulado de la zona quedó en manos de EPM' y el ángulo 'los grandes clientes no regulados de la región los atiende directamente EPM'. Superservicios se refiere al segmento no regulado del Grupo EPM, no a toda la región."
+  },
+  {
+   "id": "rol-cens-compras-energia-06",
+   "verdict": "confirmado",
+   "claim_final": "En el formato COT de octubre de 2026 (Res. CREG 101 028 de 2023), CENS llena la sección de comercializador 'Integrado con el OR' y declara un COT NT1 de 44,0139 $/kWh y ventas reguladas NT1 (m-2) de 125.828.027 kWh.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/COT2026/COT_202610.xlsx",
+   "figures_final": "COT NT1 44,0139; NT2 23,6907; NT3 4,7739 $/kWh; VR NT1 125.828.027 kWh",
+   "quote": "Comercializador (i) | CENTRALES ELECTRICAS DEL NORTE DE SANTANDER S.A E.S.P | Integrado con el OR",
+   "notes": "El formato trae dos filas, 'Integrado con el OR' y 'Entrante'. CENS llena la primera."
+  },
+  {
+   "id": "rol-cens-compras-energia-07",
+   "verdict": "confirmado",
+   "claim_final": "En la Nota 23 de los EEFF 2025, el 'Servicio de distribución energía', que incluye la venta de energía, suma $1.369.163 M de un total de $1.434.551 M. Transmisión aporta $4.481 M y no hay línea de ingresos por generación. Las ventas cayeron 28,6 GWh frente a 1.485 GWh en 2024, y la tarifa promedio bajó 41,2 $/kWh frente a 888,3.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "figures_final": "$1.369.163 M; $4.481 M; total $1.434.551 M; ventas ≈1.456,4 GWh; tarifa promedio ≈847,1 $/kWh (derivado)",
+   "quote": "Servicio de distribución energía 1,369,163 ... Servicio de transmisión energía 4,481 ... Total 1,434,551 ... las ventas se ubicaron 28,6 GWh por debajo de los 1.485 GWh registrados en 2024 ... tarifa promedio inferior en 41,2 $/kWh, comparada con la tarifa del año anterior ($888,3/kWh).",
+   "notes": "La línea 'Incluye ingresos estimados por $57,802'. Los ingresos del informe del gerente ($1.445.154 M) y los de los EEFF de EPM ($1.446.202 M) usan otra definición."
+  },
+  {
+   "id": "rol-cens-compras-energia-08",
+   "verdict": "confirmado",
+   "claim_final": "La UPME le adjudicó a CENS, por convocatoria pública, el proyecto 'Subestación Tonchalá 230 kV y Líneas de Transmisión Asociadas'. CENS dice que esto 'apalancará el negocio de Transmisión'. Es nivel STN: el propio informe de CENS define transmisión como niveles iguales o superiores a 220 kV.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo1_Informe_del_Gerente_y_JD_a_AA.pdf",
+   "figures_final": "230 kV",
+   "quote": "Un hito relevante que apalancará el negocio de Transmisión de Energía fue la adjudicación por parte de la UPME, mediante convocatoria pública, del proyecto “Subestación Tonchalá 230 kV y Líneas de Transmisión Asociadas”.",
+   "notes": "Las notas del 2T-2026 registran inversión en 'Subestación Tonchalá 230 KV $224' millones."
+  },
+  {
+   "id": "rol-cens-compras-energia-09",
+   "verdict": "confirmado",
+   "claim_final": "CU de octubre de 2026 (NT1, activos de CENS), según la hoja publicada el 18-oct-2026: G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127 (incluye COT de 44,0139); PR 78,0046; R 55,8206; total 1.018,9488 $/kWh. Los seis componentes suman exactamente el CUv.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "figures_final": "De cada $1.000: G 390; T 49; R 55; PR 77; DtUN 292; Cv base 95; COT 43",
+   "quote": "Fecha Publicacion 18 de Octubre 2026 ... G 397.0896 | T 49.6428 | DtUN 297.8785 | Cv 140.5127 | PR 78.0046 | R 55.8206 | CUv 1018.9488 ... COT ... NT1 $44.0139 NT2 $23.6907 y NT3 $4.7739",
+   "notes": "Verifiqué la imagen de la página 4. Ojo: el DtUN NT1 incluye el cargo del STR, que en el nivel 4 vale 33,4270 $/kWh (3,3% del CU)."
+  },
+  {
+   "id": "rol-cens-compras-energia-10",
+   "verdict": "confirmado",
+   "claim_final": "El COT viene sumado dentro de Cv: Cv NT1 menos COT NT1 da el Cv NT4, que no lleva COT. Lo comprobé en feb-2025, may-2025 (publicación original), ago-2025, feb-2026 y oct-2026.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "figures_final": "oct-26: 140,5127−44,0139=96,4988; feb-26: 149,8231−60,4189=89,4042; ago-25: 139,1464−50,5804=88,5660; feb-25: 138,2611−51,2628=86,9983; may-25: 145,4910−53,1155=92,3755",
+   "quote": "Para el mes de Octubre el Costo de recuperación de la Opción Tarifaria (COT) es de : NT1 $44.0139 NT2 $23.6907 y NT3 $4.7739",
+   "notes": "También se cumple en NT2 y NT3. En la hoja original de mayo de 2025 el texto dice 'Para el mes de Abril el COT...': error de redacción en la hoja."
+  },
+  {
+   "id": "rol-cens-compras-energia-11",
+   "verdict": "confirmado",
+   "claim_final": "Con las 22 hojas tarifarias (NT1, activos de CENS), distribución (DtUN) más comercialización sin COT pesaron en promedio el 42,9% del CU en 2025 y el 42,7% en ene-oct 2026; mes a mes, entre 36,0% (feb-2025) y 47,0% (ago-2025). Con el COT, ~48%. G+T+R pesó 44,2% y 44,4%; PR 7,6%. Esa suma no es toda remuneración de CENS: el DtUN incluye el cargo del STR (~3,3% del CU) y la compensación del ADD Centro (~8,5% del cargo D en 2T-2025), y el COT recupera saldos de vigencias pasadas.",
+   "source_url": "https://www.cens.com.co/clientes-y-usuarios/tarifas-de-energia",
+   "figures_final": "2025: DtUN+Cv base 42,9%, con COT 48,2%, G+T+R 44,2%. 2026: 42,7%, 48,1%, 44,4%. Estimación propia de lo de CENS en oct-2026 (DtUN×292,72/320,03 + Cv base + CPROG): ~372,6 $/kWh, ~36,6% del CU",
+   "quote": "COMPONENTES DEL COSTO UNITARIO- CU en $/kWh (tablas mensuales)",
+   "notes": "Rehíce el cálculo con cu_shares.py y verifiqué contra las imágenes de feb-25, may-25, ago-25, feb-26 y oct-26. Corrección menor: la tabla usa la publicación original para todo feb-jun 2025, no solo para may-jun."
+  },
+  {
+   "id": "rol-cens-compras-energia-12",
+   "verdict": "confirmado",
+   "claim_final": "El CPROG que remunera a CENS dentro de PR es de 3,49, 3,53 y 3,56 $/kWh (abr-jun 2025) y de 3,63, 3,66 y 3,67 (1T-2026). Superservicios informó que el plan de reducción de pérdidas de CENS fue cancelado por incumplimiento reiterado de metas, pero sin efecto en la tarifa: su plan se aprobó con INVNUC = 0 y solo recibe el componente de mantenimiento.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "figures_final": "CPROG 2025: 3,49 / 3,53 / 3,56; CPROG 1T-2026: 3,63 / 3,66 / 3,67 $/kWh. Pérdidas 2025: 14,30%; Catatumbo 47,84% (103,71 GWh)",
+   "quote": "El plan de reducción de pérdidas de EMCALI, CENS y DISPAC es cancelado por incumplimiento reiterado de metas. No obstante, teniendo en cuenta que para estos operadores se aprobó un plan de reducción con INVNUC de 0, entonces su CPROG no se ve afectado y continúan recibiendo remuneración por concepto de mantenimiento de pérdidas.",
+   "notes": "En la tabla 442: 'CENS | Cancelado | Ninguno. INVNUC aprobado 0.' El índice de pérdidas sale del informe del gerente 2025."
+  },
+  {
+   "id": "rol-cens-compras-energia-13",
+   "verdict": "confirmado",
+   "claim_final": "En 2T-2025, el Dt propio de CENS (292,72 $/kWh) fue 8,5% menor que el DtUN único del ADD Centro (320,03). Ese DtUN coincide exactamente con el promedio de las hojas de CENS de abr-jun 2025. La diferencia compensa a los OR con costos mayores del área: Superservicios cita a Ruitoque (548,58), EDEQ (378,68) y ESSA (362,05). El ADD Centro lo forman CENS, CHEC, EDEQ, EEP, EPM, ESSA y Ruitoque; cinco de los siete son del Grupo EPM.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "figures_final": "(320,03−292,72)/320,03 = 8,53%. DtUN de las hojas de CENS abr-jun 2025: 322,13 / 326,95 / 311,00, promedio 320,03. Costo ADD: +$11.489 M en 2025; +$7.953 M en 1S-2026",
+   "quote": "otros OR operan con costos significativamente inferiores al promedio del área, destacándose EEP (214,49 $/kWh) y CENS (292,72 $/kWh). / ADD: Aumentó en $7,953, producto de una mayor brecha entre el DtUN y el Dt propio producto de una mayor inversión por parte de otros OR del ADD centro.",
+   "notes": "Es un punto a favor de CENS. Que la diferencia vaya 'en su mayoría al Grupo EPM' es plausible (ESSA y EDEQ están por encima del DtUN), pero el boletín no da el Dt de EPM ni el de CHEC."
+  },
+  {
+   "id": "rol-cens-compras-energia-14",
+   "verdict": "confirmado",
+   "claim_final": "En la Nota 26 de los EEFF 2025, las compras en bloque o de largo plazo (contratos) suman $413.804 M, las compras en bolsa o de corto plazo $167.328 M y el uso de líneas y redes $182.977 M. Derivando: contratos ≈1.314,5 GWh a ≈314,8 $/kWh (290 + 24,8) y bolsa a ≈254,3 $/kWh (656,8 − 402,5).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "figures_final": "1.314,5 × 314,8 = $413.805 M (cuadra). Bolsa 2025 ≈468,7 GWh (derivado; XM da 456,2)",
+   "quote": "Compras en bloque y/o a largo plazo con disminución debido a menores unidades compradas 119,7GWh respecto a las registradas en 2024 (1,434.2Wh) ... mayor precio de compra de 24.8 $/kWh respecto al valor de 2024 (290 $/kWh). / Compras en bolsa y/o a corto plazo con disminución producto de un menor precio de 402,5 $/kWh respecto al valor del 2024 (656,8 $/kWh) ... mayores unidades compradas 98,5GWh respecto a las proyectadas (370.2Wh)",
+   "notes": "Matiz: la nota dice 98,5 GWh 'respecto a las proyectadas (370.2Wh)', no respecto a 2024, así que el volumen de bolsa es una inferencia. Hecho relevante: en 2025 los contratos (~314,8) salieron más caros que la bolsa (~254,3). En el 1S-2026 la relación se invirtió: bolsa 320,1 frente a contratos 310,6."
+  },
+  {
+   "id": "rol-cens-compras-energia-15",
+   "verdict": "confirmado",
+   "claim_final": "Según XM (agente CNSC), los contratos cubrieron el 75,4% de la demanda regulada en 2023, el 78,3% en 2024 y el 74,4% en 2025. La bolsa fue el 24,6%, 21,7% y 25,6%.",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "figures_final": "2023: 1.307,4 / 426,8 / 1.734,0 GWh (SICEP 636,7). 2024: 1.420,8 / 394,2 / 1.814,9 (SICEP 750,5). 2025: 1.327,7 / 456,2 / 1.783,8 (SICEP 1.014,5)",
+   "quote": "Métricas DemaComeReg, CompContEnerReg, CompBolsNaciEner y CompContEnerSICEP, Entity Agente, Filter CNSC (sumas horarias)",
+   "notes": "Recalculado de forma independiente: coincide al decimal. En 2022 la cobertura había sido de 82,37% según Superservicios, así que bajó en 2023-2025. En 2025 la bolsa subió a 30,6-32,7% en ago-oct, meses de bolsa barata (241-294 $/kWh en ago-sep). Las cifras pueden cambiar por reliquidaciones."
+  },
+  {
+   "id": "rol-cens-compras-energia-16",
+   "verdict": "confirmado",
+   "claim_final": "En 2026 CENS redujo su exposición a bolsa. Según XM fue de 11,9% en enero, 7,3% en febrero y 18,0% en marzo, de 18,6% en julio y agosto, 19,1% en septiembre y 19,6% en octubre (datos hasta el 26). Las notas del 2T-2026 reportan +105,6 GWh en contratos (310,6 frente a 311,2 $/kWh) y −72,8 GWh en bolsa (320,1 frente a 294,7 $/kWh) frente al mismo periodo de 2025.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "second_source_url": "https://servapibi.xm.com.co/hourly",
+   "figures_final": "SICEP 120,3 GWh/mes en ene-mar 2026; ~132-136 GWh/mes en jul-sep. Estimación 1S-2026: contratos ≈775 GWh, bolsa ≈122 GWh, ≈13,6% en bolsa",
+   "quote": "Compra en contratos: Aumentó 32,429, explicada por un mayor volumen contratado (aprox. +105,6 GWh) ... ($310,6/kWh vs $311,2/kWh en 2025) ... Compra en bolsa: Disminuyó $18,457 principalmente por una menor energía comprada (aprox. -72,8 GWh frente a 2025) ... ($320,1/kWh vs $294,7/kWh en 2025)",
+   "notes": "Confirmé que los datos de XM de abr-jun 2026 están incompletos: contratos con 3 días en abril, 0 en mayo y 1 en junio. La estimación del semestre mezcla la base de XM con las variaciones contables: es aproximada."
+  },
+  {
+   "id": "rol-cens-compras-energia-17",
+   "verdict": "confirmado",
+   "claim_final": "Los costos y gastos de CENS con su matriz EPM fueron de $14.569 M (2023), $77.458 M (2024) y $128.304 M (2025), es decir ×8,8. CENS los describe en conjunto como 'compras de energía y adquisición de bienes y servicios', y en el cuadro de detalle los clasifica como 'Adquisición de bienes y servicios'. No separa la energía. CENS también le vende a EPM: $35.715 M en 2025 ('servicios de energía y otros'), así que el flujo neto hacia la matriz es de $92.589 M.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "figures_final": "128.304 / 77.458 / 14.569 ($ M). Por pagar a la matriz: $12.690 M ('Incluye compra de energía y otros servicios'). Ingresos desde la matriz: 35.715 / 36.711 / 35.765. Total con partes relacionadas: $168.196 M",
+   "quote": "Corresponde a costos y gastos generados por transacciones asociadas a compras de energía y adquisición de bienes y servicios. Con Matriz $ 128,304 (2024 $77,458), Subsidiarias: Electrificadora de Santander $17,762 (2024 $10,928) Central Hidroeléctrica de Caldas $10,310 (2024 $6,961) Empresa de Energía del Quindío $4,010 (2024 $2,015)",
+   "notes": "El dato de 2023 sale de las notas 2024 ('Con Matriz $ 77,458 (2023 14.569)'). Hipótesis no comprobada: ESSA, CHEC y EDEQ, como EPM, son del ADD Centro, y CENS paga compensación ADD, así que parte de estos costos podrían ser transferencias del ADD y no energía. No se puede afirmar cuántos GWh vende EPM."
+  },
+  {
+   "id": "rol-cens-compras-energia-18",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 CENS firmó 24 actas de transacción con partes vinculadas por servicios especializados 'distintos a los servicios públicos domiciliarios'. Ejemplos: hosting por COP 1.764.553.752; TI básica por COP 1.705.048.383; sistemas administrativos por COP 1.583.356.356; ERP SAP por USD 1.525.259.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "figures_final": "24 actas; montos de ~COP 1.500-1.800 millones cada una (ejemplos)",
+   "quote": "se destacan las transacciones orientadas al suministro de bienes y la prestación de servicios especializados (distintos a los servicios públicos domiciliarios) ... En el año 2025 se suscribieron 24 actas de transacción",
+   "notes": "Que estas actas no expliquen el salto de los costos con EPM es una inferencia, no una prueba."
+  },
+  {
+   "id": "rol-cens-compras-energia-19",
+   "verdict": "confirmado",
+   "claim_final": "La página de compras de energía de CENS lista 17 convocatorias SICEP desde 2021: 9 de la vigencia actual (2024-2026) y 8 históricas (2021-2023), con suministros hasta 2040. No publica adjudicatarios, cantidades ni precios: remite a los expedientes del SICEP.",
+   "source_url": "https://www.cens.com.co/clientes-y-usuarios/empresas/compras-de-energia",
+   "figures_final": "CP-CNSC2023-002 (01/01/2024-31/12/2037); CP-CNSC2024-001 (2025-2028); CP-CNSC2025-002 y 003 (2026-2040); CP-CNSC2025-004 (2027-2040); CP-CNSC2026-001 y 002 (2027-2031)",
+   "quote": "Conoce nuestras convocatorias para compra de energía de la actual vigencia, a través de la columna convocatoria No.",
+   "notes": "Una búsqueda web no encontró en prensa las adjudicaciones de CENS. Sigue como vacío."
+  },
+  {
+   "id": "rol-cens-compras-energia-20",
+   "verdict": "confirmado",
+   "claim_final": "Superservicios explica que el componente G sirve para trasladar al usuario los costos de compra de energía del comercializador, por contratos bilaterales o en bolsa. En 2022 CENS se cubrió con contratos en un 82,37% (17,63% en bolsa), con un mínimo de 76,29% en mayo y un máximo de 88,24% en noviembre.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "figures_final": "82,37% contratos / 17,63% bolsa (2022)",
+   "quote": "Este componente permite trasladar vía tarifa a los usuarios los costos de compra de energía del comercializador, bien sea vía contratos bilaterales, o bolsa en el mercado de energía mayorista u otros mecanismos de compra contemplados actualmente por la regulación.",
+   "notes": "Descargado vía WebFetch y extraído con pdftotext. Mismo informe que la verificación 05."
+  },
+  {
+   "id": "rol-cens-compras-energia-21",
+   "verdict": "corregido",
+   "claim_final": "El boletín de Superservicios II-2025 reporta para CENS un G de 402,89 (1T) y 417,77 $/kWh (2T), el más alto del Grupo 2. Ese dato no es confiable y no debe usarse contra CENS. En otros trimestres el G del boletín coincide exactamente con el promedio de las hojas tarifarias de CENS (4T-2025: 290,07; 1T-2026: 292,42), pero el G de abr-jun 2025 en las hojas promedia 305,04 en la publicación original y ~291 con la reexpresión, por debajo del promedio del grupo (364,12). Lo que sí está bien documentado: en abril de 2025 Superservicios ubicó a CENS entre los agentes con Pc inferior al Mc, y su reporte de mayo de 2025 fue atípico (Pc = 0, Qc = 0%, sin datos T9).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-tarifario-de-energia-II-trimestre-de-2025.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "figures_final": "Boletín: 1T-25 402,89 y 2T-25 417,77. Hojas de CENS: 1T-25 417,31 (original); 2T-25 305,04 (original) o 291,08 (con may-jun reexpresados); 4T-25 290,07 = boletín; 1T-26 292,42 = boletín",
+   "quote": "la dispersión entre el valor más alto, reportado por CENS en Norte de Santander, y el más bajo, registrado por CHEC en Caldas ... / Agentes con Pc inferior al Mc: ... Celsia Colombia, CETSA, CENS, CEO, Electrohuila, EPM, Enel Colombia y Afinia (Caribemar) (Análisis Comparativo Pc vs. Mc – ABRIL 2025) / Casos Atípicos: Se registra una novedad significativa para los meses de CENS y DISPAC, quienes reportaron un valor de Pc de 0,00 $/kWh.",
+   "notes": "El 417,77 del 2T se parece al promedio original del 1T-2025 (417,31). Sugiere un desfase o un error de reporte. Hay que preguntarle a Superservicios antes de usarlo."
+  },
+  {
+   "id": "rol-cens-compras-energia-22",
+   "verdict": "confirmado",
+   "claim_final": "En 1T-2026 CENS tuvo el mayor aumento del componente de comercialización (C) de su grupo: +11,56%, de 131,81 a 147,04 $/kWh. Pero el 69% de ese aumento (+10,58 de +15,23 $/kWh) viene del COT, que recupera saldos de la opción tarifaria. El Cv base subió 4,66 $/kWh (+5,5%). Su precio de compra en contratos quedó a menos de 1 $/kWh del Mc y su G fue de 292,42 $/kWh.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202602_.pdf",
+   "figures_final": "C: 131,81 → 147,04. COT promedio: 46,96 → 57,53. Cv base: 84,85 → 89,51. G: 290,07 → 292,42 (+0,81%)",
+   "quote": "El mayor incremento correspondió a CENS, con 11,56%, al pasar de 131,81 $/kWh a 147,04 $/kWh. / EDEQ, EPM, ESSA y CENS presentaron diferencias inferiores a 1 $/kWh lo que evidencia una alta convergencia entre sus costos de contratación y el valor de referencia del mes",
+   "notes": "La descomposición es cálculo propio con las hojas de oct-2025 a mar-2026 y reproduce exactamente las cifras de Superservicios."
+  },
+  {
+   "id": "rol-cens-compras-energia-23",
+   "verdict": "confirmado",
+   "claim_final": "El precio de bolsa nacional (promedio simple de precios horarios) pasó de 212,4 $/kWh en enero de 2026 a 505,0 en mayo, 789,8 en julio y 943,5 en agosto. Luego bajó a 677,0 en septiembre y a 614,7 en octubre (hasta el día 28). Como G usa precios del mes anterior, eso ayuda a explicar el alza de G en agosto-septiembre de 2026 (409,86 y 430,96 $/kWh) aunque CENS estuviera ~81% contratada.",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "figures_final": "ene-25 519,7; ago-25 241,4; sep-25 293,7; ene-26 212,4; may-26 505,0; jul-26 789,8; ago-26 943,5; sep-26 677,0; oct-26 614,7 (672 horas)",
+   "quote": "PrecBolsNaci, Entity Sistema (valores horarios)",
+   "notes": "Es un promedio aritmético no ponderado por demanda. Cálculo de orden de magnitud: 0,81 × ~310 + 0,19 × ~900 ≈ 422 $/kWh, cerca del G de septiembre (431). Punto a favor de la defensa."
+  },
+  {
+   "id": "rol-cens-compras-energia-24",
+   "verdict": "confirmado",
+   "claim_final": "En la hoja de julio de 2025 CENS republicó a la baja el CU de febrero a junio de 2025: feb 1.055,58 → 1.014,60; mar 1.010,12 → 965,42; abr 986,16 → 935,52; may 947,37 → 897,16; jun 873,83 → 871,81. En mayo la baja vino sobre todo de G (308,0530 → 266,4362), y en menor medida de PR (66,9417 → 59,8428) y Cv (145,4910 → 143,9957). La hoja de julio calcula la variación del mes contra el junio reexpresado (+$44,1719, +5,07%), lo que indica que CENS adoptó los valores corregidos.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202507.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202505.pdf",
+   "figures_final": "Diferencias: −40,98; −44,70; −50,63; −50,21; −2,02 $/kWh",
+   "quote": "Original (21-may-2025): G 308.0530 ... PR 66.9417 ... CUv 947.3741. Hoja de julio (tabla con 'Fecha Publicacion 21 de Mayo 2025'): G 266.4362 ... Cv 143.9957 ... PR 59.8428 ... CUv 897.1631. / 'El Costo Unitario (CU) del mes de Julio aumentó en 5.07% equivalente a $44.1719 en comparación con el mes de Junio'",
+   "notes": "No hay explicación del motivo ni de si hubo devolución en las facturas. La corrección fue a favor de los usuarios. Coincide en el tiempo con los reportes atípicos de CENS al SUI en mayo de 2025."
+  },
+  {
+   "id": "rol-cens-compras-energia-25",
+   "verdict": "confirmado",
+   "claim_final": "Resultados 2025 según el informe del gerente: ingresos por $1.445.154 M, EBITDA de $361.222 M y utilidad neta de $123.146 M (margen neto ~8,5%, margen EBITDA ~25,0%). El informe dice que el CU bajó 11%, de $976 en diciembre de 2024 a $869 en 2025. Pero las hojas de CENS dan 983,70 para diciembre de 2024, con lo que la baja hasta 869,94 en diciembre de 2025 es de 11,6%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo1_Informe_del_Gerente_y_JD_a_AA.pdf",
+   "second_source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/estados-financieros/estados-financieros-trimestrales-epm-matriz/2025/EPM_EEFF_Separados_certificaci%C3%B3n_informe_del_auditor_y_Notas_al_31-12-2025.pdf",
+   "figures_final": "Utilidad $123.146 M (también en los EEFF de EPM). 123.146/1.445.154 = 8,52%; 361.222/1.445.154 = 25,0%",
+   "quote": "Alcanzamos resultados positivos en el año, con ingresos por COP$1.445.154 millones que superaron la meta definida; el EBITDA ascendió a COP$361.222 millones y la Utilidad Neta cerró en COP$123.146 millones.",
+   "notes": "Confirma la cifra de @fredyparada90 ($123 mil millones, año 2025). La hoja de enero de 2025 dice que el CU 'disminuyo 0.18 % equivalente a $1.73' frente a diciembre de 2024, lo que da 983,70."
+  },
+  {
+   "id": "rol-cens-compras-energia-26",
+   "verdict": "confirmado",
+   "claim_final": "En diciembre de 1996, cuando la Nación puso en venta su 43,36% de Termotasajero, El Tiempo describió a CENS como la 'firma que administra la central'. Hoy CENS no registra participación en Termotasajero: sus inversiones son el Patrimonio Autónomo Programa SOMOS y $77 M en acciones minoritarias (Electrificadora del Caribe, Fosfonorte, Central de Abastos de Cúcuta, Hotel Juana Naranjo).",
+   "source_url": "https://www.eltiempo.com/archivo/documento/MAM-634404",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "figures_final": "43,36% de la Nación en venta (1996)",
+   "quote": "Central Eléctrica de Norte de Santander, firma que administra la central",
+   "notes": "La fuente de 1996 es prensa. Lo actual sale de las Notas 6 y 8.1.1 de los EEFF 2025."
+  },
+  {
+   "id": "rol-cens-compras-energia-27",
+   "verdict": "confirmado",
+   "claim_final": "Los EEFF separados 2025 de EPM describen el objeto de CENS de forma amplia, incluida la 'construcción y explotación de plantas generadoras'. EPM tiene directamente el 12,54% (constitución: 16/10/1952). Para CENS reportan ingresos de $1.446.202 M y utilidad de $123.146 M.",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/estados-financieros/estados-financieros-trimestrales-epm-matriz/2025/EPM_EEFF_Separados_certificaci%C3%B3n_informe_del_auditor_y_Notas_al_31-12-2025.pdf",
+   "figures_final": "12,54% directo; ingresos $1.446.202 M; utilidad $123.146 M",
+   "quote": "Presta servicios públicos de energía eléctrica, compra, exportación, importación, distribución y venta de energía eléctrica, construcción y explotación de plantas generadoras, subestaciones, líneas de transmisión y redes de distribución.",
+   "notes": "Describe el objeto social, no la actividad real (XM: generación inactiva)."
+  },
+  {
+   "id": "rol-cens-compras-energia-28",
+   "verdict": "confirmado",
+   "claim_final": "Un blog en Substack de Andrés Moreno (15-oct-2026), con datos del SICEP extraídos el 11-oct-2026, sostiene que en el ciclo SICEP 2026 las filiales del Grupo EPM (CENS, CHEC, EDEQ, ESSA y Afinia) compraron 3.768 GWh (23,4%) a 352,20 $/kWh promedio, mientras EPM vendió 363,80 GWh (2,3%) a 365,22. No da cifras individuales de CENS.",
+   "source_url": "https://andresmoreno1975.substack.com/p/que-ha-pasado-con-los-precios-de",
+   "figures_final": "3.768 GWh (23,4%) comprados; 363,80 GWh (2,3%) vendidos",
+   "quote": "Las filiales del Grupo EPM —CENS, CHEC, EDEQ, ESSA y Afinia— compraron 3.768 GWh, el 23,4% de toda la energía adjudicada del ciclo ... Y vendió poco: 363,80 GWh, el 2,3%.",
+   "notes": "Confirmo la atribución, no el dato de fondo, que no pude contrastar con el SICEP. Es fuente secundaria (blog); úsese solo como contexto. Si fuera cierto, EPM vende poco en el SICEP, lo que debilita la hipótesis de que los $128.304 M sean grandes compras de energía a EPM vía SICEP. Las compras a EPM también podrían ser contratos anteriores."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "rol-cens-compras-energia-NF01",
+   "claim": "En sus notas a los estados financieros del segundo trimestre de 2026, CENS ya no menciona la generación entre sus actividades autorizadas. Enumera solo transmisión, distribución y comercialización, a diferencia de la Nota 1 de los EEFF anuales 2025.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS – Notas a los EEFF, segundo trimestre 2026 (Nota 1)",
+   "source_title": "Notas a los EEFF segundo trimestre 2026",
+   "source_date": "2026",
+   "period": "2T-2026",
+   "quote": "CENS está autorizada para prestar el servicio público domiciliario de energía eléctrica y sus actividades complementarias de transmisión, distribución y comercialización",
+   "figures": "91.52% Grupo EPM",
+   "notes": "Coincide con XM (CNSG inactivo). La misma nota dice que es filial del Grupo EPM 'a partir del 19 de marzo de 2009', mientras los EEFF anuales dicen '19 de mayo de 2009'."
+  },
+  {
+   "id": "rol-cens-compras-energia-NF02",
+   "claim": "El G que publica Superservicios para CENS coincide exactamente con el promedio trimestral de las hojas tarifarias de CENS en 4T-2025 (290,07) y 1T-2026 (292,42). En 2T-2025 no: el boletín da 417,77 y las hojas 305,04 (original) o ~291 (reexpresado), por debajo del promedio del Grupo 2 (364,12). El dato de que CENS tuvo 'el G más alto del grupo' en 2T-2025 parece un error de dato.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_type": "primario-control",
+   "confidence": "media",
+   "source_outlet": "Superservicios (boletines II-2025 y I-2026) y hojas tarifarias de CENS (cálculo propio)",
+   "source_title": "Boletín Tarifario de Energía Eléctrica, Primer Trimestre 2026; Tabla 17",
+   "source_date": "2026",
+   "period": "2025-2026",
+   "quote": "CENS Norte de Santander 290,07 292,42 0,81% (Tabla 17, Grupo 2)",
+   "figures": "Hojas de CENS: oct-25 311,4243; nov-25 272,9812; dic-25 285,7979, promedio 290,07. ene-26 298,9047; feb-26 271,7857; mar-26 306,5637, promedio 292,42. abr-25 341,4505; may-25 308,0530; jun-25 265,6131, promedio 305,04",
+   "notes": "Es una inferencia por comparación. Conviene preguntarle a Superservicios por el valor de 2T-2025."
+  },
+  {
+   "id": "rol-cens-compras-energia-NF03",
+   "claim": "El aumento del componente de comercialización de CENS en 1T-2026 (+15,23 $/kWh, +11,56%) se explica en un 69% por el COT (+10,58 $/kWh), que recupera saldos de la opción tarifaria de vigencias anteriores. El Cv base subió 4,66 $/kWh (+5,5%).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202602_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "Hojas tarifarias de CENS oct-2025 a mar-2026 (cálculo propio)",
+   "source_title": "Tarifas CENS 202510-202603",
+   "source_date": "2026",
+   "period": "4T-2025 a 1T-2026",
+   "quote": "Para el mes de Febrero el Costo de recuperación de la Opción Tarifaria (COT) es de : NT1 $60.4189",
+   "figures": "C promedio: 131,81 → 147,04. COT promedio: 46,96 → 57,53. Cv base: 84,85 → 89,51",
+   "notes": "Reproduce exactamente los 131,81 y 147,04 de Superservicios."
+  },
+  {
+   "id": "rol-cens-compras-energia-NF04",
+   "claim": "CENS también le factura a su matriz EPM, por 'servicios de energía y otros': $35.765 M en 2023, $36.711 M en 2024 y $35.715 M en 2025. En 2025 el flujo neto de costos hacia la matriz fue de $92.589 M (128.304 − 35.715).",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS – Nota 33 Partes relacionadas (EEFF 2025 y 2024)",
+   "source_title": "Notas Estados Financieros 2025",
+   "source_date": "2026-02-17",
+   "period": "2023-2025",
+   "quote": "Corresponde a ingresos generados de las transacciones asociadas a servicios de energía y otros. Con Matriz $ 35,715 (2024 $ 36,711)",
+   "figures": "Ingresos desde la matriz: 35.715 (2025), 36.711 (2024), 35.765 (2023). Por cobrar a la matriz: 0"
+  },
+  {
+   "id": "rol-cens-compras-energia-NF05",
+   "claim": "La estrategia de compras de CENS varió con el precio de bolsa. En ago-oct 2025, con bolsa barata (241-294 $/kWh), compró en bolsa el 30,6-32,7% de su demanda. En 2026, cuando la bolsa se disparó (790-944 $/kWh en jul-ago), estaba contratada en ~81-93%. En 2025 los contratos le costaron más que la bolsa (~314,8 frente a ~254,3 $/kWh), y en el 1S-2026 la relación se invirtió (310,6 frente a 320,1).",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "source_type": "otro",
+   "confidence": "media",
+   "source_outlet": "XM (agente CNSC; PrecBolsNaci) y CENS (Notas 2025 y 2T-2026)",
+   "source_title": "Compras por agente y precio de bolsa",
+   "source_date": "2026-10-31 (consulta)",
+   "period": "2025-2026",
+   "quote": "Compra en bolsa ... mayor precio promedio ($320,1/kWh vs $294,7/kWh en 2025) (Notas 2T-2026)",
+   "figures": "Bolsa CNSC 2025: ago 47,4/154,7 GWh (30,6%); sep 51,4/157,1 (32,7%); oct 48,3/157,6 (30,6%); nov 43,8/151,2 (29,0%). 2026: ene 11,9%; feb 7,3%; jul-oct 18,6-19,6%",
+   "notes": "Sirve para matizar tanto a defensores como a críticos: los contratos encarecen G cuando la bolsa está barata y lo protegen cuando se dispara."
+  },
+  {
+   "id": "rol-cens-compras-energia-NF06",
+   "claim": "En octubre de 2026, el DtUN de NT1 (297,88 $/kWh) incluye el cargo del STR, que en el nivel 4 vale 33,4270 $/kWh (3,3% del CU). Descontando además la compensación del ADD Centro (brecha de 8,5% en 2T-2025), lo que remunera a CENS (D propio + Cv base + CPROG) sería ~372,6 $/kWh, ~36,6% del CU, y no ~43%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "media",
+   "source_outlet": "Hoja tarifaria de CENS de octubre de 2026 y boletín de Superservicios II-2025 (cálculo propio)",
+   "source_title": "Componentes del costo unitario, octubre 2026",
+   "source_date": "2026-10-18",
+   "period": "octubre 2026",
+   "quote": "DtUN ... Nivel 4 33.4270",
+   "figures": "297,8785 × 292,72/320,03 = 272,46; + Cv base 96,4988 + CPROG ~3,67 = ~372,6 $/kWh (36,6% de 1.018,95)",
+   "notes": "Es una estimación: usa la brecha ADD de 2T-2025, que según las notas de CENS creció en 2026. CENS además cobra ingresos del STR por sus propios activos. Aun así, no es utilidad."
+  },
+  {
+   "id": "rol-cens-compras-energia-NF07",
+   "claim": "Las hojas tarifarias de CENS ponen el CU de diciembre de 2024 en 983,70 $/kWh, no en los $976 que cita el informe del gerente. La baja de diciembre de 2024 a diciembre de 2025 (869,94) es de 11,6%. Además, la hoja de diciembre de 2025 dice que el CU 'disminuyó en 4.36%... $9.3778' frente a noviembre, cuando en realidad subió $9,38 (+1,09%, de 860,5643 a 869,9421).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202501.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "Hojas tarifarias de CENS de enero y diciembre de 2025",
+   "source_title": "Tarifa CENS 202501 y 2025012",
+   "source_date": "2025",
+   "period": "dic-2024 a dic-2025",
+   "quote": "El Costo Unitario (CU) del mes de Enero disminuyo 0.18 % equivalente a $1.73 en comparación con el del mes de diciembre de 2024 / El Costo Unitario (CU) del mes de Diciembre disminuyó en 4.36% equivalente a $9.3778 en comparación con el mes de Noviembre",
+   "figures": "dic-24: 981,9668 + 1,73 = 983,70; dic-25: 869,9421; nov-25: 860,5643",
+   "notes": "Muestra que los textos de las hojas tienen errores. Hay que citar las tablas, no las frases."
+  },
+  {
+   "id": "rol-cens-compras-energia-NF08",
+   "claim": "En la hoja de octubre de 2026 CENS sigue aplicando subsidios del 55,993% al estrato 1, 44,9912% al estrato 2 y 15% al estrato 3, sobre el consumo de subsistencia (173 kWh bajo 1.000 msnm). Son porcentajes mayores que los de enero de 2026 (52,2448% y 40,306%). Cualquier recorte del Presupuesto 2027 todavía no aparece en las facturas de 2026.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "source_outlet": "CENS – Tarifas de energía mercado regulado, octubre 2026",
+   "source_title": "Tarifa por estrato Octubre 2026",
+   "source_date": "2026-10-18",
+   "period": "octubre 2026",
+   "quote": "Estrato 1 Subsidio de 55.993% ... $448.4089 ... Estrato 2 Subsidio de 44.9912% ... $560.5111 ... Estrato 3 Subsidio de 15% ... $866.1065",
+   "figures": "1.018,9488 × (1 − 0,55993) = 448,41; × (1 − 0,449912) = 560,51",
+   "notes": "El frente de subsidios lo cubre otra investigación; lo registro porque sirve para contrastar el trino de @soynegrojohn."
+  }
+ ],
+ "cautions": [
+  "No usar 'el G de CENS fue el más alto de su grupo en 2T-2025' (417,77 $/kWh, Superservicios). Choca con las propias hojas de CENS (promedio 305,04 en abr-jun 2025). En otros trimestres el boletín coincide al decimal con esas hojas. CENS lo desmentiría fácilmente.",
+  "No decir que 'cerca del 43-48% del CU queda en CENS' ni que CENS 'gana la mitad de la tarifa'. El DtUN incluye el cargo del STR (~3,3% del CU) y la compensación del ADD Centro (~8,5% del cargo D). El COT recupera saldos de la opción tarifaria de 2020-2022, es decir, costos ya incurridos. Formulación defendible: 'entre 36% y 47% del CU son cargos de distribución y comercialización; lo propio de CENS ronda 35-40%, y eso paga operación, inversión y la rentabilidad regulada, no es utilidad neta'.",
+  "Pagos a EPM: no escribir 'las compras de energía a EPM se multiplicaron 8,8 veces'. CENS describe esos $128.304 M como 'compras de energía y adquisición de bienes y servicios' y los clasifica como 'Adquisición de bienes y servicios'. No separa la energía, podrían incluir transferencias de red (ADD) y CENS también le factura a EPM ($35.715 M). Plantearlo como pregunta y pedir el desglose por derecho de petición. Comprar a una empresa del mismo grupo por convocatoria SICEP es legal y competitivo: sin pruebas, no insinuar favorecimiento.",
+  "No afirmar que 'los grandes clientes no regulados de Norte de Santander los atiende EPM'. Superservicios dice que el segmento no regulado del Grupo EPM lo atiende EPM. El mercado no regulado es de libre competencia.",
+  "'CENS decide con quién y a qué precio compra' necesita matiz. Debe comprar por convocatorias públicas competitivas (SICEP) y G se calcula con fórmula CREG, en parte referida al precio promedio del mercado (Mc). Superservicios ubicó el precio de contratos de CENS por debajo del Mc en abril de 2025 y a menos de 1 $/kWh del Mc en 1T-2026. Lo justo: CENS decide cuánto y cuándo contrata, y eso pesa en G.",
+  "Pérdidas: si se menciona que Superservicios canceló el plan de reducción de pérdidas de CENS por incumplimiento reiterado, hay que añadir que no tuvo efecto en la tarifa (INVNUC aprobado en 0). El índice de pérdidas es de 14,30% en total y de 47,84% en el Catatumbo, zona de conflicto.",
+  "La reexpresión del CU de febrero a junio de 2025 fue a la baja, a favor de los usuarios. Sin respuesta de CENS no insinuar manipulación: preguntar el motivo y si hubo ajuste en las facturas.",
+  "El +11,56% del componente de comercialización en 1T-2026 es en un 69% COT, recuperación de saldos de la opción tarifaria. Presentarlo como 'CENS subió su margen' es engañoso.",
+  "Generación: no decir que CENS genera. XM tiene su código de generación inactivo y sin plantas, y sus notas del 2T-2026 ya no la mencionan. El argumento fuerte es otro: CENS es comercializadora, compra la energía, calcula y publica el CU y factura. Por eso no es 'solo distribuidor'.",
+  "Ser justo con la defensa: la CREG sí fija las fórmulas. G, T y R (~44% del CU) y la mayor parte de PR son costos de terceros. El alza de G en agosto-septiembre de 2026 coincide con un disparo de la bolsa (943,5 $/kWh en agosto), cuando CENS estaba ~81% contratada.",
+  "La cifra de @fredyparada90 ($123 mil millones) es la utilidad neta de 2025 ($123.146 M; margen neto ~8,5%, EBITDA ~25%). Es correcta, pero la relación causal 'gana mientras los usuarios dejan de hacer mercado' es opinión: no presentarla como hecho.",
+  "Temporalidad y calidad de datos: las cifras de XM pueden cambiar por reliquidación. Abr-jun 2026 está incompleto en XM y octubre de 2026 llega solo hasta el día 26-28. Los textos de las hojas de CENS tienen errores (diciembre de 2025 dice 'disminuyó 4,36%' cuando subió $9,38), y el informe del gerente da $976 para diciembre de 2024 frente a 983,70 en las hojas. Citar siempre las tablas.",
+  "Las comparaciones de CU usan NT1 con activos de CENS (la tarifa de la mayoría de hogares). No aplican igual a usuarios de NT2 o NT3 ni a usuarios con activos compartidos o particulares.",
+  "El dato del Substack sobre el SICEP (filiales del Grupo EPM compraron 3.768 GWh) es secundario y no está verificado. Si se usa, atribuirlo explícitamente y no deducir de él compras de CENS a EPM."
+ ]
+}

@@ -1,0 +1,576 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL, FRENTE APORTES A LA SOCIEDAD. Reabrí las 44 afirmaciones. Las fuentes de CENS las revisé en los PDF y TXT descargados (sostenibilidad 2018-2025, notas EEFF 2024-2025 y trimestrales 2026, planes de inversión 2019-2025). Volví a descargar los PDF de la SSPD (Diagnóstico de Calidad 2023, Evaluación de gestión 2024, Inspección CENS 2022 y Evaluación Integral 2018) y son idénticos a las copias locales (mismo md5). También revisé las resoluciones y circulares de la CREG en el Gestor Normativo, el boletín de EPM, las notas de EPM Inversiones y las notas de prensa (La Opinión, Semana).\n\nResultado: 37 confirmados y 7 corregidos. Ninguno quedó refutado ni como no verificable. Las correcciones son de detalle y no cambian el cuadro general:\n- (24) La meta de calidad de 2025 la fijó la Res. CREG 501 133 de 2025 (17 de octubre de 2025), no la 501 099 de 2024.\n- (38) Para 2026, EPM reporta $2,6 billones de excedentes causados a Medellín en abril; los $2,82 billones son cifra de prensa.\n- (40) Fueron 3.569 familias energizadas, no 3.585.\n- (41) De los 3.587 usuarios vinculados, 1.920 son de asentamientos humanos y 1.667 son usuarios dispersos.\n- (04) La inversión del 2T-2026 es solo del trimestre, porque el balance compara junio con marzo. El primer semestre suma $59.533 millones, 28,6% del plan.\n- (12) La composición accionaria detallada es la de 2020. Para 2026 solo está confirmado el total del Grupo EPM (91,52%).\n- (26) Se confirma con fuente primaria: la Res. CREG 501 099 de 2024 fijó la meta de 25,567 h para 2024. El 25,44 que usa EPM es un límite de la banda.\n\nHallazgos primarios nuevos:\n- La propia CREG (Circular 053 de 2024) dice que los incentivos de calidad «se aplican al cargo de distribución cobrado a los usuarios… y se reflejan en la tarifa».\n- La SSPD (inspección de 2022) registró que el Dtcs, el incentivo por calidad dentro de la tarifa, fue positivo todo 2022.\n- Reparto de utilidades del año anterior por año de decreto: 77,7% (2022), 70,9% (2023), 75,2% (2024), 50,0% (2025) y 60,0% (2026). El \"42%\" que la empresa podría usar mezcla periodos.\n- La advertencia de que la línea \"comunidad\" es parcial solo aparece en los informes de 2018 y 2019.\n- El CU bajó 11% de diciembre a diciembre, pero llegó a cerca de $1.055,6 durante 2025.\n\nConclusión para el hilo: está bien documentado que entre 2022 y 2025 CENS decretó unos 17 pesos en dividendos por cada peso reportado en \"comunidad\", y que 91,5% de esos dividendos van al Grupo EPM. También es sólido que la inversión se remunera en la tarifa y que los incentivos de calidad se reflejan en el cargo de distribución. Las partes frágiles son cuatro: la palabra \"enriquecimiento\", porque los dueños son públicos; insinuar favoritismo en la meta de 2024, porque el cambio fue general para los 29 operadores; presentar el desfase con XM como manipulación, porque CENS lo explicó; y comparar cifras de años distintos. La mejor defensa de CENS, también documentada: no repartió dividendos entre 2019 y 2021, la Nación le debía subsidios (déficit de $212.035 millones en 2024), cumplió las metas de calidad y aporta $514.383 millones al Estado.\n\nNo hubo casos de recibos en este frente. Los archivos de la verificación están en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-aportes-sociedad/ y el script de lectura HTML en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts-verif-aportes/htmltext.py",
+ "verified": [
+  {
+   "id": "aportes-sociedad-01",
+   "verdict": "confirmado",
+   "claim_final": "CENS reportó una inversión en infraestructura de COP$189.211 millones en 2025, 14,7% más que en 2024 (COP$164.982 millones), con proyectos como la Nueva Subestación La Playa, la repotenciación de líneas de 115 kV en el Catatumbo y la modernización de la subestación Sevilla en Cúcuta.",
+   "figures_final": "189.211 millones (2025; carta del gerente); la tabla del mismo informe da 189.187. 189.211/164.982 = +14,7%.",
+   "quote": "Durante 2025, fortalecimos nuestra infraestructura con una inversión de COP$ 189,211 millones, lo que representa un crecimiento del 14,7% frente al año anterior.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Texto confirmado en el Mensaje del Gerente. En la misma carta, control de pérdidas aparece como 22.271 millones y en la tabla como 22.771. El informe califica 2025 como un nivel de inversión 'sin precedentes en los últimos diez años'. URL activa (HTTP 206)."
+  },
+  {
+   "id": "aportes-sociedad-02",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 CENS ejecutó COP$189.187 millones de COP$219.288 millones presupuestados en infraestructura eléctrica (86,3%). Electrificación rural ejecutó solo 28% (1.277 de 4.541 millones). Gestión y control de pérdidas se sobreejecutó: 125% (22.771 de 18.217).",
+   "figures_final": "Expansión redes 2.756/4.766 (58%); mantenimiento redes 33.148/26.066 (127%); repotenciación 115 kV 57.043/62.565 (89%); La Playa 13.408/23.065 (58%); Sevilla 10.089/14.874 (68%); electrificación rural 1.277/4.541 (28%). Millones COP.",
+   "quote": "Total inversión infraestructura eléctrica 219.288 189.187 86.3% (30.112) ... Electrificación rural 4.541 1.277 28% (3.263) ... Gestión y control de pérdidas de energía 18.217 22.771 125% 4,554",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Tabla 'Inversiones en infraestructura eléctrica - CMI', p. 153-154. Detalle menor: 219.288 − 189.187 da 30.101, no los 30.112 de la tabla de CENS."
+  },
+  {
+   "id": "aportes-sociedad-03",
+   "verdict": "confirmado",
+   "claim_final": "Inversión en infraestructura reportada por CENS (millones COP corrientes): 2018 111.838; 2019 101.092; 2020 73.456; 2021 71.322; 2022 97.137; 2023 165.792; 2024 164.982; 2025 189.211. Suma 2019-2025: 862.992 millones.",
+   "figures_final": "Suma 2019-2025 = 862.992 (con 189.187 para 2025 serían 862.968). Ejecución frente a lo planeado: 2019 92% (110.127 plan), 2021 74% (95.746), 2022 95% (102.234), 2023 94% (175.821), 2024 82% (200.885).",
+   "quote": "2024: 'En 2024, se realizaron inversiones por COP$164,982'; 2023: 'de COP$165,792 millones, alcanzando un 94% de la meta'; 2021: 'COP$ 71,322 millones en infraestructura eléctrica'",
+   "source_url": "https://www.cens.com.co/institucional/informes-de-sostenibilidad",
+   "notes": "Revisé cada cifra en los informes de sostenibilidad 2018-2025. El plan de 2024 fue de 200.885 millones y se ejecutó 82%."
+  },
+  {
+   "id": "aportes-sociedad-04",
+   "verdict": "corregido",
+   "claim_final": "Para 2026 CENS proyecta COP$208.105 millones en infraestructura T&D, COP$31.730 millones en nuevos servicios complementarios y COP$13.201 millones en eficiencias operativas. En el primer semestre de 2026 ejecutó COP$59.533 millones en propiedad, planta y equipo: 21.768 en el 1T y 37.765 en el 2T. Eso es 28,6% del plan anual.",
+   "figures_final": "208.105 / 31.730 / 13.201 millones (plan 2026). 1S-2026: 21.768 + 37.765 = 59.533 millones.",
+   "quote": "Desarrollar inversiones estratégicas en infraestructura por COP$ 208,105 millones para la ampliación y modernización del sistema T&D",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20PRIMER%20TRIM2026.pdf",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "La duda del investigador queda resuelta. El estado de situación financiera del 2T-2026 compara junio con marzo de 2026: PPE de 1.405.147 frente a 1.390.024, un aumento de 15.123 que es el mismo que dice la Nota 2. Por tanto, los 37.765 millones son solo del 2T y no un acumulado."
+  },
+  {
+   "id": "aportes-sociedad-05",
+   "verdict": "confirmado",
+   "claim_final": "En el Plan de Inversiones Regulatorio 2025 (CREG 015 de 2018), CENS ejecutó 100.177 millones frente a 88.162 aprobados (113,6%), en pesos constantes de 2017. Por regional: Cúcuta 49.271 y Tibú 27.998 (77,2% entre las dos). Por municipio: Cúcuta 33.488, Tibú 25.360 y San Cayetano 6.623.",
+   "figures_final": "Regionales: Cúcuta 49.271; Tibú 27.998; Ocaña 9.778; Pamplona 7.794; Aguachica 5.336. Millones de pesos constantes de 2017.",
+   "quote": "En 2025, CENS ejecutó inversiones por 100.177 millones frente a un valor aprobado de 88.162 millones, lo que representa una ejecución del 113.6%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/plan-de-inversion/Informe_de_ejecuci%C3%B3n_del_plan_de_inversi%C3%B3n_2025.pdf",
+   "notes": "Estas cifras están en pesos constantes de 2017. No se deben sumar ni comparar directamente con los 189.211 millones corrientes."
+  },
+  {
+   "id": "aportes-sociedad-06",
+   "verdict": "confirmado",
+   "claim_final": "La CREG fijó la tasa de retorno de la distribución de energía (esquema de ingreso máximo) en 12,09% a partir de 2022. Así quedó en el art. 2 de la Res. CREG 016 de 2018, modificado por el art. 1 de la Res. CREG 215 de 2021.",
+   "figures_final": "12,09% desde 2022",
+   "quote": "el valor de la tasa de retorno de la actividad de distribución de energía eléctrica, para una metodología de ingreso máximo, será de 12,09% a partir del año 2022.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0016_2018.htm",
+   "notes": "Volví a descargar el texto (HTTP 200). La tasa sale de la metodología de la Res. CREG 095 de 2015 y se usa para remunerar los años 2022 en adelante (Res. 015 de 2018). El texto no dice si es antes o después de impuestos ni si es real o nominal."
+  },
+  {
+   "id": "aportes-sociedad-07",
+   "verdict": "confirmado",
+   "claim_final": "En el estado de valor agregado distribuido de 2025, CENS asignó 123.146 millones a su 'Dueño' (la utilidad neta del año), 92.229 millones al Estado y 2.760 millones a 'Comunidad y Medio Ambiente'. Esto último es 0% del valor distribuido según el redondeo de CENS (0,41%) y 2,2% de la utilidad.",
+   "figures_final": "Total distribuido 675.898; empleados 130.159; reinversión 135.309; proveedores de bienes y servicios 111.032; proveedores financieros 81.263. Millones COP.",
+   "quote": "Dueño (123,146) 18% ... Empleados (130,159) 19% Reinversión en la Empresa (135,309) 20% Estado (92,229) 14% Proveedores de Bienes y Servicios (111,032) 16% Comunidad y Medio Ambiente (2,760) 0% Proveedores Financieros (81,263) 12%",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "P. 133. 'Dueño' es la utilidad neta, no el dividendo pagado."
+  },
+  {
+   "id": "aportes-sociedad-08",
+   "verdict": "confirmado",
+   "claim_final": "Serie de 'Comunidad y Medio Ambiente' (millones COP): 2018 507; 2019 1.886; 2020 3.482; 2021 4.351; 2022 6.229; 2023 4.109; 2024 3.741; 2025 2.760. Suma 2019-2025: 26.558. Suma 2022-2025: 16.839. Viene bajando desde el pico de 2022.",
+   "figures_final": "26.558 (2019-2025); 20.057 (2019-2023); 16.839 (2022-2025).",
+   "quote": "2021: 'Comunidad y Medio Ambiente -4.351 1%'; 2022: 'Comunidad y Medio Ambiente (6,229) 1%'; 2023: 'Comunidad y medio ambiente (4,109) 1%'; 2024: 'Comunidad y medio ambiente (3.741) 1%'",
+   "source_url": "https://www.cens.com.co/institucional/informes-de-sostenibilidad",
+   "notes": "Cifras confirmadas año por año. En el informe de 2021, una leyenda de gráfico pone 80.977 junto a 'Comunidad', pero esa cifra es de proveedores. El estado financiero dice 4.351. Decir 'el nivel más bajo desde 2019' es ambiguo, porque 2019 (1.886) fue más bajo que 2025."
+  },
+  {
+   "id": "aportes-sociedad-09",
+   "verdict": "confirmado",
+   "claim_final": "CENS advirtió en sus informes de 2018 y 2019 que sus inversiones en comunidad y medio ambiente también están incluidas en 'reinversión en la empresa' y en 'proveedores de bienes y servicios'. Por eso la línea 'Comunidad y medio ambiente' es un piso y no el total.",
+   "figures_final": "",
+   "quote": "Las inversiones en comunidad y medio ambiente también se encuentran incluidas en reinversión en la empresa y proveedores de bienes y servicios.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/Informe-de-sostenibilidad-2019.pdf",
+   "notes": "Matiz: la nota solo aparece en los informes de 2018 y 2019. No la encontré en los de 2020 a 2025. Es razonable suponer que la metodología no cambió, pero CENS no lo repite en los informes recientes. En 2019 la tabla resumen agrupa 'Reinversión en la empresa, comunidad y medio ambiente 90.908'."
+  },
+  {
+   "id": "aportes-sociedad-10",
+   "verdict": "confirmado",
+   "claim_final": "Dividendos decretados por CENS (millones COP): 2019, 2020 y 2021 = 0; 2022 = 83.195; 2023 = 92.998; 2024 = 51.611; 2025 = 58.771; 2026 = 73.887. Total 2022-2025: 286.575. Pagados en caja: 2022 83.195; 2023 69.742; 2024 74.855 (51.606 del decreto de 2023 y 23.249 del de 2022); 2025 58.780.",
+   "figures_final": "Reparto sobre la utilidad del año anterior: 2022 77,7% (de 107.107); 2023 70,9% (de 131.200); 2024 75,2% (de 68.595); 2025 50,0% (de 117.543); 2026 60,0% (de 123.146).",
+   "quote": "Los dividendos decretados durante el año fueron $58,771 ... Durante el 2025 se pagaron dividendos por $58,780 de los cuales $58,770 corresponden a dividendos del 2024",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "second_source_url": "https://www.grupo-epm.com/content/dam/Grupo-Epm/grupo-epm/documentos/informacion-financiera/2026/notas-estados-financieros-separados-epm-inversiones-marzo-2026.pdf",
+   "notes": "Fuentes: EEFF 2023 (dividendos decretados 2022: 83.195; 2023: 92.998), notas 2024 y 2025, y nota 9 del 1T-2026 (aumento de 73.885 en 'Dividendos y participaciones' por pagar). En 2026, EPM Inversiones registra $58.358.705.462 por cobrar a CENS; dividido entre 78,9831% da unos 73.887 millones. Para 2024 el informe de sostenibilidad dice 75.709 millones pagados y las notas 74.855; diferencia menor."
+  },
+  {
+   "id": "aportes-sociedad-11",
+   "verdict": "confirmado",
+   "claim_final": "CENS no decretó dividendos en 2019, 2020 ni 2021. Retuvo las utilidades de 2018 (42.141), 2019 (65.033) y 2020 (67.938), es decir 175.112 millones, y lo presentó como reinversión de los dividendos de los accionistas en la región.",
+   "figures_final": "Resultados acumulados: dic-2019 208.502; dic-2020 273.535 (= 208.502 + 65.033); dic-2021 341.473 (= 273.535 + 67.938).",
+   "quote": "durante la vigencia 2019 no se distribuyeron dividendos correspondientes al periodo 2018 por valor de COP$ 42,141 millones y se registraron en utilidades acumuladas ... logrando que los dividendos de los accionistas se reinviertan en proyectos para la región.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/Informe-de-sostenibilidad-2019.pdf",
+   "notes": "Lo verifiqué también en los estados de situación financiera de dic-2020 y dic-2021: los resultados acumulados crecen exactamente en la utilidad del año anterior, así que no hubo dividendos decretados en 2020 ni en 2021."
+  },
+  {
+   "id": "aportes-sociedad-12",
+   "verdict": "corregido",
+   "claim_final": "Composición accionaria de CENS según el Informe de Sostenibilidad 2020: EPM Inversiones 78,9831%, EPM 12,5360%, IFINORTE 7,7890%, Municipio de Cúcuta 0,3974%, trabajadores y jubilados 0,1622%, Ocaña 0,0674%, Pamplona 0,0446%, Villa del Rosario 0,0187% y otros minoritarios. Las entidades públicas de Norte de Santander suman alrededor de 8,32%. El 8,48% que no es del Grupo EPM incluye también trabajadores y otros.",
+   "figures_final": "Grupo EPM 91,52% (confirmado en las notas de CENS de 2026). EPM Inversiones 78,98% (confirmado en sus notas a mar-2026). Público regional ≈ 8,32%.",
+   "quote": "EPM Inversiones S.A. 78,9831% 1.199.144.474 ... Empresas Públicas de Medellín E.S.P. 12,5360% 190.325.000 ... IFINORTE- 7,7890% 118.254.798 ... Municipio de Cúcuta 0,3974% 6.033.710",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/informe-de-sostenibilidad-cens-2020.pdf",
+   "second_source_url": "https://www.grupo-epm.com/content/dam/Grupo-Epm/grupo-epm/documentos/informacion-financiera/2026/notas-estados-financieros-separados-epm-inversiones-marzo-2026.pdf",
+   "notes": "Corrección menor. El 8,3% no es todo 'el restante': el resto es 8,48% y de eso unos 8,32% son entidades públicas regionales. La tabla detallada solo aparece en los informes de 2019 y 2020. Las participaciones de IFINORTE y Cúcuta en 2025-2026 no se confirmaron de forma independiente, aunque son consistentes con el 91,52% del Grupo EPM."
+  },
+  {
+   "id": "aportes-sociedad-13",
+   "verdict": "confirmado",
+   "claim_final": "Si se aplican las participaciones accionarias a los dividendos decretados entre 2022 y 2025 (286.575 millones), el Grupo EPM recibió unos 262.271 millones (EPM Inversiones 226.346; EPM 35.925), IFINORTE unos 22.321 y el Municipio de Cúcuta unos 1.139. De los 73.887 millones de 2026: EPM Inversiones 58.358,7; EPM 9.262; IFINORTE 5.755; Cúcuta 294.",
+   "figures_final": "Grupo EPM 262.271 (2022-2025) + 67.621 (2026). Cálculo propio.",
+   "quote": "Centrales Eléctricas Norte de Santander S.A. E.S.P. 58,358,705,462 ... El valor se explica en los dividendos decretados que corresponden a la distribución de utilidades no gravadas del año anterior",
+   "source_url": "https://www.grupo-epm.com/content/dam/Grupo-Epm/grupo-epm/documentos/informacion-financiera/2026/notas-estados-financieros-separados-epm-inversiones-marzo-2026.pdf",
+   "notes": "Rehíce la aritmética y cuadra. La cifra de EPM Inversiones para 2026 está confirmada con su propia cuenta por cobrar. Las demás son cálculo proporcional y suponen que todas las acciones son ordinarias."
+  },
+  {
+   "id": "aportes-sociedad-14",
+   "verdict": "confirmado",
+   "claim_final": "Entre 2022 y 2025 CENS decretó 286.575 millones en dividendos y reportó 16.839 millones en 'Comunidad y medio ambiente': unos 17 pesos para los dueños por cada peso en esa línea (15,6 solo para el Grupo EPM). Por año: 2022 13,4x; 2023 22,6x; 2024 13,8x; 2025 21,3x.",
+   "figures_final": "286.575 / 16.839 = 17,0. Si en 2025 se suman alumbrado navideño y patrocinios (2.673 + 580), la relación baja a unas 9,8 veces.",
+   "quote": "(cálculo propio con las afirmaciones 08 y 10)",
+   "source_url": "https://www.cens.com.co/institucional/informes-de-sostenibilidad",
+   "notes": "Aritmética correcta. Hay dos límites de método. Primero, los dividendos de cada año salen de la utilidad del año anterior, mientras que el gasto en comunidad es del mismo año; en una ventana de cuatro años eso pesa poco. Segundo, la línea de comunidad es un piso (afirmación 09). Sumar alumbrado y patrocinios puede contar dos veces lo mismo si ya están en esa línea o en proveedores."
+  },
+  {
+   "id": "aportes-sociedad-15",
+   "verdict": "confirmado",
+   "claim_final": "El gasto por impuesto de renta de CENS fue de 62.016 millones en 2025 (renta corriente 72.067) y 58.915 millones en 2024. La tarifa nominal de renta es 35%.",
+   "figures_final": "2025: 62.016; 2024: 58.915. Millones COP.",
+   "quote": "Gasto (ingreso) por el impuesto sobre la renta corriente 72,067 56,487 ... Impuesto sobre la renta 62,016 58,915 ... La tasa nominal del impuesto sobre la renta es del 35%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "notes": "Nota 32.3. No volví a verificar la serie de renta 2019-2023 del frente de finanzas."
+  },
+  {
+   "id": "aportes-sociedad-16",
+   "verdict": "confirmado",
+   "claim_final": "CENS declara y paga ICA en 47 municipios de Norte de Santander, Cesar y Bolívar. Su gasto administrativo en 'Impuestos, contribuciones y tasas' fue de 20.754 millones en 2025 (21.653 en 2024). El ICA por pagar al cierre de 2025 era 2.016 millones (2.319 en 2024). El ICA bajó 616 millones en 2025. No publica cuánto ICA paga a Cúcuta.",
+   "figures_final": "20.754 / 21.653; ICA por pagar 2.016 / 2.319; −616 millones. Millones COP.",
+   "quote": "CENS es responsable de declarar y pagar anualmente por actividades comerciales y de servicios el impuesto de industria y comercio en 47 municipios de los departamentos de Norte de Santander, Cesar y Bolívar donde ejerce sus operaciones.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "notes": "Confirmado en las notas (p. 11, Nota 19, gastos de administración) y en el Informe de Sostenibilidad 2025: 'reducción de COP$ 616 millones en el Impuesto de Industria y Comercio (ICA) —consecuencia de la dinámica de ingresos en los 47 municipios atendidos'."
+  },
+  {
+   "id": "aportes-sociedad-17",
+   "verdict": "confirmado",
+   "claim_final": "Valor distribuido al Estado según CENS (millones COP): 2019 44.322; 2020 55.048; 2021 83.927; 2022 92.451; 2023 57.737; 2024 88.669; 2025 92.229. Suma 2019-2025: 514.383 millones.",
+   "figures_final": "514.383 millones (2019-2025).",
+   "quote": "CENS distribuyó al Estado la suma de COP$ 92,229 millones, siendo de los mayores contribuyentes en materia de impuestos de la región",
+   "source_url": "https://www.cens.com.co/institucional/informes-de-sostenibilidad",
+   "notes": "Revisé cada año en el Cuarto Estado Financiero. Es un agregado sin desglose por municipio ni por tipo de impuesto."
+  },
+  {
+   "id": "aportes-sociedad-18",
+   "verdict": "confirmado",
+   "claim_final": "Según sus notas del 1T-2026, CENS registró un aumento de 2.813 millones por impuesto al patrimonio, que atribuye a los Decretos 173 y 240 de 2026, expedidos en el estado de emergencia del Decreto 150 de 2026 (gobierno Petro). La misma cifra aparece en las notas del 2T-2026.",
+   "figures_final": "2.813 millones (1T-2026).",
+   "quote": "Impuesto al patrimonio con incremento de $2,813, establecido como medida tributaria en los Decretos N° 173 y 240 de 2026 respecto al estado de emergencia declarado por el Gobierno Nacional mediante el Decreto N° 150 de 2026.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20PRIMER%20TRIM2026.pdf",
+   "notes": "Confirmado tal como lo dice CENS. No verifiqué de forma independiente el texto de los decretos ni su suerte en la Corte Constitucional."
+  },
+  {
+   "id": "aportes-sociedad-19",
+   "verdict": "confirmado",
+   "claim_final": "Por Obras por Impuestos, la ART le asignó a CENS la dotación de 7 CDI del ICBF en Tibú, Convención, El Tarra y Teorama por COP$2.134 millones (669 niños), con ejecución desde 2026. La Opinión (contenido de aliado, 28-oct-2026) informa un segundo proyecto de 5 CDI en El Zulia, Santiago, Sardinata, San Calixto y El Carmen por $2.607 millones. Es impuesto de renta redirigido, no gasto social propio.",
+   "figures_final": "2.134 + 2.607 = 4.741 millones. El Informe 2025 describía el segundo proyecto como 6 CDI por 2.488 millones (649 niños) y formuló un tercero: soluciones fotovoltaicas en 30 escuelas rurales de Sardinata por 2.167 millones (433 estudiantes).",
+   "quote": "bajo el mecanismo de Obras por Impuestos, se nos asignó la dotación de Centros de Desarrollo Infantil (CDI) en Tibú, Convención, El Tarra y Teorama por COP$2.134 millones. Con este proyecto, los impuestos se transforman de manera directa en espacios dignos",
+   "second_source_url": "https://laopinion.co/cucuta/cens-impulsa-el-desarrollo-de-la-primera-infancia-en-el-catatumbo-con-obras-por-impuestos",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "La Opinión lleva la etiqueta 'Información de Aliado Estratégico' (patrocinado). El Informe 2025, p. 171, dice: 'En 2026 marcamos un hito histórico ... al iniciar la ejecución de nuestro primer proyecto bajo el mecanismo de Obras por Impuestos'. Por eso no cuenta como gasto de 2025. Monto y número de CDI del segundo proyecto difieren entre fuentes. No verifiqué La República del 30-jul-2026."
+  },
+  {
+   "id": "aportes-sociedad-20",
+   "verdict": "confirmado",
+   "claim_final": "Programas sociales que CENS reporta para 2025: alumbrado navideño en 10 municipios por COP$2.673 millones ('inversión de la compañía'); más de COP$580 millones para eventos deportivos y culturales; más de 30.000 personas impactadas en programas sociales y educativos; 11 toneladas de alimentos entregadas, vía el Banco de Alimentos de la Diócesis de Cúcuta, a familias desplazadas del Catatumbo.",
+   "figures_final": "2.673 + 580 millones (2025). 170 empleos directos asociados al alumbrado, según CENS.",
+   "quote": "Con una inversión de COP$2.673 millones, iluminamos 10 municipios ... Destinamos más de COP$580 millones al apoyo de eventos emblemáticos como la Media Maratón de Cúcuta, la Fiesta del Libro y la Liga de Gimnasia",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "El alumbrado aparece como ingreso en la Nota 23 ('Otros servicios ... Alumbrado navideño') y también como gasto: en otros gastos generales bajó 254 millones por alumbrado. En otra sección el informe da 'inversión de COP$ 530,8 millones' en vinculaciones deportivas y culturales, y registra un aumento de 1.153 millones en 'eventos culturales'. Las cifras de patrocinio no son homogéneas."
+  },
+  {
+   "id": "aportes-sociedad-21",
+   "verdict": "confirmado",
+   "claim_final": "CENS gastó COP$17.731 millones en planes de beneficios para sus trabajadores en 2025, 6,4 veces lo reportado en 'Comunidad y medio ambiente' (2.760 millones).",
+   "figures_final": "17.731 / 2.760 = 6,4",
+   "quote": "Durante el 2025, invertimos COP$17.731 millones en planes de beneficios para nuestros trabajadores, incluyendo auxilios de estudio y programas",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Cifra confirmada en el Mensaje del Gerente. Esta comparación es débil para el hilo: los beneficios laborales suelen venir de convención colectiva o de la ley."
+  },
+  {
+   "id": "aportes-sociedad-22",
+   "verdict": "confirmado",
+   "claim_final": "CENS tenía 742 trabajadores de planta en 2025 (689 en 2024, 664 en 2023 y 556 en 2018). El empleo total vinculado (planta, aprendices, misionales y contratistas) bajó de 3.909 en 2024 a 3.163 en 2025, sobre todo porque los misionales pasaron de 850 a 267.",
+   "figures_final": "2025: planta 742, aprendices 115, misionales 267, contratistas 2.037, total 3.163 según CENS (la suma da 3.161).",
+   "quote": "Planta 664 689 742 / Aprendices y estudiantes 84 188 115 / Misionales 957 850 267 / Trabajadores de Contratistas 2,301 2,182 2,037 / Total 4,006 3,909 3,163",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/ei_centrales_electricas_del_norte_de_santander.pdf",
+   "notes": "La SSPD (EI 2018) confirma la 'planta de personal de 556 empleados directos'. Error aritmético menor en la tabla de CENS: 742 + 115 + 267 + 2.037 = 3.161. CENS no explica la caída de misionales."
+  },
+  {
+   "id": "aportes-sociedad-23",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 CENS ejecutó 413 contratos por COP$247.272 millones. De esos, 166 fueron locales o regionales por COP$72.392 millones (29,3% del valor) y 247 nacionales por COP$174.880 millones. En 2024 fueron 376 contratos por COP$363.305 millones, de ellos 104 locales por COP$61.708 millones (17,0%).",
+   "figures_final": "Local/regional 2025: 72.392 (29,3% del valor; 40% de los contratos). 2024: 61.708 (17,0%).",
+   "quote": "Durante la vigencia 2025, ejecutamos 413 contratos por COP$ 247,272 millones, de los cuales 166 corresponden a contratación local-regional por COP$ 72,392 millones",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Confirmado en los informes 2025 (p. 278) y 2024."
+  },
+  {
+   "id": "aportes-sociedad-24",
+   "verdict": "corregido",
+   "claim_final": "Calidad 2025: SAIDI de 22,48 h frente a una meta CREG de 23,522 h y SAIFI de 5,9 veces frente a una meta de 9,000. Cumplió ambas metas y obtuvo el SAIFI más bajo de su historia (bajó de 6,32 a 5,9). CAIDI de 3,81 h por evento. Las metas de 2025 las fijó la Resolución CREG 501 133 de 2025 (17 de octubre de 2025), no la 501 099 de 2024 que cita CENS.",
+   "figures_final": "SAIDI 22,48 h (meta 23,522); SAIFI 5,9 (meta 9,000); CAIDI 3,81.",
+   "quote": "En 2025 cumplimos las metas establecidas por el regulador para el indicador SAIDI ... con un resultado de 22.48 horas, muy cercano al alcanzado en 2024 (22.15 horas).",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_501-133_2025.htm",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/plan-de-inversion/Informe_de_ejecuci%C3%B3n_del_plan_de_inversi%C3%B3n_2025.pdf",
+   "notes": "La Res. CREG 501 133 de 2025 fija para t=7 un SAIDI de 23,522 (banda 23,404-23,639) y un SAIFI de 9,000. Se publicó en la web de la CREG el 18-nov-2025, cuando el año ya casi terminaba. Por error, el informe de ejecución 2025 de CENS atribuye esas metas a la Res. 501 099 de 2024, que es la del año 2024. En la p. 157 del Informe de Sostenibilidad 2025 aparece 21,16 h para 2024; los demás documentos dicen 22,15/22,16, así que parece un error tipográfico."
+  },
+  {
+   "id": "aportes-sociedad-25",
+   "verdict": "confirmado",
+   "claim_final": "Serie SAIDI (meta CREG / logrado, horas): 2019 38,80/27,33; 2020 35,69/22,47; 2021 32,84/24,38; 2022 30,21/22,61; 2023 27,79/27,33; 2024 25,567/22,15; 2025 23,522/22,48. Serie SAIFI (meta / logrado): 2019 9,3/8,96; 2020 9/7,65; 2021 9/7,58; 2022 9/6,62; 2023 9/6,90; 2024 9/6,32; 2025 9/5,9.",
+   "figures_final": "El SAIDI de 2023 (27,33 h) volvió al nivel de 2019. CENS lo atribuye a que 'no se excluyeron' eventos de orden público.",
+   "quote": "Tabla 30 (SSPD): '2019 t=1 38,795 ... 2023 t=5 27,792'; CENS 2023: el SAIDI 'presentó un comportamiento desfavorable durante gran parte del año 2023 asociado a la no exclusión por orden público y eventos puntuales de gran impacto'",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/plan-de-inversion/Informe-de-ejecucion-plan-de-inversion-2023.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "La gráfica del plan de 2023 coincide con la tabla de la SSPD (meta 27,79). La cifra de 27,62 que da el Informe de Sostenibilidad 2023 no coincide con la meta ni con los límites de la banda (27,653-27,931). Use 27,79."
+  },
+  {
+   "id": "aportes-sociedad-26",
+   "verdict": "confirmado",
+   "claim_final": "La Circular CREG 001 de 2024 (enero) publicó para CENS una meta de SAIDI 2024 de 20,672 h (banda 20,569-20,776). La Circular CREG 053 de 2024 (14 de agosto; DO 52.856 del 22-ago-2024) cambió el criterio para todos los operadores: la meta del sexto año pasó a ser la del quinto año menos 8%. Con esa regla, la Res. CREG 501 099 de 2024 (DO 53.034 del 18-feb-2025) fijó para CENS 25,567 h y un SAIFI de 9,000. El resultado de CENS (22,15 h) habría quedado por encima de la banda original.",
+   "figures_final": "27,792 × 0,92 = 25,569 (coincide con 25,567). Original 20,672 frente a definitiva 25,567, un 24% más laxa. El 25,44 del boletín de EPM es un límite de la banda (25,439).",
+   "quote": "Circular 053/2024: 'Para el sexto año del periodo tarifario se mantiene la exigencia de mejora de la calidad que se venía aplicando durante los primeros cinco años, es decir, el valor que se obtiene de reducir un 8% el indicador del quinto año'. Res. 501 099/2024: 't=6 25,567 25,695 25,439'",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_501-99_2024.htm",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Circular_CREG_001_2024/Anexo_1_Metas_2024.pdf",
+   "notes": "Ahora todo está en fuentes primarias. Contexto: el cambio vino después de la consulta de la Circular CREG 031 de 2024, se aplicó a los 29 operadores y se justificó en que 'el sexto año ... ya se encuentra en curso'. Inferencia propia: la meta original parece salir de la regla de la Res. 015/2018 (8% por debajo del percentil 10 de los indicadores 2019-2023 de CENS: 22,47 × 0,92 ≈ 20,67). Para EPM la meta pasó de 10,543 a 10,89."
+  },
+  {
+   "id": "aportes-sociedad-27",
+   "verdict": "confirmado",
+   "claim_final": "Según el boletín de EPM del 13-mar-2025, en 2024 CENS tuvo el SAIDI más alto de las distribuidoras colombianas del Grupo EPM: 22,16 h, más del doble que EPM (10,68 h). ESSA tuvo 17,77, CHEC 18,13 y EDEQ 4,74. En SAIFI, CENS estuvo entre las mejores (6,32).",
+   "figures_final": "CENS 22,16 h (meta 25,44) frente a EPM 10,68 h (meta 10,89). SAIFI de CENS 6,32 (meta 8,92).",
+   "quote": "cerró el año pasado en 10.68 horas, con una reducción del 14 % con respecto a 2023",
+   "source_url": "https://www.epm.com.co/institucional/sala-de-prensa/noticias-y-novedades/epm-mejora-calidad-servicio-energia-electrica/",
+   "notes": "Nota del boletín: 'Estos valores a enero 16 de 2025 pueden tener alguna variación'. Los territorios no son comparables: el de EPM es mayormente urbano y denso; el de CENS incluye el Catatumbo y zonas en conflicto."
+  },
+  {
+   "id": "aportes-sociedad-28",
+   "verdict": "confirmado",
+   "claim_final": "La SSPD calculó para 2023 un SAIDI nacional de 25,46 h y un SAIFI de 16,72 veces. CENS (27,33 h y 6,9 veces) quedó por encima del promedio nacional en duración y muy por debajo en frecuencia. La SSPD lo incluyó entre los operadores con SAIDI 2023 'cercanos o mayores' a los de 2019. Para Norte de Santander como departamento: DIU 27,87 h y FIU 6,79.",
+   "figures_final": "Nacional 25,46 h / 16,72; CENS 27,33 h / 6,9.",
+   "quote": "Es necesario mencionar que los prestadores CENS, CETSA, DISPAC, EEBP, ELECTROCAQUETA, EMSA, ENERCA y ENERGUAVIARE presentan valores de SAIDI para 2023 cercanos o mayores a los calculados para el año 2019.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-Calidad-del-Servicio-de-Energia-2023.pdf",
+   "notes": "Volví a descargar el PDF y es idéntico a la copia local (md5 e5723...). Metadatos: mayo de 2025."
+  },
+  {
+   "id": "aportes-sociedad-29",
+   "verdict": "confirmado",
+   "claim_final": "En la Evaluación de la gestión 2024 (datos de 2023), la SSPD calificó a CENS como 'Cumple' en ambas metas de calidad: SAIDI 0,98 y SAIFI 0,77, medidos como valor sobre meta. EPM matriz quedó como 'No Cumple' en SAIDI (1,35). En indicadores administrativos de 2023, CENS quedó como 'No cumple' en atención de reclamos (1,51% frente a ≤0,26%) y en solicitudes de conexión (1,04% frente a ≤0,26%).",
+   "figures_final": "CENS SAIDI 0,98, SAIFI 0,77 (2023)",
+   "quote": "CENTRALES ELÉCTRICAS DEL NORTE DE SANTANDER SA ESP 0,98 Cumple 0,77 Cumple ... EMPRESAS PÚBLICAS DE MEDELLÍN ESP 1,35 No Cumple 0,87 Cumple",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Indicadores-de-gestion-energia-electrica-ano-2024-v2.pdf",
+   "notes": "Volví a descargar el PDF: es idéntico al local y está fechado en oct-2024. Hay una inconsistencia en la tabla de la SSPD: los reclamos por facturación de CENS son 33,13 por 10.000, el referente es '<= 33,13' y aun así la marca es 'NO CUMPLE'. No use ese dato."
+  },
+  {
+   "id": "aportes-sociedad-30",
+   "verdict": "confirmado",
+   "claim_final": "La SSPD registra para CENS incentivos de calidad media (IC_SAIDI + IC_SAIFI) de 8.976,5 millones en 2019, 6.064,3 en 2020, 7.973,8 en 2021, 7.157,8 en 2022 y 10.439,9 en 2023: unos 40.612 millones en total, el doble de lo que CENS reportó en 'Comunidad y medio ambiente' esos años (20.057). La CREG dice que estos incentivos se aplican al cargo de distribución que pagan los usuarios y se reflejan en la tarifa.",
+   "figures_final": "40.612 millones (2019-2023; suma propia). 40.612 / 20.057 = 2,0.",
+   "quote": "SSPD: 'esquema de incentivos y compensaciones, enfocados en estímulos positivos en los cargos de distribución a las empresas'. CREG (Circular 053/2024): 'permite ajustar los incentivos que se aplican al cargo de distribución cobrado a los usuarios de cada mercado de comercialización, que se reflejan en la tarifa del servicio de energía eléctrica'",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/circular_creg_0053_2024.htm",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-Calidad-del-Servicio-de-Energia-2023.pdf",
+   "notes": "Valores confirmados en el anexo e) de CENS (612.253 suscriptores). La tabla de la SSPD no dice la unidad; por la magnitud son pesos. La inspección de la SSPD de 2022 agrega que el incentivo por calidad media en la tarifa (Dtcs) 'presentó valores positivos todo el año'. Es un mecanismo regulatorio legítimo. Según la CREG, el incentivo positivo promedio fue de 1-2% de los ingresos por SAIDI."
+  },
+  {
+   "id": "aportes-sociedad-31",
+   "verdict": "confirmado",
+   "claim_final": "En la inspección de la vigencia 2022 (visita de junio de 2023, informe de septiembre de 2023), la SSPD concluyó que CENS tiene fallas en la aplicación del esquema de exclusiones de eventos y que por eso sus indicadores de interrupciones 'podrían estar subdimensionados'. Se revisaron los soportes de 50 interrupciones excluidas y muchos de los presentados por 'Catástrofes Naturales' y 'Actos de Terrorismo' no cumplían el numeral 5.2.2 de la Res. CREG 015 de 2018. La SSPD también halló que los usuarios percibieron en 2022 una calidad menor que en 2020-2021.",
+   "figures_final": "2022: 19.647 interrupciones, 3.568 excluidas (18%). SAIDI 2022 según la suma mensual de la Tabla 38: CENS 22,61 h frente a XM 24,43 h (+8,1%).",
+   "quote": "Con los resultados de la revisión de soportes de exclusión de eventos, se evidenció que CENS SA ESP tiene falencias en la correcta aplicación del esquema de exclusiones, por lo tanto, los indicadores de duración y frecuencia de interrupciones del mercado de CENS SA ESP podrían estar subdimensionados.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "Volví a descargar el PDF y es idéntico al local. Es un hallazgo, no una sanción. CENS explicó la diferencia con XM por eventos que seguían abiertos en XM y por diferencias en usuarios afectados. La SSPD también halló que CENS fue en 2022 'el Transmisor Nacional con mayor cantidad de Horas Compensadas en el STN' (condensador Belén, unas 3.901 horas compensadas)."
+  },
+  {
+   "id": "aportes-sociedad-32",
+   "verdict": "confirmado",
+   "claim_final": "Usuarios de CENS con más de 360 horas de interrupción en el año, según la SSPD: 3.396 en 2019 (15.871 incumplimientos), 4.720 en 2020, 4.494 en 2021 y 5.005 en 2023 (27.459 incumplimientos). La SSPD menciona a CENS entre las empresas con aumentos de incumplimientos por DIU mayor a 360 h (157%, de 2022 a 2023).",
+   "figures_final": "2023: 27.459 incumplimientos; 5.005 usuarios afectados.",
+   "quote": "Otras empresas que reportaron incrementos porcentuales en los incumplimientos por DIU mayor a 360 horas son CHEC (311%), ENEL COLOMBIA (189%), ELECTROHUILA (188%), CEO (198%), CENS (157%) y E.E.B.P. (138%).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-Calidad-del-Servicio-de-Energia-2023.pdf",
+   "notes": "La SSPD compara 2022 con 2023 (Figura 18), pero el anexo de CENS no trae el dato de 2022. En el mismo informe, ESSA, también del Grupo EPM, subió 818%."
+  },
+  {
+   "id": "aportes-sociedad-33",
+   "verdict": "confirmado",
+   "claim_final": "Índice de pérdidas de CENS: 11,91% en 2019, 12,81% en 2020, 13,17% en 2021, 12,73% en 2022 (meta regulatoria 12,84%), 13,61% en 2023, 14,39% en 2024 (87,77% de cumplimiento de la meta regulatoria) y 14,30% en 2025. En los 10 municipios del Catatumbo las pérdidas son de 103,71 GWh, un índice de 47,84%.",
+   "figures_final": "11,91% → 14,30% (2019-2025)",
+   "quote": "el índice de pérdidas de energía fue del 14,30%; si bien este resultado muestra una mejora comparado con el 2024 en 0.08 puntos porcentuales, existen retos muy importantes, principalmente en los 10 municipios del Catatumbo. Las pérdidas de energía en esta región, llegan a 103.71 Gw y un índice de pérdidas de 47.84%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Revisé cada año en los informes. La definición del indicador cambia entre informes. El informe de 2022 dice 'aumento del 7%' y a la vez 'disminución de 0.44 puntos porcentuales', una redacción confusa. Confianza media para la serie larga."
+  },
+  {
+   "id": "aportes-sociedad-34",
+   "verdict": "confirmado",
+   "claim_final": "Según la SSPD, en 2018 CENS aplicó subsidios por $120.363 millones a 406.454 usuarios en promedio y facturó contribuciones por $23.178 millones (18.765 millones del sector comercial). El déficit fue de $97.184,6 millones, frente a $82.879,9 millones en 2017 (+17,26%). Con datos del SUI para 2022, la SSPD registra subsidios por $206.379.508.512 y contribuciones por $38.285.314.065.",
+   "figures_final": "Subsidio promedio ponderado 44,82% (E1 57,90%, E2 47,63%, E3 15%). CU promedio subsidiado de 2018: 508,04 $/kWh.",
+   "quote": "El balance de subsidios y contribuciones al cierre del año 2018 presenta un déficit por valor de $97.184,6 millones, que comparado frente al déficit del año 2017 de $82.879,9 millones es mayor en un 17,26%",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/ei_centrales_electricas_del_norte_de_santander.pdf",
+   "second_source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "notes": "Volví a descargar ambos PDF y son idénticos a los locales. La EI es de agosto de 2019. Para 2022 la SSPD da cifras distintas según la tabla: 206.380, 206.562 o 206.599 millones en subsidios. Además, subsidios menos contribuciones del SUI (≈168 mil millones) no coincide con el déficit que reporta CENS (157.195)."
+  },
+  {
+   "id": "aportes-sociedad-35",
+   "verdict": "confirmado",
+   "claim_final": "Déficit de subsidios que reporta CENS y giros de la Nación (millones COP): 2021 déficit 137.642, giro 127.775; 2022 déficit 157.195, giro 102.655; 2023 déficit 182.954, giros 192.465; 2024 déficit 212.035, giros 123.691 (la cuenta por cobrar subió 88.732); 2025 déficit 183.515, giros 200.293 (la cuenta por cobrar bajó 16.064). En el 2T-2026 la cuenta de subsidios bajó 107.057 millones por recursos asignados por MinMinas.",
+   "figures_final": "Déficit de 2024: 212.035; giros de 2024: 123.691.",
+   "quote": "2024: 'Subsidios de servicio de energía con incremento de COP$ 88,732 millones, por el déficit acumulado de enero a diciembre que asciende a COP$ 212,035 ... los giros, recibidos de la nación en lo corrido del año son de COP$ 123,691 millones.'",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Confirmado en los informes de sostenibilidad 2021-2025 y en las notas del 2T-2026."
+  },
+  {
+   "id": "aportes-sociedad-36",
+   "verdict": "confirmado",
+   "claim_final": "La Opinión (13-mar-2025, Leonardo Favio Oliveros) informó que al 28-feb-2025 el Gobierno debía a CENS $153.000 millones en subsidios: $117.000 millones de 2024 y $35.000 millones de 2025, según la empresa. CENS demandó a los ministerios de Hacienda y de Minas, y el Juzgado Décimo Civil del Circuito de Bogotá ordenó embargar cuentas de la Nación por más de $41.654 millones de capital y unos $5.259 millones de intereses. El ministro Edwin Palma anunció que impugnaría y reconoció 'algunas deudas'.",
+   "figures_final": "153.000 millones (117.000 + 35.000 suman 152.000; diferencia por redondeo).",
+   "quote": "CENS, Grupo EPM, presentó la demanda con el objetivo de exigir el pago de los valores adeudados",
+   "source_url": "https://www.laopinion.co/economia/no-son-46000-millones-los-que-debe-el-gobierno-petro-cens-sino-153000-millones",
+   "notes": "Es prensa que cita a CENS ('La compañía precisó a este medio'). Palma también dijo que las filiales de EPM habían recibido 85% de los pagos y que había un acuerdo de pago."
+  },
+  {
+   "id": "aportes-sociedad-37",
+   "verdict": "confirmado",
+   "claim_final": "La SSPD evaluó los indicadores financieros de 2023 de CENS y no cumplió ningún referente: razón corriente 1,00 (referente ≥1,84), rotación de cartera 117,88 días (≤45,96), rotación de cuentas por pagar 47,00 días (≤24,93), margen operacional 24% (≥30,38%) y cubrimiento de gastos financieros 4,9 veces (≥64,60).",
+   "figures_final": "Cartera de 117,88 días (2023). Intereses pagados: 91.326 millones (2025) y 97.894 millones (2024).",
+   "quote": "CENTRALES ELECTRICAS DEL NORTE DE SANTANDER S.A. ESP 1,00 No Cumple 117,88 No Cumple 47,00 No Cumple 24% No Cumple 4,9 No Cumple",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Indicadores-de-gestion-energia-electrica-ano-2024-v2.pdf",
+   "notes": "Los intereses están confirmados en las notas EEFF 2025: 'Los intereses pagados por operaciones de crédito fueron para 2025 $91,326 y $97,894 para 2024.'"
+  },
+  {
+   "id": "aportes-sociedad-38",
+   "verdict": "corregido",
+   "claim_final": "CENS aportó 3% del EBITDA del Grupo EPM en 2025 ($361 mil millones de $11,1 billones) y 4% en el primer semestre de 2026 ($193 mil millones). En 2025 EPM pagó excedentes a Medellín por $2,65 billones. Para 2026, el informe de EPM dice que en abril se causaron excedentes por $2,6 billones, de los que $1,5 billones estaban pagados al 30 de junio. La prensa (El Colombiano, Yahoo) habló de $2,8 a $2,82 billones.",
+   "figures_final": "Dividendos de CENS al Grupo EPM decretados en 2025: unos 53.787 millones, alrededor de 2% de los excedentes de 2025 (solo como orden de magnitud).",
+   "quote": "CENS el 3% con $361 mil millones ... Se pagaron excedentes al Distrito Especial de Ciencia, Tecnología e innovación de Medellín por $2.65 billones. / 2T-2026: 'En abril se causaron excedentes a pagar al Distrito de Medellín por $2.6 billones, donde al 30 de junio se han pagado $1.5 billones.'",
+   "second_source_url": "https://www.elcolombiano.com/medellin/epm-inversion-billones-pesos-medellin-2026-EF36333315",
+   "source_url": "https://www.epm.com.co/content/dam/epm/inversionistas/informaci%C3%B3n-financiera/reporte-de-resultados-trimestrales/2025/Informe4T2025_ESP-VF.pdf",
+   "notes": "Corrección: para 2026 hay que usar la cifra primaria de EPM ($2,6 billones causados), no los $2,82 billones de prensa. La diferencia puede deberse a conceptos distintos (ordinarios y adicionales); no lo pude establecer. No hay desglose público de qué parte viene de CENS."
+  },
+  {
+   "id": "aportes-sociedad-39",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 501 201 de 2026 (26-feb-2026, publicada el 29-abr-2026) fija para CENS, adjudicataria de la convocatoria UPME 06-2024 (subestación Tonchalá 230 kV y líneas asociadas), un Ingreso Anual Esperado de USD 1.970.787 por año durante 25 años, desde el 1-ene-2029, en dólares del 31-dic-2024. La puesta en operación está prevista para el 31-dic-2028.",
+   "figures_final": "Unos USD 49,3 millones nominales en 25 años (cálculo propio).",
+   "quote": "1 1-ene-2029 a 31-dic-2029 1.970.787 un millón novecientos setenta mil setecientos ochenta y siete dólares",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_501_201_2026/index.htm",
+   "notes": "Volví a descargar la resolución (HTTP 200). Es remuneración del STN, que pagan todos los usuarios del país."
+  },
+  {
+   "id": "aportes-sociedad-40",
+   "verdict": "corregido",
+   "claim_final": "En 2023 se ejecutaron obras FAER por 33.006 millones (en unidades constructivas), con un aporte de CENS de 7.857 millones. Así se energizaron 3.569 familias en 10 municipios (Ocaña, Ábrego, Convención, Teorama, El Carmen, Hacarí, Sardinata, Tibú, El Tarra y La Esperanza). La tabla suma 3.585 usuarios, pero 16 los atenderá ESSA. El contrato FAER se firmó en 2019 con MinEnergía.",
+   "figures_final": "CENS: 7.857 millones; 3.569 familias energizadas (3.585 en la tabla). Tibú 2.823 millones / 631 usuarios; Sardinata 1.645 / 846.",
+   "quote": "Durante el 2023 se ejecutaron inversiones por valor de 33.006 millones en Unidades constructivas con una inversión por parte de CENS de $7.857 millones ... mediante el cual se Energizaron 3.569 familias del Norte de Santander",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/plan-de-inversion/Informe-de-ejecucion-plan-de-inversion-2023.pdf",
+   "notes": "Corrección menor: el texto dice 3.569 y la tabla 3.585, con la nota '*16 Beneficiarios serán atendidos por el OR de la ESSA'."
+  },
+  {
+   "id": "aportes-sociedad-41",
+   "verdict": "corregido",
+   "claim_final": "En 2025 CENS vinculó 3.587 nuevos usuarios (1.920 de asentamientos humanos y 1.667 dispersos) con una inversión de COP$3.864 millones y 8,72 km de red. Además benefició a 2.517 familias con energía recargable y recuperó 29,35 GWh, lo que le dio un beneficio económico de COP$14.536 millones.",
+   "figures_final": "Inversión de 3.864 millones frente a 14.536 millones de beneficio por recuperación de energía.",
+   "quote": "Durante el año 2025 logramos vincular a 3.587 usuarios, de los cuales 1.920 fueron Asentamientos Humanos y 1.667 usuarios dispersos con una inversión de COP$ 3.864 millones.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "La carta del gerente dice '3.587 nuevos usuarios en asentamientos humanos', pero el detalle técnico (p. 155) los separa en 1.920 de asentamientos y 1.667 dispersos."
+  },
+  {
+   "id": "aportes-sociedad-42",
+   "verdict": "confirmado",
+   "claim_final": "La línea 'Devoluciones, descuentos y rebajas' de CENS pasó de 1.201 millones en 2024 a 4.560 millones en 2025. CENS lo explica por 'mayores compensaciones a los usuarios por calidad del servicio'.",
+   "figures_final": "4.560 millones (2025) frente a 1.201 millones (2024).",
+   "quote": "Devoluciones, descuentos y rebajas con incremento por mayores compensaciones a los usuarios por calidad del servicio.",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "notes": "Nota 23. La línea no es solo compensaciones."
+  },
+  {
+   "id": "aportes-sociedad-43",
+   "verdict": "confirmado",
+   "claim_final": "El 14-sep-2022, Semana citó al exconcejal de Cúcuta Leonardo Jácome diciendo que 'ni un solo peso' de las ganancias de CENS va a becar estudiantes o arreglar colegios y que 'todo absolutamente todo se va para Medellín'.",
+   "figures_final": "Sin cifras",
+   "quote": "Ni un solo peso de las ganancias de CENS van orientadas a becar algún estudiante universitario, o arreglar un colegio ... no hacen una obra por responsabilidad social y pertinencia, todo absolutamente todo se va para Medellín",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/este-jueves-habra-protestas-en-cucuta-por-elevado-costo-de-servicios-publicos/202250/",
+   "notes": "Fecha confirmada (14-sep-2022, 11:30 a. m.). Es una declaración de 2022, no reciente. Los datos de CENS la contradicen: hubo gasto social, aunque pequeño, y 2019-2021 sin dividendos."
+  },
+  {
+   "id": "aportes-sociedad-44",
+   "verdict": "confirmado",
+   "claim_final": "CENS informa que en 2025 obtuvo COP$3.486 millones en beneficios tributarios por inversiones en conservación y control del medio ambiente.",
+   "figures_final": "3.486 millones (2025).",
+   "quote": "Gracias a inversiones estratégicas en conservación y control del medio ambiente, fuimos acreedores de COP$3.486 millones en beneficios tributarios",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "notes": "Aparece en el Mensaje del Gerente y otra vez en la p. 270 aprox. ('la organización accedió a COP$ 3.486 millones en beneficios tributarios')."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "aportes-sociedad-N01",
+   "claim": "La meta de SAIDI de CENS para 2024 quedó fijada en 25,567 h, con un SAIFI de 9,000, por resolución particular de la CREG. La actuación se abrió de oficio con el Auto 326 del 13-sep-2024, siguiendo la Circular CREG 053 de 2024.",
+   "quote": "t=6 25,567 25,695 25,439 ... t=6 9,000 9,045 8,955",
+   "figures": "SAIDI_M 2024 = 25,567 h; SAIFI_M = 9,000",
+   "period": "2024",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_501-99_2024.htm",
+   "source_type": "primario-regulador",
+   "source_outlet": "CREG",
+   "source_title": "Resolución CREG 501 099 de 2024 (Diario Oficial 53.034 del 18-feb-2025)",
+   "source_date": "2025-02-18",
+   "confidence": "alta",
+   "notes": "Explica el 25,44 del boletín de EPM: es un límite de la banda de indiferencia."
+  },
+  {
+   "id": "aportes-sociedad-N02",
+   "claim": "La meta de SAIDI de CENS para 2025 (séptimo año) la fijó la Res. CREG 501 133 de 2025: 23,522 h (banda 23,404-23,639) y SAIFI de 9,000. Se expidió el 17-oct-2025, cuando el año estaba casi terminado.",
+   "quote": "t=7 23,522 23,404 23,639 ... t=7 9,000 8,955 9,045",
+   "figures": "SAIDI_M 2025 = 23,522 h",
+   "period": "2025",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_501-133_2025.htm",
+   "source_type": "primario-regulador",
+   "source_outlet": "CREG",
+   "source_title": "Resolución CREG 501 133 de 2025 (17-oct-2025; publicada en la web de la CREG el 18-nov-2025)",
+   "source_date": "2025-10-17",
+   "confidence": "alta",
+   "notes": "Corrige la cita de CENS, que atribuye estas metas a la Res. 501 099 de 2024."
+  },
+  {
+   "id": "aportes-sociedad-N03",
+   "claim": "La CREG reconoce por escrito que los incentivos de calidad se aplican al cargo de distribución que pagan los usuarios y se reflejan en la tarifa. También informa que el incentivo positivo promedio fue de 1-2% de los ingresos por SAIDI y de 2-3% por SAIFI.",
+   "quote": "permite ajustar los incentivos que se aplican al cargo de distribución cobrado a los usuarios de cada mercado de comercialización, que se reflejan en la tarifa del servicio de energía eléctrica",
+   "figures": "Incentivo positivo promedio: 1%-2% (SAIDI), 2%-3% (SAIFI) de los ingresos",
+   "period": "2019-2023",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/circular_creg_0053_2024.htm",
+   "source_type": "primario-regulador",
+   "source_outlet": "CREG",
+   "source_title": "Circular CREG 053 de 2024 (14-ago-2024; DO 52.856 del 22-ago-2024)",
+   "source_date": "2024-08-14",
+   "confidence": "alta",
+   "notes": "La misma circular cambió la regla de las metas del sexto año para los 29 operadores ('reducir un 8% el indicador del quinto año'), después de consultarla con la Circular 031 de 2024."
+  },
+  {
+   "id": "aportes-sociedad-N04",
+   "claim": "La SSPD constató que en 2022 la tarifa de CENS llevó todo el año un incentivo positivo por calidad media (Dtcs) dentro del cargo de distribución.",
+   "quote": "también se muestra el valor en $/kWh del incentivo por calidad media (Dtcs), el cual presentó valores positivos todo el año.",
+   "figures": "",
+   "period": "2022",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+   "source_type": "primario-control",
+   "source_outlet": "Superservicios",
+   "source_title": "Informe de inspección especial CENS (vigencia 2022), p. 54-55",
+   "source_date": "2023-09",
+   "confidence": "alta",
+   "notes": "Respalda que el incentivo sí llega a la factura. Es un mecanismo legítimo."
+  },
+  {
+   "id": "aportes-sociedad-N05",
+   "claim": "Desde 2022 CENS ha repartido entre 50% y 78% de la utilidad del año anterior: 77,7% en 2022, 70,9% en 2023, 75,2% en 2024, 50,0% en 2025 y 60,0% en 2026. Dividendos decretados 2022-2026: 360.462 millones, contra utilidades 2021-2025 de 547.591 millones (65,8%). Si se incluyen las utilidades retenidas de 2018-2020, el reparto de 2018-2025 queda en 49,9%.",
+   "quote": "(cálculo propio con dividendos decretados y utilidades netas de las notas y los EEFF de CENS)",
+   "figures": "83.195/107.107; 92.998/131.200; 51.611/68.595; 58.771/117.543; 73.887/123.146",
+   "period": "2022-2026",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_type": "primario-cens",
+   "source_outlet": "CENS (cálculo propio)",
+   "source_title": "Notas EEFF 2024-2025, EEFF 2023, notas 1T-2026",
+   "source_date": "2026",
+   "confidence": "alta",
+   "notes": "La cifra de '42% de la utilidad acumulada 2019-2025' mezcla periodos. Es más preciso dar el reparto por año."
+  },
+  {
+   "id": "aportes-sociedad-N06",
+   "claim": "En el primer semestre de 2026 CENS invirtió 59.533 millones en propiedad, planta y equipo (21.768 en el 1T y 37.765 en el 2T), 28,6% del plan anual de 208.105 millones. El balance del 2T compara junio con marzo.",
+   "quote": "Aumentó en $15,123, Correspondiendo principalmente por la inversión realizada en $37,765",
+   "figures": "PPE: 1.405.147 (jun-2026) frente a 1.390.024 (mar-2026)",
+   "period": "1S-2026",
+   "source_url": "https://www.cens.com.co/accionistas/informacion-financiera",
+   "source_type": "primario-cens",
+   "source_outlet": "CENS",
+   "source_title": "Estado de situación financiera y notas del 2T-2026",
+   "source_date": "2026",
+   "confidence": "alta",
+   "notes": "La utilidad neta del 1S-2026 fue de 56.494 millones."
+  },
+  {
+   "id": "aportes-sociedad-N07",
+   "claim": "CENS dice que su tarifa promedio de 2025 fue 41,2 $/kWh menor que la de 2024 ($888,3/kWh) y que vendió 28,6 GWh menos que los 1.485 GWh de 2024.",
+   "quote": "un menor ingreso asociado a una tarifa promedio inferior en 41,2 $/kWh, comparada con la tarifa del año anterior ($888,3/kWh).",
+   "figures": "Tarifa promedio 2025 ≈ 847,1 $/kWh; ventas ≈ 1.456 GWh",
+   "period": "2024-2025",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Anexo6_Notas_Estados_Financieros2025.pdf",
+   "source_type": "primario-cens",
+   "source_outlet": "CENS",
+   "source_title": "Notas EEFF 2025, Nota 23",
+   "source_date": "2026",
+   "confidence": "alta",
+   "notes": "Es un argumento de la empresa a su favor."
+  },
+  {
+   "id": "aportes-sociedad-N08",
+   "claim": "CENS afirma que su CU bajó 11%, de $976 en diciembre de 2024 a $869 en 2025. Pero su propia gráfica mensual de 2025 muestra un pico de cerca de $1.055,6 y un cierre de $869,9: la baja se mide de diciembre a diciembre.",
+   "quote": "En el transcurso del año el Costo Unitario aplicado disminuyó en 11% pasando de un precio por Kw de $976 en diciembre de 2024 a $869 en el 2025.",
+   "figures": "976 → 869 $/kWh; pico de unos 1.055,6 en 2025",
+   "period": "2024-2025",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "source_type": "primario-cens",
+   "source_outlet": "CENS",
+   "source_title": "Informe de Sostenibilidad 2025, p. 7 y gráfica de CU mensual",
+   "source_date": "2026",
+   "confidence": "media",
+   "notes": "En el texto extraído no se ve con claridad a qué mes corresponde cada valor de la gráfica. Hay que contrastarla con la serie de tarifas mensuales."
+  },
+  {
+   "id": "aportes-sociedad-N09",
+   "claim": "En 2025 CENS formuló otros dos proyectos de Obras por Impuestos: soluciones fotovoltaicas en 30 escuelas rurales de Sardinata (COP$2.167 millones, 433 estudiantes) y dotación de 6 CDI en Santiago, San Calixto, Sardinata, El Zulia y El Carmen (COP$2.488 millones, 649 niños). El primer proyecto, de COP$2.134 millones, empezó a ejecutarse en 2026.",
+   "quote": "En 2026 marcamos un hito histórico en nuestra organización al iniciar la ejecución de nuestro primer proyecto bajo el mecanismo de Obras por Impuestos. Con una inversión de COP$ 2.134 millones",
+   "figures": "2.167 + 2.488 millones (formulados); 2.134 (en ejecución desde 2026)",
+   "period": "2025-2026",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "source_type": "primario-cens",
+   "source_outlet": "CENS",
+   "source_title": "Informe de Sostenibilidad 2025, p. 171-172",
+   "source_date": "2026",
+   "confidence": "alta",
+   "notes": "La Opinión (patrocinado, 28-oct-2026) da para el segundo proyecto 5 CDI por 2.607 millones."
+  },
+  {
+   "id": "aportes-sociedad-N10",
+   "claim": "En su informe del 2T-2026, el Grupo EPM dice que en abril de 2026 causó excedentes por $2,6 billones a favor del Distrito de Medellín, de los que había pagado $1,5 billones al 30 de junio. También dice que CENS aportó 4% del EBITDA del grupo en el semestre ($193 mil millones de $5,24 billones).",
+   "quote": "En abril se causaron excedentes a pagar al Distrito de Medellín por $2.6 billones, donde al 30 de junio se han pagado $1.5 billones.",
+   "figures": "2,6 billones (2026); CENS 4% del EBITDA del 1S-2026",
+   "period": "2026",
+   "source_url": "https://www.epm.com.co/institucional/inversionistas/informacion-financiera",
+   "source_type": "primario-epm",
+   "source_outlet": "Grupo EPM",
+   "source_title": "Resultados financieros del segundo trimestre de 2026 (2-sep-2026)",
+   "source_date": "2026-09-02",
+   "confidence": "alta",
+   "notes": "La URL exacta del PDF no se reabrió en esta verificación. El texto sale de la copia local que bajó el frente de finanzas: /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/finanzas/txt/epm2T2026.txt. La prensa reportó $2,8 a $2,82 billones."
+  }
+ ],
+ "bill_cases_checked": [],
+ "cautions": [
+  "NO USAR 'ENRIQUECIMIENTO EN DETRIMENTO DE LA SOCIEDAD' SIN MATICES. Los dueños de CENS son públicos: EPM es 100% del Distrito de Medellín. Los dividendos financian el presupuesto público de Medellín, no a particulares. Lo que se puede defender es esto: la renta de Norte de Santander se va casi toda a otra región, y lo que la empresa reporta como gasto social propio es muy pequeño.",
+  "'TODO SE VA PARA MEDELLÍN' ES FALSO; 'CASI TODO' ES EXACTO. Entre 2019 y 2021 no hubo dividendos (175.112 millones retenidos). Unos 8,32% de cada dividendo va a entidades públicas de la región: IFINORTE, Cúcuta, Ocaña, Pamplona y Villa del Rosario. Desde 2022 la empresa reparte entre 50% y 78% de la utilidad del año anterior. Use el reparto por año y no el '42%' de 2019-2025, que mezcla periodos.",
+  "LA RELACIÓN DE 17 A 1 NECESITA DOS ADVERTENCIAS EN EL MISMO TRINO. Primera: la línea 'Comunidad y medio ambiente' es un piso, porque CENS la incluye en parte en reinversión y proveedores. Esa nota solo aparece en sus informes de 2018 y 2019, y CENS podría decir que el gasto social real es mayor. Segunda: los dividendos de un año salen de la utilidad del año anterior. Si se suman alumbrado y patrocinios de 2025, la relación baja a unas 10 veces en 2025.",
+  "'EL NIVEL MÁS BAJO DESDE 2019' ES AMBIGUO. En 2019 la línea fue menor (1.886 millones) que en 2025 (2.760). Diga 'el más bajo desde 2019' solo si queda claro que 2019 fue todavía más bajo, o mejor 'la línea cae por tercer año seguido desde el pico de 2022 (6.229)'.",
+  "LA INVERSIÓN SE REMUNERA, PERO NO TODA ENTRA A LA BASE CON 12,09%. El plan regulatorio 2025 fue de 100.177 millones en pesos constantes de 2017, frente a 189.211 millones corrientes de inversión total. No afirme que 'cada peso invertido se cobra con 12,09%'. Diga que la inversión en distribución reconocida por la CREG se remunera en la tarifa con una tasa de 12,09%.",
+  "INCENTIVOS DE CALIDAD: EVITAR 'SE COBRA DOS VECES' O 'DOBLE COBRO'. Es un mecanismo legal de la CREG que premia cumplir metas, y la CREG reconoce que se refleja en la tarifa. Lo defendible: los usuarios pagaron unos 40.612 millones en incentivos entre 2019 y 2023, el doble de lo reportado en comunidad, mientras la SSPD advertía que los indicadores 'podrían estar subdimensionados'. La tabla de la SSPD no dice la unidad (por la magnitud son pesos).",
+  "META DE 2024: NO INSINUAR FAVORITISMO. El cambio de 20,672 a 25,567 h aplicó a los 29 operadores, se consultó antes con la Circular 031 de 2024 y la CREG lo justificó en que el año ya estaba en curso. La meta de EPM también se relajó. Lo exacto: 'con la meta publicada en enero (20,67 h), el resultado de CENS (22,15 h) habría quedado por fuera'. Que eso habría significado un incentivo negativo es inferencia y no está verificado.",
+  "HALLAZGOS DE LA SSPD NO SON SANCIONES. El 'podrían estar subdimensionados' de la inspección de 2022 es un hallazgo con un verbo condicional, y la SSPD usa la misma frase en general para todo el sector en su diagnóstico de 2023. El desfase con XM (22,61 frente a 24,43 h) lo explicó CENS por eventos abiertos en XM y conteo de usuarios. No lo presente como manipulación.",
+  "COMPARACIONES DE CALIDAD ENTRE TERRITORIOS. Antioquia (EPM) y Norte de Santander con el Catatumbo no son comparables sin contexto: conflicto armado, dispersión rural, atentados. CENS cumplió todas sus metas de 2019 a 2025. No mezcle años: el SAIFI de CENS de 2025 (5,9) no se compara con el promedio nacional de 2023 (16,72).",
+  "LA MEJOR DEFENSA DE CENS DEBE IR EN EL HILO. La Nación le debía subsidios: déficit de 212.035 millones en 2024 con giros de 123.691, y una deuda de 153.000 millones en febrero de 2025 que llevó a demanda y embargo. Eso presiona su liquidez (cartera de 117,88 días) y su deuda (intereses de 91.326 millones en 2025). Además aportó 514.383 millones al Estado entre 2019 y 2025. En el 2T-2026 MinMinas le giró 107.057 millones.",
+  "CIFRAS DE SUBSIDIOS QUE NO CUADRAN ENTRE FUENTES. En 2022 el SUI (vía SSPD) da subsidios por unos 206,4 mil millones y contribuciones por 38,3 mil millones (diferencia ≈168 mil millones). CENS reporta un déficit de 157.195 millones. Además, la SSPD da tres cifras distintas de subsidios en el mismo informe. No mezcle fuentes en un mismo dato.",
+  "OBRAS POR IMPUESTOS Y PRENSA PATROCINADA. Los 2.134 y 2.607 millones son impuesto de renta redirigido, como reconoce la propia CENS. El primer proyecto empezó en 2026, así que no cuenta como gasto de 2025. Los montos y el número de CDI difieren entre fuentes (2.488 frente a 2.607; 6 frente a 5 CDI). La pieza de La Opinión del 28-oct-2026 es contenido de 'Aliado Estratégico': no la cite como periodismo independiente.",
+  "ALUMBRADO NAVIDEÑO: NO PRESENTARLO COMO DONACIÓN PURA. CENS lo llama 'inversión de la compañía' (2.673 millones), pero en las notas EEFF aparece también como ingreso ('Otros servicios'), y se hizo junto con la Alcaldía y la Cámara de Comercio. Las cifras de patrocinios tampoco son homogéneas: 580, 530,8 y un aumento de 1.153 millones en 'eventos culturales'.",
+  "EXCEDENTES DE EPM A MEDELLÍN EN 2026. Use la cifra de EPM ($2,6 billones causados en abril de 2026) y no la de prensa ($2,82 billones), o atribuya cada una a su fuente. No hay desglose público de qué parte viene de CENS. Comparar dividendos de CENS con excedentes de EPM sirve solo como orden de magnitud.",
+  "CU A LA BAJA EN 2025. CENS dice -11% de diciembre a diciembre (976 a 869 $/kWh), pero su gráfica muestra un pico de unos 1.055,6 $/kWh en 2025. Si el hilo usa el CU, hay que mostrar la trayectoria completa del año para que CENS no pueda desmentirlo con su propio dato.",
+  "EMPLEO Y BENEFICIOS LABORALES. Comparar 17.731 millones en beneficios laborales con lo que se reporta para comunidad puede parecer injusto, porque esos beneficios suelen venir de la convención colectiva o de la ley. El total de 3.163 empleos de 2025 no cuadra con la suma de sus partes (3.161). Nadie ha explicado la caída de misionales (850 a 267); puede ser una reclasificación.",
+  "DECRETOS DE EMERGENCIA DE 2026. El impuesto al patrimonio (Decretos 173 y 240 de 2026; emergencia del Decreto 150) viene de las notas de CENS. No verifiqué si la Corte Constitucional los mantuvo. Si se mencionan, atribuirlos a CENS.",
+  "PERSONAS. La frase 'todo absolutamente todo se va para Medellín' es de 2022, del exconcejal Leonardo Jácome, que es figura pública. Si se usa, hay que fecharla y no presentarla como reciente. No se requiere su nombre para el argumento.",
+  "PÉRDIDAS. La definición del indicador cambió entre informes (IP, IPT, IPOR). Parte de las pérdidas se reconoce en la tarifa (componente P). Si se dice que las pérdidas subieron de 11,91% a 14,30%, hay que aclarar que la propia CENS reporta esa serie y que el Catatumbo (47,84%) está en un contexto de orden público excepcional."
+ ]
+}

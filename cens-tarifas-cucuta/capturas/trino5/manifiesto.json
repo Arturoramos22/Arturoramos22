@@ -51,28 +51,34 @@
   "id": "trino5_3",
   "tipo": "pdf",
   "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/inspeccion_cens_2022.pdf",
-  "pagina": 101,
-  "buscar": [
-   "DIU y FIU > 360",
-   "usuarios del mercado de CENS SA ESP a diciembre del 2022."
+  "pagina": 102,
+  "franja": [
+   0,
+   841.92
   ],
-  "margen_arriba": 22,
-  "margen_abajo": 16,
+  "x": [
+   0,
+   595.32
+  ],
+  "dpi": 170,
   "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
-  "id_original": "n_insp_p101"
+  "id_original": "r_insp_p102"
  },
  {
   "id": "trino5_4",
   "tipo": "pdf",
   "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/inspeccion_cens_2022.pdf",
-  "pagina": 102,
-  "buscar": [
-   "Dado lo anterior, es importante mencionar",
-   "falla en la prestación del servicio"
+  "pagina": 159,
+  "franja": [
+   0,
+   841.92
   ],
-  "margen_arriba": 18,
-  "margen_abajo": 16,
+  "x": [
+   0,
+   595.32
+  ],
+  "dpi": 170,
   "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
-  "id_original": "n_insp_p102"
+  "id_original": "r_insp_p159"
  }
 ]

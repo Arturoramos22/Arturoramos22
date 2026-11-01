@@ -1,0 +1,584 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL DEL FRENTE «LO QUE LA CREG LE APROBÓ A CENS» (31-oct-2026)\n\nVolví a descargar y revisar todas las fuentes primarias:\n- Resoluciones CREG 104/2019, 159/2019, 069/2021, 138/2021, 501 044/2022, 501 023/2023, 501 061/2024, 501 099/2024 con su fe de erratas, 501 133/2025, 016/2018, 015/2019, 007/2020, 215/2021, 101 027/2022, 101 028/2023, 101 120/2026 y 101 126/2026.\n- Circular CREG 095/2022 y Documentos CREG 901 037/2023, 901 107/2024 y 901 194/2025.\n- Resolución MME 40227/2022 y la evaluación ex post de las áreas de distribución (MinEnergía).\n- Boletín tarifario del primer trimestre de 2026 de la Superservicios. La copia que usé es idéntica (mismo md5) al archivo que entrega la URL oficial.\n- Publicaciones tarifarias de CENS (enero, febrero, marzo, septiembre y octubre de 2026; enero de 2025), tarifas de EPM y la nota de La Opinión.\n\nLos PDF escaneados (104, 159, 069, 016, 015, 007) los convertí en imágenes y los leí página por página.\n\nResultado: 39 hallazgos confirmados, 7 corregidos y 1 refutado.\n\n1) Refutado: hallazgo 42. La fila de Antioquia con G = 316,15 en la Tabla 17 de la Superservicios corresponde al comercializador CEO, no a EPM. EPM en Antioquia tuvo G = 282,32 (Tabla 16, p. 28). Por tanto, el componente de generación de CENS (292,42) fue unos 3,6% MÁS ALTO que el de EPM. El argumento de defensa de CENS se cae.\n\n2) Corrección de fondo: hallazgo 05. Las sumas del plan de inversiones son exactas (las rehice: 387.404.162.127 / 590.875.645.863 / 643.552.944.501 / 699.910.177.185). Pero presentar el paso de «387 a 700 mil millones» como un inflado es engañoso. Para los mismos años 1 a 5 (2019-2023), el plan final suma 367.623 millones, menos de lo aprobado en 2019. El aumento sale de agregar los años 6 a 9 (332.287 millones). El promedio anual es prácticamente igual: unos 77.500 millones por año en ambos casos.\n\n3) Correcciones menores:\n- Hallazgo 26: el Área de Distribución Centro tiene 7 empresas; falta Ruitoque.\n- Hallazgo 45: la cita está en la p. 3, no en la p. 2.\n- Hallazgo 08: INVNUC = 0 está en la p. 7.\n- Las tablas de la Res. 501 061 están en las pp. 12-14.\n- El recurso de 2024 sumó 56.357 millones al plan; de ellos, 51.041 millones corresponden a las torres.\n\n4) Matices imprescindibles:\n- El «58,2% del costo unitario remunera a CENS» exagera. El cargo de distribución es el cargo único del Área Centro e incluye el sistema regional de transmisión. El componente de pérdidas incluye energía perdida valorada a precio de energía. El COT es una deuda de opción tarifaria que la CREG volvió obligatoria en 2020. La formulación defendible: energía + transmisión nacional = 39,6% del costo unitario en enero de 2026 (43,8% en octubre de 2026; 47,2% en enero de 2025). El resto son componentes regulados.\n- El COT no bajó de forma lineal: llegó a $60,42 en febrero y $65,09 en marzo de 2026.\n- La subida de la tasa de retorno a 12,09% es un ajuste mecánico por el impuesto de renta y aplica a todos los operadores de red. Frente al 11,8% original de 2018 la diferencia es de solo 0,29 puntos.\n- Según XM (noviembre de 2022) y el estudio de Celsia citado por MinEnergía, los usuarios de CENS pagan un cargo del área MAYOR que el cargo propio de CENS (293 frente a 305 $/kWh; unos 10%). El área de distribución que diseñó MinEnergía encarece el cargo en Norte de Santander, un departamento con menor ingreso y mayor NBI.\n\n5) Hallazgos nuevos (en new_findings): la serie del COT en 2026; el CU aplicado en octubre de 2023 por las demás filiales de EPM (similar al de CENS); que lo recaudado con la Res. 101 120 se redistribuye entre quienes ahorran y que el primer ciclo es solo pedagógico; el beneficio de un tope de PV más alto (IPC + 0,3%) para quienes se acogieron al Pacto; que la Res. 078/2019 citada por error es la resolución de EPM; y la nota de la CREG de que la opción tarifaria «se hizo de manera obligatoria».\n\nArchivos de verificación: /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-creg/ (las imágenes de las páginas escaneadas están en la subcarpeta img/). Los scripts de suma están en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts/ (sum_inva.py, peryear.py, sum104.py).",
+ "verified": [
+  {
+   "id": "creg-cens-especifico-01",
+   "verdict": "confirmado",
+   "claim_final": "La CREG aprobó a CENS las variables de ingresos y cargos de distribución bajo la Res. CREG 015 de 2018 mediante la Res. CREG 104 del 2 de septiembre de 2019 (sesión 941), con soporte en el Documento CREG 068 de 2019.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/0db88ed948eba2600525848600543aa2/$FILE/Creg104-2019.pdf",
+   "source_page": "PDF p. 1 (título y documento 068); sesión 941 en p. 2",
+   "quote": "Por la cual se aprueban las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para el mercado de comercialización atendido por Centrales Eléctricas del Norte de Santander S.A. E.S.P.",
+   "notes": "Comprobado en la imagen de la p. 1 del PDF escaneado. Firman Diego Mesa Puyo y Christian Jaramillo Herrera (p. 7)."
+  },
+  {
+   "id": "creg-cens-especifico-02",
+   "verdict": "confirmado",
+   "claim_final": "Base de activos (BRA) inicial en la Res. 104/2019: 232.513.710.181 + 125.415.208.254 + 631.455.598.024 + 338.832.553.172 = $1.328.217.069.631 (pesos de dic-2017).",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/0db88ed948eba2600525848600543aa2/$FILE/Creg104-2019.pdf",
+   "source_page": "PDF p. 2 (Tabla 1)",
+   "quote": "Tabla 1 Base regulatoria de activos eléctricos al inicio del periodo tarifario.",
+   "notes": "Valores leídos en la imagen y suma rehecha."
+  },
+  {
+   "id": "creg-cens-especifico-03",
+   "verdict": "confirmado",
+   "claim_final": "BRA vigente (Res. 138 del 3-sep-2021): 255.674.862.423 + 130.888.512.714 + 641.970.251.559 + 360.810.438.767 = $1.389.344.065.463 de 2017. Son +61.127 millones (+4,6%) frente a la Res. 104, por incluir a pedido de CENS los activos de 2018.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/deaab7374e3f242b0525876c005e6eec/$FILE/Creg138-2021.pdf",
+   "source_page": "PDF p. 15",
+   "quote": "conforme con la solicitud de Centrales Eléctricas del Norte de Santander S.A. E.S.P., el valor de los activos puestos en operación en el 2018 fue incluido en la base regulatoria inicial de activos.",
+   "notes": "La comparación toma la Res. 104 original; la Res. 159 ya había subido algo la BRA (127 redes y el transformador de Ocaña)."
+  },
+  {
+   "id": "creg-cens-especifico-04",
+   "verdict": "confirmado",
+   "claim_final": "AOM base anual reconocido: $70.338.819.028 de 2017 (Res. 104). El total no cambió en la Res. 159 (12.283.094.300 + 6.629.629.171 + 33.379.655.557 + 18.046.440.000), en la Res. 069 (12.906.735.016 + 6.631.076.724 + 32.521.620.863 + 18.279.386.425) ni en la Res. 138 (70.338.819.027 por redondeo). Solo se redistribuyó entre niveles de tensión.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/0db88ed948eba2600525848600543aa2/$FILE/Creg104-2019.pdf",
+   "source_page": "Res. 104 p. 4 (Tabla 9); Res. 159 p. 10; Res. 069 pp. 4-5; Res. 138 p. 17",
+   "quote": "Tabla 9 AOM base por nivel de tensión",
+   "second_source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/deaab7374e3f242b0525876c005e6eec/$FILE/Creg138-2021.pdf"
+  },
+  {
+   "id": "creg-cens-especifico-05",
+   "verdict": "corregido",
+   "claim_final": "Sumas de las tablas INVA oficiales, pesos de dic-2017: Res. 104 = 387.404.162.127 (años 1-5); Res. 138 = 590.875.645.863 (7 años); Res. 501 023 = 643.552.944.501 (9 años); Res. 501 061 = 699.910.177.185 (9 años). Para los mismos años 1-5 (2019-2023), el plan final suma 367.623 millones, MENOS que los 387.404 aprobados en 2019. El crecimiento total se explica por la extensión del horizonte: los años 6-9 suman 332.287 millones. El promedio anual es casi idéntico: unos 77.500 millones (Res. 104) frente a unos 77.800 millones (Res. 501 061).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_501_061_2024/Resoluci%C3%B3n_CREG_501_061_2024.pdf",
+   "source_page": "Res. 501 061 PDF pp. 12-14 (no 12-17); Res. 104 pp. 2-3; Res. 138 pp. 15-16",
+   "figures_final": "Por año (Res. 501 061, miles de millones): 91,428 / 56,212 / 69,462 / 55,626 / 94,895 / 76,213 / 108,832 / 91,174 / 56,068. Las sumas de 104, 138, 501 023 y 501 061 coinciden al peso con el investigador. Las de 159 (391.466) y 069 (581.300) no las verifiqué.",
+   "quote": "Tabla 2 Plan de inversiones del nivel de tensión 4, pesos de diciembre de 2017",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_501_%20023_2023/Resoluci%C3%B3n_CREG_501_%20023_2023.pdf",
+   "notes": "Res. 104 sumada a partir de la transcripción de las imágenes: cuadra exacto con 387.404.162.127. Las sumas son cálculo propio; la CREG no publica un total. No usar «pasó de 387 a 700 mil millones» como prueba de inflado."
+  },
+  {
+   "id": "creg-cens-especifico-06",
+   "verdict": "confirmado",
+   "claim_final": "En el recurso contra la Res. 104, la CREG accedió a: incluir 127 redes de nivel 1 excluidas en exceso, el transformador de reserva de la subestación Ocaña y el sistema de gestión de activos como unidad constructiva especial; recalcular el factor de pérdidas; y fijar la senda de pérdidas. Negó las 916 redes de baja tensión y la modificación del INVNUC.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0159_2019.htm",
+   "source_page": "HTML oficial (el PDF está escaneado)",
+   "quote": "Al respecto se revisó la información correspondiente y en efecto se encontró que fueron excluidas 127 redes de nivel de tensión 1 en exceso, por lo cual se atenderá positivamente la solicitud de la empresa.",
+   "notes": "La «Resolución CREG 078 de 2019» que la CREG cita por error en la negativa de las 916 redes es la resolución de cargos de EPM (verificado en el Gestor Normativo): un error de copiar y pegar. Sesión 960 del 27-nov-2019."
+  },
+  {
+   "id": "creg-cens-especifico-07",
+   "verdict": "confirmado",
+   "claim_final": "Por recurso de CENS, el factor de pérdidas reconocidas en nivel 1 subió de 14,12% (Res. 104) a 14,65% (Res. 159). La pérdida eficiente de referencia Pe1 es 9,12% (Pe3 2,52%, Pe2 1,10%).",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/b14ff84e08ea77ef052584e0007bce8d/$FILE/Creg159-2019.pdf",
+   "source_page": "Res. 159 p. 10 (FPI 14,65%); Res. 104 p. 6 (FPI 14,12%, Pe 9,12%)",
+   "quote": "Considerando lo anterior, se accede a la solicitud, se ajusta el valor de la variable FPIj,1 y se modifica el artículo 15 de la Resolución CREG 104 de 2019.",
+   "notes": "La cita viene del HTML oficial; la cifra de 14,65% está en la imagen del PDF, p. 10."
+  },
+  {
+   "id": "creg-cens-especifico-08",
+   "verdict": "corregido",
+   "claim_final": "Costo anual del plan de pérdidas (CAP) aprobado: $6.763.754.473 de 2017 (Tabla 20, p. 6). INVNUC = 0 (Tabla 21, p. 7).",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/0db88ed948eba2600525848600543aa2/$FILE/Creg104-2019.pdf",
+   "source_page": "CAP en PDF p. 6; INVNUC en PDF p. 7",
+   "quote": "Tabla 20 Costo anual del plan de gestión de pérdidas",
+   "notes": "Solo se corrige la página del INVNUC."
+  },
+  {
+   "id": "creg-cens-especifico-09",
+   "verdict": "confirmado",
+   "claim_final": "Senda original de pérdidas (Res. 159/2019, art. 8): 13,15%, 12,79%, 12,43%, 12,07% y 11,71% para los años 1 a 5.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/b14ff84e08ea77ef052584e0007bce8d/$FILE/Creg159-2019.pdf",
+   "source_page": "PDF p. 10 (Tabla 2)",
+   "quote": "Artículo 8. Senda de Reducción de Pérdidas. Las metas anuales de reducción de pérdidas son:"
+  },
+  {
+   "id": "creg-cens-especifico-10",
+   "verdict": "confirmado",
+   "claim_final": "A solicitud de CENS, con base en la Res. CREG 167 de 2020 (medidas de la pandemia), la Res. 501 044 del 3-jun-2022 cambió la senda: año 4 de 12,07% a 12,84%, año 5 de 11,71% a 12,81% y meta final (año 10) de 11,90%, «superior al valor aprobado». El costo total del plan se recalculó en $50.214.533.681. Descontados $5.226.903.315 ya recibidos, el CAP quedó en $4.274.752.895 de 2017.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/523cc52ef1b18d18052588ef0071de07/$FILE/Creg501%20044.pdf",
+   "source_page": "p. 1 (solicitud y Res. 167/2020); p. 2 (cita y nuevo costo total); p. 3 (nuevo CAP y senda)",
+   "quote": "la solicitud del OR considera una meta del 11,90%, superior al valor aprobado en las Resoluciones CREG 104 y 159 de 2019",
+   "notes": "La CREG verificó la condición de reducción anual solo para los años 4 a 9 (Tabla 1, p. 2). Entre el año 3 (12,43%) y el 4 (12,84%) la meta sube. Sesión 1174."
+  },
+  {
+   "id": "creg-cens-especifico-11",
+   "verdict": "confirmado",
+   "claim_final": "Según el diagnóstico de la CREG, Norte de Santander incumplió la senda de pérdidas en 2021 (13,68% frente a 12,43%) y en 2023 (13,53% frente a 12,81%) y cumplió en 2019, 2020 y 2022. La CREG lo incluye entre los mercados que «no cumplieron... por más de dos periodos», aunque sus propias cifras muestran exactamente dos incumplimientos.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_page": "PDF p. 186 (cita); Figura 171 en p. 188",
+   "quote": "Los mercados de Air-e, Cali , Cauca, Chocó, Huila y Norte de Santander, no cumplieron las metas definidas en la senda por más de dos periodos, en algunos casos dos periodos consecutivos.",
+   "notes": "Mejor decir «incumplió en 2 de 5 años». La misma p. 186 aclara que esos incumplimientos ocurrieron en el periodo transitorio de la Res. 167/2020 y que no hubo cancelación del plan."
+  },
+  {
+   "id": "creg-cens-especifico-12",
+   "verdict": "confirmado",
+   "claim_final": "Ingresos de Norte de Santander por «pérdidas adicionales»: 11,92 (2020), 12,28 (2021), 12,79 (2022), 11,22 (2023) y 5,21 (2024) miles de millones de COP; suma propia de 53,42 mil millones. La CREG lo cuenta entre los principales receptores, en términos absolutos y frente a su base de activos.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_page": "p. 204 (cita); Figura 201 en p. 205; conclusión en p. 210; Figura 203 en p. 207",
+   "quote": "Los OR que atienden los mercados de Tolima, Norte de Santander y Cartago también accedieron a este reconocimiento de forma recurrente a lo largo de casi todo el periodo de aplicación de la metodología.",
+   "notes": "El título de la figura dice «miles de millones de COP» y el eje «MMCOP». Las cifras cuadran con la Figura 203 (0,86% del costo de reposición de referencia en 2020), lo que sugiere pesos de dic-2017, pero la CREG no lo dice. El dato de «casi 25% del Dt» de la p. 204 se refiere a los mercados del Caribe, no a Norte de Santander."
+  },
+  {
+   "id": "creg-cens-especifico-13",
+   "verdict": "confirmado",
+   "claim_final": "La CREG reconoce la «limitación inherente» del incentivo de pérdidas adicionales y pide «asegurar una mejor articulación entre los planes de inversión y los resultados efectivos en la reducción de pérdidas».",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_page": "PDF p. 210",
+   "quote": "Asegurar una mejor articulación entre los planes de inversión y los resultados efectivos en la reducción de pérdidas."
+  },
+  {
+   "id": "creg-cens-especifico-14",
+   "verdict": "confirmado",
+   "claim_final": "El plan de pérdidas de Norte de Santander no recibió remuneración por inversiones (INVNUC): el modelo costo-eficiente de la CREG solo cubrió el costo histórico de mantenimiento de pérdidas.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_page": "PDF p. 190",
+   "quote": "Los OR que atienden los mercados de Cali, Cauca, Choco, Huila, Norte de Santander y Tolima a pesar de que cuentan con un plan de reducción de perdidas, no han recibido remuneración por inversiones (INVNUC)"
+  },
+  {
+   "id": "creg-cens-especifico-15",
+   "verdict": "confirmado",
+   "claim_final": "Metas de calidad de CENS (Res. 104): referencia SAIDI_R 42,168 h y SAIFI_R 10,105 veces. SAIDI meta: 38,795 / 35,691 / 32,836 / 30,209 / 27,792 h. SAIFI meta: 9,297 y luego 9,000.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/0db88ed948eba2600525848600543aa2/$FILE/Creg104-2019.pdf",
+   "source_page": "Referencia en p. 4 (Tabla 11); metas en p. 5 (Tablas 12 y 13)",
+   "quote": "Tabla 12 Metas anuales de calidad media para el indicador de duración, horas"
+  },
+  {
+   "id": "creg-cens-especifico-16",
+   "verdict": "confirmado",
+   "claim_final": "Año 6: SAIDI 25,567 h y SAIFI 9,000 (Res. 501 099 del 12-dic-2024). La fe de erratas del 10-ene-2025 corrigió los límites invertidos de la banda. Año 7: SAIDI 23,522 h y SAIFI 9,000 (Res. 501 133 del 17-oct-2025, sesión 1412).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_501_099_2024/FE%20DE%20ERRATAS%20CENS.pdf",
+   "source_page": "Fe de erratas p. 1; Res. 501 099 pp. 2-3",
+   "quote": "por error involuntario, en el texto de la resolución se invirtieron de posición en la tabla los valores del límite inferior y límite superior de la banda de indiferencia de los indicadores SAIDI_Mj,t y SAIFI_Mj,t",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_501-133_2025.htm",
+   "notes": "Aprobada por Antonio Jiménez, Director Ejecutivo (registro de firma electrónica, p. 3)."
+  },
+  {
+   "id": "creg-cens-especifico-17",
+   "verdict": "confirmado",
+   "claim_final": "Norte de Santander está entre los 13 mercados que cumplieron la meta de SAIDI todos los años. SAIDI reportado: 27,34 / 22,47 / 24,38 / 22,61 / 27,33 / 22,15 h (2019-2024). SAIFI: 8,96 / 7,65 / 7,58 / 6,62 / 6,9 / 6,32.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_page": "p. 77 (cita); Tabla 10 en p. 78; Tabla 11 en p. 81",
+   "quote": "de los 29 mercados de comercialización hubo 13 que cumplieron las metas del indicador SAIDI en todos los años (Bogotá – Cundinamarca, Caribe Mar, Air-e, Santander, Cali, Norte de Santander, Tolima, Boyacá, Cauca, Quindío, Chocó y Cartago y Popayán)",
+   "notes": "Son indicadores reportados por los propios operadores al SUI. En 2023 el margen fue mínimo: 27,33 h frente a una meta de 27,792 (límite inferior de la banda 27,653)."
+  },
+  {
+   "id": "creg-cens-especifico-18",
+   "verdict": "confirmado",
+   "claim_final": "Incentivos netos de calidad 2019-2023 para Norte de Santander: SAIDI $16.499.996.420 y SAIFI $24.112.299.954 de dic-2017 (suma de $40.612.296.374). Se aplican a través del cargo de distribución.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_page": "Tabla 12 en p. 87; regla en p. 86; promedios nacionales en p. 88",
+   "quote": "N. SANTANDER $16,499,996,420.00 $24,112,299,954.00"
+  },
+  {
+   "id": "creg-cens-especifico-19",
+   "verdict": "confirmado",
+   "claim_final": "La publicación tarifaria de CENS dice que el incentivo de calidad va incluido en el cargo de distribución DtUN (octubre de 2026; igual en enero de 2025 y enero de 2026).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_page": "PDF p. 4 (imagen, nota al pie de la tabla)",
+   "quote": "(*) INCENTIVO POR CALIDAD INCLUIDO EN EL DtUN"
+  },
+  {
+   "id": "creg-cens-especifico-20",
+   "verdict": "confirmado",
+   "claim_final": "Res. CREG 016 del 29-ene-2018: tasa de retorno de distribución de 12,4% para 2018 y 11,8% de 2019 en adelante.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/550d817bff60ef290525822b007c2dcb/$FILE/Creg016-2018.pdf",
+   "source_page": "PDF p. 4 (hoja 4/5)",
+   "quote": "Año Tasa de retorno 2018 12,4% 2019 en adelante 11,8%"
+  },
+  {
+   "id": "creg-cens-especifico-21",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 015 de 2019 (citada en los considerandos de la Res. 104) fijó 11,79% (2019), 11,64% (2020), 11,50% (2021) y 11,36% desde 2022. La Res. 007 de 2020 mantuvo 11,64 / 11,50 / 11,36%.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/5fe3bde292bc2c43052583a2006bace2/$FILE/Creg015-2019.pdf",
+   "source_page": "PDF p. 4 (hoja 4/4)",
+   "quote": "2019 11,79% 2020 11,64% 2021 11,50% 2022 en adelante 11,36%",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0007_2020.htm"
+  },
+  {
+   "id": "creg-cens-especifico-22",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 215 del 15-dic-2021 (sesión 1141) fijó la tasa de retorno de distribución en 12,09% desde 2022, porque la Ley 2155 de 2021 subió el impuesto de renta al 35%. El Gestor Normativo registra la 215/2021 como la última modificación del art. 2 de la Res. 016/2018.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/b8273859c250da83052587b2005f783a/$FILE/Creg215-2021.pdf",
+   "source_page": "PDF p. 4 (tasa); p. 3 (Ley 2155 y frase «no se trata de una producción normativa nueva»)",
+   "quote": "el valor de la tasa de retorno de la actividad de distribución de energía eléctrica, para una metodología de ingreso máximo, será de 12,09% a partir del año 2022.",
+   "figures_final": "+0,73 puntos frente a 11,36%; +0,59 frente a 11,50% (2021); +0,29 frente al 11,8% original de la Res. 016/2018",
+   "notes": "La Res. 101 101 de 2026 trata de la tasa de descuento de convocatorias del sistema de transmisión nacional, no de distribución."
+  },
+  {
+   "id": "creg-cens-especifico-23",
+   "verdict": "confirmado",
+   "claim_final": "La Res. 069 de 2021, dictada para CENS, ordenó notificar a la Central Hidroeléctrica de Caldas. En la Res. 138 de 2021 la CREG admitió el error y aclaró que la notificación sí se hizo a CENS.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/5713399b00c17d5905258766007825b2/$FILE/Creg069-2021.pdf",
+   "source_page": "PDF p. 5 (art. 9); Res. 138 p. 14",
+   "quote": "La presente resolución deberá notificarse a la Central Hidroeléctrica de Caldas S.A. E.S.P., y publicarse en el Diario Oficial.",
+   "second_source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/deaab7374e3f242b0525876c005e6eec/$FILE/Creg138-2021.pdf"
+  },
+  {
+   "id": "creg-cens-especifico-24",
+   "verdict": "confirmado",
+   "claim_final": "En la Res. 138/2021, la CREG encontró sobrecostos en las repotenciaciones Ocaña–Convención y Belén–Ínsula y no las incluyó como unidades constructivas especiales. También rechazó la «caja de distribución para medida concentrada».",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/deaab7374e3f242b0525876c005e6eec/$FILE/Creg138-2021.pdf",
+   "source_page": "PDF p. 9 (sobrecostos y decisión); p. 10 (caja de medida concentrada)",
+   "quote": "En la revisión de las UC se evidencian sobrecostos en la ejecución de ambos proyectos por conceptos en interventoría, administración de la ejecución, Inspección, costos financieros, entre otros",
+   "notes": "Apoderada: Maria Alejandra Mercado Jaimes (p. 2). Radicado E-2021-007390."
+  },
+  {
+   "id": "creg-cens-especifico-25",
+   "verdict": "confirmado",
+   "claim_final": "En la Res. 501 061 del 5-sep-2024, la CREG reconoció como unidades constructivas especiales las torres de las líneas a 115 kV Convención–Tibú y Tibú–Planta Zulia. Las inversiones de líneas de nivel 4 (l=7) pasaron de 3.892.046.324 a 23.698.417.839 (año 7) y de 2.847.783.600 a 34.081.965.937 (año 8). Eso suma +51.041 millones de los +56.357 millones que subió el plan (643.552.944.501 → 699.910.177.185).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_501_061_2024/Resoluci%C3%B3n_CREG_501_061_2024.pdf",
+   "source_page": "PDF p. 10 (cita completa en la misma página); tablas en pp. 12-14",
+   "quote": "por lo que la Comisión procede a reconocer como UC especiales las torres señaladas por CENTRALES ELÉCTRICAS DEL NORTE DE SANTANDER S.A. E.S.P. considerando en su valoración las UC de torres estándar mencionadas anteriormente ajustando en las obras civiles el valor de las cimentaciones especiales e indexación correspondiente.",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_501-23_2023.htm",
+   "notes": "El resto del aumento (unos 5.316 millones) corresponde a otras unidades especiales (puesta a tierra, conductores). En el mismo acto se rechazó el sistema de gestión de activos para recertificación (p. 11) y los radioenlaces (pp. 11-12)."
+  },
+  {
+   "id": "creg-cens-especifico-26",
+   "verdict": "corregido",
+   "claim_final": "El Área de Distribución Centro (Res. MME 40227 del 5-jul-2022, art. 4) la forman 7 empresas: ESSA, CENS, EPM, EDEQ, EEP, CHEC y Ruitoque. Cada operador de red sigue percibiendo sus cargos según la Res. CREG 015 de 2018 (art. 6).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_minminas_40227_2022.htm",
+   "source_page": "Arts. 4 y 6 (HTML)",
+   "quote": "2. Centrales Eléctricas de Norte de Santander S.A. E.S.P., (CENS), mercado Centrales Eléctricas de Norte de Santander S.A. E.S.P.",
+   "notes": "Faltaba Ruitoque. La Res. 40227 no usa la expresión «cargo único»; ese concepto viene de la figura del área de distribución (Decreto 388 de 2007)."
+  },
+  {
+   "id": "creg-cens-especifico-27",
+   "verdict": "confirmado",
+   "claim_final": "Octubre de 2026: el DtUN de nivel 1 (propiedad del operador) de CENS es 297,8785 $/kWh y el de EPM en Antioquia es 297,88. En enero de 2026: CENS 317,1201; EPM 317,12 (315,57 en otra tabla).",
+   "source_url": "https://www.epm.com.co/content/dam/epm/clientes-y-usuarios/energia/tarifas-energia/Tarifas%202026/10.PublicacionTarifasOctubre162026_ANT_OM.pdf",
+   "source_page": "EPM p. 1; CENS Tarifas_CENS_202610_.pdf p. 4",
+   "quote": "Cargo transporte SDL: Dn,m 297.88 266.10 234.33",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "notes": "Los niveles 2-4 también coinciden. Las columnas de propiedad compartida o del usuario difieren: CENS 272,1544 / 246,4303 frente a EPM 266,10 / 234,33."
+  },
+  {
+   "id": "creg-cens-especifico-28",
+   "verdict": "confirmado",
+   "claim_final": "Con datos de XM de noviembre de 2022: cargo propio de CENS en nivel 1 = 293 $/kWh y cargo único transitorio del Área Centro = 305. Los usuarios de nivel 1 de CENS pagaban unos 12 $/kWh (+4,1%) más que el costo propio de CENS. EPM estaba en 269 (también por debajo del cargo del área).",
+   "source_url": "https://www.minenergia.gov.co/documents/11070/Expost_ADD_2023_compressed.pdf",
+   "source_page": "PDF p. 33 (tabla; folio impreso 28); «305 192 84» al inicio de p. 34",
+   "quote": "Cargo Único Transitorio Nivel 1 ($/kWh)",
+   "figures_final": "Nivel 1: 293 frente a 305; nivel 2: 184 frente a 192; nivel 3: 93 frente a 84",
+   "notes": "Lo corrobora el estudio de Celsia citado en p. 114: «En la ADD Centro, los OR excedentarios son EPP, EPM y CENS que presentan Dt inferiores al DtUN que se les cobra, de aproximadamente 50% 10% y 10%». Es una foto de un solo mes de 2022. En la tabla, la fila de CENS ocupa varias líneas."
+  },
+  {
+   "id": "creg-cens-especifico-29",
+   "verdict": "confirmado",
+   "claim_final": "En el primer trimestre de 2026, el Área Centro tuvo el cargo de distribución promedio más alto (308,22 $/kWh). La Superservicios dice que su evolución depende principalmente de los ingresos que aprueba la CREG.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_page": "PDF p. 65 (Tabla 27 y texto)",
+   "quote": "Entre las ADD, la región Centro registró el mayor valor promedio del componente durante el trimestre (308,22 $/kWh)",
+   "figures_final": "Centro 308,22; Oriente 293,48; Sur 269,62; Occidente 265,33; Caribemar 199,35; Energuaviare 192,28; Dispac 180,14; Air-e 130,99"
+  },
+  {
+   "id": "creg-cens-especifico-30",
+   "verdict": "confirmado",
+   "claim_final": "Según la Circular CREG 095 del 12-oct-2022, CENS no se acogió a la modificación voluntaria y temporal del indexador de los cargos de distribución. Tampoco EPM, EDEQ, CHEC, ESSA, Afinia, Putumayo, Cartago ni EEP. Sí se acogieron 13 filas de operadores de red (12 empresas; Celsia con dos mercados), entre ellas Ruitoque, que es del Área Centro.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/52188526a7290f8505256eee0072eba7/9d94ddc5ae8a7306052588d90052e4da/$FILE/Circular095-2022.pdf",
+   "source_page": "PDF p. 4 (Tabla 4); como transmisor en p. 3 (Tabla 3, «de los que no hubo pronunciamiento»)",
+   "quote": "Tabla 4: Operadores de Red (Distribuidores) que NO se acogieron",
+   "notes": "Firma Jorge Alberto Valencia Marín."
+  },
+  {
+   "id": "creg-cens-especifico-31",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 101 027 del 16-sep-2022 (art. 4, modificado por la 101 031) dejó a voluntad de los operadores de red acogerse a la modificación temporal de los factores de indexación.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-27_2022.htm",
+   "source_page": "Art. 4 (HTML)",
+   "quote": "Los OR podrán acogerse a la modificación temporal de los factores de indexación de las variables definidas en los numerales 1.2.4.2 , 2.1 , 2.4 , 2.5 , 2.6 , 5.1.12 y 10.1 de la Resolución CREG 015 de 2018",
+   "notes": "El art. 3 daba a quien se acogiera un tope de PV más alto (IPC + 0,3%) entre diciembre de 2022 y septiembre de 2023 (ver new_findings)."
+  },
+  {
+   "id": "creg-cens-especifico-32",
+   "verdict": "confirmado",
+   "claim_final": "CENS informó que las reducciones eran opcionales y publicó la lista de operadores que se acogieron; CENS no aparece.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/Comunicado%20Creg/Publicacion%20Comunicado%20Creg%20101%20027%20-%20Nov.pdf",
+   "source_page": "PDF p. 1",
+   "quote": "La reducción en los cargos de Distribución y Transmisión previstos en estas resoluciones son opcionales por lo tanto los Operadores de Red y Transmisores Nacionales se acogen de manera voluntaria."
+  },
+  {
+   "id": "creg-cens-especifico-33",
+   "verdict": "confirmado",
+   "claim_final": "Saldo de opción tarifaria de CENS en nivel 1 a agosto de 2023: $138.018 millones, con CU aplicado de 837 $/kWh, brecha de 16, cargo OT simulado de 37, nuevo CU de 890 (+6%) y 50 meses.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_028_2023/Documento%20Soporte%20CREG%20901%20037%20de%202023.pdf",
+   "source_page": "Tabla 2 en PDF p. 37; corte a agosto de 2023 en p. 36",
+   "quote": "CENS 138.018 837 16 37 890 6% 50"
+  },
+  {
+   "id": "creg-cens-especifico-34",
+   "verdict": "confirmado",
+   "claim_final": "Octubre de 2023: CU calculado de CENS (fórmula general) 875 $/kWh; CU aplicado 925 (+9,8% frente a 843 en septiembre); brecha de -50. EPM aplicó 843.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_028_2023/Documento%20Soporte%20CREG%20901%20037%20de%202023.pdf",
+   "source_page": "Tabla 3 en PDF p. 42",
+   "quote": "CENS 878 875 -0,4% 843 925 9,8% 35 -50",
+   "notes": "Contexto en la misma tabla: CHEC aplicó 929, ESSA 936, EDEQ 899, EEP 971 y Air-e 1.124. CENS no fue atípico dentro del Grupo EPM; solo EPM quedó tan abajo."
+  },
+  {
+   "id": "creg-cens-especifico-35",
+   "verdict": "confirmado",
+   "claim_final": "Simulación final de la CREG para CENS: saldo de $177.550 millones, CU aplicado 925, brecha -50, cargo OT inicial 43, nuevo CU 918 (-1%) y 50 meses.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_028_2023/Documento%20Soporte%20CREG%20901%20037%20de%202023.pdf",
+   "source_page": "Tabla 4 en PDF p. 45",
+   "quote": "CENS 177.550 925 -50 43 918 -1% 50",
+   "notes": "Es una simulación de 2023, no el saldo actual."
+  },
+  {
+   "id": "creg-cens-especifico-36",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 101 028 del 24-nov-2023 creó la recuperación de los saldos de opción tarifaria (unos 4,9 billones a septiembre de 2023) mediante la variable COT, incluida en el costo de comercialización Cv. La CREG recuerda que la opción tarifaria «se hizo de manera obligatoria» por la pandemia.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_028_2023/Resoluci%C3%B3n_CREG_101_028_2023.pdf",
+   "source_page": "PDF p. 4 (cita y obligatoriedad); definición del COT en p. 14",
+   "quote": "Se tiene estimado que el saldo acumulado de todos los comercializadores a septiembre de 2023, por la aplicación de la opción tarifaria es del orden de 4.9 billones de pesos"
+  },
+  {
+   "id": "creg-cens-especifico-37",
+   "verdict": "confirmado",
+   "claim_final": "CU de CENS en enero de 2026: G 298,9047; T 52,9743; DtUN 317,1201; Cv 132,3776; PR 67,3480; R 19,3343; total 888,0590 $/kWh (la suma cuadra). D/CU = 35,71% y G/CU = 33,66%. COT de nivel 1: $47,0962. El Cv de nivel 1 menos el COT da 85,2814, igual al Cv de nivel 4.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "source_page": "PDF p. 4 (imagen); COT en texto de p. 3",
+   "quote": "COMPONENTES DEL COSTO UNITARIO- CU en $/kWh",
+   "figures_final": "D+Cv+PR = 516,8457 (58,20%); D+Cv sin COT = 402,4015 (45,31%); G+T = 351,879 (39,62%)"
+  },
+  {
+   "id": "creg-cens-especifico-38",
+   "verdict": "confirmado",
+   "claim_final": "CU de CENS en octubre de 2026 (publicado el 18-oct): G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127; PR 78,0046; R 55,8206; total 1.018,9488 $/kWh. COT de nivel 1: $44,0139. CRPUI: $0,0323/kWh (Res. 101 121 de 2026).",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_page": "PDF p. 4 (imagen)",
+   "quote": "Para el mes de Octubre el Costo de recuperación de la Opción Tarifaria (COT) es de : NT1 $44.0139 NT2 $23.6907 y NT3 $4.7739",
+   "figures_final": "D+Cv+PR = 516,3958 (50,68%); D+Cv sin COT = 38,70%; G+T = 43,84%"
+  },
+  {
+   "id": "creg-cens-especifico-39",
+   "verdict": "confirmado",
+   "claim_final": "CU de CENS en enero de 2025: G 407,5115; T 56,0327; DtUN 292,1103; Cv 133,1855; PR 88,5348; R 4,5920; total 981,9668. COT de nivel 1: $49,505. Entre enero de 2025 y enero de 2026, D subió 8,56% y G bajó 26,65%.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202501.pdf",
+   "source_page": "PDF p. 4 (texto seleccionable)",
+   "quote": "DtUN 292.1103 264.0858 236.0613 186.8920 88.2656 35.9036",
+   "figures_final": "D+Cv+PR = 513,8306 (52,33%); G+T = 47,20%"
+  },
+  {
+   "id": "creg-cens-especifico-40",
+   "verdict": "confirmado",
+   "claim_final": "CU promedio de nivel 1 en Norte de Santander: 851,07 $/kWh en el primer trimestre de 2026 (862,08 en el cuarto de 2025). Está por encima de Antioquia (842,96), Santander (825,39) y Bogotá-Cundinamarca (786,38) y ocupa el puesto 11 de 26 mercados (ranking rehecho con la tabla completa de pp. 24-25).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_page": "Tabla 13 en PDF p. 24 (continúa en p. 25)",
+   "quote": "NORTE DE SANTANDER 862,08 851,07 -1,28%",
+   "notes": "En el PDF, «NORTE DE / SANTANDER» ocupa dos líneas; la captura debe tomar la fila completa."
+  },
+  {
+   "id": "creg-cens-especifico-41",
+   "verdict": "confirmado",
+   "claim_final": "Según la Superservicios, CENS tuvo el mayor aumento del componente de comercialización de su grupo en el primer trimestre de 2026 (+11,56%, de 131,81 a 147,04 $/kWh). Figura entre los acogidos al COT, con un promedio de 37,03 $/kWh en el trimestre.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_page": "Cita en p. 78; Tabla 35 en p. 77; Tabla 38 en p. 83; Tabla 40 en p. 84",
+   "quote": "El mayor incremento correspondió a CENS, con 11,56%, al pasar de 131,81 $/kWh a 147,04 $/kWh.",
+   "notes": "Los promedios de la Superservicios (formato SUI T7) no coinciden con los valores mensuales de CENS (Cv de enero: 132,38). El COT de nivel 1 subió a 60,42 en febrero y 65,09 en marzo. En p. 84 la Superservicios atribuye parte del alza a la recuperación de saldos de la opción tarifaria."
+  },
+  {
+   "id": "creg-cens-especifico-42",
+   "verdict": "refutado",
+   "claim_final": "Falso como está redactado. En el primer trimestre de 2026, el componente de generación de CENS (292,42 $/kWh, Tabla 17, p. 30) fue MAYOR que el de EPM en Antioquia (282,32 $/kWh, Tabla 16, p. 28), unos 3,6% más. La fila de Antioquia con 316,15 en la Tabla 17 pertenece al comercializador CEO, no a EPM.",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_page": "Tabla 16 en p. 28 (EPM); Tabla 17 en p. 30 (CENS y CEO)",
+   "quote": "CENS Norte de Santander 290,07 292,42 0,81%",
+   "figures_final": "EPM Antioquia 301,13 → 282,32; ESSA 296,81 → 286,51; CHEC Caldas 299,29 → 292,78; CENS 290,07 → 292,42",
+   "notes": "No usar como defensa de CENS. Es un solo trimestre."
+  },
+  {
+   "id": "creg-cens-especifico-43",
+   "verdict": "confirmado",
+   "claim_final": "La Res. CREG 101 120 del 30-jul-2026 creó un programa transitorio y autofinanciado. El consumo por encima del 110% de la meta individual paga un cobro adicional con factores de 1,30 (estratos 1-3), 1,50 (estratos 4-6) y 1,70 (comercio e industria). La Res. 101 126 del 21-ago-2026 aplazó el inicio al quinto día hábil tras su publicación (DO del 25-ago), excluyó los municipios afectados por el sismo y declaró pedagógico el primer ciclo facturado.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "source_page": "Art. 10 (HTML); Res. 101 126, arts. 3 y 5",
+   "quote": "Residenciales estratos 1, 2 y 3 | 1,30 | Residenciales estratos 4, 5 y 6 | 1,50 | Comerciales e industriales | 1,70",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-126_2026.htm"
+  },
+  {
+   "id": "creg-cens-especifico-44",
+   "verdict": "confirmado",
+   "claim_final": "La Opinión (31-oct-2026) informa que CENS, en carta del gerente José Miguel González Campo, pidió a la CREG excluir al comercio y la industria de la Res. 101 120. El diario atribuye al análisis de CENS que más de 3.095 usuarios comerciales e industriales recibieron recargos de más de $200.000 en octubre.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "source_page": "Nota web",
+   "quote": "-Excluir a los usuarios no residenciales (comercio e industria) de la aplicación de la Resolución CREG 101-120 de 2026 debido a las condiciones del territorio.",
+   "notes": "Fuente de prensa: no tengo la carta original. La cifra de 3.095 no está verificada en un documento primario."
+  },
+  {
+   "id": "creg-cens-especifico-45",
+   "verdict": "corregido",
+   "claim_final": "La CREG (Documento 901 107 del 4-jul-2024, sesión 1326) calcula que en promedio el 85% del CU (G, T, D, R y PR) se actualiza con el IPP y el 15% (C) con el IPC. Dice también que entre 2020 y 2022 el alza de esos índices encareció las tarifas.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_055_2024/Documento_CREG_901_107_2024.pdf",
+   "source_page": "Cita en PDF p. 3 (no p. 2); contexto 2020-2022 en pp. 3-4",
+   "quote": "Se calcula que, en promedio, el 85% del CU (componentes G, T, D, R y PR) está influenciado por la variación del IPP mientras que el 15% restante (componente C) por la variación del IPC.",
+   "notes": "Es el soporte de un proyecto (701 055); no lo confirmé como resolución definitiva."
+  },
+  {
+   "id": "creg-cens-especifico-46",
+   "verdict": "confirmado",
+   "claim_final": "CENS, citada por MinEnergía, pidió revisar el esquema de áreas de distribución porque genera subsidios cruzados en el apalancamiento de inversiones.",
+   "source_url": "https://www.minenergia.gov.co/documents/11070/Expost_ADD_2023_compressed.pdf",
+   "source_page": "PDF p. 105",
+   "quote": "CENS manifiesta que es conveniente revisar y ajustar el esquema de ADD debido a que, con la entrada del esquema de remuneración por ingreso máximo, dentro del ADD se presentan subsidios cruzados en el tema del apalancamiento de las inversiones"
+  },
+  {
+   "id": "creg-cens-especifico-47",
+   "verdict": "confirmado",
+   "claim_final": "En su publicación de enero de 2026, CENS dice que aplica la regulación buscando mitigar las alzas sin arriesgar su sostenibilidad financiera, y que el COT de $47,0962 forma parte de la recuperación de saldos de opción tarifaria de vigencias anteriores.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "source_page": "PDF p. 3",
+   "quote": "CENS sigue dando aplicación a la regulación buscando mitigar los crecimientos de la tarifa sin poner en riesgo la sostenibilidad financiera de la empresa."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "verif-creg-N01",
+   "claim": "El plan de inversiones de CENS no se infló para los años ya aprobados. Para 2019-2023 (años 1-5), el plan vigente (Res. 501 061/2024) suma $367.623 millones, menos que los $387.404 millones aprobados en la Res. 104/2019. El paso a unos $700 mil millones se debe a que el plan se extendió a 2024-2027 (años 6-9: $332.287 millones). El promedio anual es prácticamente igual (unos $77.500 millones frente a unos $77.800 millones, pesos de 2017).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_501_061_2024/Resoluci%C3%B3n_CREG_501_061_2024.pdf",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "figures": "Res. 501 061 por año (miles de millones de 2017): 91,428 / 56,212 / 69,462 / 55,626 / 94,895 / 76,213 / 108,832 / 91,174 / 56,068. La Res. 138 da 367,334 para los años 1-5.",
+   "source_page": "Res. 501 061 pp. 12-14; Res. 104 pp. 2-3",
+   "quote": "Tabla 2 Plan de inversiones del nivel de tensión 4, pesos de diciembre de 2017",
+   "source_title": "Resolución CREG 501 061 de 2024",
+   "source_outlet": "CREG",
+   "source_date": "2024-09-05",
+   "who": "CREG",
+   "period": "2019-2027",
+   "notes": "Cálculo propio sobre las tablas oficiales (scripts sum_inva.py y peryear.py)."
+  },
+  {
+   "id": "verif-creg-N02",
+   "claim": "En el primer trimestre de 2026, el componente de generación de EPM en Antioquia (282,32 $/kWh) fue menor que el de CENS (292,42). También fueron menores ESSA (286,51) y EPM en sus otros mercados (276-279). CHEC estuvo casi igual (292,78).",
+   "source_url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Boletin-Tarifario-Energia-electrica-primer-trimestre-2026.pdf",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "quote": "Antioquia 301,13 282,32 -6,25%",
+   "source_page": "Tabla 16 en PDF p. 28; Tabla 17 en p. 30",
+   "source_title": "Boletín tarifario de Energía Eléctrica 1er trimestre 2026",
+   "source_outlet": "Superservicios - DTGE",
+   "source_date": "2026-07",
+   "who": "Superservicios",
+   "period": "Primer trimestre de 2026",
+   "notes": "Refuta el hallazgo 42. La fila de EPM en la Tabla 16 tiene la sigla en una línea aparte («EPM» a la altura de Cali); conviene recortar la tabla completa."
+  },
+  {
+   "id": "verif-creg-N03",
+   "claim": "Un estudio de Celsia citado por MinEnergía concluye que en el Área Centro CENS es «excedentario»: su cargo propio es unos 10% menor que el cargo único que se cobra a sus usuarios. Además, el ingreso de Norte de Santander es unos 28% inferior al promedio del área y su NBI es «sustancialmente mayor». Es decir, el área de distribución encarece el cargo en un departamento más pobre.",
+   "source_url": "https://www.minenergia.gov.co/documents/11070/Expost_ADD_2023_compressed.pdf",
+   "source_type": "primario-gobierno",
+   "confidence": "media",
+   "quote": "En la ADD Centro, los OR excedentarios son EPP, EPM y CENS que presentan Dt inferiores al DtUN que se les cobra, de aproximadamente 50% 10% y 10%, respectivamente.",
+   "source_page": "PDF p. 114 (cita); ingreso y NBI en p. 115",
+   "source_title": "Evaluación ex post de las Áreas de Distribución (ADD)",
+   "source_outlet": "Ministerio de Minas y Energía",
+   "source_date": "2023-11-10",
+   "who": "Estudio de Celsia, citado por MinEnergía",
+   "notes": "Es la opinión de una empresa del sector (Celsia), no una conclusión de MinEnergía; el periodo del estudio no está claro (menciona 2007-2016). Coincide con la tabla de XM de noviembre de 2022 (293 frente a 305). Frase de p. 115: «El índice de NBI de los departamentos asociados con esta ADD son similares, excepto el de Norte de Santander, que es sustancialmente mayor.»"
+  },
+  {
+   "id": "verif-creg-N04",
+   "claim": "El COT de nivel 1 que cobra CENS no bajó de forma constante en 2026: $47,0962 (enero), $60,4189 (febrero), $65,0871 (marzo), $45,9233 (septiembre) y $44,0139 (octubre) por kWh.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202603_.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "quote": "En el cálculo de la tarifa de Marzo, incluye un costo de la opción tarifaria (COT), de nivel de tensión 1 de $65.0871",
+   "source_page": "PDF p. 3 (en cada mes)",
+   "source_title": "Tarifas CENS marzo 2026",
+   "source_outlet": "CENS",
+   "source_date": "2026-03",
+   "who": "CENS",
+   "period": "Enero-octubre de 2026",
+   "notes": "Febrero: https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202602_.pdf ; septiembre: https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202609_.pdf. La cita textual de marzo es reconstruida (el texto extraído decía «...de nivel de tensión 1 de $65.0871»); hay que revisar la frase exacta en la captura."
+  },
+  {
+   "id": "verif-creg-N05",
+   "claim": "Lo que se recauda por la Res. 101 120 no queda en CENS: el programa es autofinanciado y lo recaudado se reparte entre los usuarios que ahorran. El cobro adicional «no forma parte de su tarifa». Además, el primer ciclo facturado es pedagógico: el cobro que resulte ese mes es solo informativo y no hay que pagarlo.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-126_2026.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "Si en este primer ciclo pedagógico resulta un valor de cobro adicional para el usuario por consumo excedente frente a su meta individual, tal cobro tendrá únicamente fines informativos y no constituirá un saldo a pagar por el usuario.",
+   "source_page": "Res. 101 126, art. 5 (HTML); Res. 101 120, arts. 1 y 20",
+   "source_title": "Resolución CREG 101 126 de 2026",
+   "source_outlet": "CREG",
+   "source_date": "2026-08-21",
+   "who": "CREG",
+   "notes": "Res. 101 120, art. 1: «la distribución posterior de los recursos efectivamente recaudados entre los usuarios que resulten beneficiarios por ahorro reconocido». Pone en duda que los «recargos de octubre» que reporta La Opinión sean todos cobros reales."
+  },
+  {
+   "id": "verif-creg-N06",
+   "claim": "El Pacto por la Justicia Tarifaria tenía una compensación: al comercializador integrado que se acogiera, la Res. 101 027 le permitía subir el PV de la opción tarifaria hasta IPC + 0,3% (frente a IPC para los demás) entre diciembre de 2022 y septiembre de 2023.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-27_2022.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "Para el comercializador integrado con el operador de red que se acoja a lo dispuesto en el artículo 4 de la presente resolución, el valor máximo de la variable PV, para los meses entre diciembre de 2022 y septiembre de 2023, es el de la variación mensual del Índice de Precios al Consumidor, IPC, del mes anterior al del cálculo, más 0,3%.",
+   "source_page": "Art. 3, literal a (HTML; modificado por la Res. 101 031 de 2022)",
+   "source_title": "Resolución CREG 101 027 de 2022",
+   "source_outlet": "CREG",
+   "source_date": "2022-09-16",
+   "who": "CREG"
+  },
+  {
+   "id": "verif-creg-N07",
+   "claim": "En octubre de 2023, el CU que aplicó CENS (925 $/kWh) fue parecido al de otras filiales del Grupo EPM: CHEC 929, ESSA 936, EDEQ 899. Otros fueron más altos: EEP 971, Air-e 1.124. Solo EPM (843) quedó muy por debajo.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_101_028_2023/Documento%20Soporte%20CREG%20901%20037%20de%202023.pdf",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "CHEC 859 877 888 2,2% 1,2% 775 929 935 19,9% 0,6% 84 -52 -47",
+   "source_page": "Tabla 3 en PDF p. 42",
+   "source_title": "Documento CREG 901 037 de 2023",
+   "source_outlet": "CREG",
+   "source_date": "2023-11-24",
+   "who": "CREG",
+   "notes": "Sirve para no cometer cherry-picking al comparar CENS solo con EPM."
+  },
+  {
+   "id": "verif-creg-N08",
+   "claim": "La «Resolución CREG 078 de 2019» que la CREG cita por error en la Res. 159/2019 de CENS es la resolución de cargos de EPM. Confirma el error de copiar y pegar.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0078_2019.htm",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "Por la cual se aprueban las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para el mercado de comercialización atendido por Empresas Públicas de Medellín E.S.P.",
+   "source_page": "Título (HTML)",
+   "source_title": "Resolución CREG 078 de 2019",
+   "source_outlet": "CREG",
+   "who": "CREG"
+  },
+  {
+   "id": "verif-creg-N09",
+   "claim": "Los ingresos de Norte de Santander por pérdidas adicionales equivalieron al 0,86% (2020), 0,89% (2021), 0,93% (2022), 0,81% (2023) y 0,38% (2024) de su costo de reposición de referencia. Según la CREG, fue una proporción «significativa y sostenida».",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Proyecto_Resoluci%C3%B3n_CREG_701_090/DOCUMENTO_CREG_901_194_2025.pdf",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "los ingresos por pérdidas adicionales representaron una proporción significativa y sostenida respecto a su CRR durante el periodo tarifario",
+   "source_page": "Figura 203 en p. 207; cita en p. 208",
+   "source_title": "Documento CREG 901 194 de 2025",
+   "source_outlet": "CREG",
+   "source_date": "2025-06-21",
+   "who": "CREG",
+   "notes": "Cita completa de p. 208: «para los mercados de Tolima, Norte de Santander y Cartago, los ingresos por pérdidas adicionales representaron una proporción significativa y sostenida respecto a su CRR»."
+  },
+  {
+   "id": "verif-creg-N10",
+   "claim": "CENS pidió relajar la senda de pérdidas amparándose en la Res. CREG 167 de 2020 (medidas transitorias de la pandemia). El nuevo costo total del plan quedó en $50.214.533.681.",
+   "source_url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/523cc52ef1b18d18052588ef0071de07/$FILE/Creg501%20044.pdf",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "quote": "solicitó modificar la senda y la meta del plan de reducción de pérdidas, establecidas en las Resoluciones CREG 104 y 159 de 2019, con base en lo establecido en la Resolución CREG 167 de 2020.",
+   "source_page": "PDF p. 1 (solicitud); p. 2 (nuevo costo total)",
+   "source_title": "Resolución CREG 501 044 de 2022",
+   "source_outlet": "CREG",
+   "source_date": "2022-06-03",
+   "who": "CREG / CENS"
+  }
+ ],
+ "cautions": [
+  "El hallazgo 42 está REFUTADO. No publicar que la energía de CENS fue más barata que la de EPM: en el primer trimestre de 2026 fue unos 3,6% más cara (292,42 frente a 282,32). La cifra de 316,15 era del comercializador CEO.",
+  "Plan de inversiones: «pasó de 387 a 700 mil millones» es engañoso si se presenta como un inflado. Para 2019-2023 el plan final es menor (367.623 millones). El aumento viene de extender el plan a 2027 y el promedio anual no cambió. CENS y la CREG lo desmentirían con facilidad.",
+  "«El 58,2% del costo unitario remunera a CENS» exagera:\n- El DtUN es el cargo único del Área Centro. Incluye el sistema regional de transmisión y activos de otros operadores.\n- El componente de pérdidas incluye energía perdida valorada a precios de G y T.\n- El COT es una deuda de opción tarifaria que la CREG hizo obligatoria en 2020.\nFormulación defendible: G+T = 39,6% del CU en enero de 2026 (43,8% en octubre de 2026; 47,2% en enero de 2025), y el resto son componentes regulados de redes, comercialización, pérdidas y restricciones.",
+  "El cargo D de Cúcuta no es el costo propio de CENS. Según XM (noviembre de 2022) y el estudio de Celsia citado por MinEnergía, los usuarios de CENS pagan MÁS que el cargo propio de CENS (293 frente a 305; unos 10%) por el esquema de áreas de MinEnergía. Ese es un ángulo contra el diseño regulatorio, no contra CENS.",
+  "Tasa de retorno: el 12,09% aplica a TODOS los operadores de red y es un ajuste mecánico por la renta del 35% (Ley 2155). Frente al 11,8% original de 2018 la subida es de solo 0,29 puntos. La estimación de unos 10.100 millones al año es una cota superior propia sobre la base bruta, no una cifra de la CREG.",
+  "Pérdidas:\n- CENS pidió relajar la senda con base en la Res. 167/2020 (pandemia), y la CREG dice que los incumplimientos ocurrieron en ese periodo transitorio.\n- La frase de la CREG «por más de dos periodos» no cuadra con sus propias cifras para Norte de Santander (dos incumplimientos: 2021 y 2023).\n- En la Res. 501 044 la CREG solo verificó la condición de reducción anual para los años 4 a 9, y entre los años 3 y 4 la meta sube (12,43% a 12,84%). Antes de llamarlo irregular hay que contrastarlo con la Res. 167/2020.",
+  "Pérdidas adicionales:\n- El dato de «casi 25% del Dt» (p. 204) es de los mercados del Caribe, no de Norte de Santander. Para Norte de Santander equivale a 0,4-0,9% del costo de reposición por año.\n- La CREG no dice si los 53,4 mil millones son pesos corrientes o constantes.",
+  "Opción tarifaria:\n- El CU aplicado por encima del calculado en octubre de 2023 es el mecanismo legal de recuperación.\n- CENS (925) estuvo en línea con CHEC (929) y ESSA (936); compararla solo con EPM (843) es cherry-picking.\n- El saldo de 177.550 millones es una simulación de 2023, no el saldo actual.",
+  "COT: mostrar solo enero de 2025, enero de 2026 y octubre de 2026 sugiere una caída constante. En febrero y marzo de 2026 subió a 60,42 y 65,09 $/kWh. Conviene publicar la serie completa.",
+  "Pacto por la Justicia Tarifaria:\n- Era una opción voluntaria y temporal de cambio de indexador.\n- Quien se acogía recibía un tope de PV más alto (IPC + 0,3%).\n- Todo el Grupo EPM y Afinia se abstuvieron.\nDecir «CENS no se acogió a la opción voluntaria», no «CENS se negó a bajar tarifas».",
+  "Calidad: los indicadores SAIDI y SAIFI los reportan los propios operadores al SUI. El incentivo es simétrico y legal, y CENS cumplió (en 2023, por poco margen: 27,33 frente a 27,792). Presentarlo como un cobro indebido no se sostiene; sí se puede decir que el incentivo va en el cargo D del recibo.",
+  "Res. 101 120:\n- Lo recaudado se redistribuye entre quienes ahorran y no es ingreso de CENS.\n- El primer ciclo es pedagógico.\n- La cifra de 3.095 comerciantes con recargos de más de $200.000 viene de La Opinión atribuida a CENS, no de la carta original.",
+  "Errores formales de la CREG (notificar a CHEC en la Res. 069, citar la Res. 078/2019 de EPM, invertir las bandas en la Res. 501 099): son reales y comprobables, pero la CREG los corrigió o aclaró y no tuvieron efecto jurídico. No presentarlos como prueba de ilegalidad.",
+  "Los Documentos CREG 901 194 (diagnóstico de la metodología) y 901 107 (soporte del proyecto 701 055) son documentos oficiales de la CREG, pero acompañan proyectos de resolución, no decisiones en firme. A octubre de 2026 no encontré una metodología que reemplace la Res. 015/2018.",
+  "Capturas: las Res. 104, 159, 069, 016, 015 y 007 son PDF escaneados sin capa de texto; las versiones HTML del Gestor Normativo tienen el texto, pero las tablas son imágenes. El boletín de la Superservicios puede bloquear la descarga directa (Incapsula); la copia usada es idéntica (mismo md5) a la que entrega la URL oficial.",
+  "Las cifras trimestrales de la Superservicios (formato SUI T7) no coinciden con los valores mensuales que publica CENS (por ejemplo, C 147,04 de promedio frente a un Cv de 132,38 en enero). No mezclar ambas fuentes en una misma comparación sin aclararlo."
+ ]
+}

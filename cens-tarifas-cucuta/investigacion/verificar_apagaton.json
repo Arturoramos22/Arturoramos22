@@ -1,0 +1,404 @@
+{
+ "summary": "Verificación adversarial al 31-oct-2026. Reabrí con curl todas las fuentes, rehíce con la API de XM los cálculos de horas pico y del 8-nov-2022, revisé el texto y las fórmulas (imágenes) de la CREG 015/2018, 191/2014, 180/2014 y 101 120/2026, y recalculé el ahorro. Archivos en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/apagaton/verif/ y scripts v_*.py en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/scripts/.\n\nConclusiones clave:\n\n1) Convocatoria. Tras 8 búsquedas extendidas más (Semana, La Opinión, Alerta, Área Cúcuta y prensa nacional), sigo sin encontrar ningún apagatón convocado en Cúcuta en 2026. Todo lo documentado es del #ApagónCucuteño del martes 8-nov-2022, a las 7:00 p.m., durante 10 minutos, convocado por José Luis Mora (Asobares). Las fechas de las cuatro notas de 2022 están confirmadas en sus metadatos. El trino no puede decir que se \"adhiere\" a una convocatoria vigente: debe presentarse como propuesta inspirada en la de 2022, salvo que el usuario aporte la de 2026.\n\n2) Horas pico. Reproduje exactamente las cifras: Hour19+20 = 477,1 MWh/día (9,52%) en la demanda regulada de CENS. Además confirmé de forma independiente qué intervalo cubre cada hora: CENS informó que la falla de la subestación San Mateo empezó a las 8:44 p.m. del 16-sep-2026, y en XM la caída aparece en Hour21 mientras Hour20 sale normal. Por tanto Hour21 = 20:00-21:00, y la franja de mayor consumo es de 6:00 a 8:00 p.m.\n\n3) Ingresos de CENS. La CREG 015/2018 confirma un \"esquema de ingreso máximo\":\n- Niveles 1 a 3: el cargo es el ingreso aprobado dividido por la energía de entrada de los meses m-14 a m-3 (lo verifiqué en las imágenes de las fórmulas).\n- Nivel 4: el ingreso mensual dividido por la demanda del mes m-1.\n- Corrección: no encontré en el texto ninguna regla que devuelva lo dejado de recaudar durante el rezago. Lo que se ajusta es el cargo futuro, que además se divide entre toda la energía de la red (regulados y no regulados). Decir que el ingreso \"se recupera\" es una interpretación aproximada.\n- Hallazgo nuevo: el COT (opción tarifaria) está dentro del Cv. Cv N1 132,3776 = Cv N4 85,2814 + COT 47,0962, y lo mismo cuadra en octubre. El margen propio de comercialización es menor de lo que se suponía.\n\n4) Ahorro. 72 kWh × 888,059 = $63.940,25, correcto. Pero para un trino de noviembre de 2026 corresponde el CU de octubre ($1.018,9488): $73.364,31/mes. Los 1,2 kW son un supuesto del flujo, no del usuario.\n\n5) Riesgos nuevos:\n- Cúcuta está militarizada desde el 29-oct-2026, tras un atentado.\n- En septiembre CENS operó bajo contingencia y pidió evitar \"picos de carga\" so pena de \"deslastres de carga\". Una reconexión sincronizada de aires a las 8 p.m. es justo eso.\n- Hay ola de calor por El Niño.\n- La caída del 8-nov-2022 implica unos 71 MW sostenidos durante 10 minutos (un tercio de la carga regulada). Es poco plausible para un acto de 10 minutos, así que no se puede atribuir al apagatón.\n\nCorrecciones menores:\n- G+T+PR+R pesa 49,4% del CU de enero, no 49,5%.\n- Los porcentajes de aire acondicionado de la UPME (Atlántico 30,5%, Cesar 21,4%) son penetración en hogares, no peso en el consumo.\n- El programa CREG 101 120 empezó el 1-sep-2026; los cobros adicionales rigen desde el 1-oct.\n- Semana 2022 dice \"rebaja de $17 a $20\", pero de $785 a $741-738 hay $44-47: es internamente inconsistente.",
+ "verified": [
+  {
+   "id": "apagaton-01",
+   "verdict": "confirmado",
+   "claim_final": "En 2022 el empresario José Luis Mora, presidente de Asobares en Cúcuta, invitó a la ciudadanía cucuteña y al departamento a un apagón el martes 8 de noviembre de 2022, a las 7:00 p.m., durante 10 minutos.",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/convocan-apagaton-en-cucuta-por-alza-de-tarifa-en-el-recibo-de-la-luz/202231/",
+   "quote": "Sin otra alternativa para hacerse sentir por las autoridades competentes, este empresario invitó a la ciudadanía cucuteña y el departamento entero a realizar el próximo martes 8 de noviembre un apagón de energía a las 7:00 de noche durante 10 minutos.",
+   "figures_final": "8-nov-2022, 7:00 p.m., 10 minutos",
+   "notes": "JSON-LD datePublished = 2022-11-03T21:10:02-05:00. La convocatoria es de 2022, no de 2026. El artículo lo describe como 'el empresario y presidente de Asobares en Cúcuta, José Luis Mora'."
+  },
+  {
+   "id": "apagaton-02",
+   "verdict": "confirmado",
+   "claim_final": "Mora planteó el apagatón como presión económica ('eso les va a hacer perder plata') y amenazó con una 'deudaton' en diciembre. Según Semana, la ciudadanía esperaba una mesa de diálogo para que no siguiera subiendo el kWh.",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/convocan-apagaton-en-cucuta-por-alza-de-tarifa-en-el-recibo-de-la-luz/202231/",
+   "quote": "“Hagamos una apagatón que es donde más les duele, apagamos toda la ciudad, eso les va a hacer perder plata y si no nos escuchan en diciembre hacemos una ‘deudaton’ y no pagamos el recibo en diciembre todos los cucuteños, pero algo tenemos que hacer, esto está desesperante”, recalcó Mora en el video de la convocatoria. Lo que espera la ciudadanía frente a esta problemática es una mesa de diálogo entre las dos partes para llegar a un acuerdo donde no se incremente más el kilovatio",
+   "notes": "Las citas son textuales. Lo de 'perder plata' no se sostiene regulatoriamente; ver efecto_en_ingresos_final."
+  },
+  {
+   "id": "apagaton-03",
+   "verdict": "confirmado",
+   "claim_final": "La jornada se llamó #Apagóncucuteño. Mora pidió desconectar los electrodomésticos y bajar los tacos.",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/asi-sera-el-gran-apagon-en-cucuta-contra-cens-este-martes-8-de-noviembre/202210/",
+   "quote": "este martes 8 de noviembre se llevará a cabo una jornada denominada #Apagóncucuteño contra la electrificadora Centrales Eléctricas de Norte de Santander (CENS), Grupo EPM. [...] “Esperamos que toda la ciudad baje los tacos: hay que desconectar todos los electrodomésticos, luego bajar los tacos y por último usemos el #Apagóncucuteño para que seamos tendencia en redes sociales [...]”",
+   "notes": "datePublished = 2022-11-08T15:42:10-05:00. La cita une dos párrafos con [...]; en la captura deben verse ambos."
+  },
+  {
+   "id": "apagaton-04",
+   "verdict": "confirmado",
+   "claim_final": "La noche del 8-nov-2022 hubo cucuteños que se sumaron al apagatón. En videos se vieron casas y comercios a oscuras.",
+   "source_url": "https://laopinion.co/cucuta/cens-responde-los-cucutenos-que-se-unieron-al-apagaton",
+   "quote": "La iniciativa, que se gestó a través de las redes sociales, convocaba a la ciudadanía a apagar las luces durante un par de minutos desde las 7 de la noche. En varios videos publicados en la red, se pudo observar casas y establecimientos comerciales completamente a oscuras como un acto simbólico",
+   "notes": "datePublished = 'Mar, 08/11/2022 - 20:48'. Discrepancia: La Opinión dice 'un par de minutos' y Semana '10 minutos'. No hay cifra de participación."
+  },
+  {
+   "id": "apagaton-05",
+   "verdict": "confirmado",
+   "claim_final": "El gerente de CENS respondió con un mensaje de solidaridad y disposición al diálogo. CENS lo publicó también en X.",
+   "source_url": "https://laopinion.co/cucuta/cens-responde-los-cucutenos-que-se-unieron-al-apagaton",
+   "quote": "\"Nos solidarizamos con la región y trabajamos para buscar alternativas que nos permitan superar la coyuntura tarifaria que vive el país. Desde CENS estamos siempre dispuestos a conversar con autoridades, líderes, gremios, comerciantes y usuarios para avanzar en soluciones conjuntas\", puntualizó.",
+   "notes": "Fuente primaria para captura: https://twitter.com/CENSGrupoEPM/status/1590472437053140994 (embebido en Semana, fechado 'November 9, 2022'). Nombre: La Opinión 2022 escribe 'González Ocampo', pero La Opinión y Alerta en 2026 escriben 'José Miguel González Campo'; usar González Campo."
+  },
+  {
+   "id": "apagaton-06",
+   "verdict": "confirmado",
+   "claim_final": "Tras el apagón de 10 minutos, Semana reportó que CENS se sumó al 'Pacto por la Justicia Tarifaria', anunció que el kWh pasaría de $785 a $741-738 e invitó a los manifestantes a mesas de trabajo.",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/cens-responde-a-protesta-contra-los-altos-costos-en-la-tarifa-de-energia-en-cucuta/202237/",
+   "quote": "La reducción en temas de precio sería entre $ 17 a $ 20 pesos por cada kilovatio, es decir que el kilovatio pasaría de $ 785 (precio en septiembre) a $ 741- $ 738. [...] “Tenemos abiertas diferentes mesas de trabajo y queremos invitarlos también a los que han venido participando de las diferentes manifestaciones que se han dado, a que nos sentemos a construir”",
+   "figures_final": "$785 → $741-738 (diferencia real de $44-47, no de $17-20); en seis meses de $649,9 a $781,1 (+20%)",
+   "notes": "datePublished = 2022-11-10T13:32:37-05:00. La nota es internamente inconsistente: $785 − $741 = $44, no $17-20. Si se captura, no repetir la frase de los $17-20 como dato."
+  },
+  {
+   "id": "apagaton-07",
+   "verdict": "confirmado",
+   "claim_final": "El 15-sep-2022 usuarios quemaron recibos frente a la sede de CENS y dijeron que no pagarían hasta recibir respuesta.",
+   "source_url": "https://www.semana.com/nacion/cucuta/articulo/esto-es-absurdo-nos-estan-robando-comunidad-cucutena-protesta-por-el-alza-de-precio-en-los-recibos-de-luz/202219/",
+   "quote": "Como acto de protesta, la comunidad presente de varios sectores de la ciudad de Cúcuta y su área metropolitana, decidieron quemar los recibos frente a las instalaciones de CENS, argumentando que no van a pagar un solo peso hasta que reciban una respuesta.",
+   "notes": "datePublished = 2022-09-15T12:43:19-05:00. Habla 'Freddy Rodríguez, edil de la comuna cinco'."
+  },
+  {
+   "id": "apagaton-08",
+   "verdict": "corregido",
+   "claim_final": "Cálculo propio con la API de XM: el 8-nov-2022, en la hora 19:00-20:00, la demanda regulada de CENS (CNSC) quedó unos 11-12 MWh (5,4-5,7%) por debajo de lo esperado según la razón Hour20/Hour19 de los días hábiles, y repuntó en la hora siguiente. No se puede atribuir al apagatón: para un acto de 10 minutos esa cifra implicaría apagar cerca de un tercio de la carga regulada.",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "quote": "POST {\"MetricId\":\"DemaRealReg\",\"Entity\":\"Agente\",\"Filter\":[\"CNSC\"],\"StartDate\":\"2022-11-08\",\"EndDate\":\"2022-11-08\"} → Hour19 \"216059.89\", Hour20 \"196445.12\", Hour21 \"201260.8\" (kWh)",
+   "figures_final": "Razón H20/H19 el 8-nov = 0,9092, la más baja de 21 días hábiles (25-oct a 22-nov-2022). Media con el 8-nov 0,9615 (desviación 0,0151); sin el 8-nov 0,9641 (desviación 0,0098). Déficit 11,9 MWh (5,7%) frente a la media sin el 8-nov, 11,3 MWh (5,4%) frente a la media con él. CNSD: 0,9194, también la más baja, déficit 12,6 MWh. SIN: 0,9904, puesto 8 de 21 (normal). H21/H20 = 1,0245 frente a ~0,97 habitual (rebote). 11,9 MWh en 10 minutos son ~71 MW, el 34% de los ~208 MW esperados.",
+   "notes": "Los números se reproducen exactamente. La lectura causal es débil: no hay control de clima, ni CENS ni XM reportaron la caída, y la magnitud es poco plausible para 10 minutos. El 25-oct-2022 muestra un patrón parecido aunque menor (0,9495). No usar en el trino como 'el apagatón bajó la demanda 5,7%'."
+  },
+  {
+   "id": "apagaton-09",
+   "verdict": "confirmado",
+   "claim_final": "En Cartagena la JAC de Manga encabezó un 'apagón social' contra Afinia (filial de EPM), del jueves 8 al domingo 11 de febrero de 2024, desde las 7:30 p.m., con duración creciente de 30 a 60 minutos.",
+   "source_url": "https://www.eltiempo.com/colombia/otras-ciudades/apagon-social-en-cartagena-contra-elevados-costos-de-la-energia-de-afinia-852470",
+   "quote": "los ciudadanos apagarán las luces de sus hogares durante media hora el primer día, en un movimiento coordinado que se llevará a cabo desde el jueves 8 de febrero hasta el domingo 11 de febrero, todos los días, entre las 7:30 p.m. y las 8:30 p.m. [...] La iniciativa es encabezada por la Junta de Acción Comunal de Manga",
+   "figures_final": "Jueves 7:30-8:00; viernes 7:30-8:10; sábado 7:30-8:20; domingo 7:30-8:30 p.m.",
+   "notes": "datePublished = 2024-02-07T08:49:53-05:00. El mismo artículo dice que Afinia 'es filial de las Empresas Públicas de Medellín (EPM)'."
+  },
+  {
+   "id": "apagaton-10",
+   "verdict": "confirmado",
+   "claim_final": "Los convocantes de Cartagena buscaban 'afectar el bolsillo de Afinia' y que el Gobierno revisara la regulación tarifaria del Caribe.",
+   "source_url": "https://www.eltiempo.com/colombia/otras-ciudades/apagon-social-en-cartagena-contra-elevados-costos-de-la-energia-de-afinia-852470",
+   "quote": "De la Rosa explicó que esta es una acción directa que busca afectar el bolsillo de Afinia, así como la empresa afecta las economías de los hogares en cuatro departamentos del Caribe colombiano con tarifas exorbitantes."
+  },
+  {
+   "id": "apagaton-11",
+   "verdict": "confirmado",
+   "claim_final": "En la demanda regulada de CENS (XM, CNSC, del 1-oct-2025 al 26-oct-2026), las dos horas de mayor consumo son de 6:00 a 8:00 p.m. (Hour19+Hour20 = 477,1 MWh/día, 9,52%). De 7:00 a 9:00 p.m. queda prácticamente empatada (474,6 MWh, 9,47%).",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "quote": "POST {\"MetricId\":\"DemaRealReg\",\"Entity\":\"Agente\",\"Filter\":[\"CNSC\"]}. Promedios de 391 días: Hour19 = 238,9; Hour20 = 238,3; Hour21 = 236,4; Hour16 = 233,9 MWh; mínimo Hour06 = 174,5.",
+   "figures_final": "Total 5.010,7 MWh/día; pico/promedio 1,144. Desde el 1-sep-2026: 516,2 (H19+20) frente a 513,1 (H20+21). Fines de semana H19+20 = 454,9. Días hábiles (sin filtrar festivos): H19+20 = 486,0 frente a H16+17 = 485,9.",
+   "notes": "Recalculado de forma independiente. El intervalo de cada hora queda confirmado por un evento con hora primaria: la falla del 16-sep-2026 a las 8:44 p.m. aparece en Hour21 (CNSD 271 frente a ~328 habitual) y Hour20 sale normal (323). Por tanto Hour21 = 20:00-21:00 y Hour19+20 = 18:00-20:00. CNSC son los 47 municipios y residencial más comercial regulado, no Cúcuta residencial."
+  },
+  {
+   "id": "apagaton-12",
+   "verdict": "confirmado",
+   "claim_final": "En toda la red de CENS (DemaOR CNSD), el pico de días hábiles es de 2 a 4 p.m. (616,2 MWh) y el del promedio de todos los días es de 6 a 8 p.m. (592,3 MWh).",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "quote": "POST {\"MetricId\":\"DemaOR\",\"Entity\":\"Agente\",\"Filter\":[\"CNSD\"]}. Promedio total: Hour19 = 297,9; Hour16 = 295,0; Hour20 = 294,5 MWh.",
+   "figures_final": "Promedio H19+20 = 592,3 (9,40%); días hábiles H15+16 = 616,2 (9,57%).",
+   "notes": "Recalculado; coincide."
+  },
+  {
+   "id": "apagaton-13",
+   "verdict": "confirmado",
+   "claim_final": "En el SIN, la ventana de 2 horas de mayor demanda es de 6 a 8 p.m. (22.419 MWh/día) y la hora máxima es Hour20 (7-8 p.m.).",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "quote": "POST {\"MetricId\":\"DemaReal\",\"Entity\":\"Sistema\"}. Hour20 = 11.268,6; Hour19 = 11.150,4; Hour21 = 11.026,0 MWh.",
+   "notes": "393 días, del 1-oct-2025 al 28-oct-2026; coincide."
+  },
+  {
+   "id": "apagaton-14",
+   "verdict": "confirmado",
+   "claim_final": "XM describe la 'punta dos' (18:00 a 21:00) como el momento de mayor consumo de potencia del país.",
+   "source_url": "https://www.xm.com.co/consumo/historicos-de-demanda",
+   "quote": "existen 3 puntos importantes que caracterizan la curva de demanda de energía, estos son, la amanecida (05:00 a 07:00), punta uno (11:00 a 13:00) y la punta dos (18:00 a 21:00), siendo este último punto el de mayor consumo de potencia eléctrica en el país.",
+   "notes": "Página sin fecha visible. Es la mejor captura primaria y legible para la franja pico."
+  },
+  {
+   "id": "apagaton-15",
+   "verdict": "confirmado",
+   "claim_final": "Según El Tiempo (13-sep-2026), XM pidió a comercio, industria y familias gestionar el consumo en la hora pico, de 6:00 p.m. a 10:00 p.m., en medio de un 'riesgo alto' asociado a El Niño.",
+   "source_url": "https://www.eltiempo.com/economia/sectores/crece-la-alerta-colombia-enfrenta-riesgo-alto-de-desabastecimiento-electrico-y-piden-ahorro-urgente-de-energia-agua-y-gas-3585721",
+   "quote": "En particular, solicitó al sector comercial, industrial y a las familias colombianas gestionar eficientemente el consumo durante la hora pico, entre las 6:00 de la tarde y las 10:00 de la noche.",
+   "notes": "datePublished = 2026-09-13T12:15:27-05:00. Es prensa: no encontré el comunicado original de XM. La CREG 101 120 dice que, según el IDEAM (julio 2026), El Niño 'alcanzó la categoría moderada'."
+  },
+  {
+   "id": "apagaton-16",
+   "verdict": "confirmado",
+   "claim_final": "Electricity Maps lee las columnas HourNN de XM como la hora que empieza en NN-1. Lo corroboran los datos de XM del 16-sep-2026: la falla de las 8:44 p.m. aparece en Hour21.",
+   "source_url": "https://raw.githubusercontent.com/electricitymaps/electricitymaps-contrib/v1.119.0/parsers/CO.py",
+   "quote": "hour=int(hour_col[-2:]) - 1",
+   "notes": "Además de la convención de Electricity Maps, hay una prueba independiente con el evento de San Mateo (ver new_findings)."
+  },
+  {
+   "id": "apagaton-17",
+   "verdict": "corregido",
+   "claim_final": "UPME (julio 2026): Norte de Santander tiene 534 mil hogares, 913 GWh/año y 1.711 kWh por hogar al año. En el área Nordeste predominan la nevera (42,3%) y el TV (12,7%). Atlántico (30,5%) y Cesar (21,4%) son los departamentos con mayor penetración de aire acondicionado; ese porcentaje es participación de hogares, no peso en el consumo.",
+   "source_url": "https://docs.upme.gov.co/DemandayEficiencia/Documents/Proyecciones_demanda_Energia_Electrica_y_Potencia_Maxima_Rev_Julio_2026_VRF.pdf",
+   "quote": "Nordeste 2.830 Nevera (42,3%), TV LCD/LED (12,7%), Lavadora (1,8%) [...] el área Caribe concentra la mayor penetración de aire acondicionado [...] el aire acondicionado alcanza las mayores participaciones en Atlántico (30,5%) y Cesar (21,4%).",
+   "figures_final": "Tabla 1, Norte de Santander: 1.709 mil habitantes; 534 mil hogares; 913 GWh; 534 kWh/hab; 1.711 kWh/hogar; 3,20 hab/hogar",
+   "notes": "La corrección es solo en la lectura del dato de aire acondicionado (penetración, Gráfica 12)."
+  },
+  {
+   "id": "apagaton-18",
+   "verdict": "confirmado",
+   "claim_final": "La CREG 015/2018 (29-ene-2018, DO 3-feb-2018) remunera la distribución con ingresos anuales aprobados, en un 'esquema de ingreso máximo'. El cargo del nivel 4 es el ingreso mensual de los OR del STR dividido por la demanda del mes m-1.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0015_2018.htm",
+   "quote": "ARTÍCULO 19. [...] la Comisión procederá a aprobar los ingresos anuales de que trata la presente resolución. [...] Tasa de retorno: tasa establecida para la actividad de distribución de energía eléctrica para un esquema de ingreso máximo [...] DTCj,R,m-1: Demanda total de los comercializadores que atienden usuarios en el mercado de comercialización del OR j, perteneciente al STR R, durante el mes m-1.",
+   "figures_final": "CD4 = Σ IM(j,4,R,m,t) + IMC(R,m,t) / Σ DTC(j,R,m-1) (imagen obj_26)",
+   "notes": "Numeral 1.2.1 modificado por la CREG 036/2019. No encontré una metodología nueva que la reemplace en 2026: la CREG prepara una, pero la 015 sigue rigiendo."
+  },
+  {
+   "id": "apagaton-19",
+   "verdict": "corregido",
+   "claim_final": "En los niveles 1 a 3, la CREG 015/2018 calcula el cargo por kWh dividiendo el ingreso aprobado entre la energía de entrada al sistema del OR de los meses m-14 a m-3. Si la energía baja, el cargo sube entre 3 y 14 meses después y el ingreso mensual vuelve al nivel aprobado. No encontré en la norma ninguna regla que devuelva lo dejado de recaudar durante ese rezago. Si la demanda luego se normaliza, el cargo queda alto unos meses y se recauda de más. El denominador es toda la energía que entra a la red (regulados y no regulados), así que el ajuste se diluye y lo pagan todos los usuarios.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0015_2018.htm",
+   "quote": "Imagen obj_30 (numeral 1.2.3): CD2,j,m,t = (IAj,2,m,t + 1/12*Oj,2) / ((1 − Pj,2,t) * 1/12 * Σ_{ma=m−3}^{m−14} Eej,2,ma) + CD3−2,j,m,t. Imagen obj_34 (1.2.4.2): CDA1,j,m,t = IAAOMj,1,t / ((1 − Pj,1,t) * Σ_{ma=m−3}^{m−14} Eej,1,ma) * IPPm−1/IPP0. Texto: \"Eej,2,ma Energía de entrada al sistema del OR j en el nivel de tensión 2, durante el mes ma\"",
+   "figures_final": "Ventana: 12 meses, de m-14 a m-3. Nivel 4: demanda del mes m-1.",
+   "notes": "Fórmula verificada en las imágenes. Busqué 'recaudad', 'diferencia entre ingresos', 'saldo' y 'ajuste' sin hallar un término de reconciliación para los niveles 1-3. Que el ingreso 'se recupera' es solo aproximado."
+  },
+  {
+   "id": "apagaton-20",
+   "verdict": "confirmado",
+   "claim_final": "La CREG 104 de 2019 (2-sep-2019, DO 2-oct-2019) aprobó las variables de ingresos y cargos de distribución de CENS con la metodología de la CREG 015 de 2018.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0104_2019.htm",
+   "quote": "Por la cual se aprueban las variables necesarias para calcular los ingresos y cargos asociados con la actividad de distribución de energía eléctrica para el mercado de comercialización atendido por Centrales Eléctricas del Norte de Santander S. A. E.S.P."
+  },
+  {
+   "id": "apagaton-21",
+   "verdict": "confirmado",
+   "claim_final": "Según la CREG 191/2014, Cv = C* + (CER + CCD + CG)/V(m-1) + CvR, con CvR = ((1-β)·Cf·UR(m-2) + CGCU + PUI)/VR(m-2) y β = 0. El costo base fijo (Cf) se cobra por kWh dividiéndolo por las ventas reguladas de unos 2 meses antes.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0191_2014.htm",
+   "quote": "Imagen obj_3: CvR_i,j,m = ((1−β)×Cf_m,j×UR_i,j,m−2 + CGCU_i,j,m−1 + PUI_j,m)/VR_i,j,m−2. Texto: \"PARÁGRAFO 1o. El valor del término  corresponderá a cero.\"",
+   "notes": "Resolución del 23-dic-2014. Sin el símbolo en el HTML, que β es el término anulado es inferencia, consistente con CUf = $0. El texto describe VR(m-2) como ventas 'en el mes. m – 1': inconsistencia de la norma."
+  },
+  {
+   "id": "apagaton-22",
+   "verdict": "confirmado",
+   "claim_final": "La CREG 180/2014 define el costo base de comercialización como remuneración de costos fijos por usuario y pone un tope de 2,73% al margen operacional. El costo variable C* se calcula sobre G+T+D1+PR1+R (art. 12).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0180_2014.htm",
+   "quote": "Costo base de comercialización: componente de la fórmula tarifaria que remunera los costos fijos [...] que se causan por usuario atendido [...] ARTÍCULO 13. MARGEN OPERACIONAL, MO. El margen operacional de la actividad de comercialización de energía eléctrica a usuarios regulados, mo, será como máximo igual a 2,73%."
+  },
+  {
+   "id": "apagaton-23",
+   "verdict": "corregido",
+   "claim_final": "CU de CENS en enero de 2026 (publicado el 18-ene-2026, nivel 1, propiedad CENS): $888,059/kWh. Componentes: G 298,9047; T 52,9743; DtUN 317,1201 (35,7%); Cv 132,3776 (14,9%); PR 67,3480; R 19,3343. G+T+PR+R suma 49,4%, no 49,5%. El Cv incluye el COT de $47,0962, de modo que el Cv propio de comercialización es $85,2814. Cf = $11.637 y CUf = $0. La subsistencia es de 173 kWh por debajo de 1.000 m de altura.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "quote": "Fecha Publicacion 18 de Enero 2026 [...] CUv 888.0590 [...] Para el mes de Enero el Costo base de comercialización (Cf) es de 11637 [...] Para el mes de Enero el Costo de recuperación de la Opción Tarifaria (COT) es de : NT1 $47.0962 NT2 $34.915 y NT3 $36.4602",
+   "figures_final": "Cv N4 85,2814 + COT: N1 47,0962 = 132,3776; N2 34,915 = 120,1964; N3 36,4602 = 121,7416 (cuadra exacto). Estrato 1 $424,0945; estrato 2 $530,1181; estrato 3 $754,8502; estrato 4 $888,059; estratos 5-6 y comercial $1.065,6708.",
+   "notes": "Tabla verificada en el render de la página 4. El PDF dice además: 'En el cálculo de la tarifa de Enero, incluye un costo de la opción tarifaria (COT)'."
+  },
+  {
+   "id": "apagaton-24",
+   "verdict": "confirmado",
+   "claim_final": "CU de CENS en octubre de 2026 (publicado el 18-oct-2026): $1.018,9488/kWh, 14,74% más que en enero. Componentes: G 397,0896; T 49,6428; DtUN 297,8785; Cv 140,5127 (de los cuales COT N1 44,0139, Cv propio 96,4988); PR 78,0046; R 55,8206.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "quote": "Fecha Publicacion 18 de Octubre 2026 [...] CUv 1018.9488 [...] Para el mes de Octubre el Costo de recuperación de la Opción Tarifaria (COT) es de : NT1 $44.0139 NT2 $23.6907 y NT3 $4.7739",
+   "figures_final": "Pesos en el CU de octubre: G 39,0%, D 29,2%, Cv 13,8%, G+T+PR+R 57,0%. Estrato 1 $448,4089 (subsidio 55,993%); estrato 2 $560,5111 (44,9912%); estrato 3 $866,1065; estratos 5-6 y comercial $1.222,7386; Cf $12.304; CRPUI $0,0323/kWh.",
+   "notes": "El PDF dice que el CU de octubre 'disminuyó en 0.01%' frente a septiembre ($1.019,0308)."
+  },
+  {
+   "id": "apagaton-25",
+   "verdict": "confirmado",
+   "claim_final": "La CREG 101 120 de 2026 (30-jul-2026) creó un programa transitorio, de aplicación automática. Cobra un recargo sobre el consumo que pasa del 110% de la meta (factor 1,30 para estratos 1-3, 1,50 para estratos 4-6 y 1,70 para comercio e industria), valorado contra la tarifa regulada de referencia ya con subsidios o contribuciones. Lo recaudado va a una bolsa como recursos de terceros.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "quote": "El programa es de carácter transitorio, excepcional, autofinanciado y de aplicación automática [...] Tarifa regulada de referencia: tarifa regulada aplicable al usuario en ausencia del presente programa, después de considerar los subsidios o contribuciones que correspondan [...] PARÁGRAFO 1o. Los valores recaudados por concepto del programa deberán ser identificables en la contabilidad y en los sistemas de información comercial del comercializador como recursos de terceros.",
+   "figures_final": "Ahorro reconocido = 90% de la meta − consumo, con tope de 30% de la meta. Recargo = (F·T − T) × exceso, con tope al CRO del estrato 4 (art. 11, parágrafo 3).",
+   "notes": "Art. 20 i): 'El no pago del cobro adicional no dará lugar a la suspensión del servicio'. Art. 4 iv excluye instituciones de salud y emergencias; art. 4 ii excluye usuarios prepago; art. 4, parágrafo 1, la exclusión médica."
+  },
+  {
+   "id": "apagaton-26",
+   "verdict": "confirmado",
+   "claim_final": "CENS informa que el programa empezó el 1-sep-2026 (CREG 101 126), que el primer ciclo fue pedagógico, que la tarifa regular no cambia y que ahorrar no garantiza beneficio.",
+   "source_url": "https://www.cens.com.co/clientes-y-usuarios/resolucion-creg-101-120-2026",
+   "quote": "El programa inicia el 1 de septiembre de 2026, de acuerdo con la fecha resultante de la publicación de la Resolución CREG 101 126 de 2026. [...] No. La tarifa regular no cambia por este programa. [...] ¿Ahorrar energía garantiza que recibiré un beneficio? No.",
+   "notes": "Corrige el resumen: desde el 1-oct-2026 rigen los cobros adicionales, no la resolución."
+  },
+  {
+   "id": "apagaton-27",
+   "verdict": "confirmado",
+   "claim_final": "Según Área Cúcuta (16-oct-2026), 111.196 usuarios de CENS superaron su meta, los cobros adicionales rigen desde el 1-oct y unos 239.000 cumplieron la meta en la etapa informativa.",
+   "source_url": "https://www.areacucuta.com/cens-implementara-sanciones-a-usuarios-por-consumo-excesivo-de-energia-en-cucuta/",
+   "quote": "En la región de Cúcuta y municipios cercanos como Los Patios, Villa del Rosario, Ocaña y Aguachica, 111,196 usuarios han superado la meta de consumo de energía establecida por CENS EPM. [...] Desde el 1 de octubre, los consumos que excedan estos límites serán objeto de cobros adicionales",
+   "notes": "La fecha sale del metadato \"date\":\"2026/10/16\" (confianza media). El medio dice que quienes ahorran 'recibirán beneficios', lo que contradice a CENS ('no garantiza'). Alerta.com.co confirma los 111 mil."
+  },
+  {
+   "id": "apagaton-28",
+   "verdict": "confirmado",
+   "claim_final": "CENS pidió a la CREG ajustar las metas a la temperatura regional y excluir de los cobros adicionales al sector no residencial. En octubre, más de 3.095 usuarios comerciales e industriales recibieron recargos superiores a $200.000.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "El análisis de la compañía arrojó que, en lo corrido de octubre, más de 3.095 usuarios comerciales e industriales han recibido recargos superiores a $200.000 que amenazan la sostenibilidad de las micro, pequeñas y medianas empresas.",
+   "notes": "datePublished = 'Sáb, 31/10/2026 - 04:00'. Carta firmada por José Miguel González Campo. Esto debilita un trino que culpe solo a CENS de los recargos."
+  },
+  {
+   "id": "apagaton-29",
+   "verdict": "confirmado",
+   "claim_final": "Según El Tiempo (23-oct-2026), el reporte de XM del 16-oct muestra una reducción promedio de 3,28 GWh diarios, el 1,2% de la demanda regulada.",
+   "source_url": "https://www.eltiempo.com/economia/sectores/ahorro-de-energia-en-colombia-xm-reporta-3-28-gwh-diarios-en-medio-de-la-alerta-por-fenomeno-de-el-nino-3595902",
+   "quote": "El programa de ahorro voluntario de energía registra una reducción promedio de 3,28 gigavatios-hora (GWh) diarios, equivalente al 1,2 por ciento de la demanda regulada del país, según el reporte de XM publicado el 16 de octubre.",
+   "notes": "datePublished = 2026-10-23T21:10:39-05:00. El Tiempo lo llama 'voluntario', pero la CREG dice 'de aplicación automática'. No usar 'voluntario' en el trino."
+  },
+  {
+   "id": "apagaton-30",
+   "verdict": "confirmado",
+   "claim_final": "El artículo 37 de la Constitución garantiza reunirse y manifestarse pública y pacíficamente.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991_pr001.html",
+   "quote": "ARTICULO 37. Toda parte del pueblo puede reunirse y manifestarse pública y pacíficamente. Sólo la ley podrá establecer de manera expresa los casos en los cuales se podrá limitar el ejercicio de este derecho."
+  },
+  {
+   "id": "apagaton-31",
+   "verdict": "confirmado",
+   "claim_final": "Alterar medidores para apropiarse de energía es defraudación de fluidos (art. 256 del Código Penal): de 16 a 72 meses de prisión.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr009.html",
+   "quote": "El que mediante cualquier mecanismo clandestino o alterando los sistemas de control o aparatos contadores, se apropie de energía eléctrica, agua, gas natural, o señal de telecomunicaciones, en perjuicio ajeno, incurrirá en prisión de dieciséis (16) a setenta y dos (72) meses"
+  },
+  {
+   "id": "apagaton-32",
+   "verdict": "confirmado",
+   "claim_final": "Dañar obras o elementos de producción y conducción de energía es delito (art. 357 del Código Penal): de 32 a 90 meses de prisión.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr014.html",
+   "quote": "El que dañe obras u otros elementos destinados a [...] la producción y conducción de energía o combustible, o a su almacenamiento, incurrirá en prisión de treinta y dos (32) a noventa (90) meses"
+  },
+  {
+   "id": "apagaton-33",
+   "verdict": "confirmado",
+   "claim_final": "Obstruir vías por medios ilícitos es delito (art. 353A del Código Penal); quedan excluidas las movilizaciones con permiso, en el marco del art. 37 de la Constitución.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr014.html",
+   "quote": "PARÁGRAFO. Se excluyen del presente artículo las movilizaciones realizadas con permiso de la autoridad competente en el marco del artículo 37 de la Constitución Política.",
+   "notes": "El art. 353B (Ley 2197 de 2022) agrava la pena, entre otros casos, si se usan máscaras."
+  },
+  {
+   "id": "apagaton-34",
+   "verdict": "confirmado",
+   "claim_final": "Para cortes programados, Enel recomienda tener los electrodomésticos desconectados y no abrir la nevera varias veces.",
+   "source_url": "https://bogota.gov.co/mi-ciudad/habitat/barrios-de-bogota-y-cajica-con-cortes-de-luz-sabado-10-de-octubre-2026",
+   "quote": "Cuide sus electrodomésticos: lo mejor es tenerlos desconectados durante la intervención, así evita posibles daños por las intermitencias del servicio. [...] Conserve sus alimentos: durante el corte de energía, evite abrir la nevera varias veces.",
+   "notes": "datePublished = 2026-10-09. Son recomendaciones de Enel para cortes programados, no de CENS."
+  },
+  {
+   "id": "apagaton-35",
+   "verdict": "confirmado",
+   "claim_final": "El País (Cali, 5-may-2025): encender compresores apenas vuelve la energía, con posibles fluctuaciones, puede sobrecargarlos; recomienda esperar de 5 a 10 minutos.",
+   "source_url": "https://www.elpais.com.co/tecnologia/los-peligros-de-reconectar-de-inmediato-los-electrodomesticos-tras-un-corte-de-luz-0540.html",
+   "quote": "Esperar entre cinco y diez minutos tras el restablecimiento del servicio antes de volver a conectar los dispositivos.",
+   "notes": "Habla de 'expertos' sin nombre y de cortes de la red, no de apagados voluntarios."
+  },
+  {
+   "id": "apagaton-36",
+   "verdict": "confirmado",
+   "claim_final": "India, abril de 2020: el Ministerio de Energía aclaró que solo se apagaran las luces, no neveras, ventiladores ni aires, y que la red tenía protocolos para la variación de demanda. Odisha pidió no cortar el suministro general y reencender de forma progresiva.",
+   "source_url": "https://www.boomlive.in/fact-file/lights-off-candles-on-no-grid-failure-clarifies-power-ministry-7535",
+   "quote": "\"There is no call to switch off either street lights or appliances like Computers, TVs, Fans, Refrigerators and ACs in the homes. Only lights should be switched off.\" [...] \"switch on the lights in their home after 9.09 pm progressively with some time intervals\"",
+   "notes": "datePublished = 2020-04-04. Ojo: el precedente desaconsejó apagar los aires, justo lo contrario del ejemplo de ahorro de 1,2 kW. No se verificó el comunicado primario en PIB."
+  }
+ ],
+ "cautions": [
+  "No hay convocatoria 2026 que respalde el 'adherir': con varias búsquedas extendidas no apareció ningún apagatón en Cúcuta para oct-nov de 2026. Si el trino dice 'nos sumamos al apagatón de Cúcuta', alguien puede preguntar cuál y quién lo convoca. Conviene presentarlo como propuesta ('retomemos el #ApagónCucuteño de 2022, ahora diario') o pedir al usuario el enlace de la convocatoria 2026 antes de publicar. No inventar convocantes ni fecha de inicio.",
+  "El blanco está mal definido: el recargo es de la CREG (Res. 101 120 de 2026), va a una bolsa 'como recursos de terceros' y no es ingreso de CENS. Además CENS radicó ante la CREG (La Opinión, 31-oct-2026) una solicitud para ajustar las metas y excluir al comercio. CENS podría responder 'ya lo pedimos'. Y la condición 'hasta que CENS atienda los reclamos sociales' es vaga: no fija cuándo se termina. Mejor nombrar exigencias concretas y dirigirlas también a la CREG y al MinEnergía.",
+  "No prometer que el apagatón 'le hace perder plata' a CENS. El CU se traslada casi entero (G, T, PR y R pesan 57% en octubre). En distribución, la CREG 015 sube el cargo por kWh entre 3 y 14 meses después y para todos los usuarios, incluidos quienes no participen. Lo que se puede afirmar es presión pública y ahorro en el recibo propio.",
+  "Seguridad física: el 29-oct-2026 el Gobierno ordenó militarizar Cúcuta tras un atentado con explosivos (Infobae, 29-oct; Semana, 31-oct: más de 500 soldados). La franja de 6 a 8 p.m. coincide con el anochecer. Pedir que no se apaguen las luces exteriores ni de seguridad, que no haya reuniones en la oscuridad y que la protesta sea solo dentro de casa. El alumbrado público no es de los hogares.",
+  "Riesgo para la red: tras la falla de San Mateo (16-sep-2026, 8:44 p.m., unos 135.000 usuarios) CENS pidió 'evitar picos de carga' y advirtió 'deslastres de carga'. Que todos los aires vuelvan a encenderse a la misma hora (8:00 p.m.) puede crear justo ese pico. Recomendar reconexión escalonada a lo largo de 10-15 minutos y no bajar el taco general. En India 2020 el gobierno incluso pidió apagar solo las luces, no los aires.",
+  "Calor y salud: El Niño y la propia CENS hablan de 'aumentos considerables y permanentes de las temperaturas' (el 75% de sus usuarios vive cerca del nivel del mar). Apagar el aire o el ventilador 2 horas a diario puede ser peligroso para adultos mayores, bebés y enfermos. Advertir expresamente que no se apaguen equipos médicos, neveras con insulina ni la ventilación de personas vulnerables.",
+  "Ahorro en el trino: los $63.940 usan el CU de enero de 2026. Para noviembre de 2026 corresponde el de octubre ($1.018,9488): con 72 kWh son $73.364/mes. El ejemplo de 1,2 kW de aire NO viene del usuario, es un supuesto, y solo aplica a hogares con aire (el hogar promedio de Norte de Santander consume unos 143 kWh/mes, y 72 kWh es la mitad de eso). Para un hogar sin aire (0,2 kW): 12 kWh, unos $12.227/mes. Hay efecto rebote: el aire trabaja más al reencenderse, y en 2022 la hora siguiente subió por encima de lo normal, así que el ahorro neto es menor.",
+  "Recargo evitado: solo existe si esos kWh estaban por encima del 110% de la meta individual. Ahorrar bajo el 90% no garantiza beneficio, según CENS. No decir 'te pagan por ahorrar'. No llamar 'voluntario' al programa de la CREG: es de aplicación automática.",
+  "Horas: la franja de 6 a 8 p.m. viene de un cálculo propio con la API de XM, que no se puede capturar 'sin edición' de forma amigable. Para capturas usar la página de XM con 'punta dos (18:00 a 21:00)' y El Tiempo (13-sep-2026) con 'entre las 6:00 de la tarde y las 10:00 de la noche'. Los datos son de toda la demanda regulada de CENS (47 municipios, residencial más comercial regulado), no solo residencial de Cúcuta.",
+  "Cifras de 2022 con problemas: Semana habla de una rebaja de '$17 a $20' cuando de $785 a $741-738 hay $44-47. La Opinión dice 'un par de minutos' y Semana '10 minutos'. La caída de unos 12 MWh del 8-nov-2022 es cálculo propio, no atribuible: implicaría un tercio de la carga regulada apagada durante 10 minutos. No presentarla como efecto del apagatón.",
+  "Nombre del gerente: en 2026 La Opinión y Alerta escriben 'José Miguel González Campo'; en 2022 hubo variantes ('González Ocampo'). Usar González Campo.",
+  "La versión diaria e indefinida desgasta la participación. Ninguna fuente documenta la participación ni el efecto del precedente diario de Cartagena (2024). No prometer impacto medible en la demanda de la ciudad.",
+  "Legalidad: apagar el consumo propio no está prohibido en ninguna norma encontrada, pero no hay una cita que diga 'es legal'. Manipular medidores (art. 256), dañar redes (art. 357) o bloquear vías (art. 353A) sí son delitos: el trino debe dejar claro que la protesta es solo apagar en casa."
+ ],
+ "efecto_en_ingresos_final": "Por diseño regulatorio, un apagatón diario de 2 horas afecta poco y de forma temporal los ingresos de CENS. Lo que más pesa es el ahorro de los hogares y la presión pública.\n\n1) Distribución, DtUN: 35,7% del CU en enero de 2026 y 29,2% en octubre.\n- La CREG 015/2018 fija un \"esquema de ingreso máximo\" con ingresos anuales aprobados. Para CENS los aprobó la CREG 104/2019.\n- Niveles 1 a 3: el cargo es el ingreso aprobado dividido por la energía de entrada a la red de los meses m-14 a m-3. Está verificado en las imágenes de las fórmulas de los numerales 1.2.2 a 1.2.4.\n- Nivel 4: el ingreso mensual dividido por la demanda del mes m-1, con ajuste casi inmediato.\n- Si baja la demanda, CENS recauda menos durante el rezago. Después el cargo sube y el ingreso mensual vuelve al nivel aprobado.\n- No encontré en la norma ninguna regla que devuelva lo dejado de recaudar en esos meses. Pero si la demanda se normaliza, el cargo queda alto unos meses y compensa en buena parte.\n- El denominador es toda la energía de la red, incluidos los no regulados. Por eso el alza se reparte entre todos los usuarios. Cálculo propio: con una reducción sostenida de 10% en la franja de 6 a 8 p.m., el cargo de distribución subiría del orden de 0,8% tras 12-15 meses, unos $2/kWh.\n\n2) Comercialización, Cv: $132,38 en enero y $140,51 en octubre.\n- Incluye el COT de recuperación de la opción tarifaria: $47,10 en enero y $44,01 en octubre. Lo comprobé porque Cv N1 − Cv N4 = COT N1, exacto. El Cv propio es $85,28 en enero y $96,50 en octubre.\n- El Cf ($11.637 en enero y $12.304 en octubre por factura, con CUf = 0) se cobra por kWh dividiéndolo por las ventas de m-2 (CREG 191/2014, β = 0). Si bajan las ventas, el Cv sube después.\n- El COT solo retrasa la recuperación de saldos.\n- La única pérdida que no se recupera es la parte variable C*: margen operacional de como máximo 2,73% (CREG 180/2014), más riesgo de cartera y costo financiero, sobre G+T+D1+PR+R.\n\n3) G, T, PR y R suman 49,4% del CU en enero y 57,0% en octubre. CENS los traslada. Su actividad de generación (CNSG) figura como INACTIVO en XM. No analicé el efecto de sus contratos frente a la bolsa: es una simplificación.\n\n4) Escenario ilustrativo, cálculo propio. Una reducción de 10% en la franja de 6 a 8 p.m. son 1.431 MWh/mes, el 0,95% de la demanda regulada mensual.\n- A precios de octubre de 2026: D unos $426 millones (recuperables después); Cv unos $201 millones (COT $63 millones, Cv propio $138 millones, casi todo recuperable); G+T+PR+R unos $831 millones (se trasladan). Total que dejarían de facturar los usuarios: unos $1.458 millones/mes.\n- A precios de enero: D $454 millones, Cv $189 millones, resto $628 millones, total $1.271 millones.\n- Parte del ahorro de estratos 1-3 dentro de la subsistencia es subsidio, no pago directo de los hogares.\n\n5) El recargo de la CREG 101 120 no es ingreso de CENS: se registra 'como recursos de terceros' y alimenta una bolsa para los usuarios que ahorran.\n\nConclusión para el trino: no decir que el apagatón 'le hace perder plata' a CENS. Sí se puede decir que es una protesta simbólica que ahorra dinero a cada hogar y coincide con el llamado de XM a moderar el consumo de 6 a 10 p.m.",
+ "horas_pico_final": "La franja recomendada es de 6:00 a 8:00 p.m. (18:00-20:00), y está verificada.\n\nDatos (API pública de XM, cálculo propio recalculado de forma independiente):\n- Demanda regulada de CENS (DemaRealReg, CNSC), promedio del 1-oct-2025 al 26-oct-2026: Hour19+Hour20 = 477,1 MWh/día, el 9,52% del día.\n- La siguen 7-9 p.m. (474,6 MWh, 9,47%) y 5-7 p.m. (470,4 MWh).\n- Desde el 1-sep-2026 el orden es el mismo: 516,2 contra 513,1 MWh.\n- En días hábiles hay empate con la tarde: 3-5 p.m. 485,9 contra 6-8 p.m. 486,0.\n- En toda la red de CENS el pico de días hábiles es de 2 a 4 p.m., por el comercio y la industria.\n- En el sistema nacional la ventana más alta también es de 6 a 8 p.m., con la hora máxima de 7 a 8 p.m.\n\nQué hora real es cada columna de XM:\n- Electricity Maps lee Hour01 como 00:00-01:00.\n- Lo confirmé con un evento con hora primaria: la falla de San Mateo, a las 8:44 p.m. del 16-sep-2026, aparece en Hour21 (red de CENS 271 MWh frente a ~328 habitual), mientras Hour20 sale normal (323).\n- Por tanto Hour19+Hour20 = 18:00-20:00.\n\nRespaldo citable para capturas:\n- XM: la 'punta dos (18:00 a 21:00)' es 'el de mayor consumo de potencia eléctrica en el país'.\n- El Tiempo, 13-sep-2026: XM pidió a las familias gestionar el consumo 'entre las 6:00 de la tarde y las 10:00 de la noche'.\n\nLímites del dato: es la demanda regulada de los 47 municipios de CENS (residencial más comercial regulado), no una curva solo residencial ni solo de Cúcuta. De 7 a 9 p.m. es una alternativa prácticamente equivalente (-0,5%).",
+ "new_findings": [
+  {
+   "id": "verif-N1",
+   "claim": "La noche del 16-sep-2026 una falla en la subestación San Mateo dejó sin energía a unos 135.000 usuarios del área metropolitana de Cúcuta. CENS quedó operando bajo contingencia y pidió evitar picos de carga; advirtió que, si había sobreconsumo, haría deslastres de carga (cortes programados y rotativos).",
+   "source_url": "https://www.alerta.com.co/servicios/cucuta-135000-usuarios-afectados-por-apagon-masivo-250976",
+   "source_type": "prensa",
+   "confidence": "alta",
+   "quote": "\"El sistema, como ustedes obviamente lo saben, está trabajando bajo contingencia y necesitamos hacer un esfuerzo entre todos para que no tengamos picos de carga\", señaló. [...] Advirtió que, de presentarse sobreconsumo, la empresa se verá obligada a realizar deslastres de carga, es decir, cortes programados y rotativos para proteger el sistema.",
+   "source_outlet": "Alerta (Cúcuta)",
+   "source_title": "Apagón masivo dejó a 135.000 usuarios sin luz en Cúcuta; 1.000 familias siguen afectadas",
+   "source_date": "2026-09-17",
+   "figures": "8:44 p.m.; ~135.000 usuarios; módulo de 34.500 V (La Opinión)",
+   "period": "16-17 sep 2026",
+   "notes": "La Opinión lo corrobora (17-sep-2026): https://laopinion.co/region/cucuta-y-el-area-metropolitana-oscuras-135000-usuarios-afectados-por-falla-electrica. Es relevante para pedir una reconexión escalonada al terminar las 2 horas."
+  },
+  {
+   "id": "verif-N2",
+   "claim": "Confirmación independiente del intervalo de las horas de XM: la falla del 16-sep-2026, que empezó a las 8:44 p.m., aparece en la columna Hour21 mientras Hour20 sale normal. Por tanto HourNN = (NN-1):00 a NN:00, y Hour19+Hour20 = 6:00-8:00 p.m.",
+   "source_url": "https://servapibi.xm.com.co/hourly",
+   "source_type": "primario-operador",
+   "confidence": "alta",
+   "quote": "POST {\"MetricId\":\"DemaOR\",\"Entity\":\"Agente\",\"Filter\":[\"CNSD\"]} 2026-09-16: H19=329, H20=323, H21=271, H22=225, H23=236 MWh (frente a 2026-09-17: H20=333, H21=329, H22=327)",
+   "source_outlet": "XM S.A. E.S.P. (API pública)",
+   "source_title": "Demanda por OR (CNSD) y Demanda Real Regulada (CNSC)",
+   "source_date": "2026-10-31 (fecha de consulta)",
+   "figures": "CNSC 16-sep: H20=263, H21=223, H22=189 (normal ~270)",
+   "notes": "Cálculo propio. Respalda la recomendación de 6 a 8 p.m. mejor que la sola convención de Electricity Maps."
+  },
+  {
+   "id": "verif-N3",
+   "claim": "En las tarifas de CENS el componente Cv incluye el COT (recuperación de la opción tarifaria). Cv N1 = Cv N4 + COT N1, tanto en enero como en octubre de 2026. El Cv propio de comercialización fue de $85,2814 en enero y $96,4988 en octubre.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "source_type": "primario-operador",
+   "confidence": "alta",
+   "quote": "Cv: 132.3776 (1-2,CENS) ... 120.1964 (Nivel 2) 121.7416 (Nivel 3) 85.2814 (Nivel 4) [...] Para el mes de Enero el Costo de recuperación de la Opción Tarifaria (COT) es de : NT1 $47.0962 NT2 $34.915 y NT3 $36.4602",
+   "source_outlet": "CENS (Grupo EPM)",
+   "source_title": "Tarifas de Energía Mercado Regulado, Enero 2026 (pág. 4) y Octubre 2026",
+   "source_date": "2026-01-18",
+   "figures": "Enero: 85,2814 + 47,0962 = 132,3776; + 34,915 = 120,1964; + 36,4602 = 121,7416. Octubre: 96,4988 + 44,0139 = 140,5127; + 23,6907 = 120,1895; + 4,7739 = 101,2727.",
+   "notes": "Deducción aritmética exacta sobre la tabla publicada; CENS no lo dice textualmente. Cierra el gap del COT."
+  },
+  {
+   "id": "verif-N4",
+   "claim": "El presidente ordenó el 29-oct-2026 la militarización inmediata y temporal de Cúcuta tras un atentado con explosivos cerca del puente internacional. El 31-oct llegaron unos 500 soldados.",
+   "source_url": "https://www.infobae.com/colombia/2026/10/29/de-la-espriella-ordeno-la-militarizacion-temporal-de-cucuta-tras-atentado-cerca-de-la-frontera-con-venezuela-se-trata-de-recuperar-el-control/",
+   "source_type": "prensa",
+   "confidence": "alta",
+   "quote": "El presidente de Colombia, Abelardo de la Espriella, ordenó este jueves 29 de octubre de 2026 la militarización inmediata y temporal de Cúcuta, después de que un atentado con explosivos cerca del puente internacional Francisco de Paula Santander dejara ocho personas heridas, entre ellas cuatro uniformados.",
+   "source_outlet": "Infobae",
+   "source_title": "De la Espriella ordenó la militarización temporal de Cúcuta tras atentado cerca de la frontera con Venezuela",
+   "source_date": "2026-10-29",
+   "notes": "Semana, 31-oct-2026: https://www.semana.com/nacion/cucuta/articulo/mas-de-500-soldados-llegaron-para-reforzar-la-seguridad-de-cucuta-y-su-area-metropolitana/202649/ ('la llegada de cerca de 500 soldados'). Es un riesgo de seguridad para una protesta a oscuras."
+  },
+  {
+   "id": "verif-N5",
+   "claim": "Fuente primaria del mensaje de CENS tras el apagatón de 2022: trino de @CENSGrupoEPM fechado el 9-nov-2022 (UTC).",
+   "source_url": "https://twitter.com/CENSGrupoEPM/status/1590472437053140994",
+   "source_type": "primario-operador",
+   "confidence": "alta",
+   "quote": "Desde CENS estamos siempre dispuestos a conversar con autoridades, líderes, gremios, comerciantes y usuarios para avanzar en soluciones conjuntas.",
+   "source_outlet": "CENS | Grupo EPM (X/Twitter)",
+   "source_date": "2022-11-09",
+   "notes": "Embebido en Semana del 10-nov-2022. No abrí el trino directamente; podría pedir inicio de sesión."
+  },
+  {
+   "id": "verif-N6",
+   "claim": "CENS advirtió a la CREG que el 75% de sus usuarios vive cerca del nivel del mar, donde El Niño eleva de forma considerable y permanente las temperaturas. Es un riesgo de salud si se apagan aires o ventiladores a diario.",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "source_type": "prensa",
+   "confidence": "alta",
+   "quote": "En su comunicación, CENS advirtió que el 75% de sus usuarios se ubica en municipios cercanos a la altura del nivel del mar, donde los efectos del fenómeno de El Niño se traducen en aumentos considerables y permanentes de las temperaturas.",
+   "source_outlet": "La Opinión (Cúcuta)",
+   "source_date": "2026-10-31"
+  },
+  {
+   "id": "verif-N7",
+   "claim": "Ahorro recalculado con el CU vigente de octubre de 2026 ($1.018,9488), el que corresponde a un trino de noviembre: un aire de 1,2 kW apagado 2 h/día durante 30 días son 72 kWh = $73.364,31/mes.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "source_type": "primario-operador",
+   "confidence": "alta",
+   "quote": "Fecha Publicacion 18 de Octubre 2026 [...] CUv 1018.9488 [...] 5 1222.7386 [...] 1 448.4089 [...] 2 560.5111 [...] 3 866.1065",
+   "source_outlet": "CENS (Grupo EPM)",
+   "source_date": "2026-10-18",
+   "figures": "Estrato 4 o estratos 1-3 por encima de la subsistencia: $73.364,31. Estratos 5-6 y comercial: $88.037,18. Solo dentro de la subsistencia: estrato 1 $32.285,44; estrato 2 $40.356,80; estrato 3 $62.359,67. Si había recargo de la CREG 101 120: estratos 1-3 $95.373,61 (recargo evitado $22.009,29); estrato 4 $110.046,47 (recargo $36.682,16); estratos 5-6 $132.055,77. Hogar sin aire, 0,2 kW: 12 kWh = $12.227,39.",
+   "period": "octubre 2026",
+   "notes": "Cálculo propio. Los 1,2 kW son un supuesto. No incluye el efecto rebote."
+  }
+ ]
+}

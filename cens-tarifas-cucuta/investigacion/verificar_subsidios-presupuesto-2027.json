@@ -1,0 +1,440 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL – FRENTE SUBSIDIOS Y PRESUPUESTO 2027 (corte: 31-oct-2026)\n\nRevisé de nuevo los 31 hallazgos:\n- 23 confirmados.\n- 7 corregidos: 01, 07, 09, 13, 22, 29 y 31.\n- Ninguno refutado. Las cifras de CENS, de la ley y del FSSRI se sostienen.\n- Fuentes reabiertas: El Colombiano, La Silla Vacía, El Heraldo, La República, El Tiempo, Infobae, Valora, Portafolio, La Opinión, la página FSSRI de Minenergía, las tarifas de CENS (descargadas otra vez) e informes y notas de CENS.\n- Novedad: conseguí el texto oficial del Decreto 1599 de 2026 (PDF de 76 páginas que enlaza Portafolio).\n\nCORRECCIONES DE FONDO\n\n1) El '40% corriente / 37% constante' está invertido en El Colombiano. La Silla Vacía, fuente original, escribe '40% teniendo en cuenta la inflación'. Su nota metodológica dice que las cifras de la nota están en pesos constantes de 2026. Con inflación positiva, la caída real siempre es mayor que la nominal. Lo correcto es decir 'cerca de 40%' (22 a 13 = -40,9%). En energía el recorte es de unas tres cuartas partes; el DNP habla de 77% desfinanciado.\n\n2) Los $3 billones no se perdieron por decisión del Gobierno. Lo dicen la parte considerativa del decreto (sus 'considerandos') y el artículo 59 del Estatuto Orgánico del Presupuesto (en concordancia con el art. 348 de la Constitución). Si el Congreso no expide el presupuesto antes del 20 de octubre, rige el proyecto del Gobierno con lo aprobado en primer debate. El decreto no podía incluir lo que se añadió en plenarias.\n- Los $3 billones venían en la ponencia de segundo debate, 'avalada por el Gobierno'.\n- El viceministro de Hacienda Betancur dijo que el Ejecutivo pidió subir la apropiación de 2027 de $2,8 a $5,8 billones.\n- La responsabilidad del Gobierno De la Espriella está en dos puntos:\n  (a) su proyecto, radicado de nuevo el 27-ago después de que las comisiones devolvieran el de Petro el 11-ago, asignó solo $1,434 de $6,008 billones;\n  (b) solo él puede proponer una adición, y al 25-oct no la había anunciado.\n- El proyecto de Petro también se quedaba corto en subsidios (Asocodis, 11-ago).\n\n3) El art. 51 del decreto, que pasa a la vigencia siguiente los saldos de subsidios, es una cláusula que se repite cada año. Es casi idéntica al art. 54 de la Ley 2342 de 2023 (presupuesto de 2024). No es un 'patear la deuda' nuevo. El art. 52 (remanentes de FAZNI, FAER y PRONE, ya fusionados en FONENERGÍA) queda confirmado con el texto primario, pero el decreto no da montos.\n\n4) Los $1,5 billones de agosto no son del todo adicionales. Según el viceministro (16-17 de octubre), solo se giraron $300.000 M. Los otros $1,2 billones dependen del traslado del PL 401, que saca $450.000 M de la partida de subsidios de energía de 2026. Hacienda también dice que a noviembre habrá girado $4,2 billones en subsidios de 2026.\n\n5) La suma de los giros del FSSRI al SIN en 2026 (hasta el 21-ago) es de unos $2,89 billones, no $2,91 billones. De eso, unos $1,39 billones son saldos de 2025.\n\n6) Se resuelve la inconsistencia de $5,65 billones frente a $7,51 billones. El Ministerio de Minas y Energía (sección 2101 del decreto) suma $5.654.314.736.218; los $7,51 billones son el sector completo. El decreto no separa la línea del FSSRI: el programa 2102 (energía eléctrica, que incluye subsidios) suma $3,747 billones.\n\n7) Sobre la base de comparación de las tarifas:\n- Enero de 2026 fue un punto bajo del CU. En febrero de 2025 el CU estaba en $1.055,58, más alto que hoy, y los subsidios ya estaban en sus topes de 60% y 50%.\n- Comparando octubre con octubre, el CU subió 12,1% y la tarifa del estrato 1 subió 6,3%.\n- Con las tarifas de octubre, el estrato 1 y el 2 llegarían a su tope de subsidio con un CU de unos $1.121/kWh (+10%). Desde ahí ya no hay protección por IPC, aunque la Nación pague.\n\n8) Comparar la utilidad con el déficit de subsidios engaña. El subsidio no es un gasto ni un ingreso de CENS: es una cuenta por cobrar a la Nación. En 2025 la Nación giró $200.293 M, más que el déficit del año ($183.515 M).\n\nPARA LO QUE PIDIÓ EL USUARIO (ganancias):\n- Este frente no sirve para justificar ni para negar las 'ganancias exageradas'. El subsidio pasa por CENS sin ser ingreso suyo: no explica la utilidad de $123.146 M ni la reduce.\n- Lo que sí deja por fuera el trino defensor:\n  - CENS no es 'solo distribuidor'. Sus propias notas del 2T-2026 dicen que está autorizada para 'transmisión, distribución y comercialización'.\n  - Aplica el descuento, recauda la contribución del 20% y le cobra a la Nación.\n- El riesgo real para el usuario en 2027 tiene tres frentes: la desfinanciación (cerca de 76%), el vencimiento de la prórroga el 30-jun-2027 (aunque el PND 2026-2030 está pendiente y todos los PND anteriores la prorrogaron) y lo cerca que están los topes de subsidio.",
+ "verified": [
+  {
+   "id": "subsidios-presupuesto-2027-01",
+   "verdict": "corregido",
+   "claim_final": "La nota de El Colombiano enlazada por @soynegrojohn es del 24-sep-2026 y no tiene autor individual. Replica un análisis de La Silla Vacía (Pablo Manrique, 23-sep-2026) sobre los libros de regionalización del DNP. Diez subsidios pasan de unos $22 billones (2026) a $13 billones (2027): -$9 billones, cerca de un 40%. El PGN 2027 cubre el 32% de lo solicitado para subsidios (109% en 2026). La etiqueta de El Colombiano ('40% en términos corrientes y 37% en pesos constantes') es incoherente: con inflación positiva, la caída real tiene que ser mayor que la nominal. La Silla atribuye el 40% al efecto 'teniendo en cuenta la inflación' y aclara que las cifras de la nota están en pesos constantes de 2026. El 40% es el agregado de diez subsidios, no el de energía. La nota no menciona estratos 1, 2 y 3 ni el FSSRI.",
+   "figures_final": "22 -> 13 = -40,9%; ~40% real según La Silla (37% sería el nominal, aunque La Silla lo redacta de forma confusa); cubre el 32% de lo solicitado (109% en 2026)",
+   "source_url": "https://www.elcolombiano.com/negocios/presupuesto-2027-recorte-subsidios-pobres-programas-afectados-AH41461908",
+   "second_source_url": "https://www.lasillavacia.com/silla-nacional/presupuesto-de-abelardo-pide-cortar-subsidios-a-los-pobres-en-40/",
+   "quote": "La Silla: 'Pierden $9 billones: un 40% teniendo en cuenta la inflación y 37% en pesos constantes' ... 'en la nota van en pesos constantes de 2026'. El Colombiano: 'La caída equivale a 40% en términos corrientes y 37% en pesos constantes'.",
+   "notes": "En el hilo, decir 'cerca de 40%' sin aclarar si es corriente o constante. La nota sí advierte que la distribución departamental es 'preliminar e indicativa' y que 'la distribución de las partidas todavía está en discusión'."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-02",
+   "verdict": "confirmado",
+   "claim_final": "Según La Silla Vacía (23-sep) y El Colombiano (24-sep), el subsidio de menores tarifas de energía es el que más cae: de $6 billones en 2026 a 'poco más de $1 billón' en 2027, unas tres cuartas partes. La Silla lo define como 'lo que el gobierno pone para subsidiar la factura de los estratos bajos cuando la sobretasa a los estratos altos no alcanza'.",
+   "figures_final": "$6 bn -> 'poco más de $1 bn' (pesos constantes de 2026, según la metodología de La Silla); La Silla 5-oct: 'pierde más de tres cuartas partes'",
+   "source_url": "https://www.lasillavacia.com/silla-nacional/presupuesto-de-abelardo-pide-cortar-subsidios-a-los-pobres-en-40/",
+   "second_source_url": "https://www.elcolombiano.com/negocios/presupuesto-2027-recorte-subsidios-pobres-programas-afectados-AH41461908",
+   "quote": "El que más cae es el subsidio de menores tarifas de energía ... Baja de $6 billones a poco más de $1 billón: pierde tres cuartas partes.",
+   "notes": "La cifra viene del libro de regionalización del DNP. La diferencia con los $1,434 bn de Minminas puede deberse a que La Silla usa pesos constantes; no está resuelta."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-03",
+   "verdict": "confirmado",
+   "claim_final": "El martes 8-sep-2026, ante las comisiones económicas conjuntas, la ministra de Minas María Nohemí Arboleda dijo que los subsidios eléctricos de 2027 requieren unos $6,008 billones y que el proyecto asigna $1,434 billones: déficit de unos $4,574 billones. También señaló faltantes de unos $1,39 bn en gas y $103.469 M en GLP (necesidad $153.959 M, asignado $50.490 M). Sobre 2026 dijo que 'la cobertura total del pago de esos subsidios está garantizada'. Aclaró que las cifras son 'aproximadas'.",
+   "figures_final": "Requerido $6,008 bn; asignado $1,434 bn; déficit $4,574 bn; cobertura 23,87% (cálculo)",
+   "source_url": "https://www.elheraldo.co/atlantico/2026/09/08/minminas-advierte-un-deficit-de-457-billones-para-pagar-subsidios-de-energia-en-2027/",
+   "second_source_url": "https://www.larepublica.co/economia/minminas-aseguro-que-tiene-6-billones-de-deficit-para-subsidios-del-sector-electrico-4477026",
+   "quote": "Para los subsidios eléctricos de 2027 tenemos un déficit de casi $4,5 billones. La idea es seguir ajustándolo con Hacienda, pero sí queremos dejar aquí que eso no tiene financiación en este momento",
+   "notes": "El proyecto al que se refiere es el que Hacienda de De la Espriella radicó de nuevo el 27-ago-2026 (ver new_findings), no el de Petro del 29-jul."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-04",
+   "verdict": "confirmado",
+   "claim_final": "La Silla Vacía (5-oct-2026) informa que, según cálculos del DNP, la desfinanciación de los subsidios de energía en 2027 es del 77%, 'la más alta de la historia'; el descalce normal es de cerca del 10%. La misma nota recoge que, según expertos, el recorte 'no necesariamente terminará siendo pagado por los usuarios más pobres' y que a quien más afecta es a las comercializadoras.",
+   "figures_final": "77% desfinanciado; descalce histórico ~10%",
+   "source_url": "https://www.lasillavacia.com/silla-nacional/empresas-de-luz-asumen-en-silencio-recorte-de-subsidios-de-energia-de-abelardo/",
+   "quote": "en este caso la desfinanciación es del 77%, la más alta de la historia según lo que calcula el Departamento Nacional de Planeación",
+   "notes": "Cita de Sandra Fonseca: 'Aunque las empresas no están obligadas a aplicar los subsidios y pueden subir las tarifas, usualmente no lo hacen porque implica perder demanda'. Tomás González (CREE): 'Es una obligación salvo que se haga una reforma de ley'. No se consultó el documento del DNP."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-05",
+   "verdict": "confirmado",
+   "claim_final": "El Congreso aprobó el PGN 2027 ($634,9 billones) en la madrugada del martes 20-oct-2026. El texto incluía $3 billones adicionales para subsidios de electricidad y gas (gas por red, GLP y transporte de combustibles en frontera): Minminas pasaba de $7,5 a $10,51 billones. La adición venía en la ponencia para segundo debate, avalada por el Gobierno (La República, 15-oct).",
+   "figures_final": "Minminas $7,5 -> $10,51 bn (+$3 bn, energía y gas juntos, sin desglose)",
+   "source_url": "https://www.elcolombiano.com/negocios/presupuesto-general-de-la-nacion-2027-HF42476166",
+   "second_source_url": "https://www.larepublica.co/economia/minas-y-energia-recibiria-3-billones-para-los-subsidios-de-energia-y-gas-4503129",
+   "quote": "El sector de Minas y Energía recibirá $3 billones adicionales para financiar subsidios de electricidad y gas ... el presupuesto de ese ministerio pasará de $7,5 billones a $10,51 billones",
+   "notes": "El viceministro Betancur (Valora, 16-oct) dijo que el Ejecutivo pidió subir la apropiación de 2027 'de $2,8 billones a $5,8 billones tras la solicitud de $3 billones adicionales'. Es decir, el Gobierno respaldaba la adición."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-06",
+   "verdict": "confirmado",
+   "claim_final": "Senado (19-oct) y Cámara (20-oct) aprobaron textos distintos, con la diferencia en el art. 65, y no los conciliaron a tiempo. Por eso el Gobierno expidió el PGN 2027 por el Decreto 1599 del 22-oct-2026, con base en el art. 59 del Estatuto Orgánico del Presupuesto y el art. 348 de la Constitución. Esas normas obligan a que rija el proyecto del Gobierno con las modificaciones de primer debate. El sector Minas y Energía queda en $7,51 billones y los $3 billones de subsidios de energía y gas quedan por fuera. Los $5,65 bn que cita El Tiempo corresponden a la entidad Ministerio de Minas y Energía (sección 2101: $5.654.314.736.218), no al sector.",
+   "figures_final": "Total $634.952.040.871.099; sector Minas $7,51 bn (aprobado $10,51 bn); sección 2101 Minminas $5,654 bn; programa 2102 'Consolidación productiva del sector de energía eléctrica' $3,747 bn",
+   "source_url": "https://www.portafolio.co/files/2026/10/22/DECRETO-No.-1599-DEL-22-DE-OCTUBRE-DE-2026_compressed.pdf",
+   "second_source_url": "https://www.eltiempo.com/economia/sectores/que-dicen-salud-y-educacion-sobre-recuperar-lo-que-el-congreso-les-asigno-en-el-presupuesto-pero-el-decreto-dejo-por-fuera-3595916",
+   "quote": "Considerandos del decreto: 'el Congreso de la Republica no realizo la comision accidental referida en el articulo 186 de la Ley 5 de 1992, antes del plazo maximo ... razon por la cual, no fue posible expedir la ley'",
+   "notes": "Matiz clave: el decreto no podía incluir las adiciones de las plenarias, así que dejar por fuera los $3 bn fue un efecto legal del trámite fallido, no una elección discrecional. Lo que sí depende solo del Gobierno es proponer una adición. Al 25-oct no había respondido a El Tiempo, y el comunicado de Hacienda no mencionaba una modificación."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-07",
+   "verdict": "corregido",
+   "claim_final": "Texto primario del Decreto 1599:\n- Art. 52: los subsidios de energía y gas 'se podrán financiar con los recursos remanentes que resulten a 31 de diciembre de 2026' de FAZNI, FAER y PRONE (energía) y de la Cuota de Fomento de Gas, 'fusionados en el Fondo Único de Soluciones Energéticas - FONENERGÍA'. No da montos.\n- Art. 51: los saldos de subsidios al 31-dic-2027 'se atenderán con cargo a las apropiaciones de la vigencia fiscal siguiente'. Es una cláusula que aparece cada año en las leyes de presupuesto (casi idéntica al art. 54 de la Ley 2342 de 2023, presupuesto de 2024). No es una decisión nueva de 'patear la deuda' a 2028, aunque con la subapropiación de 2027 su efecto práctico sí será mayor.",
+   "figures_final": "Montos de los remanentes: no informados",
+   "source_url": "https://www.portafolio.co/files/2026/10/22/DECRETO-No.-1599-DEL-22-DE-OCTUBRE-DE-2026_compressed.pdf",
+   "second_source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2342_2023_pr001.html",
+   "quote": "ARTICULO 51o. Los pagos por menores tarifas del sector electrico y de gas que se causen durante la vigencia de la presente ley, podran ser girados ... Los saldos que a 31 de diciembre de 2027 se generen por este concepto se atenderan con cargo a las apropiaciones de la vigencia fiscal siguiente. En todo caso, los subsidios se disminuiran en la medida en que el Gobierno nacional implemente las fuentes alternativas de energia y gas sostenible y sustentable.",
+   "notes": "El art. 58 (FOES) dice que los prestadores 'no podrán constituir pasivos a cargo de la Nación' por diferencias del FOES. No aplica al subsidio general de estratos 1 a 3."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-08",
+   "verdict": "confirmado",
+   "claim_final": "El 27-oct-2026, en las comisiones económicas conjuntas, la ministra Arboleda dijo que los subsidios 'no se van a dejar de reconocer' y que el Gobierno va 'muy bien' en el pago. El Heraldo parafrasea que la priorización de recursos implica aplazar parte de las obligaciones, en un contexto que se refiere sobre todo al sector térmico y al Caribe.",
+   "figures_final": "Sin montos",
+   "source_url": "https://www.elheraldo.co/colombia/2026/10/27/minminas-asegura-que-el-gobierno-seguira-pagando-los-subsidios-de-energia/",
+   "quote": "Aclaro que los subsidios no se van a dejar de reconocer, los subsidios se van a pagar. De hecho, si ustedes consultan, vamos muy bien en ese pago de los subsidios y la idea es seguir cumpliendo con esas obligaciones",
+   "notes": "No aclara con qué recursos se cubrirá el faltante de 2027."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-09",
+   "verdict": "corregido",
+   "claim_final": "El 24-ago-2026, Hacienda y Minminas anunciaron $1,5 billones para el sector, para la deuda corriente con generadores térmicos. Infobae lo presentó como 'adicional' a los subsidios de estratos 1 a 3. El viceministro técnico de Hacienda, Juan Sebastián Betancur, precisó el 16-oct que solo $300.000 M se desembolsaron (septiembre). Los $1,2 billones restantes dependen del proyecto de traslado presupuestal, que toma $450.000 M de la apropiación de subsidios de energía de Minminas. Por eso solo una parte del paquete es plata nueva al margen de los subsidios.",
+   "figures_final": "$1,5 bn = $300.000 M girados + $1,2 bn pendientes del PL de traslado ($750.000 M de Hacienda + $450.000 M de la partida de subsidios de Minminas)",
+   "source_url": "https://www.infobae.com/colombia/2026/08/24/de-la-espriella-destino-una-millonada-para-evitar-un-apagon-en-la-region-caribe-es-adicional-a-los-subsidios-para-los-estratos-1-2-y-3/",
+   "second_source_url": "https://es-us.noticias.yahoo.com/gobierno-completar%C3%A1-giro-4-billones-193000164.html",
+   "quote": "De este monto extraordinario, $300.000 millones fueron desembolsados en septiembre, mientras que los restantes $1,2 billones dependen de la aprobación del proyecto de ley 280 de traslado presupuestal (Valora vía Yahoo, 16-oct-2026)",
+   "notes": "Valora lo llama 'proyecto de ley 280'; Infobae y El Heraldo lo llaman PL 401. Puede tratarse de numeraciones distintas en cada cámara; no se verificó."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-10",
+   "verdict": "confirmado",
+   "claim_final": "El viernes 25-sep-2026 el Gobierno radicó con mensaje de urgencia el PL 401, que traslada $1,2 billones del PGN 2026 a la Superservicios (Fondo Empresarial) para pagar a acreedores de Air-e. Son $750.000 M de una partida de transporte público de Hacienda y $450.000 M del programa 'consolidación productiva del sector de energía eléctrica' de Minminas, liberados de la apropiación de subsidios. Minminas dice que no afectará los subsidios de estratos 1 a 3 en 2026 porque el gasto del primer semestre fue menor al presupuestado.",
+   "figures_final": "$1,2 bn = $750.000 M + $450.000 M; no aumenta el total del PGN 2026",
+   "source_url": "https://www.infobae.com/colombia/2026/09/30/gobierno-radico-proyecto-de-ley-por-12-billones-para-afrontar-la-crisis-energetica-del-caribe-en-que-consiste/",
+   "second_source_url": "https://www.elheraldo.co/atlantico/2026/09/29/proyecto-de-ley-busca-trasladar-12-billones-del-presupuesto-general-2026-para-pagar-deuda-de-air-e/",
+   "quote": "Este último monto se liberaría de la apropiación destinada al pago de subsidios de energía, teniendo en cuenta el comportamiento de las tarifas y la proyección de los recursos necesarios para lo que resta del año (El Heraldo)",
+   "notes": "Al 26-oct seguía en trámite (La República). No hay confirmación de que se haya aprobado."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-11",
+   "verdict": "confirmado",
+   "claim_final": "La República (8-sep-2026) informó, citando a la ministra, que la apropiación total de Minminas en 2026 es de $9,61 billones: $180.669 M de funcionamiento y $9,43 bn de inversión. Hacienda bloqueó $261.000 M y quedan $2,8 billones por comprometer que, si se desbloquean, servirían para subsidios eléctricos y de gas. El titular de '$6 billones de déficit' suma los faltantes de 2027: electricidad $4,5 bn, gas $1,39 bn, GLP $103.469 M y compensación de Nariño $30.012 M.",
+   "figures_final": "Apropiación 2026 $9,61 bn; bloqueo $261.000 M; por comprometer $2,8 bn; los $10,1 bn corresponden a la inversión del sector",
+   "source_url": "https://www.larepublica.co/economia/minminas-aseguro-que-tiene-6-billones-de-deficit-para-subsidios-del-sector-electrico-4477026",
+   "quote": "Estamos revisando los subsidios porque estamos frente a un fenómeno de El Niño, en el que las empresas están en un nivel de estrés muy grande. Se debe tener un presupuesto. Tenemos un déficit de $4,5 billones.",
+   "notes": "El titular de '$6 billones' mezcla energía, gas, GLP y Nariño. No usarlo como 'déficit eléctrico'."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-12",
+   "verdict": "confirmado",
+   "claim_final": "La memoria justificativa de Minenergía del 28-feb-2025 dice que en 2024 se otorgaron $7 billones en subsidios y se recaudaron $3 billones en contribuciones: déficit anual de $4 billones. Para 2025 se necesitaban unos $4,6 billones y se apropiaron $3,1 billones (ZNI + SIN), con un déficit proyectado de $1,96 billones en el FSSRI-SIN. El documento reconoce que la demora en el giro afecta la liquidez de los prestadores. Corresponde al proyecto de decreto del 'Programa Colombia Solar', no a un decreto del FSSRI.",
+   "figures_final": "2024: subsidios $7 bn, contribuciones $3 bn, déficit $4 bn; 2025: necesidad $4,6 bn, apropiación $3,1 bn (ZNI+SIN), déficit SIN $1,96 bn (la resta 4,6-3,1 da 1,5; el documento mezcla bases)",
+   "source_url": "https://www.minenergia.gov.co/documents/13281/2025-02-28_-_Memoria_Justificativa_Decreto.pdf",
+   "quote": "La demora en el giro de dichos montos tiene repercusión sobre los prestadores del servicio público domiciliario de energía eléctrica afectando su liquidez.",
+   "notes": "Dato útil: en 2024 las contribuciones cubrieron cerca del 43% de los subsidios eléctricos del país. El faltante de la Nación no equivale a quitar todo el subsidio."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-13",
+   "verdict": "corregido",
+   "claim_final": "La página FSSRI de Minenergía lista los giros al SIN en 2026:\n- 17-feb-2026, saldos de 2025: Res. 00169 ($113.952.297.355, 1T-2025), 00178 ($570.432.806.203, 2T-2025) y 00185 ($611.126.270.536, 3T-2025).\n- Marzo: Res. 00233 (Electrohuila, $89.234.307.703) y 00293 (Putumayo, $7.380.947.769), también saldos de 2025.\n- Últimos giros al SIN listados, del 21-ago-2026: Res. 01586 ($185.975.469.907, primer pago 3T-2026) y Res. 01587 ($166.911.328.829, tercer pago 2T-2026).\nTotal de las resoluciones SIN con monto en 2026: ≈ $2,89 billones, no $2,91 bn. De eso, ≈ $1,39 bn son saldos de 2025.",
+   "figures_final": "Total SIN 2026 con monto: $2.892.331.214.548; saldos de 2025: $1.392.126.629.566 (más una parte de la Res. 00633); la Res. 00462 no trae monto",
+   "source_url": "https://www.minenergia.gov.co/es/misional/energia-electrica-2/subsidios/fondo-de-solidaridad-para-subsidios-y-redistribuci%C3%B3n-de-ingresos-fssri/",
+   "quote": "Mediante la Resolución 01586 del 21 de agosto de 2026, se ordena distribuir la suma de ... ($185.975.469.907) ... correspondientes al primer pago al Tercer trimestre de 2026",
+   "notes": "Los pagos de 2026 van casi al día por trimestre (1T y 2T con tres pagos; 3T ya con uno), lo que respalda el 'vamos muy bien' de Minminas. No hay giros SIN listados después del 21-ago; la página puede estar desactualizada. No se sabe cuánto recibió CENS."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-14",
+   "verdict": "confirmado",
+   "claim_final": "En entrevista con Valora Analitik (11-ago-2026), José Camilo Manzur, entonces presidente de Asocodis, cifró la deuda con comercializadores y distribuidores a julio de 2026 en $7,9 billones: $1 bn de subsidios, $1,8 bn de opción tarifaria, $1,5 bn de usuarios oficiales y $3,6 bn de Air-e. Calculó las necesidades de subsidios de 2027 en $4,1 billones. Dijo que el proyecto presentado 'por el anterior gobierno' era 'deficitario en materia de subsidio'.",
+   "figures_final": "Total $7,9 bn; subsidios $1 bn; necesidad 2027 $4,1 bn",
+   "source_url": "https://www.valoraanalitik.com/entrevista-deuda-a-comercializadores-y-distribuidores-de-energia-en-colombia-ascendio-a-79-billones/",
+   "quote": "los recursos que se apropiaron en 2027, en el proyecto de ley que fue presentado a consideración del Congreso por el anterior gobierno, no alcanzarían, casi que alcanzarían solamente para cubrir el déficit de 2026, de manera que 2027 está prácticamente desfinanciado",
+   "notes": "Es una cifra del gremio, no auditada. Manzur renunció después a Asocodis para entrar a la junta de Ecopetrol por designación del Gobierno De la Espriella (La Silla, 5-oct)."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-15",
+   "verdict": "confirmado",
+   "claim_final": "Nueve gremios (Acolgen, ACP, Agremgas, Andeg, Andesco, Asocodis, Gasnova, Naturgas y SER Colombia) advirtieron en carta al Gobierno Petro (Portafolio, 10-sep-2025) que la falta de apropiación podría reflejarse en 'incrementos significativos' en las facturas de los estratos 1 a 3. Al 31-ago-2025 había $2,2 billones en subsidios eléctricos otorgados y no pagados, y un déficit sin apropiar a dic-2025 de ~$2,7 billones. El proyecto de PGN 2026 proponía $5,4 bn para electricidad.",
+   "figures_final": "Otorgados y no pagados $2,2 bn (31-ago-2025); déficit proyectado $2,7 bn (dic-2025); PGN 2026 proyecto: $5,4 bn electricidad",
+   "source_url": "https://www.portafolio.co/energia/gremios-energeticos-advierten-alza-de-tarifas-en-estratos-1-2-y-3-por-deficit-de-subsidios-639612",
+   "quote": "podría verse reflejado en algunas empresas en incrementos significativos en las facturas de los usuarios de los estratos 1, 2 y 3, no por incremento en la tarifa, sino por la falta de apropiación de recursos que debe cubrir la Nación",
+   "notes": "Muestra que la desfinanciación también ocurrió con Petro."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-16",
+   "verdict": "confirmado",
+   "claim_final": "En su Informe de Sostenibilidad 2024, CENS reporta que la cuenta por cobrar de subsidios creció $88.732 M por un déficit acumulado de enero a diciembre de $212.035 M y contribuciones no recaudadas por $388 M, frente a giros de la Nación por $123.691 M. Las notas a los EEFF 2024 atribuyen el aumento ($88.731 M) 'a causa del no pago por parte del Ministerio de Minas desde el mes de agosto'.",
+   "figures_final": "212.035 - 123.691 + 388 = 88.732 (verificado)",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Informe%20de%20Sostenibilidad%20CENS%202024_Full%20versi%C3%B3n.pdf",
+   "quote": "Subsidios de servicio de energía con incremento de COP$ 88,732 millones, por el déficit acumulado de enero a diciembre que asciende a COP$ 212,035 millones y contribuciones no recaudadas mayores a seis meses por COP$ 388 millones; adicionalmente, los giros, recibidos de la nación en lo corrido del año son de COP$ 123,691 millones.",
+   "notes": "La cita de las notas 2024 está en la nota de deudores (p. ~41 del PDF local de finanzas). Ocurrió con el Gobierno Petro."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-17",
+   "verdict": "confirmado",
+   "claim_final": "En 2025 CENS recibió giros de la Nación por $200.293 M y su cuenta por cobrar de subsidios bajó $16.064 M. Reportó un déficit acumulado del año de $183.515 M y $714 M de contribuciones no recaudadas con más de seis meses.",
+   "figures_final": "183.515 - 200.293 + 714 = -16.064 (verificado)",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "generado por la recepción de giros de la Nación por un valor de COP$ 200,293 millones. Sin embargo, es importante destacar que persiste un déficit acumulado en lo corrido del año que asciende a COP$ 183,515 millones",
+   "notes": "En 2025 la Nación giró más de lo que se generó de déficit ese año: pagó atrasos."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-18",
+   "verdict": "confirmado",
+   "claim_final": "Notas trimestrales de CENS (no auditadas):\n- 1T-2026: la cuenta por cobrar de subsidios bajó $1.214 M.\n- 2T-2026 (junio frente a marzo de 2026, según las columnas del estado de situación financiera): bajó $107.057 M 'debido a que el Ministerio de Minas ha asignado recursos'.\n- Entradas de caja por 'aportes, contribuciones y subsidios': $44.915 M en el 1T y $155.856 M en el 2T.",
+   "figures_final": "1T -$1.214 M; 2T -$107.057 M; caja $44.915 M (1T) y $155.856 M (2T); efectivo 128.591 -> 256.465",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "quote": "Subsidios servicio disminuye en $107,057 debido a que el Ministerio de Minas ha asignado recursos para cubrir estos valores en el trimestre.",
+   "notes": "El saldo no se publica; las notas anuales lo agregan dentro de 'Deudores servicios públicos'."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-19",
+   "verdict": "confirmado",
+   "claim_final": "En el mensaje del gerente del Informe de Sostenibilidad 2024, José Miguel González Campo atribuye dificultades financieras de 'diferentes electrificadoras' a la deuda por opción tarifaria y al retraso de la Nación en pagar los subsidios de estratos 1 a 3, y dice que 'Esto ha generado riesgos de liquidez'.",
+   "figures_final": "Utilidad neta 2024: $117.543 M (mismo informe, según el frente de finanzas)",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2024/Informe%20de%20Sostenibilidad%20CENS%202024_Full%20versi%C3%B3n.pdf",
+   "quote": "dificultades financieras para diferentes electrificadoras derivadas de la deuda acumulada por la opción tarifaria y por el retraso en el pago por parte de la Nación de los subsidios entregados a los estratos 1, 2 y 3. Esto ha generado riesgos de liquidez",
+   "notes": "Habla del sector, no afirma que CENS en particular haya tenido riesgo de liquidez. No atribuírselo a CENS."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-20",
+   "verdict": "confirmado",
+   "claim_final": "Según su Informe de Sostenibilidad 2025, al cierre de 2025 CENS atendía 643.741 clientes. Residenciales: 594.244 (E1 212.264, E2 262.085, E3 84.964, E4 28.234, E5 5.413 y E6 1.284). Los estratos 1 a 3 suman 559.313: el 94,1% de los residenciales y el 86,9% del total.",
+   "figures_final": "E1-3 = 559.313; E1+E2 = 474.349 (79,8%); comerciales 37.830; industriales 1.852; oficiales y otros 9.815; urbanos 549.913, rurales 93.828",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "Total clientes 643.741 ... 212.264 estrato 1 ... 262.085 estrato 2 ... 84.964 estrato 3",
+   "notes": "Las sumas cuadran: residenciales 594.244; total 643.741."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-21",
+   "verdict": "confirmado",
+   "claim_final": "Tarifa de CENS de enero de 2026 (PDF descargado de nuevo): CU $888,059/kWh. Estrato 1 $424,0945 (subsidio 52,2448%), estrato 2 $530,1181 (40,306%), estrato 3 $754,8502 (15%). Incluye un COT de nivel 1 de $47,0962. Subsistencia: 173 kWh por debajo de 1.000 msnm y 130 kWh desde 1.000 msnm. Contribución del 20% para estratos 5 y 6, comercio e industria.",
+   "figures_final": "888,059 x (1-0,522448) = 424,094 (verificado)",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202601_.pdf",
+   "quote": "CENS sigue dando aplicación a la regulación buscando mitigar los crecimientos de la tarifa sin poner en riesgo la sostenibilidad financiera de la empresa.",
+   "notes": ""
+  },
+  {
+   "id": "subsidios-presupuesto-2027-22",
+   "verdict": "corregido",
+   "claim_final": "Tarifa de CENS de octubre de 2026: CU $1.018,9488/kWh. Estrato 1 $448,4089 (subsidio 55,993%), estrato 2 $560,5111 (44,9912%), estrato 3 $866,1065 (15%); COT $44,0139. Entre enero y octubre de 2026 el CU subió 14,74% y la tarifa de E1 y E2 subió 5,73% (E3: 14,74%).\nEnero de 2026 fue un punto bajo del CU:\n- De octubre de 2025 a octubre de 2026, el CU subió 12,07% y la tarifa E1 6,28%.\n- En febrero de 2025 el CU estaba en $1.055,5792, más alto que hoy, con subsidios en los topes legales de 60% y 50%.",
+   "figures_final": "CU ene-26 888,059 -> oct-26 1.018,9488 (+14,74%); oct-25 909,1769 -> oct-26 (+12,07%); E1 oct-25 421,8943 -> oct-26 448,4089 (+6,28%); feb-25 CU 1.055,5792 con E1 60% y E2 50%",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2026/Tarifas_CENS_202610_.pdf",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202502.pdf",
+   "quote": "El Costo Unitario (CU) del mes de Octubre disminuyó en 0.01% equivalente a $0.082 en comparación con el mes de Septiembre",
+   "notes": "Sí se confirma que el subsidio amortiguó el alza de E1 y E2 en 2026. Pero elegir enero como base exagera el alza; usar la comparación interanual. Ver new_findings sobre el margen hasta el tope de 60%/50%."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-23",
+   "verdict": "confirmado",
+   "claim_final": "La Ley 1428 de 2010 (art. 1, que modifica el art. 3 de la Ley 1117 de 2006) limita el alza mensual de la tarifa de los estratos 1 y 2, en su consumo de subsistencia, a la variación del IPC. El subsidio no puede superar el 60% del costo en el estrato 1 ni el 50% en el estrato 2.",
+   "figures_final": "Topes 60% (E1) y 50% (E2); alza tope IPC",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1428_2010.html",
+   "quote": "el incremento tarifario a estos usuarios en relación con sus consumos básicos o de subsistencia corresponda en cada mes como máximo a la variación del Índice de Precios al Consumidor; sin embargo, en ningún caso el porcentaje del subsidio será superior al 60% del costo de la prestación del servicio para el estrato 1 y al 50% de este para el estrato 2.",
+   "notes": "Se mantiene por las prórrogas de las leyes 1739/2014, 1753/2015, 1955/2019 y 2294/2023."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-24",
+   "verdict": "confirmado",
+   "claim_final": "La Ley 2294 de 2023 (PND 2022-2026), art. 272, prorroga los subsidios de energía y gas del art. 3 de la Ley 1117 de 2006 'como máximo, hasta el 30 de junio de 2027'. Su parágrafo 1 ordena cruzar estrato con información socioeconómica para focalizar.",
+   "figures_final": "Vencimiento: 30-jun-2027",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2294_2023_pr007.html",
+   "quote": "se prorrogan como máximo, hasta el 30 de junio de 2027.",
+   "notes": "No volví a verificar el Concepto 028 de 2026 de la Superservicios. El Gobierno anunció que el PND 2026-2030 viene después de la Ley de Rescate (La República, 26-oct). Todos los PND desde 2014 han prorrogado este régimen."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-25",
+   "verdict": "confirmado",
+   "claim_final": "La Ley 142 de 1994, art. 99.3, ordena que el subsidio se reparta 'como un descuento en el valor de la factura'. El numeral 99.6 lo limita al 15% del costo medio para el estrato 3, 40% para el 2 y 50% para el 1. Son los topes de referencia si vence el régimen especial.",
+   "figures_final": "Topes 50% / 40% / 15%",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr002.html",
+   "quote": "En ningún caso el subsidio será superior al 15% del costo medio del suministro para el estrato 3, al 40% del costo medio del suministro para el estrato 2, ni superior al 50% de éste para el estrato 1.",
+   "notes": "Sin régimen especial también desaparece el tope de alza por IPC. La presentación del FSSRI de Minminas muestra las dos escalas."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-26",
+   "verdict": "confirmado",
+   "claim_final": "La Ley 1430 de 2010, art. 42, obliga al Gobierno a apropiar cada año en el PGN 'los recursos presupuestales necesarios en su totalidad' para pagar de forma oportuna y en primer orden los subsidios eléctricos de los estratos 1 a 3, y dice que 'En ningún caso se podrán disminuir la apropiación'.",
+   "figures_final": "2027: $1,434 bn apropiados de $6,008 bn requeridos (Minminas)",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1430_2010.html",
+   "quote": "El Gobierno Nacional apropiará en el PGN anualmente los recursos presupuestales necesarios en su totalidad para pagar en forma oportuna y en primer orden los subsidios de los estratos 1, 2 y 3 para los usuarios de energía eléctrica. En ningún caso se podrán disminuir la apropiación de los recursos destinados a cubrir estos subsidios.",
+   "notes": "Texto confirmado. La lectura de que la apropiación de 2027 es ilegal no está probada: no hay fallo, y la obligación sobrevive como deuda (art. 51 del decreto). La subapropiación también ocurrió en 2025 y 2026."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-27",
+   "verdict": "confirmado",
+   "claim_final": "Según la presentación del FSSRI de Minenergía, el MME gestiona ante Hacienda los recursos del PGN para pagar los subsidios de los estratos 1 a 3 'a través de la facturación de las Empresas Prestadoras'. La empresa aplica el subsidio y gira las contribuciones del 20% de estratos 5 y 6, comercio e industria. El estrato 4 'no recibe subsidios ni contribuye'. La subsistencia es de 173 kWh/mes por debajo de 1.000 msnm.",
+   "figures_final": "Ejemplo oficial: factura de $60.000 con subsidio del 60%: subsidio $36.000, paga $24.000",
+   "source_url": "https://www.minenergia.gov.co/documents/11670/ANEXO_1_Presentaci%C3%B3n_FSSRI_SIN_-_Ciudadan%C3%ADa.pdf",
+   "quote": "El MME realiza la gestión para garantizar los recursos del Presupuesto General de Nación ante el Ministerio de Hacienda para pagar los subsidios a los usuarios de Estratos 1, 2 y 3 a través de la facturación de las Empresas Prestadoras",
+   "notes": ""
+  },
+  {
+   "id": "subsidios-presupuesto-2027-28",
+   "verdict": "confirmado",
+   "claim_final": "La Opinión (Leonardo Favio Oliveros, martes 29-sep-2026) informó que la inversión nacional regionalizada para Norte de Santander bajaría de $2,55 billones (2026) a $2,35 billones (2027 preliminar): -$200.673 M (-7,9%, frente a -4,8% nacional). El consultor Mario Zambrano estima una pérdida de $333.030 M en cuatro subsidios (energía, transferencias, vivienda y gas), sin separar el de energía.",
+   "figures_final": "-$200.673 M (-7,9%); cuatro subsidios -$333.030 M; los subsidios pesan el 19,5% de la inversión departamental (15,3% en el país)",
+   "source_url": "https://laopinion.co/economia/norte-de-santander-recibiria-200673-millones-menos-en-inversion-nacional-en-2027",
+   "quote": "La pérdida corresponde a una estimación que construí con base en los subsidios de 2026, utilizando referencias nacionales y de otros departamentos.",
+   "notes": "Es una estimación del consultor sobre un libro preliminar."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-29",
+   "verdict": "corregido",
+   "claim_final": "La utilidad neta de CENS en 2025 fue de $123.146 M (Informe de Sostenibilidad 2025), la cifra que cita @fredyparada90 ('$123 mil millones'). Compararla con el déficit de subsidios de 2025 ($183.515 M) engaña. El subsidio no es un gasto ni un ingreso en el estado de resultados de CENS: es una cuenta por cobrar a la Nación. En 2025 la Nación giró $200.293 M, más que el déficit del año, y la cuenta por cobrar bajó. El subsidio no explica la utilidad ni la reduce.",
+   "figures_final": "Utilidad 2025 $123.146 M; EBITDA $361.222 M; déficit de subsidios 2025 $183.515 M; giros 2025 $200.293 M",
+   "source_url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
+   "quote": "Utilidad neta COP$ millones 123,146",
+   "notes": "El ángulo de 'para ser justos' debe ser 'el subsidio no es ganancia de CENS ni la explica', no 'el déficit fue mayor que la utilidad'. La rentabilidad y su razonabilidad las cubre el frente de finanzas."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-30",
+   "verdict": "confirmado",
+   "claim_final": "En la hoja de ruta que el Grupo Energía Bogotá entregó a De la Espriella (Portafolio, 23-jul-2026), se cita al DNP: los errores de inclusión de los subsidios de energía y gas rondarían $3,4 billones al año, y más de la mitad de los hogares de estratos 1 a 3 los recibirían sin cumplir los criterios de focalización.",
+   "figures_final": "$3,4 bn al año",
+   "source_url": "https://www.portafolio.co/energia/grupo-energia-bogota-entrega-a-de-la-espriella-una-hoja-de-ruta-con-diez-acciones-urgentes-ante-fenomeno-de-el-nino-498808",
+   "quote": "el Departamento Nacional de Planeación ha identificado errores de inclusión que representarían alrededor de $3,4 billones anuales y que más de la mitad de los hogares clasificados en los estratos 1, 2 y 3 recibirían subsidios sin cumplir los criterios de focalización",
+   "notes": "El estudio del DNP no se consultó. En la misma línea, Luis Fernando Mejía (La Silla, 5-oct) dice que los subsidios de servicios públicos 'en un 80 por ciento se destinan a hogares que no son pobres'."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-31",
+   "verdict": "corregido",
+   "claim_final": "El Gobierno radicó la Ley de Rescate Fiscal el jueves 29-oct-2026: 106 artículos, cinco pilares, recorte de unos $45 billones (2,2% del PIB) según El Colombiano; Valora habla de $43 bn. En IVA, la energía, el agua y el gas siguen excluidos (Portafolio). La exclusión del internet se quitaría a los estratos 1, 2 y 3, según El Colombiano, no solo a 1 y 2. En lo revisado no hay cambios a los subsidios eléctricos. El número 'PL 477/2026' no se pudo verificar.",
+   "figures_final": "106 artículos; $45 bn (El Colombiano) / $43 bn (Valora)",
+   "source_url": "https://www.elcolombiano.com/negocios/ley-rescate-gobierno-de-la-espriella-recorte-gasto-publico-2027-GK42959708",
+   "second_source_url": "https://www.portafolio.co/economia/gobierno-de-la-espriella-radico-la-ley-de-rescate-fiscal-estos-son-los-puntos-clave-505387",
+   "quote": "Se quedan papa, yuca, pan, arepa, panela, agua, gas y energía (Portafolio, citando a un experto)",
+   "notes": "El titular de El Colombiano cambió y ahora dice '$45 billones'. No se revisó el articulado de gasto."
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "subsidios-presupuesto-2027-N01",
+   "claim": "El Decreto 1599 de 2026 cuenta el trámite del PGN 2027:\n- El Gobierno Petro radicó el proyecto el 29-jul-2026 por $575.699.169.518.981.\n- El 11-ago las comisiones económicas lo devolvieron a Hacienda por no ajustarse al Estatuto Orgánico.\n- Hacienda (ya con De la Espriella) lo radicó de nuevo el 27-ago por $634.952.040.871.099.\n- Como Senado y Cámara no conciliaron, rige por el art. 59 del Estatuto Orgánico del Presupuesto y el art. 348 de la Constitución: el proyecto del Gobierno con las modificaciones de primer debate.\nPor eso los $1,434 bn de subsidios eléctricos son del proyecto De la Espriella, y la pérdida de los $3 bn de plenarias es un efecto legal, no una elección del decreto.",
+   "source_url": "https://www.portafolio.co/files/2026/10/22/DECRETO-No.-1599-DEL-22-DE-OCTUBRE-DE-2026_compressed.pdf",
+   "source_type": "primario-gobierno",
+   "confidence": "alta",
+   "figures": "$575,7 bn (Petro, 29-jul) -> devuelto 11-ago -> $634,95 bn (27-ago); decreto del 22-oct-2026",
+   "period": "jul-oct 2026",
+   "quote": "Que el articulo 59 del Estatuto Organico del Presupuesto, en concordancia con el articulo 348 de la Constitucion Politica, dispone: 'Si el Congreso no expidiere el Presupuesto General de la Nacion antes de la media noche del 20 de octubre del ano respectivo, regira el proyecto presentado por el gobierno, incluyendo las modificaciones que hayan sido aprobadas en el primer debate'.",
+   "source_date": "2026-10-22",
+   "source_outlet": "Ministerio de Hacienda – Decreto 1599 de 2026 (PDF publicado por Portafolio)",
+   "source_title": "Decreto 1599 de 2026, por medio del cual se decreta el presupuesto de rentas y recursos de capital y el presupuesto de gastos para la vigencia fiscal 2027",
+   "notes": "Se confirmó el art. 59 del Estatuto Orgánico del Presupuesto (Decreto 111/1996) en secretariasenado.gov.co (decreto_0111_1996_pr001)."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N02",
+   "claim": "En el Decreto 1599, la sección 2101 (Ministerio de Minas y Energía) suma $5.654.314.736.218: funcionamiento $389.672 M, deuda $3.460 M e inversión $5,261 bn. Eso explica los '$5,65 bn' de El Tiempo; los $7,51 bn son el sector. El programa 2102 'Consolidación productiva del sector de energía eléctrica', donde están los subsidios entre otros rubros, tiene $3.747.164.577.127. El programa 2101 de gas combustible tiene $1.278.833.354.004. La línea exacta del FSSRI-SIN no aparece en el decreto.",
+   "source_url": "https://www.portafolio.co/files/2026/10/22/DECRETO-No.-1599-DEL-22-DE-OCTUBRE-DE-2026_compressed.pdf",
+   "source_type": "primario-gobierno",
+   "confidence": "alta",
+   "figures": "Sección 2101 $5,654 bn; programa 2102 $3,747 bn; programa 2101 (gas) $1,279 bn",
+   "period": "PGN 2027",
+   "quote": "SECCION: 2101 MINISTERIO DE MINAS Y ENERGIA ... C. PRESUPUESTO DE INVERSION 5.261.183.020.762 ... CONSOLIDACION PRODUCTIVA DEL SECTOR DE ENERGIA ELECTRICA 3.747.164.577.127",
+   "source_date": "2026-10-22",
+   "source_outlet": "Decreto 1599 de 2026",
+   "source_title": "Decreto 1599 de 2026 – anexo de gastos, sección 2101",
+   "notes": "Suma calculada por el verificador."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N03",
+   "claim": "El viceministro técnico de Hacienda, Juan Sebastián Betancur, informó ante la Comisión Primera del Senado:\n- A noviembre de 2026 el Gobierno habrá girado $4,2 billones para los subsidios de consumo de energía de 2026.\n- Del paquete de liquidez de $1,5 billones, solo se giraron $300.000 M en septiembre; los $1,2 billones restantes dependen del proyecto de traslado.\n- El Ejecutivo pidió subir la apropiación del sector energético para 2027 de $2,8 a $5,8 billones con los $3 billones adicionales.",
+   "source_url": "https://es-us.noticias.yahoo.com/gobierno-completar%C3%A1-giro-4-billones-193000164.html",
+   "source_type": "prensa",
+   "confidence": "media",
+   "figures": "$4,2 bn en subsidios 2026; $300.000 M girados del paquete de $1,5 bn; 2027: $2,8 bn -> $5,8 bn solicitado",
+   "period": "2026-2027",
+   "quote": "el Ejecutivo solicitó un incremento en la apropiación del sector energético para 2027 de $2,8 billones a $5,8 billones tras la solicitud de $3 billones adicionales presentada al Congreso",
+   "source_date": "2026-10-16",
+   "source_outlet": "Valora Analitik (vía Yahoo Noticias); coincide IFM Noticias (17-oct-2026)",
+   "source_title": "Gobierno completará giro de más de $4 billones a noviembre para subsidios de energía; pide celeridad en proyecto clave",
+   "notes": "Segunda fuente: https://ifmnoticias.com/gobierno/hacienda-asegura-que-a-noviembre-habra-girado-4-2-billones-para-subsidios-de-ene/. Es lo que dice el Gobierno; no está auditado."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N04",
+   "claim": "La adición de $3 billones para subsidios de energía y gas venía en la ponencia para segundo debate del PGN 2027, presentada el 13-oct. El decreto la describe como 'ponencia mayoritaria avalada por el Gobierno nacional'. Con ella el sector Minas y Energía pasaba de $7,5 a $10,51 billones.",
+   "source_url": "https://www.larepublica.co/economia/minas-y-energia-recibiria-3-billones-para-los-subsidios-de-energia-y-gas-4503129",
+   "source_type": "prensa",
+   "confidence": "alta",
+   "figures": "+$3 bn; $7,5 -> $10,51 bn",
+   "period": "oct-2026",
+   "quote": "El documento también propone adicionar $3 billones al sector de Minas y Energía para financiar subsidios a las tarifas de energía eléctrica, gas por redes y GLP",
+   "source_date": "2026-10-15",
+   "source_outlet": "La República",
+   "source_title": "Minas y Energía recibiría $3 billones para los subsidios de energía y gas en el PGN de 2027",
+   "notes": "Los considerandos del Decreto 1599 confirman que la ponencia de segundo debate estaba 'avalada por el Gobierno nacional' (Gaceta 1521 del 14-oct-2026)."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N05",
+   "claim": "Margen de los topes de subsidio en CENS (cálculo con fuentes primarias):\n- En febrero de 2025 el CU de CENS ($1.055,5792) ya llevó los subsidios a sus topes legales: 60% en E1 y 50% en E2.\n- Con las tarifas de octubre de 2026 (E1 $448,41 y E2 $560,51), los topes se alcanzarían con un CU de unos $1.121/kWh, +10% sobre octubre.\n- Por encima de ese CU, la tarifa de E1 y E2 ya no estaría protegida por el tope IPC y subiría al ritmo del CU, aunque la Nación pague todo el subsidio.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Tarifas-de-energia/T2025/Tarifa_CENS_202502.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "figures": "Feb-2025: CU 1.055,5792; subsidios 60%/50%/15%; E1 422,2317. Umbral: 448,4089/0,40 = 560,5111/0,50 ≈ 1.121,02 $/kWh",
+   "period": "2025-2026",
+   "quote": "Subsidio de 60.0000% / Subsidio de 50.0000% / Subsidio de 15.0000% (tarifa de febrero de 2025)",
+   "source_date": "2025-02",
+   "source_outlet": "CENS – publicación de tarifas",
+   "source_title": "Tarifas de Energía Mercado Regulado – Febrero 2025",
+   "notes": "El umbral es un cálculo del verificador, suponiendo la tarifa E1 y E2 de octubre fija. En la práctica, el tope IPC deja que la tarifa suba algo cada mes."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N06",
+   "claim": "En la nota de La Silla Vacía del 5-oct-2026, expertos dicen que el recorte de subsidios 'no necesariamente terminará siendo pagado por los usuarios más pobres'. Afectaría más a las comercializadoras, cuyas cajas 'no aguantan de forma indefinida'. Luis Fernando Mejía (Lumen, ex-Fedesarrollo) sostiene que los subsidios de servicios públicos 'en un 80 por ciento se destinan a hogares que no son pobres'. La nota también informa que Manzur dejó Asocodis para entrar a la junta de Ecopetrol por nombramiento del Gobierno.",
+   "source_url": "https://www.lasillavacia.com/silla-nacional/empresas-de-luz-asumen-en-silencio-recorte-de-subsidios-de-energia-de-abelardo/",
+   "source_type": "prensa",
+   "confidence": "media",
+   "figures": "80% de los subsidios de servicios públicos a hogares no pobres (Mejía)",
+   "period": "2026-2027",
+   "quote": "Pero el recorte drástico no necesariamente terminará siendo pagado por los usuarios más pobres, según expertos consultados por La Silla. A quienes sí puede afectar más es a las empresas comercializadoras de luz",
+   "source_date": "2026-10-05",
+   "source_outlet": "La Silla Vacía (Camilo Andrés Garzón y Pablo Manrique)",
+   "source_title": "Empresas asumen en silencio recorte de subsidios de energía de Abelardo",
+   "notes": "Sirve para ser justos: el riesgo directo para el usuario es discutido."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N07",
+   "claim": "En sus notas a los EEFF del 2T-2026, CENS se describe como una empresa autorizada para prestar 'transmisión, distribución y comercialización' de energía eléctrica, además de telecomunicaciones. Su propio texto contradice el 'CENS solo es un distribuidor' de @Andresbautistam.",
+   "source_url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/NOTAS%20A%20LOS%20EEFF%20SEGUNDO%20TRIM%202026.pdf",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "figures": "EPM tiene el 91,52% de CENS",
+   "period": "2T-2026",
+   "quote": "CENS está autorizada para prestar el servicio público domiciliario de energía eléctrica y sus actividades complementarias de transmisión, distribución y comercialización",
+   "source_date": "2026",
+   "source_outlet": "CENS – Notas a los EEFF del segundo trimestre de 2026",
+   "source_title": "Notas a los estados financieros, segundo trimestre 2026 (Nota 1, Entidad reportante)",
+   "notes": ""
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N08",
+   "claim": "El art. 51 del Decreto 1599, que pasa a la vigencia siguiente los saldos de subsidios, es casi idéntico al art. 54 de la Ley 2342 de 2023 (presupuesto de 2024). Es una cláusula que se repite cada año, no una medida nueva del Gobierno De la Espriella. El texto de 2027 agrega: 'En todo caso, los subsidios se disminuirán en la medida en que el Gobierno nacional implemente las fuentes alternativas de energía y gas sostenible y sustentable'.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2342_2023_pr001.html",
+   "source_type": "otro",
+   "confidence": "alta",
+   "figures": "",
+   "period": "2024 vs 2027",
+   "quote": "ARTÍCULO 54. Los pagos por menores tarifas del sector eléctrico y de gas que se causen durante la vigencia de la presente ley, podrán ser girados por el Ministerio de Minas y Energía ... Los saldos que a 31 de diciembre de 2024 se generen por este concepto se atenderán con cargo a las apropiaciones de la vigencia fiscal siguiente.",
+   "source_date": "2023-12-15",
+   "source_outlet": "Secretaría del Senado – Ley 2342 de 2023",
+   "source_title": "Ley 2342 de 2023 (PGN 2024), artículo 54",
+   "notes": "No verifiqué en qué año apareció por primera vez la frase de las 'fuentes alternativas'."
+  },
+  {
+   "id": "subsidios-presupuesto-2027-N09",
+   "claim": "Del traslado de $1,2 billones del PL 401, los $450.000 M de Minminas salen del programa 'consolidación productiva del sector de energía eléctrica' y 'se liberaría[n] de la apropiación destinada al pago de subsidios de energía'. Según el proyecto, en el primer semestre de 2026 el gasto en subsidios fue menor al presupuestado. Plata presupuestada para subsidios de 2026 se reorienta a pagar deudas de Air-e con generadores.",
+   "source_url": "https://www.elheraldo.co/atlantico/2026/09/29/proyecto-de-ley-busca-trasladar-12-billones-del-presupuesto-general-2026-para-pagar-deuda-de-air-e/",
+   "source_type": "prensa",
+   "confidence": "media",
+   "figures": "$450.000 M de la apropiación de subsidios 2026",
+   "period": "2026",
+   "quote": "Este último monto se liberaría de la apropiación destinada al pago de subsidios de energía, teniendo en cuenta el comportamiento de las tarifas y la proyección de los recursos necesarios para lo que resta del año.",
+   "source_date": "2026-09-29",
+   "source_outlet": "El Heraldo; coincide Vozcaribe",
+   "source_title": "Ministerio de Hacienda radica proyecto de ley que busca trasladar $1,2 billones del presupuesto actual para pagar deuda de Air-e",
+   "notes": "Vozcaribe: 'porque el gasto ejecutado en el primer semestre fue menor al presupuestado'. Al 26-oct seguía en trámite."
+  }
+ ],
+ "cautions": [
+  "No escribir que 'el Gobierno De la Espriella dejó por fuera los $3 billones' como si fuera una decisión. El Decreto 1599 estaba obligado por el art. 59 del Estatuto Orgánico del Presupuesto y el art. 348 de la Constitución a adoptar el texto de primer debate. El Gobierno había avalado la ponencia con los $3 bn y su viceministro pidió subir de $2,8 a $5,8 bn. Lo que sí se le puede atribuir: su propio proyecto del 27-ago asignó solo $1,434 de $6,008 bn, y solo él puede proponer una adición, que al 25-oct no había anunciado.",
+  "Atribución justa: la desfinanciación no empezó con De la Espriella. Asocodis calificó de 'deficitario' el proyecto de Petro del 29-jul. En 2024 el Ministerio no le pagó subsidios a CENS desde agosto (Gobierno Petro). En 2025 se apropiaron $3,1 de $4,6 bn. Lo nuevo en 2027 es la magnitud: 77% desfinanciado según el DNP.",
+  "El '40%' de El Colombiano es el agregado de diez subsidios y sus etiquetas están invertidas: dice '40% corrientes y 37% constantes', lo que es aritméticamente imposible con inflación positiva. Decir 'cerca de 40%' sin precisar. Para energía usar 'unas tres cuartas partes' o '77% desfinanciado (DNP)'.",
+  "'El presupuesto quitó los subsidios a estratos 1, 2 y 3' es falso como afirmación legal. Hoy CENS aplica 56% al E1, 45% al E2 y 15% al E3, y Hacienda dice que a noviembre habrá girado $4,2 bn en subsidios de 2026. Lo correcto es hablar de desfinanciación para 2027. Expertos citados por La Silla dicen que el golpe puede caer más sobre las empresas que sobre el usuario.",
+  "Las tablas de escenarios no deben publicarse como pronóstico. El escenario A (-40%) usa la cifra equivocada para energía. El escenario C (subsidio reducido al 23,87%) lo exagera: el 23,87% es la parte del faltante de la Nación que queda financiada, no del subsidio total. Las contribuciones del 20% (estratos 5 y 6, comercio, industria) siguen entrando y en 2024 cubrieron cerca del 43% de los subsidios del país. Además, las empresas 'usualmente no' dejan de aplicar el descuento.",
+  "Vencimiento del 30-jun-2027 (Ley 2294, art. 272): presentarlo como riesgo, no como hecho. El PND 2026-2030 está pendiente y cada PND (2014, 2015, 2019, 2023) prorrogó el régimen de 60/50 y el tope IPC. El escenario B (topes de la Ley 142) es hipotético.",
+  "El art. 51 del decreto (saldos a la vigencia siguiente) se repite en todas las leyes de presupuesto, por ejemplo en el art. 54 de la Ley 2342/2023. No presentarlo como una maniobra nueva para 'patear la deuda a 2028'.",
+  "Ángulo jurídico de la Ley 1430, art. 42: no afirmar que el PGN 2027 es 'ilegal'. No hay fallo, y la obligación de pagar sobrevive como deuda de la Nación. Formular como tensión con la norma.",
+  "Ganancias, que es el pedido del usuario: no comparar la utilidad de CENS ($123.146 M) con su déficit de subsidios ($183.515 M) como si se restaran. El subsidio no es gasto ni ingreso de CENS: es una cuenta por cobrar. En 2025 la Nación giró $200.293 M y en el 2T-2026 la cuenta bajó $107.057 M. Si el hilo critica las 'ganancias exageradas', debe sostenerlo con el frente de finanzas (rentabilidad, dividendos a EPM). Este frente solo muestra que el subsidio no explica ni justifica esa utilidad.",
+  "La cita del gerente sobre 'riesgos de liquidez' habla de 'diferentes electrificadoras' (el sector). No atribuirle a CENS un riesgo de liquidez propio. CENS no publica el saldo que le debe la Nación: no inventar una cifra.",
+  "Base de comparación: el alza de 14,74% del CU entre enero y octubre de 2026 parte de un mes bajo. CENS podría responder que el CU de octubre de 2026 ($1.018,95) está por debajo del de febrero de 2025 ($1.055,58). La comparación interanual es más sólida: CU +12,1%, tarifa E1 +6,3%.",
+  "Riesgo real y poco visto: los subsidios de E1 y E2 ya están en 56% y 45%, cerca de los topes de 60% y 50%. Si el CU pasa de unos $1.121/kWh (+10%, plausible con El Niño), la tarifa de E1 y E2 dejaría de estar protegida por el IPC, aunque la Nación pague todo.",
+  "'CENS solo es un distribuidor' es falso según las propias notas de CENS: transmisión, distribución y comercialización. Pero también es cierto que CENS no fija ni financia el subsidio. El hilo debe decir las dos cosas.",
+  "Fuentes con interés propio: las cifras de Asocodis y de los gremios no están auditadas. Manzur pasó a la junta de Ecopetrol por designación del Gobierno, y La Silla habla de un 'voto de confianza' de los gremios al Gobierno. La carta del GEB, empresa del Distrito, es incidencia. Los $4,2 bn y el 'vamos muy bien' son afirmaciones del Gobierno.",
+  "Numeración de proyectos no confirmada: el traslado de $1,2 bn aparece como PL 401 (Infobae, El Heraldo) y como PL 280 (Valora). La Ley de Rescate como 'PL 477/2026' no se verificó. Citar por nombre, no por número.",
+  "Las cifras para 2027 no coinciden entre fuentes: Minminas da $1,434 bn asignados y $6,008 bn requeridos; La Silla y el DNP, 'poco más de $1 bn' en pesos constantes; Asocodis, una necesidad de $4,1 bn. Atribuir siempre cada cifra a su fuente."
+ ]
+}

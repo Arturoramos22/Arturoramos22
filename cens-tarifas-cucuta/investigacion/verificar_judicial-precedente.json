@@ -1,0 +1,455 @@
+{
+ "summary": "VERIFICACIÓN ADVERSARIAL, FRENTE JUDICIAL-PRECEDENTE (corte 31-oct-2026). Volví a abrir las 30 fuentes y los 3 bill_cases, casi todos en fuente primaria con curl y pdftotext (relatorías de la Corte, Gestor Normativo CREG, PDFs de CENS, Rama Judicial, Consejo de Estado y Senado). Las copias están en /tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/cens/verif-judicial/.\n\nRESULTADO: 22 confirmados, 7 corregidos, 1 no-verificable, 0 refutados. Ninguna sentencia, radicado ni cita resultó inventada; todas las citas textuales aparecen tal cual.\n\nCORRECCIONES CLAVE:\n(a) T-191/08: el amparo fue TRANSITORIO. Dejó sin efectos las resoluciones solo \"hasta que la justicia ordinaria decida\" y dio 4 meses para demandar. El actor era una empresa (Plásticas JR Industrias).\n(b) Art. 155 y C-558/01: para recurrir, el usuario debe acreditar el pago de lo no discutido \"o del promedio del consumo de los últimos cinco períodos\". Solo queda exento si discute precisamente ese promedio.\n(c) Concepto 2236/2016: el radicado de la sentencia de 2007 es 25000-23-24-000-2003-00456-01. Según el concepto, la falta de lectura imputable a la empresa es falta de medición y se pierde el precio (art. 146); la nota original lo invertía.\n(d) SU-1010/08: la prohibición de intereses de mora recae sobre \"las sumas que se adeuden por concepto de servicio consumido y dejado de facturar\" cuando el cobro incluyó sanciones.\n(e) CCU de CENS: la fórmula VCNR = CNR × TV × TP (tarifa del mes de detección, máximo 5 meses) solo rige para revisiones anteriores al 02-oct-2023. Las versiones 6.0 y 7.0 usan Σ(CDF × TV) con la tarifa de cada periodo, y con dolo comprobado permiten recuperar todos los meses que se demuestren.\n(f) Cifras del ciclo pedagógico: el gerente de CENS dijo a Alerta que \"215 mil\" quedaron por debajo de la meta y \"110 mil\" la superaron; Área Cúcuta dice 239.000 y 111.196.\n\nHALLAZGO NUEVO IMPORTANTE (fuente primaria CENS): encontré el CCU vigente, que resuelve el vacío del frente. En la sede electrónica de CENS hay tres versiones: v5.0 (24-nov-2020), v6.0 (02-oct-2023) y v7.0 (25-jul-2024). La v6.0, expedida dos años y medio después de que el Consejo de Estado suspendiera esa facultad (5-abr-2021, súplica confirmada el 24-mar-2023), MANTUVO la tabla de porcentajes propia de CENS (101-300 kWh: 100%; 1-50: 400%, etc.). Solo la v7.0 adoptó la regla CREG 105 007/2024 (promedio + 3 desviaciones estándar), y su cláusula 70A dice que los ciclos iniciados antes del 25-jul-2024 se rigen por la v6.0.\n\nOTROS HALLAZGOS:\n- Res. CREG 101 120/2026, art. 4 par. 1: los usuarios con equipos eléctricos de soporte vital pueden pedir que los excluyan del programa con soporte médico.\n- Art. 6: la meta nunca puede ser inferior al consumo de subsistencia (173 kWh/mes en Cúcuta).\n- Art. 20: el no pago no permite suspender, pero el cobro adicional sigue siendo exigible y la obligación no se extingue.\n- Concepto Superservicios 93 de 2025 (4-mar-2025): la 105 007/2024 sigue aplicándose.\n- La empresa de la T-180/21 es Caribemar/Afinia, que la propia Corte identifica como filial de EPM, es decir, del mismo grupo que CENS.\n\nBÚSQUEDAS SIN RESULTADO (nuevas, en modo extended):\n- Fallos 2025-2026 contra CENS en juzgados de Cúcuta o en la Corte.\n- Decisión del Consejo de Estado sobre la cautelar contra las Res. CREG 101 120 y 101 126.\n- Tutelas en Norte de Santander contra el programa CREG.\nLa tesis de \"enriquecimiento\" sigue sin respaldo judicial.",
+ "verified": [
+  {
+   "id": "judicial-precedente-01",
+   "verdict": "confirmado",
+   "claim_final": "En la T-436/24 (16-oct-2024, Sala Octava, M.P. Cristina Pardo Schlesinger) la Corte revisó las facturas de CENS de un usuario de Cúcuta (seudónimo 'Roberto', 60 años, estrato 2, pensión de invalidez de 1 SMMLV = $1.300.000) con enfermedad pulmonar intersticial que usa un concentrador de oxígeno desde el 3-may-2021. La factura de enero de 2024 fue de $535.710; antes del concentrador pagaba unos $200.000 y después casi el doble ($400.000) o más (hasta $530.000). La Corte lo calificó como 'gasto de bolsillo empobrecedor atribuible al consumo derivado del suministro de oxígeno'.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2024/t-436-24.htm",
+   "quote": "La Sala encontró que sí hubo un incremento desproporcionado en el consumo de energía desde el mes de mayo de 2021 [...] ubicándose en la mayoría de veces, en casi el doble ($400.000) o más (hasta $530.000) del valor que pagaba el accionante antes de que le fuera instalado el concentrador eléctrico de oxígeno en su domicilio ($200.000).",
+   "figures_final": "Enero 2024: $535.710; antes de mayo 2021: ~$200.000; después: $400.000-$530.000; mesada: $1.300.000; historial aportado por CENS: ene-2021 a may-2024",
+   "notes": "Párrafo 90: la Corte escribe 'el incremento en la tarifa del servicio de energía eléctrica ha aumentado', usando 'tarifa' en sentido coloquial, pero atribuye el alza al CONSUMO del concentrador. Añade que en los últimos 3 meses hubo 'una disminución en el consumo y en la tarifa'."
+  },
+  {
+   "id": "judicial-precedente-02",
+   "verdict": "confirmado",
+   "claim_final": "La Corte revocó el fallo del Juzgado 6 Civil del Circuito de Cúcuta (19-mar-2024) y amparó los derechos a la salud, la vida digna y el mínimo vital. Ordenó a la Nueva EPS cubrir el costo de la energía del concentrador, con 15 días hábiles para escoger el mecanismo (medidor o reintegro) y usando el valor del kWh de la factura. A CENS (y a EBSA) solo las exhortó a coordinarse en la medición. No hubo condena contra CENS.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2024/t-436-24.htm",
+   "quote": "CUARTO. - EXHORTAR a las Centrales Eléctricas de Norte de Santander S.A. E.S.P. y a la Empresa de Energía de Boyacá S.A. E.S.P. para que, junto a la Nueva E.P.S., en el marco de sus competencias, procedan a coordinarse y apoyarse entre ellas para la medición del consumo mensual del concentrador eléctrico y en la liquidación de su respectivo valor económico.",
+   "figures_final": "15 días hábiles para la EPS; 'deberá tener en cuenta el valor del kilovatio/hora, el cual se encuentra en la factura mensual'",
+   "notes": "Confirmada la inconsistencia interna: el párrafo 8 dice 'declaró improcedente' y el resolutivo dice 'negó el amparo'. Confirmado también que ninguna parte impugnó y no hubo segunda instancia."
+  },
+  {
+   "id": "judicial-precedente-03",
+   "verdict": "confirmado",
+   "claim_final": "En su respuesta del 8-mar-2024, CENS dijo que el usuario no había presentado PQR ni estaba inscrito como sujeto de especial protección porque no lo había solicitado. Explicó que la inscripción no da tarifa diferencial, pero sí evita la suspensión dentro de los 6 meses siguientes a la mora y da 100% de descuento en intereses si se pide financiación. En el memorial del 29-jul-2024 CENS invocó un instructivo de no suspensión y la Decisión Empresarial 7200-008 (27-feb-2023, art. 3: tasa del 0%).",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2024/t-436-24.htm",
+   "quote": "a la fecha no se encuentran peticiones, quejas o reclamos realizadas por el señor Roberto y que el usuario no se encuentra asociado como sujeto de especial protección constitucional dado que como se dijo anteriormente, no ha realizado la solicitud [...] por medio del artículo 3 de la Decisión Empresarial No. 7200-008 del 27 de febrero de 2023 se establece una tasa de 0% frente a la financiación de la deuda",
+   "figures_final": "No suspensión durante 6 meses tras la mora; 100% de descuento en intereses de mora; tasa 0% de financiación",
+   "notes": "Es la versión de CENS recogida por la Corte. El texto de la Decisión Empresarial 7200-008 no se consultó."
+  },
+  {
+   "id": "judicial-precedente-04",
+   "verdict": "confirmado",
+   "claim_final": "Auto del Juzgado Once Administrativo de Cúcuta, con sede en Los Patios (30-nov-2023, jueza Lorena Patricia Fuentes Jáuregui), rad. 54001-33-33-009-2019-00370-00, en una nulidad y restablecimiento de CENS contra la Superservicios. CENS busca anular la Res. SSPD 20198400038225 de 30-may-2019 y obtener la 'devolución de la cantidad liquida de dinero' que reconoció a un comerciante de Ocaña (panadería y heladería) por la reliquidación del ajuste de contribución. El juzgado saneó el proceso y vinculó al usuario como tercero. El expediente viene del Juzgado 9 Administrativo (remitido el 9-nov-2022).",
+   "source_url": "https://portalhistorico.ramajudicial.gov.co/documents/120627273/160758509/AUTOS72.pdf/79fdeed4-9853-49c2-8e1c-818b81ce45b7",
+   "quote": "\"(...) devolución de la cantidad liquida de dinero que esta electrificadora debió reconocer al señor [usuario], como consecuencia de (sic) reliquidación por concepto de ajuste de contribución, (...)\"",
+   "figures_final": "Monto no publicado en el auto",
+   "notes": "El auto publica el nombre, la dirección y el correo del usuario; el hilo no debe usarlos. No se halló fallo de fondo."
+  },
+  {
+   "id": "judicial-precedente-05",
+   "verdict": "confirmado",
+   "claim_final": "SU-1010/08 (Sala Plena, 16-oct-2008, M.P. Rodrigo Escobar Gil, contra Electricaribe y otras): las empresas de servicios públicos no tienen facultad para imponer sanciones pecuniarias a los usuarios, y hacerlo viola el debido proceso por desconocer la reserva de ley, la legalidad y la tipicidad.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2008/SU1010-08.htm",
+   "quote": "Las empresas de servicios públicos domiciliarios no tienen facultad para imponer sanciones de tipo pecuniario a los usuarios, por cuanto el legislador no las ha legitimado para ello. En este sentido, la imposición de cobros a ese título ha comportado una vulneración del derecho al debido proceso de los usuarios y suscriptores, por desconocer los principios de reserva de ley, legalidad y tipicidad",
+   "notes": "El encabezado de la relatoría trae la errata 'dieseis (16) de octubre de dos mil ocho'. No es un caso de CENS."
+  },
+  {
+   "id": "judicial-precedente-06",
+   "verdict": "corregido",
+   "claim_final": "SU-1010/08: la empresa puede volver a facturar la energía consumida y no pagada, pero debe indicar al usuario 'de manera clara, precisa y explícita' el valor y la fórmula, sin incluir sanciones. Si el proceso de facturación incluyó una sanción pecuniaria, la empresa no puede cobrar intereses de mora sobre las sumas adeudadas por el servicio consumido y dejado de facturar.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2008/SU1010-08.htm",
+   "quote": "Ahora bien, para los casos en los que se incluyó en el proceso de facturación un cobro a título de sanción pecuniaria, las empresas no podrán exigir el pago de intereses de mora sobre las sumas que se adeuden por concepto de servicio consumido y dejado de facturar.",
+   "notes": "Precisión: la prohibición de intereses recae sobre la energía consumida y no facturada (no sobre 'esas sumas' sancionatorias, como podía leerse en la versión original). La primera cita del hallazgo es exacta."
+  },
+  {
+   "id": "judicial-precedente-07",
+   "verdict": "confirmado",
+   "claim_final": "T-270/04 (Sala Cuarta, 19-mar-2004, M.P. Jaime Córdoba Triviño, 17 expedientes acumulados contra Electricaribe): en las actuaciones por irregularidades en el medidor, el usuario debe ser informado del inicio de la actuación, poder estar presente en la revisión y conocer de primera mano las pruebas. Entre los derechos que enumera está el de que los recursos se resuelvan antes del corte.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2004/T-270-04.htm",
+   "quote": "Se hace necesario que quien vaya a ser llamado a cancelar una sanción con ocasión de la detección de una irregularidad en los equipos de medida, tengan por lo menos la oportunidad de estar presente en la diligencia de revisión de los instrumentos de medición del inmueble. Que conozca de primera mano, no a través de terceros, las razones y las pruebas que serán el fundamento de la actuación administrativa.",
+   "figures_final": "17 expedientes (T-684762 a T-686052)",
+   "notes": "El fallo también reprocha que Electricaribe 'No informa al suscriptor/cliente y/o usuario sobre la iniciación de la actuación administrativa'."
+  },
+  {
+   "id": "judicial-precedente-08",
+   "verdict": "confirmado",
+   "claim_final": "C-060/05 (Sala Plena, 1-feb-2005, M.P. Jaime Araújo Rentería, exp. D-5271): el plazo de 5 meses del art. 150 es una prescripción a favor del usuario y en contra de la empresa. La Corte declaró exequibles los términos 'error, omisión'.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2005/c-060-05.htm",
+   "quote": "el plazo señalado en el artículo 150 de la ley 142 de 1994, establece un término de prescripción en beneficio del usuario y en detrimento de la empresa prestadora del servicio. [...] el lapso de tiempo perentorio de cinco meses otorgado por la ley para el ejercicio de la potestad en cabeza de la administración, concede certeza al usuario y seguridad jurídica, bajo el entendido que desbordado este tiempo no podrán surgir conflictos posteriores, surgidos de la facturación, y en contra del usuario."
+  },
+  {
+   "id": "judicial-precedente-09",
+   "verdict": "confirmado",
+   "claim_final": "Texto vigente de la Ley 142 en la Secretaría del Senado (actualizado al 15-oct-2026). Art. 149: hay que investigar las desviaciones y, mientras tanto, facturar con base en periodos anteriores, usuarios semejantes o aforo. Art. 150: pasados 5 meses no se puede cobrar lo no facturado por error, omisión o investigación de desviaciones, salvo dolo comprobado. Art. 154: reposición en 5 días y ninguna reclamación contra facturas con más de 5 meses de expedidas.",
+   "source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "quote": "ARTÍCULO 150. DE LOS COBROS INOPORTUNOS. Al cabo de cinco meses de haber entregado las facturas, las empresas no podrán cobrar bienes o servicios que no facturaron por error, omisión , o investigación de desviaciones significativas frente a consumos anteriores. Se exceptúan los casos en que se compruebe dolo del suscriptor o usuario.",
+   "figures_final": "Reposición: 5 días; reclamación: máximo 5 meses desde la expedición",
+   "notes": "Encabezado de la página: 'Última actualización: 15 de octubre de 2026 - (Diario Oficial No. 53.651 - 7 de octubre de 2026)'."
+  },
+  {
+   "id": "judicial-precedente-10",
+   "verdict": "corregido",
+   "claim_final": "Art. 155 de la Ley 142: la empresa no puede exigir el pago de la factura para tramitar un recurso, ni suspender o cortar hasta notificar la decisión de los recursos oportunos. Pero para recurrir el usuario debe acreditar el pago de 'las sumas que no han sido objeto de recurso, o del promedio del consumo de los últimos cinco períodos'. La C-558/01 condicionó esa regla: si lo discutido es precisamente el promedio, el usuario puede reclamar y recurrir sin pagarlo antes.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2001/C-558-01.htm",
+   "quote": "La exequibilidad de este precepto se declara en el entendido de que las sumas en discusión no correspondan precisamente al promedio del consumo de los últimos cinco períodos. [...] cuando el suscriptor o usuario alega no deber dicho promedio puede reclamar y recurrir sin pagar previamente",
+   "second_source_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
+   "notes": "La versión original ('solo debe pagar lo que no discute') omitía la alternativa del promedio de 5 periodos. El CCU v7.0 de CENS (obligación 19) también exige acreditar el pago de lo no reclamado 'o del promedio del consumo de los últimos cinco (5) meses'. C-558/01: 31-may-2001, M.P. Jaime Araújo Rentería, exp. D-3269."
+  },
+  {
+   "id": "judicial-precedente-11",
+   "verdict": "confirmado",
+   "claim_final": "Art. 158 de la Ley 142 (subrogado por el art. 123 del Decreto 2150/95): hay 15 días hábiles para resolver peticiones, quejas y recursos. Si no se resuelven, se entienden a favor del usuario, salvo que este haya auspiciado la demora o se requirieran pruebas. La empresa debe reconocer el silencio positivo en 72 horas; si no lo hace, el usuario puede pedir a la Superservicios sanciones y medidas para hacer efectivo el acto presunto. La T-230/20 (7-jul-2020, M.P. Luis Guillermo Guerrero Pérez) reitera la regla, y la T-447/03 declara improcedente la tutela porque la vía es la Superservicios.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2020/t-230-20.htm",
+   "quote": "el artículo 158 de la Ley 142 de 1994 determina una regla especial según la cual las peticiones, quejas y recursos deberán resolverse en un término de 15 días hábiles, contados a partir de la fecha de la presentación. Cumplido dicho plazo, se configura el silencio administrativo positivo.",
+   "second_source_url": "https://www.corteconstitucional.gov.co/relatoria/2003/T-447-03.htm",
+   "notes": "La T-230/20 es un caso de acueducto en Popayán sobre peticiones por redes sociales; la regla aparece como reiteración. La nota de vigencia del Senado confirma que la C-451-99 es inhibitoria por subrogación."
+  },
+  {
+   "id": "judicial-precedente-12",
+   "verdict": "confirmado",
+   "claim_final": "C-150/03 (Sala Plena, 25-feb-2003, M.P. Manuel José Cepeda Espinosa), resolutivo décimo quinto: el parágrafo del art. 130 y el art. 140 de la Ley 142 son exequibles 'en el entendido de que se respetarán los derechos de los usuarios' (num. 5.2.3). Esos derechos son el debido proceso y la abstención de suspender cuando se desconozcan derechos de sujetos especialmente protegidos, se impida el funcionamiento de hospitales u otros establecimientos protegidos o se afecte gravemente a toda una comunidad.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2003/C-150-03.htm",
+   "quote": "( ii ) el derecho a que las empresas prestadoras de servicios públicos se abstengan de suspender el servicio cuando dicha interrupción tenga como consecuencia el desconocimiento de derechos constitucionales de sujetos especialmente protegidos o, impida el funcionamiento de hospitales y otros establecimientos también especialmente protegidos en razón a sus usuarios , o afecte gravemente las condiciones de vida de toda una comunidad."
+  },
+  {
+   "id": "judicial-precedente-13",
+   "verdict": "confirmado",
+   "claim_final": "La C-150/03 declaró inexequible la primera frase del num. 87.7 de la Ley 142 ('Los criterios de eficiencia y suficiencia financiera tendrán prioridad en la definición del régimen tarifario'), porque el art. 367 de la Constitución no subordina la solidaridad a ningún otro criterio. Declaró exequible la segunda frase (resolutivo 13). En el resolutivo 14 condicionó los arts. 124.2, 126 y 127 para que las organizaciones de usuarios puedan participar de manera previa, directa y efectiva en la definición de las fórmulas tarifarias.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2003/C-150-03.htm",
+   "quote": "Décimo segundo. - Declarar INEXEQUIBLE la primera frase del numeral 87.7 del artículo 87 de la Ley 142 de 1994 que dice: \"Los criterios de eficiencia y suficiencia financiera tendrán prioridad en la definición del régimen tarifario\".",
+   "notes": "La misma sentencia avala la 'remuneración del patrimonio de los accionistas, en las condiciones de una empresa eficiente en un sector de riesgo comparable'."
+  },
+  {
+   "id": "judicial-precedente-14",
+   "verdict": "confirmado",
+   "claim_final": "T-717/10 (Sala Primera, 8-sep-2010, M.P. María Victoria Calle Correa, contra EPM, por acueducto): la suspensión es inconstitucional cuando recae sobre un sujeto de especial protección, le desconoce sus derechos y el impago es involuntario por circunstancias insuperables. El usuario tiene la carga de informar a la empresa. En hogares del nivel 1 del Sisbén con sujetos de especial protección se presumen las dos últimas condiciones.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2010/T-717-10.htm",
+   "quote": "lo real y definitivamente inconstitucional es la suspensión de los servicios públicos que reúna tres condiciones: 1) que efectivamente recaiga sobre un sujeto de especial protección constitucional, 2) que tenga como consecuencia directa, para él, un \"desconocimiento de [sus] derechos constitucionales\", y 3) que se produzca por un incumplimiento de las obligaciones que pueda considerarse como involuntario, debido a circunstancias insuperables e incontrolables por el sujeto especialmente protegido o por quienes cuidan de él.",
+   "notes": "Matiz: de los dos expedientes, la Corte NEGÓ uno (el de la señora Calle Arenas) y amparó el otro (madre con hijos menores, Sisbén 1)."
+  },
+  {
+   "id": "judicial-precedente-15",
+   "verdict": "confirmado",
+   "claim_final": "T-761/15 (Sala Octava, 11-dic-2015, M.P. Alberto Rojas Ríos, contra EMCALI): hay dos eventos en los que la empresa debe abstenerse de suspender la energía, el de comunidades como hospitales, cárceles y colegios y el de sujetos de especial protección. La Corte desarrolla el concepto de 'pobreza energética' y recuerda que el consumo de subsistencia (Res. UPME 0355/2004) es de 173 kWh-mes bajo 1.000 msnm y de 130 kWh-mes a 1.000 msnm o más. Ordenó un acuerdo de pago 'con condiciones amplias y flexibles'.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2015/T-761-15.htm",
+   "quote": "Son dos eventos en los que una empresa de servicios públicos debe abstenerse de realizar la suspensión del suministro de energía: (i) cuando se trata de comunidades como hospitales, cárceles y establecimientos educativos; y (ii) en casos de sujetos de especial protección constitucional.",
+   "figures_final": "173 kWh-mes bajo 1.000 msnm; 130 kWh-mes a 1.000 msnm o más; en estrato 1, el 60% (103,8 kWh) es la porción subsidiada",
+   "notes": "Es mejor decir que 'aplicó' la protección a la energía, no que la 'extendió': la C-150/03 ya cubría todos los servicios. La sentencia fija además una regla nueva sobre la porción subsidiada (ver new_findings)."
+  },
+  {
+   "id": "judicial-precedente-16",
+   "verdict": "confirmado",
+   "claim_final": "T-180/21 (Sala Novena, 10-jun-2021, M.P. Alberto Rojas Ríos, contra Electricaribe y la Superservicios): la factura de una madre cabeza de familia en Sincelejo pasó de $93.520 (ene-feb 2020) a $933.760 (feb-mar 2020). La empresa negó sus recursos invocando el art. 155 y su CCU, que solo reconocía desviación con variaciones iguales o superiores al 370%, y la Superservicios declaró improcedente la apelación (Res. SSPD-20208200228355). La Corte tuteló el debido proceso y ordenó a Caribemar investigar las conexiones ilegales y otras alteraciones del medidor y determinar si había deuda o saldo a favor.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2021/t-180-21.htm",
+   "quote": "hubo vulneración del derecho fundamental al debido proceso, toda vez que la accionada negó la posibilidad de contradecir las facturas con las que, la actora no estaba de acuerdo. Ello en contravía con lo indicado entre otras, en la sentencia C-150 de 2003 . Se limitó a reiterar las respuestas y cobró los valores en discusión",
+   "figures_final": "$93.520 a $933.760 (más del 1000% según la actora); deuda acumulada de $2.772.990; umbral del CCU: 370%",
+   "notes": "La propia Corte identifica a Caribemar (marca AFINIA) como 'filial de EPM', es decir, del mismo grupo que CENS, aunque los hechos son de la etapa Electricaribe. En la revisión se hallaron conexiones ilegales al contador. Hubo dos aclaraciones de voto (Fajardo e Ibáñez)."
+  },
+  {
+   "id": "judicial-precedente-17",
+   "verdict": "corregido",
+   "claim_final": "T-191/08 (Sala Quinta, 27-feb-2008, M.P. Mauricio González Cuervo): la Corte concedió un amparo TRANSITORIO a una empresa (Plásticas JR Industrias) frente a un cobro de $10.661.690 de Electricaribe por energía dejada de facturar. Halló una evidente omisión de la empresa (art. 146) y dejó sin efectos las resoluciones de Electricaribe y la Res. SSPD-20068200188425 'hasta que la justicia ordinaria decida'. Ordenó no cobrar ni suspender mientras tanto y dio al actor 4 meses para presentar la acción contenciosa.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2008/t-191-08.htm",
+   "quote": "la conducta asumida por Electricaribe S.A. E.S.P. y la Superintendencia de Servicios Públicos Domiciliarios desconoce lo dispuesto por el artículo 146 de la ley 142 de 1994, por cuanto de las pruebas aportadas por el actor se deduce una evidente omisión de la empresa para atender las irregularidades que dieron pie a la falta de medición del consumo.",
+   "figures_final": "$10.661.690 (suspendido de forma transitoria, no anulado de manera definitiva)",
+   "notes": "Error de la versión original: presentaba la anulación como definitiva. El actor era una empresa, no un hogar."
+  },
+  {
+   "id": "judicial-precedente-18",
+   "verdict": "confirmado",
+   "claim_final": "El Consejo de Estado (Sección Primera, Sala Unitaria, C.P. Oswaldo Giraldo López), en auto del 5-abr-2021 (exp. 11001-03-24-000-2020-00058-00, demandante: Procuraduría), suspendió provisionalmente la frase 'los porcentajes que fijen las empresas en las condiciones uniformes del contrato' del par. 1 del art. 37 de la Res. CREG 108/1997. Es una medida cautelar. Según la Res. CREG 105 007/2024, la Sala la confirmó al resolver la súplica el 24-mar-2023 (C.P. Nubia Margoth Peña Garzón).",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/11001-03-24-000-2020-00058-00_20210405.htm",
+   "quote": "constituye la entrega de una función cuyo titular es la CREG a las empresas prestadoras del servicio público de energía, las cuales a su vez no cuentan con facultades legales para ejercerla, dejando en evidencia una flagrante contradicción del ordenamiento jurídico",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/concepto_superservicios_0000093_2025.htm",
+   "notes": "El Concepto Superservicios 93 de 2025 (4-mar-2025) cita el mismo auto y dice que la suspensión 'solo tiene efectos hacia futuro' y que 'los contratos previos a dicha suspensión se presumen legales'. No se encontró sentencia de fondo."
+  },
+  {
+   "id": "judicial-precedente-19",
+   "verdict": "confirmado",
+   "claim_final": "Res. CREG 105 007 de 30-ene-2024 (transitoria): el límite superior es el promedio histórico de los últimos 12 periodos de facturación mensual más 3 desviaciones estándar, y por encima la investigación es obligatoria. Mientras se investiga, la empresa factura el 'consumo promedio' del art. 1 de la Res. CREG 108/97 (o el de usuarios semejantes o por aforo), el usuario paga y luego se ajusta. Rige 'hasta tanto se produzca una decisión definitiva por parte de la CREG' y se aplica 30 días hábiles después de su publicación.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/originales/Resoluci%C3%B3n_CREG_105_007_2024/Resoluci%C3%B3n_CREG_105_007_2024.pdf",
+   "quote": "Mientras se realiza la investigación por desviaciones significativas el usuario deberá pagar su factura y una vez la empresa determine la causa de la desviación ajustará los valores cobrados en el siguiente periodo de facturación",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "notes": "Matiz: si el consumo cae por DEBAJO del límite inferior y la empresa investiga por iniciativa propia, factura el consumo medido. El Concepto SSPD 93/2025 confirma que la 105 007 seguía vigente en 2025. El CCU v7.0 de CENS (25-jul-2024) la adoptó en sus cláusulas 32B y 32D. La 105 008/2024 no se revisó."
+  },
+  {
+   "id": "judicial-precedente-20",
+   "verdict": "confirmado",
+   "claim_final": "El CCU v5.0 de CENS (DIN_201_ACL_013, 24-nov-2020), publicado como 'CCU antes del 02/10/2023', fijaba umbrales propios de desviación significativa sobre el promedio de los últimos 6 periodos mensuales: 1-50 kWh 400%; 51-100 200%; 101-300 100%; 301-700 80%; 701 o más 50%. Es la facultad cuya base reglamentaria suspendió el Consejo de Estado en abril de 2021.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20antes%20del%2002_10_2023.pdf",
+   "quote": "El usuario que presente una Variación (%) que supere el Porcentaje de Variación Permitido, será considerado con DESVIACIÓN SIGNIFICATIVA.",
+   "second_source_url": "https://sedeelectronica.cens.com.co/atencion-y-servicios-a-la-ciudadania/tramites-y-servicios/contrato-de-condiciones-uniformes-ccu",
+   "notes": "ACTUALIZACIÓN que cierra el vacío: la v6.0 (CCU_201_ACL_001, 02-oct-2023), posterior a la suspensión, conserva EXACTAMENTE la misma tabla. La v7.0 (25-jul-2024) la sustituye por la regla CREG 105 007, y su cláusula 70A dice que el análisis de desviación de los ciclos iniciados antes del 25-jul-2024 se rige por la v6.0. Ver new_findings."
+  },
+  {
+   "id": "judicial-precedente-21",
+   "verdict": "corregido",
+   "claim_final": "El CCU v5.0 de CENS liquidaba el consumo no registrado como VCNR = CNR × TV (tarifa vigente en el periodo de detección) × TP, con un máximo de 5 meses si no se prueba la duración. Esto solo rige para las revisiones ejecutadas antes del 02-oct-2023. Desde la v6.0 (02-oct-2023) y en la v7.0 vigente, el valor es VCDF = Σ(CDF × TV), con 'la tarifa vigente del periodo de facturación correspondiente que se pretende recuperar'. La recuperación se incluye en la factura con una comunicación que detalla las pruebas, la causal y la fórmula, y procede la reclamación del art. 154. Si se comprueba dolo, CENS recupera 'el número de meses en los cuales se pueda demostrar la irregularidad'.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "quote": "VCDF = Σ(CDF ∗ TV) [...] Tarifa vigente del servicio de energía del periodo de facturación correspondiente que se pretende recuperar [...] Con fines informativos CENS adjuntará a la factura en la que cobre estos valores a recuperar, una comunicación en la que detalle las pruebas que dan lugar a dicho cobro, la causal y fórmula aplicadas para determinar el consumo no facturado.",
+   "second_source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20antes%20del%2002_10_2023.pdf",
+   "notes": "La cita sobre la v5.0 es exacta, pero no describe el contrato vigente. Cláusula 70A del CCU v7.0: las revisiones desde el 02-oct-2023 siguen el nuevo Título VI."
+  },
+  {
+   "id": "judicial-precedente-22",
+   "verdict": "corregido",
+   "claim_final": "Concepto de la Sala de Consulta del Consejo de Estado (22-feb-2016, C.P. Germán Alberto Bula Escobar, rad. 11001-03-06-000-2014-00259-00 (2236), consulta del DNP). Cuando la empresa no mide o no lee por su acción u omisión, hay 'falta de medición' y pierde el derecho a recibir el precio (art. 146 de la Ley 142 y arts. 30-31 de la Res. CREG 108/97). Eso es distinto del cobro, dentro de 5 meses, de lo no facturado por error u omisión (art. 150). La sentencia de 2007 que motivó la consulta es de la Sección Primera, 16-ago-2007, rad. 25000-23-24-000-2003-00456-01.",
+   "source_url": "https://www.consejodeestado.gov.co/documentos/boletines/PDF/11001-03-06-000-2014-00259-00(2236).pdf",
+   "quote": "si la falta de medición obedece a una falta de lectura, por acción u omisión de la ESP, la consecuencia jurídica es la pérdida del derecho a recibir el precio [...] verificado el incumplimiento de la empresa (supuesto de hecho), emerge la consecuencia jurídica: la pérdida del derecho a recibir el precio, por expresa disposición del artículo 146 de la Ley 142 de 1994",
+   "notes": "Dos errores en la versión original: (1) el radicado de 2007 decía '25001-23-27-...' y el correcto es '25000-23-24-000-2003-00456-01'; (2) la nota decía que la falta de lectura es 'cobro inoportuno, art. 150', pero el concepto la encuadra en el art. 146 (pérdida del precio). Es un concepto no vinculante."
+  },
+  {
+   "id": "judicial-precedente-23",
+   "verdict": "confirmado",
+   "claim_final": "T-206A/18 (Sala Quinta, 25-may-2018, M.P. Antonio José Lizarazo Ocampo, contra Electricaribe, exp. T-6.496.241 y T-6.496.242): la tutela es improcedente para reclamar cobros de energía dejada de facturar si no se agotaron los recursos ante la empresa ni se acudió a lo contencioso, salvo perjuicio irremediable o vulnerabilidad acreditada.",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2018/t-206a-18.htm",
+   "quote": "en ninguno de los asuntos bajo estudio se cumplió el requisito de subsidiariedad, toda vez que los propietarios o usuarios no agotaron los recursos de la vía gubernativa en contra de cada una de las facturas y/o decisiones empresariales emitidas por la empresa ELECTRICARIBE S.A. E.S.P., ni mucho menos acudieron ante la jurisdicción de lo contencioso administrativo"
+  },
+  {
+   "id": "judicial-precedente-24",
+   "verdict": "confirmado",
+   "claim_final": "Res. CREG 101 120 de 2026 (aprobada en la sesión 1482 del 30-jul-2026) y Res. 101 126 (21-ago-2026, Diario Oficial 53.602 del 25-ago-2026). No genera cobro el consumo hasta el 110% de la meta. Sobre el excedente por encima del 110% se aplican factores de 1,30 (estratos 1-3), 1,50 (estratos 4-6) y 1,70 (comercio e industria), con tope en el excedente valorado al CRO del estrato 4. El art. 20 dice que el cobro no es tarifa y que su no pago no permite suspender el servicio, pero sigue siendo exigible. El pago parcial se imputa primero al servicio, y los reclamos van por el régimen de PQR de la Ley 142.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "quote": "no es una contraprestación por la prestación del servicio, no forma parte de su tarifa y no modifica las fórmulas tarifarias generales ni sustituye las tarifas reguladas. En consecuencia: i) El no pago del cobro adicional no dará lugar a la suspensión del servicio público domiciliario de energía eléctrica. ii) Sin perjuicio del numeral anterior, la exigibilidad, el cobro y el recaudo del cobro adicional se rigen por las mismas reglas aplicables a los demás conceptos que el comercializador factura a sus usuarios. [...] iv) La obligación de pago no se extingue por la liquidación de un periodo de liquidación del programa ni por su terminación.",
+   "figures_final": "Banda neutra 90%-110%; factores 1,30 / 1,50 / 1,70; tope en el CRO del estrato 4; inicio: 5.º día hábil desde el día siguiente a la publicación de la 101 126 (25-ago-2026), es decir, el 1-sep-2026 (también lo dice CENS en su web); primer ciclo pedagógico; duración inicial de 6 meses, prorrogable",
+   "second_source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-126_2026.htm",
+   "notes": "Confirmados el sismo del 10-ago-2026 (M7,4, San José del Palmar, Chocó), el Decreto 1171 del 11-ago-2026, la Circular CREG 326 del 13-ago-2026 y la exclusión de municipios según la UNGRD. La motivación cita un 'Fenómeno de El Niño' de categoría moderada según el IDEAM."
+  },
+  {
+   "id": "judicial-precedente-25",
+   "verdict": "confirmado",
+   "claim_final": "El alcalde de Cartagena, Dumek Turbay Paz, radicó el 11-sep-2026 ante el Consejo de Estado una demanda de nulidad simple contra la Res. CREG 101 126 de 2026, la resolución modificatoria y no la 101 120. Pide la suspensión provisional de sus efectos para los usuarios de Cartagena y que se ordene a la CREG no trasladarles cobros adicionales.",
+   "source_url": "https://www.eltiempo.com/files/2026/09/14/Demanda-Resolucion-CREG-101-126-de-2026.pdf",
+   "quote": "SEGUNDA. Como consecuencia de lo anterior, ordenar a la CREG abstenerse de trasladar cobros adicionales por consumo excedente a los usuarios regulados del Distrito de Cartagena de Indias, reconociendo el principio de justicia tarifaria y la rigidez del consumo por factores térmicos bioclímicos.",
+   "second_source_url": "https://www.elheraldo.co/atlantico/2026/09/16/nueva-demanda-contra-la-medida-de-ahorro-de-energia-de-la-creg/",
+   "notes": "El Heraldo: 'radicó el pasado 11 de septiembre'. No hay auto de admisión ni decisión cautelar conocidos al 31-oct-2026. 724noticias (28-sep-2026) reporta otra demanda, del abogado cartagenero Kevin Oliver Keep Arrieta, contra la 101 120 y la 101 126, también sin decisión conocida."
+  },
+  {
+   "id": "judicial-precedente-26",
+   "verdict": "confirmado",
+   "claim_final": "Según La Opinión (31-oct-2026), CENS envió una carta a la CREG, firmada por el gerente José Miguel González Campo. Pidió ajustar las metas de los hogares con variables regionales, excluir del programa al comercio y la industria y no cobrar a los usuarios sin historial a quienes se asignó una meta de referencia. La carta dice que más de 3.095 usuarios comerciales e industriales han recibido recargos superiores a $200.000 y que el 75% de los usuarios vive en municipios cercanos al nivel del mar (47 municipios).",
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "quote": "más de 3.095 usuarios comerciales e industriales han recibido recargos superiores a $200.000",
+   "figures_final": ">3.095 usuarios no residenciales con recargos > $200.000; 47 municipios; 75% de usuarios cerca del nivel del mar",
+   "notes": "Es prensa que cita la carta; no tengo el documento. La Opinión también cita un desempleo del 11,3% en Norte de Santander al cierre de 2025 y una informalidad del 63% en Cúcuta."
+  },
+  {
+   "id": "judicial-precedente-27",
+   "verdict": "corregido",
+   "claim_final": "En el ciclo pedagógico (septiembre de 2026), unos 110.000-111.000 usuarios de CENS superaron su meta. El gerente José Miguel González dijo a Alerta: '215 mil usuarios quedaron por debajo de la meta establecida por la CREG; pero 110 mil superaron el consumo', y añadió que 'en el comercio [...] 10 mil usuarios superaron el límite'. Área Cúcuta (16-oct-2026) da 111.196 por encima de la meta y 'alrededor de 239.000' que la cumplieron. Desde el 1-oct se cobra el excedente por encima del 110%.",
+   "source_url": "https://www.areacucuta.com/cens-implementara-sanciones-a-usuarios-por-consumo-excesivo-de-energia-en-cucuta/",
+   "quote": "215 mil usuarios quedaron por debajo de la meta establecida por la CREG; pero 110 mil superaron el consumo",
+   "figures_final": "110.000-111.196 por encima de la meta; 215.000 (gerente, Alerta) o 239.000 (Área Cúcuta) por debajo o cumpliendo; ~10.000 comercios por encima",
+   "second_source_url": "https://www.alerta.com.co/servicios/norte-de-santander-mas-de-111-mil-usuarios-superaron-meta-de-consumo-de-energia-253124",
+   "notes": "Las fuentes no coinciden en cuántos cumplieron; usar la cita directa del gerente. Área Cúcuta atribuye la meta a 'CENS EPM' y habla de 'sanciones', pero la meta la fija la metodología CREG y no es sanción. Alerta no trae fecha visible (la ruta de la imagen sugiere 14-oct-2026)."
+  },
+  {
+   "id": "judicial-precedente-28",
+   "verdict": "no-verificable",
+   "claim_final": "El Heraldo (16-sep-2026) publicó que, según la Liga Nacional de Usuarios de Servicios Públicos Costa Caribe, el personero distrital de Santa Marta, Edward Orozco, presentó una tutela contra la medida de la CREG y que un Juzgado del Circuito de Santa Marta la admitió. La atribución a El Heraldo es correcta, pero la existencia y la admisión de la tutela no están verificadas.",
+   "source_url": "https://www.elheraldo.co/atlantico/2026/09/16/nueva-demanda-contra-la-medida-de-ahorro-de-energia-de-la-creg/",
+   "quote": "la cual, según la Liga, fue admitida por un Juzgado del Circuito de Santa Marta.",
+   "notes": "No se halló la providencia, el juzgado ni el radicado. No usar en el hilo."
+  },
+  {
+   "id": "judicial-precedente-29",
+   "verdict": "confirmado",
+   "claim_final": "En una acción popular presentada en 2022 por los personeros de Barranquilla (Miguel Ángel Alzate) y Santa Marta (Edwar Orozco), a los que algunas fuentes suman Riohacha, el Tribunal Administrativo del Atlántico ordenó al MinEnergía y a la CREG adelantar las actuaciones para desmontar el régimen especial de comercialización del Caribe. El Consejo de Estado lo dejó en firme (El Heraldo, 26-jun-2026; El Colombiano, 2-jul-2026; Infobae, 6-oct-2026). Los personeros denuncian incumplimiento.",
+   "source_url": "https://www.elcolombiano.com/negocios/denuncian-incumplimiento-fallo-tarifas-energia-caribe-air-e-DP38404878",
+   "quote": "Esta decisión del Consejo de Estado es histórica.",
+   "figures_final": "'cerca de tres millones de usuarios' de Air-e y Afinia",
+   "second_source_url": "https://www.elheraldo.co/atlantico/2026/06/26/consejo-de-estado-deja-en-firme-fallo-que-obliga-a-bajar-tarifas-de-energia-en-el-caribe/",
+   "notes": "No está claro si es una sentencia de fondo o medidas cautelares: CVNoticias dice que en marzo de 2026 el Consejo de Estado modificó en parte unas cautelares del Tribunal. Infobae: 'La decisión no fija un porcentaje específico de reducción ni establece una fecha determinada'. Sin radicado. No involucra a CENS."
+  },
+  {
+   "id": "judicial-precedente-30",
+   "verdict": "confirmado",
+   "claim_final": "Según Infobae (25-abr-2026), el Consejo de Estado admitió la demanda de nulidad de la Fundación para el Estado de Derecho contra el Decreto 1091 del 16-oct-2025 (gobierno Petro, MinEnergía) por presunta invasión de funciones de la CREG. Negó la cautelar de urgencia y corrió traslado de la solicitud de suspensión provisional, que queda pendiente.",
+   "source_url": "https://www.infobae.com/colombia/2026/04/25/consejo-de-estado-admitio-demanda-contra-decreto-energetico-del-gobierno-por-presunta-invasion-en-las-funciones-de-la-creg-evalua-suspenderlo/",
+   "quote": "no se evidenciaron elementos suficientes para concluir que el decreto esté generando efectos inmediatos",
+   "notes": "La nota no trae radicado ni ponente. Es contexto y no tiene relación con CENS."
+  }
+ ],
+ "bill_cases_checked": [
+  {
+   "where": "Cúcuta, vivienda estrato 2",
+   "complaint": "La factura se duplicó o más por el uso 24 horas de un concentrador eléctrico de oxígeno (enfermedad pulmonar intersticial degenerativa) y el usuario no podía pagarla con su pensión de invalidez de 1 SMMLV. La Corte amparó sus derechos y ordenó a la Nueva EPS, no a CENS, cubrir esa energía. CONFIRMADO.",
+   "amount": "$535.710 (factura de enero de 2024)",
+   "previous_amount": "~$200.000 antes de mayo de 2021",
+   "period": "Enero de 2024; serie de mayo 2021 a mayo 2024 entre $400.000 y $530.000",
+   "estrato": "2",
+   "kwh": "No transcrito en el texto (la Corte lo muestra en un gráfico)",
+   "charges": "Subsidio FSRI de estrato 2 (según CENS)",
+   "cu_applied": "No informado",
+   "person_named": false,
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2024/t-436-24.htm",
+   "source_outlet": "Corte Constitucional, Sentencia T-436 de 2024 (seudónimo 'Roberto')",
+   "source_date": "2024-10-16"
+  },
+  {
+   "where": "Ocaña, establecimiento comercial (panadería y heladería)",
+   "complaint": "El usuario logró que la Superservicios ordenara reliquidar el ajuste de la contribución (Res. 20198400038225 de 30-may-2019), y CENS demandó esa resolución para recuperar lo devuelto. CONFIRMADO en el auto de saneamiento del 30-nov-2023. No hay fallo conocido.",
+   "amount": "No publicado",
+   "period": "Acto de 2019; auto de 30-nov-2023",
+   "estrato": "No residencial (comercial)",
+   "charges": "Contribución de solidaridad (ajuste)",
+   "person_named": true,
+   "source_url": "https://portalhistorico.ramajudicial.gov.co/documents/120627273/160758509/AUTOS72.pdf/79fdeed4-9853-49c2-8e1c-818b81ce45b7",
+   "source_outlet": "Juzgado Once Administrativo de Cúcuta (sede Los Patios), rad. 54001-33-33-009-2019-00370-00",
+   "source_date": "2023-11-30"
+  },
+  {
+   "where": "Mercado de CENS (Norte de Santander, sur del Cesar y sur de Bolívar)",
+   "complaint": "Recargos del programa CREG (Res. 101 120/2026) a usuarios comerciales e industriales por encima del 110% de su meta; CENS pidió a la CREG excluirlos. CONFIRMADO como prensa que cita una carta de CENS. Según Alerta, el gerente habló de ~10.000 comercios por encima de la meta en el ciclo pedagógico.",
+   "amount": "Más de $200.000 por usuario (cifra agregada, >3.095 usuarios)",
+   "period": "Octubre de 2026 (nota del 31-oct-2026)",
+   "estrato": "Comercial e industrial",
+   "charges": "Cobro adicional con factor 1,70 sobre el excedente por encima del 110% (no es tarifa según el art. 20 de la Res. CREG 101 120)",
+   "person_named": false,
+   "source_url": "https://laopinion.co/economia/cens-solicita-la-creg-ajustar-metas-de-consumo-de-energia-y-excluir-al-sector-no",
+   "source_outlet": "La Opinión",
+   "source_date": "2026-10-31"
+  }
+ ],
+ "new_findings": [
+  {
+   "id": "judicial-precedente-N01",
+   "claim": "El CCU v6.0 de CENS, vigente desde el 02-oct-2023 (dos años y medio después de la suspensión del Consejo de Estado del 5-abr-2021 y seis meses después de que la súplica la confirmara el 24-mar-2023), mantuvo la tabla de porcentajes de variación fijada por la propia empresa para definir la desviación significativa. Solo el CCU v7.0 (25-jul-2024) la sustituyó por la regla CREG 105 007/2024 (promedio + 3 desviaciones estándar).",
+   "quote": "Tabla 1. Porcentajes de variación permitidos [...] 1 Desde 1 a 50 400% 2 Desde 51 a 100 200% 3 Desde 101 a 300 100% 4 Desde 301 a 700 80% 5 Desde 701 en adelante 50% [...] El usuario que presente una Variación (%) que supere el Porcentaje de Variación Permitido, será considerado con DESVIACIÓN SIGNIFICATIVA.",
+   "figures": "Umbrales v6.0 idénticos a los de la v5.0; v7.0: x̅ + 3S",
+   "period": "02-oct-2023 a 24-jul-2024",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20vigente%20desde%20el%2002_10_2023.pdf",
+   "source_outlet": "CENS (sede electrónica, listado de versiones del CCU)",
+   "source_title": "Contrato de prestación de servicios con condiciones uniformes, CCU_201_ACL_001, versión 6.0",
+   "source_date": "2023-10-02",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "La cláusula 70A del CCU v7.0 lo confirma: 'el análisis de la desviación significativa para ciclos de facturación iniciados antes del 25 de julio de 2024 le será aplicable los dispuesto en el anterior contrato [...] versión 6.0'. Defensa probable de CENS: no hubo regla CREG sustituta hasta la 105 007 (ene-2024, de aplicación diferida). Además, la Superservicios (Concepto 93/2025) dice que la suspensión rige hacia el futuro, aunque eso protege a los contratos ANTERIORES a la suspensión y la v6.0 es posterior. Listado de versiones: https://sedeelectronica.cens.com.co/atencion-y-servicios-a-la-ciudadania/tramites-y-servicios/contrato-de-condiciones-uniformes-ccu"
+  },
+  {
+   "id": "judicial-precedente-N02",
+   "claim": "El CCU vigente de CENS (v7.0, 25-jul-2024) adopta la regla CREG 105 007/2024. Cuando el consumo supera el límite superior, mientras se investiga CENS factura el consumo promedio (art. 1 de la Res. CREG 108/97), el de usuarios semejantes o una tabla de promedios por estrato: E1 149 kWh, E2 177, E3 206, E4 282, E5 396, E6 510, comercial 736, industrial 5.844 y oficial 2.212 (facturación mensual).",
+   "quote": "Cuando supere el límite superior mientras se establece la causa de la desviación del consumo del SUSCRIPTOR o USUARIO [...] CENS facturará el consumo objeto de la investigación cobrando al SUSCRIPTOR o USUARIO el consumo promedio establecido en el artículo 1 de la Resolución CREG 108 DE 1997, o mediante aforo individual, consumos promedios SUSCRIPTORES o USUARIOS en circunstancias semejantes relacionados en la siguiente tabla",
+   "figures": "Promedios mensuales: E1 149; E2 177; E3 206; E4 282; E5 396; E6 510; comercial 736; industrial 5.844; oficial 2.212 kWh",
+   "period": "Desde el 25-jul-2024",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "source_outlet": "CENS",
+   "source_title": "CCU_201_ACL_001 versión 7.0, cláusulas 32B, 32C, 32D y 70A",
+   "source_date": "2024-07-25",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Si un usuario denuncia que CENS le facturó la lectura alta completa mientras investigaba un salto por encima del límite, eso contradiría su propio CCU y la 105 007. Hay que verificar caso por caso."
+  },
+  {
+   "id": "judicial-precedente-N03",
+   "claim": "En el CCU vigente de CENS, la recuperación de energía se incluye en la factura junto con una comunicación que detalla las pruebas, la causal y la fórmula, y contra ella procede la reclamación del art. 154. Se liquida con la tarifa de cada periodo recuperado (Σ CDF × TV). Si se comprueba dolo, se recuperan todos los meses que puedan demostrarse.",
+   "quote": "Con fines informativos CENS adjuntará a la factura en la que cobre estos valores a recuperar, una comunicación en la que detalle las pruebas que dan lugar a dicho cobro, la causal y fórmula aplicadas para determinar el consumo no facturado. Parágrafo: En los casos en que se demuestre que los consumos no registrados fueron obtenidos de manera irregular por acción u omisión del SUSCRIPTOR o USUARIO y se compruebe el dolo [...] CENS procederá a la liquidación y recuperación del número de meses en los cuales se pueda demostrar la irregularidad.",
+   "figures": "VCDF = Σ(CDF × TV); máximo de 5 periodos en algunos supuestos (medidor no incluido, sin fecha de instalación)",
+   "period": "Revisiones desde el 02-oct-2023",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "source_outlet": "CENS",
+   "source_title": "CCU v7.0, cláusulas 66 y 70",
+   "source_date": "2024-07-25",
+   "source_type": "primario-cens",
+   "confidence": "alta",
+   "notes": "Formalmente se ajusta a la SU-1010/08 (fórmula clara y sin multas). Sirve como estándar para contrastar los recibos de 'energía recuperada' que denuncien los usuarios."
+  },
+  {
+   "id": "judicial-precedente-N04",
+   "claim": "El CCU de CENS (v5.0, v6.0 y v7.0, obligación 9 de la empresa) amplía las excepciones al límite de 5 meses del art. 150. Además del dolo, que es la única excepción legal, incluye las alteraciones en la acometida, la red interna o los instrumentos, y los casos en que se impida tomar la lectura.",
+   "quote": "después de cinco (5) meses de haberse entregado la factura, CENS se abstendrá de cobrar bienes o servicios no facturados por error, omisión o investigación de desviaciones significativas frente a consumos anteriores, se exceptúan los casos en que se compruebe alteraciones en la acometida, red interna, en sus instrumentos asociados o cuando se impida por cualquier medio tomar la lectura o cuando se compruebe dolo del SUSCRIPTOR o USUARIO, en concordancia con lo contemplado en el artículo 150 de la ley 142 de 1994.",
+   "source_url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
+   "source_outlet": "CENS",
+   "source_title": "CCU v7.0, obligaciones de CENS, numeral 9",
+   "source_date": "2024-07-25",
+   "source_type": "primario-cens",
+   "confidence": "media",
+   "notes": "Es una tensión textual con el art. 150 y la C-060/05 ('prescripción en beneficio del usuario'), no una ilegalidad declarada. CENS puede alegar que esos casos no son 'error u omisión' de la empresa sino recuperación por incumplimiento del usuario (art. 149 y SU-1010/08). Además, la cláusula 27 del mismo CCU reproduce fielmente el art. 150. Consultar a un abogado antes de usarlo."
+  },
+  {
+   "id": "judicial-precedente-N05",
+   "claim": "La Res. CREG 101 120/2026 permite que los usuarios que necesitan equipos eléctricos para preservar la vida o la salud pidan ser excluidos del programa de cobros adicionales con soporte médico. El comercializador debe verificar en 5 días hábiles que la solicitud esté completa, sin calificar el diagnóstico. Hospitales, colegios, centros asistenciales, entidades oficiales, usuarios prepago y otros quedan excluidos de plano.",
+   "quote": "PARÁGRAFO 1o. Los usuarios que acrediten una condición médica que requiera el uso permanente o intensivo de equipos eléctricos indispensables para la preservación de la vida o la salud podrán solicitar no ser incluidos en el programa ante el comercializador, aportando el soporte médico que acredite tal condición y la fecha desde la cual se presenta.",
+   "figures": "5 días hábiles para verificar la completitud",
+   "period": "Programa desde el 1-sep-2026",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "source_outlet": "CREG",
+   "source_title": "Resolución CREG 101 120 de 2026, art. 4 (Usuarios no incluidos), par. 1",
+   "source_date": "2026-07-30",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "notes": "Dato práctico clave para el hilo, ligado a la T-436/24: un paciente con concentrador puede pedir a CENS no ser incluido. La web de CENS también menciona esta exclusión médica."
+  },
+  {
+   "id": "judicial-precedente-N06",
+   "claim": "La meta individual del programa CREG es la mediana del consumo diario de los 12 meses anteriores y nunca puede ser inferior al consumo de subsistencia según la altitud: 173 kWh/mes, unos 5,77 kWh/día, en zonas bajo 1.000 msnm como Cúcuta. A los usuarios con menos historial se les asigna una meta de referencia (mediana de su categoría).",
+   "quote": "En ningún caso la meta individual diaria de consumo será inferior al consumo de subsistencia diario aplicable al usuario. Cuando la meta calculada conforme a este artículo resulte inferior al consumo de subsistencia vigente en función de la altitud sobre el nivel del mar, dividido entre treinta (30), se aplicará este último valor como meta individual diaria de consumo.",
+   "figures": "Meta mínima de 173/30 kWh por día bajo 1.000 msnm",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm",
+   "source_outlet": "CREG",
+   "source_title": "Resolución CREG 101 120 de 2026, art. 6",
+   "source_date": "2026-07-30",
+   "source_type": "primario-regulador",
+   "confidence": "alta",
+   "notes": "Explica el reclamo de CENS sobre el clima: la mediana anual queda por debajo del consumo de los meses más calurosos."
+  },
+  {
+   "id": "judicial-precedente-N07",
+   "claim": "Superservicios (Concepto 93 de 2025, 4-mar-2025): pese al auto del Consejo de Estado de 5-abr-2021, la Res. CREG 105 007/2024 debe aplicarse hasta que la CREG adopte una decisión definitiva. La suspensión solo tiene efectos hacia el futuro y 'los contratos previos a dicha suspensión se presumen legales'.",
+   "quote": "lo cierto es que hasta tanto no se produzca una decisión definitiva por parte de la CREG con base en lo decidido por el Consejo de Estado, debe aplicarse la norma con su modificación transitoria. La suspensión de los efectos del aparte del parágrafo primero del artículo 37 de la Resolución CREG 108 de 1997 solo tiene efectos hacia futuro. Esto implica que los contratos previos a dicha suspensión se presumen legales y tienen plena eficacia y aplicabilidad.",
+   "source_url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/concepto_superservicios_0000093_2025.htm",
+   "source_outlet": "Superintendencia de Servicios Públicos Domiciliarios (vía Gestor Normativo CREG)",
+   "source_title": "Concepto SSPD 93 de 2025",
+   "source_date": "2025-03-04",
+   "source_type": "primario-control",
+   "confidence": "alta",
+   "notes": "Sirve a ambos lados. Es la mejor defensa de CENS para la v5.0 de 2020, pero no cubre la v6.0 de 2023, que es posterior a la suspensión."
+  },
+  {
+   "id": "judicial-precedente-N08",
+   "claim": "T-761/15 fijó una regla: si la suspensión de la energía en un hogar de estrato 1 vulnera derechos de sujetos de especial protección, debe garantizarse el acceso a la porción subsidiada (60%) del consumo de subsistencia. En zonas bajas son 103,8 de los 173 kWh. La Corte reitera también que las empresas tienen derecho a suspender por mora.",
+   "quote": "en casos en los que la interrupción del servicio de energía eléctrica sea sobre un domicilio ubicado en el estrato 1, y tenga como consecuencia la vulneración de derechos fundamentales de sujetos de especial protección constitucional, deberá garantizarse el acceso al porcentaje (60%) subsidiado del consumo de subsistencia",
+   "figures": "103,8 kWh/mes (60% de 173 kWh)",
+   "source_url": "https://www.corteconstitucional.gov.co/relatoria/2015/T-761-15.htm",
+   "source_outlet": "Corte Constitucional, Sala Octava",
+   "source_title": "Sentencia T-761 de 2015",
+   "source_date": "2015-12-11",
+   "source_type": "primario-judicial",
+   "confidence": "alta",
+   "notes": "El 60% era el subsidio del estrato 1 en 2015. Hoy CENS publica un subsidio de E1 del 52,2448% (enero 2026), así que conviene citar la regla y no el porcentaje como vigente."
+  },
+  {
+   "id": "judicial-precedente-N09",
+   "claim": "La Res. CREG 101 120/2026 tuvo un antecedente: la Res. CREG 101 042 de 2024 (El Niño 2024), con un esquema similar de incentivos y penalidades sobre el consumo por encima de una meta individual. La Opinión lo explicó para los usuarios de CENS con recargos del 30% (estratos 1-3), 50% (4-6) y 100% (comercio e industria).",
+   "figures": "Recargos 2024: 30% / 50% / 100%; consumo promedio en Cúcuta en 2024: E2 200, E3 224, E4 290 kWh; subsistencia de 173 kWh",
+   "period": "abr-2024",
+   "source_url": "https://laopinion.co/economia/el-impacto-de-la-resolucion-de-la-creg-en-los-usuarios-de-cens-en-cucuta",
+   "source_outlet": "La Opinión",
+   "source_title": "El impacto de la resolución de la CREG en los usuarios de CENS en Cúcuta",
+   "source_date": "2024-04-25",
+   "source_type": "prensa",
+   "confidence": "media",
+   "notes": "No se revisó el texto de la Res. 101 042/2024. Es útil para decir que el esquema no es nuevo y que viene de la CREG, no de CENS."
+  },
+  {
+   "id": "judicial-precedente-N10",
+   "claim": "Hay una segunda demanda ante el Consejo de Estado contra el programa CREG: el abogado cartagenero Kevin Oliver Keep Arrieta demandó las Res. 101 120 y 101 126 de 2026 y pidió su 'suspensión provisional inmediata'. No se conocen admisión, decisión ni radicado.",
+   "source_url": "https://724noticias.com.co/2026/09/28/demanda-consejo-estado-cobro-creg-energia-suspension-inmediata/",
+   "source_outlet": "724noticias",
+   "source_title": "Demandan ante el Consejo de Estado el cobro adicional de la CREG y piden suspenderlo de inmediato",
+   "source_date": "2026-09-28",
+   "source_type": "prensa",
+   "confidence": "baja",
+   "notes": "Solo es prensa; sin fuente primaria."
+  }
+ ],
+ "cautions": [
+  "T-436/24 es el único caso de alta corte con CENS y no prueba abuso tarifario. La Corte atribuye el alza al CONSUMO del concentrador, aunque en el párrafo 90 use la palabra 'tarifa' en sentido coloquial; la orden de pagar recayó en la Nueva EPS y a CENS solo se la exhortó. Además, los hechos son de 2021-2024. Presentarlo como 'la Corte condenó a CENS por cobrar de más' sería falso.",
+  "No presentar como casos de CENS la SU-1010/08, la T-270/04, la T-191/08, la T-206A/18 ni la T-180/21: son de Electricaribe, y la T-717/10 es de EPM por acueducto. La T-180/21 sí involucra hoy a Caribemar/Afinia, filial de EPM según la Corte, pero los hechos son de la etapa Electricaribe (2020) y no de CENS.",
+  "La T-191/08 fue un amparo TRANSITORIO a una empresa: no anuló el cobro de manera definitiva. Corregir cualquier redacción que diga 'la Corte anuló el cobro'.",
+  "Art. 155: para recurrir sí hay que pagar lo no discutido o el promedio de los últimos 5 periodos. Solo hay exención si lo discutido es precisamente ese promedio (C-558/01). Un trino que diga 'no tiene que pagar nada para reclamar' es inexacto y podría perjudicar a los usuarios.",
+  "Cobros adicionales de oct-2026: es cierto que 'no pagarlos no permite cortar' (art. 20.i de la Res. 101 120), pero el mismo artículo dice que el cobro sigue siendo exigible, que la obligación no se extingue y que el pago parcial se imputa primero al servicio. Hay que decirlo completo para no inducir a la mora.",
+  "Los cobros adicionales los ordena la CREG, no CENS, y lo recaudado forma una bolsa de 'recursos de terceros' que se reparte entre los usuarios que ahorran. Atribuírselos a CENS como ganancia propia sería injusto y desmentible. Área Cúcuta habla de 'sanciones' y de una meta 'establecida por CENS EPM'; ambas cosas son imprecisas.",
+  "Hallazgo del CCU v6.0 (tabla propia vigente hasta el 24-jul-2024 pese a la suspensión de 2021): es fuerte y primario, pero no equivale a una ilegalidad declarada. CENS puede alegar el vacío regulatorio hasta la 105 007/2024 y el Concepto SSPD 93/2025. Redactarlo como hecho verificable ('CENS mantuvo en su contrato de oct-2023 la tabla...') y no como acusación. Tampoco hay prueba de que esa tabla causara cobros indebidos concretos.",
+  "Las excepciones al art. 150 que añade el CCU de CENS (alteraciones en la acometida, impedimento de lectura) son una tensión textual con la ley, no una infracción declarada por un juez o por la Superservicios. Usarlo solo con asesoría jurídica.",
+  "La demanda de Cartagena ataca la Res. 101 126 (la modificatoria sobre la fecha de inicio) y no la 101 120. Al 31-oct-2026 no hay admisión ni decisión cautelar conocida, ni en esa demanda ni en la del abogado Keep Arrieta. La tutela del personero de Santa Marta solo consta por lo que dice la Liga de Usuarios: no usarla.",
+  "Acción popular del Caribe: no está claro si es una sentencia de fondo o medidas cautelares (CVNoticias habla de una modificación de cautelares en marzo de 2026), no hay radicado y no involucra a CENS. No presentarla como 'precedente que obliga a bajar la tarifa de CENS'.",
+  "Cifras del ciclo pedagógico: las fuentes no coinciden (215 mil según el gerente en Alerta frente a 239 mil según Área Cúcuta). Usar la cita directa del gerente y atribuirla.",
+  "La regla de la T-761/15 sobre el 60% subsidiado se basa en el subsidio de estrato 1 de 2015. Hoy CENS publica un 52,2448% para E1 (ene-2026): citar la regla, no el porcentaje como vigente.",
+  "Ningún juez ha declarado enriquecimiento, abuso de posición dominante ni tarifas ilegales de CENS. Afirmarlo en el hilo sería difamatorio. Lo que sí está documentado son reglas procesales que protegen al usuario y una decisión de diseño contractual de CENS (la tabla de la v6.0) que puede cuestionarse.",
+  "Protección de datos: el auto del Juzgado 11 Administrativo publica el nombre, la dirección y el correo del comerciante de Ocaña, y la T-180/21 trae el nombre de la accionante de Sincelejo. El hilo no debe reproducirlos.",
+  "Mejor defensa de CENS que no puede faltar: (1) la ley autoriza recuperar la energía consumida y no facturada (art. 149, SU-1010/08); (2) la C-150/03 avala que la tarifa remunere el capital de una empresa eficiente; (3) la tutela exige agotar los recursos (T-206A/18, T-447/03); (4) CENS ofrece no suspender a los sujetos de especial protección inscritos y financiar al 0%; (5) CENS pidió a la CREG aliviar los cobros adicionales y la CREG prevé la exclusión médica y un piso de subsistencia en la meta."
+ ]
+}
