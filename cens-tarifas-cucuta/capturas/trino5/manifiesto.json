@@ -1,0 +1,78 @@
+[
+ {
+  "id": "trino5_1",
+  "tipo": "pdf",
+  "fuente": "Superservicios - Evaluación de la gestión año 2024, servicio de energía eléctrica ('Indicadores de gestión energía eléctrica año 2024 versión 3', PDF creado el 30-sep-2025)",
+  "url": "https://www.superservicios.gov.co/sites/default/files/2025-09/Indicadores-de-gestion-energia-electrica-ano-2024-v3.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/indicadores2024v3.pdf",
+  "sha256": "5d8e9af28dd18b0ef4ffcfce2ee158285f4125c61be1a651302545961f833520",
+  "nota": "El 1-nov-2026 la URL oficial devuelve un reto JavaScript (Incapsula) a curl; se usa la copia bajada con curl de esa misma URL el 31-oct-2026 en esta sesión (754.758 bytes, dos descargas idénticas).",
+  "pagina": 19,
+  "buscar": [
+   "EVALUACIÓN DE LA GESTIÓN",
+   "Referente: <= 22,49",
+   "CENTRALES ELECTRICAS DEL",
+   "36,69"
+  ],
+  "franja": [
+   20,
+   570
+  ],
+  "x": [
+   78,
+   562
+  ],
+  "dpi": 220,
+  "id_original": "t5_a"
+ },
+ {
+  "id": "trino5_2",
+  "tipo": "web",
+  "fuente": "CREG - Resolución 034 de 2004 (Gestor Normativo Alejandría), Anexo 1, numeral 2.3",
+  "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_0034_2004.htm",
+  "titular": "RESOLUCIÓN 34 DE 2004",
+  "fecha": "Diario Oficial No. 45.526 de 21 de abril de 2004",
+  "buscar": [
+   "2.3 Relación Reclamos Facturación (por 10,000)",
+   "Se contabilizan únicamente los reclamos resueltos a favor del suscriptor"
+  ],
+  "nota": "El texto de la resolución vive en un panel con desplazamiento propio (div.panel-documento); la captura de página completa de capturar_web.js solo muestra su inicio. Se desplazó ese panel hasta el numeral 2.3 (desplazamiento normal, sin tocar el DOM ni estilos) y se capturó la vista de 1280x900; recorte a mano en px CSS.",
+  "recortes": [
+   [
+    0,
+    0,
+    1280,
+    668
+   ]
+  ],
+  "id_original": "t5_b"
+ },
+ {
+  "id": "trino5_3",
+  "tipo": "pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/inspeccion_cens_2022.pdf",
+  "pagina": 101,
+  "buscar": [
+   "DIU y FIU > 360",
+   "usuarios del mercado de CENS SA ESP a diciembre del 2022."
+  ],
+  "margen_arriba": 22,
+  "margen_abajo": 16,
+  "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+  "id_original": "n_insp_p101"
+ },
+ {
+  "id": "trino5_4",
+  "tipo": "pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/inspeccion_cens_2022.pdf",
+  "pagina": 102,
+  "buscar": [
+   "Dado lo anterior, es importante mencionar",
+   "falla en la prestación del servicio"
+  ],
+  "margen_arriba": 18,
+  "margen_abajo": 16,
+  "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+  "id_original": "n_insp_p102"
+ }
+]

@@ -1,6 +1,6 @@
 [
  {
-  "id": "t6_a",
+  "id": "trino6_1",
   "tipo": "web",
   "url": "https://gestornormativo.creg.gov.co/gestor/entorno/docs/11001-03-24-000-2020-00058-00_20210405.htm",
   "titular": "SECCIÓN PRIMERA",
@@ -15,10 +15,11 @@
     1280,
     1062
    ]
-  ]
+  ],
+  "id_original": "t6_a"
  },
  {
-  "id": "t6_b",
+  "id": "trino6_2",
   "tipo": "pdf",
   "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU%20vigente%20desde%20el%2002_10_2023.pdf",
   "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t6/ccu_2023.pdf",
@@ -34,10 +35,11 @@
   "x": [
    0,
    612
-  ]
+  ],
+  "id_original": "t6_b"
  },
  {
-  "id": "t6_c",
+  "id": "trino6_3",
   "tipo": "pdf",
   "url": "https://www.cens.com.co/Portals/cens/clientes-y-usuarios/Servicio-tecnico/contrato-de-condiciones-uniformes/CCU_201_ACL_001.pdf?ver=a9ABDLSJbJymr79L3fPFaw%3d%3d",
   "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t6/ccu_2024.pdf",
@@ -53,10 +55,11 @@
   "x": [
    0,
    612
-  ]
+  ],
+  "id_original": "t6_c"
  },
  {
-  "id": "t6_d",
+  "id": "trino6_4",
   "tipo": "web",
   "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr003.html",
   "titular": "LEY 142 DE 1994",
@@ -72,6 +75,7 @@
     8738
    ]
   ],
-  "nota": "Secretaría General del Senado, Ley 142 de 1994 (parte 3), art. 146. Página solo HTTP: capturada con PROXY_BYPASS=www.secretariasenado.gov.co"
+  "nota": "Secretaría General del Senado, Ley 142 de 1994 (parte 3), art. 146. Página solo HTTP: capturada con PROXY_BYPASS=www.secretariasenado.gov.co",
+  "id_original": "t6_d"
  }
 ]

@@ -1,26 +1,5 @@
 [
  {
-  "id": "t3_a",
-  "tipo": "pdf",
-  "fuente": "CENS (Grupo EPM) - Informe de Sostenibilidad 2025, versión completa, p. 15 'Nuestros negocios'",
-  "url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20de%20Sostenibilidad%20CENS%202025_full%20versi%C3%B3n.pdf",
-  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t3/informe2025.pdf",
-  "pagina": 15,
-  "dpi": 120,
-  "buscar": [
-   "Compramos energía mediante contratos y",
-   "usuarios del mercado regulado."
-  ],
-  "franja": [
-   0,
-   985
-  ],
-  "x": [
-   0,
-   1920
-  ]
- },
- {
   "id": "t3_b",
   "tipo": "pdf",
   "fuente": "CENS - Notas a los Estados Financieros, segundo trimestre 2026, p. 4 (Nota 13)",
@@ -76,6 +55,44 @@
   "x": [
    54,
    558
+  ]
+ },
+ {
+  "id": "t5_c",
+  "tipo": "pdf",
+  "fuente": "Superservicios - Informe de vigilancia o inspección especial, Centrales Eléctricas del Norte de Santander (CENS), programa 2022 (PDF de 6-sep-2023)",
+  "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/inspeccion_cens_2022.pdf",
+  "sha256": "77a72999582d8e488fa9d1cfe04670cfb44770bd79f42bfb4d29ac297b5b7cec",
+  "nota": "El 1-nov-2026 la URL oficial devuelve un reto JavaScript (Incapsula) a curl; se usa la copia bajada de esa misma URL el 31-oct-2026 en esta sesión (3.508.282 bytes; ocho descargas independientes con el mismo sha256).",
+  "pagina": 69,
+  "buscar": [
+   "INFORME DE VIGILANCIA O",
+   "Por todo lo anterior",
+   "aclarar que este impacto no afectó directamente a los usuarios",
+   "tarifario realizado"
+  ],
+  "franja": [
+   28,
+   632
+  ]
+ },
+ {
+  "id": "t5_d",
+  "tipo": "pdf",
+  "fuente": "Superservicios - Informe de vigilancia o inspección especial, CENS, programa 2022",
+  "url": "https://www.superservicios.gov.co/sites/default/files/inline-files/Informe-de-inspeccion-especial-CENS-2022.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t5/inspeccion_cens_2022.pdf",
+  "sha256": "77a72999582d8e488fa9d1cfe04670cfb44770bd79f42bfb4d29ac297b5b7cec",
+  "pagina": 28,
+  "buscar": [
+   "INFORME DE VIGILANCIA O",
+   "luego del reinicio a 1 del factor",
+   "reactiva, el factor M incrementa a 2 sin que antes transcurran 12 meses"
+  ],
+  "franja": [
+   28,
+   315
   ]
  }
 ]

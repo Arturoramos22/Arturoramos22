@@ -1,0 +1,79 @@
+[
+ {
+  "id": "trino2_1",
+  "tipo": "pdf",
+  "fuente": "CENS - Informe ejecutivo de Sostenibilidad 2025",
+  "url": "https://www.cens.com.co/Portals/cens/institucional/informes-de-sostenibilidad/2025/Informe%20ejecutivo%20de%20Sostenibilidad%20CENS%202025.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t1/sostenibilidad2025.pdf",
+  "pagina": 28,
+  "buscar": [
+   "Utilidad neta 2025",
+   "COP$ 123,146",
+   "2024: COP$ 117,543 millones",
+   "2023: COP$ 68,595 millones"
+  ],
+  "franja": [
+   0,
+   1080
+  ],
+  "x": [
+   0,
+   1920
+  ],
+  "dpi": 100,
+  "id_original": "t1_d"
+ },
+ {
+  "id": "trino2_2",
+  "tipo": "pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/nuevas/ERI_Segundo_Trimestre_2026.pdf",
+  "pagina": 1,
+  "buscar": [
+   "ESTADO DEL RESULTADO INTEGRAL",
+   "Resultado neto del ejercicio"
+  ],
+  "margen_arriba": 40,
+  "margen_abajo": 14,
+  "url": "https://www.cens.com.co/Portals/cens/Accionistas/Informes-financieros-y-contables-trimestrales/2026/ERI_Segundo_Trimestre_2026.pdf",
+  "id_original": "n_eri_2t2026"
+ },
+ {
+  "id": "trino2_3",
+  "tipo": "pdf",
+  "fuente": "CREG - Resolución 215 de 2021 (15 dic. 2021), hoja 4/4, art. 1 que modifica el art. 2 de la Res. CREG 016 de 2018",
+  "url": "https://gestornormativo.creg.gov.co/Publicac.nsf/1c09d18d2d5ffb5b05256eee00709c02/b8273859c250da83052587b2005f783a/$FILE/Creg215-2021.pdf",
+  "archivo": "/tmp/claude-0/-home-user-Arturoramos22/7bf2191a-61ef-5142-b9db-ac95ce57ab7e/scratchpad/fuentes-capturas/t4/creg215.pdf",
+  "pagina": 4,
+  "dpi": 200,
+  "buscar": [
+   "será de 12,09% a partir del año 2022"
+  ],
+  "franja": [
+   40,
+   240
+  ],
+  "x": [
+   60,
+   600
+  ],
+  "id_original": "t4_a"
+ },
+ {
+  "id": "trino2_4",
+  "tipo": "web",
+  "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994_pr002.html",
+  "buscar": [
+   "Por suficiencia financiera se entiende que las fórmulas de tarifas"
+  ],
+  "recortes": [
+   [
+    0,
+    7190,
+    624,
+    7302
+   ]
+  ],
+  "nota": "Ley 142 de 1994, art. 87.4, Secretaría General del Senado (solo HTTP; PROXY_BYPASS)",
+  "id_original": "n_art87"
+ }
+]
