@@ -1,6 +1,6 @@
 # Índice de fuentes
 
-114 fuentes: 93 con captura real tomada, 21 para capturar a mano (el sitio bloquea navegadores automáticos o pide registro) y 0 pendientes.
+115 fuentes: 94 con captura real tomada, 21 para capturar a mano (el sitio bloquea navegadores automáticos o pide registro) y 0 pendientes.
 
 Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de la captura. En los PDF se indica la página. Cuando hay texto que buscar en la página, va en la columna «Buscar».
 
@@ -152,3 +152,4 @@ Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de l
 | P20 | InSight Crime (26 feb 2024): la violencia en Cúcuta aumenta mientras se fortalecen bandas venezolanas. | [abrir](https://insightcrime.org/es/noticias/violencia-cucuta-colombia-aumenta-mientras-bandas-venezolanas-fortalecen/) | `P20-insightcrime-2024-02-26-violencia-cucuta-bandas-venezolanas.png` | capturada |
 | P21 | Vanguardia (7 dic 2025): explosivos en el anillo vial matan a dos policías; la Policía lo llama 'retaliación' del ELN. | [abrir](https://www.vanguardia.com/colombia/2025/12/07/doble-atentado-en-cucuta-ataque-con-explosivos-dejo-dos-policias-muertos-y-dos-heridos/) | `P21-vanguardia-2025-12-07-dos-policias-muertos.png` | capturada |
 | P22 | El Tiempo (31 oct 2026): 'más de 23 bandas o grupos armados' (según un politólogo). | [abrir](https://www.eltiempo.com/colombia/otras-ciudades/en-cucuta-hay-23-bandas-que-se-disputan-a-muerte-las-economias-ilegales-incluidos-grupos-transnacionales-del-crimen-3597547) | — | manual: Nota exclusiva para suscriptores de El Tiempo. Capturar desde una cuenta suscrita. |
+| P23 | Noticias RCN (25 jun 2021): disparan contra el helicóptero en el que el presidente Duque llegaba a Cúcuta desde Sardinata. | [abrir](https://www.noticiasrcn.com/colombia/disparan-a-helicoptero-que-trasladaba-a-duque-de-sardinata-a-cucuta-382374) | `P23-rcn-2021-06-25-disparos-helicoptero-duque.png` | capturada |

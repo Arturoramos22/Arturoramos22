@@ -4,7 +4,7 @@
 
 **Ángulo.** El gancho es la noticia de la semana: la orden presidencial del 29 de octubre de 2026 de militarizar Cúcuta. El hilo no la critica de entrada. Primero reconstruye con cifras oficiales cómo se llegó aquí y al final muestra que la militarización ya se ha probado varias veces en la ciudad y en el mundo, sin resultados sostenidos. Así el cierre llega como conclusión de los datos y no como opinión.
 
-**Estructura (36 trinos en 7 bloques).**
+**Estructura (37 trinos en 7 bloques).**
 
 1. El gancho y la foto de hoy.
 2. El quiebre de 1999 a 2004: llega el Frente Fronteras y Cúcuta se vuelve la ciudad más violenta del país.
@@ -19,7 +19,8 @@
 - Cada dato lleva su captura. Primero la fuente oficial (datos de la Policía y el MinDefensa, Defensoría, sentencias, Corte Constitucional, DANE), después estudios revisados por pares y organismos internacionales, y la prensa solo para los hechos sin documento oficial.
 - Nada de capturas editadas ni tarjetas generadas. Las capturas son de las páginas reales, tomadas con un navegador. Las de PDF son la página del documento oficial tal cual.
 - Lo que no es oficial se dice. El ranking de "ciudades más violentas del mundo" es de una ONG mexicana y el hilo lo presenta así.
-- Las malas noticias para la tesis se dicen en el hilo, antes de que las saquen en las respuestas: la baja de homicidios de 2026 y el caso de El Salvador. Las demás están en la sección de réplicas de `hilo.md`.
+- Las malas noticias para la tesis se dicen en el hilo, antes de que las saquen en las respuestas: la baja de homicidios de 2026, la baja con Esparta en 2018 y el caso de El Salvador. Las demás están en la sección de réplicas de `hilo.md`.
+- El fracaso de la militarización se sostiene sobre las militarizaciones anteriores (sobre todo 2025) y sobre la evidencia científica, no sobre la del 29 de octubre: de esa todavía no hay datos.
 - Ninguna frase dice que "la ciencia prueba" algo. El hilo dice lo que encontraron los estudios, con sus palabras.
 
 **Respuesta corta a "¿cuántas bandas hay?".** La única cifra oficial publicada en un documento es la de la Defensoría (Alerta Temprana 027-24, diciembre de 2024): 20 estructuras de crimen organizado, 4 de ellas transnacionales, más 4 grupos armados: ELN, disidencias de las Farc, Clan del Golfo y EPL. En total, al menos 24 organizaciones, con presencia en todas las comunas. La Policía ha dado otras cifras en prensa (37 en 2023; 25 identificadas y 17 activas en 2024) y Pares habla de unas 26. La propia Defensoría advierte que los nombres cambian y algunos se repiten.
@@ -28,13 +29,12 @@
 
 **Antes de publicar.**
 
-- **El trino 1 dice "el jueves".** Si se publica después de esta semana, hay que cambiarlo por "el 29 de octubre".
 - **Varios trinos pasan de 280 caracteres.** Funcionan como los del hilo anterior, con cuenta Premium. Si no, se parten.
 - **Capturas manuales.** Algunos sitios bloquean navegadores automáticos. Esas capturas hay que tomarlas a mano desde el navegador: en `fuentes.md` aparecen con estado "manual" y el enlace exacto.
 
 ## Archivos
 
-- `hilo.md`: el borrador del hilo, con las capturas de cada trino, datos para las réplicas y lo que falta confirmar.
+- `hilo.md`: el borrador del hilo, con las capturas de cada trino, datos para las réplicas y lo que falta confirmar. Lo revisó un verificador independiente, cifra por cifra, contra la base oficial y los documentos.
 - `fuentes.md` y `fuentes.json`: índice de todas las fuentes. Para cada una: qué prueba, enlace exacto, archivo de la captura y estado (capturada o manual).
 - `capturas/`: las capturas reales, sin edición, con estos prefijos:
   - **D**: consultas a la base oficial de datos.gov.co y cuadros del DANE.

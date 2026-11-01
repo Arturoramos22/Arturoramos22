@@ -1366,5 +1366,17 @@
   "estado": "manual",
   "capturado": null,
   "nota": "El registro de alertas de la Defensoría no carga en navegadores automáticos. Abrir en el navegador."
+ },
+ {
+  "id": "P23",
+  "categoria": "Prensa",
+  "que_muestra": "Noticias RCN (25 jun 2021): disparan contra el helicóptero en el que el presidente Duque llegaba a Cúcuta desde Sardinata.",
+  "url": "https://www.noticiasrcn.com/colombia/disparan-a-helicoptero-que-trasladaba-a-duque-de-sardinata-a-cucuta-382374",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/P23-rcn-2021-06-25-disparos-helicoptero-duque.png",
+  "estado": "capturada",
+  "capturado": "2026-11-01T21:15:01.444Z",
+  "nota": null
  }
 ]

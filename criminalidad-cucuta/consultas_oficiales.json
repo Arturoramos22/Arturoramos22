@@ -1027,5 +1027,14 @@
     "que_muestra": "Registro oficial de alertas tempranas de la Defensoría: AT 027-24 e informe de seguimiento 302 (8 ago 2026), 'Cumplimiento bajo' y 'Tiende a agravarse'.",
     "manual": true,
     "nota": "El registro de alertas de la Defensoría no carga en navegadores automáticos. Abrir en el navegador."
+  },
+  {
+    "id": "P23",
+    "archivo": "P23-rcn-2021-06-25-disparos-helicoptero-duque.png",
+    "tipo": "web",
+    "url": "https://www.noticiasrcn.com/colombia/disparan-a-helicoptero-que-trasladaba-a-duque-de-sardinata-a-cucuta-382374",
+    "alto": 1500,
+    "fuente_tipo": "prensa",
+    "que_muestra": "Noticias RCN (25 jun 2021): disparan contra el helicóptero en el que el presidente Duque llegaba a Cúcuta desde Sardinata."
   }
 ]
