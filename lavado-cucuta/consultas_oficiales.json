@@ -60,5 +60,417 @@
     "alto": 1300,
     "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC",
     "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato desde 2010."
+  },
+  {
+    "id": "N01",
+    "archivo": "N01-semana-2026-11-04-nemesis-109-capturas.png",
+    "tipo": "web",
+    "url": "https://www.semana.com/nacion/cucuta/articulo/operacion-nemesis-en-cucuta-lleva-109-capturas-presidente-de-la-espriella-entrega-detalles/202608/",
+    "alto": 1500,
+    "que_muestra": "Semana (4 nov 2026): las cifras de Némesis son del Presidente; 'se espera que... las autoridades entreguen mayores detalles de quiénes son las personas que terminaron capturadas'.",
+    "buscar": "Se espera que con el pasar de las horas"
+  },
+  {
+    "id": "N02",
+    "archivo": "N02-elnuevosiglo-2026-11-04-nemesis-capturas-y-expulsiones.png",
+    "tipo": "web",
+    "url": "https://www.elnuevosiglo.com.co/nacion/operacion-militar-en-cucuta-dejo-109-capturados-y-32-expulsiones",
+    "alto": 1500,
+    "que_muestra": "El Nuevo Siglo (4 nov 2026): capturados y expulsados quedan para 'la legalización de sus situaciones jurídicas y migratorias'.",
+    "buscar": "situaciones jurídicas y migratorias"
+  },
+  {
+    "id": "N03",
+    "archivo": "N03-laopinion-2026-11-04-presidente-se-quedo-en-cucuta.png",
+    "tipo": "web",
+    "url": "https://laopinion.co/cucuta/presidente-de-la-espriella-se-quedo-en-cucuta-para-liderar-operativos",
+    "alto": 1500,
+    "que_muestra": "La Opinión (4 nov 2026): el mandatario dio a conocer las 109 capturas y 32 expulsiones de Némesis."
+  },
+  {
+    "id": "N04",
+    "archivo": "N04-elcolombiano-2026-11-03-fiscalia-kratos-20-capturas.png",
+    "tipo": "web",
+    "url": "https://www.elcolombiano.com/colombia/resultados-operativos-fiscalia-acompano-abelardo-40-grupos-delincuenciales-GO43096617",
+    "alto": 1500,
+    "que_muestra": "El Colombiano (3 nov 2026), con datos de la Fiscalía: la Operación Kratos 'dejó 20 personas capturadas: 19 por orden judicial y una en flagrancia'.",
+    "buscar": "Kratos"
+  },
+  {
+    "id": "N05",
+    "archivo": "N05-lasillavacia-2026-11-03-megaoperativos-391-capturados.png",
+    "tipo": "web",
+    "url": "https://www.lasillavacia.com/en-vivo/megaoperativos-del-gobierno-han-dejado-391-capturados-reporto-fiscalia/",
+    "alto": 1500,
+    "que_muestra": "La Silla Vacía (3 nov 2026): la puesta en escena de los megaoperativos y el balance de la Fiscalía."
+  },
+  {
+    "id": "N06",
+    "archivo": "N06-infobae-2026-10-29-penalistas-exhibir-detenidos.png",
+    "tipo": "web",
+    "url": "https://www.infobae.com/colombia/2026/10/29/abogados-penalistas-reprocharon-que-abelardo-de-la-espriella-encare-a-detenidos-en-los-megaoperativos-liderados-por-el-presidente-se-va-acabar-cuando-lo-declaren-ilegal/",
+    "alto": 1500,
+    "que_muestra": "Infobae (29 oct 2026): penalistas advierten que exhibir a los detenidos viola la presunción de inocencia y puede tumbar las capturas."
+  },
+  {
+    "id": "N07",
+    "archivo": "N07-areacucuta-2026-05-nemesis-plus-extincion-24934-millones.png",
+    "tipo": "web",
+    "url": "https://www.areacucuta.com/golpe-a-las-finanzas-del-crimen-organizado-la-policia-nacional-logro-extincion-de-dominio-a-bienes-avaluados-en-mas-de-24-934-millones/",
+    "alto": 1500,
+    "que_muestra": "Área Cúcuta (mayo 2026): 'Nemesis Plus', extinción de dominio sobre bienes por $24.934 millones de una red que lavaba dinero del narcotráfico con casas de cambio en Bogotá, Cúcuta y San Cayetano.",
+    "buscar": "24.934",
+    "manual": true,
+    "nota": "Área Cúcuta bloquea navegadores automatizados (Cloudflare). Abrir en el navegador."
+  },
+  {
+    "id": "N08",
+    "archivo": "N08-migracion-2026-08-expulsiones-por-comparendos.png",
+    "tipo": "web",
+    "url": "https://www.migracioncolombia.gov.co/noticias/agenda-migcol/comunicaciones-y-prensa/migracion-colombia-expulsa-a-cinco-ciudadanos-extranjeros-en-bucaramanga-en-operativo-coordinado-con-la-policia-nacional",
+    "alto": 1500,
+    "que_muestra": "Migración Colombia (ago 2026): las expulsiones son medidas administrativas, incluso por comparendos del Código de Policía.",
+    "buscar": "comparendos"
+  },
+  {
+    "id": "X01",
+    "archivo": "X01-trino-presidente-operacion-nemesis-parte-1.png",
+    "tipo": "usuario",
+    "url": "https://x.com/ABDELAESPRIELLA/status/2117935741745455377",
+    "que_muestra": "Pantallazo del trino del Presidente (4 nov 2026, 06:03): Operación Némesis, '109 capturas, 49 allanamientos y 32 expulsiones' como 'balance preliminar'. Tomado por el usuario en su teléfono.",
+    "manual": true,
+    "nota": "Pantallazo tomado por el usuario; ya está en capturas/."
+  },
+  {
+    "id": "X02",
+    "archivo": "X02-trino-presidente-operacion-nemesis-parte-2.png",
+    "tipo": "usuario",
+    "url": "https://x.com/ABDELAESPRIELLA/status/2117935741745455377",
+    "que_muestra": "Continuación del pantallazo del trino del Presidente sobre la Operación Némesis.",
+    "manual": true,
+    "nota": "Pantallazo tomado por el usuario; ya está en capturas/."
+  },
+  {
+    "id": "T01",
+    "archivo": "T01-doj-sec-td-bank-declaracion-hechos-colombian-atm-typology.png",
+    "tipo": "web",
+    "url": "https://www.sec.gov/Archives/edgar/data/947263/000119312524268446/d868035dex991.htm",
+    "alto": 1300,
+    "buscar": "Colombian ATM Typology",
+    "que_muestra": "Acuerdo de culpabilidad de TD Bank con el DOJ, declaración de hechos (¶62): define la 'Colombian ATM Typology' (depósitos en EE. UU., retiros en cajeros de Colombia).",
+    "manual": true,
+    "nota": "La SEC bloquea navegadores automatizados. Abrir en el navegador, buscar «Colombian ATM Typology» (Statement of Facts, ¶62) y capturar."
+  },
+  {
+    "id": "T02",
+    "archivo": "T02-doj-sec-td-bank-retiros-colombia-151-millones.png",
+    "tipo": "web",
+    "url": "https://www.sec.gov/Archives/edgar/data/947263/000119312524268446/d868035dex991.htm",
+    "alto": 1300,
+    "buscar": "151.8",
+    "que_muestra": "Declaración de hechos (¶71): los retiros en cajeros de Colombia con cuentas de TD pasaron de US$28,6 millones (2018) a US$151,8 millones (2021); 675.570 retiros en 2021.",
+    "manual": true,
+    "nota": "La SEC bloquea navegadores automatizados. Abrir en el navegador, buscar «151.8» (Statement of Facts, ¶71) y capturar."
+  },
+  {
+    "id": "T03",
+    "archivo": "T03-doj-sec-td-bank-pasaportes-venezolanos.png",
+    "tipo": "web",
+    "url": "https://www.sec.gov/Archives/edgar/data/947263/000119312524268446/d868035dex991.htm",
+    "alto": 1300,
+    "buscar": "Venezuelan passport",
+    "que_muestra": "Declaración de hechos (¶63-64): la red usó pasaportes venezolanos para sacar tarjetas débito y mover más de US$39 millones a Colombia.",
+    "manual": true,
+    "nota": "La SEC bloquea navegadores automatizados. Abrir en el navegador, buscar «Venezuelan passport» (Statement of Facts, ¶63-64) y capturar."
+  },
+  {
+    "id": "T04",
+    "archivo": "T04-fincen-td-bank-consent-order-p31-colombia-outlier.png",
+    "tipo": "pdf",
+    "url": "https://www.fincen.gov/system/files/enforcement_action/2024-10-10/FinCEN-TD-Bank-Consent-Order-508FINAL.pdf",
+    "pagina": 31,
+    "que_muestra": "FinCEN, orden de consentimiento contra TD Bank (10 oct 2024), p. 31: Colombia fue el caso atípico en retiros en cajeros de países de alto riesgo."
+  },
+  {
+    "id": "T05",
+    "archivo": "T05-fincen-td-bank-consent-order-p32.png",
+    "tipo": "pdf",
+    "url": "https://www.fincen.gov/system/files/enforcement_action/2024-10-10/FinCEN-TD-Bank-Consent-Order-508FINAL.pdf",
+    "pagina": 32,
+    "que_muestra": "FinCEN, orden contra TD Bank, p. 32: continuación sobre los retiros en cajeros de Colombia."
+  },
+  {
+    "id": "T06",
+    "archivo": "T06-irs-doj-td-bank-culpable-lavado.png",
+    "tipo": "web",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/td-bank-pleads-guilty-to-bank-secrecy-act-and-money-laundering-conspiracy-violations-in-1-point-8b-resolution",
+    "alto": 1500,
+    "que_muestra": "Comunicado del DOJ (publicado por IRS-CI): TD Bank se declara culpable de violar la Ley de Secreto Bancario y de conspirar para lavar dinero."
+  },
+  {
+    "id": "T07",
+    "archivo": "T07-irs-doj-nunez-flores-26-millones-colombia.png",
+    "tipo": "web",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/td-bank-insider-pleads-guilty-to-facilitating-colombian-atm-money-laundering-scheme",
+    "alto": 1500,
+    "que_muestra": "DOJ/IRS-CI: exempleado de TD se declara culpable de facilitar el envío de más de US$26 millones a Colombia mediante retiros en cajeros."
+  },
+  {
+    "id": "T08",
+    "archivo": "T08-fincen-multa-record-td-bank.png",
+    "tipo": "web",
+    "url": "https://www.fincen.gov/news/news-releases/fincen-assesses-record-13-billion-penalty-against-td-bank",
+    "alto": 1400,
+    "que_muestra": "FinCEN: multa récord de US$1.300 millones contra TD Bank."
+  },
+  {
+    "id": "T09",
+    "archivo": "T09-elespectador-td-bank-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.elespectador.com/judicial/la-caida-de-poderoso-banco-de-eeuu-por-millonarios-retiros-bancarios-en-cucuta/",
+    "alto": 1500,
+    "que_muestra": "El Espectador (prensa): vincula el caso TD Bank con retiros en Cúcuta (ojo: atribuye a Cúcuta una cifra que el DOJ da para toda Colombia)."
+  },
+  {
+    "id": "T10",
+    "archivo": "T10-laopinion-editorial-ruta-lavado.png",
+    "tipo": "web",
+    "url": "https://www.laopinion.co/editorial/en-la-ruta-internacional-del-lavado-de-dinero",
+    "alto": 1500,
+    "que_muestra": "La Opinión (editorial, oct 2024): Cúcuta 'una de las ciudades escogidas para el blanqueo' en el caso TD Bank (prensa, fuentes sin nombre)."
+  },
+  {
+    "id": "F08",
+    "archivo": "F08-datosgov-cucuta-lavado-procesos-abiertos-por-anio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1300,
+    "soql": "SELECT `municipio_hecho`, `a_o_creacion_proceso`, count(*) AS `procesos_lavado_abiertos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_creacion_proceso` ORDER BY `a_o_creacion_proceso` ASC",
+    "que_muestra": "Cúcuta: procesos por lavado de activos según el año en que la Fiscalía los abrió: 30 en 2025, 21 en 2024, 17 en 2026 (a septiembre)."
+  },
+  {
+    "id": "F09",
+    "archivo": "F09-datosgov-contrabando-gasolina-por-municipio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1000,
+    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `delito` = 'Favorecimiento De Contrabando De Hidrocarburos Y Sus Derivados Art. 320-1 C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC LIMIT 8",
+    "que_muestra": "Procesos de la Fiscalía por favorecimiento de contrabando de hidrocarburos (gasolina): Cúcuta es primera en el país."
+  },
+  {
+    "id": "F10",
+    "archivo": "F10-datosgov-trata-de-personas-por-municipio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1000,
+    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `delito` = 'Trata De Personas Art. 188a C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC LIMIT 8",
+    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín."
+  },
+  {
+    "id": "F11",
+    "archivo": "F11-datosgov-armas-uso-privativo-por-municipio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1000,
+    "soql": "SELECT `municipio_hecho`, count(*) AS `procesos_armas_uso_privativo` WHERE `delito` = 'Fabricacion, Trafico Y Porte De Armas De Uso Privativo De Las Fuerzas Armadas Art. 366 C.P.' GROUP BY `municipio_hecho` ORDER BY `procesos_armas_uso_privativo` DESC LIMIT 8",
+    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país."
+  },
+  {
+    "id": "M01",
+    "archivo": "M01-datosgov-cocaina-incautada-municipios-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 1000,
+    "soql": "SELECT `municipio`, `departamento`, sum(`cantidad`) AS `kilos_cocaina_2026` WHERE `fecha_hecho` BETWEEN '2026-01-01' AND '2026-12-31T23:59:59' GROUP BY `municipio`, `departamento` ORDER BY `kilos_cocaina_2026` DESC LIMIT 10",
+    "que_muestra": "MinDefensa: cocaína incautada por municipio en 2026 (a septiembre): Cúcuta entre los primeros del país."
+  },
+  {
+    "id": "M02",
+    "archivo": "M02-datosgov-cocaina-incautada-cucuta-por-anio.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 1000,
+    "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `kilos_cocaina` WHERE `cod_muni` = '54001' AND `fecha_hecho` >= '2020-01-01' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año: de 541 kg (2023) a 8.105 kg (2026, enero-septiembre)."
+  },
+  {
+    "id": "A01",
+    "archivo": "A01-defensoria-AT027-24-p8-trochas-contrabando-armas-trata.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 8,
+    "que_muestra": "Defensoría, AT 027-24, p. 8: los grupos usan las trochas para contrabando, narcotráfico, tráfico de armas y de personas."
+  },
+  {
+    "id": "A02",
+    "archivo": "A02-defensoria-AT027-24-p12-fuentes-de-financiacion.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 12,
+    "que_muestra": "AT 027-24, p. 12: tráfico de armas y extorsión como 'fuentes de financiación' de las estructuras criminales."
+  },
+  {
+    "id": "A03",
+    "archivo": "A03-defensoria-AT027-24-p13-trata-transnacional.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 13,
+    "que_muestra": "AT 027-24, p. 13: bandas transnacionales de trata de personas para explotación sexual en el área metropolitana."
+  },
+  {
+    "id": "A04",
+    "archivo": "A04-defensoria-AT027-24-p14-reinversion-rentas-criminales.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 14,
+    "que_muestra": "AT 027-24, p. 14: 'reinversión de recursos' producto de rentas criminales en Cúcuta."
+  },
+  {
+    "id": "A05",
+    "archivo": "A05-defensoria-AT027-24-p20-cambistas-amenazados.png",
+    "tipo": "pdf",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina": 20,
+    "que_muestra": "AT 027-24, p. 20: el ELN cobra a quienes hacen contrabando; AK-47 amenazó a los cambistas del centro y de Alejandría."
+  },
+  {
+    "id": "G01",
+    "archivo": "G01-gafilat-evaluacion-colombia-p20-frontera-mercado-negro.png",
+    "tipo": "pdf",
+    "url": "https://biblioteca.gafilat.org/wp-content/uploads/2024/07/IEM-Colombia-4taRonda.pdf",
+    "pagina": 20,
+    "que_muestra": "GAFILAT, Informe de Evaluación Mutua de Colombia, p. 20: la frontera colombo-venezolana ha sido históricamente un centro del mercado negro y del contrabando."
+  },
+  {
+    "id": "G02",
+    "archivo": "G02-gafilat-evaluacion-colombia-p91-cambistas.png",
+    "tipo": "pdf",
+    "url": "https://biblioteca.gafilat.org/wp-content/uploads/2024/07/IEM-Colombia-4taRonda.pdf",
+    "pagina": 91,
+    "que_muestra": "GAFILAT, p. 91: los cambistas son un 'punto de entrada clave' a las divisas ilegales."
+  },
+  {
+    "id": "G03",
+    "archivo": "G03-dane-geih-informalidad-cucuta-p7.png",
+    "tipo": "pdf",
+    "url": "https://www.dane.gov.co/files/operaciones/GEIH/bol-GEIHEISS-jun-ago2026.pdf",
+    "pagina": 7,
+    "que_muestra": "DANE, GEIH (jun-ago 2026), p. 7: Cúcuta A.M. con la segunda tasa de informalidad laboral más alta del país (62,4 %)."
+  },
+  {
+    "id": "G04",
+    "archivo": "G04-dian-informe-gestion-norte-de-santander-p4.png",
+    "tipo": "pdf",
+    "url": "https://www.dian.gov.co/dian/rendicioncuentas/RendicionCuentasCiudadania/RendicionCuentas2026/Informe-Gestion-TAC-2026-Nte-Santander.pdf",
+    "pagina": 4,
+    "que_muestra": "DIAN, informe de gestión Norte de Santander 2026, p. 4: aprehensiones de la seccional de Aduanas de Cúcuta."
+  },
+  {
+    "id": "G05",
+    "archivo": "G05-dian-informe-gestion-norte-de-santander-p5.png",
+    "tipo": "pdf",
+    "url": "https://www.dian.gov.co/dian/rendicioncuentas/RendicionCuentasCiudadania/RendicionCuentas2026/Informe-Gestion-TAC-2026-Nte-Santander.pdf",
+    "pagina": 5,
+    "que_muestra": "DIAN, informe Norte de Santander 2026, p. 5: resoluciones de la división cambiaria."
+  },
+  {
+    "id": "U01",
+    "archivo": "U01-uiaf-evaluacion-nacional-riesgo-contrabando.png",
+    "tipo": "pdf",
+    "url": "https://www.uiaf.gov.co/sites/default/files/2024-07/Libro%20ENR%20Digital.pdf",
+    "pagina": 66,
+    "manual": true,
+    "nota": "El sitio de la UIAF no se deja descargar desde el entorno de trabajo (certificado). Abrir en el navegador, páginas 66-67 del PDF.",
+    "que_muestra": "UIAF, Evaluación Nacional de Riesgo: el contrabando, amenaza 'media alta' de lavado; Venezuela, amenaza transnacional 'media'."
+  },
+  {
+    "id": "W01",
+    "archivo": "W01-policia-2026-operacion-cadivi-bienes-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/dijin-ocupa-68-bienes-avaluados-en-mas-13700-millones-pesos-en-bogota-cucuta-villa-del",
+    "alto": 2300,
+    "que_muestra": "Policía (DIJIN), mayo 2026: ocupación de bienes en Bogotá, Cúcuta y Villa del Rosario por un esquema de lavado con divisas."
+  },
+  {
+    "id": "W02",
+    "archivo": "W02-policia-2022-corobon-exportaciones-ficticias.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/cinco-personas-capturadas-por-lavado-activos-producto-narcotrafico",
+    "alto": 2300,
+    "que_muestra": "Policía (POLFA), 2022, Operación COROBON: empresas fachada en Cúcuta simularon exportaciones a Venezuela por $112 mil millones."
+  },
+  {
+    "id": "W03",
+    "archivo": "W03-policia-2022-exporfic-extincion-de-dominio.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/extincion-dominio-propiedades-criminales-cobijados-con-circular-azul-interpol",
+    "alto": 2300,
+    "que_muestra": "Policía (POLFA), 2022, Operación Exporfic: exportaciones ficticias por más de $72 mil millones."
+  },
+  {
+    "id": "W04",
+    "archivo": "W04-policia-2020-red-familiar-lavado-82560-millones.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/desarticulado-contubernio-familiar-para-lavado-activos",
+    "alto": 2300,
+    "que_muestra": "Policía (POLFA), 2020: red familiar que lavó $82.560 millones con una tienda de barrio como fachada."
+  },
+  {
+    "id": "W05",
+    "archivo": "W05-dian-2026-contrabando-el-llano-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.dian.gov.co/Prensa/Paginas/NG-Comunicado-de-Prensa-123-2026.aspx",
+    "alto": 1500,
+    "que_muestra": "DIAN (sep 2026): aprehensión de contrabando por $462 millones en el barrio El Llano de Cúcuta."
+  },
+  {
+    "id": "W06",
+    "archivo": "W06-defensoria-trata-cucuta-25-por-ciento.png",
+    "tipo": "web",
+    "url": "https://www.defensoria.gov.co/w/la-trata-de-personas-una-realidad-que-persiste-en-colombia",
+    "alto": 1500,
+    "manual": true,
+    "nota": "defensoria.gov.co bloquea navegadores automatizados. Abrir en el navegador.",
+    "que_muestra": "Defensoría: Cúcuta concentró el 25,4 % de los casos de trata atendidos en 2025."
+  },
+  {
+    "id": "P01",
+    "archivo": "P01-eltiempo-2019-red-lavo-medio-billon-98-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.eltiempo.com/justicia/delitos/cae-banda-criminal-que-habria-lavado-mas-de-medio-billon-de-pesos-416658",
+    "alto": 1500,
+    "cerrar": [
+      "button.tp-close",
+      "text=ENTIENDO"
+    ],
+    "que_muestra": "El Tiempo (2019), con la Fiscalía: red que habría lavado más de medio billón de pesos; el 98 % de sus transacciones, desde Cúcuta."
+  },
+  {
+    "id": "P02",
+    "archivo": "P02-eltiempo-2023-48924-millones-casas-de-cambio.png",
+    "tipo": "web",
+    "url": "https://www.eltiempo.com/justicia/delitos/fiscalia-captura-a-dos-personas-senaladas-de-lavar-48-924-millones-818349",
+    "alto": 1500,
+    "cerrar": [
+      "button.tp-close",
+      "text=ENTIENDO"
+    ],
+    "que_muestra": "El Tiempo (2023), con la Fiscalía: dos capturados por lavar $48.924 millones recibidos desde casas de cambio de Cúcuta."
+  },
+  {
+    "id": "P03",
+    "archivo": "P03-elpais-2026-nemesis-plus-bienes-norte-de-santander.png",
+    "tipo": "web",
+    "url": "https://www.elpais.com.co/judicial/autoridades-ocuparon-bienes-en-bogota-y-norte-de-santander-por-presunto-lavado-de-activos-2742.html",
+    "alto": 1500,
+    "que_muestra": "El País (mayo 2026): 'Nemesis Plus', ocupación de bienes por más de $24.934 millones de una red que lavaba con casas de cambio."
+  },
+  {
+    "id": "P04",
+    "archivo": "P04-publimetro-2025-lavado-tren-de-aragua-cucuta.png",
+    "tipo": "web",
+    "url": "https://www.publimetro.co/bogota/2025/12/15/capturan-y-envian-a-la-carcel-a-dos-hermanos-senalados-de-lavado-de-activos-para-el-tren-de-aragua/",
+    "alto": 1500,
+    "que_muestra": "Publimetro (dic 2025), con la Fiscalía: dos hermanos procesados por lavar más de $11.270 millones del Tren de Aragua en Bogotá, Medellín y Cúcuta."
   }
 ]

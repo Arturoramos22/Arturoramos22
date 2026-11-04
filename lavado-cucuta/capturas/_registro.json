@@ -40,5 +40,91 @@
     "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC/page/filter",
     "capturado": "2026-11-04T12:14:00.766Z",
     "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato desde 2010."
+  },
+  "N01": {
+    "archivo": "N01-semana-2026-11-04-nemesis-109-capturas.png",
+    "url": "https://www.semana.com/nacion/cucuta/articulo/operacion-nemesis-en-cucuta-lleva-109-capturas-presidente-de-la-espriella-entrega-detalles/202608/",
+    "capturado": "2026-11-04T12:42:17.908Z",
+    "que_muestra": "Semana (4 nov 2026): las cifras de Némesis son del Presidente; 'se espera que... las autoridades entreguen mayores detalles de quiénes son las personas que terminaron capturadas'."
+  },
+  "N02": {
+    "archivo": "N02-elnuevosiglo-2026-11-04-nemesis-capturas-y-expulsiones.png",
+    "url": "https://www.elnuevosiglo.com.co/nacion/operacion-militar-en-cucuta-dejo-109-capturados-y-32-expulsiones",
+    "capturado": "2026-11-04T12:42:39.505Z",
+    "que_muestra": "El Nuevo Siglo (4 nov 2026): capturados y expulsados quedan para 'la legalización de sus situaciones jurídicas y migratorias'."
+  },
+  "N03": {
+    "archivo": "N03-laopinion-2026-11-04-presidente-se-quedo-en-cucuta.png",
+    "url": "https://laopinion.co/cucuta/presidente-de-la-espriella-se-quedo-en-cucuta-para-liderar-operativos",
+    "capturado": "2026-11-04T12:43:04.947Z",
+    "que_muestra": "La Opinión (4 nov 2026): el mandatario dio a conocer las 109 capturas y 32 expulsiones de Némesis."
+  },
+  "N04": {
+    "archivo": "N04-elcolombiano-2026-11-03-fiscalia-kratos-20-capturas.png",
+    "url": "https://www.elcolombiano.com/colombia/resultados-operativos-fiscalia-acompano-abelardo-40-grupos-delincuenciales-GO43096617",
+    "capturado": "2026-11-04T12:43:27.721Z",
+    "que_muestra": "El Colombiano (3 nov 2026), con datos de la Fiscalía: la Operación Kratos 'dejó 20 personas capturadas: 19 por orden judicial y una en flagrancia'."
+  },
+  "N05": {
+    "archivo": "N05-lasillavacia-2026-11-03-megaoperativos-391-capturados.png",
+    "url": "https://www.lasillavacia.com/en-vivo/megaoperativos-del-gobierno-han-dejado-391-capturados-reporto-fiscalia/",
+    "capturado": "2026-11-04T12:43:46.352Z",
+    "que_muestra": "La Silla Vacía (3 nov 2026): la puesta en escena de los megaoperativos y el balance de la Fiscalía."
+  },
+  "N06": {
+    "archivo": "N06-infobae-2026-10-29-penalistas-exhibir-detenidos.png",
+    "url": "https://www.infobae.com/colombia/2026/10/29/abogados-penalistas-reprocharon-que-abelardo-de-la-espriella-encare-a-detenidos-en-los-megaoperativos-liderados-por-el-presidente-se-va-acabar-cuando-lo-declaren-ilegal/",
+    "capturado": "2026-11-04T12:44:08.484Z",
+    "que_muestra": "Infobae (29 oct 2026): penalistas advierten que exhibir a los detenidos viola la presunción de inocencia y puede tumbar las capturas."
+  },
+  "N08": {
+    "archivo": "N08-migracion-2026-08-expulsiones-por-comparendos.png",
+    "url": "https://www.migracioncolombia.gov.co/noticias/agenda-migcol/comunicaciones-y-prensa/migracion-colombia-expulsa-a-cinco-ciudadanos-extranjeros-en-bucaramanga-en-operativo-coordinado-con-la-policia-nacional",
+    "capturado": "2026-11-04T12:44:47.528Z",
+    "que_muestra": "Migración Colombia (ago 2026): las expulsiones son medidas administrativas, incluso por comparendos del Código de Policía."
+  },
+  "T04": {
+    "archivo": "T04-fincen-td-bank-consent-order-p31-colombia-outlier.png",
+    "url": "https://www.fincen.gov/system/files/enforcement_action/2024-10-10/FinCEN-TD-Bank-Consent-Order-508FINAL.pdf",
+    "pagina_pdf": 31,
+    "capturado": "2026-11-04T12:46:54.839Z",
+    "que_muestra": "FinCEN, orden de consentimiento contra TD Bank (10 oct 2024), p. 31: Colombia fue el caso atípico en retiros en cajeros de países de alto riesgo."
+  },
+  "T05": {
+    "archivo": "T05-fincen-td-bank-consent-order-p32.png",
+    "url": "https://www.fincen.gov/system/files/enforcement_action/2024-10-10/FinCEN-TD-Bank-Consent-Order-508FINAL.pdf",
+    "pagina_pdf": 32,
+    "capturado": "2026-11-04T12:46:55.105Z",
+    "que_muestra": "FinCEN, orden contra TD Bank, p. 32: continuación sobre los retiros en cajeros de Colombia."
+  },
+  "T06": {
+    "archivo": "T06-irs-doj-td-bank-culpable-lavado.png",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/td-bank-pleads-guilty-to-bank-secrecy-act-and-money-laundering-conspiracy-violations-in-1-point-8b-resolution",
+    "capturado": "2026-11-04T12:47:12.655Z",
+    "que_muestra": "Comunicado del DOJ (publicado por IRS-CI): TD Bank se declara culpable de violar la Ley de Secreto Bancario y de conspirar para lavar dinero."
+  },
+  "T07": {
+    "archivo": "T07-irs-doj-nunez-flores-26-millones-colombia.png",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/td-bank-insider-pleads-guilty-to-facilitating-colombian-atm-money-laundering-scheme",
+    "capturado": "2026-11-04T12:47:30.070Z",
+    "que_muestra": "DOJ/IRS-CI: exempleado de TD se declara culpable de facilitar el envío de más de US$26 millones a Colombia mediante retiros en cajeros."
+  },
+  "T08": {
+    "archivo": "T08-fincen-multa-record-td-bank.png",
+    "url": "https://www.fincen.gov/news/news-releases/fincen-assesses-record-13-billion-penalty-against-td-bank",
+    "capturado": "2026-11-04T12:48:01.492Z",
+    "que_muestra": "FinCEN: multa récord de US$1.300 millones contra TD Bank."
+  },
+  "T09": {
+    "archivo": "T09-elespectador-td-bank-cucuta.png",
+    "url": "https://www.elespectador.com/judicial/la-caida-de-poderoso-banco-de-eeuu-por-millonarios-retiros-bancarios-en-cucuta/",
+    "capturado": "2026-11-04T12:48:32.611Z",
+    "que_muestra": "El Espectador (prensa): vincula el caso TD Bank con retiros en Cúcuta (ojo: atribuye a Cúcuta una cifra que el DOJ da para toda Colombia)."
+  },
+  "T10": {
+    "archivo": "T10-laopinion-editorial-ruta-lavado.png",
+    "url": "https://www.laopinion.co/editorial/en-la-ruta-internacional-del-lavado-de-dinero",
+    "capturado": "2026-11-04T12:48:58.215Z",
+    "que_muestra": "La Opinión (editorial, oct 2024): Cúcuta 'una de las ciudades escogidas para el blanqueo' en el caso TD Bank (prensa, fuentes sin nombre)."
   }
 }

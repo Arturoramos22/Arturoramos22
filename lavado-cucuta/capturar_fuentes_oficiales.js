@@ -76,7 +76,7 @@ const urlDe = (c) => c.tipo === 'soql'
         await page.waitForTimeout(800);
         // no guarda capturas de páginas de bloqueo o verificación anti-bots
         const txt = (await page.evaluate(() => document.body ? document.body.innerText.slice(0, 2000) : '')) || '';
-        if (/Verificaci[oó]n de seguridad en curso|Web Page Blocked|403 Forbidden|Access Denied|Just a moment|Un momento|Validacion|upstream request failed/i.test(txt)) {
+        if (/Verificaci[oó]n de seguridad en curso|Web Page Blocked|403 Forbidden|Access Denied|Just a moment|Un momento|Validacion|upstream request failed|Undeclared Automated Tool|Sorry, you have been blocked/i.test(txt)) {
           throw new Error('página bloqueada para navegadores automatizados: capturar a mano');
         }
         await page.screenshot({ path: file, fullPage: !!c.completa });
