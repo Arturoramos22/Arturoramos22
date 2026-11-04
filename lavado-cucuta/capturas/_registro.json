@@ -286,5 +286,35 @@
     "url": "https://www.publimetro.co/bogota/2025/12/15/capturan-y-envian-a-la-carcel-a-dos-hermanos-senalados-de-lavado-de-activos-para-el-tren-de-aragua/",
     "capturado": "2026-11-04T12:59:32.348Z",
     "que_muestra": "Publimetro (dic 2025), con la Fiscalía: dos hermanos procesados por lavar más de $11.270 millones del Tren de Aragua en Bogotá, Medellín y Cúcuta."
+  },
+  "M03": {
+    "archivo": "M03-datosgov-cocaina-cucuta-2026-por-mes.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_ym(%60fecha_hecho%60)%20AS%20%60mes%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60fecha_hecho%60%20%3E%3D%20'2026-01-01'%20GROUP%20BY%20%60municipio%60%2C%20%60mes%60%20ORDER%20BY%20%60mes%60%20ASC/page/filter",
+    "capturado": "2026-11-04T17:03:33.916Z",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por mes en 2026 (enero a septiembre)."
+  },
+  "M04": {
+    "archivo": "M04-datosgov-cocaina-cucuta-7ago-30sep-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina_7ago_30sep_2026%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60fecha_hecho%60%20BETWEEN%20'2026-08-07'%20AND%20'2026-09-30T23%3A59%3A59'%20GROUP%20BY%20%60municipio%60/page/filter",
+    "capturado": "2026-11-04T17:03:56.596Z",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta entre el 7 de agosto y el 30 de septiembre de 2026: 2.506 kg."
+  },
+  "M05": {
+    "archivo": "M05-datosgov-cocaina-cucuta-7ago-30sep-2025.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina_7ago_30sep_2025%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60fecha_hecho%60%20BETWEEN%20'2025-08-07'%20AND%20'2025-09-30T23%3A59%3A59'%20GROUP%20BY%20%60municipio%60/page/filter",
+    "capturado": "2026-11-04T17:04:21.854Z",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta en el mismo periodo de 2025: 1.234 kg."
+  },
+  "M06": {
+    "archivo": "M06-datosgov-cocaina-cucuta-mayores-incautaciones-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20%60fecha_hecho%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60fecha_hecho%60%20%3E%3D%20'2026-01-01'%20GROUP%20BY%20%60municipio%60%2C%20%60fecha_hecho%60%20ORDER%20BY%20%60kilos_cocaina%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T17:04:42.780Z",
+    "que_muestra": "MinDefensa: las mayores incautaciones de cocaína en Cúcuta en 2026, por fecha (1.120 kg el 28 de septiembre; 695 kg el 29 de agosto)."
+  },
+  "M07": {
+    "archivo": "M07-datosgov-cocaina-cucuta-por-anio-desde-2010.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-04T17:05:06.234Z",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año desde 2010: 2026 (enero-septiembre) es el máximo de la serie."
   }
 }

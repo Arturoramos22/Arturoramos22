@@ -658,5 +658,65 @@
   "estado": "manual",
   "capturado": null,
   "nota": "Pausar el video del trino presidencial en la lámina del Ministerio de Defensa ('CÚCUTA 8 Estructuras a afectar – 54 BARRIOS') y capturar ese cuadro. No capturar cuadros con las caras de los detenidos."
+ },
+ {
+  "id": "M03",
+  "categoria": "Datos oficiales de MinDefensa (datos.gov.co)",
+  "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por mes en 2026 (enero a septiembre).",
+  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCA%C3%8DNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_ym%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%20sum%28%60cantidad%60%29%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20AND%20%60fecha_hecho%60%20%3E%3D%20%272026-01-01%27%20GROUP%20BY%20%60municipio%60%2C%20%60mes%60%20ORDER%20BY%20%60mes%60%20ASC/page/filter",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/M03-datosgov-cocaina-cucuta-2026-por-mes.png",
+  "estado": "capturada",
+  "capturado": "2026-11-04T17:03:33.916Z",
+  "nota": null
+ },
+ {
+  "id": "M04",
+  "categoria": "Datos oficiales de MinDefensa (datos.gov.co)",
+  "que_muestra": "MinDefensa: cocaína incautada en Cúcuta entre el 7 de agosto y el 30 de septiembre de 2026: 2.506 kg.",
+  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCA%C3%8DNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20sum%28%60cantidad%60%29%20AS%20%60kilos_cocaina_7ago_30sep_2026%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20AND%20%60fecha_hecho%60%20BETWEEN%20%272026-08-07%27%20AND%20%272026-09-30T23%3A59%3A59%27%20GROUP%20BY%20%60municipio%60/page/filter",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/M04-datosgov-cocaina-cucuta-7ago-30sep-2026.png",
+  "estado": "capturada",
+  "capturado": "2026-11-04T17:03:56.596Z",
+  "nota": null
+ },
+ {
+  "id": "M05",
+  "categoria": "Datos oficiales de MinDefensa (datos.gov.co)",
+  "que_muestra": "MinDefensa: cocaína incautada en Cúcuta en el mismo periodo de 2025: 1.234 kg.",
+  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCA%C3%8DNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20sum%28%60cantidad%60%29%20AS%20%60kilos_cocaina_7ago_30sep_2025%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20AND%20%60fecha_hecho%60%20BETWEEN%20%272025-08-07%27%20AND%20%272025-09-30T23%3A59%3A59%27%20GROUP%20BY%20%60municipio%60/page/filter",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/M05-datosgov-cocaina-cucuta-7ago-30sep-2025.png",
+  "estado": "capturada",
+  "capturado": "2026-11-04T17:04:21.854Z",
+  "nota": null
+ },
+ {
+  "id": "M06",
+  "categoria": "Datos oficiales de MinDefensa (datos.gov.co)",
+  "que_muestra": "MinDefensa: las mayores incautaciones de cocaína en Cúcuta en 2026, por fecha (1.120 kg el 28 de septiembre; 695 kg el 29 de agosto).",
+  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCA%C3%8DNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20%60fecha_hecho%60%2C%20sum%28%60cantidad%60%29%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20AND%20%60fecha_hecho%60%20%3E%3D%20%272026-01-01%27%20GROUP%20BY%20%60municipio%60%2C%20%60fecha_hecho%60%20ORDER%20BY%20%60kilos_cocaina%60%20DESC%20LIMIT%208/page/filter",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/M06-datosgov-cocaina-cucuta-mayores-incautaciones-2026.png",
+  "estado": "capturada",
+  "capturado": "2026-11-04T17:04:42.780Z",
+  "nota": null
+ },
+ {
+  "id": "M07",
+  "categoria": "Datos oficiales de MinDefensa (datos.gov.co)",
+  "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año desde 2010: 2026 (enero-septiembre) es el máximo de la serie.",
+  "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCA%C3%8DNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y%28%60fecha_hecho%60%29%20AS%20%60anio%60%2C%20sum%28%60cantidad%60%29%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20%2754001%27%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/M07-datosgov-cocaina-cucuta-por-anio-desde-2010.png",
+  "estado": "capturada",
+  "capturado": "2026-11-04T17:05:06.234Z",
+  "nota": null
  }
 ]

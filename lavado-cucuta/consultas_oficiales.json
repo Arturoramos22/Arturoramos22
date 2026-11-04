@@ -487,5 +487,50 @@
     "manual": true,
     "nota": "Pausar el video del trino presidencial en la lámina del Ministerio de Defensa ('CÚCUTA 8 Estructuras a afectar – 54 BARRIOS') y capturar ese cuadro. No capturar cuadros con las caras de los detenidos.",
     "que_muestra": "Cuadro del video oficial del Presidente: 'Operación Némesis – BOSUR – CÚCUTA' y '8 Estructuras a afectar – 54 BARRIOS'."
+  },
+  {
+    "id": "M03",
+    "archivo": "M03-datosgov-cocaina-cucuta-2026-por-mes.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 1000,
+    "soql": "SELECT `municipio`, date_trunc_ym(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `kilos_cocaina` WHERE `cod_muni` = '54001' AND `fecha_hecho` >= '2026-01-01' GROUP BY `municipio`, `mes` ORDER BY `mes` ASC",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por mes en 2026 (enero a septiembre)."
+  },
+  {
+    "id": "M04",
+    "archivo": "M04-datosgov-cocaina-cucuta-7ago-30sep-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 800,
+    "soql": "SELECT `municipio`, sum(`cantidad`) AS `kilos_cocaina_7ago_30sep_2026` WHERE `cod_muni` = '54001' AND `fecha_hecho` BETWEEN '2026-08-07' AND '2026-09-30T23:59:59' GROUP BY `municipio`",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta entre el 7 de agosto y el 30 de septiembre de 2026: 2.506 kg."
+  },
+  {
+    "id": "M05",
+    "archivo": "M05-datosgov-cocaina-cucuta-7ago-30sep-2025.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 800,
+    "soql": "SELECT `municipio`, sum(`cantidad`) AS `kilos_cocaina_7ago_30sep_2025` WHERE `cod_muni` = '54001' AND `fecha_hecho` BETWEEN '2025-08-07' AND '2025-09-30T23:59:59' GROUP BY `municipio`",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta en el mismo periodo de 2025: 1.234 kg."
+  },
+  {
+    "id": "M06",
+    "archivo": "M06-datosgov-cocaina-cucuta-mayores-incautaciones-2026.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 900,
+    "soql": "SELECT `municipio`, `fecha_hecho`, sum(`cantidad`) AS `kilos_cocaina` WHERE `cod_muni` = '54001' AND `fecha_hecho` >= '2026-01-01' GROUP BY `municipio`, `fecha_hecho` ORDER BY `kilos_cocaina` DESC LIMIT 8",
+    "que_muestra": "MinDefensa: las mayores incautaciones de cocaína en Cúcuta en 2026, por fecha (1.120 kg el 28 de septiembre; 695 kg el 29 de agosto)."
+  },
+  {
+    "id": "M07",
+    "archivo": "M07-datosgov-cocaina-cucuta-por-anio-desde-2010.png",
+    "tipo": "soql",
+    "dataset": "Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r",
+    "alto": 1300,
+    "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `kilos_cocaina` WHERE `cod_muni` = '54001' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año desde 2010: 2026 (enero-septiembre) es el máximo de la serie."
   }
 ]
