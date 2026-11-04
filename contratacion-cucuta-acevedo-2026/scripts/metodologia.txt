@@ -1,0 +1,30 @@
+ALCANCE
+Entidades: Municipio de San José de Cúcuta (Alcaldía, NIT 890501434), IMRD (807001836), Central de Transportes Estación Cúcuta (8905014335), ESE IMSALUD (807004352), EIS Cúcuta ESP (890500529) y Área Metropolitana de Cúcuta (800153197). El alcalde de Cúcuta preside la Junta Metropolitana. El Área no es una entidad descentralizada del municipio en sentido estricto, pero se incluye por esa razón. No se incluyen Concejo, Personería ni Contraloría Municipal, que son órganos de control y no forman parte del gobierno del alcalde.
+Periodo: contratos con fecha de firma entre el 8 de marzo de 2026 y el 4 de noviembre de 2026, que es la fecha de corte de la descarga.
+
+FUENTES
+1. SECOP II – Contratos Electrónicos (datos.gov.co, conjunto jbjy-vk9h): 2.992 contratos.
+2. SECOP II – Procesos de Contratación (p6dx-8zbt): presupuesto base y número de oferentes de los procesos competitivos.
+3. SECOP II – Modificaciones a contratos (cb9c-h8sn): tipo y descripción de las modificaciones y adiciones.
+4. Fuentes de prensa y registros públicos para el contexto de contratistas, citadas con su URL en la matriz de alertas.
+
+REGLAS DE LAS BANDERAS AUTOMÁTICAS
+- Adición cercana al tope: el valor actual del contrato supera el presupuesto base del proceso en más del 40%. El artículo 40 de la Ley 80 de 1993 limita las adiciones al 50% del valor inicial.
+- Único oferente: en un proceso competitivo (mínima cuantía, selección abreviada, licitación o concurso) solo se recibió una oferta (campo respuestas_al_procedimiento = 1).
+- Umbrales: para 2026 se toma un SMMLV de $1.750.905 y una menor cuantía de 1.000 SMMLV ($1.750,9 millones), lo que da una mínima cuantía de $175,09 millones. La menor cuantía de la Alcaldía se infirió del máximo presupuesto observado en sus procesos de selección abreviada y mínima cuantía. Se marca un presupuesto de mínima cuantía igual o superior al 90% del tope, y uno de menor cuantía igual o superior al 95%.
+- Causal "interadministrativa" registrada para fundaciones, corporaciones o asociaciones privadas.
+- Contratación directa por "servicios profesionales y de apoyo a la gestión" con una persona jurídica por 150 millones o más.
+- Contratos de 100 millones o más sin supervisor registrado en SECOP.
+- Contratistas plurales (uniones temporales o consorcios) sin NIT registrado.
+- Contratos a valor cero, como comodatos o el aprovechamiento económico de bienes públicos.
+
+CLASIFICACIÓN POR SECTOR Y DEPENDENCIA
+El sector se asigna con palabras clave sobre el objeto del contrato, en orden de prioridad (ver sector.py). Es una aproximación y puede clasificar mal algunos contratos genéricos.
+La dependencia de la Alcaldía se asigna por el código que la propia entidad antepone al objeto (por ejemplo, 2026B = Educación y 2026BS = Bienestar Social). Su equivalencia se infirió de los objetos de cada grupo.
+
+LÍMITES (LEER ANTES DE CITAR)
+- Las cifras dependen de lo que las entidades registraron en SECOP II. Un contrato no publicado no aparece aquí: IMSALUD y EIS Cúcuta publican muy poco.
+- El valor del contrato en SECOP II ya incluye las adiciones registradas. El presupuesto base es el valor con el que se abrió el proceso.
+- El campo "valor pagado" casi nunca se diligencia, así que no sirve para medir la ejecución.
+- Una bandera o alerta es un indicio, no una prueba. Antes de afirmar que hubo una irregularidad hay que revisar los documentos de cada proceso (estudios previos, análisis del sector, ofertas, informes de evaluación, actas de supervisión) en el enlace de SECOP.
+- No se consultaron RUES, SIGEP, SIRI, el boletín de responsables fiscales ni el certificado de antecedentes de los contratistas. Ese es el siguiente paso recomendado para los casos de riesgo ALTO.
