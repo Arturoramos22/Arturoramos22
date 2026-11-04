@@ -98,9 +98,13 @@
     "archivo": "N04-elcolombiano-2026-11-03-fiscalia-kratos-20-capturas.png",
     "tipo": "web",
     "url": "https://www.elcolombiano.com/colombia/resultados-operativos-fiscalia-acompano-abelardo-40-grupos-delincuenciales-GO43096617",
-    "alto": 1500,
+    "alto": 1300,
     "que_muestra": "El Colombiano (3 nov 2026), con datos de la Fiscalía: la Operación Kratos 'dejó 20 personas capturadas: 19 por orden judicial y una en flagrancia'.",
-    "buscar": "Kratos"
+    "buscar": "que dejó 20 personas capturadas",
+    "espera": 8000,
+    "cerrar": [
+      "text=CONTINUAR"
+    ]
   },
   {
     "id": "N05",

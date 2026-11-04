@@ -58,11 +58,19 @@ const urlDe = (c) => c.tipo === 'soql'
         await page.waitForTimeout(c.espera || 6000);
         if (c.buscar) {
           // desplaza la página hasta el texto citado (como haría un lector), sin resaltarlo ni alterarlo
-          await page.evaluate((t) => {
-            const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-            let n; while ((n = w.nextNode())) { if (n.textContent.includes(t)) { n.parentElement.scrollIntoView({ block: 'center' }); break; } }
-          }, c.buscar);
-          await page.waitForTimeout(1500);
+          // dos pasadas: algunas páginas vuelven al inicio cuando terminan de cargar
+          for (let k = 0; k < 2; k++) {
+            await page.evaluate((t) => {
+              const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+              let n; while ((n = w.nextNode())) {
+                const el = n.parentElement;
+                if (n.textContent.includes(t) && el && el.offsetParent !== null && !['SCRIPT', 'STYLE'].includes(el.tagName)) {
+                  window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - window.innerHeight / 3); break;
+                }
+              }
+            }, c.buscar);
+            await page.waitForTimeout(2500);
+          }
         }
         // cierra avisos de cookies y ventanas emergentes con sus propios botones (no altera el contenido)
         for (const sel of (c.cerrar || [])) {
