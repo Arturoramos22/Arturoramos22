@@ -17,7 +17,7 @@ ALERTAS = [
              'Consultar RUES: fecha de constitución de Aventours (NIT 901913440, al parecer de 2025), socios y actividad. Revisar si la misma persona aparece en otras entidades.'),
   url=S + 'CO1.NTC.10283233'),
 
- dict(riesgo='ALTO', tipo='Contratación directa "interadministrativa" con una sociedad de economía mixta recién creada',
+ dict(riesgo='ALTO', tipo='Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025',
   entidad='Alcaldía (Promoción Turística y Cultura)', contratista='EMPRESA DE EXPOSICIÓN DE CÚCUTA CIUDAD DESTINO S.A.S. – WORLD GO COLOMBIA S.A.S. (NIT 901990330); R.L. Ronald Eduardo Pancha Vivas',
   contratos='PT-41 (CO1.PCCNTR.9642489), CP-82, PT-52, CP-135 y comodato DA-2', valor=6351900000,
   hechos=('El comodato la denomina "sociedad de economía mixta", pero RUES la registra como S.A.S. comercial matriculada el 18-sep-2025. Entre el 10-jul y el 16-oct-2026 recibió 4 contratos directos con la causal "interadministrativo", por 6.352 millones: '
@@ -153,7 +153,7 @@ ALERTAS = [
   entidad='Alcaldía, IMRD, Central de Transportes y Área Metropolitana', contratista='2.824 contratos de prestación de servicios', contratos='Hoja "Base de contratos" (filtrar Justificación = Servicios profesionales)', valor=34775800000,
   hechos=('Entre el 8-mar y el 21-jun-2026 (Ley de Garantías por las elecciones presidenciales) la Alcaldía firmó prácticamente 0 contratos de prestación de servicios. Del 22-jun al 4-nov firmó 2.824, por 34.776 millones: 543 en julio, 895 en agosto, 522 en septiembre y 885 en octubre. '
           'Fuera del periodo, como contexto: en enero de 2026 la Alcaldía firmó 4.129 contratos directos por 94.685 millones (en enero de 2025 fueron 270). El 30-ene, un día antes de que empezara la restricción, firmó 49 contratos por 45.083 millones. '
-          '28 personas tienen 2 o más contratos de prestación de servicios vigentes al mismo tiempo, en la misma entidad o en otra (ver hoja "PS simultáneos").'),
+          'Al cruzar con TODAS las entidades públicas en SECOP II, 454 personas tienen 2 o más contratos de prestación de servicios vigentes al mismo tiempo (631 pares, 493 de severidad alta). 87 personas llegan a 3 o más contratos simultáneos (ver hojas "Simultaneidad").'),
   criterio=('La Ley de Garantías se cumplió en lo formal. Sin embargo, la concentración de la contratación justo antes y justo después de la veda, y el volumen de contratistas, sugieren una "nómina paralela" para funciones permanentes '
             '(Sentencia C-614 de 2009; Ley 2195 de 2022). Los contratos simultáneos pueden ser imposibles de cumplir en la práctica.'),
   verificar='Comparar con la planta de personal y el plan de vacantes. Revisar los informes de actividades de las personas con contratos simultáneos y si se cumplen funciones misionales permanentes.'),

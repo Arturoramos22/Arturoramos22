@@ -6,6 +6,7 @@ FUENTES
 1. SECOP II – Contratos Electrónicos (datos.gov.co, conjunto jbjy-vk9h): 2.992 contratos.
 2. SECOP II – Procesos de Contratación (p6dx-8zbt): presupuesto base y número de oferentes de los procesos competitivos.
 3. SECOP II – Modificaciones a contratos (cb9c-h8sn): tipo y descripción de las modificaciones y adiciones.
+3b. SECOP II – Contratos de las mismas personas naturales en todas las entidades del país (para el cruce de simultaneidad): 6.212 contratos.
 4. Fuentes de prensa y registros públicos para el contexto de contratistas, citadas con su URL en la matriz de alertas.
 
 REGLAS DE LAS BANDERAS AUTOMÁTICAS
@@ -17,6 +18,28 @@ REGLAS DE LAS BANDERAS AUTOMÁTICAS
 - Contratos de 100 millones o más sin supervisor registrado en SECOP.
 - Contratistas plurales (uniones temporales o consorcios) sin NIT registrado.
 - Contratos a valor cero, como comodatos o el aprovechamiento económico de bienes públicos.
+
+PUNTAJE DE RIESGO POR CONTRATO (hoja "Fichas de riesgo por contrato")
+Cada criterio suma puntos:
+- 4 por pertenecer a una alerta curada de riesgo ALTO (2 si es de riesgo MEDIO);
+- 4 por un encargo fiduciario contratado con la causal de CTI;
+- 3 por una adición mayor al 40%;
+- 3 por usar la causal interadministrativa con un privado o una S.A.S.;
+- 2 por único oferente;
+- 2 por un presupuesto pegado al umbral;
+- 2 por PS con persona jurídica de 150 millones o más;
+- 2 por convenio con ESAL de 500 millones o más sin ofertas;
+- 2 por un contrato simultáneo en la misma entidad (1 si es en otra);
+- 1 por cada una de estas: convenio ESAL firmado durante la Ley de Garantías con 0 o 1 oferta, sin supervisor, supervisor igual al ordenador, contratista plural sin NIT, valor cero sobre un bien público, contratista recurrente (3 o más contratos y 1.000 millones o más).
+Nivel ALTO con 6 puntos o más, MEDIO de 3 a 5 y BAJO de 1 a 2. El "análisis del riesgo" de cada ficha se redacta con los datos del propio contrato: valores, presupuesto base, oferentes, invitados, visualizaciones y modificaciones registradas en SECOP (dataset cb9c-h8sn).
+
+SIMULTANEIDAD (hojas "Simultaneidad")
+Se toma cada contrato de prestación de servicios (causal "servicios profesionales y apoyo a la gestión") firmado por una persona natural en el periodo y se compara con todos los contratos de esa misma causal y la misma persona en SECOP II, de cualquier entidad del país, que estuvieran vigentes desde el 8-mar-2026. Hay traslape cuando los intervalos entre la fecha de inicio (o la de firma) y la de fin se cruzan.
+Severidad:
+- ALTA: 30 días o más de traslape, con ambos contratos sin estado terminado, cerrado o cedido.
+- VERIFICAR: uno de los dos contratos figura como terminado, cerrado o cedido, así que pudo terminarse antes.
+- BAJA: menos de 30 días, que puede ser un empalme.
+El honorario mensual se estima como el valor dividido entre la duración en meses. Límite: SECOP no siempre registra las terminaciones anticipadas ni las cesiones. Antes de afirmar un doble pago, hay que revisar las actas.
 
 CLASIFICACIÓN POR SECTOR Y DEPENDENCIA
 El sector se asigna con palabras clave sobre el objeto del contrato, en orden de prioridad (ver sector.py). Es una aproximación y puede clasificar mal algunos contratos genéricos.

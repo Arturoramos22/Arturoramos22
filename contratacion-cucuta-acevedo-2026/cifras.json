@@ -720,8 +720,19 @@
  "con_pago": 200,
  "sin_sup_n": 314,
  "sin_sup_v": 26241844064.31,
- "solap_pares": 32,
- "solap_personas": 28,
+ "solap_pares": 631,
+ "solap_personas": 454,
+ "sim_alto": 493,
+ "riesgo": {
+  "BAJO": 484,
+  "ALTO": 32,
+  "MEDIO": 44
+ },
+ "riesgo_v": {
+  "ALTO": 33691228123.7,
+  "MEDIO": 24211270863.01,
+  "BAJO": 31238341345.63
+ },
  "directos_ventana_garantias": 0,
  "flagged_n": 122,
  "flagged_v": 65546850733.74,

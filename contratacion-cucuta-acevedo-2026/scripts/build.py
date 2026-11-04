@@ -11,6 +11,10 @@ from openpyxl.utils import get_column_letter
 DATA, OUT = sys.argv[1], sys.argv[2]
 rows = [json.loads(l) for l in open(os.path.join(DATA, 'contratos.jsonl'))]
 P = json.load(open(os.path.join(DATA, 'procesos.json')))
+MODS = collections.defaultdict(list)
+for m in json.load(open(os.path.join(DATA, 'mods.json'))):
+    MODS[m['id_contrato']].append(m)
+EXT = [json.loads(l) for l in open(os.path.join(DATA, 'externos.jsonl'))]
 f = lambda x: float(x or 0)
 byp = collections.defaultdict(list)
 for p in P:
@@ -50,6 +54,8 @@ for r in rows:
     bases = [f(p.get('precio_base')) for p in ps if f(p.get('precio_base')) > 0]
     r['_base'] = bases[0] if bases else None
     r['_ofertas'] = max((int(p.get('respuestas_al_procedimiento') or 0) for p in ps), default=None)
+    r['_invitados'] = max((int(p.get('proveedores_invitados') or 0) for p in ps), default=None)
+    r['_visto'] = max((int(p.get('visualizaciones_del') or 0) for p in ps), default=None)
     r['_ent'] = ENT[r['nit_entidad']]
     r['_dep'] = dep(r)
     r['_sector'] = sector(r['objeto_del_contrato'])
@@ -80,6 +86,8 @@ for r in rows:
     if 'científicas' in r['justificacion_modalidad_de'] and 'FIDUCIA' in r['proveedor_adjudicado'].upper():
         fl.append('Causal de ciencia y tecnología usada para un encargo fiduciario')
     r['_flags'] = fl
+
+exec(open(os.path.join(os.path.dirname(__file__), 'riesgo.py'), encoding='utf-8').read())
 
 # --- personas con PS simultáneos
 psby = collections.defaultdict(list)
@@ -119,7 +127,9 @@ cifras = {
     'pagado': sum(f(r['valor_pagado']) for r in rows), 'con_pago': sum(1 for r in rows if f(r['valor_pagado']) > 0),
     'sin_sup_n': sum(1 for r in rows if (r.get('nombre_supervisor') or 'No definido') == 'No definido'),
     'sin_sup_v': sum(r['_v'] for r in rows if (r.get('nombre_supervisor') or 'No definido') == 'No definido'),
-    'solap_pares': len(solap), 'solap_personas': len({a['documento_proveedor'] for a, b, _, _ in solap}),
+    'solap_pares': len(SIM), 'solap_personas': len(SIMP), 'sim_alto': sum(1 for x in SIM if x['sev']=='ALTO'),
+    'riesgo': collections.Counter(r['_nivel'] for r in rows if r['_nivel']),
+    'riesgo_v': {k: sum(r['_v'] for r in rows if r['_nivel']==k) for k in ('ALTO','MEDIO','BAJO')},
     'directos_ventana_garantias': sum(1 for r in rows if r['_directa'] and r['_ps'] and r['fecha_de_firma'][:10] <= '2026-06-21'),
     'flagged_n': sum(1 for r in rows if r['_flags']), 'flagged_v': sum(r['_v'] for r in rows if r['_flags']),
     'fecha_min': min(r['fecha_de_firma'] for r in rows)[:10], 'fecha_max': max(r['fecha_de_firma'] for r in rows)[:10],
@@ -161,7 +171,12 @@ kp = [('Contratos', cifras['n']), ('Valor total (COP)', TOT),
       ('...con un ÚNICO oferente', cifras['uno_n']), ('Valor de los adjudicados con único oferente', cifras['uno_v']),
       ('Valor pagado reportado en SECOP', cifras['pagado']), ('Contratos con algún pago reportado', cifras['con_pago']),
       ('Contratos sin supervisor registrado', cifras['sin_sup_n']), ('Valor sin supervisor registrado', cifras['sin_sup_v']),
-      ('Personas con contratos de PS simultáneos', cifras['solap_personas']),
+      ('Personas con contratos simultáneos (cualquier entidad pública)', cifras['solap_personas']),
+      ('Pares de contratos simultáneos', cifras['solap_pares']),
+      ('...de severidad ALTA', cifras['sim_alto']),
+      ('Contratos individualizados con riesgo ALTO', cifras['riesgo'].get('ALTO',0)), ('Valor riesgo ALTO', cifras['riesgo_v']['ALTO']),
+      ('Contratos con riesgo MEDIO', cifras['riesgo'].get('MEDIO',0)), ('Valor riesgo MEDIO', cifras['riesgo_v']['MEDIO']),
+      ('Contratos con riesgo BAJO', cifras['riesgo'].get('BAJO',0)),
       ('Contratos con al menos una bandera automática', cifras['flagged_n']), ('Valor de contratos con bandera', cifras['flagged_v'])]
 header(ws, 4, ['Indicador', 'Valor'], [62, 22, 14, 22, 14, 22])
 for i, (k, v) in enumerate(kp, 5): put(ws, i, [k, v])
@@ -232,26 +247,19 @@ header(ws, 3, ['Contratista', 'Documento', 'N° contratos', 'Valor (COP)', '% de
 for i, (k, x) in enumerate(sorted(ag.items(), key=lambda t: -t[1]['v'])[:60], 4):
     put(ws, i, [x['nom'], k, x['n'], x['v'], x['v'] / TOT, ', '.join(sorted(x['ent'])), ', '.join(sorted(x['mod']))], {5: '0.0%'})
 
-# 6. PS simultáneos
-ws = wb.create_sheet('PS simultáneos')
-ws['A1'] = 'Personas con dos o más contratos de prestación de servicios vigentes al mismo tiempo'; ws['A1'].font = T
-ws['A2'] = 'No es ilegal por sí mismo (la prestación de servicios no exige exclusividad), pero es indicio de nómina paralela o de imposibilidad material de cumplir. Revisar informes de actividades y horarios.'
-ws['A2'].alignment = WR; ws.merge_cells('A2:J2'); ws.row_dimensions[2].height = 30
-header(ws, 4, ['Documento', 'Contratista', 'Entidad 1', 'Objeto 1', 'Valor 1', 'Entidad 2', 'Objeto 2', 'Valor 2', 'Traslape desde', 'Traslape hasta'], [13, 32, 22, 50, 13, 22, 50, 13, 12, 12])
-for i, (a, b, s, e) in enumerate(solap, 5):
-    put(ws, i, [a['documento_proveedor'], a['proveedor_adjudicado'], a['_ent'], a['objeto_del_contrato'][:200], a['_v'], b['_ent'], b['objeto_del_contrato'][:200], b['_v'], s, e])
+exec(open(os.path.join(os.path.dirname(__file__), 'hojas.py'), encoding='utf-8').read())
 
 # 7. Base completa
 ws = wb.create_sheet('Base de contratos')
 cols = ['ID contrato', 'Proceso (portafolio)', 'Entidad', 'Dependencia', 'Sector (clasificación)', 'Fecha firma', 'Inicio', 'Fin', 'Modalidad', 'Justificación', 'Tipo',
         'Estado', 'Contratista', 'Tipo doc.', 'Documento', 'Representante legal', 'Valor (COP)', 'Presupuesto base', 'Oferentes', 'Valor pagado', 'Destino gasto',
-        'Ordenador del gasto', 'Supervisor', 'Banderas', 'Objeto', 'Enlace']
-header(ws, 1, cols, [20, 20, 22, 26, 26, 11, 11, 11, 24, 26, 16, 12, 32, 12, 13, 26, 16, 16, 9, 14, 12, 24, 24, 40, 80, 30])
+        'Ordenador del gasto', 'Supervisor', 'Nivel de riesgo', 'Puntaje', 'Banderas', 'Objeto', 'Enlace']
+header(ws, 1, cols, [20, 20, 22, 26, 26, 11, 11, 11, 24, 26, 16, 12, 32, 12, 13, 26, 16, 16, 9, 14, 12, 24, 24, 10, 8, 40, 80, 30])
 for i, r in enumerate(sorted(rows, key=lambda r: r['fecha_de_firma']), 2):
     put(ws, i, [r['id_contrato'], r['proceso_de_compra'], r['_ent'], r['_dep'], r['_sector'], r['fecha_de_firma'][:10], d10(r.get('fecha_de_inicio_del_contrato')),
                 d10(r.get('fecha_de_fin_del_contrato')), r['modalidad_de_contratacion'], r['justificacion_modalidad_de'], r['tipo_de_contrato'], r['estado_contrato'],
                 r['proveedor_adjudicado'], r['tipodocproveedor'], r['documento_proveedor'], r.get('nombre_representante_legal', ''), r['_v'], r['_base'], r['_ofertas'],
-                f(r['valor_pagado']), r.get('destino_gasto', ''), r.get('nombre_ordenador_del_gasto', ''), r.get('nombre_supervisor', ''), ' | '.join(r['_flags']),
+                f(r['valor_pagado']), r.get('destino_gasto', ''), r.get('nombre_ordenador_del_gasto', ''), r.get('nombre_supervisor', ''), r['_nivel'], r['_score'], ' | '.join(r['_flags']),
                 r['objeto_del_contrato'], url(r)])
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{len(rows)+1}"
 
@@ -264,4 +272,5 @@ for i, line in enumerate(txt, 1):
     if line.isupper() and line.strip(): c.font = Font(bold=True, color='1F3864')
 
 wb.save(os.path.join(OUT, 'matriz_contratacion_cucuta_2026.xlsx'))
+exec(open(os.path.join(os.path.dirname(__file__), 'anexos.py'), encoding='utf-8').read())
 print(json.dumps({k: v for k, v in cifras.items() if not isinstance(v, list)}, indent=1, default=str))
