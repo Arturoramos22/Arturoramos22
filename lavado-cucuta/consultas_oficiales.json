@@ -13,8 +13,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1150,
-    "soql": "SELECT `municipio_hecho`, `departamento_hecho`, count(*) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' GROUP BY `municipio_hecho`, `departamento_hecho` ORDER BY `procesos_lavado_de_activos` DESC LIMIT 15",
-    "que_muestra": "Procesos de la Fiscalía por lavado de activos (capítulo completo: lavado, enriquecimiento ilícito, testaferrato), por municipio: Cúcuta es cuarta (357)."
+    "soql": "SELECT `municipio_hecho`, `departamento_hecho`, count(*) AS `registros_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' GROUP BY `municipio_hecho`, `departamento_hecho` ORDER BY `registros_lavado_de_activos` DESC LIMIT 15",
+    "que_muestra": "Registros de procesos de la Fiscalía por lavado de activos (capítulo completo), por municipio: Cúcuta es cuarta del país.",
+    "espera": 15000
   },
   {
     "id": "F03",
@@ -22,8 +23,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1150,
-    "soql": "SELECT `municipio_hecho`, `departamento_hecho`, count(*) AS `procesos_contrabando` WHERE `capitulo_delito` = 'Del Contrabando' GROUP BY `municipio_hecho`, `departamento_hecho` ORDER BY `procesos_contrabando` DESC LIMIT 15",
-    "que_muestra": "Procesos de la Fiscalía por contrabando, por municipio: Cúcuta es segunda en el país (2.372), solo detrás de Bogotá."
+    "soql": "SELECT `municipio_hecho`, `departamento_hecho`, count(*) AS `registros_contrabando` WHERE `capitulo_delito` = 'Del Contrabando' GROUP BY `municipio_hecho`, `departamento_hecho` ORDER BY `registros_contrabando` DESC LIMIT 15",
+    "que_muestra": "Registros de procesos de la Fiscalía por contrabando, por municipio: Cúcuta es segunda en el país, solo detrás de Bogotá.",
+    "espera": 15000
   },
   {
     "id": "F04",
@@ -31,8 +33,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 900,
-    "soql": "SELECT `municipio_hecho`, `etapa`, count(*) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `etapa` ORDER BY `procesos_lavado_de_activos` DESC",
-    "que_muestra": "Cúcuta: procesos por lavado de activos según etapa. 290 de 357 siguen en indagación; 20 en ejecución de penas."
+    "soql": "SELECT `municipio_hecho`, `etapa`, count(DISTINCT `proceso_anonimizado`) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `etapa` ORDER BY `procesos_lavado_de_activos` DESC",
+    "que_muestra": "Cúcuta: procesos por lavado de activos según etapa: 286 de 338 no han pasado de la indagación; 18 en ejecución de penas.",
+    "espera": 30000
   },
   {
     "id": "F05",
@@ -40,8 +43,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1300,
-    "soql": "SELECT `municipio_hecho`, `a_o_hecho`, count(*) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_hecho` ORDER BY `a_o_hecho` ASC",
-    "que_muestra": "Cúcuta: procesos por lavado de activos por año del hecho: 12 en 2025, 10 en 2024, 8 en 2026 (a septiembre)."
+    "soql": "SELECT `municipio_hecho`, `a_o_hecho`, count(DISTINCT `proceso_anonimizado`) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_hecho` ORDER BY `a_o_hecho` ASC",
+    "que_muestra": "Cúcuta: procesos por lavado de activos por año del hecho: 12 en 2025, 10 en 2024, 8 en 2026 (a septiembre). (procesos distintos)",
+    "espera": 30000
   },
   {
     "id": "F06",
@@ -49,8 +53,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1300,
-    "soql": "SELECT `municipio_hecho`, `a_o_hecho`, count(*) AS `procesos_contrabando` WHERE `capitulo_delito` = 'Del Contrabando' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_hecho` ORDER BY `a_o_hecho` ASC",
-    "que_muestra": "Cúcuta: procesos por contrabando por año: de 419 en 2017 a 19 en 2025."
+    "soql": "SELECT `municipio_hecho`, `a_o_hecho`, count(DISTINCT `proceso_anonimizado`) AS `procesos_contrabando` WHERE `capitulo_delito` = 'Del Contrabando' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_hecho` ORDER BY `a_o_hecho` ASC",
+    "que_muestra": "Cúcuta: procesos por contrabando por año: de 419 en 2017 a 19 en 2025. (procesos distintos)",
+    "espera": 30000
   },
   {
     "id": "F07",
@@ -58,8 +63,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1300,
-    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC",
-    "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato desde 2010."
+    "soql": "SELECT `municipio_hecho`, `delito`, count(DISTINCT `proceso_anonimizado`) AS `procesos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC",
+    "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato.",
+    "espera": 30000
   },
   {
     "id": "N01",
@@ -137,18 +143,14 @@
     "archivo": "X01-trino-presidente-operacion-nemesis-parte-1.png",
     "tipo": "usuario",
     "url": "https://x.com/ABDELAESPRIELLA/status/2117935741745455377",
-    "que_muestra": "Pantallazo del trino del Presidente (4 nov 2026, 06:03): Operación Némesis, '109 capturas, 49 allanamientos y 32 expulsiones' como 'balance preliminar'. Tomado por el usuario en su teléfono.",
-    "manual": true,
-    "nota": "Pantallazo tomado por el usuario; ya está en capturas/."
+    "que_muestra": "Pantallazo del trino del Presidente (4 nov 2026, 06:03): Operación Némesis, '109 capturas, 49 allanamientos y 32 expulsiones' como 'balance preliminar'. Tomado por el usuario en su teléfono."
   },
   {
     "id": "X02",
     "archivo": "X02-trino-presidente-operacion-nemesis-parte-2.png",
     "tipo": "usuario",
     "url": "https://x.com/ABDELAESPRIELLA/status/2117935741745455377",
-    "que_muestra": "Continuación del pantallazo del trino del Presidente sobre la Operación Némesis.",
-    "manual": true,
-    "nota": "Pantallazo tomado por el usuario; ya está en capturas/."
+    "que_muestra": "Continuación del pantallazo del trino del Presidente sobre la Operación Némesis."
   },
   {
     "id": "T01",
@@ -245,8 +247,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1300,
-    "soql": "SELECT `municipio_hecho`, `a_o_creacion_proceso`, count(*) AS `procesos_lavado_abiertos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_creacion_proceso` ORDER BY `a_o_creacion_proceso` ASC",
-    "que_muestra": "Cúcuta: procesos por lavado de activos según el año en que la Fiscalía los abrió: 30 en 2025, 21 en 2024, 17 en 2026 (a septiembre)."
+    "soql": "SELECT `municipio_hecho`, `a_o_creacion_proceso`, count(DISTINCT `proceso_anonimizado`) AS `procesos_lavado_abiertos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_creacion_proceso` ORDER BY `a_o_creacion_proceso` ASC",
+    "que_muestra": "Cúcuta: procesos por lavado abiertos por año: 26 en 2025, 21 en 2024, 15 en 2026 (a septiembre).",
+    "espera": 30000
   },
   {
     "id": "F09",
@@ -254,8 +257,9 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1000,
-    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `delito` = 'Favorecimiento De Contrabando De Hidrocarburos Y Sus Derivados Art. 320-1 C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC LIMIT 8",
-    "que_muestra": "Procesos de la Fiscalía por favorecimiento de contrabando de hidrocarburos (gasolina): Cúcuta es primera en el país."
+    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `registros` WHERE `delito` = 'Favorecimiento De Contrabando De Hidrocarburos Y Sus Derivados Art. 320-1 C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `registros` DESC LIMIT 8",
+    "que_muestra": "Registros de procesos de la Fiscalía por favorecimiento de contrabando de hidrocarburos (gasolina), acumulado desde 2010: Cúcuta es primera en el país.",
+    "espera": 15000
   },
   {
     "id": "F10",
@@ -263,8 +267,8 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1000,
-    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `delito` = 'Trata De Personas Art. 188a C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC LIMIT 8",
-    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín.",
+    "soql": "SELECT `municipio_hecho`, `delito`, count(DISTINCT `proceso_anonimizado`) AS `procesos` WHERE `delito` = 'Trata De Personas Art. 188a C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC LIMIT 8",
+    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín. (procesos distintos)",
     "espera": 30000
   },
   {
@@ -273,8 +277,8 @@
     "tipo": "soql",
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1000,
-    "soql": "SELECT `municipio_hecho`, count(*) AS `procesos_armas_uso_privativo` WHERE `delito` = 'Fabricacion, Trafico Y Porte De Armas De Uso Privativo De Las Fuerzas Armadas Art. 366 C.P.' GROUP BY `municipio_hecho` ORDER BY `procesos_armas_uso_privativo` DESC LIMIT 8",
-    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país.",
+    "soql": "SELECT `municipio_hecho`, count(DISTINCT `proceso_anonimizado`) AS `procesos_armas_uso_privativo` WHERE `delito` = 'Fabricacion, Trafico Y Porte De Armas De Uso Privativo De Las Fuerzas Armadas Art. 366 C.P.' GROUP BY `municipio_hecho` ORDER BY `procesos_armas_uso_privativo` DESC LIMIT 8",
+    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país. (procesos distintos)",
     "espera": 30000
   },
   {
@@ -474,5 +478,14 @@
     "url": "https://www.publimetro.co/bogota/2025/12/15/capturan-y-envian-a-la-carcel-a-dos-hermanos-senalados-de-lavado-de-activos-para-el-tren-de-aragua/",
     "alto": 1500,
     "que_muestra": "Publimetro (dic 2025), con la Fiscalía: dos hermanos procesados por lavar más de $11.270 millones del Tren de Aragua en Bogotá, Medellín y Cúcuta."
+  },
+  {
+    "id": "V01",
+    "archivo": "V01-video-presidente-lamina-8-estructuras-54-barrios.png",
+    "tipo": "web",
+    "url": "https://x.com/ABDELAESPRIELLA/status/2117935741745455377/video/1",
+    "manual": true,
+    "nota": "Pausar el video del trino presidencial en la lámina del Ministerio de Defensa ('CÚCUTA 8 Estructuras a afectar – 54 BARRIOS') y capturar ese cuadro. No capturar cuadros con las caras de los detenidos.",
+    "que_muestra": "Cuadro del video oficial del Presidente: 'Operación Némesis – BOSUR – CÚCUTA' y '8 Estructuras a afectar – 54 BARRIOS'."
   }
 ]

@@ -7,21 +7,21 @@
   },
   "F02": {
     "archivo": "F02-datosgov-procesos-lavado-por-municipio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%2C%20count(*)%20AS%20%60procesos_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%20ORDER%20BY%20%60procesos_lavado_de_activos%60%20DESC%20LIMIT%2015/page/filter",
-    "capturado": "2026-11-04T12:11:25.061Z",
-    "que_muestra": "Procesos de la Fiscalía por lavado de activos (capítulo completo: lavado, enriquecimiento ilícito, testaferrato), por municipio: Cúcuta es cuarta (357)."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%2C%20count(*)%20AS%20%60registros_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%20ORDER%20BY%20%60registros_lavado_de_activos%60%20DESC%20LIMIT%2015/page/filter",
+    "capturado": "2026-11-04T13:23:19.860Z",
+    "que_muestra": "Registros de procesos de la Fiscalía por lavado de activos (capítulo completo), por municipio: Cúcuta es cuarta del país."
   },
   "F03": {
     "archivo": "F03-datosgov-procesos-contrabando-por-municipio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%2C%20count(*)%20AS%20%60procesos_contrabando%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Contrabando'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%20ORDER%20BY%20%60procesos_contrabando%60%20DESC%20LIMIT%2015/page/filter",
-    "capturado": "2026-11-04T12:11:53.290Z",
-    "que_muestra": "Procesos de la Fiscalía por contrabando, por municipio: Cúcuta es segunda en el país (2.372), solo detrás de Bogotá."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%2C%20count(*)%20AS%20%60registros_contrabando%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Contrabando'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%20ORDER%20BY%20%60registros_contrabando%60%20DESC%20LIMIT%2015/page/filter",
+    "capturado": "2026-11-04T13:23:54.592Z",
+    "que_muestra": "Registros de procesos de la Fiscalía por contrabando, por municipio: Cúcuta es segunda en el país, solo detrás de Bogotá."
   },
   "F04": {
     "archivo": "F04-datosgov-cucuta-lavado-por-etapa.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60etapa%60%2C%20count(*)%20AS%20%60procesos_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60etapa%60%20ORDER%20BY%20%60procesos_lavado_de_activos%60%20DESC/page/filter",
-    "capturado": "2026-11-04T12:12:19.921Z",
-    "que_muestra": "Cúcuta: procesos por lavado de activos según etapa. 290 de 357 siguen en indagación; 20 en ejecución de penas."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60etapa%60%2C%20count(DISTINCT%20%60proceso_anonimizado%60)%20AS%20%60procesos_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60etapa%60%20ORDER%20BY%20%60procesos_lavado_de_activos%60%20DESC/page/filter",
+    "capturado": "2026-11-04T13:16:53.423Z",
+    "que_muestra": "Cúcuta: procesos por lavado de activos según etapa: 286 de 338 no han pasado de la indagación; 18 en ejecución de penas."
   },
   "F05": {
     "archivo": "F05-datosgov-cucuta-lavado-por-anio.png",
@@ -31,15 +31,15 @@
   },
   "F06": {
     "archivo": "F06-datosgov-cucuta-contrabando-por-anio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%2C%20count(*)%20AS%20%60procesos_contrabando%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Contrabando'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%20ORDER%20BY%20%60a_o_hecho%60%20ASC/page/filter",
-    "capturado": "2026-11-04T12:13:04.538Z",
-    "que_muestra": "Cúcuta: procesos por contrabando por año: de 419 en 2017 a 19 en 2025."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%2C%20count(DISTINCT%20%60proceso_anonimizado%60)%20AS%20%60procesos_contrabando%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Contrabando'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%20ORDER%20BY%20%60a_o_hecho%60%20ASC/page/filter",
+    "capturado": "2026-11-04T13:17:39.060Z",
+    "que_muestra": "Cúcuta: procesos por contrabando por año: de 419 en 2017 a 19 en 2025. (procesos distintos)"
   },
   "F07": {
     "archivo": "F07-datosgov-cucuta-lavado-por-delito.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC/page/filter",
-    "capturado": "2026-11-04T12:14:00.766Z",
-    "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato desde 2010."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(DISTINCT%20%60proceso_anonimizado%60)%20AS%20%60procesos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC/page/filter",
+    "capturado": "2026-11-04T13:18:25.377Z",
+    "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato."
   },
   "N01": {
     "archivo": "N01-semana-2026-11-04-nemesis-109-capturas.png",
@@ -129,27 +129,27 @@
   },
   "F08": {
     "archivo": "F08-datosgov-cucuta-lavado-procesos-abiertos-por-anio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_creacion_proceso%60%2C%20count(*)%20AS%20%60procesos_lavado_abiertos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_creacion_proceso%60%20ORDER%20BY%20%60a_o_creacion_proceso%60%20ASC/page/filter",
-    "capturado": "2026-11-04T12:52:05.170Z",
-    "que_muestra": "Cúcuta: procesos por lavado de activos según el año en que la Fiscalía los abrió: 30 en 2025, 21 en 2024, 17 en 2026 (a septiembre)."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_creacion_proceso%60%2C%20count(DISTINCT%20%60proceso_anonimizado%60)%20AS%20%60procesos_lavado_abiertos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_creacion_proceso%60%20ORDER%20BY%20%60a_o_creacion_proceso%60%20ASC/page/filter",
+    "capturado": "2026-11-04T13:19:10.505Z",
+    "que_muestra": "Cúcuta: procesos por lavado abiertos por año: 26 en 2025, 21 en 2024, 15 en 2026 (a septiembre)."
   },
   "F09": {
     "archivo": "F09-datosgov-contrabando-gasolina-por-municipio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60delito%60%20%3D%20'Favorecimiento%20De%20Contrabando%20De%20Hidrocarburos%20Y%20Sus%20Derivados%20Art.%20320-1%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC%20LIMIT%208/page/filter",
-    "capturado": "2026-11-04T12:52:54.628Z",
-    "que_muestra": "Procesos de la Fiscalía por favorecimiento de contrabando de hidrocarburos (gasolina): Cúcuta es primera en el país."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60registros%60%20WHERE%20%60delito%60%20%3D%20'Favorecimiento%20De%20Contrabando%20De%20Hidrocarburos%20Y%20Sus%20Derivados%20Art.%20320-1%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60registros%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T13:24:27.050Z",
+    "que_muestra": "Registros de procesos de la Fiscalía por favorecimiento de contrabando de hidrocarburos (gasolina), acumulado desde 2010: Cúcuta es primera en el país."
   },
   "F10": {
     "archivo": "F10-datosgov-trata-de-personas-por-municipio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60delito%60%20%3D%20'Trata%20De%20Personas%20Art.%20188a%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC%20LIMIT%208/page/filter",
-    "capturado": "2026-11-04T13:00:46.143Z",
-    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(DISTINCT%20%60proceso_anonimizado%60)%20AS%20%60procesos%60%20WHERE%20%60delito%60%20%3D%20'Trata%20De%20Personas%20Art.%20188a%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T13:21:39.674Z",
+    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín. (procesos distintos)"
   },
   "F11": {
     "archivo": "F11-datosgov-armas-uso-privativo-por-municipio.png",
-    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20count(*)%20AS%20%60procesos_armas_uso_privativo%60%20WHERE%20%60delito%60%20%3D%20'Fabricacion%2C%20Trafico%20Y%20Porte%20De%20Armas%20De%20Uso%20Privativo%20De%20Las%20Fuerzas%20Armadas%20Art.%20366%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%20ORDER%20BY%20%60procesos_armas_uso_privativo%60%20DESC%20LIMIT%208/page/filter",
-    "capturado": "2026-11-04T13:01:54.855Z",
-    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país."
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20count(DISTINCT%20%60proceso_anonimizado%60)%20AS%20%60procesos_armas_uso_privativo%60%20WHERE%20%60delito%60%20%3D%20'Fabricacion%2C%20Trafico%20Y%20Porte%20De%20Armas%20De%20Uso%20Privativo%20De%20Las%20Fuerzas%20Armadas%20Art.%20366%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%20ORDER%20BY%20%60procesos_armas_uso_privativo%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T13:22:25.174Z",
+    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país. (procesos distintos)"
   },
   "M01": {
     "archivo": "M01-datosgov-cocaina-incautada-municipios-2026.png",

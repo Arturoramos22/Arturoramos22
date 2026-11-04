@@ -30,6 +30,7 @@ const urlDe = (c) => c.tipo === 'soql'
   for (const c of lista) {
     if (pedidos.length && !pedidos.includes(c.id)) continue;
     if (c.manual) { console.log('manual', c.id, c.url); continue; }
+    if (c.tipo === 'usuario') continue; // pantallazos aportados por el usuario
     const file = path.join(outDir, c.archivo);
     const url = urlDe(c);
     try {
