@@ -264,7 +264,8 @@
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1000,
     "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `delito` = 'Trata De Personas Art. 188a C.P.' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC LIMIT 8",
-    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín."
+    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín.",
+    "espera": 30000
   },
   {
     "id": "F11",
@@ -273,7 +274,8 @@
     "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
     "alto": 1000,
     "soql": "SELECT `municipio_hecho`, count(*) AS `procesos_armas_uso_privativo` WHERE `delito` = 'Fabricacion, Trafico Y Porte De Armas De Uso Privativo De Las Fuerzas Armadas Art. 366 C.P.' GROUP BY `municipio_hecho` ORDER BY `procesos_armas_uso_privativo` DESC LIMIT 8",
-    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país."
+    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país.",
+    "espera": 30000
   },
   {
     "id": "M01",

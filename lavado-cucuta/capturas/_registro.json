@@ -126,5 +126,165 @@
     "url": "https://www.laopinion.co/editorial/en-la-ruta-internacional-del-lavado-de-dinero",
     "capturado": "2026-11-04T12:48:58.215Z",
     "que_muestra": "La Opinión (editorial, oct 2024): Cúcuta 'una de las ciudades escogidas para el blanqueo' en el caso TD Bank (prensa, fuentes sin nombre)."
+  },
+  "F08": {
+    "archivo": "F08-datosgov-cucuta-lavado-procesos-abiertos-por-anio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_creacion_proceso%60%2C%20count(*)%20AS%20%60procesos_lavado_abiertos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_creacion_proceso%60%20ORDER%20BY%20%60a_o_creacion_proceso%60%20ASC/page/filter",
+    "capturado": "2026-11-04T12:52:05.170Z",
+    "que_muestra": "Cúcuta: procesos por lavado de activos según el año en que la Fiscalía los abrió: 30 en 2025, 21 en 2024, 17 en 2026 (a septiembre)."
+  },
+  "F09": {
+    "archivo": "F09-datosgov-contrabando-gasolina-por-municipio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60delito%60%20%3D%20'Favorecimiento%20De%20Contrabando%20De%20Hidrocarburos%20Y%20Sus%20Derivados%20Art.%20320-1%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T12:52:54.628Z",
+    "que_muestra": "Procesos de la Fiscalía por favorecimiento de contrabando de hidrocarburos (gasolina): Cúcuta es primera en el país."
+  },
+  "F10": {
+    "archivo": "F10-datosgov-trata-de-personas-por-municipio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60delito%60%20%3D%20'Trata%20De%20Personas%20Art.%20188a%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T13:00:46.143Z",
+    "que_muestra": "Procesos de la Fiscalía por trata de personas: Cúcuta es tercera en el país, detrás de Bogotá y Medellín."
+  },
+  "F11": {
+    "archivo": "F11-datosgov-armas-uso-privativo-por-municipio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20count(*)%20AS%20%60procesos_armas_uso_privativo%60%20WHERE%20%60delito%60%20%3D%20'Fabricacion%2C%20Trafico%20Y%20Porte%20De%20Armas%20De%20Uso%20Privativo%20De%20Las%20Fuerzas%20Armadas%20Art.%20366%20C.P.'%20GROUP%20BY%20%60municipio_hecho%60%20ORDER%20BY%20%60procesos_armas_uso_privativo%60%20DESC%20LIMIT%208/page/filter",
+    "capturado": "2026-11-04T13:01:54.855Z",
+    "que_muestra": "Procesos de la Fiscalía por tráfico y porte de armas de uso privativo de las Fuerzas Armadas: Cúcuta es quinta en el país."
+  },
+  "M01": {
+    "archivo": "M01-datosgov-cocaina-incautada-municipios-2026.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20%60departamento%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina_2026%60%20WHERE%20%60fecha_hecho%60%20BETWEEN%20'2026-01-01'%20AND%20'2026-12-31T23%3A59%3A59'%20GROUP%20BY%20%60municipio%60%2C%20%60departamento%60%20ORDER%20BY%20%60kilos_cocaina_2026%60%20DESC%20LIMIT%2010/page/filter",
+    "capturado": "2026-11-04T12:54:34.102Z",
+    "que_muestra": "MinDefensa: cocaína incautada por municipio en 2026 (a septiembre): Cúcuta entre los primeros del país."
+  },
+  "M02": {
+    "archivo": "M02-datosgov-cocaina-incautada-cucuta-por-anio.png",
+    "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20AND%20%60fecha_hecho%60%20%3E%3D%20'2020-01-01'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
+    "capturado": "2026-11-04T12:55:01.083Z",
+    "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año: de 541 kg (2023) a 8.105 kg (2026, enero-septiembre)."
+  },
+  "A01": {
+    "archivo": "A01-defensoria-AT027-24-p8-trochas-contrabando-armas-trata.png",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina_pdf": 8,
+    "capturado": "2026-11-04T12:55:01.863Z",
+    "que_muestra": "Defensoría, AT 027-24, p. 8: los grupos usan las trochas para contrabando, narcotráfico, tráfico de armas y de personas."
+  },
+  "A02": {
+    "archivo": "A02-defensoria-AT027-24-p12-fuentes-de-financiacion.png",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina_pdf": 12,
+    "capturado": "2026-11-04T12:55:02.267Z",
+    "que_muestra": "AT 027-24, p. 12: tráfico de armas y extorsión como 'fuentes de financiación' de las estructuras criminales."
+  },
+  "A03": {
+    "archivo": "A03-defensoria-AT027-24-p13-trata-transnacional.png",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina_pdf": 13,
+    "capturado": "2026-11-04T12:55:02.622Z",
+    "que_muestra": "AT 027-24, p. 13: bandas transnacionales de trata de personas para explotación sexual en el área metropolitana."
+  },
+  "A04": {
+    "archivo": "A04-defensoria-AT027-24-p14-reinversion-rentas-criminales.png",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina_pdf": 14,
+    "capturado": "2026-11-04T12:55:03.029Z",
+    "que_muestra": "AT 027-24, p. 14: 'reinversión de recursos' producto de rentas criminales en Cúcuta."
+  },
+  "A05": {
+    "archivo": "A05-defensoria-AT027-24-p20-cambistas-amenazados.png",
+    "url": "https://alertasstg.blob.core.windows.net/alertas/027-24.pdf",
+    "pagina_pdf": 20,
+    "capturado": "2026-11-04T12:55:03.427Z",
+    "que_muestra": "AT 027-24, p. 20: el ELN cobra a quienes hacen contrabando; AK-47 amenazó a los cambistas del centro y de Alejandría."
+  },
+  "G01": {
+    "archivo": "G01-gafilat-evaluacion-colombia-p20-frontera-mercado-negro.png",
+    "url": "https://biblioteca.gafilat.org/wp-content/uploads/2024/07/IEM-Colombia-4taRonda.pdf",
+    "pagina_pdf": 20,
+    "capturado": "2026-11-04T12:55:04.172Z",
+    "que_muestra": "GAFILAT, Informe de Evaluación Mutua de Colombia, p. 20: la frontera colombo-venezolana ha sido históricamente un centro del mercado negro y del contrabando."
+  },
+  "G02": {
+    "archivo": "G02-gafilat-evaluacion-colombia-p91-cambistas.png",
+    "url": "https://biblioteca.gafilat.org/wp-content/uploads/2024/07/IEM-Colombia-4taRonda.pdf",
+    "pagina_pdf": 91,
+    "capturado": "2026-11-04T12:55:04.491Z",
+    "que_muestra": "GAFILAT, p. 91: los cambistas son un 'punto de entrada clave' a las divisas ilegales."
+  },
+  "G03": {
+    "archivo": "G03-dane-geih-informalidad-cucuta-p7.png",
+    "url": "https://www.dane.gov.co/files/operaciones/GEIH/bol-GEIHEISS-jun-ago2026.pdf",
+    "pagina_pdf": 7,
+    "capturado": "2026-11-04T12:55:05.355Z",
+    "que_muestra": "DANE, GEIH (jun-ago 2026), p. 7: Cúcuta A.M. con la segunda tasa de informalidad laboral más alta del país (62,4 %)."
+  },
+  "G04": {
+    "archivo": "G04-dian-informe-gestion-norte-de-santander-p4.png",
+    "url": "https://www.dian.gov.co/dian/rendicioncuentas/RendicionCuentasCiudadania/RendicionCuentas2026/Informe-Gestion-TAC-2026-Nte-Santander.pdf",
+    "pagina_pdf": 4,
+    "capturado": "2026-11-04T12:55:19.131Z",
+    "que_muestra": "DIAN, informe de gestión Norte de Santander 2026, p. 4: aprehensiones de la seccional de Aduanas de Cúcuta."
+  },
+  "G05": {
+    "archivo": "G05-dian-informe-gestion-norte-de-santander-p5.png",
+    "url": "https://www.dian.gov.co/dian/rendicioncuentas/RendicionCuentasCiudadania/RendicionCuentas2026/Informe-Gestion-TAC-2026-Nte-Santander.pdf",
+    "pagina_pdf": 5,
+    "capturado": "2026-11-04T12:55:19.507Z",
+    "que_muestra": "DIAN, informe Norte de Santander 2026, p. 5: resoluciones de la división cambiaria."
+  },
+  "W01": {
+    "archivo": "W01-policia-2026-operacion-cadivi-bienes-cucuta.png",
+    "url": "https://www.policia.gov.co/noticia/dijin-ocupa-68-bienes-avaluados-en-mas-13700-millones-pesos-en-bogota-cucuta-villa-del",
+    "capturado": "2026-11-04T12:55:42.288Z",
+    "que_muestra": "Policía (DIJIN), mayo 2026: ocupación de bienes en Bogotá, Cúcuta y Villa del Rosario por un esquema de lavado con divisas."
+  },
+  "W02": {
+    "archivo": "W02-policia-2022-corobon-exportaciones-ficticias.png",
+    "url": "https://www.policia.gov.co/noticia/cinco-personas-capturadas-por-lavado-activos-producto-narcotrafico",
+    "capturado": "2026-11-04T12:56:03.503Z",
+    "que_muestra": "Policía (POLFA), 2022, Operación COROBON: empresas fachada en Cúcuta simularon exportaciones a Venezuela por $112 mil millones."
+  },
+  "W03": {
+    "archivo": "W03-policia-2022-exporfic-extincion-de-dominio.png",
+    "url": "https://www.policia.gov.co/noticia/extincion-dominio-propiedades-criminales-cobijados-con-circular-azul-interpol",
+    "capturado": "2026-11-04T12:56:24.318Z",
+    "que_muestra": "Policía (POLFA), 2022, Operación Exporfic: exportaciones ficticias por más de $72 mil millones."
+  },
+  "W04": {
+    "archivo": "W04-policia-2020-red-familiar-lavado-82560-millones.png",
+    "url": "https://www.policia.gov.co/noticia/desarticulado-contubernio-familiar-para-lavado-activos",
+    "capturado": "2026-11-04T12:56:44.028Z",
+    "que_muestra": "Policía (POLFA), 2020: red familiar que lavó $82.560 millones con una tienda de barrio como fachada."
+  },
+  "W05": {
+    "archivo": "W05-dian-2026-contrabando-el-llano-cucuta.png",
+    "url": "https://www.dian.gov.co/Prensa/Paginas/NG-Comunicado-de-Prensa-123-2026.aspx",
+    "capturado": "2026-11-04T12:57:12.182Z",
+    "que_muestra": "DIAN (sep 2026): aprehensión de contrabando por $462 millones en el barrio El Llano de Cúcuta."
+  },
+  "P01": {
+    "archivo": "P01-eltiempo-2019-red-lavo-medio-billon-98-cucuta.png",
+    "url": "https://www.eltiempo.com/justicia/delitos/cae-banda-criminal-que-habria-lavado-mas-de-medio-billon-de-pesos-416658",
+    "capturado": "2026-11-04T12:57:43.437Z",
+    "que_muestra": "El Tiempo (2019), con la Fiscalía: red que habría lavado más de medio billón de pesos; el 98 % de sus transacciones, desde Cúcuta."
+  },
+  "P02": {
+    "archivo": "P02-eltiempo-2023-48924-millones-casas-de-cambio.png",
+    "url": "https://www.eltiempo.com/justicia/delitos/fiscalia-captura-a-dos-personas-senaladas-de-lavar-48-924-millones-818349",
+    "capturado": "2026-11-04T12:58:32.622Z",
+    "que_muestra": "El Tiempo (2023), con la Fiscalía: dos capturados por lavar $48.924 millones recibidos desde casas de cambio de Cúcuta."
+  },
+  "P03": {
+    "archivo": "P03-elpais-2026-nemesis-plus-bienes-norte-de-santander.png",
+    "url": "https://www.elpais.com.co/judicial/autoridades-ocuparon-bienes-en-bogota-y-norte-de-santander-por-presunto-lavado-de-activos-2742.html",
+    "capturado": "2026-11-04T12:59:01.144Z",
+    "que_muestra": "El País (mayo 2026): 'Nemesis Plus', ocupación de bienes por más de $24.934 millones de una red que lavaba con casas de cambio."
+  },
+  "P04": {
+    "archivo": "P04-publimetro-2025-lavado-tren-de-aragua-cucuta.png",
+    "url": "https://www.publimetro.co/bogota/2025/12/15/capturan-y-envian-a-la-carcel-a-dos-hermanos-senalados-de-lavado-de-activos-para-el-tren-de-aragua/",
+    "capturado": "2026-11-04T12:59:32.348Z",
+    "que_muestra": "Publimetro (dic 2025), con la Fiscalía: dos hermanos procesados por lavar más de $11.270 millones del Tren de Aragua en Bogotá, Medellín y Cúcuta."
   }
 }
