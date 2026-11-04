@@ -125,10 +125,10 @@
   "que_muestra": "El Colombiano (3 nov 2026), con datos de la Fiscalía: la Operación Kratos 'dejó 20 personas capturadas: 19 por orden judicial y una en flagrancia'.",
   "url": "https://www.elcolombiano.com/colombia/resultados-operativos-fiscalia-acompano-abelardo-40-grupos-delincuenciales-GO43096617",
   "pagina_pdf": null,
-  "buscar_en_pagina": "Kratos",
+  "buscar_en_pagina": "que dejó 20 personas capturadas",
   "captura": "capturas/N04-elcolombiano-2026-11-03-fiscalia-kratos-20-capturas.png",
   "estado": "capturada",
-  "capturado": "2026-11-04T12:43:27.721Z",
+  "capturado": "2026-11-04T17:13:19.413Z",
   "nota": null
  },
  {
@@ -718,5 +718,29 @@
   "estado": "capturada",
   "capturado": "2026-11-04T17:05:06.234Z",
   "nota": null
+ },
+ {
+  "id": "W07",
+  "categoria": "Páginas web oficiales (Policía, DIAN, Defensoría)",
+  "que_muestra": "Policía (oct 2026): con la DEA y la Fiscalía, captura en Cúcuta con fines de extradición de un 'objetivo de alto valor' cuya red podía enviar hasta 3 toneladas de cocaína al mes.",
+  "url": "https://www.policia.gov.co/noticia/policia-nacional-dea-capturo-en-cucuta-alias-senor-principal-articulador-transnacional-del",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": "capturas/W07-policia-2026-10-captura-objetivo-alto-valor-cucuta-dea.png",
+  "estado": "capturada",
+  "capturado": "2026-11-04T17:33:53.568Z",
+  "nota": null
+ },
+ {
+  "id": "X03",
+  "categoria": "Trino del Presidente (pantallazo del usuario)",
+  "que_muestra": "Trino del Presidente (28 sep 2026): 'En Cúcuta le arrancamos al ELN 1.120 kilos de cocaína y un laboratorio... Vamos por sus armas, sus cabecillas y cada peso con el que financian el terror.'",
+  "url": "https://x.com/ABDELAESPRIELLA/status/2104549165908811922",
+  "pagina_pdf": null,
+  "buscar_en_pagina": null,
+  "captura": null,
+  "estado": "manual",
+  "capturado": null,
+  "nota": "X no se deja capturar con navegadores automatizados. Abrir el trino y capturarlo."
  }
 ]

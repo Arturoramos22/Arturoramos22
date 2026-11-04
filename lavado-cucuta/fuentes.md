@@ -1,6 +1,6 @@
 # Índice de fuentes
 
-60 fuentes: 53 con captura real tomada, 7 para capturar a mano (el sitio bloquea navegadores automáticos o pide registro) y 0 pendientes.
+62 fuentes: 54 con captura real tomada, 8 para capturar a mano (el sitio bloquea navegadores automáticos o pide registro) y 0 pendientes.
 
 Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de la captura. En los PDF se indica la página. Cuando hay texto que buscar en la página, va en la columna «Buscar».
 
@@ -10,6 +10,7 @@ Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de l
 |---|---|---|---|---|
 | X01 | Pantallazo del trino del Presidente (4 nov 2026, 06:03): Operación Némesis, '109 capturas, 49 allanamientos y 32 expulsiones' como 'balance preliminar'. Tomado por el usuario en su teléfono. | [abrir](https://x.com/ABDELAESPRIELLA/status/2117935741745455377) | `X01-trino-presidente-operacion-nemesis-parte-1.png` | capturada |
 | X02 | Continuación del pantallazo del trino del Presidente sobre la Operación Némesis. | [abrir](https://x.com/ABDELAESPRIELLA/status/2117935741745455377) | `X02-trino-presidente-operacion-nemesis-parte-2.png` | capturada |
+| X03 | Trino del Presidente (28 sep 2026): 'En Cúcuta le arrancamos al ELN 1.120 kilos de cocaína y un laboratorio... Vamos por sus armas, sus cabecillas y cada peso con el que financian el terror.' | [abrir](https://x.com/ABDELAESPRIELLA/status/2104549165908811922) | — | manual: X no se deja capturar con navegadores automatizados. Abrir el trino y capturarlo. |
 
 ## Video del trino presidencial
 
@@ -81,6 +82,7 @@ Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de l
 | W04 | Policía (POLFA), 2020: red familiar que lavó $82.560 millones con una tienda de barrio como fachada. | [abrir](https://www.policia.gov.co/noticia/desarticulado-contubernio-familiar-para-lavado-activos) | `W04-policia-2020-red-familiar-lavado-82560-millones.png` | capturada |
 | W05 | DIAN (sep 2026): aprehensión de contrabando por $462 millones en el barrio El Llano de Cúcuta. | [abrir](https://www.dian.gov.co/Prensa/Paginas/NG-Comunicado-de-Prensa-123-2026.aspx) | `W05-dian-2026-contrabando-el-llano-cucuta.png` | capturada |
 | W06 | Defensoría: Cúcuta concentró el 25,4 % de los casos de trata atendidos en 2025. | [abrir](https://www.defensoria.gov.co/w/la-trata-de-personas-una-realidad-que-persiste-en-colombia) | — | manual: defensoria.gov.co bloquea navegadores automatizados. Abrir en el navegador. |
+| W07 | Policía (oct 2026): con la DEA y la Fiscalía, captura en Cúcuta con fines de extradición de un 'objetivo de alto valor' cuya red podía enviar hasta 3 toneladas de cocaína al mes. | [abrir](https://www.policia.gov.co/noticia/policia-nacional-dea-capturo-en-cucuta-alias-senor-principal-articulador-transnacional-del) | `W07-policia-2026-10-captura-objetivo-alto-valor-cucuta-dea.png` | capturada |
 
 ## Caso TD Bank (DOJ, FinCEN, SEC) y prensa sobre el caso
 
@@ -104,7 +106,7 @@ Las consultas a datos.gov.co abren el explorador oficial con la misma tabla de l
 | N01 | Semana (4 nov 2026): las cifras de Némesis son del Presidente; 'se espera que... las autoridades entreguen mayores detalles de quiénes son las personas que terminaron capturadas'. | [abrir](https://www.semana.com/nacion/cucuta/articulo/operacion-nemesis-en-cucuta-lleva-109-capturas-presidente-de-la-espriella-entrega-detalles/202608/) · Buscar: «Se espera que con el pasar de las horas» | `N01-semana-2026-11-04-nemesis-109-capturas.png` | capturada |
 | N02 | El Nuevo Siglo (4 nov 2026): capturados y expulsados quedan para 'la legalización de sus situaciones jurídicas y migratorias'. | [abrir](https://www.elnuevosiglo.com.co/nacion/operacion-militar-en-cucuta-dejo-109-capturados-y-32-expulsiones) · Buscar: «situaciones jurídicas y migratorias» | `N02-elnuevosiglo-2026-11-04-nemesis-capturas-y-expulsiones.png` | capturada |
 | N03 | La Opinión (4 nov 2026): el mandatario dio a conocer las 109 capturas y 32 expulsiones de Némesis. | [abrir](https://laopinion.co/cucuta/presidente-de-la-espriella-se-quedo-en-cucuta-para-liderar-operativos) | `N03-laopinion-2026-11-04-presidente-se-quedo-en-cucuta.png` | capturada |
-| N04 | El Colombiano (3 nov 2026), con datos de la Fiscalía: la Operación Kratos 'dejó 20 personas capturadas: 19 por orden judicial y una en flagrancia'. | [abrir](https://www.elcolombiano.com/colombia/resultados-operativos-fiscalia-acompano-abelardo-40-grupos-delincuenciales-GO43096617) · Buscar: «Kratos» | `N04-elcolombiano-2026-11-03-fiscalia-kratos-20-capturas.png` | capturada |
+| N04 | El Colombiano (3 nov 2026), con datos de la Fiscalía: la Operación Kratos 'dejó 20 personas capturadas: 19 por orden judicial y una en flagrancia'. | [abrir](https://www.elcolombiano.com/colombia/resultados-operativos-fiscalia-acompano-abelardo-40-grupos-delincuenciales-GO43096617) · Buscar: «que dejó 20 personas capturadas» | `N04-elcolombiano-2026-11-03-fiscalia-kratos-20-capturas.png` | capturada |
 | N05 | La Silla Vacía (3 nov 2026): la puesta en escena de los megaoperativos y el balance de la Fiscalía. | [abrir](https://www.lasillavacia.com/en-vivo/megaoperativos-del-gobierno-han-dejado-391-capturados-reporto-fiscalia/) | `N05-lasillavacia-2026-11-03-megaoperativos-391-capturados.png` | capturada |
 | N06 | Infobae (29 oct 2026): penalistas advierten que exhibir a los detenidos viola la presunción de inocencia y puede tumbar las capturas. | [abrir](https://www.infobae.com/colombia/2026/10/29/abogados-penalistas-reprocharon-que-abelardo-de-la-espriella-encare-a-detenidos-en-los-megaoperativos-liderados-por-el-presidente-se-va-acabar-cuando-lo-declaren-ilegal/) | `N06-infobae-2026-10-29-penalistas-exhibir-detenidos.png` | capturada |
 | N07 | Área Cúcuta (mayo 2026): 'Nemesis Plus', extinción de dominio sobre bienes por $24.934 millones de una red que lavaba dinero del narcotráfico con casas de cambio en Bogotá, Cúcuta y San Cayetano. | [abrir](https://www.areacucuta.com/golpe-a-las-finanzas-del-crimen-organizado-la-policia-nacional-logro-extincion-de-dominio-a-bienes-avaluados-en-mas-de-24-934-millones/) · Buscar: «24.934» | — | manual: Área Cúcuta bloquea navegadores automatizados (Cloudflare). Abrir en el navegador. |

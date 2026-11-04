@@ -316,5 +316,11 @@
     "url": "https://www.datos.gov.co/Seguridad-y-Defensa/INCAUTACIONES-DE-COCAÍNA/26zg-9p9r/explore/query/SELECT%20%60municipio%60%2C%20date_trunc_y(%60fecha_hecho%60)%20AS%20%60anio%60%2C%20sum(%60cantidad%60)%20AS%20%60kilos_cocaina%60%20WHERE%20%60cod_muni%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio%60%2C%20%60anio%60%20ORDER%20BY%20%60anio%60%20ASC/page/filter",
     "capturado": "2026-11-04T17:05:06.234Z",
     "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año desde 2010: 2026 (enero-septiembre) es el máximo de la serie."
+  },
+  "W07": {
+    "archivo": "W07-policia-2026-10-captura-objetivo-alto-valor-cucuta-dea.png",
+    "url": "https://www.policia.gov.co/noticia/policia-nacional-dea-capturo-en-cucuta-alias-senor-principal-articulador-transnacional-del",
+    "capturado": "2026-11-04T17:33:53.568Z",
+    "que_muestra": "Policía (oct 2026): con la DEA y la Fiscalía, captura en Cúcuta con fines de extradición de un 'objetivo de alto valor' cuya red podía enviar hasta 3 toneladas de cocaína al mes."
   }
 }

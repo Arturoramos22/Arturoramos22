@@ -536,5 +536,22 @@
     "alto": 1300,
     "soql": "SELECT `municipio`, date_trunc_y(`fecha_hecho`) AS `anio`, sum(`cantidad`) AS `kilos_cocaina` WHERE `cod_muni` = '54001' GROUP BY `municipio`, `anio` ORDER BY `anio` ASC",
     "que_muestra": "MinDefensa: cocaína incautada en Cúcuta por año desde 2010: 2026 (enero-septiembre) es el máximo de la serie."
+  },
+  {
+    "id": "W07",
+    "archivo": "W07-policia-2026-10-captura-objetivo-alto-valor-cucuta-dea.png",
+    "tipo": "web",
+    "url": "https://www.policia.gov.co/noticia/policia-nacional-dea-capturo-en-cucuta-alias-senor-principal-articulador-transnacional-del",
+    "alto": 2300,
+    "que_muestra": "Policía (oct 2026): con la DEA y la Fiscalía, captura en Cúcuta con fines de extradición de un 'objetivo de alto valor' cuya red podía enviar hasta 3 toneladas de cocaína al mes."
+  },
+  {
+    "id": "X03",
+    "archivo": "X03-trino-presidente-2026-09-28-cada-peso.png",
+    "tipo": "web",
+    "url": "https://x.com/ABDELAESPRIELLA/status/2104549165908811922",
+    "manual": true,
+    "nota": "X no se deja capturar con navegadores automatizados. Abrir el trino y capturarlo.",
+    "que_muestra": "Trino del Presidente (28 sep 2026): 'En Cúcuta le arrancamos al ELN 1.120 kilos de cocaína y un laboratorio... Vamos por sus armas, sus cabecillas y cada peso con el que financian el terror.'"
   }
 ]
