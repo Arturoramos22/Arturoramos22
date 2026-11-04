@@ -1,0 +1,64 @@
+[
+  {
+    "id": "F01",
+    "archivo": "F01-datosgov-ficha-procesos-fiscalia.png",
+    "tipo": "web",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs",
+    "alto": 1000,
+    "que_muestra": "Ficha del conjunto de datos 'Procesos Fiscalía - V3' (Fiscalía General de la Nación): noticias criminales del sistema penal acusatorio desde 2010."
+  },
+  {
+    "id": "F02",
+    "archivo": "F02-datosgov-procesos-lavado-por-municipio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1150,
+    "soql": "SELECT `municipio_hecho`, `departamento_hecho`, count(*) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' GROUP BY `municipio_hecho`, `departamento_hecho` ORDER BY `procesos_lavado_de_activos` DESC LIMIT 15",
+    "que_muestra": "Procesos de la Fiscalía por lavado de activos (capítulo completo: lavado, enriquecimiento ilícito, testaferrato), por municipio: Cúcuta es cuarta (357)."
+  },
+  {
+    "id": "F03",
+    "archivo": "F03-datosgov-procesos-contrabando-por-municipio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1150,
+    "soql": "SELECT `municipio_hecho`, `departamento_hecho`, count(*) AS `procesos_contrabando` WHERE `capitulo_delito` = 'Del Contrabando' GROUP BY `municipio_hecho`, `departamento_hecho` ORDER BY `procesos_contrabando` DESC LIMIT 15",
+    "que_muestra": "Procesos de la Fiscalía por contrabando, por municipio: Cúcuta es segunda en el país (2.372), solo detrás de Bogotá."
+  },
+  {
+    "id": "F04",
+    "archivo": "F04-datosgov-cucuta-lavado-por-etapa.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 900,
+    "soql": "SELECT `municipio_hecho`, `etapa`, count(*) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `etapa` ORDER BY `procesos_lavado_de_activos` DESC",
+    "que_muestra": "Cúcuta: procesos por lavado de activos según etapa. 290 de 357 siguen en indagación; 20 en ejecución de penas."
+  },
+  {
+    "id": "F05",
+    "archivo": "F05-datosgov-cucuta-lavado-por-anio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1300,
+    "soql": "SELECT `municipio_hecho`, `a_o_hecho`, count(*) AS `procesos_lavado_de_activos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_hecho` ORDER BY `a_o_hecho` ASC",
+    "que_muestra": "Cúcuta: procesos por lavado de activos por año del hecho: 12 en 2025, 10 en 2024, 8 en 2026 (a septiembre)."
+  },
+  {
+    "id": "F06",
+    "archivo": "F06-datosgov-cucuta-contrabando-por-anio.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1300,
+    "soql": "SELECT `municipio_hecho`, `a_o_hecho`, count(*) AS `procesos_contrabando` WHERE `capitulo_delito` = 'Del Contrabando' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `a_o_hecho` ORDER BY `a_o_hecho` ASC",
+    "que_muestra": "Cúcuta: procesos por contrabando por año: de 419 en 2017 a 19 en 2025."
+  },
+  {
+    "id": "F07",
+    "archivo": "F07-datosgov-cucuta-lavado-por-delito.png",
+    "tipo": "soql",
+    "dataset": "Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs",
+    "alto": 1300,
+    "soql": "SELECT `municipio_hecho`, `delito`, count(*) AS `procesos` WHERE `capitulo_delito` = 'Del Lavado De Activos' AND `cod_dane_hecho` = '54001' GROUP BY `municipio_hecho`, `delito` ORDER BY `procesos` DESC",
+    "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato desde 2010."
+  }
+]

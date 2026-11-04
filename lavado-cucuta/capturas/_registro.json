@@ -1,0 +1,44 @@
+{
+  "F01": {
+    "archivo": "F01-datosgov-ficha-procesos-fiscalia.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs",
+    "capturado": "2026-11-04T12:10:59.594Z",
+    "que_muestra": "Ficha del conjunto de datos 'Procesos Fiscalía - V3' (Fiscalía General de la Nación): noticias criminales del sistema penal acusatorio desde 2010."
+  },
+  "F02": {
+    "archivo": "F02-datosgov-procesos-lavado-por-municipio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%2C%20count(*)%20AS%20%60procesos_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%20ORDER%20BY%20%60procesos_lavado_de_activos%60%20DESC%20LIMIT%2015/page/filter",
+    "capturado": "2026-11-04T12:11:25.061Z",
+    "que_muestra": "Procesos de la Fiscalía por lavado de activos (capítulo completo: lavado, enriquecimiento ilícito, testaferrato), por municipio: Cúcuta es cuarta (357)."
+  },
+  "F03": {
+    "archivo": "F03-datosgov-procesos-contrabando-por-municipio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%2C%20count(*)%20AS%20%60procesos_contrabando%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Contrabando'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60departamento_hecho%60%20ORDER%20BY%20%60procesos_contrabando%60%20DESC%20LIMIT%2015/page/filter",
+    "capturado": "2026-11-04T12:11:53.290Z",
+    "que_muestra": "Procesos de la Fiscalía por contrabando, por municipio: Cúcuta es segunda en el país (2.372), solo detrás de Bogotá."
+  },
+  "F04": {
+    "archivo": "F04-datosgov-cucuta-lavado-por-etapa.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60etapa%60%2C%20count(*)%20AS%20%60procesos_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60etapa%60%20ORDER%20BY%20%60procesos_lavado_de_activos%60%20DESC/page/filter",
+    "capturado": "2026-11-04T12:12:19.921Z",
+    "que_muestra": "Cúcuta: procesos por lavado de activos según etapa. 290 de 357 siguen en indagación; 20 en ejecución de penas."
+  },
+  "F05": {
+    "archivo": "F05-datosgov-cucuta-lavado-por-anio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%2C%20count(*)%20AS%20%60procesos_lavado_de_activos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%20ORDER%20BY%20%60a_o_hecho%60%20ASC/page/filter",
+    "capturado": "2026-11-04T12:12:44.261Z",
+    "que_muestra": "Cúcuta: procesos por lavado de activos por año del hecho: 12 en 2025, 10 en 2024, 8 en 2026 (a septiembre)."
+  },
+  "F06": {
+    "archivo": "F06-datosgov-cucuta-contrabando-por-anio.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%2C%20count(*)%20AS%20%60procesos_contrabando%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Contrabando'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60a_o_hecho%60%20ORDER%20BY%20%60a_o_hecho%60%20ASC/page/filter",
+    "capturado": "2026-11-04T12:13:04.538Z",
+    "que_muestra": "Cúcuta: procesos por contrabando por año: de 419 en 2017 a 19 en 2025."
+  },
+  "F07": {
+    "archivo": "F07-datosgov-cucuta-lavado-por-delito.png",
+    "url": "https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscalía-V3/dbdv-iihs/explore/query/SELECT%20%60municipio_hecho%60%2C%20%60delito%60%2C%20count(*)%20AS%20%60procesos%60%20WHERE%20%60capitulo_delito%60%20%3D%20'Del%20Lavado%20De%20Activos'%20AND%20%60cod_dane_hecho%60%20%3D%20'54001'%20GROUP%20BY%20%60municipio_hecho%60%2C%20%60delito%60%20ORDER%20BY%20%60procesos%60%20DESC/page/filter",
+    "capturado": "2026-11-04T12:14:00.766Z",
+    "que_muestra": "Cúcuta: procesos del capítulo de lavado por delito: solo 3 por testaferrato desde 2010."
+  }
+}
