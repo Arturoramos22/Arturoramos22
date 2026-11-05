@@ -39,7 +39,12 @@ Severidad:
 - ALTA: 30 días o más de traslape, con ambos contratos sin estado terminado, cerrado o cedido.
 - VERIFICAR: uno de los dos contratos figura como terminado, cerrado o cedido, así que pudo terminarse antes.
 - BAJA: menos de 30 días, que puede ser un empalme.
-El honorario mensual se estima como el valor dividido entre la duración en meses. Límite: SECOP no siempre registra las terminaciones anticipadas ni las cesiones. Antes de afirmar un doble pago, hay que revisar las actas.
+VALOR MES Y PERIODOS DE COINCIDENCIA (hojas "Simultaneidad (detalle)" y "Simultaneidad (tramos)")
+- Valor mes = valor total del contrato / (días entre inicio y fin, ambos incluidos / 30).
+- Para cada persona se listan todos sus contratos de PS vigentes en 2026, con origen (Cúcuta en el periodo, Cúcuta antes del 8-mar u otra entidad), fechas, días, valor total y valor mes.
+- Los periodos de coincidencia se calculan entre fechas de corte. Solo se reportan los de 7 días o más con al menos un contrato firmado por las entidades analizadas desde el 8-mar-2026. Cada periodo indica qué contratos coinciden y la suma de su valor mes. El pico es el periodo con mayor suma.
+- No se suman los contratos terminados, cerrados o cedidos, ni los que tienen una duración registrada menor de 15 días: casi siempre la fecha de fin está mal diligenciada, y quedan marcados "duración no confiable".
+Límite: SECOP no siempre registra las terminaciones anticipadas ni las cesiones. Antes de afirmar un doble pago, hay que revisar las actas.
 
 CLASIFICACIÓN POR SECTOR Y DEPENDENCIA
 El sector se asigna con palabras clave sobre el objeto del contrato, en orden de prioridad (ver sector.py). Es una aproximación y puede clasificar mal algunos contratos genéricos.

@@ -125,24 +125,403 @@ Los de riesgo MEDIO (Anexo B) incluyen, entre otros:
 - Diomar García Eventos ($800 M), Caracol ($200 M) y Consultores LAF ($240 M), todos por "apoyo a la gestión";
 - INNOVATECH ($2.000 M) y RedSumma ($1.398 M).
 
-## 5. Simultaneidad de contratistas, caso por caso
+## 5. Simultaneidad de contratistas: qué contratos, de qué fecha a qué fecha, cuánto vale cada uno y su valor mes
 
-Se cruzó cada contrato de **prestación de servicios** de persona natural firmado en el periodo con **todos** los contratos de prestación de servicios de esa misma persona en SECOP II, en cualquier entidad pública del país. Los proveedores comerciantes, que pueden vender a varias entidades a la vez, quedaron fuera de este cruce.
+Se cruzó cada contrato de **prestación de servicios** de persona natural firmado en el periodo con todos los contratos de prestación de servicios de esa misma persona en SECOP II, en cualquier entidad pública del país. Los comerciantes proveedores quedan fuera de este cruce.
 
-- **631 pares de contratos simultáneos**, que involucran a **454 personas**.
-  - **493 son de severidad ALTA**: 30 días o más de traslape con ambos contratos vigentes.
-  - 65 hay que verificarlos porque uno de los contratos figura como terminado o cedido.
-  - 73 tienen un traslape corto, que puede ser un empalme.
-- **Dónde está el otro contrato** de los pares ALTOS: Gobernación de Norte de Santander (162 pares), SENA (42), Los Patios (29), Corponor (26), IDS (18), la propia Alcaldía (17), Indenorte (15) y Villa del Rosario (14).
-- **87 personas tuvieron 3 o más contratos vigentes a la vez.** 22 tuvieron 4 o más, y una llegó a 6:
-  - Jorge Luis Moreno Carreño, con contratos en la Alcaldía de Cúcuta, Puerto Santander, Cámara de Representantes, ESAP, Fondo Rotatorio y Personería de Madrid.
-  - Otras personas con 5 contratos simultáneos: Javier Enrique Hurtado Ramírez, Carlos Alberto Gelves Mogollón, Yoli Margarita Berbesi Carrillo, Angie Carolina Villamizar Soler, María Angélica Hernández Hernández y Wilmer Enrique Aranda Barrera.
-- **Doble contrato en la misma entidad**, que es lo más grave:
-  - Norberto García Romero tiene dos contratos con la Alcaldía con objeto **idéntico**, "enfermería especializada en auditoría" (2026C-146 y 2026C-590), que se traslapan 92 días.
-  - Maribel Trujillo tiene dos contratos de "servicios profesionales especializados" con la Alcaldía (R-497 y C-459), con 92 días de traslape.
-  - Rafael Mauricio Angarita Villalba tiene dos contratos simultáneos con la Central de Transportes y, además, otros dos con la Alcaldía.
+Para cada persona se listan **todos sus contratos** con fecha de inicio y fin, valor total y **valor mes**, que es el valor total dividido entre la duración en meses de 30 días. Luego se calculan los **periodos en que los contratos coinciden** y cuánto suman por mes. Solo se cuentan periodos de 7 días o más que incluyan al menos un contrato firmado desde el 8-mar-2026. No se suman los contratos terminados o cedidos, ni los que tienen una duración registrada menor de 15 días, porque su fecha de fin no es confiable.
 
-Cada par está individualizado en la hoja "Simultaneidad (pares)" y en el Anexo C, con los dos IDs de SECOP, las entidades, los objetos, las fechas, los días de traslape, el honorario mensual combinado y los enlaces. La prestación de servicios no exige exclusividad, por lo que la simultaneidad no es ilegal por sí misma. Sin embargo, varios contratos de tiempo completo a la vez indican una posible **nómina paralela, doble pago o imposibilidad material de cumplir**. Además, el incumplimiento de las obligaciones puede comprometer la responsabilidad de los supervisores (Ley 1474 de 2011, arts. 83-84).
+**Resultados:**
+
+- **631 pares de contratos simultáneos** entre **454 personas**. De ellos, 493 pares se cruzan durante 30 días o más con ambos contratos vigentes.
+- Máximo de contratos vigentes a la vez: 379 personas con 2, 43 con 3, 8 con 4, 3 con 5 y 1 con 6. Hay 20 personas cuyo cruce depende de contratos terminados o de fechas no confiables y quedan para verificar.
+- **26 personas** suman 15 millones o más al mes en contratos simultáneos, y **13** suman 20 millones o más.
+- **7 personas** tienen dos o más contratos simultáneos con una **misma entidad**.
+
+La prestación de servicios no exige exclusividad, así que la simultaneidad no es ilegal por sí misma. Sin embargo, varios contratos de tiempo completo a la vez indican una posible nómina paralela, doble pago o imposibilidad material de cumplir. Además, compromete la responsabilidad de los supervisores, que certifican el cumplimiento (Ley 1474 de 2011, arts. 83-84). Antes de afirmar un doble pago hay que pedir los informes de actividades, las planillas de seguridad social y las actas de terminación.
+
+### 5.1 Dos o más contratos simultáneos con una misma entidad (de Cúcuta o externa)
+
+#### S1. RAFAEL MAURICIO ANGARITA VILLALBA (doc. 1098638365)
+
+7 contratos de prestación de servicios en 3 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Central de Transportes Estación Cúc | `CO1.PCCNTR.8782984` | Cúcuta – antes del 8-mar | 2026-01-08 | 2026-06-06 | 150 | $22,5 M | $4,5 M | Modificado | PRESTACION DE SERVICIOS PROFESIONALES COMO ADMINISTRADOR DE EMPRESAS PARA ASISTIR Y ACOMPAÑAR LOS PROCESOS PRESUPUESTALE |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8855107` | Cúcuta – antes del 8-mar | 2026-01-14 | 2026-06-19 | 157 | $28,8 M | $5,5 M | Modificado | 2026J-112 PRESTACION DE SERVICIOS PROFESIONALES EN EL AREA DE FINANZAS PARA APOYAR LOS PROYECTOS DERIVADOS DEL PROGRAMA  |
+| 3 | Gobernación Norte de Santander* | `CO1.PCCNTR.9004911` | Otra entidad | 2026-01-25 | 2026-07-24 | 181 | $18,6 M | $3,1 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES EN LA SECRETARÍA DE GOBIERNO DEPARTAMENTAL PARA APOYAR LA IMPLEMENTACIÓN DE LA EST |
+| 4 | Central de Transportes Estación Cúc | `CO1.PCCNTR.9605227` | Cúcuta – periodo | 2026-07-02 | 2026-12-01 | 153 | $22,5 M | $4,4 M | En ejecución | PRESTACION DE SERVICIOS PROFESIONALES COMO ADMINISTRADOR DE EMPRESAS PARA ASISTIR Y ACOMPAÑAR LOS PROCESOS PRESUPUESTALE |
+| 5 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9734475` | Cúcuta – periodo | 2026-07-30 | 2026-09-29 | 62 | $11,0 M | $5,3 M | En ejecución | 2026J-159 PRESTACION DE SERVICIOS PROFESIONALES EN EL AREA DE FINANZAS PARA APOYAR LOS PROYECTOS DERIVADOS DEL PROGRAMA  |
+| 6 | Central de Transportes Estación Cúc | `CO1.PCCNTR.9808514` | Cúcuta – periodo | 2026-08-14 | 2026-09-13 | 31 | $30,0 M | $29,0 M | En ejecución | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS PARA APOYAR A LA CENTRAL DE TRANSPORTES ESTACIÓN CÚCUTA EN EL DIAGNÓSTICO |
+| 7 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.10070384` | Cúcuta – periodo | 2026-10-14 | 2026-12-14 | 62 | $9,0 M | $4,4 M | Aprobado | 2026J-197 PRESTACION DE SERVICIOS PROFESIONALES EN EL AREA DE FINANZAS PARA APOYAR LOS PROYECTOS DERIVADOS DEL PROGRAMA  |
+| | **Total** | | | | | | **$142,4 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-07-02 al 2026-07-24 (23 días): contratos 3, 4 a la vez, que suman **$7,5 M al mes**.
+- Del 2026-07-30 al 2026-08-13 (15 días): contratos 4, 5 a la vez, que suman **$9,7 M al mes**.
+- Del 2026-08-14 al 2026-09-13 (31 días): contratos 4, 5, 6 a la vez, que suman **$38,8 M al mes**.
+- Del 2026-09-14 al 2026-09-29 (16 días): contratos 4, 5 a la vez, que suman **$9,7 M al mes**.
+- Del 2026-10-14 al 2026-12-01 (49 días): contratos 4, 7 a la vez, que suman **$8,8 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** Central de Transportes Estación Cúcuta.
+
+**Pico:** 3 contratos simultáneos que suman **$38,8 M mensuales**, del 2026-08-14 al 2026-09-13.
+
+#### S2. Trujillomaribel (doc. 60385130)
+
+6 contratos de prestación de servicios en 3 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8860843` | Cúcuta – antes del 8-mar | 2026-01-14 | 2026-06-12 | 150 | $30,0 M | $6,0 M | Modificado | 2026R-241 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA FORTALECER LA GESTIÓN; SEGUIMIENTO Y ARTICULACIÓN DE |
+| 2 | Gobernación Norte de Santander* | `CO1.PCCNTR.8862683` | Otra entidad | 2026-01-15 | 2026-11-14 | 304 | $99,2 M | $9,8 M | Modificado | EL CONTRATISTA SE COMPROMETE A PRESTAR SERVICIOS PROFESIONALES EN EL CON EL FIN DE BRINDAR ASISTENCIA TÉCNICA AL DEPARTA |
+| 3 | MINISTERIO DE SALUD Y PROTECCIÓN SO | `CO1.PCCNTR.8894510` | Otra entidad | 2026-01-16 | 2026-07-15 | 181 | $48,0 M | $8,0 M | En ejecución | Prestar servicios profesionales al Grupo de Gestión para la Promoción y Prevención en la generación de respuesta a los a |
+| 4 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9029678` | Cúcuta – antes del 8-mar | 2026-01-23 | 2026-06-22 | 151 | $35,0 M | $7,0 M | Modificado | 2026C-53 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS EN GERENCIA DE SERVICIOS DE SALUD COMO APOYO A LA SUPERVIS |
+| 5 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9677868` | Cúcuta – periodo | 2026-07-17 | 2026-11-16 | 123 | $24,0 M | $5,9 M | En ejecución | 2026R-497 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA FORTALECER LA GESTIÓN; SEGUIMIENTO Y ARTICULACIÓN DE |
+| 6 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9763353` | Cúcuta – periodo | 2026-08-05 | 2026-11-04 | 92 | $21,0 M | $6,8 M | En ejecución | 2026C-459 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS EN GERENCIA DE SERVICIOS DE SALUD COMO APOYO A LA SUPERVI |
+| | **Total** | | | | | | **$257,2 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-07-17 al 2026-08-04 (19 días): contratos 2, 5 a la vez, que suman **$15,6 M al mes**.
+- Del 2026-08-05 al 2026-11-04 (92 días): contratos 2, 5, 6 a la vez, que suman **$22,5 M al mes**.
+- Del 2026-11-05 al 2026-11-14 (10 días): contratos 2, 5 a la vez, que suman **$15,6 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** Alcaldía (Municipio de San José de Cúcuta).
+
+**Pico:** 3 contratos simultáneos que suman **$22,5 M mensuales**, del 2026-08-05 al 2026-11-04.
+
+#### S3. LINA DEL PILAR PINO QUINTERO (doc. 37393239)
+
+3 contratos de prestación de servicios en 2 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | ICBF REGIONAL NORTE DE SANTANDER | `CO1.PCCNTR.8848561` | Otra entidad | 2026-01-14 | 2026-10-31 | 291 | $41,2 M | $4,2 M | Modificado | Prestar Servicios Profesionales Para Apoyar A La Regional Norte De Santander Como Psicologa En La Identificacion Y Carac |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.10026477` | Cúcuta – periodo | 2026-10-02 | 2026-12-27 | 87 | $15,9 M | $5,5 M | Aprobado | 2026CP-122 PRESTAR SERVICIOS PROFESIONALES COMO PSICÓLOGO ESPECIALISTA EN VIOLENCIA INTRAFAMILIAR Y ADOLESCENCIA PARA FO |
+| 3 | ICBF REGIONAL NORTE DE SANTANDER | `CO1.PCCNTR.10107387` | Otra entidad | 2026-10-23 | 2026-12-15 | 54 | $6,2 M | $3,4 M | Aprobado | PRESTAR SERVICIOS PROFESIONALES PARA APOYAR A LA REGIONAL NORTE DE SANTANDER COMO PSICÓLOGA EN LA IDENTIFICACIÓN Y CARAC |
+| | **Total** | | | | | | **$63,3 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-10-02 al 2026-10-22 (21 días): contratos 1, 2 a la vez, que suman **$9,7 M al mes**.
+- Del 2026-10-23 al 2026-10-31 (9 días): contratos 1, 2, 3 a la vez, que suman **$13,2 M al mes**.
+- Del 2026-11-01 al 2026-12-15 (45 días): contratos 2, 3 a la vez, que suman **$8,9 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** ICBF REGIONAL NORTE DE SANTANDER.
+
+**Pico:** 3 contratos simultáneos que suman **$13,2 M mensuales**, del 2026-10-23 al 2026-10-31.
+
+#### S4. ANDRES FELIPE GONZALEZ CARREÑO (doc. 1090495223)
+
+5 contratos de prestación de servicios en 2 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.9180602` | Otra entidad | 2026-01-28 | 2026-05-12 | 105 | $12,9 M | $3,7 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES CON AUTONOMIA TECNICA; ADMINISTRATIVA Y PRESUPUESTAL PARA APOYAR EL FORTALECIMIENT |
+| 2 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.9378389` | Otra entidad | 2026-03-09 | 2026-07-03 | 117 | $9,8 M | $2,5 M | En ejecución | PRESTACION DE SERVICIOS COMO DOCENTE POR SUS PROPIOS MEDIOS CON PLENA AUTONOMIA TECNICA; ADMINISTRATIVA Y FINANCIERA PAR |
+| 3 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.9983267` | Otra entidad | 2026-09-24 | 2026-12-11 | 79 | $8,9 M | $3,4 M | En ejecución | PRESTACIÓN DE SERVICIOS COMO DOCENTE PARA IMPARTIR 370 HORAS DE FORMACION EN LOS PROGRAMAS TECNICOS LABORALES POR COMPET |
+| 4 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.10091712` | Otra entidad | 2026-10-21 | 2026-12-20 | 61 | $7,4 M | $3,6 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EN LA ZONA RURAL AL ÁREA DE GESTION ACADEMICA DEL CENTRO TECNOLÓGICO D |
+| 5 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.10135832` | Cúcuta – periodo | 2026-10-30 | 2026-12-30 | 62 | $7,0 M | $3,4 M | Aprobado | 2026CP-200 PRESTAR SERVICIOS PROFESIONALES PARA APOYAR LA PLANEACIÓN; ARTICULACIÓN Y PROYECCIÓN DE ESTRATEGIAS QUE FORTA |
+| | **Total** | | | | | | **$46,1 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-10-30 al 2026-12-11 (43 días): contratos 3, 4, 5 a la vez, que suman **$10,4 M al mes**.
+- Del 2026-12-12 al 2026-12-20 (9 días): contratos 4, 5 a la vez, que suman **$7,0 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** CENTRO TECNOLÓGICO DE CÚCUTA.
+
+**Pico:** 3 contratos simultáneos que suman **$10,4 M mensuales**, del 2026-10-30 al 2026-12-11.
+
+#### S5. ARELIS QUIÑONES GRANJA (doc. 37290333)
+
+3 contratos de prestación de servicios en 2 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | IMRD (Instituto Municipal de Recrea | `CO1.PCCNTR.8855869` | Cúcuta – antes del 8-mar | 2026-01-14 | 2026-07-13 | 181 | $15,0 M | $2,5 M | Modificado | DESARROLLAR ACTIVIDADES PARA BRINDAR ACOMPAÑAMIENTO OPERATIVO Y/O ADMINISTRATIVO EN LA EJECUCION;SEGUIMIENTO DEL PROGRAM |
+| 2 | INSTITUTO DE DEPORTES DEL DEPARTAME | `CO1.PCCNTR.8845023` | Otra entidad | 2026-01-30 | 2026-12-15 | 320 | $28,9 M | $2,7 M | Modificado | PRESTAR LOS SERVICIOS DE APOYO A LA GESTION COMO ASISTENTE DEL ENTRENADOR DEPORTIVO EN LA DISCIPLINA DE ATLETISMO DEL DE |
+| 3 | IMRD (Instituto Municipal de Recrea | `CO1.PCCNTR.9624724` | Cúcuta – periodo | 2026-07-07 | 2026-08-06 | 31 | $2,5 M | $2,4 M | En ejecución | DESARROLLAR ACTIVIDADES PARA BRINDAR ACOMPAÑAMIENTO OPERATIVO Y/O ADMINISTRATIVO EN LA EJECUCIÓN; SEGUIMIENTO DE LOS PRO |
+| | **Total** | | | | | | **$46,4 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-07-07 al 2026-07-13 (7 días): contratos 1, 2, 3 a la vez, que suman **$7,6 M al mes**.
+- Del 2026-07-14 al 2026-08-06 (24 días): contratos 2, 3 a la vez, que suman **$5,1 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** IMRD (Instituto Municipal de Recreación y Deporte).
+
+**Pico:** 3 contratos simultáneos que suman **$7,6 M mensuales**, del 2026-07-07 al 2026-07-13.
+
+#### S6. NORBERTO GARCIA ROMERO (doc. 88259034)
+
+2 contratos de prestación de servicios en 1 entidad(es); hasta **2 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9090955` | Cúcuta – antes del 8-mar | 2026-01-27 | 2026-12-26 | 334 | $22,5 M | $2,0 M | Modificado | 2026C-146 PRESTACIÓN DE SERVICIOS PROFESIONALES EN ENFERMERIA ESPECIALIZADA EN AUDITORIA PARA LA EJECUCIÓN DEL PROYECTO  |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9768328` | Cúcuta – periodo | 2026-08-06 | 2026-11-05 | 92 | $13,5 M | $4,4 M | En ejecución | 2026C-590 PRESTACIÓN DE SERVICIOS PROFESIONALES EN ENFERMERIA ESPECIALIZADA EN AUDITORIA PARA LA EJECUCIÓN DEL PROYECTO  |
+| | **Total** | | | | | | **$36,0 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-08-06 al 2026-11-05 (92 días): contratos 1, 2 a la vez, que suman **$6,4 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** Alcaldía (Municipio de San José de Cúcuta).
+
+**Pico:** 2 contratos simultáneos que suman **$6,4 M mensuales**, del 2026-08-06 al 2026-11-05.
+
+#### S7. MAYRA ALEJANDRA (doc. 1090404872)
+
+3 contratos de prestación de servicios en 1 entidad(es); hasta **2 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8602208` | Cúcuta – antes del 8-mar | 2025-11-19 | 2026-12-18 | 395 | $5,0 M | $0,4 M | En ejecución | 2025TI-27 PRESTAR LOS SERVICIOS PROFESIONALES PARA LA ELABORACIÓN DE UN DOCUMENTO DIAGNÓSTICO DE NECESIDADES EN I+D+I BP |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8795744` | Cúcuta – antes del 8-mar | 2026-02-09 | 2026-06-07 | 119 | $23,0 M | $5,8 M | Modificado | 2026TI-14 PRESTAR SERVICIOS PROFESIONALES PARA DISEÑAR; EJECUTAR Y ACOMPAÑAR LA IMPLEMENTACIÓN DE UN PROGRAMA DE EDUCACI |
+| 3 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9684863` | Cúcuta – periodo | 2026-07-21 | 2026-12-30 | 163 | $24,5 M | $4,5 M | En ejecución | 2026TI-24 PRESTAR LOS SERVICIOS PROFESIONALES PARA GARANTIZAR LA IMPLEMENTACIÓN DE UN PROGRAMA EN EDUCACIÓN INFORMAL EN  |
+| | **Total** | | | | | | **$52,5 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-07-21 al 2026-12-18 (151 días): contratos 1, 3 a la vez, que suman **$4,9 M al mes**.
+
+**Contratos simultáneos con la misma entidad:** Alcaldía (Municipio de San José de Cúcuta).
+
+**Pico:** 2 contratos simultáneos que suman **$4,9 M mensuales**, del 2026-07-21 al 2026-12-18.
+
+### 5.2 Las diez personas con mayor valor mensual simultáneo
+
+#### S9. JAVIER ENRIQUE HURTADO RAMIREZ (doc. 73189422)
+
+9 contratos de prestación de servicios en 6 entidad(es); hasta **5 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | CONGRESO DE LA REPÚBLICA - HONORABL | `CO1.PCCNTR.8544044` | Otra entidad | 2025-11-10 | 2026-05-20 | 192 | $38,3 M | $6,0 M | En ejecución | El Contratista se obliga a la prestación de servicios profesionales  en la Comisión Quinta Constitucional Permanente del |
+| 2 | DEPARTAMENTO DE CUNDINAMARCA-SECRET | `CO1.PCCNTR.8862256` | Otra entidad | 2026-01-14 | 2026-12-31 | 352 | $150,4 M | $12,8 M | Modificado | Prestar servicios profesionales a la Dirección de Rentas y Gestión Tributaria de la Secretaría de Hacienda del Departame |
+| 3 | GOBIERNO DEPARTAMENTAL | `CO1.PCCNTR.8926826` | Otra entidad | 2026-01-19 | 2026-07-15 | 178 | $60,0 M | $10,1 M | En ejecución | Contratar la prestación de servicios profesionales de un abogado con estudios de posgrado para brindar apoyo al Departam |
+| 4 | CORPORACION AUTONOMA REGIONAL DE CU | `CO1.PCCNTR.9090924` | Otra entidad | 2026-02-02 | 2026-06-30 | 149 | $68,0 M | $13,7 M | En ejecución | Prestar servicios profesionales a la Oficina Jurídica Corporativa de la Corporación Autónoma Regional de Cundinamarca -  |
+| 5 | CONTRALORIA DE BOGOTA | `CO1.PCCNTR.9284580` | Otra entidad | 2026-02-03 | 2026-08-02 | 181 | $48,0 M | $8,0 M | En ejecución | Prestar servicios profesionales especializados para apoyar la gestión de Vigilancia y Control y demás actuaciones fiscal |
+| 6 | CORPORACION AUTONOMA REGIONAL DE CU | `CO1.PCCNTR.9701916` | Otra entidad | 2026-07-28 | 2026-12-27 | 153 | $61,8 M | $12,1 M | En ejecución | Prestar servicios profesionales a la Oficina Jurídica Corporativa de la Corporación Autónoma Regional de Cundinamarca CA |
+| 7 | GOBIERNO DEPARTAMENTAL | `CO1.PCCNTR.10011317` | Otra entidad | 2026-10-02 | 2026-12-30 | 90 | $30,0 M | $10,0 M | En ejecución | CONTRATAR LA PRESTACION DE SERVICIOS PROFESIONALES DE UN ABOGADO CON ESTUDIOS DE POSGRADO PARA BRINDAR APOYO AL DEPARTAM |
+| 8 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.10053095` | Cúcuta – periodo | 2026-10-09 | 2026-12-31 | 84 | $13,8 M | $4,9 M | Aprobado | 2026R-739 PRESTAR SERVICIOS PROFESIONALES CON MAESTRIA PARA BRINDAR ASESORÍA JURÍDICA INTEGRAL A LA SECRETARÍA GENERAL;  |
+| 9 | CONGRESO DE LA REPÚBLICA - HONORABL | `CO1.PCCNTR.10097481` | Otra entidad | 2026-10-22 | 2026-12-31 | 71 | $16,1 M | $6,8 M | En ejecución | El Contratista se obliga a la prestación de servicios profesionales en la División Juridica del Senado de la República. |
+| | **Total** | | | | | | **$486,4 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-10-09 al 2026-10-21 (13 días): contratos 2, 6, 7, 8 a la vez, que suman **$39,9 M al mes**.
+- Del 2026-10-22 al 2026-12-27 (67 días): contratos 2, 6, 7, 8, 9 a la vez, que suman **$46,7 M al mes**.
+
+**Pico:** 5 contratos simultáneos que suman **$46,7 M mensuales**, del 2026-10-22 al 2026-12-27.
+
+#### S8. JORGE LUIS MORENO CARREÑO (doc. 1127044937)
+
+8 contratos de prestación de servicios en 6 entidad(es); hasta **6 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | ESAP SEDE CENTRAL (Cuenta Oficial) | `CO1.PCCNTR.8903428` | Otra entidad | 2026-01-16 | 2026-12-15 | 334 | $52,1 M | $4,7 M | En ejecución | Prestar servicios profesionales a la Oficina de Control Interno Disciplinario; orientados a la sustanciación de procesos |
+| 2 | ALCALDÍA MUNICIPAL DE PUERTO SANTAN | `CO1.PCCNTR.9264041` | Otra entidad | 2026-02-02 | 2026-08-01 | 181 | $15,0 M | $2,5 M | Modificado | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL APOYO Y ACOMPAÑAMIENTO DE LA DEFENSA JUDICIAL; EXTRAJUDICIAL; ADMINISTRATI |
+| 3 | PERSONERIA MUNICIPAL DE MADRID | `CO1.PCCNTR.9271198` | Otra entidad | 2026-02-02 | 2026-08-01 | 181 | $33,0 M | $5,5 M | cedido | PRESTACION DE SERVICIOS PROFESIONALES EN DERECHO DISCIPLINARIO; PARA ACOMPAÑAR Y ASESORAR LOS PROCESOS QUE ADELANTA LA P |
+| 4 | PERSONERIA MUNICIPAL DE MADRID | `CO1.PCCNTR.9781965` | Otra entidad | 2026-08-10 | 2026-12-31 | 144 | $26,0 M | $5,4 M | En ejecución | PRESTACION DE SERVICIOS PROFESIONALES EN DERECHO DISCIPLINARIO; PARA ACOMPAÑAR Y ASESORAR LOS PROCESOS QUE ADELANTA LA P |
+| 5 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9821841` | Cúcuta – periodo | 2026-08-19 | 2026-12-18 | 122 | $14,4 M | $3,5 M | En ejecución | 2026R-727 PRESTAR APOYO PROFESIONAL EN EL DESARROLLO; GESTIÓN Y SUSTANCIACIÓN DE LAS ACTUACIONES PROCESALES DENTRO DE LO |
+| 6 | ALCALDÍA MUNICIPAL DE PUERTO SANTAN | `CO1.PCCNTR.9942154` | Otra entidad | 2026-09-16 | 2026-12-30 | 106 | $14,0 M | $4,0 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL APOYO Y ACOMPAÑAMIENTO DE LA DEFENSA JUDICIAL; EXTRAJUDICIAL; ADMINISTRATI |
+| 7 | CAMARA DE REPRESENTANTES | `CO1.PCCNTR.10114076` | Otra entidad | 2026-10-27 | 2026-12-10 | 45 | $12,0 M | $8,0 M | Aprobado | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA REALIZAR  ACOMPAÑAMIENTO JURÍDICO A LAS ACTIVIDADES DE TRÁMITE;  SUSTANCIACIÓ |
+| 8 | FONDO ROTATORIO** | `CO1.PCCNTR.10116986` | Otra entidad | 2026-10-28 | 2026-12-31 | 65 | $40,5 M | $18,7 M | En ejecución | Prestar servicios profesionales especializados en Derecho para brindar apoyo jurídico a la Oficina de Control Disciplina |
+| | **Total** | | | | | | **$207,1 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-08-19 al 2026-09-15 (28 días): contratos 1, 4, 5 a la vez, que suman **$13,6 M al mes**.
+- Del 2026-09-16 al 2026-10-26 (41 días): contratos 1, 4, 5, 6 a la vez, que suman **$17,6 M al mes**.
+- Del 2026-10-28 al 2026-12-10 (44 días): contratos 1, 4, 5, 6, 7, 8 a la vez, que suman **$44,3 M al mes**.
+
+**Pico:** 6 contratos simultáneos que suman **$44,3 M mensuales**, del 2026-10-28 al 2026-12-10.
+
+#### S20. ARMANDO QUINTERO GUEVARA (doc. 13487199)
+
+6 contratos de prestación de servicios en 3 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8861528` | Cúcuta – antes del 8-mar | 2026-01-17 | 2026-06-16 | 151 | $42,5 M | $8,4 M | Modificado | 2026R-3 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA BRINDAR APOYO JURÍDICO Y TÉCNICO DE ALTA COMPLEJIDAD A |
+| 2 | ALCALDÍA DE CHINACOTA | `CO1.PCCNTR.9016375` | Otra entidad | 2026-01-22 | 2026-06-21 | 151 | $59,5 M | $11,8 M | En ejecución | PRESTAR LOS SERVICIOS PROFESIONALES ESPECIALIZADOS PARA LA DEFENSA JURIDICA DEL MUNICIPIO DE CHINACOTA |
+| 3 | Gobernación Norte de Santander* | `CO1.PCCNTR.8826455` | Otra entidad | 2026-01-22 | 2026-12-06 | 319 | $113,4 M | $10,7 M | Modificado | Prestación de servicios profesionales de asesoría jurídica  al despacho del señor Gobernador; la Secretaría General y de |
+| 4 | ALCALDÍA DE CHINACOTA | `CO1.PCCNTR.9681779` | Otra entidad | 2026-07-21 | 2026-10-20 | 92 | $35,7 M | $11,6 M | En ejecución | PRESTAR LOS SERVICIOS PROFESIONALES ESPECIALIZADOS PARA LA DEFENSA JURIDICA DEL MUNICIPIO DE CHINACOTA |
+| 5 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9876438` | Cúcuta – periodo | 2026-09-01 | 2026-11-30 | 91 | $25,5 M | $8,4 M | En ejecución | 2026R-756 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA BRINDAR APOYO JURÍDICO Y TÉCNICO A LA OFICINA DE GES |
+| 6 | ALCALDÍA DE CHINACOTA | `CO1.PCCNTR.10122358` | Otra entidad | 2026-10-28 | 2026-12-27 | 61 | $23,8 M | $11,7 M | Aprobado | PRESTAR LOS SERVICIOS PROFESIONALES ESPECIALIZADOS PARA LA DEFENSA JURIDICA DEL MUNICIPIO DE CHINACOTA |
+| | **Total** | | | | | | **$300,4 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-09-01 al 2026-10-20 (50 días): contratos 3, 4, 5 a la vez, que suman **$30,7 M al mes**.
+- Del 2026-10-21 al 2026-10-27 (7 días): contratos 3, 5 a la vez, que suman **$19,1 M al mes**.
+- Del 2026-10-28 al 2026-11-30 (34 días): contratos 3, 5, 6 a la vez, que suman **$30,8 M al mes**.
+
+**Pico:** 3 contratos simultáneos que suman **$30,8 M mensuales**, del 2026-10-28 al 2026-11-30.
+
+#### S12. ANGIE CAROLINA VILLAMIZAR SOLER (doc. 1090501589)
+
+6 contratos de prestación de servicios en 5 entidad(es); hasta **4 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | UNIDAD ADMINISTRATIVA ESPECIAL DE G | `CO1.PCCNTR.9257864` | Otra entidad | 2026-01-31 | 2026-12-31 | 335 | $77,7 M | $7,0 M | terminado | Prestar sus servicios profesionales con plena autonomía técnica y administrativa para sustanciar y proyectar los actos a |
+| 2 | CAMARA DE REPRESENTANTES | `CO1.PCCNTR.9190175` | Otra entidad | 2026-02-02 | 2026-07-01 | 150 | $50,0 M | $10,0 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA ACOMPAÑAR JURIDICAMENTE LAS ACTIVIDADES ADMINISTRATIVAS Y DE C |
+| 3 | PERSONERÍA DE BOGOTA | `CO1.PCCNTR.8836313` | Otra entidad | 2026-07-01 | 2026-12-30 | 183 | $42,0 M | $6,9 M | Modificado | 0492 - PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR DESDE LA MISIONALIDAD DEL MINISTERIO PÚBLICO Y LA FUNCIÓN PÚBLI |
+| 4 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9863208` | Cúcuta – periodo | 2026-08-28 | 2026-12-27 | 122 | $22,0 M | $5,4 M | En ejecución | 2026L-583 PRESTACION DE SERVICIOS PROFESIONALES ESPECIALIZADOS EN EL AREA DEL DERECHO PARA LA EFECTIVA OPTIMIZACION DE L |
+| 5 | CONTRALORIA DE BOGOTA | `CO1.PCCNTR.9916021` | Otra entidad | 2026-09-08 | 2026-12-07 | 91 | $18,0 M | $5,9 M | En ejecución | Prestar servicios profesionales especializados para apoyar en las actividades que se adelantan en la Subdirección de Car |
+| 6 | CAMARA DE REPRESENTANTES | `CO1.PCCNTR.9925450` | Otra entidad | 2026-09-16 | 2026-12-31 | 107 | $29,3 M | $8,2 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ACOMPAÑAR JURIDICAMENTE LAS ACTIVIDADES ADMINISTRATIVAS Y DE CONTRATACIÓN DER |
+| | **Total** | | | | | | **$239,1 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-08-28 al 2026-09-07 (11 días): contratos 3, 4 a la vez, que suman **$12,3 M al mes**.
+- Del 2026-09-08 al 2026-09-15 (8 días): contratos 3, 4, 5 a la vez, que suman **$18,2 M al mes**.
+- Del 2026-09-16 al 2026-12-07 (83 días): contratos 3, 4, 5, 6 a la vez, que suman **$26,5 M al mes**.
+- Del 2026-12-08 al 2026-12-27 (20 días): contratos 3, 4, 6 a la vez, que suman **$20,5 M al mes**.
+
+**Pico:** 4 contratos simultáneos que suman **$26,5 M mensuales**, del 2026-09-16 al 2026-12-07.
+
+#### S58. Luis J Botello Moncada (doc. 13275363)
+
+4 contratos de prestación de servicios en 2 entidad(es); hasta **2 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | PROCURADURIA GENERAL DE LA NACION | `CO1.PCCNTR.9005018` | Otra entidad | 2026-01-21 | 2026-06-30 | 161 | $107,3 M | $20,0 M | Modificado | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS PARA BRINDAR ASESORÍA CON ENFOQUE JURÍDICO Y ECONÓMICO; CONTRIBUYENDO CON |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8941770` | Cúcuta – antes del 8-mar | 2026-01-27 | 2026-06-26 | 151 | $30,0 M | $6,0 M | Modificado | 2026L-409 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA BRINDAR ACOMPAÑAMIENTO EN LAS ACTIVIDADES DERIVADAS  |
+| 3 | PROCURADURIA GENERAL DE LA NACION | `CO1.PCCNTR.9633778` | Otra entidad | 2026-07-14 | 2026-12-30 | 170 | $115,3 M | $20,4 M | En ejecución | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS PARA DESARROLLAR ASESORÍA JURÍDICA; ECONÓMICA Y REGULATORIA ORIENTADA AL  |
+| 4 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9918824` | Cúcuta – periodo | 2026-09-09 | 2026-12-23 | 106 | $21,0 M | $5,9 M | En ejecución | 2026L-645 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA BRINDAR ACOMPAÑAMIENTO EN LAS ACTIVIDADES DERIVADAS  |
+| | **Total** | | | | | | **$273,7 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-09-09 al 2026-12-23 (106 días): contratos 3, 4 a la vez, que suman **$26,3 M al mes**.
+
+**Pico:** 2 contratos simultáneos que suman **$26,3 M mensuales**, del 2026-09-09 al 2026-12-23.
+
+#### S10. YOLI MARGARITA BERBESI CARRILLO (doc. 37507074)
+
+9 contratos de prestación de servicios en 5 entidad(es); hasta **5 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9011335` | Cúcuta – antes del 8-mar | 2026-01-24 | 2026-06-23 | 151 | $23,0 M | $4,6 M | Modificado | 2026L-382 PRESTACION DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DE LAS ACTIVIDADES EN LA SECRETARIA DE HACIENDA DEL M |
+| 2 | ASAMBLEA DEPARTAMENTAL DEL N DE S | `CO1.PCCNTR.9071292` | Otra entidad | 2026-01-24 | 2026-11-23 | 304 | $33,0 M | $3,3 M | Modificado | PRESTACIÓN DE SERVICIOS PROFESIONALES DE APOYO A LA GESTIÓN EN COMPETENCIAS ADMINISTRATIVAS Y ECONÓMICAS; ORIENTADAS AL  |
+| 3 | Gobernación Norte de Santander* | `CO1.PCCNTR.9119648` | Otra entidad | 2026-01-26 | 2026-06-25 | 151 | $19,3 M | $3,8 M | En ejecución | Prestación de servicios profesionales en comercio exterior con magister en administración de empresas para apoyar en el  |
+| 4 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.9060425` | Otra entidad | 2026-01-26 | 2026-05-25 | 120 | $16,8 M | $4,2 M | Modificado | PRESTACIÓN DE SERVICIOS PROFESIONALES CON AUTONOMIA TECNICA; ADMINISTRATIVA Y PRESUPUESTAL PARA APOYAR EL FORTALECIMIENT |
+| 5 | CAMARA DE REPRESENTANTES | `CO1.PCCNTR.9209020` | Otra entidad | 2026-02-05 | 2026-06-04 | 120 | $32,0 M | $8,0 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES EN LA OFICINA DE PROTOCOLO EN LO RELACIONADO A LAS MISIONES EXTRANJERAS EN VISITA  |
+| 6 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.10065860` | Cúcuta – periodo | 2026-10-15 | 2026-12-29 | 76 | $11,5 M | $4,5 M | En ejecución | 2026L-742 PRESTACION DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DE LAS ACTIVIDADES EN LA SECRETARIA DE HACIENDA DEL M |
+| 7 | CAMARA DE REPRESENTANTES | `CO1.PCCNTR.10073370` | Otra entidad | 2026-10-16 | 2026-12-15 | 61 | $20,8 M | $10,2 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES EN COMERCIO EXTERIOR PARA EL ANÁLISIS SOCIOECONÓMICO Y EL SEGUIMIENTO TÉCNICO A LA |
+| 8 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.10091806` | Otra entidad | 2026-10-21 | 2026-12-20 | 61 | $8,4 M | $4,1 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EL FORTALECIMIENTO DE LAS ACTIVIDADES INSTITUCIONALES DE GENERACION DE |
+| 9 | Gobernación Norte de Santander* | `CO1.PCCNTR.10106614` | Otra entidad | 2026-10-28 | 2026-12-30 | 64 | $8,4 M | $3,9 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES EN COMERCIO EXTERIOR CON MAGISTER EN ADMINISTRACIÓN DE EMPRESAS PARA APOYAR EN EL  |
+| | **Total** | | | | | | **$173,2 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-10-21 al 2026-10-27 (7 días): contratos 2, 6, 7, 8 a la vez, que suman **$22,2 M al mes**.
+- Del 2026-10-28 al 2026-11-23 (27 días): contratos 2, 6, 7, 8, 9 a la vez, que suman **$26,1 M al mes**.
+- Del 2026-11-24 al 2026-12-15 (22 días): contratos 6, 7, 8, 9 a la vez, que suman **$22,8 M al mes**.
+- Del 2026-12-21 al 2026-12-29 (9 días): contratos 6, 9 a la vez, que suman **$8,5 M al mes**.
+
+**Pico:** 5 contratos simultáneos que suman **$26,1 M mensuales**, del 2026-10-28 al 2026-11-23.
+
+#### S59. jorge salim eljach espinel (doc. 91248942)
+
+3 contratos de prestación de servicios en 2 entidad(es); hasta **2 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8806325` | Cúcuta – antes del 8-mar | 2026-01-10 | 2026-06-08 | 150 | $79,5 M | $15,9 M | Modificado | 2026R-311 APOYAR LA GESTIÓN ESTRATÉGICA DE LA COMUNICACIÓN INSTITUCIONAL DEL ALCALDE MEDIANTE LA DEFINICIÓN DE LINEAMIEN |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9726995` | Cúcuta – periodo | 2026-07-30 | 2026-11-29 | 123 | $63,6 M | $15,5 M | En ejecución | 2026R-609 APOYAR LA GESTIÓN ESTRATÉGICA DE LA COMUNICACIÓN INSTITUCIONAL DEL ALCALDE MEDIANTE LA DEFINICIÓN DE LINEAMIEN |
+| 3 | CAMARA DE REPRESENTANTES | `CO1.PCCNTR.9935879` | Otra entidad | 2026-09-17 | 2026-12-16 | 91 | $28,0 M | $9,2 M | Modificado | PRESTAR LOS SERVICIOS PROFESIONALES ESPECIALIZADO PARA BRINDAR GESTIÓN ADIMISTRATIVA; ESTRUCTURACIÓN DE ETAPA CONTRACTUA |
+| | **Total** | | | | | | **$171,0 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-09-17 al 2026-11-29 (74 días): contratos 2, 3 a la vez, que suman **$24,7 M al mes**.
+
+**Pico:** 2 contratos simultáneos que suman **$24,7 M mensuales**, del 2026-09-17 al 2026-11-29.
+
+#### S13. LEYDI JHOANNA RANGEL ANDRADE (doc. 1093747712)
+
+6 contratos de prestación de servicios en 4 entidad(es); hasta **4 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Gobernación Norte de Santander* | `CO1.PCCNTR.8929571` | Otra entidad | 2026-01-19 | 2026-11-17 | 303 | $40,8 M | $4,0 M | Modificado | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO TRABAJADORA SOCIAL PARA LA CREACIÓN DE LAS MESAS TÉCNICAS SUBREGIONALES; EN E |
+| 2 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9118030` | Cúcuta – antes del 8-mar | 2026-01-26 | 2026-05-10 | 105 | $11,9 M | $3,4 M | En ejecución | 2026EG-80 PRESTACION DE SERVICIOS PROFESIONALES CON NUCLEO BASICO DE CONOCIMIENTO EN CIENCIAS SOCIALES Y HUMANAS PARA DI |
+| 3 | MINISTERIO DE SALUD Y PROTECCIÓN SO | `CO1.PCCNTR.9101963` | Otra entidad | 2026-01-26 | 2026-08-28 | 215 | $67,1 M | $9,4 M | Modificado | PRESTAR SERVICIOS PROFESIONALES AL MINISTERIO DE SALUD Y PROTECCION SOCIAL MEDIANTE ASISTENCIA TECNICA EN LA IMPLEMENTAC |
+| 4 | ASAMBLEA DEPARTAMENTAL DEL N DE S | `CO1.PCCNTR.9635831` | Otra entidad | 2026-07-10 | 2026-12-09 | 153 | $25,0 M | $4,9 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES DE APOYO A LA GESTION PARA EL FORTALECIMIENTO DE LAS ACTIVIDADES DE ASAMBLEA DEPAR |
+| 5 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9859915` | Cúcuta – periodo | 2026-08-27 | 2026-12-26 | 122 | $14,0 M | $3,4 M | En ejecución | 2026BS-314PRESTACIÓN DE SERVICIOS PROFESIONALES EN EL AREA  TRABAJO SOCIAL  PARA EL ACOMPAÑAMIENTO DE LAS FAMILIAS PARA  |
+| 6 | MINISTERIO DE SALUD Y PROTECCIÓN SO | `CO1.PCCNTR.9973370` | Otra entidad | 2026-09-24 | 2026-12-30 | 98 | $31,2 M | $9,5 M | En ejecución | Prestar servicios profesionales brindando acompañamiento y asistencia técnica al MSPS en la formulación e implementación |
+| | **Total** | | | | | | **$189,9 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-08-29 al 2026-09-23 (26 días): contratos 1, 4, 5 a la vez, que suman **$12,4 M al mes**.
+- Del 2026-09-24 al 2026-11-17 (55 días): contratos 1, 4, 5, 6 a la vez, que suman **$21,9 M al mes**.
+- Del 2026-11-18 al 2026-12-09 (22 días): contratos 4, 5, 6 a la vez, que suman **$17,9 M al mes**.
+- Del 2026-12-10 al 2026-12-26 (17 días): contratos 5, 6 a la vez, que suman **$13,0 M al mes**.
+
+**Pico:** 4 contratos simultáneos que suman **$21,9 M mensuales**, del 2026-09-24 al 2026-11-17.
+
+#### S11. CARLOS ALBERTO GELVES MOGOLLON (doc. 1090404794)
+
+10 contratos de prestación de servicios en 5 entidad(es); hasta **5 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | TRANSITO DE LOS PATIOS | `CO1.PCCNTR.8933878` | Otra entidad | 2026-01-16 | 2026-07-15 | 181 | $18,9 M | $3,1 M | Modificado | PRESTAR SUS SERVICIOS PROFESIONALES PARA LA IDENTIFICACIÓN; FORMULACIÓN; ESTRUCTURACIÓN Y SEGUIMIENTO A PROYECTOS DEL PL |
+| 2 | Gobernación Norte de Santander* | `CO1.PCCNTR.8886255` | Otra entidad | 2026-01-19 | 2026-08-18 | 212 | $47,8 M | $6,8 M | Modificado | EL CONTRATISTA SE COMPROMETE PARA CON EL DEPARTAMENTO A BRINDAR APOYO Y ASISTENCIA TÉCNICA PROFESIONAL; ORIENTADOS AL FO |
+| 3 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8975560` | Cúcuta – antes del 8-mar | 2026-01-21 | 2026-06-20 | 151 | $25,0 M | $5,0 M | Modificado | 2026Z-354 PRESTACION DE SERVICIOS PROFESIONALES ESPECIALIZADOS COMO INGENIERO ELECTROMECANICO EN APOYO AL BANCO DE PROGR |
+| 4 | MUNICIPIO DE LOS PATIOS | `CO1.PCCNTR.9000318` | Otra entidad | 2026-01-23 | 2026-06-22 | 151 | $17,5 M | $3,5 M | Modificado | PRESTACIÓN DE SERVICIOS PROFESIONALES A LA GESTIÓN ADMINISTRATIVA DE LA SECRETARIA DE INFRAESTRUCTURA; EN LA ELABORACIÓN |
+| 5 | IMRD MUNICIPIO DE LOS PATIOS | `CO1.PCCNTR.9070496` | Otra entidad | 2026-01-23 | 2026-07-22 | 181 | $20,2 M | $3,3 M | Cerrado | PRESTACIÓN DE SERVICIOS PROFESIONALES DE ASESOR PARA LA IDENTIFICACIÓN; FORMULACIÓN Y ESTRUCTURACIÓN DE LOS PROYECTOS DE |
+| 6 | MUNICIPIO DE LOS PATIOS | `CO1.PCCNTR.9729416` | Otra entidad | 2026-08-04 | 2026-11-03 | 92 | $10,5 M | $3,4 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES A LA GESTIÓN ADMINISTRATIVA DE LA SECRETARIA DE INFRAESTRUCTURA; EN LA ELABORACIÓN |
+| 7 | IMRD MUNICIPIO DE LOS PATIOS | `CO1.PCCNTR.9763161` | Otra entidad | 2026-08-06 | 2026-12-31 | 148 | $16,4 M | $3,3 M | En ejecución | PRESTACIÓN DE SERVICIOS PROFESIONALES DE ASESOR PARA LA IDENTIFICACIÓN; FORMULACIÓN Y ESTRUCTURACIÓN DE LOS PROYECTOS DE |
+| 8 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9799214` | Cúcuta – periodo | 2026-08-13 | 2026-12-27 | 137 | $22,5 M | $4,9 M | En ejecución | 2026Z-461 PRESTACION DE SERVICIOS PROFESIONALES ESPECIALIZADOS COMO INGENIERO ELECTROMECANICO EN APOYO AL BANCO DE PROGR |
+| 9 | Gobernación Norte de Santander* | `CO1.PCCNTR.9942258` | Otra entidad | 2026-09-16 | 2026-12-30 | 106 | $23,9 M | $6,8 M | En ejecución | EL CONTRATISTA SE COMPROMETE PARA CON EL DEPARTAMENTO A BRINDAR APOYO Y ASISTENCIA TÉCNICA PROFESIONAL; ORIENTADOS AL FO |
+| 10 | TRANSITO DE LOS PATIOS | `CO1.PCCNTR.10073685` | Otra entidad | 2026-10-15 | 2026-12-29 | 76 | $7,9 M | $3,1 M | En ejecución | PRESTAR LOS SERVICIOS PROFESIONALES PARA LA IDENTIFICACIÓN; FORMULACIÓN; ESTRUCTURACIÓN Y SEGUIMIENTO A PROYECTOS DEL PL |
+| | **Total** | | | | | | **$210,5 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-08-19 al 2026-09-15 (28 días): contratos 6, 7, 8 a la vez, que suman **$11,7 M al mes**.
+- Del 2026-09-16 al 2026-10-14 (29 días): contratos 6, 7, 8, 9 a la vez, que suman **$18,4 M al mes**.
+- Del 2026-10-15 al 2026-11-03 (20 días): contratos 6, 7, 8, 9, 10 a la vez, que suman **$21,5 M al mes**.
+- Del 2026-11-04 al 2026-12-27 (54 días): contratos 7, 8, 9, 10 a la vez, que suman **$18,1 M al mes**.
+
+**Pico:** 5 contratos simultáneos que suman **$21,5 M mensuales**, del 2026-10-15 al 2026-11-03.
+
+#### S21. sandro jose jacome sanchez (doc. 88279557)
+
+5 contratos de prestación de servicios en 4 entidad(es); hasta **3 vigentes a la vez**.
+
+| N° | Entidad | Contrato SECOP | Origen | Desde | Hasta | Días | Valor total | Valor mes | Estado | Objeto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.8800999` | Cúcuta – antes del 8-mar | 2026-01-17 | 2026-06-16 | 151 | $50,0 M | $9,9 M | Modificado | 2026R-138 PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS COMO ABOGADO ASESOR DE ALTO NIVEL PARA BRINDAR ORIENTACIÓ |
+| 2 | CENTRO TECNOLÓGICO DE CÚCUTA | `CO1.PCCNTR.9732414` | Otra entidad | 2026-07-30 | 2026-08-29 | 31 | $8,3 M | $8,0 M | En ejecución | PRESTAR SERVICIOS PROFESIONALES COMO ABOGADO ESPECIALIZADO POR SUS PROPIOS MEDIOS CON PLENA AUTONOMIA TECNICA Y ADMINIST |
+| 3 | Alcaldía (Municipio de San José de  | `CO1.PCCNTR.9761201` | Cúcuta – periodo | 2026-08-04 | 2026-12-26 | 145 | $47,7 M | $9,9 M | En ejecución | 2026R-650 PRESTACION DE SERVICIOS PROFESIONALES COMO ABOGADO ASESOR EN LA OFICINA DE TALENTO HUMANO DEL MUNICIPIO DE CUC |
+| 4 | IDS | `CO1.PCCNTR.9917455` | Otra entidad | 2026-09-09 | 2026-12-08 | 91 | $24,0 M | $7,9 M | En ejecución | Prestar servicios para desarrollar actividades como soporte a la gestión del Despacho del Director en desarrollo de la e |
+| 5 | Central de Transportes Estación Cúc | `CO1.PCCNTR.9961345` | Cúcuta – periodo | 2026-09-17 | 2026-10-16 | 30 | $3,2 M | $3,2 M | En ejecución | PRESTACION DE SERVICIOS PROFESIONALES PARA EJERCER EL APODERAMIENTO JUDICIAL DE LA CENTRAL DE TRANSPORTES ESTACION CUCUT |
+| | **Total** | | | | | | **$133,2 M** | | | |
+
+Periodos en que coinciden los contratos:
+
+- Del 2026-08-04 al 2026-08-29 (26 días): contratos 2, 3 a la vez, que suman **$17,9 M al mes**.
+- Del 2026-09-09 al 2026-09-16 (8 días): contratos 3, 4 a la vez, que suman **$17,8 M al mes**.
+- Del 2026-09-17 al 2026-10-16 (30 días): contratos 3, 4, 5 a la vez, que suman **$21,0 M al mes**.
+- Del 2026-10-17 al 2026-12-08 (53 días): contratos 3, 4 a la vez, que suman **$17,8 M al mes**.
+
+**Pico:** 3 contratos simultáneos que suman **$21,0 M mensuales**, del 2026-09-17 al 2026-10-16.
+
+Los demás casos están en el **Anexo C** de `ANEXOS.md` (C2: las 55 personas con 3 o más contratos a la vez; C3: las personas con 2 contratos en entidades distintas) y en las hojas "Simultaneidad (detalle)", "Simultaneidad (tramos)", "Simultaneidad (pares)" y "Simultaneidad (personas)" de la matriz.
 
 ## 6. Siguientes pasos recomendados
 

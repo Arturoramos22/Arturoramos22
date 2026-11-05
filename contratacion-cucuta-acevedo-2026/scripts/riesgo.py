@@ -26,7 +26,8 @@ NITS_CUCUTA = set(ENT)
 def _dur_meses(s, e):
     try:
         d0, d1 = date.fromisoformat(s), date.fromisoformat(e)
-        return max((d1 - d0).days, 1) / 30.4
+        dd = (d1 - d0).days + 1
+        return dd / 30 if dd >= 15 else None
     except Exception:
         return None
 
@@ -68,26 +69,46 @@ for r in rows:
         SIM.append(dict(doc=r['documento_proveedor'], nombre=r['proveedor_adjudicado'], a=r, b=o, ts=ts, te=te, dias=dias, h1=h1, h2=h2,
                         misma=misma, sev=sev, obs=obs, b_en_cucuta=o['nit_entidad'] in NITS_CUCUTA))
 
-# Resumen por persona: máximo de contratos vigentes a la vez (barrido de intervalos)
+# Detalle por persona: cada contrato con sus fechas, valor y valor mensual, y el pico de honorarios simultáneos
+CERR = ('terminado', 'cerrado', 'cedido', 'cancelado')
+def _dias(s, e):
+    return (date.fromisoformat(e) - date.fromisoformat(s)).days + 1
+
 SIMP = {}
 for doc in {x['doc'] for x in SIM}:
     cs = {x['id_contrato']: x for x in _ext[doc] if 'Servicios profesionales' in (x.get('justificacion_modalidad_de') or '')}
     for r in rows:
         if r['documento_proveedor'] == doc and r['_ps']:
             cs[r['id_contrato']] = r
-    ev = []
+    IDS_PER = {r['id_contrato'] for r in rows}
+    det = []
     for x in cs.values():
         s_, e_ = _ini(x), d10(x.get('fecha_de_fin_del_contrato'))
-        if s_ and e_ and e_ >= '2026-03-08':
-            ev += [(s_, 1), (e_, -1)]
-    cur = mx = 0
-    for _, t in sorted(ev, key=lambda z: (z[0], -z[1])):
-        cur += t; mx = max(mx, cur)
+        if not (s_ and e_ and e_ >= '2026-03-08' and e_ >= s_):
+            continue
+        dd = _dias(s_, e_); val = f(x['valor_del_contrato'])
+        det.append(dict(id=x['id_contrato'], ent=ENT.get(x['nit_entidad'], x['nombre_entidad']), obj=x['objeto_del_contrato'], ini=s_, fin=e_,
+                        dias=dd, meses=dd / 30, valor=val, mes=val / (dd / 30) if dd >= 15 else None, fiable=dd >= 15, estado=x.get('estado_contrato', ''),
+                        vigente=(x.get('estado_contrato') or '').lower() not in CERR, url=url(x), en_periodo=x['id_contrato'] in IDS_PER,
+                        origen=('Cúcuta – periodo' if x['id_contrato'] in IDS_PER else 'Cúcuta – antes del 8-mar' if x['nit_entidad'] in NITS_CUCUTA else 'Otra entidad')))
+    det.sort(key=lambda c: c['ini'])
+    for c in det:
+        c['con'] = [o['id'] for o in det if o['id'] != c['id'] and o['ini'] <= c['fin'] and c['ini'] <= o['fin']]
+    # tramos: entre fechas de corte, qué contratos vigentes coinciden y cuánto suman por mes
+    vig = [c for c in det if c['vigente'] and c['fiable']]
+    cortes = sorted({c['ini'] for c in vig} | {(date.fromisoformat(c['fin']) + __import__('datetime').timedelta(days=1)).isoformat() for c in vig})
+    tramos = []
+    for i in range(len(cortes) - 1):
+        t0, t1 = cortes[i], (date.fromisoformat(cortes[i + 1]) - __import__('datetime').timedelta(days=1)).isoformat()
+        act = [c for c in vig if c['ini'] <= t0 and c['fin'] >= t1]
+        if len(act) >= 2 and _dias(t0, t1) >= 7 and any(c['en_periodo'] for c in act):
+            tramos.append(dict(desde=t0, hasta=t1, n=len(act), ids=[c['id'] for c in act], mes=sum(c['mes'] for c in act)))
+    pico = max(tramos, key=lambda t: (t['mes'], t['n']), default=None)
     pares = [x for x in SIM if x['doc'] == doc]
-    SIMP[doc] = dict(nombre=pares[0]['nombre'], n_contratos=len(cs), max_simult=mx, pares=len(pares),
-                     alto=sum(1 for x in pares if x['sev'] == 'ALTO'),
-                     entidades=sorted({ENT.get(x['nit_entidad'], x['nombre_entidad']) for x in cs.values()}),
-                     valor=sum(f(x['valor_del_contrato']) for x in cs.values() if (d10(x.get('fecha_de_fin_del_contrato')) or '') >= '2026-03-08'))
+    SIMP[doc] = dict(nombre=pares[0]['nombre'], n_contratos=len(det), max_simult=max((t['n'] for t in tramos), default=1), pares=len(pares),
+                     alto=sum(1 for x in pares if x['sev'] == 'ALTO'), entidades=sorted({c['ent'] for c in det}),
+                     valor=sum(c['valor'] for c in det), contratos=det, tramos=tramos, pico=pico,
+                     misma=any(len({c['ent'] for c in p_['contratos'] if c['id'] in t['ids']}) < t['n'] for p_ in [dict(contratos=det)] for t in tramos))
 
 SIM_BY_ID = collections.defaultdict(list)
 for x in SIM:
