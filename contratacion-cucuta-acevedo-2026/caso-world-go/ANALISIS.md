@@ -284,3 +284,67 @@ Con eso se puede presentar una **denuncia penal** con elementos concretos. Mient
 7. Acta de designación del director general y representante legal, y hoja de vida del designado.
 
 **A CORSANT, al Centro Cultural del Oriente y a CENFER:** si emitieron en julio de 2025 las cotizaciones que usó la Alcaldía para Cúcuta Gospel y por qué valores.
+
+---
+
+## 7. Anexo: ¿qué conductas pudo haber en la designación del representante legal?
+
+### 7.1 Lo que dicen los documentos: no hubo traslape formal
+
+- **HECHO.** Ronald Eduardo Pancha Vivas fue **designado Director General y representante legal en el acta de constitución del 15 de septiembre de 2025**, inscrita el 18 de septiembre. Lo eligió la asamblea de accionistas, donde el municipio tiene el 52%.
+- **HECHO.** En 2025 tenía **dos contratos de prestación de servicios con entidades municipales al mismo tiempo**:
+  - **Alcaldía, Secretaría General** (00000848 de 2025, objeto 2025R-442, ingeniería industrial de apoyo a la planeación y gestión de la Secretaría General): del 19 de febrero al 18 de octubre de 2025, por $47,2 M.
+  - **IMRD** (CPS-207 de 2025, acompañamiento en la Subdirección de Deportes): del 26 de marzo al 25 de septiembre de 2025, por $25,2 M con su adición.
+- **HECHO.** Los dos contratos se terminaron de forma anticipada **justo antes** de la constitución de la empresa:
+  - **Alcaldía:**
+    - la solicitud de Pancha está fechada el **sábado 13 de septiembre de 2025** y pide terminar "a partir del día de hoy";
+    - el supervisor, Deivi Francisco Becerra Rodríguez, dio la viabilidad **el mismo 13 de septiembre**;
+    - el acta de terminación por mutuo acuerdo la firma el **Secretario General, Bierman Suárez Martínez**;
+    - el balance dice que se le paga hasta el 13 de septiembre ($40,3 M ejecutados) y se liberan $6,9 M.
+  - **IMRD:**
+    - el acta de terminación por solicitud del contratista se publicó el 14 de septiembre;
+    - quedaron sin ejecutar $1,96 M, unos 14 días de honorarios, lo que indica que terminó hacia el 11 de septiembre;
+    - el acta tiene un error: dice que el contrato se termina "el día 25 de marzo de 2025", que es la fecha de su firma.
+- **HECHO.** Los estatutos exigen que el Director General sea colombiano y tenga "título profesional **o** experiencia en el sector turístico o en la organización de eventos". Pancha es ingeniero, así que **cumple el requisito formal**.
+
+**Consecuencia.** Con los documentos, **no se puede afirmar que fue nombrado mientras tenía contratos vigentes**: los terminó entre uno y cuatro días antes. Lo exacto es esto: **terminó un sábado su contrato con la Secretaría General y el lunes fue designado director de la empresa que esa misma Alcaldía creó y luego contrató por $10.588 M.**
+
+### 7.2 Conductas que con estos hechos NO se configuran
+
+| Conducta | Por qué no se configura |
+|---|---|
+| Inhabilidad o incompatibilidad para la designación (Constitución arts. 127-128; Ley 80 art. 8; Ley 1474 art. 4, sobre exservidores) | Esas normas aplican a **servidores públicos**, y un contratista de prestación de servicios no lo es (Ley 80, art. 32, num. 3). Además, ya no tenía contratos. |
+| Doble asignación del tesoro (Constitución art. 128) | Los balances muestran que la Alcaldía le pagó hasta el 13 de septiembre y el IMRD hasta cerca del 11, antes de la designación. Tampoco es claro que los honorarios cuenten como "asignación". |
+| Celebración indebida de contratos por violación del régimen de inhabilidades (Código Penal art. 408) | No se ha identificado ninguna inhabilidad. Puede cambiar con la verificación del punto 7.3.4. |
+
+### 7.3 Conductas que SÍ merecen investigarse
+
+1. **Si preparó la empresa mientras cobraba como contratista de la Alcaldía.** La sociedad no surgió en un día: hubo un acuerdo del Concejo (abril), estatutos, negociación con los socios privados (ASOPARTES, ASOCAOBOS, ASOLIBERTAD) y un informe técnico de los locales municipales pedido por la Oficina de Turismo (10 de mayo de 2025). Si Pancha trabajó en eso dentro de su contrato con la Secretaría General, cuyo objeto era otro, o si cobró por actividades que no hizo porque se dedicaba a montar la empresa, podría haber:
+   - **certificaciones de cumplimiento sin soporte**, con responsabilidad fiscal y disciplinaria para el supervisor;
+   - en el caso más grave, falsedad en los informes o peculado.
+
+   **Falta:** sus informes de actividades de junio a septiembre de 2025 en la Alcaldía y en el IMRD. Se pueden pedir por derecho de petición.
+
+2. **Una salida coordinada por la propia administración.** La solicitud, la viabilidad del supervisor y la firma del Secretario General ocurrieron el mismo sábado, dos días antes de la constitución. Esto no es ilegal, pero **prueba que la designación fue una decisión de la administración**, que la preparó retirándolo antes. Además, el Secretario General que firmó la terminación es, según la Cámara de Comercio, **suplente en la junta directiva** de la empresa. Todo esto refuerza el argumento de fondo: **la empresa es una extensión de la Secretaría General** (domicilio en el Palacio Municipal, funcionarios en la junta, contratos estructurados por una contratista de esa Secretaría), no un ente con capacidad propia. Ver los hallazgos 3.1 y 3.7.
+
+3. **Conflicto de interés de los servidores que lo designaron y luego contratan con él** (Ley 1952 de 2019, art. 44). Para que se configure, el servidor debe tener un **interés particular**: personal, familiar o económico. El interés institucional de que funcione una empresa del municipio no basta. **Hoy no está probado.** Habría que establecer si hay parentesco, sociedad o una relación política o económica entre Pancha y los ordenadores del gasto o miembros de la junta.
+
+4. **Inhabilidad por financiación de campaña** (Ley 1474 de 2011, art. 2). Es la verificación más importante. La ley prohíbe contratar con la entidad del nivel del candidato electo a quienes financiaron su campaña con más del 2,5% del tope de gastos. **La inhabilidad se extiende a las sociedades (salvo las anónimas abiertas) cuyo representante legal o cualquiera de sus socios haya financiado la campaña**, y no aplica a los contratos de prestación de servicios profesionales. Si Pancha, o ASOPARTES, ASOCAOBOS, ASOLIBERTAD u otro socio, aportaron a la campaña de Jorge Acevedo a la Alcaldía en 2023 por encima de ese umbral:
+   - la empresa estaba **inhabilitada** para contratar con el municipio;
+   - los contratos estarían viciados de **nulidad absoluta** (Ley 80, art. 44);
+   - los servidores que contrataron a sabiendas podrían incurrir en **violación del régimen legal de inhabilidades (Código Penal art. 408)**.
+
+   **Falta:** consultar los informes de ingresos de la campaña de 2023 en Cuentas Claras del CNE. No están en datos abiertos; hay que pedirlos al CNE o consultarlos en el aplicativo.
+
+5. **Brayan Víctor Alfonso Blanco Vivas.** Él sí estuvo en **simultaneidad real**: creó la cuenta de la empresa en SECOP el 4 de octubre de 2025 mientras era contratista de la **Oficina Asesora Jurídica de la Alcaldía**, hasta el 25 de diciembre de 2025. En 2026 es asesor jurídico de contratación del **Concejo**, la corporación que ejerce control político sobre la Alcaldía y que autorizó la empresa. Si al mismo tiempo presta servicios a la empresa, hay un **conflicto de interés** que el Concejo y la Alcaldía debían gestionar.
+
+   **Falta:** saber qué relación tiene con la empresa (empleado, contratista o socio) y si participó en conceptos o trámites relacionados con ella.
+
+### 7.4 Conclusión
+
+La designación de Pancha, tal como consta en los documentos, **no constituye por sí misma una falta ni un delito**, porque sus contratos se terminaron antes. Lo que muestra es otra cosa: la administración **preparó y decidió** su llegada a la dirección de la empresa, y la empresa funciona como un apéndice de la Secretaría General. Ese es un indicio de **intermediación y falta de independencia**, que es el núcleo de las irregularidades de la sección 4.
+
+Una designación concreta puede volverse una falta disciplinaria o un delito en tres casos:
+1. Si se prueba que trabajó para la empresa mientras cobraba sus contratos municipales.
+2. Si él o algún socio financió la campaña del alcalde por encima del umbral legal.
+3. Si se prueba un interés particular de los servidores que lo designaron.
