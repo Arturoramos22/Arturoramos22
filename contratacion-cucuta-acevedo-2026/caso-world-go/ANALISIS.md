@@ -348,3 +348,62 @@ Una designación concreta puede volverse una falta disciplinaria o un delito en 
 1. Si se prueba que trabajó para la empresa mientras cobraba sus contratos municipales.
 2. Si él o algún socio financió la campaña del alcalde por encima del umbral legal.
 3. Si se prueba un interés particular de los servidores que lo designaron.
+
+---
+
+## 8. Anexo: el caso de Brayan Víctor Alfonso Blanco Vivas
+
+### 8.1 Hechos probados con documentos
+
+1. **La cuenta de la empresa en SECOP está registrada a su nombre.** En el registro de proveedores de SECOP II (datos.gov.co, qmzu-gj57), el NIT 901990330 de la empresa aparece así:
+   - nombre: "BRAYAN VICTOR ALFONSO BLANCO VIVAS";
+   - creación de la cuenta: **4 de octubre de 2025, 5:46 p. m.**;
+   - correo: GOCUCUTASAS@GMAIL.COM;
+   - dirección: **Calle 11 N.º 5-49, el Palacio Municipal**;
+   - representante legal: Ronald Eduardo Pancha Vivas.
+
+   La razón social de la empresa no figura en ese registro.
+
+2. **Ese día era contratista activo de la Alcaldía.**
+   - Tenía el contrato 00000379 de 2025 (objeto 2025R-364): "servicios profesionales para la Oficina Asesora Jurídica", por $32 M a 8 meses, con un plazo inicial **hasta el 4 de octubre de 2025**.
+   - El 23 de septiembre, su supervisor pidió adicionarlo y prorrogarlo, y dejó constancia de que el contratista "actualmente presta sus servicios a la dependencia **SECRETARÍA GENERAL**". El supervisor era **Misael Alexander Zambrano Galvis**, jefe de la Oficina de Gestión Jurídica.
+   - La adición y prórroga se firmó el **3 de octubre de 2025**. La firmó por la Alcaldía Clara Paola Aguilar Barreto. Agregó $10,8 M y extendió el plazo hasta el **25 de diciembre de 2025**, por un total de $42,8 M, que se pagó completo.
+   - **Al día siguiente de la prórroga, creó la cuenta de la empresa en SECOP.**
+
+3. **En 2026 es contratista del Concejo de Cúcuta**, como asesor jurídico de la gestión contractual de esa corporación:
+   - CM-CD-002-2026, del 7 de enero al 6 de agosto, por $28 M;
+   - CM-CD-118-2026, del 9 de septiembre al 8 de diciembre, por $12 M.
+
+   Su contrato lo obliga a "abstenerse de participar en cualquier actividad o gestión donde se vea involucrado un posible conflicto de intereses". En sus informes de actividades que se pueden leer (cuentas 4 y 5) **no aparece ninguna gestión relacionada con la empresa**. Las cuentas 1 a 3 están escaneadas y no se revisaron.
+
+4. **Las mismas personas aparecen alrededor de él y de la empresa:**
+   - Misael Alexander Zambrano Galvis, su supervisor en 2025, firmó como **alcalde (encargado)** el **Decreto 0013 del 20 de enero de 2026**. Ese decreto delegó en Soraya Tatiana Cáceres la ordenación del gasto con la que se firmaron días después los contratos de ANATO y de la Feria con la empresa. Lo proyectó Clara Paola Aguilar Barreto y lo revisó el Secretario General, Bierman Suárez.
+   - Clara Paola Aguilar Barreto, que firmó su prórroga, firmó después como Secretaria General (encargada) la resolución del **comodato** de los locales para la empresa.
+   - Ningún expediente de los 8 contratos de la empresa menciona a Brayan Blanco.
+
+### 8.2 ¿Hay irregularidad probada a cargo de él? **No, con lo que hay.**
+
+| Posible conducta | Valoración |
+|---|---|
+| Falta disciplinaria | Un contratista de prestación de servicios **no es servidor público** (Ley 80, art. 32, num. 3). Solo es disciplinable si ejerce **funciones públicas** o administra recursos públicos (Ley 1952 de 2019, art. 70; Corte Constitucional C-037 de 2003). Apoyar a una oficina jurídica no es, por regla general, una función pública. **No probada.** |
+| Inhabilidad o incompatibilidad | Las de la Ley 80 (art. 8) aplican a quien contrata con la entidad. Él contrató como persona natural, no la empresa. Que figure en el registro de un proveedor no lo convierte en socio ni en representante. **No se configura.** |
+| Conflicto de interés en su contrato con el Concejo (2026) | Hay una cláusula expresa, pero **no hay evidencia** de que haya intervenido en asuntos de la empresa ante el Concejo. **No probada.** |
+| Incumplimiento de su contrato con la Alcaldía (2025) | Solo habría incumplimiento si dedicó a la empresa tiempo que cobró al municipio, o si usó información reservada. Para eso se necesitan sus informes de actividades de septiembre a diciembre de 2025. **No probada.** |
+| Delito | No hay indicio de que él haya tramitado, celebrado o liquidado contratos de la empresa, ni de que se haya apropiado de recursos. **No hay elementos.** |
+
+### 8.3 Lo que sí prueba este caso
+
+Lo probado es **institucional, no personal**:
+
+- **Un contratista de la Secretaría General y de la Oficina Jurídica de la Alcaldía, mientras trabajaba para el municipio, montó la plataforma de contratación de la empresa** que luego recibiría $10.588 M de ese mismo municipio. La registró con su propio nombre, el correo "gocucutasas" y la dirección del Palacio.
+- Esto **refuerza el hallazgo principal** de este análisis: la empresa no actúa como un contratista independiente, sino como una **extensión administrativa de la Secretaría General**. Su director viene de esa Secretaría, su cuenta la creó un contratista de esa Secretaría, su domicilio es el Palacio, en su junta están el Secretario General y otros jefes, y sus contratos los estructuró una contratista de esa Secretaría.
+- Esa confusión entre contratante y contratista es la que hace **ilusoria la supervisión** y facilita la **intermediación** (ver los hallazgos 3.1, 3.6 y 3.7).
+- Hay además un **problema de transparencia**: como el registro de proveedores lleva el nombre de una persona y no la razón social, una búsqueda por "Empresa de Exposición de Cúcuta" no encuentra la cuenta del proveedor.
+
+### 8.4 Qué pedir
+
+1. A la Alcaldía: los informes de actividades de Brayan Blanco del contrato 00000379 de 2025, sobre todo de septiembre a diciembre, y si crear la cuenta en SECOP de la empresa estaba entre sus tareas y por orden de quién.
+2. A la empresa: qué relación tiene o tuvo con él (contratista, empleado o apoderado) y quién administra hoy su cuenta en SECOP.
+3. Al Concejo: si ha tramitado algún asunto de la empresa (por ejemplo, el informe que el art. 10 del Acuerdo 012 obliga a presentar) y si Brayan Blanco intervino.
+
+**Nota sobre datos personales.** Su número de cédula aparece en los datos abiertos de SECOP. No debe publicarse.
