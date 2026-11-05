@@ -27,13 +27,14 @@ Todo es público: SECOP II, datos.gov.co.
 
 Así se desangra el Estado de a poco: 1 contratista, 5 entidades, 10 contratos en 2026, 5 vigentes al mismo tiempo, todos para "proyectos de inversión". $210 M. En Cúcuta hay 454 casos de simultaneidad. Reforma urgente. ¿@UGPP_Colombia? ¿@DIANColombia? Datos: SECOP II.
 
-## Imágenes (en este orden)
+## Imágenes (capturas en crudo, sin edición)
 
-1. `01_captura_datosgovco_contratos.png`: captura real de datos.gov.co con los 10 contratos (entidad, fechas y valor), con la cédula oculta. `01_..._ARCHIVO.png` es la misma captura sin ocultar, solo para el archivo.
-2. `02_captura_api_objetos.png`: respuesta de la API oficial con el objeto completo de cada contrato. La franja azul es una anotación con la URL de la consulta.
-3. `03_grafica_elaboracion_propia.png`: línea de tiempo y suma mes a mes. Elaboración propia, con la fuente indicada en la imagen.
+Son capturas directas del navegador: sin recortes, recuadros, anotaciones ni gráficas generadas. Para que no aparezca la cédula, se filtró por el nombre del contratista.
 
-Para regenerarlas: `node cap2.js <url> <salida> 1500 1250`, `node shotj.js <url_api> <salida>`, `python3 grafica.py && node shot.js grafica.html <salida>`.
+1. `01_datosgovco_contratos_crudo.png`: datos.gov.co (SECOP II – Contratos Electrónicos). Muestra los 10 contratos con proveedor, entidad, fecha de inicio, fecha de fin y valor, y la marca "Mostrando filas 1-10 de 10".
+2. `02_api_objetos_crudo.png`: respuesta de la API oficial de datos.gov.co con la entidad, las fechas, el valor y el objeto completo de cada contrato.
+
+Para reproducirlas: `node rawshot2.js "<url>" <salida.png> 1500 1150 "Mostrando filas"` y `node rawshot2.js "<url_api>" <salida.png> 1300 720`. Las URL están en `urls2.txt`, una por línea.
 
 ## Cifras que sostienen el trino
 
