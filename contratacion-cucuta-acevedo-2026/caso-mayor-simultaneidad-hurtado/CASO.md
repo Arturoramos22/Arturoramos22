@@ -65,3 +65,31 @@ Las URL de las dos consultas están en `urls.txt`. Para reproducir las capturas:
 ## Cuidado antes de publicar
 
 La prestación de servicios **no exige exclusividad**, así que tener varios contratos simultáneos no es ilegal en sí mismo. Lo que se debe preguntar es si es materialmente posible cumplir seis contratos jurídicos al mismo tiempo en cuatro territorios. Eso se responde con los informes de actividades, las certificaciones de los supervisores y las planillas de seguridad social, que le corresponde revisar a la UGPP. No se le debe atribuir a la persona un delito.
+
+## Texto para publicar
+
+**Versión larga (X Premium, una sola publicación):**
+
+Un solo abogado. 10 contratos de prestación de servicios con el Estado vigentes en 2026. 8 entidades públicas.
+
+La Agencia Nacional de Seguridad Vial, el Senado (2), la Gobernación de Cundinamarca, la Gobernación del Tolima (2), la CAR (2), la Contraloría de Bogotá y la Alcaldía de Cúcuta.
+
+Del 3 de febrero al 7 de mayo tuvo 6 contratos al mismo tiempo, que sumaban $60,2 millones al mes. Son 34 salarios mínimos cada mes.
+
+En marzo llegó a $62,2 millones.
+
+En 2026 son $517 millones, unos $43 millones mensuales.
+
+Los contratos suman $603 millones en total.
+
+Todos son de asesoría o representación jurídica, en Bogotá, Cundinamarca, el Tolima y Cúcuta, a la vez.
+
+El 9 de octubre la Alcaldía de Cúcuta lo contrató cuando ya tenía otros 3 contratos vigentes. Hoy tiene 5 a la vez, que suman $46,7 millones al mes.
+
+¿Quién certifica que se cumplen 6 contratos jurídicos al mismo tiempo? ¿Qué revisan los supervisores? ¿Cuándo cruza la UGPP las cédulas?
+
+Todo está en SECOP II, en datos abiertos y a la vista de todos.
+
+**Versión corta (280 caracteres):**
+
+1 abogado, 10 contratos con el Estado en 2026, 8 entidades. Del 3-feb al 7-may tuvo 6 a la vez: $60,2 millones al mes, 34 salarios mínimos. En 2026, $517 millones. Cúcuta lo contrató cuando ya tenía 3. ¿Quién certifica que cumple? ¿@UGPP_Colombia? Fuente: SECOP II.
