@@ -17,14 +17,14 @@ ALERTAS = [
              'Consultar RUES: fecha de constitución de Aventours (NIT 901913440, al parecer de 2025), socios y actividad. Revisar si la misma persona aparece en otras entidades.'),
   url=S + 'CO1.NTC.10283233'),
 
- dict(riesgo='ALTO', tipo='Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025',
+ dict(riesgo='ALTO', tipo='Sociedad de economía mixta municipal recién creada usada como intermediaria para contratar eventos sin selección objetiva',
   entidad='Alcaldía (Promoción Turística y Cultura)', contratista='EMPRESA DE EXPOSICIÓN DE CÚCUTA CIUDAD DESTINO S.A.S. – WORLD GO COLOMBIA S.A.S. (NIT 901990330); R.L. Ronald Eduardo Pancha Vivas',
   contratos='PT-41 (CO1.PCCNTR.9642489), CP-82, PT-52, CP-135 y comodato DA-2', valor=6351900000,
-  hechos=('El comodato la denomina "sociedad de economía mixta", pero RUES la registra como S.A.S. comercial matriculada el 18-sep-2025. Entre el 10-jul y el 16-oct-2026 recibió 4 contratos directos con la causal "interadministrativo", por 6.352 millones: '
-          'actividades culturales y de promoción (PT-41: firmado por 1.845 millones y adicionado a 2.745 millones el 25-jul, +48,8% a los 15 días de la firma, con una duración de 2 meses), artistas para "Cúcuta Gospel" (712,5), estrategia navideña "Cúcuta Ciudad Destino" (1.984,4) y logística de "Cúcuta Gospel" (910). '
-          'El 29-oct-2026 el propio alcalde Jorge Enrique Acevedo firmó como ordenador del gasto un comodato gratuito a 5 años de dos locales municipales para la sede de esta empresa. '
-          'En PT-41 SECOP no registra supervisor ni ordenador del gasto.'),
-  criterio=('La contratación directa interadministrativa (Ley 1150, art. 2, num. 4, lit. c) solo procede con entidades estatales. Una sociedad de economía mixta solo cuenta como tal si el capital público es mayoritario. '
+  hechos=('Creada por el Acuerdo 012 de 2025 como sociedad de economía mixta (52% municipal, aporte de $598-600 M; sigla autorizada EXPOCUCUTA, registrada después como World Go Colombia). Matriculada el 18-sep-2025. '
+          'Al firmar su primer contrato tenía ingresos de $0, pasivos de $0 y domicilio en el Palacio Municipal. Es su único cliente: 8 contratos directos interadministrativos por $10.588 M. '
+          'Adiciones del 49,99% (Feria) y del 48,8% (PT-41). Cotizaciones de Gospel que son multiplicaciones exactas entre sí. Pagos del 70% contra un plan de trabajo. '
+          'Feria y Gospel repartidos en dos contratos cada uno. Comodato gratuito de locales firmado por el alcalde. Unos $5.482 M de SGP. Análisis completo en caso-world-go/ANALISIS.md.'),
+  criterio=('La vía interadministrativa (Ley 1150, art. 2, num. 4, lit. c) exige que la ejecutora sea entidad estatal (más del 50% estatal, sin certificar en el expediente) y que tenga capacidad propia; los propios estudios dicen que queda proscrita toda intermediación. '
             'Aun así, la misma norma excluye de la vía directa los contratos de obra y de suministro con sociedades de economía mixta, que deben ir a licitación o selección abreviada. '
             'Contratar eventos y artistas a través de un vehículo creado para eso puede ser una intermediación para evitar la selección objetiva. '
             'Si la empresa subcontrata casi todo el objeto, la entidad paga además un costo de administración y pierde el control.'),

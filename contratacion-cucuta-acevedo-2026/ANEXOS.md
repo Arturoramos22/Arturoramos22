@@ -34,7 +34,7 @@ Este anexo complementa `INFORME.md`. Toda la información está también en la m
 - **Objeto:** 2026PT-41 DESARROLLO INTEGRAL DE ACTIVIDADES CULTURALES; ARTÍSTICAS; RECREATIVAS Y DE PROMOCIÓN INSTITUCIONAL; CON EL FIN DE FORTALECER LA IDENTIDAD CULTURAL; PROMOVER LA PARTICIPACIÓN CIUDADANA E IMPULSAR EL DESARROLLO ECONÓMICO Y TURÍSTICO DEL MUNICIPIO; DE CONFORMIDAD CON EL PROYECTO DE INVERSIÓN
 - **Supervisor / ordenador del gasto:** No definido / No definido
 - **Análisis del riesgo:**
-  - Hace parte de la alerta N° 2 de la matriz (Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025).
+  - Hace parte de la alerta N° 2 de la matriz (Sociedad de economía mixta municipal recién creada usada como intermediaria para contratar eventos sin selección objetiva).
   - Se abrió con un presupuesto de $1.845,0 M y hoy vale $2.745,0 M (+48,8%), cerca del tope de adiciones del 50% (Ley 80, art. 40).
   - Se contrató directamente con la causal "interadministrativa", pero el contratista es una persona jurídica privada o una S.A.S. (RUES). Esa causal solo procede entre entidades estatales.
   - SECOP no registra supervisor.
@@ -149,7 +149,7 @@ Este anexo complementa `INFORME.md`. Toda la información está también en la m
 - **Objeto:** 2026CP-82 PRESTACIÓN DE SERVICIOS ARTÍSTICOS REPRESENTATIVOS DEL GÉNERO GOSPEL DE TALLA NACIONAL; INTERNACIONAL Y LOCALES PARA LLEVAR A CABO EL EVENTO CULTURAL CÚCUTA GOSPEL; CON EL FIN DE FORTALECER LA GESTIÓN CULTURAL Y CONSOLIDAR LOS PROCESOS DE CIRCULACIÓN; PROMOCIÓN Y APROPIACIÓN DE LAS ARTES EN EL MUNICIPIO DE SAN JOSÉ DE CÚCUTA
 - **Supervisor / ordenador del gasto:** MARIBEL GARCIA QUIROGA / MARIBEL GARCIA QUIROGA
 - **Análisis del riesgo:**
-  - Hace parte de la alerta N° 2 de la matriz (Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025).
+  - Hace parte de la alerta N° 2 de la matriz (Sociedad de economía mixta municipal recién creada usada como intermediaria para contratar eventos sin selección objetiva).
   - Se contrató directamente con la causal "interadministrativa", pero el contratista es una persona jurídica privada o una S.A.S. (RUES). Esa causal solo procede entre entidades estatales.
   - El supervisor (MARIBEL GARCIA QUIROGA) es el mismo ordenador del gasto, así que no hay control cruzado.
   - Contratista recurrente: 5 contratos por $6.351,9 M en el periodo.
@@ -179,7 +179,7 @@ Este anexo complementa `INFORME.md`. Toda la información está también en la m
 - **Objeto:** 2026PT-52 DISEÑAR; DESARROLLAR E IMPLEMENTAR UNA ESTRATEGIA INTEGRAL DE POSICIONAMIENTO Y PROMOCIÓN DE CIUDAD EN EL MARCO DEL PROYECTO CÚCUTA CIUDAD DESTINO; MEDIANTE ACTIVACIONES TERRITORIALES Y EXPERIENCIAS TURÍSTICAS; CULTURALES Y COMERCIALES DURANTE LA TEMPORADA NAVIDEÑA
 - **Supervisor / ordenador del gasto:** PEDRO LUIS ACERO RICO / No definido
 - **Análisis del riesgo:**
-  - Hace parte de la alerta N° 2 de la matriz (Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025).
+  - Hace parte de la alerta N° 2 de la matriz (Sociedad de economía mixta municipal recién creada usada como intermediaria para contratar eventos sin selección objetiva).
   - Se contrató directamente con la causal "interadministrativa", pero el contratista es una persona jurídica privada o una S.A.S. (RUES). Esa causal solo procede entre entidades estatales.
   - Contratista recurrente: 5 contratos por $6.351,9 M en el periodo.
   - Modificaciones registradas: 2026-10-06 Modificacion General: Se ajusta digitación de objeto y año del contrato.
@@ -222,7 +222,7 @@ Este anexo complementa `INFORME.md`. Toda la información está también en la m
 - **Objeto:** 2026CP-135 CONTRATAR EL SERVICIO DE APOYO LOGÍSTICO A LA SECRETARÍA DE CULTURA Y PATRIMONIO DE LA ALCALDÍA DE SAN JOSÉ DE CÚCUTA; PARA REALIZAR LAS ACTIVIDADES OPERATIVAS; LOGISTICAS Y DE PRODUCCION QUE SE DESARROLLEN EN EL MARCO DEL EVENTO CULTURAL CÚCUTA GOSPEL; CON EL FIN DE FORTALECER LA GESTIÓN CULTURAL Y CONSOLIDAR LOS PROCESOS DE CIRCULACIÓN; PROMOCIÓN Y APROPIACIÓN DE LAS ARTES EN EL MUNICIPIO DE SAN JOSÉ DE CÚCUTA
 - **Supervisor / ordenador del gasto:** DHYKARLO URBINA PARRA / No definido
 - **Análisis del riesgo:**
-  - Hace parte de la alerta N° 2 de la matriz (Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025).
+  - Hace parte de la alerta N° 2 de la matriz (Sociedad de economía mixta municipal recién creada usada como intermediaria para contratar eventos sin selección objetiva).
   - Se contrató directamente con la causal "interadministrativa", pero el contratista es una persona jurídica privada o una S.A.S. (RUES). Esa causal solo procede entre entidades estatales.
   - Contratista recurrente: 5 contratos por $6.351,9 M en el periodo.
 - **Qué verificar:** Certificado de existencia y representación, y composición accionaria.
@@ -472,7 +472,7 @@ Este anexo complementa `INFORME.md`. Toda la información está también en la m
 - **Objeto:** 2026DA-2 CONCEDER EL USO Y GOCE A TÍTULO DE COMODATO GRATUITO DE LOS INMUEBLES DISTINGUIDOS COMO LOCALES 108D Y 109E; DEL CONJUNTO CERRADO LAS ALMEIDAS; DE PROPIEDAD DEL MUNICIPIO DE SAN JOSÉ DE CÚCUTA; EN FAVOR DE LA SOCIEDAD DE ECONOMÍA MIXTA EMPRESA DE EXPOSICIÓN DE CÚCUTA CIUDAD DESTINO S.A.S - WORLD GO COLOMBIA S.A.S; CON EL FIN ÚNICO DE GARANTIZAR EL FUNCIONAMIENTO DE SU SEDE ADMINISTRATIVA Y LA EJECUCIÓN OPERATIVA DE SU OBJETO SOCIAL
 - **Supervisor / ordenador del gasto:** PEDRO LUIS ACERO RICO / JORGE ENRIQUE ACEVEDO PEÑALOZA
 - **Análisis del riesgo:**
-  - Hace parte de la alerta N° 2 de la matriz (Contratación directa "interadministrativa" con una S.A.S. privada creada en sept-2025).
+  - Hace parte de la alerta N° 2 de la matriz (Sociedad de economía mixta municipal recién creada usada como intermediaria para contratar eventos sin selección objetiva).
   - Contrato a valor cero sobre un bien público (comodato o aprovechamiento económico).
   - Contratista recurrente: 5 contratos por $6.351,9 M en el periodo.
 - **SECOP:** https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.11139941
@@ -1834,8 +1834,8 @@ Periodos en que coinciden los contratos:
 | S133 | CARLOS ALBERTO RINCÓN GARCÍA (80775309) | Gobernación Norte de Santander*, `CO1.PCCNTR.10044336`, 2026-10-07→2026-12-31, $11,8 M / **$4,1 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.10037008`, 2026-10-09→2026-12-28, $13,5 M / **$5,0 M** | 2026-10-09→2026-12-28 (81 d) | **$9,1 M** |
 | S134 | HENRY ALEXANDER CHACON LOZADA (13502123) | SENA REGIONAL NORTE DE SANTANDER, `CO1.PCCNTR.9138810`, 2026-02-02→2026-12-15, $49,7 M / **$4,7 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.9661944`, 2026-07-16→2026-11-15, $18,0 M / **$4,4 M** | 2026-07-16→2026-11-15 (123 d) | **$9,1 M** |
 | S135 | Daniela Andrea Velandia Ortega (1004842734) | Gobernación Norte de Santander*, `CO1.PCCNTR.8780194`, 2026-01-09→2026-11-23, $44,1 M / **$4,1 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.9983929`, 2026-09-24→2026-12-31, $16,3 M / **$4,9 M** | 2026-09-24→2026-11-23 (61 d) | **$9,1 M** |
-| S136 | Luddy Velasquez (37443094) | SENA REGIONAL NORTE DE SANTANDER, `CO1.PCCNTR.8947906`, 2026-02-02→2026-12-11, $49,0 M / **$4,7 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.9976414`, 2026-09-22→2026-12-22, $13,5 M / **$4,4 M** | 2026-09-22→2026-12-11 (81 d) | **$9,1 M** |
-| S137 | Diego Armando Guevara Paez (1091657113) | SENA REGIONAL NORTE DE SANTANDER, `CO1.PCCNTR.8947602`, 2026-02-02→2026-12-11, $49,0 M / **$4,7 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.9842795`, 2026-08-24→2026-11-23, $13,5 M / **$4,4 M** | 2026-08-24→2026-11-23 (92 d) | **$9,1 M** |
+| S136 | Diego Armando Guevara Paez (1091657113) | SENA REGIONAL NORTE DE SANTANDER, `CO1.PCCNTR.8947602`, 2026-02-02→2026-12-11, $49,0 M / **$4,7 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.9842795`, 2026-08-24→2026-11-23, $13,5 M / **$4,4 M** | 2026-08-24→2026-11-23 (92 d) | **$9,1 M** |
+| S137 | Luddy Velasquez (37443094) | SENA REGIONAL NORTE DE SANTANDER, `CO1.PCCNTR.8947906`, 2026-02-02→2026-12-11, $49,0 M / **$4,7 M** | Alcaldía (Municipio de San José , `CO1.PCCNTR.9976414`, 2026-09-22→2026-12-22, $13,5 M / **$4,4 M** | 2026-09-22→2026-12-11 (81 d) | **$9,1 M** |
 | S138 | ADRIANA CAROLINA SANCHEZ SALAZAR (1090374032) | Alcaldía (Municipio de San José , `CO1.PCCNTR.9799649`, 2026-08-13→2026-12-27, $22,5 M / **$4,9 M** | Gobernación Norte de Santander*, `CO1.PCCNTR.10054617`, 2026-10-09→2026-12-27, $11,1 M / **$4,2 M** | 2026-10-09→2026-12-27 (80 d) | **$9,1 M** |
 | S139 | RUBIELA  MORA HERNANDEZ (60348376) | ASAMBLEA DEPARTAMENTAL DEL N DE , `CO1.PCCNTR.9112438`, 2026-01-27→2026-12-26, $33,0 M / **$3,0 M** | IMRD (Instituto Municipal de Rec, `CO1.PCCNTR.9757629`, 2026-08-03→2026-12-02, $24,8 M / **$6,1 M** | 2026-08-03→2026-12-02 (122 d) | **$9,1 M** |
 | S140 | JUAN MIGUEL SANDOVAL HIGUERA (1093761593) | Alcaldía (Municipio de San José , `CO1.PCCNTR.9793403`, 2026-08-12→2026-12-26, $22,5 M / **$4,9 M** | Gobernación Norte de Santander*, `CO1.PCCNTR.10116486`, 2026-10-27→2026-12-29, $8,8 M / **$4,1 M** | 2026-10-27→2026-12-26 (61 d) | **$9,1 M** |
