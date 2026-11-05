@@ -15,6 +15,7 @@ Documento maestro (con todas las secciones): https://claude.ai/artifact/JDD2zrGp
 | `sobres/00-hoja-comun-estudiantes.md` | Todos los estudiantes (una copia con cada sobre) | Reglas comunes del juego, fases y tiempos, entregables por rol. |
 | `sobres/01-sobre-A-demandante.md` | Estudiante apoderado/a de la demandante | Relato de la ciudadana en primera persona y tareas del rol. |
 | `sobres/02-sobre-A2-cajon-cliente-docente.md` | Docente | Cajón de pruebas de la cliente: piezas que solo se entregan si el apoderado las pide, guion de respuestas y trampas. |
+| `sobres/02b-sobre-A2-cliente-estudiante.md` | Estudiante que hace de cliente (grupo demandante) | Versión de la información reservada para la cliente: papeles, llaves y guion de respuestas, sin trampas, rúbrica ni referencias al caso real. |
 | `sobres/03-sobre-B-demandada.md` | Estudiante apoderado/a de la Nación – Ministerio de Defensa – Ejército | Memorando interno, líneas de defensa, documentos de la entidad y guía para la audiencia inicial. |
 | `sobres/04-sobre-C-ministerio-publico.md` | Estudiante agente del Ministerio Público | Marco de actuación, insumos propios del rol, fundamentos y estructura del concepto. |
 | `sobres/05-sobre-D-juez.md` | Estudiante juez/a | Índice del expediente, guion de la audiencia inicial, problemas jurídicos y plantilla de sentencia oral. |
