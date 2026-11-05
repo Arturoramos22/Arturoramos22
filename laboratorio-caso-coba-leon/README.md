@@ -12,6 +12,7 @@ Documento maestro (con todas las secciones): https://claude.ai/artifact/JDD2zrGp
 | --- | --- | --- |
 | `00-guia-docente.md` | Docente | Dinámica, roles, reglas del rompecabezas probatorio y plan de tiempos. |
 | `clave-docente-hechos-verificados.md` | Docente (confidencial) | Base fáctica verificada contra el texto de la sentencia, con folios, argumentos de las partes, decisión, salvamentos y desarrollos posteriores de la Corte Constitucional. |
+| `sobres/00-hoja-comun-estudiantes.md` | Todos los estudiantes (una copia con cada sobre) | Reglas comunes del juego, fases y tiempos, entregables por rol. |
 | `sobres/01-sobre-A-demandante.md` | Estudiante apoderado/a de la demandante | Relato de la ciudadana en primera persona y tareas del rol. |
 | `sobres/02-sobre-A2-cajon-cliente-docente.md` | Docente | Cajón de pruebas de la cliente: piezas que solo se entregan si el apoderado las pide, guion de respuestas y trampas. |
 | `sobres/03-sobre-B-demandada.md` | Estudiante apoderado/a de la Nación – Ministerio de Defensa – Ejército | Memorando interno, líneas de defensa, documentos de la entidad y guía para la audiencia inicial. |
