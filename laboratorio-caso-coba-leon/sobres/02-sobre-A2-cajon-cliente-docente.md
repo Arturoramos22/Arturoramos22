@@ -4,10 +4,10 @@
 
 **Encabezado de rol**
 
-- **Quién lee:** el docente, que interpreta a Hilda Tarazona Cruz y custodia las piezas P-01 a P-15. Ningún estudiante ve este sobre.
+- **Quién lee:** el docente. A Hilda Tarazona Cruz la interpreta una estudiante del grupo demandante con la versión corta de este sobre (Sobre A-2 cliente: sus papeles, la llave de cada uno y el guion de respuestas). Esta versión completa, con el valor y el riesgo de cada pieza, las trampas y la rúbrica, es solo para el docente, para seguir la entrevista y evaluar. Ningún estudiante la ve.
 - **Fecha en la simulación:** lunes 28 de mayo de 2012, Yopal. Hilda solo sabe lo ocurrido hasta esa fecha.
 - **Qué recibe:** el inventario de piezas en poder de la cliente con la "llave" que libera cada una y su base real; el guion de respuestas; la lista de lo que Hilda no ofrece ni revela; las trampas y lecciones del caso; la rúbrica de la entrevista y del esquema; la lista de recursos didácticos.
-- **Qué produce:** entrega controlada de piezas durante los siete minutos de entrevista de cada grupo; una hoja de control por grupo (pieza, minuto, formulación usada); la puntuación de la entrevista y del esquema de demanda.
+- **Qué produce:** una hoja de control de la entrevista (pieza entregada, minuto y formulación que usó el apoderado); la puntuación de la entrevista y del esquema de demanda.
 
 **Reglas de entrega**
 
@@ -113,7 +113,7 @@ Si sobra tiempo y el apoderado pregunta qué quiere ella: "Que digan que Clement
 
 **Señales de excelencia:** el estudiante que sale de la entrevista con una lista de pendientes para Hilda (traer la carpeta completa, la cédula, los nombres de los vecinos, hablar con el suegro para el poder de 2007), que fija la fecha límite más exigente de las posibles y actúa en función de ella, y que redacta los hechos de modo que ninguna frase pueda leerse como admisión de que en abril de 2007 la familia ya tenía elementos para demandar al Estado.
 
-**Manejo del tiempo:** siete minutos por grupo; anuncie "dos minutos" y "último minuto". Las piezas entregadas se anotan en la hoja de control y se devuelven al docente al terminar la fase, para que los Sobres B, C y D trabajen sobre el mismo inventario.
+**Manejo del tiempo:** la entrevista y el esquema de demanda ocupan los minutos 10 a 45; anuncie "cinco minutos" y "último minuto". Las piezas que la cliente entregue se anotan en la hoja de control y sus apoderados las aportan con la demanda; las piezas D y T siguen en manos del docente.
 
 ### (f) Notas para el docente: piezas y detalles de recurso didáctico
 

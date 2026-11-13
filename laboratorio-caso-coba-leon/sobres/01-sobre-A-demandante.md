@@ -6,7 +6,7 @@
 
 - **Quién eres:** abogado/a recién llegado/a a Yopal. Recibes a una persona remitida por una organización de víctimas del Casanare. Si la apoderada es mujer, lea "doctora" donde el relato dice "doctor".
 - **Fecha en la simulación:** lunes 28 de mayo de 2012, Yopal.
-- **Qué recibes:** el relato que sigue, tal como la señora Hilda Tarazona Cruz lo cuenta en tu oficina. Después de leerlo tendrás siete minutos para entrevistarla (la interpreta el docente). Ella trae papeles, pero solo entrega el documento que le pidas de forma concreta: "¿tiene algún papel que diga...?", "¿guarda el registro de...?", "¿quién puede contar lo de...?". Preguntas vagas ("¿tiene documentos?") reciben respuestas vagas.
+- **Qué recibes:** el relato que sigue, tal como la señora Hilda Tarazona Cruz lo cuenta en tu oficina. Después de leerlo podrás entrevistarla (la interpreta una compañera de tu grupo, que guarda sus papeles y solo responde lo que le preguntes). Ella trae papeles, pero solo entrega el documento que le pidas de forma concreta: "¿tiene algún papel que diga...?", "¿guarda el registro de...?", "¿quién puede contar lo de...?". Preguntas vagas ("¿tiene documentos?") reciben respuestas vagas.
 - **Qué debes producir al final de la fase:** un esquema de demanda de una página con: medio de control; juez competente; hechos (numerados, redactados como irían en la demanda); pretensiones; pruebas que pedirías y a quién; y una decisión argumentada sobre la oportunidad para demandar, con el calendario que propones para las próximas semanas.
 - **Regla de la fase:** no conoces nada que haya ocurrido después del 28 de mayo de 2012. Solo puedes usar la ley y la jurisprudencia disponibles a esa fecha.
 

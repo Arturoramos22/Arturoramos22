@@ -6,7 +6,7 @@
 
 **Qué recibe.** El esquema de la demanda (lo entrega el apoderado de la demandante), el esquema de la contestación (lo entrega el apoderado de la Nación – Ministerio de Defensa – Ejército Nacional), el índice del expediente, el inventario probatorio maestro sin contenido y esta guía.
 
-**Qué produce.** (1) El auto de la audiencia inicial: saneamiento, excepciones, fijación del litigio, conciliación, cautelares y decreto de pruebas. (2) La sentencia oral de cinco minutos. Solo puede usar las pruebas que las partes pidan y usted decrete, o las que decrete de oficio con motivación (art. 213 CPACA). Las piezas están empacadas por identificador en sobres sellados, un juego por grupo; el docente entrega cada una solo contra la fórmula de decreto.
+**Qué produce.** (1) El auto de la audiencia inicial: saneamiento, excepciones, fijación del litigio, conciliación, cautelares y decreto de pruebas. (2) La sentencia oral de cinco minutos. Solo puede usar las pruebas que las partes pidan y usted decrete, o las que decrete de oficio con motivación (art. 213 CPACA). Las piezas de la cliente (P) las aportan sus apoderados con la demanda; las de la entidad (D) y de terceros (T) las tiene el docente y las entrega solo contra la fórmula de decreto.
 
 **Información del rol.** Lo que sigue es la información propia del juez: índice del expediente e inventario de todas las piezas con su custodio (sin contenido hasta que las decrete), guion de la audiencia, problemas jurídicos, matriz de decisión y plantilla de sentencia.
 
@@ -17,7 +17,7 @@
 - Máximo dos pruebas de oficio (art. 213 CPACA; arts. 169 y 170 CGP), cada una motivada y sin suplir la carga de una parte.
 - Tiempo: aviso al minuto y medio, corte a los dos, salvo que el guion dé más.
 - Toda decisión se motiva en voz alta: norma, prueba, conclusión; y se indica el recurso que procede.
-- La cliente (el docente) solo habla por su apoderado, salvo que usted decrete su interrogatorio de parte (T-06): máximo dos minutos, porque el docente rota entre los tres grupos; si no puede atender, T-06 se entrega como acta escrita del interrogatorio.
+- La cliente (una estudiante del grupo demandante) solo habla por sus apoderados, salvo que usted decrete su interrogatorio de parte (T-06), que se practica en la audiencia en máximo tres minutos.
 - La suspensión del art. 180.6 (hasta diez días para pruebas de las excepciones) dura un minuto en el laboratorio.
 - Si declara la caducidad, el proceso termina. Si el docente ordena seguir, dicta la sentencia de fondo "como ejercicio" y lo dice expresamente.
 
@@ -65,7 +65,7 @@
 | T-03 | Procuraduría General de la Nación | Antecedentes disciplinarios de los militares; constancia de la conciliación | Aporte del Ministerio Público; oficio |
 | T-04 | Inspecciones de Policía de Hato Corozal y Nunchía | Constancias de la comunicación del 6 de abril de 2007 y de la entrega de cuerpos | Oficio |
 | T-05 | Registraduría y notaría | Copias auténticas de los registros civiles | Oficio |
-| T-06 | Docente (en el rol de la demandante) | Interrogatorio de parte a Hilda Tarazona Cruz (arts. 198 y 203 CGP); máximo dos minutos o acta escrita | Decreto a petición de la demandada o de oficio; se practica en audiencia |
+| T-06 | La cliente (estudiante del grupo demandante) | Interrogatorio de parte a Hilda Tarazona Cruz (arts. 198 y 203 CGP); máximo tres minutos | Decreto a petición de la demandada o de oficio; se practica en audiencia |
 | T-07 | Tribunal Superior de Yopal, Sala Penal (o juzgado de ejecución de penas) | Constancia de ejecutoria de la condena del 14 de agosto de 2014 (casación inadmitida en el primer semestre de 2016) | Oficio; solo existe en el momento 4 |
 | T-08 | Ministerio Público (documentos de dominio público) | Dossier de contexto: declaración de prensa del Relator Especial de la ONU (18 de junio de 2009), informe A/HRC/14/24/Add.2 (2010), Directiva 029 de 2005 y Directiva 300-28 de 2007 | Aporte del Ministerio Público; contexto, no prueba del hecho |
 | T-09 | Ministerio Público (documento de tercero) | Ficha anonimizada del CINEP sobre casos de Casanare en 2006 y 2007 | Aporte del Ministerio Público; valor limitado, fuente no oficial |

@@ -2,13 +2,13 @@
 
 ## Qué es este ejercicio
 
-Van a reconstruir un proceso contencioso administrativo a partir de un caso real de Colombia. Los nombres de las personas están cambiados; los lugares, las fechas, las unidades, los juzgados y los documentos son reales. Solo el docente conoce cómo terminó el caso y lo revelará al final. Cada grupo tiene cuatro roles: apoderado o apoderada de la demandante, apoderado o apoderada de la Nación – Ministerio de Defensa – Ejército Nacional, juez o jueza, y agente del Ministerio Público. Cada uno recibe un sobre distinto y no debe mostrarlo a los demás roles.
+Van a reconstruir un proceso contencioso administrativo a partir de un caso real de Colombia. Los nombres de las personas están cambiados; los lugares, las fechas, las unidades, los juzgados y los documentos son reales. Solo el docente conoce cómo terminó el caso y lo revelará al final. Hay tres grupos de cuatro estudiantes: el grupo demandante (la cliente y sus tres apoderados), el grupo demandada (los apoderados de la Nación – Ministerio de Defensa – Ejército Nacional) y el grupo del juez y el Ministerio Público (jueces y procuradores). Cada rol recibe un sobre distinto y no debe mostrarlo a ningún otro rol, ni siquiera dentro de su grupo.
 
 ## Reglas del juego
 
 1. Cada sobre tiene una instrucción (quién es usted, en qué fecha está, qué recibe y qué debe producir) y una información propia del rol. Lea los dos antes de hablar con nadie.
 
-2. El docente interpreta a la cliente, la señora Hilda Tarazona Cruz, y custodia todas las pruebas. La cliente no ofrece documentos: solo entrega el que su apoderado le pida de forma concreta, aunque la perjudique. Preguntas vagas reciben respuestas vagas.
+2. Una estudiante del grupo demandante interpreta a la cliente, la señora Hilda Tarazona Cruz, y guarda sus papeles. La cliente solo habla con sus apoderados. No ofrece documentos: solo entrega el que sus apoderados le pidan de forma concreta, aunque la perjudique. Preguntas vagas reciben respuestas vagas. Las pruebas de la entidad y de terceros las custodia el docente.
 
 3. Las pruebas que tienen la entidad demandada o terceros (Fiscalía, Medicina Legal, Procuraduría, Justicia Penal Militar, Registraduría, Inspecciones de Policía) solo llegan al expediente si una parte las pide en la demanda o en la contestación y el juez las decreta. El docente entrega la pieza al juez, nunca a la parte.
 
@@ -27,8 +27,8 @@ Van a reconstruir un proceso contencioso administrativo a partir de un caso real
 | Minuto | Fase | Qué pasa |
 | --- | --- | --- |
 | 0-10 | Instalación | Cada rol lee su sobre en silencio. |
-| 10-35 | Consulta | El apoderado de la demandante entrevista a la cliente durante siete minutos (el docente rota por los grupos). Mientras tanto, la demandada, el Ministerio Público y el juez preparan su estrategia con su sobre. |
-| 35-55 | Demanda y contestación | El apoderado de la demandante escribe un esquema de demanda de una página; la demandada, un esquema de contestación de una página. Se intercambian entre las partes y se entregan al juez y al Ministerio Público. |
+| 10-45 | Consulta y demanda | Los apoderados de la demandante entrevistan a la cliente y escriben el esquema de demanda de una página. Mientras tanto, la demandada, el Ministerio Público y el juez preparan su estrategia con su sobre. Al minuto 45 la demandante entrega copia del esquema a la demandada, al juez y al Ministerio Público. |
+| 45-55 | Contestación | La demandada escribe el esquema de contestación de una página y entrega copia al juez, al Ministerio Público y a la demandante. |
 | 55-85 | Audiencia inicial | El juez dirige la audiencia (artículo 180 del CPACA): saneamiento, excepciones, fijación del litigio, conciliación, cautelares y decreto de pruebas. El docente entrega al juez las piezas decretadas. |
 | 85-105 | Alegatos y concepto | Cada parte alega en una página o en tres minutos; el Ministerio Público escribe su concepto de una página. |
 | 105-115 | Sentencia oral | El juez anuncia el sentido del fallo y sus razones en cinco minutos. |
