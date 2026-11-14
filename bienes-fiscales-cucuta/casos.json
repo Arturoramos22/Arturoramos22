@@ -1,0 +1,67 @@
+[
+ {
+  "bien": "Cuenta contable 8347 \"Bienes entregados a terceros\" (agregado de todos los convenios sin depurar)",
+  "ubicacion": "Estados financieros consolidados del Municipio",
+  "tenedor": "Varios terceros, no identificados en las notas",
+  "titulo": "Convenios de vigencias anteriores",
+  "desde": "≤2023",
+  "alcaldia": "La nota dice que \"son convenios que deben ser depurados y pertenecen a vigencias anteriores\". El saldo no cambió entre 2023, 2024 y 2025.",
+  "cifras": "$263.051.810.392,01",
+  "estado": "Sin depurar (EF 2025-2024)",
+  "fuente": "Alcaldía de Cúcuta - Estados financieros consolidados 2024-2023 (nota cuentas de orden) y 2025-2024",
+  "fecha_fuente": "2025-03 / 2026-02",
+  "url": "https://cucuta.gov.co/wp-content/uploads/2025/03/ESTADOS-FINANCIEROS-CONSOLIDADOS-Y-SUS-NOTAS-2024-2023.pdf"
+ },
+ {
+  "bien": "Bienes de uso público entregados en comodato (sin inventario)",
+  "ubicacion": "Estados financieros consolidados, literal g",
+  "tenedor": "No identificados",
+  "titulo": "Comodato",
+  "desde": "",
+  "alcaldia": "La Subsecretaría de Contaduría \"se encuentra en la recopilación de información para definir el inventario y tener el valor en libros\" de estos bienes.",
+  "cifras": "Sin valor en libros",
+  "estado": "Inventario no consolidado",
+  "fuente": "Alcaldía de Cúcuta - Estados financieros consolidados 2024-2023",
+  "fecha_fuente": "2025-03",
+  "url": "https://cucuta.gov.co/wp-content/uploads/2025/03/ESTADOS-FINANCIEROS-CONSOLIDADOS-Y-SUS-NOTAS-2024-2023.pdf"
+ },
+ {
+  "bien": "Inmueble fiscal \"La Muela\"",
+  "ubicacion": "Av. 0 entre calles 8 y 8A, barrio Latino",
+  "tenedor": "Particular(es) ocupante(s)",
+  "titulo": "Ocupación de hecho",
+  "desde": "~2006",
+  "alcaldia": "Recuperado tras unos 20 años, por la Inspección Cuarta de Policía (Ley 1801, arts. 76-77), según la prensa.",
+  "cifras": "",
+  "estado": "Recuperado (nov-2026)",
+  "fuente": "Alcaldía de Cúcuta (boletín); Área Cúcuta",
+  "fecha_fuente": "2026-11-12",
+  "url": "https://cucuta.gov.co/alcaldia-de-cucuta-recupera-el-inmueble-la-muela-tras-20-anos-de-proceso-institucional/"
+ },
+ {
+  "bien": "\"El Triángulo\" del Parque Lineal",
+  "ubicacion": "Parque Lineal",
+  "tenedor": "Ocupantes particulares",
+  "titulo": "Ocupación de hecho",
+  "desde": "",
+  "alcaldia": "Resolución policiva 0151 de 2025, después de 63 audiencias. Las tutelas de los ocupantes se declararon improcedentes.",
+  "cifras": "",
+  "estado": "Recuperado (2025)",
+  "fuente": "Alcaldía de Cúcuta (boletín)",
+  "fecha_fuente": "2025",
+  "url": "https://cucuta.gov.co/alcaldia-de-cucuta-recupera-el-triangulo-del-parque-lineal-en-una-intervencion-sin-precedentes/"
+ },
+ {
+  "bien": "Lote ejido municipal",
+  "ubicacion": "Calle 15A N° 22-06, barrio Nuevo Horizonte. Folio 260-310758",
+  "tenedor": "Ocupante particular (desde 1994) y una opositora que se declara poseedora",
+  "titulo": "Mejora protocolizada sobre ejido (E.P. 1884 de 1996); sin título de dominio",
+  "desde": "1994",
+  "alcaldia": "Fue vinculado al proceso de restitución de tierras, pero no se le corrió traslado formal como propietario.",
+  "cifras": "",
+  "estado": "Sentencia del 19-may-2020 (rad. 54001312100120160009601)",
+  "fuente": "Tribunal Superior de Cúcuta, Sala Civil Especializada en Restitución de Tierras",
+  "fecha_fuente": "2020-05-19",
+  "url": "https://tribunalsuperiordecucuta.gov.co/wp-content/uploads/2023/07/Sent-Rad-54001312100120160009601-Rest-Tierras-MP-Nelson-Ruiz.pdf"
+ }
+]
