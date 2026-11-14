@@ -196,8 +196,12 @@ def main():
         ("…vencidos sin renovación visible en SECOP", f'=COUNTIFS({E}!H2:H{n},"Vencido",{E}!M2:M{n},"No")'),
         ("Prioridad alta para pedir restitución o explicación", f'=COUNTIF({E}!N2:N{n},"Alta")'),
         ("Locales del C.C. El Oití con arriendo vencido", f'=COUNTIFS({E}!D2:D{n},"*Oití*",{E}!H2:H{n},"Vencido")'),
-        ("Casos documentados en prensa y órganos de control (hoja 'Casos documentados')",
+        ("Casos documentados en prensa, sentencias y órganos de control (hoja 'Casos documentados')",
          "=COUNTA('Casos documentados'!A2:A500)"),
+        ("…de ellos, bienes de uso público (parques, canchas, monumentos), vigentes o ya recuperados",
+         "=COUNTIF('Casos documentados'!A2:A500,\"Uso público*\")"),
+        ("Saldo sin depurar de la cuenta 8347 'Bienes entregados a terceros' (COP, EF 2025-2024)",
+         263051810392.01),
         ("Contratos del municipio sobre inmuebles en SECOP (hoja 'SECOP - todos')",
          "=COUNTA('SECOP - todos'!A2:A2000)"),
     ]
@@ -210,7 +214,7 @@ def main():
         for col in (1, 2):
             body(ws.cell(row=i, column=col))
         ws.cell(row=i, column=2).font = BOLD
-        ws.cell(row=i, column=2).number_format = "0"
+        ws.cell(row=i, column=2).number_format = "$#,##0" if isinstance(f, float) else "0"
 
     r = 5 + len(filas) + 1
     notas = [
@@ -220,8 +224,10 @@ def main():
         "• 'Renovación visible en SECOP' = No significa que no se encontró en SECOP un contrato posterior "
         "con el mismo tercero. Es una alerta, NO prueba que el bien siga ocupado sin título: el municipio "
         "pudo renovar sin publicar (lo que sería otra irregularidad), o el bien pudo haber sido restituido.",
-        "• 'Casos documentados': bienes que, según prensa u órganos de control, siguen en manos de "
-        "terceros. Cada fila trae su fuente.",
+        "• 'Casos documentados': bienes que, según prensa, sentencias u órganos de control, están o estuvieron "
+        "en manos de terceros. Cada fila trae su fuente. Se distinguen los bienes FISCALES de los de USO "
+        "PÚBLICO (parques, canchas), que tienen otro régimen pero también son del municipio. Las filas "
+        "marcadas 'PISTA SIN VERIFICAR' no se pudieron confirmar en la fuente original.",
         "• 'SECOP - todos': todos los contratos del municipio sobre inmuebles. La mayoría son arriendos "
         "que la Alcaldía PAGA por locales ajenos; se incluyen para revisión.",
         "• Las ocupaciones de hecho (invasiones sin contrato) no aparecen en SECOP. Solo salen del "
@@ -281,14 +287,14 @@ def main():
 
     # ------------------------------------------------------- Casos documentados
     ws = wb.create_sheet("Casos documentados")
-    cols = ["Bien", "Ubicación / identificación", "Quién lo tiene", "Título o situación",
+    cols = ["Naturaleza del bien", "Bien", "Ubicación / identificación", "Quién lo tiene", "Título o situación",
             "Desde", "Qué ha hecho la Alcaldía", "Cifras (área, avalúo)", "Estado (según la fuente)",
             "Fuente", "Fecha de la fuente", "URL"]
-    widths = [30, 30, 28, 26, 10, 40, 22, 28, 26, 12, 40]
+    widths = [18, 30, 30, 28, 26, 12, 40, 22, 28, 26, 12, 40]
     header(ws, 1, cols, widths)
     casos_path = AQUI / "casos.json"
     casos = json.loads(casos_path.read_text(encoding="utf-8")) if casos_path.exists() else []
-    keys = ["bien", "ubicacion", "tenedor", "titulo", "desde", "alcaldia", "cifras", "estado",
+    keys = ["naturaleza", "bien", "ubicacion", "tenedor", "titulo", "desde", "alcaldia", "cifras", "estado",
             "fuente", "fecha_fuente", "url"]
     for i, cs in enumerate(casos, start=2):
         for j, k in enumerate(keys, start=1):
@@ -298,7 +304,7 @@ def main():
                 c.hyperlink = cs["url"]
     ws.freeze_panes = "B2"
     if casos:
-        ws.auto_filter.ref = f"A1:K{len(casos) + 1}"
+        ws.auto_filter.ref = f"A1:L{len(casos) + 1}"
 
     # ------------------------------------------------------------ SECOP - todos
     ws = wb.create_sheet("SECOP - todos")
