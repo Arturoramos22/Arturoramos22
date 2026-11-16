@@ -1,6 +1,6 @@
 # Seguridad en Cúcuta del 7 de agosto al último corte oficial de 2026: 10 notas estadísticas con fuente oficial
 
-*Documento preparado el 16 de noviembre de 2026. Todas las cifras se recalcularon ese día contra las fuentes oficiales y cada nota trae su constancia (captura de pantalla con URL, fecha y hora).*
+*Documento preparado el 16 de noviembre de 2026. Todas las cifras se recalcularon ese día contra las fuentes oficiales. Cada nota trae su constancia: capturas de pantalla completas, sin edición, de la página o del archivo oficial, con la URL visible en la barra del navegador. La URL exacta, la fecha y la hora de cada captura están en el texto bajo cada imagen.*
 
 ## Alcance y método
 
@@ -46,10 +46,89 @@ La reducción es real en el registro, pero el nivel sigue siendo alto: la tasa a
 
 **Constancia**
 
-![Nota 1a – ficha oficial del dataset HOMICIDIO m8fd-ahd9](capturas_cucuta_2026/nota01_a.png)
-![Nota 1b – consultas API en vivo](capturas_cucuta_2026/nota01_b.png)
-![Nota 1c – página oficial de proyecciones DANE](capturas_cucuta_2026/nota01_c.png)
-![Nota 1d – filas del archivo oficial DANE](capturas_cucuta_2026/nota01_d.png)
+![Constancia 1.1. Ficha oficial del dataset HOMICIDIO (MinDefensa): entidad, definición y fecha de actualización](capturas_cucuta_2026/nota01_01.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/about_data. Capturada el 16/11/2026, 16:40:47 (hora de Bogotá, UTC−5).
+
+![Constancia 1.2. Homicidios en Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota01_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:40:56 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"59"},{"anio":"2026","total":"49"}]
+```
+
+![Constancia 1.3. Homicidios en Cúcuta, 7-ago a 30-sep, por año y mes](capturas_cucuta_2026/nota01_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:41:11 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, date_extract_m(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `mes` ORDER BY `anio`, `mes`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","mes":"8","total":"33"},{"anio":"2025","mes":"9","total":"26"},{"anio":"2026","mes":"8","total":"28"},{"anio":"2026","mes":"9","total":"21"}]
+```
+
+![Constancia 1.4. Homicidios en Cúcuta, enero a septiembre, por año](capturas_cucuta_2026/nota01_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:41:26 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-01-01T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-01-01T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"246"},{"anio":"2026","total":"212"}]
+```
+
+![Constancia 1.5. Fecha del último hecho registrado en el dataset (fecha de corte)](capturas_cucuta_2026/nota01_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:42:36 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20max%28%60fecha_hecho%60%29%20AS%20%60ultimo_hecho_registrado%60/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT max(`fecha_hecho`) AS `ultimo_hecho_registrado`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"ultimo_hecho_registrado":"2026-09-30T00:00:00.000"}]
+```
+
+![Constancia 1.6. Página oficial del DANE de proyecciones de población](capturas_cucuta_2026/nota01_06.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion. Capturada el 16/11/2026, 16:42:58 (hora de Bogotá, UTC−5).
+
+![Constancia 1.7. Archivo oficial DANE PPED-AreaMun-2018-2042_VP.xlsx, hoja PobMunicipalxÁrea: Cúcuta 2025 (filas 25933-25935)](capturas_cucuta_2026/nota01_07.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:49:21 (hora de Bogotá, UTC−5).
+
+![Constancia 1.8. Archivo oficial DANE, hoja PobMunicipalxÁrea: Cúcuta 2026 (filas 29302-29304)](capturas_cucuta_2026/nota01_08.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:49:29 (hora de Bogotá, UTC−5).
+
+![Constancia 1.9. Archivo oficial DANE PPED-AreaMun-2018-2042_VP.xlsx, hoja PPED: «Actualizado el 30 de Julio de 2025»](capturas_cucuta_2026/dane_portada.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:49:09 (hora de Bogotá, UTC−5).
 
 **Advertencias**
 
@@ -95,8 +174,69 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 
 **Constancia**
 
-![Nota 2a – vista de datos del dataset con las columnas de arma y modalidad](capturas_cucuta_2026/nota02_a.png)
-![Nota 2b – consultas API agrupadas en vivo](capturas_cucuta_2026/nota02_b.png)
+![Constancia 2.1. Homicidios en Cúcuta, 7-ago a 30-sep, por año y arma o medio](capturas_cucuta_2026/nota02_01.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:43:13 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60arma_medio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60arma_medio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `arma_medio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `arma_medio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","arma_medio":"ARMA DE FUEGO","total":"50"},{"anio":"2025","arma_medio":"ARMA BLANCA / CORTOPUNZANTE","total":"6"},{"anio":"2025","arma_medio":"CONTUNDENTES","total":"3"},{"anio":"2026","arma_medio":"ARMA DE FUEGO","total":"41"},{"anio":"2026","arma_medio":"ARMA BLANCA / CORTOPUNZANTE","total":"6"},{"anio":"2026","arma_medio":"CONTUNDENTES","total":"1"},{"anio":"2026","arma_medio":"ARTEFACTO EXPLOSIVO/CARGA DINAMITA","total":"1"}]
+```
+
+![Constancia 2.2. Homicidios en Cúcuta, 7-ago a 30-sep, por año y modalidad presunta](capturas_cucuta_2026/nota02_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:43:29 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60_modalidad_presunta%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60_modalidad_presunta%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `_modalidad_presunta`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `_modalidad_presunta` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","_modalidad_presunta":"SICARIATO","total":"49"},{"anio":"2025","_modalidad_presunta":"RIÑAS","total":"5"},{"anio":"2025","_modalidad_presunta":"ATRACO","total":"2"},{"anio":"2025","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","total":"2"},{"anio":"2025","_modalidad_presunta":"SIGNOS DE VIOLENCIA FÍSICA (TORTURA)","total":"1"},{"anio":"2026","_modalidad_presunta":"SICARIATO","total":"35"},{"anio":"2026","_modalidad_presunta":"RIÑAS","total":"6"},{"anio":"2026","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","total":"5"},{"anio":"2026","_modalidad_presunta":"POR ESTABLECER","total":"1"},{"anio":"2026","_modalidad_presunta":"VIOLENCIA INTRAFAMILIAR","total":"1"},{"anio":"2026","_modalidad_presunta":"TERRORISMO","total":"1"}]
+```
+
+![Constancia 2.3. Homicidios en Cúcuta, 7-ago a 30-sep, por año y caracterización SPOA (feminicidio)](capturas_cucuta_2026/nota02_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:43:44 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60spoa_caracterizacion%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60spoa_caracterizacion%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `spoa_caracterizacion`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `spoa_caracterizacion` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","spoa_caracterizacion":"HOMICIDIO INTENCIONAL O CON DOLO","total":"59"},{"anio":"2026","spoa_caracterizacion":"HOMICIDIO INTENCIONAL O CON DOLO","total":"48"},{"anio":"2026","spoa_caracterizacion":"FEMINICIDIO","total":"1"}]
+```
+
+![Constancia 2.4. Homicidios en Cúcuta, 7-ago a 30-sep, por año, sexo y zona](capturas_cucuta_2026/nota02_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:43:58 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60sexo%60%2C%0A%20%20%60zona%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60sexo%60%2C%20%60zona%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `sexo`, `zona`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `sexo`, `zona` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","sexo":"MASCULINO","zona":"URBANA","total":"53"},{"anio":"2025","sexo":"FEMENINO","zona":"URBANA","total":"3"},{"anio":"2025","sexo":"MASCULINO","zona":"RURAL","total":"2"},{"anio":"2025","sexo":"FEMENINO","zona":"RURAL","total":"1"},{"anio":"2026","sexo":"MASCULINO","zona":"URBANA","total":"38"},{"anio":"2026","sexo":"FEMENINO","zona":"URBANA","total":"6"},{"anio":"2026","sexo":"MASCULINO","zona":"RURAL","total":"5"}]
+```
 
 **Advertencias**
 
@@ -132,8 +272,117 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 
 **Constancia**
 
-![Nota 3a – registros individuales de la API](capturas_cucuta_2026/nota03_a.png)
-![Nota 3b – conteos agregados en vivo](capturas_cucuta_2026/nota03_b.png)
+![Constancia 3.1. Registros individuales: homicidios «atacados por GAO o GAO-R» en Cúcuta, 7-ago a 30-sep-2026](capturas_cucuta_2026/nota03_01.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:44:14 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20%60fecha_hecho%60%2C%0A%20%20%60municipio%60%2C%0A%20%20%60zona%60%2C%0A%20%20%60sexo%60%2C%0A%20%20%60arma_medio%60%2C%0A%20%20%60_modalidad_presunta%60%2C%0A%20%20%60cantidad%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%0AORDER%20BY%20%60fecha_hecho%60%20ASC%20NULL%20LAST/page/filter).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `fecha_hecho`, `municipio`, `zona`, `sexo`, `arma_medio`, `_modalidad_presunta`, `cantidad` WHERE `cod_muni`='54001' AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59') ORDER BY `fecha_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"fecha_hecho":"2026-08-10T00:00:00.000","municipio":"CUCUTA","zona":"RURAL","sexo":"MASCULINO","arma_medio":"ARMA DE FUEGO","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","cantidad":"1"},{"fecha_hecho":"2026-08-19T00:00:00.000","municipio":"CUCUTA","zona":"URBANA","sexo":"MASCULINO","arma_medio":"ARMA DE FUEGO","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","cantidad":"1"},{"fecha_hecho":"2026-08-29T00:00:00.000","municipio":"CUCUTA","zona":"RURAL","sexo":"MASCULINO","arma_medio":"ARMA DE FUEGO","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","cantidad":"1"},{"fecha_hecho":"2026-08-29T00:00:00.000","municipio":"CUCUTA","zona":"RURAL","sexo":"MASCULINO","arma_medio":"ARMA DE FUEGO","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","cantidad":"1"},{"fecha_hecho":"2026-08-30T00:00:00.000","municipio":"CUCUTA","zona":"RURAL","sexo":"MASCULINO","arma_medio":"ARMA DE FUEGO","_modalidad_presunta":"ATACADOS POR GAO O GAO-R","cantidad":"1"}]
+```
+
+![Constancia 3.2. Homicidios «atacados por GAO» en Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota03_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:44:31 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"2"},{"anio":"2026","total":"5"}]
+```
+
+![Constancia 3.3. Homicidios «atacados por GAO» en Cúcuta, enero a septiembre, por año y mes](capturas_cucuta_2026/nota03_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:44:47 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, date_extract_m(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND ((`fecha_hecho` BETWEEN '2025-01-01T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-01-01T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `mes` ORDER BY `anio`, `mes`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","mes":"1","total":"2"},{"anio":"2025","mes":"2","total":"1"},{"anio":"2025","mes":"3","total":"1"},{"anio":"2025","mes":"5","total":"2"},{"anio":"2025","mes":"8","total":"1"},{"anio":"2025","mes":"9","total":"1"},{"anio":"2026","mes":"1","total":"2"},{"anio":"2026","mes":"2","total":"5"},{"anio":"2026","mes":"3","total":"3"},{"anio":"2026","mes":"4","total":"9"},{"anio":"2026","mes":"5","total":"2"},{"anio":"2026","mes":"6","total":"8"},{"anio":"2026","mes":"7","total":"4"},{"anio":"2026","mes":"8","total":"5"}]
+```
+
+![Constancia 3.4. Homicidios en zona rural de Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota03_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 17:00:08 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60zona%60%20%3D%20%22RURAL%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `zona`='RURAL' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"3"},{"anio":"2026","total":"5"}]
+```
+
+![Constancia 3.5. Homicidios en zona rural de Cúcuta, enero a septiembre, por año](capturas_cucuta_2026/nota03_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:45:28 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60zona%60%20%3D%20%22RURAL%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `zona`='RURAL' AND ((`fecha_hecho` BETWEEN '2025-01-01T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-01-01T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"9"},{"anio":"2026","total":"37"}]
+```
+
+![Constancia 3.6. Homicidios «atacados por GAO», área metropolitana, 7-ago a 30-sep, por año y municipio](capturas_cucuta_2026/nota03_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:45:43 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"CUCUTA","total":"2"},{"anio":"2025","municipio":"EL ZULIA","total":"1"},{"anio":"2026","municipio":"CUCUTA","total":"5"},{"anio":"2026","municipio":"EL ZULIA","total":"2"}]
+```
+
+![Constancia 3.7. Homicidios «atacados por GAO», Norte de Santander, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota03_07.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:45:54 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_depto%60%20%3D%20%2254%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_depto`='54' AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"8"},{"anio":"2026","total":"33"}]
+```
 
 **Advertencias**
 
@@ -176,8 +425,109 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 
 **Constancia**
 
-![Nota 4a – población oficial DANE de los 6 municipios](capturas_cucuta_2026/nota04_a.png)
-![Nota 4b – consultas API por municipio en vivo](capturas_cucuta_2026/nota04_b.png)
+![Constancia 4.1. Homicidios por municipio del área metropolitana, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota04_01.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 17:00:22 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"CUCUTA","total":"59"},{"anio":"2025","municipio":"EL ZULIA","total":"8"},{"anio":"2025","municipio":"VILLA DEL ROSARIO","total":"3"},{"anio":"2025","municipio":"PUERTO SANTANDER","total":"1"},{"anio":"2025","municipio":"LOS PATIOS","total":"1"},{"anio":"2026","municipio":"CUCUTA","total":"49"},{"anio":"2026","municipio":"EL ZULIA","total":"5"},{"anio":"2026","municipio":"LOS PATIOS","total":"4"},{"anio":"2026","municipio":"VILLA DEL ROSARIO","total":"2"}]
+```
+
+![Constancia 4.2. Homicidios por municipio del área metropolitana, enero a septiembre, por año](capturas_cucuta_2026/nota04_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:46:36 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND ((`fecha_hecho` BETWEEN '2025-01-01T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-01-01T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"CUCUTA","total":"246"},{"anio":"2025","municipio":"EL ZULIA","total":"25"},{"anio":"2025","municipio":"VILLA DEL ROSARIO","total":"25"},{"anio":"2025","municipio":"LOS PATIOS","total":"9"},{"anio":"2025","municipio":"SAN CAYETANO","total":"5"},{"anio":"2025","municipio":"PUERTO SANTANDER","total":"4"},{"anio":"2026","municipio":"CUCUTA","total":"212"},{"anio":"2026","municipio":"VILLA DEL ROSARIO","total":"31"},{"anio":"2026","municipio":"EL ZULIA","total":"23"},{"anio":"2026","municipio":"LOS PATIOS","total":"19"},{"anio":"2026","municipio":"PUERTO SANTANDER","total":"6"},{"anio":"2026","municipio":"SAN CAYETANO","total":"3"}]
+```
+
+![Constancia 4.3. Homicidios en Norte de Santander, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota04_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:46:56 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_depto%60%20%3D%20%2254%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_depto`='54' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"99"},{"anio":"2026","total":"104"}]
+```
+
+![Constancia 4.4. Ficha oficial del dataset TERRORISMO (MinDefensa)](capturas_cucuta_2026/nota04_04.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/about_data. Capturada el 16/11/2026, 16:47:07 (hora de Bogotá, UTC−5).
+
+![Constancia 4.5. Terrorismo por municipio del área metropolitana, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota04_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `yi5j-5fe9`. Capturada el 16/11/2026, 16:47:14 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"CUCUTA","total":"9"},{"anio":"2025","municipio":"SAN CAYETANO","total":"1"},{"anio":"2025","municipio":"VILLA DEL ROSARIO","total":"1"},{"anio":"2025","municipio":"EL ZULIA","total":"1"},{"anio":"2026","municipio":"LOS PATIOS","total":"3"},{"anio":"2026","municipio":"PUERTO SANTANDER","total":"1"},{"anio":"2026","municipio":"CUCUTA","total":"1"},{"anio":"2026","municipio":"EL ZULIA","total":"1"}]
+```
+
+![Constancia 4.6. Ficha oficial del dataset de afectación a miembros de la Fuerza Pública (MinDefensa)](capturas_cucuta_2026/nota04_06.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/AFECTACI-N-DE-MIEMBROS-DE-LA-FUERZA-P-BLICA/8rpn-wpty/about_data. Capturada el 16/11/2026, 16:47:27 (hora de Bogotá, UTC−5).
+
+![Constancia 4.7. Afectación a miembros de la Fuerza Pública, área metropolitana, 7-ago a 30-sep, por año, municipio y acción](capturas_cucuta_2026/nota04_07.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `8rpn-wpty`. Capturada el 16/11/2026, 16:47:39 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/AFECTACI-N-DE-MIEMBROS-DE-LA-FUERZA-P-BLICA/8rpn-wpty/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20%60accion%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%2C%20%60accion%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60municipio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, `accion`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio`, `accion` ORDER BY `anio`, `municipio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"VILLA DEL ROSARIO","accion":"HERIDO","total":"1"},{"anio":"2026","municipio":"LOS PATIOS","accion":"HERIDO","total":"7"}]
+```
+
+![Constancia 4.8. Archivo oficial DANE, hoja PobMunicipalxÁrea: El Zulia, Los Patios, Puerto Santander y San Cayetano 2025](capturas_cucuta_2026/nota04_08.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:49:37 (hora de Bogotá, UTC−5).
+
+![Constancia 4.9. Archivo oficial DANE, hoja PobMunicipalxÁrea: Villa del Rosario 2025](capturas_cucuta_2026/nota04_09.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:49:44 (hora de Bogotá, UTC−5).
+
+![Constancia 4.10. Archivo oficial DANE, hoja PobMunicipalxÁrea: El Zulia, Los Patios, Puerto Santander y San Cayetano 2026](capturas_cucuta_2026/nota04_10.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:49:52 (hora de Bogotá, UTC−5).
+
+![Constancia 4.11. Archivo oficial DANE, hoja PobMunicipalxÁrea: Villa del Rosario 2026](capturas_cucuta_2026/nota04_11.png)
+
+Captura de pantalla completa, sin edición, del archivo oficial del DANE descargado de https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx y abierto sin modificaciones en LibreOffice Calc. Capturada el 16/11/2026, 16:50:00 (hora de Bogotá, UTC−5).
 
 **Advertencias**
 
@@ -215,9 +565,101 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 
 **Constancia**
 
-![Nota 5a – ficha oficial HURTO PERSONAS](capturas_cucuta_2026/nota05_a.png)
-![Nota 5b – consultas API en vivo](capturas_cucuta_2026/nota05_b.png)
-![Nota 5c – ficha oficial HURTO A VEHÍCULOS](capturas_cucuta_2026/nota05_c.png)
+![Constancia 5.1. Ficha oficial del dataset de hurto a personas (MinDefensa)](capturas_cucuta_2026/nota05_01.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-PERSONAS/4rxi-8m8d/about_data. Capturada el 16/11/2026, 16:47:53 (hora de Bogotá, UTC−5).
+
+![Constancia 5.2. Casos de hurto a personas en Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota05_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `4rxi-8m8d`. Capturada el 16/11/2026, 16:48:02 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-PERSONAS/4rxi-8m8d/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"333"},{"anio":"2026","total":"563"}]
+```
+
+![Constancia 5.3. Ficha oficial del dataset de hurto a comercio (MinDefensa)](capturas_cucuta_2026/nota05_03.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/dataset/HURTO-A-COMERCIO/7i2x-h5vp/about_data. Capturada el 16/11/2026, 16:48:16 (hora de Bogotá, UTC−5).
+
+![Constancia 5.4. Casos de hurto a comercio en Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota05_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `7i2x-h5vp`. Capturada el 16/11/2026, 16:48:29 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/dataset/HURTO-A-COMERCIO/7i2x-h5vp/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"38"},{"anio":"2026","total":"40"}]
+```
+
+![Constancia 5.5. Ficha oficial del dataset de hurto a residencias (MinDefensa)](capturas_cucuta_2026/nota05_05.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-RESIDENCIAS/7mn7-vzqp/about_data. Capturada el 16/11/2026, 16:48:42 (hora de Bogotá, UTC−5).
+
+![Constancia 5.6. Casos de hurto a residencias en Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota05_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `7mn7-vzqp`. Capturada el 16/11/2026, 16:48:51 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-RESIDENCIAS/7mn7-vzqp/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"40"},{"anio":"2026","total":"45"}]
+```
+
+![Constancia 5.7. Ficha oficial del dataset de hurto a vehículos (MinDefensa)](capturas_cucuta_2026/nota05_07.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-VEH-CULOS/csb4-y6v2/about_data. Capturada el 16/11/2026, 16:49:01 (hora de Bogotá, UTC−5).
+
+![Constancia 5.8. Hurto a vehículos en Cúcuta, 7-ago a 30-sep, por año y tipo](capturas_cucuta_2026/nota05_08.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `csb4-y6v2`. Capturada el 16/11/2026, 16:49:08 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-VEH-CULOS/csb4-y6v2/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60tipo_delito%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60tipo_delito%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `tipo_delito`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `tipo_delito` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","tipo_delito":"ARTICULO 239. HURTO MOTOCICLETAS","total":"85"},{"anio":"2025","tipo_delito":"ARTICULO 239. HURTO AUTOMOTORES","total":"13"},{"anio":"2026","tipo_delito":"ARTICULO 239. HURTO MOTOCICLETAS","total":"182"},{"anio":"2026","tipo_delito":"ARTICULO 239. HURTO AUTOMOTORES","total":"6"}]
+```
+
+![Constancia 5.9. Hurto a personas en Cúcuta por mes, enero 2025 a septiembre 2026](capturas_cucuta_2026/nota05_09.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `4rxi-8m8d`. Capturada el 16/11/2026, 16:49:22 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-PERSONAS/4rxi-8m8d/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, date_extract_m(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `fecha_hecho` BETWEEN '2025-01-01T00:00:00' AND '2026-09-30T23:59:59' GROUP BY `anio`, `mes` ORDER BY `anio`, `mes`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","mes":"1","total":"215"},{"anio":"2025","mes":"2","total":"215"},{"anio":"2025","mes":"3","total":"202"},{"anio":"2025","mes":"4","total":"209"},{"anio":"2025","mes":"5","total":"215"},{"anio":"2025","mes":"6","total":"162"},{"anio":"2025","mes":"7","total":"170"},{"anio":"2025","mes":"8","total":"192"},{"anio":"2025","mes":"9","total":"190"},{"anio":"2025","mes":"10","total":"194"},{"anio":"2025","mes":"11","total":"94"},{"anio":"2025","mes":"12","total":"125"},{"anio":"2026","mes":"1","total":"142"},{"anio":"2026","mes":"2","total":"143"},{"anio":"2026","mes":"3","total":"167"},{"anio":"2026","mes":"4","total":"128"},{"anio":"2026","mes":"5","total":"185"},{"anio":"2026","mes":"6","total":"318"},{"anio":"2026","mes":"7","total":"397"},{"anio":"2026","mes":"8","total":"327"},{"anio":"2026","mes":"9","total":"329"}]
+```
 
 **Advertencias**
 
@@ -256,9 +698,93 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 
 **Constancia**
 
-![Nota 6a – ficha oficial EXTORSIÓN](capturas_cucuta_2026/nota06_a.png)
-![Nota 6b – consultas API en vivo (MinDefensa y SPOA)](capturas_cucuta_2026/nota06_b.png)
-![Nota 6c – ficha oficial Procesos Fiscalía V3](capturas_cucuta_2026/nota06_c.png)
+![Constancia 6.1. Ficha oficial del dataset EXTORSIÓN (MinDefensa)](capturas_cucuta_2026/nota06_01.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSI-N/q2ib-t9am/about_data. Capturada el 16/11/2026, 16:49:36 (hora de Bogotá, UTC−5).
+
+![Constancia 6.2. Extorsión en Cúcuta (MinDefensa), 7-ago a 30-sep, por año](capturas_cucuta_2026/nota06_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `q2ib-t9am`. Capturada el 16/11/2026, 16:49:47 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSI-N/q2ib-t9am/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"36"},{"anio":"2026","total":"21"}]
+```
+
+![Constancia 6.3. Ficha oficial del dataset SECUESTRO (MinDefensa)](capturas_cucuta_2026/nota06_03.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/SECUESTRO/d7zw-hpf4/about_data. Capturada el 16/11/2026, 16:50:00 (hora de Bogotá, UTC−5).
+
+![Constancia 6.4. Secuestro en Cúcuta (MinDefensa), 7-ago a 30-sep, por año](capturas_cucuta_2026/nota06_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `d7zw-hpf4`. Capturada el 16/11/2026, 16:50:11 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/SECUESTRO/d7zw-hpf4/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+La consulta no devuelve filas: no hay registros en ninguno de los dos periodos, es decir, 0 casos en 2025 y 0 en 2026.
+
+![Constancia 6.5. Ficha oficial del dataset Procesos Fiscalía V3 (SPOA)](capturas_cucuta_2026/nota06_05.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/about_data. Capturada el 16/11/2026, 16:50:24 (hora de Bogotá, UTC−5).
+
+![Constancia 6.6. Extorsión en Fiscalía (SPOA), hechos ago-oct, por año, con mismo rezago de registro](capturas_cucuta_2026/nota06_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:50:37 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25EXTORSI%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%EXTORSI%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"54"},{"a_o_hecho":"2026","n":"51"}]
+```
+
+![Constancia 6.7. Extorsión en Fiscalía (SPOA), hechos ago-oct, por año, sin control de rezago](capturas_cucuta_2026/nota06_07.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:50:54 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25EXTORSI%25%22%0A%20%20AND%20%60a_o_hecho%60%20IN%20%28%222025%22%2C%20%222026%22%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%EXTORSI%' AND `a_o_hecho` IN ('2025','2026') GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"69"},{"a_o_hecho":"2026","n":"51"}]
+```
+
+![Constancia 6.8. Secuestro en Fiscalía (SPOA), hechos ago-oct, por año, con mismo rezago](capturas_cucuta_2026/nota06_08.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:51:10 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25SECUESTRO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%SECUESTRO%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"3"},{"a_o_hecho":"2026","n":"4"}]
+```
 
 **Advertencias**
 
@@ -299,8 +825,129 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 
 **Constancia**
 
-![Nota 7a – ficha oficial VIOLENCIA INTRAFAMILIAR](capturas_cucuta_2026/nota07_a.png)
-![Nota 7b – consultas API en vivo (MinDefensa y SPOA, con serie mensual de VIF)](capturas_cucuta_2026/nota07_b.png)
+![Constancia 7.1. Ficha oficial del dataset de violencia intrafamiliar (MinDefensa)](capturas_cucuta_2026/nota07_01.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/VIOLENCIA-INTRAFAMILIAR/gepp-dxcs/about_data. Capturada el 16/11/2026, 16:51:26 (hora de Bogotá, UTC−5).
+
+![Constancia 7.2. Violencia intrafamiliar en Cúcuta (MinDefensa), 7-ago a 30-sep, por año](capturas_cucuta_2026/nota07_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `gepp-dxcs`. Capturada el 16/11/2026, 16:51:38 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/VIOLENCIA-INTRAFAMILIAR/gepp-dxcs/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"244"},{"anio":"2026","total":"378"}]
+```
+
+![Constancia 7.3. Ficha oficial del dataset de lesiones personales (MinDefensa)](capturas_cucuta_2026/nota07_03.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/dataset/LESIONES-PERSONALES/jr6v-i33g/about_data. Capturada el 16/11/2026, 16:51:55 (hora de Bogotá, UTC−5).
+
+![Constancia 7.4. Lesiones personales en Cúcuta (MinDefensa), 7-ago a 30-sep, por año](capturas_cucuta_2026/nota07_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `jr6v-i33g`. Capturada el 16/11/2026, 16:52:04 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/dataset/LESIONES-PERSONALES/jr6v-i33g/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"154"},{"anio":"2026","total":"235"}]
+```
+
+![Constancia 7.5. Ficha oficial del dataset de delitos sexuales (MinDefensa)](capturas_cucuta_2026/nota07_05.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://www.datos.gov.co/Seguridad-y-Defensa/DELITOS-SEXUALES/bz43-8ahq/about_data. Capturada el 16/11/2026, 16:52:17 (hora de Bogotá, UTC−5).
+
+![Constancia 7.6. Delitos sexuales en Cúcuta (MinDefensa), 7-ago a 30-sep, por año](capturas_cucuta_2026/nota07_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `bz43-8ahq`. Capturada el 16/11/2026, 16:52:27 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/DELITOS-SEXUALES/bz43-8ahq/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"70"},{"anio":"2026","total":"80"}]
+```
+
+![Constancia 7.7. Violencia intrafamiliar en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota07_07.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:52:44 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25VIOLENCIA%20INTRAFAMILIAR%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%VIOLENCIA INTRAFAMILIAR%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"705"},{"a_o_hecho":"2026","n":"611"}]
+```
+
+![Constancia 7.8. Lesiones dolosas en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota07_08.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:53:01 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60capitulo_delito%60%29%20LIKE%20%22%25LESIONES%25%22%0A%20%20AND%20upper%28%60delito%60%29%20NOT%20LIKE%20%22%25CULPOS%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`capitulo_delito`) LIKE '%LESIONES%' AND upper(`delito`) NOT LIKE '%CULPOS%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"306"},{"a_o_hecho":"2026","n":"337"}]
+```
+
+![Constancia 7.9. Delitos sexuales en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota07_09.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:53:21 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20%28upper%28%60titulo_delito%60%29%20LIKE%20%22%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACION%20SEXUAL%25%22%0A%20%20%20%20%20%20%20%20%20OR%20upper%28%60titulo_delito%60%29%20LIKE%20%22%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACI%C3%93N%20SEXUAL%25%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND (upper(`titulo_delito`) LIKE '%LIBERTAD, INTEGRIDAD Y FORMACION SEXUAL%' OR upper(`titulo_delito`) LIKE '%LIBERTAD, INTEGRIDAD Y FORMACIÓN SEXUAL%') AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"93"},{"a_o_hecho":"2026","n":"139"}]
+```
+
+![Constancia 7.10. Violencia intrafamiliar en Cúcuta (MinDefensa) por mes, enero 2025 a septiembre 2026](capturas_cucuta_2026/nota07_10.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `gepp-dxcs`. Capturada el 16/11/2026, 16:53:36 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/VIOLENCIA-INTRAFAMILIAR/gepp-dxcs/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, date_extract_m(`fecha_hecho`) AS `mes`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `fecha_hecho` BETWEEN '2025-01-01T00:00:00' AND '2026-09-30T23:59:59' GROUP BY `anio`, `mes` ORDER BY `anio`, `mes`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","mes":"1","total":"41"},{"anio":"2025","mes":"2","total":"55"},{"anio":"2025","mes":"3","total":"61"},{"anio":"2025","mes":"4","total":"59"},{"anio":"2025","mes":"5","total":"64"},{"anio":"2025","mes":"6","total":"76"},{"anio":"2025","mes":"7","total":"135"},{"anio":"2025","mes":"8","total":"134"},{"anio":"2025","mes":"9","total":"135"},{"anio":"2025","mes":"10","total":"138"},{"anio":"2025","mes":"11","total":"157"},{"anio":"2025","mes":"12","total":"107"},{"anio":"2026","mes":"1","total":"149"},{"anio":"2026","mes":"2","total":"126"},{"anio":"2026","mes":"3","total":"139"},{"anio":"2026","mes":"4","total":"131"},{"anio":"2026","mes":"5","total":"226"},{"anio":"2026","mes":"6","total":"238"},{"anio":"2026","mes":"7","total":"240"},{"anio":"2026","mes":"8","total":"225"},{"anio":"2026","mes":"9","total":"200"}]
+```
 
 **Advertencias**
 
@@ -344,8 +991,101 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 
 **Constancia**
 
-![Nota 8a – ficha oficial Procesos Fiscalía V3](capturas_cucuta_2026/nota08_a.png)
-![Nota 8b – consultas API en vivo](capturas_cucuta_2026/nota08_b.png)
+![Constancia 8.1. Total de noticias criminales en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota08_01.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:53:53 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20%60a_o_hecho%60%20IS%20NOT%20NULL%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND `a_o_hecho` IS NOT NULL AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"5832"},{"a_o_hecho":"2026","n":"6058"}]
+```
+
+![Constancia 8.2. Etapa y estado de los procesos de hechos ago-oct 2026 (SPOA)](capturas_cucuta_2026/nota08_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:54:08 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60etapa%60%2C%20%60estado%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0AGROUP%20BY%20%60etapa%60%2C%20%60estado%60%0AORDER%20BY%20%60n%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `etapa`, `estado`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `a_o_hecho`='2026' AND `mes_hecho` IN ('08','09','10') GROUP BY `etapa`, `estado` ORDER BY `n` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"etapa":"Indagación","estado":"Activo","n":"4810"},{"etapa":"Indagación","estado":"Inactivo","n":"1036"},{"etapa":"Investigación","estado":"Activo","n":"109"},{"etapa":"Juicio","estado":"Activo","n":"90"},{"etapa":"Ejecución De Penas","estado":"Inactivo","n":"10"},{"etapa":"Juicio","estado":"Inactivo","n":"2"},{"etapa":"Investigación","estado":"Inactivo","n":"1"}]
+```
+
+![Constancia 8.3. Hurto en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota08_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:54:24 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25HURTO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%HURTO%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"1313"},{"a_o_hecho":"2026","n":"1689"}]
+```
+
+![Constancia 8.4. Amenazas en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota08_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:54:41 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22AMENAZAS%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'AMENAZAS%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"310"},{"a_o_hecho":"2026","n":"284"}]
+```
+
+![Constancia 8.5. Homicidio doloso consumado en Fiscalía (SPOA), por año y mes del hecho, mismo rezago](capturas_cucuta_2026/nota08_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:55:14 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20%60mes_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22HOMICIDIO%25%22%0A%20%20AND%20upper%28%60delito%60%29%20NOT%20LIKE%20%22%25CULPOS%25%22%0A%20%20AND%20%60grado_delito%60%20IN%20%28%22Ninguno%22%2C%20%22Agravado%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%2C%20%60mes_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST%2C%20%60mes_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, `mes_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'HOMICIDIO%' AND upper(`delito`) NOT LIKE '%CULPOS%' AND `grado_delito` IN ('Ninguno','Agravado') AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho`, `mes_hecho` ORDER BY `a_o_hecho`, `mes_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","mes_hecho":"08","n":"51"},{"a_o_hecho":"2025","mes_hecho":"09","n":"26"},{"a_o_hecho":"2025","mes_hecho":"10","n":"29"},{"a_o_hecho":"2026","mes_hecho":"08","n":"21"},{"a_o_hecho":"2026","mes_hecho":"09","n":"24"},{"a_o_hecho":"2026","mes_hecho":"10","n":"22"}]
+```
+
+![Constancia 8.6. Fecha de corte declarada en el dataset para los hechos de ago-oct 2026](capturas_cucuta_2026/nota08_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:56:24 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60fecha_corte_datos%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0AGROUP%20BY%20%60fecha_corte_datos%60/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `fecha_corte_datos`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `a_o_hecho`='2026' AND `mes_hecho` IN ('08','09','10') GROUP BY `fecha_corte_datos`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"fecha_corte_datos":"31/10/2026","n":"6058"}]
+```
 
 **Advertencias**
 
@@ -393,8 +1133,149 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 
 **Constancia**
 
-![Nota 9a – vista de datos del dataset Procesos Fiscalía V3](capturas_cucuta_2026/nota09_a.png)
-![Nota 9b – consultas API en vivo](capturas_cucuta_2026/nota09_b.png)
+![Constancia 9.1. Estupefacientes en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_01.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:56:46 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25ESTUPEFACIENTES%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%ESTUPEFACIENTES%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"253"},{"a_o_hecho":"2026","n":"294"}]
+```
+
+![Constancia 9.2. Armas de fuego en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:57:01 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20%28upper%28%60delito%60%29%20LIKE%20%22%25ARMAS%20DE%20FUEGO%25%22%0A%20%20%20%20%20%20%20%20%20OR%20upper%28%60delito%60%29%20LIKE%20%22%25USO%20PRIVATIVO%25%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND (upper(`delito`) LIKE '%ARMAS DE FUEGO%' OR upper(`delito`) LIKE '%USO PRIVATIVO%') AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"127"},{"a_o_hecho":"2026","n":"104"}]
+```
+
+![Constancia 9.3. Constreñimiento ilegal en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:57:17 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22CONSTRE%C3%91IMIENTO%20ILEGAL%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'CONSTREÑIMIENTO ILEGAL%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"236"},{"a_o_hecho":"2026","n":"194"}]
+```
+
+![Constancia 9.4. Desplazamiento forzado en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:57:30 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22DESPLAZAMIENTO%20FORZADO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'DESPLAZAMIENTO FORZADO%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"15"},{"a_o_hecho":"2026","n":"15"}]
+```
+
+![Constancia 9.5. Concierto para delinquir en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:57:46 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22CONCIERTO%20PARA%20DELINQUIR%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'CONCIERTO PARA DELINQUIR%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"1"},{"a_o_hecho":"2026","n":"5"}]
+```
+
+![Constancia 9.6. Trata de personas en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:58:03 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22TRATA%20DE%20PERSONAS%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'TRATA DE PERSONAS%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"7"},{"a_o_hecho":"2026","n":"5"}]
+```
+
+![Constancia 9.7. Desaparición forzada en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_07.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:58:17 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22DESAPARICION%20FORZADA%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'DESAPARICION FORZADA%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"5"},{"a_o_hecho":"2026","n":"2"}]
+```
+
+![Constancia 9.8. Terrorismo en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_08.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:58:34 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25TERRORISMO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE '%TERRORISMO%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"12"},{"a_o_hecho":"2026","n":"8"}]
+```
+
+![Constancia 9.9. Uso de menores en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_09.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:58:49 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22USO%20DE%20MENORES%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'USO DE MENORES%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"1"},{"a_o_hecho":"2026","n":"1"}]
+```
 
 **Advertencias**
 
@@ -442,11 +1323,131 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 
 **Constancia**
 
-![Nota 10a – Informe de Seguimiento 026-2026 de la Defensoría (portada y págs. 8–9)](capturas_cucuta_2026/nota10_a.png)
-![Nota 10b – consultas API en vivo de los indicadores del periodo](capturas_cucuta_2026/nota10_b.png)
-![Nota 10c – comunicado oficial de la Defensoría sobre la AT 027-24 para Cúcuta](capturas_cucuta_2026/nota10_c.png)
+![Constancia 10.1. Informe de Seguimiento 026-2026 de la Defensoría del Pueblo a la AT 027-24 (Cúcuta y área metropolitana), portada](capturas_cucuta_2026/nota10_01.png)
 
-*La captura `nota10_d` (comunicado de la Fiscalía) falló: fiscalia.gov.co respondió HTTP 502.*
+Captura de pantalla completa del navegador, sin edición. URL: https://alertasstg.blob.core.windows.net/informes/302.pdf. Capturada el 16/11/2026, 16:59:05 (hora de Bogotá, UTC−5).
+
+![Constancia 10.2. Informe de Seguimiento 026-2026, página 8 (actores armados)](capturas_cucuta_2026/nota10_02.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://alertasstg.blob.core.windows.net/informes/302.pdf#page=8. Capturada el 16/11/2026, 17:00:39 (hora de Bogotá, UTC−5).
+
+![Constancia 10.3. Terrorismo en Cúcuta (MinDefensa), 7-ago a 30-sep, por año](capturas_cucuta_2026/nota10_03.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `yi5j-5fe9`. Capturada el 16/11/2026, 16:59:23 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"9"},{"anio":"2026","total":"1"}]
+```
+
+![Constancia 10.4. Informe de Seguimiento 026-2026, página 9 (actores armados, continuación)](capturas_cucuta_2026/nota10_04.png)
+
+Captura de pantalla completa del navegador, sin edición. URL: https://alertasstg.blob.core.windows.net/informes/302.pdf#page=9. Capturada el 16/11/2026, 17:00:50 (hora de Bogotá, UTC−5).
+
+Los indicadores de la tabla de esta nota también constan en las siguientes capturas de las notas 3, 4 y 9, reproducidas aquí:
+
+![Constancia 10.5. Homicidios «atacados por GAO» en Cúcuta, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota03_02.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:44:31 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, sum(`cantidad`) AS `total` WHERE `cod_muni`='54001' AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio` ORDER BY `anio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","total":"2"},{"anio":"2026","total":"5"}]
+```
+
+![Constancia 10.6. Homicidios «atacados por GAO», área metropolitana, 7-ago a 30-sep, por año y municipio](capturas_cucuta_2026/nota03_06.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `m8fd-ahd9`. Capturada el 16/11/2026, 16:45:43 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND `_modalidad_presunta`='ATACADOS POR GAO O GAO-R' AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"CUCUTA","total":"2"},{"anio":"2025","municipio":"EL ZULIA","total":"1"},{"anio":"2026","municipio":"CUCUTA","total":"5"},{"anio":"2026","municipio":"EL ZULIA","total":"2"}]
+```
+
+![Constancia 10.7. Terrorismo por municipio del área metropolitana, 7-ago a 30-sep, por año](capturas_cucuta_2026/nota04_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `yi5j-5fe9`. Capturada el 16/11/2026, 16:47:14 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio` ORDER BY `anio`, `total` DESC
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"CUCUTA","total":"9"},{"anio":"2025","municipio":"SAN CAYETANO","total":"1"},{"anio":"2025","municipio":"VILLA DEL ROSARIO","total":"1"},{"anio":"2025","municipio":"EL ZULIA","total":"1"},{"anio":"2026","municipio":"LOS PATIOS","total":"3"},{"anio":"2026","municipio":"PUERTO SANTANDER","total":"1"},{"anio":"2026","municipio":"CUCUTA","total":"1"},{"anio":"2026","municipio":"EL ZULIA","total":"1"}]
+```
+
+![Constancia 10.8. Afectación a miembros de la Fuerza Pública, área metropolitana, 7-ago a 30-sep, por año, municipio y acción](capturas_cucuta_2026/nota04_07.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `8rpn-wpty`. Capturada el 16/11/2026, 16:47:39 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Seguridad-y-Defensa/AFECTACI-N-DE-MIEMBROS-DE-LA-FUERZA-P-BLICA/8rpn-wpty/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20%60accion%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%2C%20%60accion%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60municipio%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT date_extract_y(`fecha_hecho`)::text AS `anio`, `municipio`, `accion`, sum(`cantidad`) AS `total` WHERE `cod_muni` IN ('54001','54874','54405','54261','54673','54553') AND ((`fecha_hecho` BETWEEN '2025-08-07T00:00:00' AND '2025-09-30T23:59:59') OR (`fecha_hecho` BETWEEN '2026-08-07T00:00:00' AND '2026-09-30T23:59:59')) GROUP BY `anio`, `municipio`, `accion` ORDER BY `anio`, `municipio`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"anio":"2025","municipio":"VILLA DEL ROSARIO","accion":"HERIDO","total":"1"},{"anio":"2026","municipio":"LOS PATIOS","accion":"HERIDO","total":"7"}]
+```
+
+![Constancia 10.9. Concierto para delinquir en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_05.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:57:46 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22CONCIERTO%20PARA%20DELINQUIR%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'CONCIERTO PARA DELINQUIR%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"1"},{"a_o_hecho":"2026","n":"5"}]
+```
+
+![Constancia 10.10. Desplazamiento forzado en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago](capturas_cucuta_2026/nota09_04.png)
+
+Captura de pantalla completa del navegador, sin edición: interfaz oficial de consultas del Portal Nacional de Datos Abiertos (datos.gov.co), dataset `dbdv-iihs`. Capturada el 16/11/2026, 16:57:30 (hora de Bogotá, UTC−5). [Abrir esta misma consulta en datos.gov.co](https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22DESPLAZAMIENTO%20FORZADO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate).
+
+Consulta ejecutada (SoQL):
+
+```
+SELECT `a_o_hecho`, count(*) AS `n` WHERE `cod_dane_hecho`='54001' AND `mes_hecho` IN ('08','09','10') AND upper(`delito`) LIKE 'DESPLAZAMIENTO FORZADO%' AND ((`a_o_hecho`='2026') OR (`a_o_hecho`='2025' AND `a_o_creacion_proceso`='2025' AND `mes_creacion_proceso` IN ('8','9','10'))) GROUP BY `a_o_hecho` ORDER BY `a_o_hecho`
+```
+
+Respuesta de la API oficial a la misma consulta:
+
+```
+[{"a_o_hecho":"2025","n":"15"},{"a_o_hecho":"2026","n":"15"}]
+```
 
 **Advertencias**
 
@@ -468,7 +1469,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 
 ## Tabla de recálculo y consultas
 
-Todas las consultas se hicieron el 16-nov-2026 contra la API Socrata oficial de datos.gov.co. Las URL completas y las respuestas JSON están en el anexo siguiente y en las capturas «b» de cada nota.
+Todas las consultas se hicieron el 16-nov-2026 contra la API Socrata oficial de datos.gov.co. Cada consulta consta en las capturas de pantalla del portal oficial dentro de su nota, con el texto SoQL y la respuesta de la API; el anexo lista todas las URL.
 
 | Cifra | Dataset | Filtro principal |
 |---|---|---|
@@ -482,178 +1483,114 @@ Todas las consultas se hicieron el 16-nov-2026 contra la API Socrata oficial de 
 | Delitos-firma (nota 9) | `dbdv-iihs` | `upper(delito) like …` |
 | Población | DANE PPED-AreaMun-2018-2042_VP.xlsx | hoja PobMunicipalxÁrea, años 2025 y 2026 |
 
-### Cambios frente a las notas de investigación previas
+## Anexo. Lista de capturas y URL exactas (16-nov-2026)
 
-1. **Comparaciones del SPOA.** Ahora se hacen con mismo rezago de registro, lo que cambia varias variaciones de agosto a octubre:
+Todas las capturas son pantallas completas, sin edición. Las de datos.gov.co muestran la interfaz oficial del portal ejecutando la consulta indicada.
 
-   | Delito | Antes | Ahora |
-   |---|---|---|
-   | Extorsión | −26,1 % | **−5,6 %** |
-   | VIF | −21,4 % | **−13,3 %** |
-   | Hurto | +16,6 % | **+28,6 %** |
-   | Amenazas | −17,7 % | **−8,4 %** |
-   | Lesiones | +4,3 % | **+10,1 %** |
-   | Delitos sexuales | +3,0 % | **+49,5 %** |
+**Nota 1**
 
-   Las cifras brutas también variaron levemente:
-   - lesiones 2025: 322, antes 323 (actualización del dataset);
-   - delitos sexuales 2026: 139, antes 136, porque ahora se agrupan por título del Código Penal.
+- 1.1 `nota01_01.png`: Ficha oficial del dataset HOMICIDIO (MinDefensa): entidad, definición y fecha de actualización. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/about_data>
+- 1.2 `nota01_02.png`: Homicidios en Cúcuta, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 1.3 `nota01_03.png`: Homicidios en Cúcuta, 7-ago a 30-sep, por año y mes. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate>
+- 1.4 `nota01_04.png`: Homicidios en Cúcuta, enero a septiembre, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 1.5 `nota01_05.png`: Fecha del último hecho registrado en el dataset (fecha de corte). <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%20max%28%60fecha_hecho%60%29%20AS%20%60ultimo_hecho_registrado%60/page/aggregate>
+- 1.6 `nota01_06.png`: Página oficial del DANE de proyecciones de población. <https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion>
+- 1.7 `nota01_07.png`: Archivo oficial DANE PPED-AreaMun-2018-2042_VP.xlsx, hoja PobMunicipalxÁrea: Cúcuta 2025 (filas 25933-25935). Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
+- 1.8 `nota01_08.png`: Archivo oficial DANE, hoja PobMunicipalxÁrea: Cúcuta 2026 (filas 29302-29304). Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
+- 1.9 `dane_portada.png`: Archivo oficial DANE PPED-AreaMun-2018-2042_VP.xlsx, hoja PPED: «Actualizado el 30 de Julio de 2025». Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
 
-2. **Últimos registros de datasets.** El último registro de secuestro es del 25-sep-2026 (las notas previas decían 21-sep). El de afectación a la Fuerza Pública llega al 30-sep-2026 (antes, 31-ago).
+**Nota 2**
 
-3. **Cifras que se confirman.** Se confirmaron sin cambios:
-   - homicidios: 49 frente a 59; 28 frente a 33; 21 frente a 26;
-   - área metropolitana: 60 frente a 72;
-   - GAO: 5 frente a 2 en el periodo y 38 frente a 8 en el año;
-   - las cifras de hurto, extorsión, VIF, lesiones, delitos sexuales y terrorismo de MinDefensa;
-   - la población DANE, ahora verificada en el archivo oficial y no en un sitio secundario.
+- 2.1 `nota02_01.png`: Homicidios en Cúcuta, 7-ago a 30-sep, por año y arma o medio. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60arma_medio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60arma_medio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 2.2 `nota02_02.png`: Homicidios en Cúcuta, 7-ago a 30-sep, por año y modalidad presunta. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60_modalidad_presunta%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60_modalidad_presunta%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 2.3 `nota02_03.png`: Homicidios en Cúcuta, 7-ago a 30-sep, por año y caracterización SPOA (feminicidio). <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60spoa_caracterizacion%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60spoa_caracterizacion%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 2.4 `nota02_04.png`: Homicidios en Cúcuta, 7-ago a 30-sep, por año, sexo y zona. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60sexo%60%2C%0A%20%20%60zona%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60sexo%60%2C%20%60zona%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
 
-4. **Notas retiradas o modificadas.**
-   - Se retiró la nota de líderes sociales (sin fuente oficial verificable del periodo) y se reemplazó por la nota 9.
-   - La operación de la Fiscalía de noviembre no se usa como base porque su comunicado oficial no cargó.
+**Nota 3**
 
-## Anexo. URL exactas de las consultas a la API oficial (16-nov-2026)
+- 3.1 `nota03_01.png`: Registros individuales: homicidios «atacados por GAO o GAO-R» en Cúcuta, 7-ago a 30-sep-2026. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20%60fecha_hecho%60%2C%0A%20%20%60municipio%60%2C%0A%20%20%60zona%60%2C%0A%20%20%60sexo%60%2C%0A%20%20%60arma_medio%60%2C%0A%20%20%60_modalidad_presunta%60%2C%0A%20%20%60cantidad%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%0AORDER%20BY%20%60fecha_hecho%60%20ASC%20NULL%20LAST/page/filter>
+- 3.2 `nota03_02.png`: Homicidios «atacados por GAO» en Cúcuta, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 3.3 `nota03_03.png`: Homicidios «atacados por GAO» en Cúcuta, enero a septiembre, por año y mes. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate>
+- 3.4 `nota03_04.png`: Homicidios en zona rural de Cúcuta, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60zona%60%20%3D%20%22RURAL%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 3.5 `nota03_05.png`: Homicidios en zona rural de Cúcuta, enero a septiembre, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60zona%60%20%3D%20%22RURAL%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 3.6 `nota03_06.png`: Homicidios «atacados por GAO», área metropolitana, 7-ago a 30-sep, por año y municipio. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 3.7 `nota03_07.png`: Homicidios «atacados por GAO», Norte de Santander, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_depto%60%20%3D%20%2254%22%29%0A%20%20AND%20%28%60_modalidad_presunta%60%20%3D%20%22ATACADOS%20POR%20GAO%20O%20GAO-R%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
 
-Cada URL devuelve, en formato JSON, el conteo citado. Las respuestas obtenidas en vivo aparecen en las capturas «b» (y «a» de la nota 3). Ejecutadas entre las 13:33 y las 13:49 (America/Bogota).
+**Nota 4**
 
-**nota01_b** — Nota 1 — Homicidios en Cúcuta (cod_muni 54001), MinDefensa/SIEDCO, dataset m8fd-ahd9
+- 4.1 `nota04_01.png`: Homicidios por municipio del área metropolitana, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 4.2 `nota04_02.png`: Homicidios por municipio del área metropolitana, enero a septiembre, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 4.3 `nota04_03.png`: Homicidios en Norte de Santander, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_depto%60%20%3D%20%2254%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 4.4 `nota04_04.png`: Ficha oficial del dataset TERRORISMO (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/about_data>
+- 4.5 `nota04_05.png`: Terrorismo por municipio del área metropolitana, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 4.6 `nota04_06.png`: Ficha oficial del dataset de afectación a miembros de la Fuerza Pública (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/AFECTACI-N-DE-MIEMBROS-DE-LA-FUERZA-P-BLICA/8rpn-wpty/about_data>
+- 4.7 `nota04_07.png`: Afectación a miembros de la Fuerza Pública, área metropolitana, 7-ago a 30-sep, por año, municipio y acción. <https://www.datos.gov.co/Seguridad-y-Defensa/AFECTACI-N-DE-MIEMBROS-DE-LA-FUERZA-P-BLICA/8rpn-wpty/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60municipio%60%2C%0A%20%20%60accion%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%60cod_muni%60%20IN%20%28%2254001%22%2C%20%2254874%22%2C%20%2254405%22%2C%20%2254261%22%2C%20%2254673%22%2C%20%2254553%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60municipio%60%2C%20%60accion%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60municipio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 4.8 `nota04_08.png`: Archivo oficial DANE, hoja PobMunicipalxÁrea: El Zulia, Los Patios, Puerto Santander y San Cayetano 2025. Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
+- 4.9 `nota04_09.png`: Archivo oficial DANE, hoja PobMunicipalxÁrea: Villa del Rosario 2025. Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
+- 4.10 `nota04_10.png`: Archivo oficial DANE, hoja PobMunicipalxÁrea: El Zulia, Los Patios, Puerto Santander y San Cayetano 2026. Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
+- 4.11 `nota04_11.png`: Archivo oficial DANE, hoja PobMunicipalxÁrea: Villa del Rosario 2026. Archivo: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
 
-- 7-ago a 30-sep-2026 (suma de víctimas): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- 7-ago a 30-sep-2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- 7 a 31-ago-2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-08-31T23%3A59%3A59%27`
-- 7 a 31-ago-2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-08-31T23%3A59%3A59%27`
-- 1 a 30-sep-2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-09-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- 1 a 30-sep-2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-09-01T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Ene a sep 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Ene a sep 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Fecha máxima del dataset (fecha de corte): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=max%28fecha_hecho%29%20as%20maxf`
+**Nota 5**
 
-**nota02_b** — Nota 2 — Homicidios en Cúcuta por arma, modalidad, sexo, zona y caracterización SPOA, 7-ago a 30-sep (2026 vs 2025)
+- 5.1 `nota05_01.png`: Ficha oficial del dataset de hurto a personas (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-PERSONAS/4rxi-8m8d/about_data>
+- 5.2 `nota05_02.png`: Casos de hurto a personas en Cúcuta, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-PERSONAS/4rxi-8m8d/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 5.3 `nota05_03.png`: Ficha oficial del dataset de hurto a comercio (MinDefensa). <https://www.datos.gov.co/dataset/HURTO-A-COMERCIO/7i2x-h5vp/about_data>
+- 5.4 `nota05_04.png`: Casos de hurto a comercio en Cúcuta, 7-ago a 30-sep, por año. <https://www.datos.gov.co/dataset/HURTO-A-COMERCIO/7i2x-h5vp/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 5.5 `nota05_05.png`: Ficha oficial del dataset de hurto a residencias (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-RESIDENCIAS/7mn7-vzqp/about_data>
+- 5.6 `nota05_06.png`: Casos de hurto a residencias en Cúcuta, 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-RESIDENCIAS/7mn7-vzqp/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 5.7 `nota05_07.png`: Ficha oficial del dataset de hurto a vehículos (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-VEH-CULOS/csb4-y6v2/about_data>
+- 5.8 `nota05_08.png`: Hurto a vehículos en Cúcuta, 7-ago a 30-sep, por año y tipo. <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-A-VEH-CULOS/csb4-y6v2/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20%60tipo_delito%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%2C%20%60tipo_delito%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60total%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 5.9 `nota05_09.png`: Hurto a personas en Cúcuta por mes, enero 2025 a septiembre 2026. <https://www.datos.gov.co/Seguridad-y-Defensa/HURTO-PERSONAS/4rxi-8m8d/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate>
 
-- Arma/medio 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=arma_medio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=arma_medio&%24order=total%20DESC`
-- Arma/medio 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=arma_medio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=arma_medio&%24order=total%20DESC`
-- Modalidad presunta 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=_modalidad_presunta%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=_modalidad_presunta&%24order=total%20DESC`
-- Modalidad presunta 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=_modalidad_presunta%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=_modalidad_presunta&%24order=total%20DESC`
-- Sexo 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sexo%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=sexo&%24order=total%20DESC`
-- Sexo 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sexo%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=sexo&%24order=total%20DESC`
-- Zona 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=zona%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=zona&%24order=total%20DESC`
-- Zona 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=zona%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=zona&%24order=total%20DESC`
-- Caracterización SPOA 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=spoa_caracterizacion%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=spoa_caracterizacion&%24order=total%20DESC`
-- Caracterización SPOA 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=spoa_caracterizacion%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=spoa_caracterizacion&%24order=total%20DESC`
+**Nota 6**
 
-**nota03_a** — Nota 3 — Registros individuales: homicidios en Cúcuta con modalidad «ATACADOS POR GAO O GAO-R», 7-ago a 30-sep-2026
+- 6.1 `nota06_01.png`: Ficha oficial del dataset EXTORSIÓN (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSI-N/q2ib-t9am/about_data>
+- 6.2 `nota06_02.png`: Extorsión en Cúcuta (MinDefensa), 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/EXTORSI-N/q2ib-t9am/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 6.3 `nota06_03.png`: Ficha oficial del dataset SECUESTRO (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/SECUESTRO/d7zw-hpf4/about_data>
+- 6.4 `nota06_04.png`: Secuestro en Cúcuta (MinDefensa), 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/SECUESTRO/d7zw-hpf4/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 6.5 `nota06_05.png`: Ficha oficial del dataset Procesos Fiscalía V3 (SPOA). <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/about_data>
+- 6.6 `nota06_06.png`: Extorsión en Fiscalía (SPOA), hechos ago-oct, por año, con mismo rezago de registro. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25EXTORSI%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 6.7 `nota06_07.png`: Extorsión en Fiscalía (SPOA), hechos ago-oct, por año, sin control de rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25EXTORSI%25%22%0A%20%20AND%20%60a_o_hecho%60%20IN%20%28%222025%22%2C%20%222026%22%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 6.8 `nota06_08.png`: Secuestro en Fiscalía (SPOA), hechos ago-oct, por año, con mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25SECUESTRO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
 
-- Filas del dataset (una fila por fecha/zona/sexo/arma/modalidad): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24order=fecha_hecho`
+**Nota 7**
 
-**nota03_b** — Nota 3 — Homicidios «atacados por GAO o GAO-R» y homicidios rurales: Cúcuta, área metropolitana y Norte de Santander
+- 7.1 `nota07_01.png`: Ficha oficial del dataset de violencia intrafamiliar (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/VIOLENCIA-INTRAFAMILIAR/gepp-dxcs/about_data>
+- 7.2 `nota07_02.png`: Violencia intrafamiliar en Cúcuta (MinDefensa), 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/VIOLENCIA-INTRAFAMILIAR/gepp-dxcs/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 7.3 `nota07_03.png`: Ficha oficial del dataset de lesiones personales (MinDefensa). <https://www.datos.gov.co/dataset/LESIONES-PERSONALES/jr6v-i33g/about_data>
+- 7.4 `nota07_04.png`: Lesiones personales en Cúcuta (MinDefensa), 7-ago a 30-sep, por año. <https://www.datos.gov.co/dataset/LESIONES-PERSONALES/jr6v-i33g/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 7.5 `nota07_05.png`: Ficha oficial del dataset de delitos sexuales (MinDefensa). <https://www.datos.gov.co/Seguridad-y-Defensa/DELITOS-SEXUALES/bz43-8ahq/about_data>
+- 7.6 `nota07_06.png`: Delitos sexuales en Cúcuta (MinDefensa), 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/DELITOS-SEXUALES/bz43-8ahq/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 7.7 `nota07_07.png`: Violencia intrafamiliar en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25VIOLENCIA%20INTRAFAMILIAR%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 7.8 `nota07_08.png`: Lesiones dolosas en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60capitulo_delito%60%29%20LIKE%20%22%25LESIONES%25%22%0A%20%20AND%20upper%28%60delito%60%29%20NOT%20LIKE%20%22%25CULPOS%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 7.9 `nota07_09.png`: Delitos sexuales en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20%28upper%28%60titulo_delito%60%29%20LIKE%20%22%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACION%20SEXUAL%25%22%0A%20%20%20%20%20%20%20%20%20OR%20upper%28%60titulo_delito%60%29%20LIKE%20%22%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACI%C3%93N%20SEXUAL%25%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 7.10 `nota07_10.png`: Violencia intrafamiliar en Cúcuta (MinDefensa) por mes, enero 2025 a septiembre 2026. <https://www.datos.gov.co/Seguridad-y-Defensa/VIOLENCIA-INTRAFAMILIAR/gepp-dxcs/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20date_extract_m%28%60fecha_hecho%60%29%20AS%20%60mes%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20BETWEEN%20%222025-01-01T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%0AGROUP%20BY%20%60anio%60%2C%20%60mes%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST%2C%20%60mes%60%20ASC%20NULL%20LAST/page/aggregate>
 
-- GAO Cúcuta 7-ago a 30-sep-2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- GAO Cúcuta 7-ago a 30-sep-2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- GAO Cúcuta ene-sep 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- GAO Cúcuta ene-sep 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Rural Cúcuta 7-ago a 30-sep-2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20zona%3D%27RURAL%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Rural Cúcuta 7-ago a 30-sep-2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20zona%3D%27RURAL%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Rural Cúcuta ene-sep 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20zona%3D%27RURAL%27%20and%20fecha_hecho%20between%20%272026-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Rural Cúcuta ene-sep 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20zona%3D%27RURAL%27%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- GAO por mes Cúcuta 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=date_trunc_ym%28fecha_hecho%29%20as%20m%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=m&%24order=m`
-- GAO por mes Cúcuta 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=date_trunc_ym%28fecha_hecho%29%20as%20m%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272025-12-31T23%3A59%3A59%27&%24group=m&%24order=m`
-- GAO área metropolitana 2026 (periodo): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- GAO área metropolitana 2025 (periodo): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- GAO Norte de Santander 2026 (periodo): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_depto%3D%2754%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- GAO Norte de Santander 2025 (periodo): `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_depto%3D%2754%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
+**Nota 8**
 
-**nota04_b** — Nota 4 — Homicidios y terrorismo por municipio del área metropolitana de Cúcuta, 7-ago a 30-sep (2026 vs 2025)
+- 8.1 `nota08_01.png`: Total de noticias criminales en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20%60a_o_hecho%60%20IS%20NOT%20NULL%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 8.2 `nota08_02.png`: Etapa y estado de los procesos de hechos ago-oct 2026 (SPOA). <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60etapa%60%2C%20%60estado%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0AGROUP%20BY%20%60etapa%60%2C%20%60estado%60%0AORDER%20BY%20%60n%60%20DESC%20NULL%20FIRST/page/aggregate>
+- 8.3 `nota08_03.png`: Hurto en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25HURTO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 8.4 `nota08_04.png`: Amenazas en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22AMENAZAS%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 8.5 `nota08_05.png`: Homicidio doloso consumado en Fiscalía (SPOA), por año y mes del hecho, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20%60mes_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22HOMICIDIO%25%22%0A%20%20AND%20upper%28%60delito%60%29%20NOT%20LIKE%20%22%25CULPOS%25%22%0A%20%20AND%20%60grado_delito%60%20IN%20%28%22Ninguno%22%2C%20%22Agravado%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%2C%20%60mes_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST%2C%20%60mes_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 8.6 `nota08_06.png`: Fecha de corte declarada en el dataset para los hechos de ago-oct 2026. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60fecha_corte_datos%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0AGROUP%20BY%20%60fecha_corte_datos%60/page/aggregate>
 
-- Homicidios por municipio 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Homicidios por municipio 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Homicidios ene-sep 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272026-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Homicidios ene-sep 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Terrorismo (yi5j-5fe9) por municipio 2026: `https://www.datos.gov.co/resource/yi5j-5fe9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Terrorismo por municipio 2025: `https://www.datos.gov.co/resource/yi5j-5fe9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Afectación a miembros de la Fuerza Pública (8rpn-wpty) 2026: `https://www.datos.gov.co/resource/8rpn-wpty.json?%24select=municipio%2C%20accion%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio%2C%20accion&%24order=municipio`
-- Afectación Fuerza Pública 2025: `https://www.datos.gov.co/resource/8rpn-wpty.json?%24select=municipio%2C%20accion%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=municipio%2C%20accion&%24order=municipio`
+**Nota 9**
 
-**nota05_b** — Nota 5 — Hurtos en Cúcuta, MinDefensa/SIEDCO, 7-ago a 30-sep (2026 vs 2025)
+- 9.1 `nota09_01.png`: Estupefacientes en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25ESTUPEFACIENTES%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.2 `nota09_02.png`: Armas de fuego en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20%28upper%28%60delito%60%29%20LIKE%20%22%25ARMAS%20DE%20FUEGO%25%22%0A%20%20%20%20%20%20%20%20%20OR%20upper%28%60delito%60%29%20LIKE%20%22%25USO%20PRIVATIVO%25%22%29%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.3 `nota09_03.png`: Constreñimiento ilegal en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22CONSTRE%C3%91IMIENTO%20ILEGAL%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.4 `nota09_04.png`: Desplazamiento forzado en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22DESPLAZAMIENTO%20FORZADO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.5 `nota09_05.png`: Concierto para delinquir en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22CONCIERTO%20PARA%20DELINQUIR%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.6 `nota09_06.png`: Trata de personas en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22TRATA%20DE%20PERSONAS%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.7 `nota09_07.png`: Desaparición forzada en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22DESAPARICION%20FORZADA%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.8 `nota09_08.png`: Terrorismo en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22%25TERRORISMO%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
+- 9.9 `nota09_09.png`: Uso de menores en Fiscalía (SPOA), hechos ago-oct, por año, mismo rezago. <https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs/explore/query/SELECT%20%60a_o_hecho%60%2C%20count%28%2a%29%20AS%20%60n%60%0AWHERE%0A%20%20%28%60cod_dane_hecho%60%20%3D%20%2254001%22%29%0A%20%20AND%20%60mes_hecho%60%20IN%20%28%2208%22%2C%20%2209%22%2C%20%2210%22%29%0A%20%20AND%20upper%28%60delito%60%29%20LIKE%20%22USO%20DE%20MENORES%25%22%0A%20%20AND%20%28%60a_o_hecho%60%20%3D%20%222026%22%0A%20%20%20%20%20%20%20%20%20OR%20%28%60a_o_hecho%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60a_o_creacion_proceso%60%20%3D%20%222025%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%60mes_creacion_proceso%60%20IN%20%28%228%22%2C%20%229%22%2C%20%2210%22%29%29%29%0AGROUP%20BY%20%60a_o_hecho%60%0AORDER%20BY%20%60a_o_hecho%60%20ASC%20NULL%20LAST/page/aggregate>
 
-- Hurto a personas 2026: `https://www.datos.gov.co/resource/4rxi-8m8d.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Hurto a personas 2025: `https://www.datos.gov.co/resource/4rxi-8m8d.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Hurto a vehículos por tipo 2026: `https://www.datos.gov.co/resource/csb4-y6v2.json?%24select=tipo_delito%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=tipo_delito&%24order=total%20DESC`
-- Hurto a vehículos por tipo 2025: `https://www.datos.gov.co/resource/csb4-y6v2.json?%24select=tipo_delito%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27&%24group=tipo_delito&%24order=total%20DESC`
-- Hurto a comercio 2026: `https://www.datos.gov.co/resource/7i2x-h5vp.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Hurto a comercio 2025: `https://www.datos.gov.co/resource/7i2x-h5vp.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Hurto a residencias 2026: `https://www.datos.gov.co/resource/7mn7-vzqp.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Hurto a residencias 2025: `https://www.datos.gov.co/resource/7mn7-vzqp.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Hurto a personas por mes ene-2025 a sep-2026: `https://www.datos.gov.co/resource/4rxi-8m8d.json?%24select=date_trunc_ym%28fecha_hecho%29%20as%20m%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=m&%24order=m`
+**Nota 10**
 
-**nota06_b** — Nota 6 — Extorsión y secuestro en Cúcuta: MinDefensa (q2ib-t9am, d7zw-hpf4) y Fiscalía SPOA (dbdv-iihs)
-
-- Extorsión MinDefensa 7-ago a 30-sep-2026: `https://www.datos.gov.co/resource/q2ib-t9am.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Extorsión MinDefensa 7-ago a 30-sep-2025: `https://www.datos.gov.co/resource/q2ib-t9am.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Secuestro MinDefensa 2026: `https://www.datos.gov.co/resource/d7zw-hpf4.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Secuestro MinDefensa 2025: `https://www.datos.gov.co/resource/d7zw-hpf4.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Extorsión SPOA hechos ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25EXTORSI%25%27%29`
-- Extorsión SPOA hechos ago-oct 2025 (todas): `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25EXTORSI%25%27%29`
-- Extorsión SPOA hechos ago-oct 2025 creadas hasta oct-2025 (mismo rezago): `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25EXTORSI%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Secuestro SPOA ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25SECUESTRO%25%27%29`
-- Secuestro SPOA ago-oct 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25SECUESTRO%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-
-**nota07_b** — Nota 7 — VIF, lesiones y delitos sexuales en Cúcuta: MinDefensa vs Fiscalía SPOA
-
-- VIF MinDefensa 7-ago a 30-sep-2026: `https://www.datos.gov.co/resource/gepp-dxcs.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- VIF MinDefensa 2025: `https://www.datos.gov.co/resource/gepp-dxcs.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Lesiones MinDefensa 2026: `https://www.datos.gov.co/resource/jr6v-i33g.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Lesiones MinDefensa 2025: `https://www.datos.gov.co/resource/jr6v-i33g.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Delitos sexuales MinDefensa 2026: `https://www.datos.gov.co/resource/bz43-8ahq.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Delitos sexuales MinDefensa 2025: `https://www.datos.gov.co/resource/bz43-8ahq.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- VIF SPOA ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25VIOLENCIA%20INTRAFAMILIAR%25%27%29`
-- VIF SPOA ago-oct 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25VIOLENCIA%20INTRAFAMILIAR%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Lesiones dolosas SPOA ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28capitulo_delito%29%20like%20%27%25LESIONES%25%27%20and%20upper%28delito%29%20not%20like%20%27%25CULPOS%25%27%29`
-- Lesiones SPOA 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28capitulo_delito%29%20like%20%27%25LESIONES%25%27%20and%20upper%28delito%29%20not%20like%20%27%25CULPOS%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Delitos sexuales SPOA ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28titulo_delito%29%20like%20%27%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACION%20SEXUAL%25%27%20or%20upper%28titulo_delito%29%20like%20%27%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACI%C3%93N%20SEXUAL%25%27%29`
-- Delitos sexuales SPOA 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28titulo_delito%29%20like%20%27%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACION%20SEXUAL%25%27%20or%20upper%28titulo_delito%29%20like%20%27%25LIBERTAD%2C%20INTEGRIDAD%20Y%20FORMACI%C3%93N%20SEXUAL%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- VIF MinDefensa por mes: `https://www.datos.gov.co/resource/gepp-dxcs.json?%24select=date_trunc_ym%28fecha_hecho%29%20as%20m%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-01-01T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=m&%24order=m`
-
-**nota08_b** — Nota 8 — Fiscalía SPOA (dbdv-iihs), Cúcuta: noticias criminales ago-oct y etapa procesal
-
-- Total noticias hechos ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29`
-- Total ago-oct 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Etapa/estado, hechos ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=etapa%2C%20estado%2C%20count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29&%24group=etapa%2C%20estado&%24order=n%20DESC`
-- Hurto ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25HURTO%25%27%29`
-- Hurto 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25HURTO%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Amenazas ago-oct 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27AMENAZAS%25%27%29`
-- Amenazas 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27AMENAZAS%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Homicidio doloso consumado por mes 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=mes_hecho%2C%20count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27HOMICIDIO%25%27%20and%20upper%28delito%29%20not%20like%20%27%25CULPOS%25%27%29%20and%20grado_delito%20in%20%28%27Ninguno%27%2C%27Agravado%27%29&%24group=mes_hecho&%24order=mes_hecho`
-- Homicidio doloso consumado por mes 2025 mismo rezago: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=mes_hecho%2C%20count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27HOMICIDIO%25%27%20and%20upper%28delito%29%20not%20like%20%27%25CULPOS%25%27%29%20and%20grado_delito%20in%20%28%27Ninguno%27%2C%27Agravado%27%29&%24group=mes_hecho&%24order=mes_hecho`
-- Fecha de corte declarada: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=fecha_corte_datos%2C%20count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29&%24group=fecha_corte_datos`
-
-**nota09_b** — Nota 9 — Delitos asociados a estructuras criminales en Fiscalía SPOA, Cúcuta, hechos ago-oct 2026 vs ago-oct 2025 (mismo rezago)
-
-- Estupefacientes 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25ESTUPEFACIENTES%25%27%29`
-- Estupefacientes 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25ESTUPEFACIENTES%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Armas de fuego 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28%28upper%28delito%29%20like%20%27%25ARMAS%20DE%20FUEGO%25%27%20or%20upper%28delito%29%20like%20%27%25USO%20PRIVATIVO%25%27%29%29`
-- Armas de fuego 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28%28upper%28delito%29%20like%20%27%25ARMAS%20DE%20FUEGO%25%27%20or%20upper%28delito%29%20like%20%27%25USO%20PRIVATIVO%25%27%29%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Constreñimiento ilegal 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27CONSTRE%C3%91IMIENTO%20ILEGAL%25%27%29`
-- Constreñimiento ilegal 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27CONSTRE%C3%91IMIENTO%20ILEGAL%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Desplazamiento forzado 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27DESPLAZAMIENTO%20FORZADO%25%27%29`
-- Desplazamiento forzado 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27DESPLAZAMIENTO%20FORZADO%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Concierto para delinquir 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27CONCIERTO%20PARA%20DELINQUIR%25%27%29`
-- Concierto para delinquir 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27CONCIERTO%20PARA%20DELINQUIR%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Trata de personas 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27TRATA%20DE%20PERSONAS%25%27%29`
-- Trata de personas 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27TRATA%20DE%20PERSONAS%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Desaparición forzada 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27DESAPARICION%20FORZADA%25%27%29`
-- Desaparición forzada 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27DESAPARICION%20FORZADA%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Terrorismo 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25TERRORISMO%25%27%29`
-- Terrorismo 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27%25TERRORISMO%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-- Uso de menores 2026: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272026%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27USO%20DE%20MENORES%25%27%29`
-- Uso de menores 2025: `https://www.datos.gov.co/resource/dbdv-iihs.json?%24select=count%28%2A%29%20as%20n&%24where=cod_dane_hecho%3D%2754001%27%20and%20a_o_hecho%3D%272025%27%20and%20mes_hecho%20in%20%28%2708%27%2C%2709%27%2C%2710%27%29%20and%20%28upper%28delito%29%20like%20%27USO%20DE%20MENORES%25%27%29%20and%20%28a_o_creacion_proceso%3D%272025%27%20and%20mes_creacion_proceso%20in%20%28%278%27%2C%279%27%2C%2710%27%29%29`
-
-**nota10_b** — Nota 10 — Huella de grupos armados en registros oficiales del periodo: GAO, terrorismo y Fuerza Pública (MinDefensa)
-
-- Homicidios «atacados por GAO» Cúcuta 7-ago a 30-sep-2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Ídem 2025: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Homicidios «atacados por GAO» área metropolitana 2026: `https://www.datos.gov.co/resource/m8fd-ahd9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20_modalidad_presunta%3D%27ATACADOS%20POR%20GAO%20O%20GAO-R%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Terrorismo Cúcuta 2026: `https://www.datos.gov.co/resource/yi5j-5fe9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27`
-- Terrorismo Cúcuta 2025: `https://www.datos.gov.co/resource/yi5j-5fe9.json?%24select=sum%28cantidad%29%20as%20total&%24where=cod_muni%3D%2754001%27%20and%20fecha_hecho%20between%20%272025-08-07T00%3A00%3A00%27%20and%20%272025-09-30T23%3A59%3A59%27`
-- Terrorismo área metropolitana 2026: `https://www.datos.gov.co/resource/yi5j-5fe9.json?%24select=municipio%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio&%24order=total%20DESC`
-- Afectación Fuerza Pública área metropolitana 2026: `https://www.datos.gov.co/resource/8rpn-wpty.json?%24select=municipio%2C%20accion%2C%20sum%28cantidad%29%20as%20total&%24where=cod_muni%20in%20%28%2754001%27%2C%2754874%27%2C%2754405%27%2C%2754261%27%2C%2754673%27%2C%2754553%27%29%20and%20fecha_hecho%20between%20%272026-08-07T00%3A00%3A00%27%20and%20%272026-09-30T23%3A59%3A59%27&%24group=municipio%2C%20accion&%24order=municipio`
+- 10.1 `nota10_01.png`: Informe de Seguimiento 026-2026 de la Defensoría del Pueblo a la AT 027-24 (Cúcuta y área metropolitana), portada. <https://alertasstg.blob.core.windows.net/informes/302.pdf>
+- 10.2 `nota10_02.png`: Informe de Seguimiento 026-2026, página 8 (actores armados). <https://alertasstg.blob.core.windows.net/informes/302.pdf#page=8>
+- 10.3 `nota10_03.png`: Terrorismo en Cúcuta (MinDefensa), 7-ago a 30-sep, por año. <https://www.datos.gov.co/Seguridad-y-Defensa/TERRORISMO/yi5j-5fe9/explore/query/SELECT%0A%20%20date_extract_y%28%60fecha_hecho%60%29%20%3A%3A%20text%20AS%20%60anio%60%2C%0A%20%20sum%28%60cantidad%60%29%20AS%20%60total%60%0AWHERE%0A%20%20%28%60cod_muni%60%20%3D%20%2254001%22%29%0A%20%20AND%20%28%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222025-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20AND%20%222025-09-30T23%3A59%3A59%22%0A%20%20%20%20%20%20%20%20%20OR%20%60fecha_hecho%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20BETWEEN%20%222026-08-07T00%3A00%3A00%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%222026-09-30T23%3A59%3A59%22%29%0AGROUP%20BY%20%60anio%60%0AORDER%20BY%20%60anio%60%20ASC%20NULL%20LAST/page/aggregate>
+- 10.4 `nota10_04.png`: Informe de Seguimiento 026-2026, página 9 (actores armados, continuación). <https://alertasstg.blob.core.windows.net/informes/302.pdf#page=9>
 
