@@ -39,6 +39,7 @@ La reducción es real en el registro, pero el nivel sigue siendo alto: la tasa a
 | Ene–sep (273 días) | 246 | 212 | −13,8 % | 31,0 → 26,8 | 41,5 → 35,8 |
 
 **Fuente oficial.** Ministerio de Defensa Nacional, dataset «HOMICIDIO» (Observatorio MDN / Policía Nacional, SIEDCO), ID `m8fd-ahd9`.
+
 - Dataset: https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9
 - Último hecho: 30-sep-2026. Actualizado: 21-oct-2026. Consulta: 16-nov-2026.
 - Población: DANE, PPED municipal por área 2018-2042 (actualizado el 30-jul-2025), https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx
@@ -51,6 +52,7 @@ La reducción es real en el registro, pero el nivel sigue siendo alto: la tasa a
 ![Nota 1d – filas del archivo oficial DANE](capturas_cucuta_2026/nota01_d.png)
 
 **Advertencias**
+
 - La unidad es la víctima (suma de la columna `cantidad`).
 - Se cuenta solo el homicidio intencional; los homicidios en accidente de tránsito van en otro dataset.
 - Las cifras son preliminares y cambian con cada actualización mensual.
@@ -87,6 +89,7 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 | Zona urbana / rural | 56 / 3 | 44 / 5 |
 
 **Fuente oficial.** MinDefensa, dataset `m8fd-ahd9` (columnas `arma_medio`, `_modalidad_presunta`, `sexo`, `zona`, `spoa_caracterizacion`).
+
 - Datos: https://www.datos.gov.co/Seguridad-y-Defensa/HOMICIDIO/m8fd-ahd9/data_preview
 - Corte: 30-sep-2026. Consulta: 16-nov-2026.
 
@@ -96,6 +99,7 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 ![Nota 2b – consultas API agrupadas en vivo](capturas_cucuta_2026/nota02_b.png)
 
 **Advertencias**
+
 - La «modalidad presunta» es una clasificación policial inicial y puede cambiar con la investigación.
 - Los subgrupos son pequeños: variaciones de 1 a 3 casos no son estadísticamente concluyentes.
 - El dataset no trae edad, nacionalidad ni barrio.
@@ -132,6 +136,7 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 ![Nota 3b – conteos agregados en vivo](capturas_cucuta_2026/nota03_b.png)
 
 **Advertencias**
+
 - La atribución a un GAO es presunta e inicial y no identifica qué grupo actuó.
 - Con conteos de un dígito, la variación porcentual del periodo (+150 %) es frágil. Lo robusto es el cambio de nivel del año.
 - La «zona rural» de la Policía y el «centro poblado y rural disperso» del DANE no son definiciones idénticas, así que la tasa rural es aproximada.
@@ -164,6 +169,7 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 | Norte de Santander (homicidios) | 99 | 104 | — | — |
 
 **Fuente oficial.**
+
 - MinDefensa, datasets `m8fd-ahd9` (homicidio), `yi5j-5fe9` (terrorismo) y `8rpn-wpty` (afectación a miembros de la Fuerza Pública). Corte: 30-sep-2026. Actualizados: 21-oct-2026.
 - Población: DANE PPED municipal.
 - Consulta: 16-nov-2026.
@@ -174,6 +180,7 @@ En el periodo de 2026, **41 de los 49 homicidios (83,7 %)** se cometieron con ar
 ![Nota 4b – consultas API por municipio en vivo](capturas_cucuta_2026/nota04_b.png)
 
 **Advertencias**
+
 - Las tasas municipales de los municipios pequeños no se publican porque con 0 a 5 casos son inestables.
 - «Terrorismo» y «afectación a Fuerza Pública» cuentan registros, no eventos únicos. Un mismo atentado puede generar varios.
 - No hay datos oficiales posteriores al 30 de septiembre.
@@ -202,6 +209,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 | Hurto a personas por mes, 2026 (ene a sep) | | | | | 142, 143, 167, 128, 185, **318, 397, 327, 329** |
 
 **Fuente oficial.**
+
 - MinDefensa, datasets «HURTO PERSONAS» `4rxi-8m8d`, «HURTO A VEHÍCULOS» `csb4-y6v2` (artículo 239, motocicletas y automotores), «HURTO A COMERCIO» `7i2x-h5vp` y «HURTO A RESIDENCIAS» `7mn7-vzqp`.
 - Corte: 30-sep-2026. Actualizados: 21-oct-2026. Consulta: 16-nov-2026.
 
@@ -212,6 +220,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 ![Nota 5c – ficha oficial HURTO A VEHÍCULOS](capturas_cucuta_2026/nota05_c.png)
 
 **Advertencias**
+
 - Son delitos que dependen de la denuncia. La tasa de denuncia de Cúcuta en la ECSC 2024 del DANE (referencia 2023) fue del 24,9 %.
 - Los datos de 2025 llevan un año más de maduración que los de 2026. Las cifras de 2026 tenderán a subir en próximas actualizaciones.
 - El alza del hurto a personas debe leerse como «registro», no necesariamente como «incidencia».
@@ -240,6 +249,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 | Secuestro, SPOA, ago–oct (mismo rezago) | 3 | 4 | n. s. |
 
 **Fuente oficial.**
+
 - MinDefensa, «EXTORSIÓN» `q2ib-t9am` y «SECUESTRO» `d7zw-hpf4`. Corte: 30-sep-2026 (último registro de secuestro en el país: 25-sep-2026). Actualizados: 21-oct-2026.
 - Fiscalía General de la Nación, «Procesos Fiscalía – V3» `dbdv-iihs`. Corte: 31-oct-2026. Actualizado: 6-nov-2026. https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs
 - Consulta: 16-nov-2026.
@@ -251,6 +261,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 ![Nota 6c – ficha oficial Procesos Fiscalía V3](capturas_cucuta_2026/nota06_c.png)
 
 **Advertencias**
+
 - Las unidades difieren: casos de la Policía frente a filas proceso-delito del SPOA.
 - Las ventanas también: el SPOA va por mes del hecho, sin cortar el 7 de agosto.
 - La extorsión tiene un alto subregistro.
@@ -261,6 +272,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 ## Nota 7. Violencia intrafamiliar, lesiones y delitos sexuales: la Policía registra más (+55 % VIF) y la Fiscalía menos (−13 % VIF)
 
 **Policía (MinDefensa).** Del 7 de agosto al 30 de septiembre de 2026, los registros muestran fuertes alzas frente a 2025:
+
 - violencia intrafamiliar (VIF): **378 frente a 244 (+54,9 %)**, tasa de 47,7 frente a 30,8 por 100.000;
 - lesiones personales: **235 frente a 154 (+52,6 %)**;
 - delitos sexuales: **80 frente a 70 (+14,3 %)**. En ellos sube sobre todo el número de víctimas hombres (21 frente a 10). Las mujeres siguen siendo la mayoría (54).
@@ -280,6 +292,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 | Delitos sexuales | 70 → 80 | +14,3 % | 93 → 139 | +49,5 % | 133 → 139 (+4,5 %) |
 
 **Fuente oficial.**
+
 - MinDefensa, «VIOLENCIA INTRAFAMILIAR» `gepp-dxcs`, «LESIONES PERSONALES» `jr6v-i33g` y «DELITOS SEXUALES» `bz43-8ahq`. Corte: 30-sep-2026.
 - Fiscalía SPOA `dbdv-iihs`. Corte: 31-oct-2026.
 - Consulta: 16-nov-2026.
@@ -290,6 +303,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 ![Nota 7b – consultas API en vivo (MinDefensa y SPOA, con serie mensual de VIF)](capturas_cucuta_2026/nota07_b.png)
 
 **Advertencias**
+
 - Unidades distintas: víctimas o casos frente a proceso-delito.
 - Agrupaciones del SPOA: delitos sexuales = título «Delitos contra la libertad, integridad y formación sexuales»; lesiones = capítulo de lesiones sin las culposas.
 - La hipótesis del cambio de registro es una inferencia estadística, no confirmada oficialmente.
@@ -299,11 +313,13 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 ## Nota 8. Fiscalía (SPOA), agosto a octubre: 6.058 noticias criminales (+3,9 % con mismo rezago) y el 96,5 % sigue en indagación
 
 **Volumen.** Por hechos ocurridos en Cúcuta entre agosto y octubre de 2026, la Fiscalía tenía al 31 de octubre **6.058 registros de noticias criminales** (Ley 906; 5.813 procesos distintos). Con mismo rezago, en 2025 eran 5.832 (+3,9 %).
+
 - Sube el **hurto en todas sus modalidades: 1.689 frente a 1.313 (+28,6 %)**.
 - Bajan las **amenazas: 284 frente a 310 (−8,4 %)**.
 - Los delitos más frecuentes en 2026 son VIF (607), hurto simple de menor cuantía (509), hurto calificado (477), estafa (456) y tráfico o porte de estupefacientes (287).
 
 **Avance judicial.** Muy limitado:
+
 - **5.846 registros (96,5 %) siguen en indagación**, 110 en investigación, 92 en juicio y 10 en ejecución de penas.
 - En **homicidio**, 10 de 117 noticias (8,5 %) han salido de indagación (8 en investigación y 2 en juicio).
 - En **extorsión**, 1 de 51.
@@ -322,6 +338,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 | Registros inactivos (archivo u otra terminación) | — | 1.049 (17,3 %) | — |
 
 **Fuente oficial.** Fiscalía General de la Nación, «Procesos Fiscalía – V3», ID `dbdv-iihs`.
+
 - `fecha_corte_datos` = 31/10/2026. Actualizado: 6-nov-2026. Consulta: 16-nov-2026.
 - https://www.datos.gov.co/Justicia-y-Derecho/Procesos-Fiscal-a-V3/dbdv-iihs
 
@@ -331,6 +348,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 ![Nota 8b – consultas API en vivo](capturas_cucuta_2026/nota08_b.png)
 
 **Advertencias**
+
 - **Unidad.** Una fila es un par proceso-delito, así que un proceso con dos delitos cuenta dos veces.
 - **Octubre incompleto.** El registro de octubre de 2026 tiene a lo sumo 31 días de rezago. Por eso las comparaciones se hacen con el mismo rezago en 2025.
 - **El estado procesal no mide la impunidad.** El estado procesal de 2025 corresponde a hoy, no a octubre de 2025, y mostrar el porcentaje en indagación no equivale a una tasa de impunidad.
@@ -343,6 +361,7 @@ Del 7 de agosto al 30 de septiembre de 2026 se registraron en Cúcuta **563 hurt
 En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial verificable para el periodo (ver «Vacíos»), esta nota mide en el SPOA los **delitos-firma de economías y estructuras criminales**. Período: hechos de agosto a octubre, con mismo rezago de registro.
 
 **Cifras.**
+
 - Tráfico, fabricación o porte de estupefacientes: **294 frente a 253 (+16,2 %)**.
 - Porte o tráfico de armas de fuego, incluidas las de uso privativo: **104 frente a 127 (−18,1 %)**.
 - Constreñimiento ilegal: 194 frente a 236 (−17,8 %).
@@ -354,6 +373,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 - Uso de menores para delinquir: 1 y 1.
 
 **Lectura.**
+
 - Estupefacientes y armas son sobre todo **delitos de resultado operativo**: casi siempre nacen de capturas en flagrancia. Su alza o baja mide la actividad de la Fuerza Pública más que la incidencia del delito.
 - Lo más relevante como señal de estructuras son el **desplazamiento forzado intraurbano o rural (15 noticias en tres meses)**, la persistencia de la trata y el uso de menores, y el alza del concierto para delinquir. Este último suele asociarse a imputaciones contra bandas, aunque sigue en cifras muy bajas.
 
@@ -377,6 +397,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 ![Nota 9b – consultas API en vivo](capturas_cucuta_2026/nota09_b.png)
 
 **Advertencias**
+
 - Con conteos menores de 15, las variaciones no son significativas (n. s.).
 - El SPOA abierto no identifica la estructura investigada.
 - Las agrupaciones se hicieron por coincidencia de texto en la columna `delito` y pueden incluir variantes agravadas.
@@ -386,6 +407,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 ## Nota 10. Estructuras criminales y armadas en el territorio: qué dicen los registros oficiales del periodo y el marco de la Defensoría
 
 **Marco cualitativo de la Defensoría.** El documento oficial más reciente que caracteriza a los actores en Cúcuta es el **Informe de Seguimiento 026-2026 a la Alerta Temprana 027-24** de la Defensoría del Pueblo, fechado el **8 de agosto de 2026**. Su información estadística tiene **corte anterior al periodo**: homicidios SIEDCO al 17 de junio de 2026, cuando el área metropolitana sumaba 194. Por eso se usa solo como marco cualitativo. Según el informe:
+
 - el escenario de la AT «se materializó»;
 - el **ELN** impone normas en la zona rural de Cúcuta y en Puerto Santander, y su Frente Urbano se fortalece en la ciudad;
 - se consolida en Cúcuta un nuevo actor armado, el **Frente 33** (disidencia de las FARC-EP), aliado con estructuras criminales locales contra el ELN, como expansión de la guerra del Catatumbo iniciada el 16 de enero de 2025;
@@ -393,6 +415,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 - el **EGC** (Clan del Golfo) figura en el tercer escenario de riesgo de la alerta, en Cúcuta y Villa del Rosario.
 
 **Lo que muestran los registros oficiales del periodo.**
+
 - **Homicidios por grupos armados:** 5 víctimas en Cúcuta «atacadas por GAO» (2 en 2025) y 2 en El Zulia. Siete en total en el área, concentradas en agosto y en zona rural (nota 3).
 - **Terrorismo:** los registros caen en el área de 12 a 6, pero se desplazan de Cúcuta (9 → 1) a Los Patios (0 → 3). Hubo además 1 en El Zulia y 1 en Puerto Santander.
 - **Fuerza Pública:** 7 uniformados heridos en Los Patios.
@@ -411,6 +434,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 | Desplazamiento forzado, SPOA ago–oct (mismo rezago) | 15 | 15 |
 
 **Fuente oficial.**
+
 - Defensoría del Pueblo, Sistema de Alertas Tempranas, Informe de Seguimiento 026-2026 (AT 027-24), fecha 08/08/2026, https://alertasstg.blob.core.windows.net/informes/302.pdf (enlace a la AT 027-24 y su comunicado: https://www.defensoria.gov.co/web/guest/w/defensoria-del-pueblo-emite-alerta-temprana-para-cucuta).
 - MinDefensa `m8fd-ahd9`, `yi5j-5fe9` y `8rpn-wpty` (corte 30-sep-2026).
 - Fiscalía SPOA `dbdv-iihs` (corte 31-oct-2026).
@@ -425,6 +449,7 @@ En lugar de la nota prevista sobre líderes sociales, que no tuvo fuente oficial
 *La captura `nota10_d` (comunicado de la Fiscalía) falló: fiscalia.gov.co respondió HTTP 502.*
 
 **Advertencias**
+
 - La Defensoría describe actores y dinámicas con datos anteriores al 7 de agosto.
 - Ningún dataset oficial abierto atribuye delitos a una estructura específica. La modalidad «GAO» de la Policía no distingue entre ELN, Frente 33 o EGC.
 - Los conteos del periodo son pequeños.
