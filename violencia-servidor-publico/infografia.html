@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Violencia contra servidor público</title>
+<style>
+  :root {
+    --un-blue: #009EDB;
+    --s-imp: #0A6EA8;
+    --s-con: #E07A1F;
+    --ink: #1d2733;
+    --ink-2: #4a5866;
+    --muted: #7a8794;
+    --rule: #d9e1e8;
+    --grid: #e8edf2;
+    --band: #f1f6fa;
+    --surface: #fcfcfb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1600px; height: 900px; background: var(--surface); font-family: "Inter", sans-serif; color: var(--ink); }
+  header { background: var(--un-blue); color: #fff; padding: 26px 48px 22px; display: flex; justify-content: space-between; align-items: flex-end; }
+  header .kicker { font-size: 15px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; opacity: .9; }
+  header h1 { font-size: 34px; font-weight: 700; margin-top: 6px; letter-spacing: -.01em; }
+  header .sub { font-size: 17px; margin-top: 6px; opacity: .95; }
+  header .badge { text-align: right; font-size: 14px; line-height: 1.5; opacity: .95; }
+  header .badge b { font-size: 30px; display: block; font-weight: 700; letter-spacing: -.01em; }
+  main { display: grid; grid-template-columns: 440px 1fr; gap: 40px; padding: 24px 48px 0; height: 660px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-2); font-weight: 600; margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; font-variant-numeric: tabular-nums; }
+  thead th { background: var(--s-imp); color: #fff; font-weight: 600; padding: 8px 12px; text-align: right; font-size: 14px; }
+  thead th:first-child { text-align: left; }
+  tbody td { padding: 5.5px 12px; text-align: right; border-bottom: 1px solid var(--rule); }
+  tbody td:first-child { text-align: left; font-weight: 600; }
+  tbody tr:nth-child(even) td { background: var(--band); }
+  tbody tr.partial td { color: var(--ink-2); font-style: italic; }
+  tfoot td { padding: 8px 12px; text-align: right; font-weight: 700; border-top: 2px solid var(--ink); }
+  tfoot td:first-child { text-align: left; }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
+  .legend { display: flex; gap: 26px; font-size: 15px; color: var(--ink-2); margin-bottom: 4px; }
+  .legend .line { display: inline-block; width: 22px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 8px; }
+  footer { position: absolute; top: 812px; left: 48px; right: 48px; border-top: 1px solid var(--rule); padding-top: 12px; font-size: 13px; color: var(--ink-2); line-height: 1.55; }
+  footer b { color: var(--ink); }
+  svg text { font-family: "Inter", sans-serif; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="kicker">Colombia · Justicia penal · 2010–2026</div>
+    <h1>Violencia contra servidor público (art. 429 C.P.)</h1>
+    <div class="sub">Personas imputadas y condenadas, según el año en que el caso ingresó a la Fiscalía</div>
+  </div>
+  <div class="badge"><b>25.160 imputados · 6.075 condenados</b>total 2010 – oct. 2026</div>
+</header>
+<main>
+  <section>
+    <h2>Cifras por año</h2>
+    <table>
+      <thead><tr><th>Año</th><th>Imputados</th><th>Condenados</th><th>% condenados</th></tr></thead>
+      <tbody id="tb"></tbody>
+      <tfoot><tr><td>Total</td><td>25.160</td><td>6.075</td><td>24,1 %</td></tr></tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>Comportamiento anual</h2>
+    <div class="legend">
+      <span><span class="line" style="background:var(--s-imp)"></span>Imputados</span>
+      <span><span class="line" style="background:var(--s-con)"></span>Condenados</span>
+      <span style="color:var(--muted)">Zona sombreada: procesos mayoritariamente en curso</span>
+    </div>
+    <svg id="chart" width="1032" height="600"></svg>
+  </section>
+</main>
+<footer>
+  <b>Fuente:</b> Fiscalía General de la Nación, conjunto de datos abiertos «Procesados Fiscalía – V3» (datos.gov.co, id. piva-db2c), sistema SPOA, corte 31/10/2026. Delitos incluidos: art. 429 C.P. y sus agravantes del art. 429C (Ley 2197 de 2022).<br>
+  <b>Notas:</b> Imputados = personas que llegaron al menos a imputación (imputados, acusados y sentenciados). Condenados = adultos con sentencia condenatoria en firme; se excluyen 1.831 adolescentes sancionados (SRPA).
+  El año corresponde al ingreso del caso, no a la fecha de imputación o sentencia; las condenas de los años recientes aumentarán a medida que avancen los procesos. *2026: datos parciales (enero–octubre).
+</footer>
+<script>
+const D = [[2010,333,146],[2011,1043,391],[2012,1585,506],[2013,1666,480],[2014,1574,540],[2015,1833,538],[2016,2034,564],[2017,2289,564],[2018,2126,527],[2019,1848,427],[2020,1532,310],[2021,1343,280],[2022,1313,265],[2023,1351,223],[2024,1250,175],[2025,1116,101],[2026,924,38]];
+const fmt = n => n.toLocaleString('es-CO');
+const tb = document.getElementById('tb');
+D.forEach(([y,i,c]) => {
+  const tr = document.createElement('tr');
+  if (y === 2026) tr.className = 'partial';
+  tr.innerHTML = `<td>${y}${y===2026?'*':''}</td><td>${fmt(i)}</td><td>${fmt(c)}</td><td>${(c/i*100).toFixed(1).replace('.',',')} %</td>`;
+  tb.appendChild(tr);
+});
+
+const svg = document.getElementById('chart'), NS = 'http://www.w3.org/2000/svg';
+const W = 1032, H = 600, m = {l: 64, r: 150, t: 24, b: 48};
+const x = y => m.l + (y - 2010) / 16 * (W - m.l - m.r);
+const yMax = 2500, yv = v => H - m.b - v / yMax * (H - m.t - m.b);
+const el = (n, a, txt) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.appendChild(e); return e; };
+
+// shaded "in course" band 2022.5 – 2026
+el('rect', {x: x(2022.5), y: m.t, width: x(2026) - x(2022.5) + 12, height: H - m.t - m.b, fill: '#f1f6fa'});
+el('text', {x: x(2024.25), y: m.t + 22, 'text-anchor': 'middle', 'font-size': 13, fill: '#7a8794'}, 'Procesos en curso');
+
+for (let v = 0; v <= yMax; v += 500) {
+  el('line', {x1: m.l, x2: W - m.r + 12, y1: yv(v), y2: yv(v), stroke: v === 0 ? '#9aa6b2' : '#e8edf2', 'stroke-width': 1});
+  el('text', {x: m.l - 12, y: yv(v) + 5, 'text-anchor': 'end', 'font-size': 14, fill: '#7a8794'}, fmt(v));
+}
+D.forEach(([y]) => el('text', {x: x(y), y: H - m.b + 26, 'text-anchor': 'middle', 'font-size': 14, fill: '#7a8794'}, y === 2026 ? '2026*' : y));
+
+function series(idx, color) {
+  const solid = D.filter(d => d[0] <= 2025).map(d => `${x(d[0])},${yv(d[idx])}`).join(' ');
+  el('polyline', {points: solid, fill: 'none', stroke: color, 'stroke-width': 3, 'stroke-linejoin': 'round', 'stroke-linecap': 'round'});
+  el('line', {x1: x(2025), y1: yv(D[15][idx]), x2: x(2026), y2: yv(D[16][idx]), stroke: color, 'stroke-width': 3, 'stroke-dasharray': '5 5', 'stroke-linecap': 'round'});
+  D.forEach(d => el('circle', {cx: x(d[0]), cy: yv(d[idx]), r: 4.5, fill: d[0] === 2026 ? '#fcfcfb' : color, stroke: d[0] === 2026 ? color : '#fcfcfb', 'stroke-width': 2}));
+}
+series(1, '#0A6EA8');
+series(2, '#E07A1F');
+
+// selective direct labels: peaks + end values + series names
+const lab = (xx, yy, t, anchor = 'middle', w = 600, size = 14, fill = '#1d2733') => el('text', {x: xx, y: yy, 'text-anchor': anchor, 'font-size': size, 'font-weight': w, fill}, t);
+lab(x(2017), yv(2289) - 14, 'Máximo: 2.289 (2017)');
+lab(x(2016.5), yv(564) - 14, 'Máximo: 564 (2016–2017)');
+lab(x(2026) + 12, yv(924) + 5, '924', 'start');
+lab(x(2026) + 12, yv(38) + 5, '38', 'start');
+lab(x(2026) + 52, yv(924) + 5, 'Imputados', 'start', 600, 14, '#4a5866');
+lab(x(2026) + 44, yv(38) + 5, 'Condenados', 'start', 600, 14, '#4a5866');
+</script>
+</body>
+</html>

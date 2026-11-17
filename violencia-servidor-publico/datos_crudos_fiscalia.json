@@ -1,0 +1,101 @@
+[{"anio":"2010","cat":"Acusado","sent":"No Aplica","personas":"81","registros":"91"}
+,{"anio":"2010","cat":"Imputado","sent":"No Aplica","personas":"47","registros":"54"}
+,{"anio":"2010","cat":"Indiciado","sent":"No Aplica","personas":"3002","registros":"3025"}
+,{"anio":"2010","cat":"Sentenciado","sent":"Absuelto","personas":"17","registros":"18"}
+,{"anio":"2010","cat":"Sentenciado","sent":"Condenado","personas":"146","registros":"156"}
+,{"anio":"2010","cat":"Sentenciado","sent":"Sancionado","personas":"42","registros":"45"}
+,{"anio":"2011","cat":"Acusado","sent":"No Aplica","personas":"280","registros":"291"}
+,{"anio":"2011","cat":"Imputado","sent":"No Aplica","personas":"166","registros":"175"}
+,{"anio":"2011","cat":"Indiciado","sent":"No Aplica","personas":"3470","registros":"3495"}
+,{"anio":"2011","cat":"Sentenciado","sent":"Absuelto","personas":"100","registros":"105"}
+,{"anio":"2011","cat":"Sentenciado","sent":"Condenado","personas":"391","registros":"422"}
+,{"anio":"2011","cat":"Sentenciado","sent":"Sancionado","personas":"106","registros":"118"}
+,{"anio":"2012","cat":"Acusado","sent":"No Aplica","personas":"493","registros":"512"}
+,{"anio":"2012","cat":"Imputado","sent":"No Aplica","personas":"207","registros":"210"}
+,{"anio":"2012","cat":"Indiciado","sent":"No Aplica","personas":"4107","registros":"4143"}
+,{"anio":"2012","cat":"Sentenciado","sent":"Absuelto","personas":"212","registros":"212"}
+,{"anio":"2012","cat":"Sentenciado","sent":"Condenado","personas":"506","registros":"524"}
+,{"anio":"2012","cat":"Sentenciado","sent":"Sancionado","personas":"167","registros":"173"}
+,{"anio":"2013","cat":"Acusado","sent":"No Aplica","personas":"501","registros":"509"}
+,{"anio":"2013","cat":"Imputado","sent":"No Aplica","personas":"272","registros":"283"}
+,{"anio":"2013","cat":"Indiciado","sent":"No Aplica","personas":"5009","registros":"5028"}
+,{"anio":"2013","cat":"Sentenciado","sent":"Absuelto","personas":"194","registros":"196"}
+,{"anio":"2013","cat":"Sentenciado","sent":"Condenado","personas":"480","registros":"500"}
+,{"anio":"2013","cat":"Sentenciado","sent":"Sancionado","personas":"219","registros":"223"}
+,{"anio":"2014","cat":"Acusado","sent":"No Aplica","personas":"495","registros":"502"}
+,{"anio":"2014","cat":"Imputado","sent":"No Aplica","personas":"186","registros":"193"}
+,{"anio":"2014","cat":"Indiciado","sent":"No Aplica","personas":"4935","registros":"4961"}
+,{"anio":"2014","cat":"Sentenciado","sent":"Absuelto","personas":"136","registros":"138"}
+,{"anio":"2014","cat":"Sentenciado","sent":"Condenado","personas":"540","registros":"562"}
+,{"anio":"2014","cat":"Sentenciado","sent":"Sancionado","personas":"217","registros":"226"}
+,{"anio":"2015","cat":"Acusado","sent":"No Aplica","personas":"679","registros":"690"}
+,{"anio":"2015","cat":"Imputado","sent":"No Aplica","personas":"273","registros":"285"}
+,{"anio":"2015","cat":"Indiciado","sent":"No Aplica","personas":"5238","registros":"5269"}
+,{"anio":"2015","cat":"Sentenciado","sent":"Absuelto","personas":"145","registros":"148"}
+,{"anio":"2015","cat":"Sentenciado","sent":"Condenado","personas":"538","registros":"558"}
+,{"anio":"2015","cat":"Sentenciado","sent":"Sancionado","personas":"198","registros":"203"}
+,{"anio":"2016","cat":"Acusado","sent":"No Aplica","personas":"806","registros":"823"}
+,{"anio":"2016","cat":"Imputado","sent":"No Aplica","personas":"340","registros":"345"}
+,{"anio":"2016","cat":"Indiciado","sent":"No Aplica","personas":"5124","registros":"5153"}
+,{"anio":"2016","cat":"Sentenciado","sent":"Absuelto","personas":"123","registros":"124"}
+,{"anio":"2016","cat":"Sentenciado","sent":"Condenado","personas":"564","registros":"584"}
+,{"anio":"2016","cat":"Sentenciado","sent":"Sancionado","personas":"201","registros":"204"}
+,{"anio":"2017","cat":"Acusado","sent":"No Aplica","personas":"1106","registros":"1113"}
+,{"anio":"2017","cat":"Imputado","sent":"No Aplica","personas":"233","registros":"245"}
+,{"anio":"2017","cat":"Indiciado","sent":"No Aplica","personas":"4377","registros":"4394"}
+,{"anio":"2017","cat":"Sentenciado","sent":"Absuelto","personas":"167","registros":"168"}
+,{"anio":"2017","cat":"Sentenciado","sent":"Condenado","personas":"564","registros":"573"}
+,{"anio":"2017","cat":"Sentenciado","sent":"Sancionado","personas":"219","registros":"223"}
+,{"anio":"2018","cat":"Acusado","sent":"No Aplica","personas":"1125","registros":"1154"}
+,{"anio":"2018","cat":"Imputado","sent":"No Aplica","personas":"155","registros":"160"}
+,{"anio":"2018","cat":"Indiciado","sent":"No Aplica","personas":"3887","registros":"3923"}
+,{"anio":"2018","cat":"Sentenciado","sent":"Absuelto","personas":"157","registros":"160"}
+,{"anio":"2018","cat":"Sentenciado","sent":"Condenado","personas":"527","registros":"538"}
+,{"anio":"2018","cat":"Sentenciado","sent":"Sancionado","personas":"162","registros":"173"}
+,{"anio":"2019","cat":"Acusado","sent":"No Aplica","personas":"1029","registros":"1051"}
+,{"anio":"2019","cat":"Imputado","sent":"No Aplica","personas":"127","registros":"134"}
+,{"anio":"2019","cat":"Indiciado","sent":"No Aplica","personas":"2956","registros":"2978"}
+,{"anio":"2019","cat":"Sentenciado","sent":"Absuelto","personas":"179","registros":"183"}
+,{"anio":"2019","cat":"Sentenciado","sent":"Condenado","personas":"427","registros":"444"}
+,{"anio":"2019","cat":"Sentenciado","sent":"Sancionado","personas":"86","registros":"92"}
+,{"anio":"2020","cat":"Acusado","sent":"No Aplica","personas":"889","registros":"897"}
+,{"anio":"2020","cat":"Imputado","sent":"No Aplica","personas":"111","registros":"114"}
+,{"anio":"2020","cat":"Indiciado","sent":"No Aplica","personas":"2979","registros":"2998"}
+,{"anio":"2020","cat":"Sentenciado","sent":"Absuelto","personas":"165","registros":"168"}
+,{"anio":"2020","cat":"Sentenciado","sent":"Condenado","personas":"310","registros":"316"}
+,{"anio":"2020","cat":"Sentenciado","sent":"Sancionado","personas":"57","registros":"60"}
+,{"anio":"2021","cat":"Acusado","sent":"No Aplica","personas":"803","registros":"804"}
+,{"anio":"2021","cat":"Imputado","sent":"No Aplica","personas":"106","registros":"106"}
+,{"anio":"2021","cat":"Indiciado","sent":"No Aplica","personas":"2498","registros":"2512"}
+,{"anio":"2021","cat":"Sentenciado","sent":"Absuelto","personas":"123","registros":"123"}
+,{"anio":"2021","cat":"Sentenciado","sent":"Condenado","personas":"280","registros":"280"}
+,{"anio":"2021","cat":"Sentenciado","sent":"Sancionado","personas":"31","registros":"31"}
+,{"anio":"2022","cat":"Acusado","sent":"No Aplica","personas":"839","registros":"845"}
+,{"anio":"2022","cat":"Imputado","sent":"No Aplica","personas":"94","registros":"94"}
+,{"anio":"2022","cat":"Indiciado","sent":"No Aplica","personas":"2581","registros":"2587"}
+,{"anio":"2022","cat":"Sentenciado","sent":"Absuelto","personas":"79","registros":"79"}
+,{"anio":"2022","cat":"Sentenciado","sent":"Condenado","personas":"265","registros":"267"}
+,{"anio":"2022","cat":"Sentenciado","sent":"Sancionado","personas":"36","registros":"36"}
+,{"anio":"2023","cat":"Acusado","sent":"No Aplica","personas":"942","registros":"954"}
+,{"anio":"2023","cat":"Imputado","sent":"No Aplica","personas":"108","registros":"108"}
+,{"anio":"2023","cat":"Indiciado","sent":"No Aplica","personas":"3025","registros":"3034"}
+,{"anio":"2023","cat":"Sentenciado","sent":"Absuelto","personas":"39","registros":"39"}
+,{"anio":"2023","cat":"Sentenciado","sent":"Condenado","personas":"223","registros":"224"}
+,{"anio":"2023","cat":"Sentenciado","sent":"Sancionado","personas":"39","registros":"39"}
+,{"anio":"2024","cat":"Acusado","sent":"No Aplica","personas":"921","registros":"924"}
+,{"anio":"2024","cat":"Imputado","sent":"No Aplica","personas":"118","registros":"118"}
+,{"anio":"2024","cat":"Indiciado","sent":"No Aplica","personas":"2992","registros":"2995"}
+,{"anio":"2024","cat":"Sentenciado","sent":"Absuelto","personas":"11","registros":"11"}
+,{"anio":"2024","cat":"Sentenciado","sent":"Condenado","personas":"175","registros":"175"}
+,{"anio":"2024","cat":"Sentenciado","sent":"Sancionado","personas":"25","registros":"25"}
+,{"anio":"2025","cat":"Acusado","sent":"No Aplica","personas":"855","registros":"858"}
+,{"anio":"2025","cat":"Imputado","sent":"No Aplica","personas":"137","registros":"137"}
+,{"anio":"2025","cat":"Indiciado","sent":"No Aplica","personas":"3215","registros":"3219"}
+,{"anio":"2025","cat":"Sentenciado","sent":"Absuelto","personas":"3","registros":"3"}
+,{"anio":"2025","cat":"Sentenciado","sent":"Condenado","personas":"101","registros":"104"}
+,{"anio":"2025","cat":"Sentenciado","sent":"Sancionado","personas":"20","registros":"20"}
+,{"anio":"2026","cat":"Acusado","sent":"No Aplica","personas":"561","registros":"574"}
+,{"anio":"2026","cat":"Imputado","sent":"No Aplica","personas":"319","registros":"319"}
+,{"anio":"2026","cat":"Indiciado","sent":"No Aplica","personas":"3159","registros":"3162"}
+,{"anio":"2026","cat":"Sentenciado","sent":"Condenado","personas":"38","registros":"38"}
+,{"anio":"2026","cat":"Sentenciado","sent":"Sancionado","personas":"6","registros":"7"}]
