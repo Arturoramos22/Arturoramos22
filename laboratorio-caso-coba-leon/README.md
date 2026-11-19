@@ -20,6 +20,7 @@ Documento maestro (con todas las secciones): https://claude.ai/artifact/JDD2zrGp
 | `sobres/04-sobre-C-ministerio-publico.md` | Estudiante agente del Ministerio Público | Marco de actuación, insumos propios del rol, fundamentos y estructura del concepto. |
 | `sobres/05-sobre-D-juez.md` | Estudiante juez/a | Índice del expediente, guion de la audiencia inicial, problemas jurídicos y plantilla de sentencia oral. |
 | `06-cierre-rubrica.md` | Docente | Guion del cierre, comparación con la decisión real, preguntas de debate y rúbrica. |
+| `08-preguntas-respuestas-docente.md` y `word/Preguntas-y-respuestas-por-grupo-docente.docx` | Docente (confidencial) | 32 preguntas por grupo con respuesta, momento en que se formulan, qué evalúan y error típico. |
 | `fuentes/` | Docente | PDF oficiales: sentencia de unificación, boletín 227 con los salvamentos y salvamento de Ramiro Pazos. |
 
 ## Regla de oro

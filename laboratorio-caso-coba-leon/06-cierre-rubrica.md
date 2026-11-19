@@ -16,7 +16,7 @@ El cierre contrasta lo que decidió cada grupo con lo que hizo el Consejo de Est
 | Esperar el fallo penal o demandar y pedir prejudicialidad | | El abogado esperó siete años; la Sala dijo que debía demandar y pedir la suspensión (art. 161 CGP) |
 | Imposibilidad material o miedo | | No se alegó ni se probó; la Sala descartó obstáculos |
 | Pruebas pedidas y vía de ingreso | | Documentales de ambas partes, testimonios de la actora y prueba trasladada del proceso penal |
-| Legitimación del hijo póstumo y de la hija | | La primera instancia los reconoció; el Tribunal corrigió el problema del registro de la hija |
+| Legitimación del hijo póstumo y de la hija | | La primera instancia los reconoció; el Tribunal revocó la indebida representación de la hija declarada en la audiencia inicial |
 | Intervención del Ministerio Público | | Silencio en el traslado de excepciones, en los alegatos y en segunda instancia |
 | Costas | | Condena en costas a las víctimas en ambas instancias |
 
@@ -30,7 +30,7 @@ El cierre contrasta lo que decidió cada grupo con lo que hizo el Consejo de Est
 - ¿Debió la unificación tener efectos solo hacia el futuro, como jurisprudencia anunciada (SU-254 de 2013)?
 - ¿Es admisible condenar en costas a las víctimas de un crimen probado penalmente como homicidio en persona protegida?
 - ¿Qué debió hacer el Ministerio Público y qué significa su silencio?
-- ¿Qué vías quedan tras la caducidad: tutela contra providencia judicial, incidente de reparación integral en el proceso penal, indemnización administrativa de la Ley 1448 de 2011, Jurisdicción Especial para la Paz, Sistema Interamericano?
+- ¿Qué vías quedan tras la caducidad: tutela contra providencia judicial, indemnización administrativa de la Ley 1448 de 2011, Jurisdicción Especial para la Paz, Sistema Interamericano?
 
 ## Rúbrica (0 a 5 puntos por criterio)
 
